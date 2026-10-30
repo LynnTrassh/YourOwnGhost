@@ -8,6 +8,7 @@ import { canExplore, canUseExit, requestExit, stepTransition, commitTransition, 
 import { TEMPLATE_NAMES } from './planning/templates.js';
 import { stepStory } from './story/runtime.js';
 import { drawMap } from './map-preview.js';
+import { createVhsEffect } from './art/vhs-effect.js';
 
 const $ = id => document.getElementById(id);
 const canvas = $('game');
@@ -23,6 +24,7 @@ let started = false;
 let yaw = plan?.spawn.yaw ?? 0;
 let pitch = 0;
 let sensitivity = 1;
+let cameraMotionEnabled = true;
 let targetDoor = false;
 let dragMode = false;
 let dragging = false;
@@ -43,7 +45,7 @@ function init() {
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFShadowMap;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.25;
+  renderer.toneMappingExposure = 1.05;
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x111916);
   scene.fog = new THREE.Fog(0x111916, 9, 24);
@@ -51,6 +53,9 @@ function init() {
   camera.rotation.order = 'YXZ';
   scene.add(camera);
   let world = createWorld(scene, plan);
+  const vhs = createVhsEffect(renderer, scene, camera);
+  vhs.setIntensity($('vhs-intensity').value);
+  vhs.setFlashlight(state.player.flashlight);
   function updatePlanStatus() {
     $('seed').value = seed;
     const bedroom = plan.rooms.find(r => r.id === 'bedroom');
@@ -59,7 +64,7 @@ function init() {
     $('plan-status').textContent = `种子 ${seed} · 第 ${state.layer} 层 · ${plan.rooms.length} 个房间 · ${plan.opportunities.cycles.length} 个环路 / ${plan.opportunities.forks.length} 个分叉 · ${plan.planHash}${plan.validation.fallback ? ' · 保底布局' : ' · 校验通过'} · 猫场景 ${state.layer===2?'本层未启用':plan.story.cat?'可用':'不适配'} / 左右建议 ${plan.story.routes.length} 处 · 起始${TEMPLATE_NAMES[bedroom.type]} ${sizeX}×${sizeZ}米`;
   }
   updatePlanStatus();
-  const flashlight = new THREE.SpotLight(0xffe6b8, 24, 15, Math.PI / 7, .65, 1.5);
+  const flashlight = new THREE.SpotLight(0xffe6b8, 24, 15, Math.PI / 7, .82, 1.5);
   flashlight.position.set(.14, -.15, -.12);
   flashlight.target.position.set(0, -.08, -6);
   flashlight.castShadow = true;
@@ -111,6 +116,7 @@ function init() {
   function restartRun() {
     const nextWorld=createWorld(scene,dream[0]);world.dispose();world=nextWorld;plan=dream[0];
     state=createState(plan);yaw=plan.spawn.yaw;pitch=0;targetDoor=false;keys.clear();
+    vhs.setFlashlight(state.player.flashlight);
     $('ending').hidden=true;$('ending-line').textContent='';$('fade').style.opacity='0';updatePlanStatus();enter();
   }
   $('restart').addEventListener('click', restartRun);
@@ -130,6 +136,8 @@ function init() {
   });
   $('close-map').addEventListener('click', () => { $('map-panel').hidden = true; });
   $('sensitivity').addEventListener('input', event => { sensitivity = Number(event.target.value); });
+  $('vhs-intensity').addEventListener('input', event => vhs.setIntensity(event.target.value));
+  $('camera-motion').addEventListener('change', event => { cameraMotionEnabled = event.target.checked; });
   document.addEventListener('pointerlockchange', () => {
     if (document.pointerLockElement === canvas) {
       activate();
@@ -162,7 +170,10 @@ function init() {
     if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'KeyE', 'KeyF', 'Space'].includes(event.code)) event.preventDefault();
     keys.add(event.code);
     if (event.repeat) return;
-    if (event.code === 'KeyF') state.player.flashlight = !state.player.flashlight;
+    if (event.code === 'KeyF') {
+      state.player.flashlight = !state.player.flashlight;
+      vhs.setFlashlight(state.player.flashlight);
+    }
     if (event.code === 'KeyE') {
       if (!state.player.standing) { state.player.standing = true; state.flow.phase='exploring'; }
       else if (targetDoor) state.doors.bedroom.open = true;
@@ -173,6 +184,7 @@ function init() {
   window.addEventListener('resize', () => {
     camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
     renderer.setSize(innerWidth, innerHeight);
+    vhs.resize(innerWidth, innerHeight);
   });
   canvas.addEventListener('webglcontextlost', event => {
     event.preventDefault(); document.exitPointerLock(); pause();
@@ -207,6 +219,7 @@ function init() {
     }
   }
   let previous = performance.now();
+  let walkSway = 0;
   renderer.setAnimationLoop(time => {
     const dt = Math.min(Math.max((time - previous) / 1000, 0), .05); previous = time;
     advanceFlow(dt);
@@ -222,8 +235,23 @@ function init() {
           (-Math.cos(yaw) * forward - Math.sin(yaw) * right) * 2.4 * dt, world.getColliders());
       }
     }
-    camera.position.set(state.player.x, state.player.standing ? 1.65 : 1.08, state.player.z);
-    camera.rotation.set(pitch, yaw, 0);
+    const motionScale = cameraMotionEnabled ? 1 : 0;
+    const moving = motionScale && active && state.player.standing
+      && ['KeyW', 'KeyA', 'KeyS', 'KeyD'].some(code => keys.has(code));
+    walkSway = THREE.MathUtils.damp(walkSway, moving ? 1 : 0, 4.5, dt);
+    const seconds = time / 1000;
+    const step = Math.sin(seconds * 8.5);
+    const breathing = active && cameraMotionEnabled ? Math.sin(seconds * 0.72) : 0;
+    camera.position.set(
+      state.player.x + Math.sin(seconds * 0.38) * 0.004 * motionScale + step * 0.002 * walkSway,
+      (state.player.standing ? 1.65 : 1.08) + breathing * 0.005 + Math.abs(step) * 0.002 * walkSway * motionScale,
+      state.player.z + Math.cos(seconds * 0.31) * 0.004 * motionScale,
+    );
+    camera.rotation.set(
+      pitch + breathing * 0.0015 + step * 0.0008 * walkSway * motionScale,
+      yaw + Math.sin(seconds * 0.34) * 0.002 * motionScale,
+      0,
+    );
     camera.updateMatrixWorld(); scene.updateMatrixWorld();
     flashlight.visible = state.player.flashlight;
     if (exploring) {
@@ -245,6 +273,7 @@ function init() {
     $('subtitle').textContent=state.story.cue?.text??'';
     $('subtitle').hidden=!exploring || !state.story.cue;
     $('location').textContent = world.roomAt(state.player.x, state.player.z);
-    renderer.render(scene, camera);
+    vhs.render(time / 1000);
   });
+  vhs.resize(innerWidth, innerHeight);
 }
