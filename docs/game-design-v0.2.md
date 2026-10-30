@@ -4,6 +4,8 @@
 
 本版明确游戏的核心体验、系统规则、开发阶段与验收标准。工程已开始实现基础探索原型；下述内容为完整设计目标，具体完成情况见 [开发记录](development-log.md)。本文为当前设计入口；[剧本总集](script-catalog.md) 收录逐项演出和台词，[制作与技术规则](production-rules.md) 收录制作约束。
 
+技术实现设计见 [技术框架](technical-architecture.md)、[剧本与旁白运行规范](script-narrative-runtime.md) 和 [随机房间与内容编排](room-generation.md)。这些文档中的初始参数用于开发调试，不代表已通过体验验收。
+
 ## 1 版本与工程范围
 
 - 编写日期：2026 年 10 月 30 日；版本：v0.2，完整设计基线。
