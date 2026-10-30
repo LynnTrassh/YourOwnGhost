@@ -21,6 +21,7 @@ let started = false;
 let yaw = plan?.spawn.yaw ?? 0;
 let pitch = 0;
 let sensitivity = 1;
+let cameraMotionEnabled = true;
 let targetDoor = false;
 let dragMode = false;
 let dragging = false;
@@ -124,6 +125,7 @@ function init() {
   $('close-map').addEventListener('click', () => { $('map-panel').hidden = true; });
   $('sensitivity').addEventListener('input', event => { sensitivity = Number(event.target.value); });
   $('vhs-intensity').addEventListener('input', event => vhs.setIntensity(event.target.value));
+  $('camera-motion').addEventListener('change', event => { cameraMotionEnabled = event.target.checked; });
   document.addEventListener('pointerlockchange', () => {
     if (document.pointerLockElement === canvas) {
       activate();
@@ -177,6 +179,7 @@ function init() {
     $('start').disabled = true; $('restart').disabled = true;
   });
   let previous = performance.now();
+  let walkSway = 0;
   renderer.setAnimationLoop(time => {
     const dt = Math.min(Math.max((time - previous) / 1000, 0), .05); previous = time;
     if (active) {
@@ -190,8 +193,23 @@ function init() {
           (-Math.cos(yaw) * forward - Math.sin(yaw) * right) * 2.4 * dt, world.getColliders());
       }
     }
-    camera.position.set(state.player.x, state.player.standing ? 1.65 : 1.08, state.player.z);
-    camera.rotation.set(pitch, yaw, 0);
+    const motionScale = cameraMotionEnabled ? 1 : 0;
+    const moving = motionScale && active && state.player.standing
+      && ['KeyW', 'KeyA', 'KeyS', 'KeyD'].some(code => keys.has(code));
+    walkSway = THREE.MathUtils.damp(walkSway, moving ? 1 : 0, 4.5, dt);
+    const seconds = time / 1000;
+    const step = Math.sin(seconds * 8.5);
+    const breathing = active && cameraMotionEnabled ? Math.sin(seconds * 0.72) : 0;
+    camera.position.set(
+      state.player.x + Math.sin(seconds * 0.38) * 0.004 * motionScale + step * 0.002 * walkSway,
+      (state.player.standing ? 1.65 : 1.08) + breathing * 0.005 + Math.abs(step) * 0.002 * walkSway * motionScale,
+      state.player.z + Math.cos(seconds * 0.31) * 0.004 * motionScale,
+    );
+    camera.rotation.set(
+      pitch + breathing * 0.0015 + step * 0.0008 * walkSway * motionScale,
+      yaw + Math.sin(seconds * 0.34) * 0.002 * motionScale,
+      0,
+    );
     camera.updateMatrixWorld(); scene.updateMatrixWorld();
     flashlight.visible = state.player.flashlight;
     if (active) {

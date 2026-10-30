@@ -66,7 +66,9 @@ const VHSShader = {
       float scan = 0.965 + 0.035 * sin(vUv.y * uResolution.y * 3.14159);
       color *= mix(1.0, scan, amount * 0.7);
       float grain = hash(floor(vUv * uResolution) + vec2(frame, frame * 0.37)) - 0.5;
-      color += grain * amount * 0.045;
+      float sceneLuma = dot(center.rgb, vec3(0.2126, 0.7152, 0.0722));
+      float shadowBias = 1.0 - smoothstep(0.04, 0.62, sceneLuma);
+      color += grain * amount * mix(0.025, 0.055, shadowBias);
       color += (hash(vec2(floor(uTime * 24.0), floor(vUv.y * 90.0))) - 0.5)
         * glitch * inBand * 0.08;
 
