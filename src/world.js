@@ -2,9 +2,10 @@ import * as THREE from 'three';
 import { INTERIOR_NAMES } from './planning/interiors.js';
 import { generatePlan } from './planning/generate.js';
 import { CELL_SIZE, DIRECTIONS, keyOf } from './planning/templates.js';
+import { wallSurfaces, unionPatches } from './rendering/wall-surfaces.js';
 
 export function createWorld(scene, plan = generatePlan('42')) {
-  const root = new THREE.Group(); scene.add(root);
+  const root = new THREE.Group();
   const solids = [], doorMeshes = [], resources = new Set();
   function material(color, extra = {}) {
     const m = new THREE.MeshStandardMaterial({ color, roughness: .9, ...extra }); resources.add(m); return m;
@@ -26,11 +27,29 @@ export function createWorld(scene, plan = generatePlan('42')) {
     box(CELL_SIZE, .1, CELL_SIZE, x, 3.05, z, wall);
     for (const offset of [-1, 0, 1]) box(.012, .004, CELL_SIZE, x + offset * CELL_SIZE / 3, .002, z, trim);
   }
-  for (const b of plan.walls) {
-    const w = b.maxX - b.minX, d = b.maxZ - b.minZ, x = (b.minX + b.maxX) / 2, z = (b.minZ + b.maxZ) / 2;
-    box(w, 3, d, x, 1.5, z, roomMaterials.get(b.roomId) ?? wall, true);
-    box(w + .035, .12, d + .035, x, .06, z, trim);
+  function boundaryMesh(boxes, height, getMaterial, cap=false) {
+    const vertices=[],indices=[],groups=[],materials=[];
+    const quad=(points,mat)=>{
+      let materialIndex=materials.indexOf(mat);
+      if(materialIndex<0) {materialIndex=materials.length;materials.push(mat);}
+      const offset=vertices.length/3,start=indices.length;
+      vertices.push(...points.flat());indices.push(offset,offset+1,offset+2,offset,offset+2,offset+3);
+      groups.push([start,6,materialIndex]);
+    };
+    for(const f of wallSurfaces(boxes)) {
+      const at=(t,y)=>f.axis==='X'?[f.plane,y,t]:[t,y,f.plane];
+      const points=[at(f.start,0),at(f.start,height),at(f.end,height),at(f.end,0)];
+      if(f.axis==='X' ? f.sign<0 : f.sign>0) points.reverse();
+      quad(points,getMaterial(f.roomId));
+    }
+    if(cap) for(const p of unionPatches(boxes)) quad([[p.minX,height,p.minZ],[p.minX,height,p.maxZ],[p.maxX,height,p.maxZ],[p.maxX,height,p.minZ]],getMaterial(p.roomId));
+    const geometry=new THREE.BufferGeometry();resources.add(geometry);
+    geometry.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geometry.setIndex(indices);geometry.computeVertexNormals();
+    for(const group of groups) geometry.addGroup(...group);
+    const mesh=new THREE.Mesh(geometry,materials);mesh.castShadow=true;mesh.receiveShadow=true;root.add(mesh);return mesh;
   }
+  solids.push(boundaryMesh(plan.walls,3,id=>roomMaterials.get(id)??wall));
+  boundaryMesh(plan.walls.map(b=>({...b,minX:b.minX-.0175,maxX:b.maxX+.0175,minZ:b.minZ-.0175,maxZ:b.maxZ+.0175})),.12,()=>trim,true);
   const bookMaterials = [material(0x78604b), material(0x405756), material(0x884f46), material(0xaba17b)];
   for (const b of plan.obstacles) {
     const x = (b.minX + b.maxX) / 2, z = (b.minZ + b.maxZ) / 2;
@@ -41,24 +60,23 @@ export function createWorld(scene, plan = generatePlan('42')) {
       box(.65, .12, .45, x, .69, z + .5, cloth);
     } else if (b.kind === 'bookshelf') {
       const alongX = w > d, h = b.height;
-      // Shelves and books remain within the collision envelope.
-      box(alongX ? w : .12, h, alongX ? .12 : d, x, h/2, z, wood, true);
-      for (const sign of [-1,1]) box(alongX ? .1 : w, h, alongX ? d : .1,
-        x+(alongX ? sign*(w-.1)/2 : 0), h/2, z+(alongX ? 0 : sign*(d-.1)/2), wood);
+      const [nx,nz]=b.wallNormal,tx=-nz,tz=nx,length=Math.max(w,d),depth=Math.min(w,d);
+      const part=(length,height,depth,u,y,v,mat,solid=false)=>box(alongX?length:depth,height,alongX?depth:length,x+tx*u+nx*v,y,z+tz*u+nz*v,mat,solid);
+      // Rear panel faces the wall; sides, shelves and books meet without overlapping.
+      part(length,h,.1,0,h/2,(depth-.1)/2,wood,true);
+      for (const sign of [-1,1]) part(.1,h,depth-.1,sign*(length-.1)/2,h/2,-.05,wood,true);
       for (let row=0; row<4; row++) {
         const y=.08+row*.56;
-        box(w,.08,d,x,y,z,wood);
+        part(length-.2,.08,depth-.1,0,y,-.05,wood);
         for (let col=0; col<7; col++) {
-          const bookStep=(Math.max(w,d)-.2)/7, offset=(col-3)*bookStep, bh=.29+.13*((col+row)%3)/2;
-          box(alongX ? bookStep*.7 : .5, bh, alongX ? .5 : bookStep*.7,
-            x+(alongX ? offset : 0), y+.04+bh/2, z+(alongX ? 0 : offset),
-            bookMaterials[(col+row+Math.floor(b.decoration*4))%4]);
+          const bookStep=(length-.2)/7, offset=(col-3)*bookStep, bh=.29+.13*((col+row)%3)/2;
+          part(bookStep*.7,bh,depth-.2,offset,y+.04+bh/2,-.05,bookMaterials[(col+row+Math.floor(b.decoration*4))%4]);
         }
       }
-      box(w,.08,d,x,h-.04,z,wood);
+      part(length-.2,.08,depth-.1,0,h-.04,-.05,wood);
     } else {
-      box(w,b.height,d,x,b.height/2,z,b.kind === 'partition' ? roomMaterials.get(b.roomId) : wood,true);
-      box(w,.08,d,x,b.height-.04,z,trim);
+      box(w,b.height-.08,d,x,(b.height-.08)/2,z,b.kind === 'partition' ? roomMaterials.get(b.roomId) : wood,true);
+      box(w,.08,d,x,b.height-.04,z,trim,true);
     }
   }
   function label(text, x, z, y = 2.55) {
@@ -70,7 +88,6 @@ export function createWorld(scene, plan = generatePlan('42')) {
     const mat = new THREE.SpriteMaterial({ map: texture, depthTest: true }); resources.add(mat);
     const sprite = new THREE.Sprite(mat); sprite.position.set(x, y, z); sprite.scale.set(2.4, .45, 1); root.add(sprite);
   }
-  const occupied = new Set(plan.cells.map(t => keyOf(t.x, t.z)));
   const windowMat = material(0x87a2ac, { emissive: 0x456576, emissiveIntensity: .7 });
   for (const room of plan.rooms) {
     const x = room.center[0] * CELL_SIZE, z = room.center[1] * CELL_SIZE;
@@ -79,8 +96,9 @@ export function createWorld(scene, plan = generatePlan('42')) {
     box(.65, .08, .65, x, 2.95, z, material(0xb4bf9b, { emissive: 0xd4d5b0, emissiveIntensity: .8 }));
     label(`${room.name} · ${INTERIOR_NAMES[room.interior.type]}`, x, z);
     const boundaries = [];
+    const roomCells = new Set(room.cells.map(([x,z])=>keyOf(x,z)));
     for (const [cx, cz] of room.cells) for (const [dx, dz] of DIRECTIONS) {
-      if (!occupied.has(keyOf(cx + dx, cz + dz))) boundaries.push({ cx, cz, dx, dz });
+      if (!roomCells.has(keyOf(cx + dx, cz + dz))) boundaries.push({ cx, cz, dx, dz });
     }
     if (boundaries.length) {
       const { cx, cz, dx, dz } = boundaries[Math.floor(room.tint * boundaries.length)];
@@ -91,10 +109,34 @@ export function createWorld(scene, plan = generatePlan('42')) {
     }
   }
   root.add(new THREE.HemisphereLight(0xb0bfb1, 0x3d382e, .9));
-  const markers = material(0xbcb18b, { emissive: 0x534527, emissiveIntensity: .3 });
-  for (const slot of plan.reserved.cat.slots) box(.4, .025, .4, slot.x, .014, slot.z, markers);
+  // Small non-interactive placeholders; do not change the validated walking space.
+  const cats = [], fur = material(0x7c776f), eyes = material(0xcbdba0, { emissive: 0x839257, emissiveIntensity: .6 });
+  for (const slot of (plan.story?.cat?.slots ?? [])) {
+    const body = new THREE.Group(), head = new THREE.Group();
+    body.position.set(slot.x, 0, slot.z); root.add(body);
+    const part = (parent, w, h, d, x, y, z, mat) => {
+      const mesh = new THREE.Mesh(unitBox, mat); mesh.scale.set(w, h, d); mesh.position.set(x, y, z); parent.add(mesh); return mesh;
+    };
+    part(body, .38, .36, .6, 0, .25, 0, fur);
+    head.position.set(0, .55, -.14); body.add(head);
+    part(head, .34, .28, .3, 0, 0, 0, fur);
+    for (const side of [-1, 1]) {
+      part(head, .09, .16, .12, side * .12, .19, 0, fur);
+      part(head, .045, .05, .015, side * .09, .02, -.155, eyes);
+    }
+    part(body, .08, .35, .08, 0, .4, .3, fur);
+    cats.push({ body, head });
+  }
+  function updateStory(story, player) {
+    for (const { body, head } of cats) {
+      const dead = story.catPhase === 'dead';
+      body.rotation.z = dead ? Math.PI / 2 : 0;
+      body.position.y = dead ? .2 : 0;
+      head.rotation.y = dead ? 0 : Math.atan2(body.position.x - player.x, body.position.z - player.z);
+    }
+  }
   const exitMarker = box(1.25, .035, 1.25, plan.exit.x, .02, plan.exit.z, material(0x84bba2, { emissive: 0x497e61, emissiveIntensity: .7 }));
-  label('出口 · E 完成地图巡查', plan.exit.x, plan.exit.z, 1.9);
+  label('出口 · E 离开这里', plan.exit.x, plan.exit.z, 1.9);
 
   let doorHeight = 1.2;
   const bedroom = plan.doors.find(d => d.id === 'bedroom');
@@ -106,6 +148,7 @@ export function createWorld(scene, plan = generatePlan('42')) {
     }
   }
   const doorCollider = bedroom && { minX: bedroom.x - (bedroom.axis === 'x' ? .08 : .8), maxX: bedroom.x + (bedroom.axis === 'x' ? .08 : .8), minZ: bedroom.z - (bedroom.axis === 'x' ? .8 : .08), maxZ: bedroom.z + (bedroom.axis === 'x' ? .8 : .08) };
+  scene.add(root);
   return {
     plan, solids, doorMeshes, door: doorMeshes[0], exitMarker,
     update(dt, state) {
@@ -113,11 +156,12 @@ export function createWorld(scene, plan = generatePlan('42')) {
       doorHeight += Math.sign(target - doorHeight) * Math.min(Math.abs(target - doorHeight), dt * 3.2);
       if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = doorHeight < 3.9; }
     },
-    reset() { doorHeight = 1.2; if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = true; } },
+    updateStory,
+    reset() { updateStory({ catPhase: 'unobserved' }, plan.spawn); doorHeight = 1.2; if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = true; } },
     getColliders() { return doorHeight < 3 && doorCollider ? [...plan.walls, ...plan.obstacles, doorCollider] : [...plan.walls, ...plan.obstacles]; },
     roomAt(x, z) {
       const cell = plan.cells.find(c => c.x === Math.round(x / CELL_SIZE) && c.z === Math.round(z / CELL_SIZE));
-      return plan.rooms.find(r => r.id === cell?.roomId)?.name ?? '连接走廊';
+      return plan.rooms.find(r => r.id === cell?.roomId)?.name ?? '房间边界';
     },
     dispose() { scene.remove(root); for (const resource of resources) resource.dispose(); },
   };
