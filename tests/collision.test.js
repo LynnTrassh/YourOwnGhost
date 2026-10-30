@@ -30,23 +30,3 @@ test('new games have independent world state', () => {
   assert.equal(second.doors.bedroom.open, false);
   assert.equal(second.player.standing, false);
 });
-
-test('actual scene supports bedroom to living-room travel after door opens', async () => {
-  const THREE = await import('three');
-  const { createWorld } = await import('../src/world.js');
-  const world = createWorld(new THREE.Scene());
-  const state = createState();
-  assert.equal(world.getColliders().some(box => overlaps(state.player.x, state.player.z, box)), false);
-  state.player.x = 0;
-  movePlayer(state.player, 0, -9, world.getColliders());
-  assert.ok(state.player.z > -3.9, 'closed door stops player');
-  state.doors.bedroom.open = true;
-  for (let i = 0; i < 60; i++) world.update(1 / 60, state);
-  movePlayer(state.player, 0, -4, world.getColliders());
-  assert.ok(state.player.z < -6, 'open door permits entry into living room');
-  movePlayer(state.player, 0, 8, world.getColliders());
-  assert.ok(state.player.z > 0, 'return path remains open');
-  world.reset();
-  movePlayer(state.player, 0, -8, world.getColliders());
-  assert.ok(state.player.z > -3.9, 'reset restores closed-door collision');
-});

@@ -1,92 +1,124 @@
 import * as THREE from 'three';
+import { INTERIOR_NAMES } from './planning/interiors.js';
+import { generatePlan } from './planning/generate.js';
+import { CELL_SIZE, DIRECTIONS, keyOf } from './planning/templates.js';
 
-export function createWorld(scene) {
-  const colliders = [];
-  const solids = [];
-  const wall = new THREE.MeshStandardMaterial({ color: 0x697167, roughness: 0.95 });
-  const wood = new THREE.MeshStandardMaterial({ color: 0x514437, roughness: 0.82 });
-  const trim = new THREE.MeshStandardMaterial({ color: 0x333c35, roughness: 0.85 });
-  const cloth = new THREE.MeshStandardMaterial({ color: 0x8a8d76, roughness: 1 });
-  const floor = new THREE.MeshStandardMaterial({ color: 0x4a4235, roughness: 0.84 });
+export function createWorld(scene, plan = generatePlan('42')) {
+  const root = new THREE.Group(); scene.add(root);
+  const solids = [], doorMeshes = [], resources = new Set();
+  function material(color, extra = {}) {
+    const m = new THREE.MeshStandardMaterial({ color, roughness: .9, ...extra }); resources.add(m); return m;
+  }
+  const wall = material(0x677267), trim = material(0x343e36), wood = material(0x62523f);
+  const floor = material(0x514c3f), cloth = material(0x8d917d);
+  const palette = [0x758779, 0x7b8699, 0x96836d, 0x85768a];
+  const roomMaterials = new Map(plan.rooms.map(r => [r.id, material(palette[Math.floor(r.tint * palette.length)])]));
+  const unitBox = new THREE.BoxGeometry(1, 1, 1); resources.add(unitBox);
   function box(w, h, d, x, y, z, mat, solid = false) {
-    const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
-    mesh.position.set(x, y, z);
-    mesh.receiveShadow = true;
-    mesh.castShadow = true;
-    scene.add(mesh);
-    if (solid) {
-      colliders.push({ minX: x - w / 2, maxX: x + w / 2, minZ: z - d / 2, maxZ: z + d / 2 });
-      solids.push(mesh);
+    const mesh = new THREE.Mesh(unitBox, mat);
+    mesh.scale.set(w, h, d); mesh.position.set(x, y, z);
+    mesh.receiveShadow = true; mesh.castShadow = solid;
+    root.add(mesh); if (solid) solids.push(mesh); return mesh;
+  }
+  for (const tile of plan.cells) {
+    const x = tile.x * CELL_SIZE, z = tile.z * CELL_SIZE;
+    box(CELL_SIZE, .12, CELL_SIZE, x, -.06, z, floor);
+    box(CELL_SIZE, .1, CELL_SIZE, x, 3.05, z, wall);
+    for (const offset of [-1, 0, 1]) box(.012, .004, CELL_SIZE, x + offset * CELL_SIZE / 3, .002, z, trim);
+  }
+  for (const b of plan.walls) {
+    const w = b.maxX - b.minX, d = b.maxZ - b.minZ, x = (b.minX + b.maxX) / 2, z = (b.minZ + b.maxZ) / 2;
+    box(w, 3, d, x, 1.5, z, roomMaterials.get(b.roomId) ?? wall, true);
+    box(w + .035, .12, d + .035, x, .06, z, trim);
+  }
+  const bookMaterials = [material(0x78604b), material(0x405756), material(0x884f46), material(0xaba17b)];
+  for (const b of plan.obstacles) {
+    const x = (b.minX + b.maxX) / 2, z = (b.minZ + b.maxZ) / 2;
+    const w = b.maxX-b.minX, d = b.maxZ-b.minZ;
+    if (b.kind === 'bed') {
+      box(w, .45, d, x, .225, z, wood, true);
+      box(w, .18, d, x, .54, z, cloth);
+      box(.65, .12, .45, x, .69, z + .5, cloth);
+    } else if (b.kind === 'bookshelf') {
+      const alongX = w > d, h = b.height;
+      // Shelves and books remain within the collision envelope.
+      box(alongX ? w : .12, h, alongX ? .12 : d, x, h/2, z, wood, true);
+      for (const sign of [-1,1]) box(alongX ? .1 : w, h, alongX ? d : .1,
+        x+(alongX ? sign*(w-.1)/2 : 0), h/2, z+(alongX ? 0 : sign*(d-.1)/2), wood);
+      for (let row=0; row<4; row++) {
+        const y=.08+row*.56;
+        box(w,.08,d,x,y,z,wood);
+        for (let col=0; col<7; col++) {
+          const bookStep=(Math.max(w,d)-.2)/7, offset=(col-3)*bookStep, bh=.29+.13*((col+row)%3)/2;
+          box(alongX ? bookStep*.7 : .5, bh, alongX ? .5 : bookStep*.7,
+            x+(alongX ? offset : 0), y+.04+bh/2, z+(alongX ? 0 : offset),
+            bookMaterials[(col+row+Math.floor(b.decoration*4))%4]);
+        }
+      }
+      box(w,.08,d,x,h-.04,z,wood);
+    } else {
+      box(w,b.height,d,x,b.height/2,z,b.kind === 'partition' ? roomMaterials.get(b.roomId) : wood,true);
+      box(w,.08,d,x,b.height-.04,z,trim);
     }
-    return mesh;
   }
-  box(8, .2, 16, 0, -.1, -4, floor);
-  box(8, .16, 16, 0, 3.1, -4, wall);
-  box(.2, 3.2, 16.2, -4, 1.5, -4, wall, true);
-  box(.2, 3.2, 16.2, 4, 1.5, -4, wall, true);
-  box(8, 3.2, .2, 0, 1.5, 4, wall, true);
-  box(8, 3.2, .2, 0, 1.5, -12, wall, true);
-  box(3.2, 3.2, .2, -2.4, 1.5, -4, wall, true);
-  box(3.2, 3.2, .2, 2.4, 1.5, -4, wall, true);
-  box(1.6, .65, .2, 0, 2.775, -4, wall);
-  // Floorboard joints and low skirting give distance cues without image assets.
-  for (let x = -3.5; x < 4; x += .5) box(.012, .005, 15.8, x, .003, -4, trim);
-  for (const x of [-3.87, 3.87]) box(.06, .14, 15.8, x, .07, -4, trim);
-  for (const z of [3.87, -11.87]) box(7.8, .14, .06, 0, .07, z, trim);
-  box(1.8, .48, 2.5, -2.25, .24, 1.7, wood, true);
-  box(1.76, .24, 2.4, -2.25, .6, 1.7, cloth);
-  box(1.85, 1.05, .12, -2.25, .525, 2.96, wood);
-  box(1.4, .18, .5, -2.25, .8, 2.45, new THREE.MeshStandardMaterial({ color: 0xb6b29a, roughness: 1 }));
-  box(1.78, .08, 1.5, -2.25, .76, 1.2, trim);
-  box(.65, .65, .65, -3.45, .325, 2.3, wood, true);
-  box(1.3, 2.25, .65, 2.9, 1.125, 3.45, wood, true);
-  box(.025, 2, .03, 2.9, 1.1, 3.1, trim);
-  box(2.3, .7, .65, 2.5, .35, -10.8, wood, true);
-  box(1.35, .8, 1.2, -2, .4, -8, trim, true);
-  box(1.35, .75, .22, -2, .95, -8.5, cloth);
-  // A muted window and a warm lamp help distinguish the two spaces.
-  const windowMat = new THREE.MeshStandardMaterial({ color: 0x688b86, emissive: 0x345d5b, emissiveIntensity: .7 });
-  box(.04, 1.35, 1.65, 3.88, 1.9, .1, trim);
-  box(.025, 1.15, 1.45, 3.85, 1.9, .1, windowMat);
-  box(.04, 1.2, .055, 3.82, 1.9, .1, trim);
-  box(.04, .055, 1.5, 3.82, 1.9, .1, trim);
-  const cool = new THREE.PointLight(0x8ab7b2, 12, 9, 2);
-  cool.position.set(3.3, 2, .1); scene.add(cool);
-  function lamp(x, y, z, intensity) {
-    box(.08, .45, .08, x, y + .22, z, trim);
-    const shade = new THREE.Mesh(new THREE.CylinderGeometry(.22, .34, .35, 16), new THREE.MeshStandardMaterial({ color: 0xc3aa74, emissive: 0xeebf6a, emissiveIntensity: .6 }));
-    shade.position.set(x, y + .55, z); scene.add(shade);
-    const light = new THREE.PointLight(0xffc884, intensity, 10, 2);
-    light.position.set(x, y + .45, z); scene.add(light);
+  function label(text, x, z, y = 2.55) {
+    if (typeof document === 'undefined') return;
+    const canvas = document.createElement('canvas'); canvas.width = 512; canvas.height = 96;
+    const ctx = canvas.getContext('2d'); ctx.fillStyle = '#17211de6'; ctx.fillRect(0, 0, 512, 96);
+    ctx.fillStyle = '#d1d7bd'; ctx.font = '30px sans-serif'; ctx.textAlign = 'center'; ctx.fillText(text, 256, 59);
+    const texture = new THREE.CanvasTexture(canvas); resources.add(texture);
+    const mat = new THREE.SpriteMaterial({ map: texture, depthTest: true }); resources.add(mat);
+    const sprite = new THREE.Sprite(mat); sprite.position.set(x, y, z); sprite.scale.set(2.4, .45, 1); root.add(sprite);
   }
-  lamp(-3.45, .65, 2.3, 9);
-  lamp(2.5, .7, -10.8, 16);
-  scene.add(new THREE.HemisphereLight(0xa7b8b3, 0x323129, .65));
+  const occupied = new Set(plan.cells.map(t => keyOf(t.x, t.z)));
+  const windowMat = material(0x87a2ac, { emissive: 0x456576, emissiveIntensity: .7 });
+  for (const room of plan.rooms) {
+    const x = room.center[0] * CELL_SIZE, z = room.center[1] * CELL_SIZE;
+    const light = new THREE.PointLight(room.tint > .5 ? 0xf0cca1 : 0xaec7bc, 24, 12, 2);
+    light.position.set(x, 2.65, z); root.add(light);
+    box(.65, .08, .65, x, 2.95, z, material(0xb4bf9b, { emissive: 0xd4d5b0, emissiveIntensity: .8 }));
+    label(`${room.name} · ${INTERIOR_NAMES[room.interior.type]}`, x, z);
+    const boundaries = [];
+    for (const [cx, cz] of room.cells) for (const [dx, dz] of DIRECTIONS) {
+      if (!occupied.has(keyOf(cx + dx, cz + dz))) boundaries.push({ cx, cz, dx, dz });
+    }
+    if (boundaries.length) {
+      const { cx, cz, dx, dz } = boundaries[Math.floor(room.tint * boundaries.length)];
+      const wx = cx * CELL_SIZE + dx * (CELL_SIZE / 2 - .13), wz = cz * CELL_SIZE + dz * (CELL_SIZE / 2 - .13);
+      box(dx ? .04 : 1.4, 1.3, dx ? 1.4 : .04, wx, 1.9, wz, trim);
+      box(dx ? .06 : 1.2, 1.1, dx ? 1.2 : .06, wx - dx * .025, 1.9, wz - dz * .025, windowMat);
+      box(dx ? .08 : .06, 1.15, dx ? .06 : .08, wx - dx * .06, 1.9, wz - dz * .06, trim);
+    }
+  }
+  root.add(new THREE.HemisphereLight(0xb0bfb1, 0x3d382e, .9));
+  const markers = material(0xbcb18b, { emissive: 0x534527, emissiveIntensity: .3 });
+  for (const slot of plan.reserved.cat.slots) box(.4, .025, .4, slot.x, .014, slot.z, markers);
+  const exitMarker = box(1.25, .035, 1.25, plan.exit.x, .02, plan.exit.z, material(0x84bba2, { emissive: 0x497e61, emissiveIntensity: .7 }));
+  label('出口 · E 完成地图巡查', plan.exit.x, plan.exit.z, 1.9);
 
-  for (const x of [-.86, .86]) box(.12, 2.55, .32, x, 1.275, -4, trim);
-  box(1.84, .12, .32, 0, 2.5, -4, trim);
-  const pivot = new THREE.Group(); pivot.position.set(-.8, 0, -4); scene.add(pivot);
-  const door = new THREE.Mesh(new THREE.BoxGeometry(1.6, 2.44, .12), wood);
-  door.position.set(.8, 1.22, 0); door.castShadow = true; door.receiveShadow = true; pivot.add(door);
-  const handle = new THREE.Mesh(new THREE.SphereGeometry(.055, 12, 8), new THREE.MeshStandardMaterial({ color: 0xb7a576, metalness: .7, roughness: .3 }));
-  handle.position.set(1.4, 1.1, .12); pivot.add(handle);
-  const bounds = new THREE.Box3();
-  const closedDoor = { minX: -.86, maxX: .86, minZ: -4.1, maxZ: -3.9 };
-  let angle = 0;
-  pivot.updateMatrixWorld(true);
+  let doorHeight = 1.2;
+  const bedroom = plan.doors.find(d => d.id === 'bedroom');
+  for (const d of plan.doors) {
+    box(d.axis === 'x' ? .2 : 1.6, .6, d.axis === 'x' ? 1.6 : .2, d.x, 2.7, d.z, trim);
+    if (d.closed) {
+      const door = box(d.axis === 'x' ? .12 : 1.6, 2.4, d.axis === 'x' ? 1.6 : .12, d.x, doorHeight, d.z, wood);
+      door.userData.doorId = d.id; doorMeshes.push(door);
+    }
+  }
+  const doorCollider = bedroom && { minX: bedroom.x - (bedroom.axis === 'x' ? .08 : .8), maxX: bedroom.x + (bedroom.axis === 'x' ? .08 : .8), minZ: bedroom.z - (bedroom.axis === 'x' ? .8 : .08), maxZ: bedroom.z + (bedroom.axis === 'x' ? .8 : .08) };
   return {
-    door, solids,
+    plan, solids, doorMeshes, door: doorMeshes[0], exitMarker,
     update(dt, state) {
-      const target = state.doors.bedroom.open ? Math.PI / 2 : 0;
-      angle += Math.sign(target - angle) * Math.min(Math.abs(target - angle), dt * 1.8);
-      pivot.rotation.y = angle;
-      pivot.updateMatrixWorld(true);
+      const target = state.doors.bedroom.open ? 4 : 1.2;
+      doorHeight += Math.sign(target - doorHeight) * Math.min(Math.abs(target - doorHeight), dt * 3.2);
+      if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = doorHeight < 3.9; }
     },
-    reset() { angle = 0; pivot.rotation.y = 0; pivot.updateMatrixWorld(true); },
-    getColliders() {
-      bounds.setFromObject(door);
-      const panel = { minX: bounds.min.x, maxX: bounds.max.x, minZ: bounds.min.z, maxZ: bounds.max.z };
-      return angle < Math.PI / 2 - .01 ? [...colliders, closedDoor, panel] : [...colliders, panel];
+    reset() { doorHeight = 1.2; if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = true; } },
+    getColliders() { return doorHeight < 3 && doorCollider ? [...plan.walls, ...plan.obstacles, doorCollider] : [...plan.walls, ...plan.obstacles]; },
+    roomAt(x, z) {
+      const cell = plan.cells.find(c => c.x === Math.round(x / CELL_SIZE) && c.z === Math.round(z / CELL_SIZE));
+      return plan.rooms.find(r => r.id === cell?.roomId)?.name ?? '连接走廊';
     },
+    dispose() { scene.remove(root); for (const resource of resources) resource.dispose(); },
   };
 }
