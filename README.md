@@ -48,6 +48,7 @@ npm run preview
 - [技术框架](docs/technical-architecture.md)
 - [剧本与旁白运行规范](docs/script-narrative-runtime.md)
 - [随机房间与内容编排](docs/room-generation.md)
+- [个性化美术资产与动画流水线](docs/personalized-asset-pipeline.md)
 - [开发记录](docs/development-log.md)
 
 Three.js 与 Vite 的版本由锁文件固定；第三方依赖遵循各自附带的许可。
