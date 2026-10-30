@@ -21,44 +21,81 @@ test('same seed reproduces full plan and decorations do not alter topology', () 
   assert.notDeepEqual(a.rooms.map(r => r.tint), c.rooms.map(r => r.tint));
 });
 
-test('100 seeds produce valid layouts and actual collision paths through both branches and return loop', () => {
-  const fingerprints = new Set(), shapes = new Set();
+test('100 seeds produce varied connected topologies with traversable rooms and observed opportunities', () => {
+  const fingerprints = new Set(), shapes = new Set(), graphs = new Set(), counts = new Set(), cycleCounts = new Set();
   for (let seed = 0; seed < 100; seed++) {
     const plan = generatePlan(String(seed));
     assert.equal(plan.validation.fallback, false, `seed ${seed}`);
     assert.equal(validatePlan(plan).valid, true);
+    assert.ok(plan.cells.every(c=>plan.rooms.some(r=>r.id===c.roomId)), 'no connector corridor cells');
+    assert.equal(plan.doors.length,plan.edges.length, 'one shared-wall doorway per planned connection');
+    for (const door of plan.doors) {
+      const owners=door.cells.map(([x,z])=>plan.cells.find(c=>c.x===x && c.z===z).roomId);
+      assert.ok(plan.edges.some(e=>owners.includes(e.a) && owners.includes(e.b)));
+      for(const id of owners) {
+        const room=plan.rooms.find(r=>r.id===id);
+        const edgeCenters=room.modules.flatMap(([mx,mz])=>{
+          const cx=room.gridCenter[0]*plan.cellSize+mx*5,cz=room.gridCenter[1]*plan.cellSize+mz*5;
+          return [[cx-2.5,cz],[cx+2.5,cz],[cx,cz-2.5],[cx,cz+2.5]];
+        });
+        assert.ok(edgeCenters.some(([x,z])=>Math.hypot(door.x-x,door.z-z)<1e-6),`seed ${seed}, ${door.id} must center on both modules`);
+      }
+    }
     fingerprints.add(JSON.stringify(plan.cells));
     for (const room of plan.rooms) shapes.add(room.type);
     const boxes = [...plan.walls, ...plan.obstacles];
-    for (const side of ['left', 'right']) {
-      const excluded = [side === 'left' ? 'right' : 'left'];
-      const player = { ...plan.spawn };
-      for (const target of [point(plan, 'fork'), point(plan, side), plan.exit]) {
-        const route = pathThroughTiles(plan, player, target, excluded);
-        assert.ok(route, `${seed}: ${side}`); follow(player, route, boxes);
-        assert.ok(Math.hypot(player.x - target.x, player.z - target.z) < .001, `${seed}: collision failure ${side}`);
-      }
+    for(const shelf of plan.obstacles.filter(b=>b.kind==='bookshelf')) {
+      const [nx,nz]=shelf.wallNormal,cx=(shelf.minX+shelf.maxX)/2,cz=(shelf.minZ+shelf.maxZ)/2;
+      const rear={x:cx+nx*.35,z:cz+nz*.35};
+      const backing=plan.walls.filter(b=>nx ? cz>=b.minZ && cz<=b.maxZ : cx>=b.minX && cx<=b.maxX);
+      assert.ok(backing.some(b=>Math.abs((nx ? (nx>0?b.minX:b.maxX)-rear.x : (nz>0?b.minZ:b.maxZ)-rear.z)-(nx||nz)*.025)<1e-6),'shelf back must sit 2.5 cm from solid wall');
+      assert.ok(!plan.walls.some(b=>shelf.maxX>b.minX && shelf.minX<b.maxX && shelf.maxZ>b.minZ && shelf.minZ<b.maxZ),'shelf does not penetrate wall');
     }
-    const player = { ...point(plan, 'cat') };
-    for (const id of plan.returnLoop.slice(1)) {
-      const target = point(plan, id);
-      follow(player, pathThroughTiles(plan, player, target), boxes);
-      assert.ok(Math.hypot(player.x - target.x, player.z - target.z) < .001);
+    graphs.add(JSON.stringify(plan.edges.map(e=>[e.a,e.b]).sort()));
+    counts.add(plan.rooms.length); cycleCounts.add(plan.opportunities.cycles.length);
+    for (const room of plan.rooms) {
+      const player={...plan.spawn}, target=point(plan,room.id);
+      const route=pathThroughTiles(plan,player,target);
+      assert.ok(route); follow(player,route,boxes);
+      assert.ok(Math.hypot(player.x-target.x,player.z-target.z)<.001);
     }
+    for (const cycle of plan.opportunities.cycles) {
+      assert.equal(cycle[0],cycle.at(-1));
+      for(let i=1;i<cycle.length;i++) assert.ok(plan.edges.some(e=>e.a===cycle[i-1] && e.b===cycle[i] || e.b===cycle[i-1] && e.a===cycle[i]));
+    }
+    for(const fork of plan.opportunities.forks) assert.ok(fork.neighbors.length>=3);
+    if(plan.reserved.cat) assert.ok(plan.opportunities.revisitCandidates.includes(plan.reserved.cat.roomId));
+    else assert.ok(plan.opportunities.revisitCandidates.filter(id=>id!==plan.exit.roomId).length===0);
+
   }
+  assert.ok(graphs.size>30,'connections must vary, not only geometry');
+  assert.ok(counts.size>=4);
+  assert.ok(cycleCounts.has(0) && cycleCounts.size>1,'loops are opportunities, not compulsory');
   assert.equal(shapes.size,11, 'all selected outlines appear in generated maps');
   assert.ok(fingerprints.size > 50, `only ${fingerprints.size} layouts`);
 });
 
-test('validator rejects overlapping tiles, blocked doors and broken return loop', () => {
+test('validator rejects overlapping tiles, blocked doors and stale topology records', () => {
   const plan = generatePlan('42');
   const overlap = structuredClone(plan); overlap.cells.push(overlap.cells[0]);
   assert.ok(validatePlan(overlap).errors.includes('ROOM_OVERLAP'));
   const blocked = structuredClone(plan); const d = blocked.doors[0];
   blocked.obstacles.push({ minX: d.x - 1, maxX: d.x + 1, minZ: d.z - 1, maxZ: d.z + 1 });
   assert.ok(validatePlan(blocked).errors.some(e => e.startsWith('BLOCKED_DOOR')));
-  const broken = structuredClone(plan); broken.edges = broken.edges.filter(e => !(e.a === 'back' && e.b === 'cat'));
-  assert.ok(validatePlan(broken).errors.includes('BROKEN_RETURN_LOOP'));
+  const broken = structuredClone(plan); broken.opportunities.forks.push({roomId:'fake',neighbors:[]});
+  assert.ok(validatePlan(broken).errors.includes('STALE_OPPORTUNITIES'));
+});
+
+test('validator rejects a traversable door shifted to a side navigation tile', async () => {
+  const {buildWalls}=await import('../src/planning/validate.js');
+  const p=generatePlan('42'),d=p.doors.find(d=>d.id!=='bedroom');
+  const offset=d.axis==='x' ? 1:0;
+  d.cells=d.cells.map(c=>c.map((v,i)=>v+(i===offset ? 1:0)));
+  d[d.axis==='x' ? 'z':'x']+=p.cellSize;
+  p.obstacles=[];p.reserved.cat=null;p.walls=buildWalls(p);
+  const errors=validatePlan(p).errors;
+  assert.ok(errors.includes(`OFF_CENTER_MODULE_DOOR:${d.id}`));
+  assert.ok(!errors.includes(`BLOCKED_DOOR:${d.id}`),'off-center position can be physically traversable');
 });
 
 test('bounded attempts use an explicitly reported, validated fallback', () => {
@@ -71,7 +108,7 @@ test('bounded attempts use an explicitly reported, validated fallback', () => {
 test('rendered world uses validated geometry; closed door blocks, opening permits traversal, reset restores it', () => {
   const plan = generatePlan('42');
   const scene = new THREE.Scene(), world = createWorld(scene, plan);
-  const state = createState(plan), target = point(plan, 'cat');
+  const state = createState(plan), target = point(plan, plan.edges[0].b);
   const route = pathThroughTiles(plan, state.player, target);
   follow(state.player, route, world.getColliders());
   assert.ok(Math.hypot(state.player.x - target.x, state.player.z - target.z) > 2);
@@ -154,7 +191,7 @@ test('macro masks preserve 3x3 room outlines and leave adjoining modules open', 
   assert.ok(!templateModules('elbow').some(([x,z])=>x===0 && z===0));
   assert.deepEqual(templateModules('cross'), [[0,-1],[-1,0],[0,0],[1,0],[0,1]]);
   const cells=templateCells('square').map(([x,z])=>({x,z,roomId:'room'}));
-  const walls=buildWalls({cells});
+  const walls=buildWalls({cells,doors:[]});
   assert.ok(walls.every(b=>Math.abs((b.minX+b.maxX)/2)>7.4 || Math.abs((b.minZ+b.maxZ)/2)>7.4), 'no walls at module seams');
 });
 
@@ -197,4 +234,54 @@ test('all eleven masks are connected; ring center stays empty in generated rooms
     }
   }
   assert.ok(checked);
+});
+
+
+test('touching rooms stay separated except at planned shared-wall doors', async () => {
+  const {buildNavigation}=await import('../src/planning/validate.js');
+  const plan=generatePlan('42'), graph=buildNavigation(plan);
+  const owners=new Map(plan.cells.map(c=>[`${c.x},${c.z}`,c.roomId]));
+  const portals=new Set(plan.doors.map(d=>d.cells.map(c=>c.join(',')).sort().join('|')));
+  for (const [a,neighbors] of graph) for (const b of neighbors) {
+    if (owners.get(a)!==owners.get(b)) assert.ok(portals.has([a,b].sort().join('|')));
+  }
+});
+
+
+test('room boundaries are continuous solids except doors, and missing walls are rejected', async () => {
+  const {validateRoomBoundaries}=await import('../src/planning/validate.js');
+  const {CELL_SIZE,DIRECTIONS,keyOf}=await import('../src/planning/templates.js');
+  const plan=generatePlan('42');
+  assert.deepEqual(validateRoomBoundaries(plan),[]);
+  const broken=structuredClone(plan); broken.walls=[];
+  assert.ok(validatePlan(broken).errors.some(e=>e.startsWith('OPEN_ROOM_BOUNDARY')));
+  const tiles=new Map(plan.cells.map(t=>[keyOf(t.x,t.z),t]));
+  const doors=new Set(plan.doors.map(d=>d.cells.map(c=>keyOf(...c)).sort().join('|')));
+  let checked=0;
+  for (const t of plan.cells) for (const [dx,dz] of DIRECTIONS) {
+    const n=tiles.get(keyOf(t.x+dx,t.z+dz));
+    if (n?.roomId===t.roomId || n && doors.has([keyOf(t.x,t.z),keyOf(n.x,n.z)].sort().join('|'))) continue;
+    for (const offset of [-.5,0,.5]) {
+      const x=(t.x+dx/2)*CELL_SIZE, z=(t.z+dz/2)*CELL_SIZE;
+      const player={x:x-dx*.5+dz*offset,z:z-dz*.5+dx*offset};
+      movePlayer(player,dx,dz,plan.walls);
+      assert.ok((player.x-x)*dx+(player.z-z)*dz<0,'boundary must stop movement');
+      checked++;
+    }
+  }
+  assert.ok(checked>100);
+});
+
+test('topology analysis reports real cycles, forks, dead ends and routes without forcing events', async () => {
+  const {inspectTopology}=await import('../src/planning/topology.js');
+  const rooms=['bedroom','a','b','c','d'].map(id=>({id,modules:[[0,0]]}));
+  const edges=[['bedroom','a'],['a','b'],['b','c'],['c','a'],['a','d']].map(([a,b],i)=>({id:String(i),a,b}));
+  const result=inspectTopology(rooms,edges);
+  assert.equal(result.cycles.length,1);
+  assert.deepEqual(result.forks,[{roomId:'a',neighbors:['bedroom','b','c','d']}]);
+  assert.deepEqual(result.deadEnds,['d']);
+  assert.deepEqual(new Set(result.revisitCandidates),new Set(['a','b','c']));
+  const tree=inspectTopology(rooms,edges.filter(e=>e.id!=='3'));
+  assert.deepEqual(tree.cycles,[]);assert.deepEqual(tree.revisitCandidates,[]);
+  assert.deepEqual(tree.exitRoute,['bedroom','a','b','c']);
 });
