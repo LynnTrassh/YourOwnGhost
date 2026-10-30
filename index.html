@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111817"><title>心里有鬼 · Your Own Ghost</title></head>
+<body>
+  <canvas id="game" aria-label="第一人称梦境场景"></canvas>
+  <div id="vignette" aria-hidden="true"></div>
+  <header><span>YOUR OWN GHOST</span><span id="location">卧室</span></header>
+  <div id="crosshair" hidden aria-hidden="true"></div>
+  <p id="prompt" role="status" hidden></p>
+  <p id="hint" hidden>W A S D 移动 <i>·</i> 鼠标环顾 <i>·</i> F 手电 <i>·</i> Esc 暂停</p>
+  <section id="menu" aria-labelledby="title">
+    <div class="panel">
+      <p class="eyebrow">A ROOM YOU ALMOST REMEMBER</p>
+      <h1 id="title">心里有鬼</h1>
+      <p id="description">你醒在一间熟悉的卧室。<br>门外，还有一盏灯亮着。</p>
+      <button id="start">进入梦境 <span>↗</span></button>
+      <button id="drag-mode" class="secondary" hidden>使用拖动视角模式</button>
+      <button id="restart" class="secondary" hidden>重新开始</button>
+      <label class="setting">鼠标灵敏度 <input id="sensitivity" type="range" min="0.4" max="2" step="0.1" value="1"></label>
+      <p id="notice">键鼠操作 · 点击后鼠标将锁定，按 Esc 释放<br>当前为探索原型，刷新或重新开始会重置进度。</p>
+      <p id="error" role="alert"></p>
+    </div>
+    <span class="version">探索原型 / 01</span>
+  </section>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
