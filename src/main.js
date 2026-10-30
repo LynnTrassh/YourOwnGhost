@@ -64,7 +64,8 @@ function init() {
     $('plan-status').textContent = `种子 ${seed} · 第 ${state.layer} 层 · ${plan.rooms.length} 个房间 · ${plan.opportunities.cycles.length} 个环路 / ${plan.opportunities.forks.length} 个分叉 · ${plan.planHash}${plan.validation.fallback ? ' · 保底布局' : ' · 校验通过'} · 猫场景 ${state.layer===2?'本层未启用':plan.story.cat?'可用':'不适配'} / 左右建议 ${plan.story.routes.length} 处 · 起始${TEMPLATE_NAMES[bedroom.type]} ${sizeX}×${sizeZ}米`;
   }
   updatePlanStatus();
-  const flashlight = new THREE.SpotLight(0xffe6b8, 24, 15, Math.PI / 7, .82, 1.5);
+  // Keep a broad illuminated core and a shorter soft edge, including up close.
+  const flashlight = new THREE.SpotLight(0xffe6b8, 46, 20, Math.PI / 7, .5, 1.25);
   flashlight.position.set(.14, -.15, -.12);
   flashlight.target.position.set(0, -.08, -6);
   flashlight.castShadow = true;
