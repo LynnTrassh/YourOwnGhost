@@ -23,7 +23,7 @@ function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled) {
   const cat=catEnabled ? topology.rooms.find(r=>r.id===catId) : null;
   const reservation=cat ? {roomId:cat.id,focus:{x:cat.center[0]*CELL_SIZE,z:cat.center[1]*CELL_SIZE},slots:[]} : null;
   if(cat) for(const x of [-2,0,2]) for(const z of [-2,0,2]) reservation.slots.push({x:cat.center[0]*CELL_SIZE+x,z:cat.center[1]*CELL_SIZE+z});
-  const plan={version:13,moduleSize:MODULE_SIZE,seed:String(seed),attempt,cellSize:CELL_SIZE,...topology,opportunities,
+  const plan={version:15,moduleSize:MODULE_SIZE,seed:String(seed),attempt,cellSize:CELL_SIZE,...topology,opportunities,
     spawn:{x:0,z:0,yaw:0},exit:{roomId:exitId,x:exit.center[0]*CELL_SIZE,z:exit.center[1]*CELL_SIZE},
     reserved:{cat:reservation},
     obstacles:[{id:'bed',kind:'bed',roomId:'bedroom',minX:-1.95,maxX:-1.15,minZ:.3,maxZ:2.2}]};

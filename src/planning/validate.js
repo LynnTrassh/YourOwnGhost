@@ -110,12 +110,12 @@ export function validatePlan(plan) {
       || Math.abs(d.x-(a[0]+b[0])*CELL_SIZE/2)>1e-6 || Math.abs(d.z-(a[1]+b[1])*CELL_SIZE/2)>1e-6) errors.push(`INVALID_DOOR_GEOMETRY:${d.id}`);
     for (const [x,z] of d.cells) {
       const owner=plan.rooms.find(r=>r.id===plan.cells.find(t=>t.x===x && t.z===z)?.roomId);
-      const centered=owner?.modules.some(([mx,mz])=>{
-        const cx=owner.gridCenter[0]*CELL_SIZE+mx*MODULE_SIZE,cz=owner.gridCenter[1]*CELL_SIZE+mz*MODULE_SIZE;
-        return d.axis==='x' ? Math.abs(d.z-cz)<1e-6 && Math.abs(Math.abs(d.x-cx)-MODULE_SIZE/2)<1e-6
-          : d.axis==='z' && Math.abs(d.x-cx)<1e-6 && Math.abs(Math.abs(d.z-cz)-MODULE_SIZE/2)<1e-6;
-      });
-      if(!centered) errors.push(`OFF_CENTER_MODULE_DOOR:${d.id}`);
+      const cx=owner?.gridCenter[0]*CELL_SIZE,cz=owner?.gridCenter[1]*CELL_SIZE;
+      const halfFrame=MODULE_SIZE*3/2;
+      const centered=owner && (d.axis==='x'
+        ? Math.abs(d.z-cz)<1e-6 && Math.abs(Math.abs(d.x-cx)-halfFrame)<1e-6
+        : d.axis==='z' && Math.abs(d.x-cx)<1e-6 && Math.abs(Math.abs(d.z-cz)-halfFrame)<1e-6);
+      if(!centered) errors.push(`OFF_CENTER_ROOM_DOOR:${d.id}`);
     }
     if (boxes.some(b => overlaps(d.x, d.z, b))) errors.push(`BLOCKED_DOOR:${d.id}`);
   }

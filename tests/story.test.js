@@ -24,7 +24,7 @@ test('vision requires facing and respects wall height and occlusion',()=>{
   assert.equal(sightClear(v,target,[{...block,height:1}]),true);
 });
 test('story fitting is deterministic, rejects blocked views, and leaves topology unchanged',()=>{
-  const p=generatePlan('3'),before=JSON.stringify([p.cells,p.edges,p.rooms]);
+  const p=generatePlan('4'),before=JSON.stringify([p.cells,p.edges,p.rooms]);
   assert.ok(p.story.cat);
   assert.deepEqual(fitStories(p),p.story);
   assert.equal(JSON.stringify([p.cells,p.edges,p.rooms]),before);
@@ -35,7 +35,7 @@ test('story fitting is deterministic, rejects blocked views, and leaves topology
   assert.equal(generatePlan('42').story.cat,null);
 });
 test('cats require continuous group observation; pause and looking away do not count',()=>{
-  const p=generatePlan('3'),s=createStoryState(),v=catView(p);
+  const p=generatePlan('4'),s=createStoryState(),v=catView(p);
   stepStory(p,s,v,.5);assert.equal(s.catPhase,'unobserved');
   stepStory(p,s,v,10,{active:false});assert.equal(s.exposure,.5);
   stepStory(p,s,{...v,yaw:v.yaw+Math.PI},.1);assert.equal(s.exposure,0);
@@ -45,7 +45,7 @@ test('cats require continuous group observation; pause and looking away do not c
   stepStory(p,s,v,10,{active:false});assert.equal(s.cue.remaining,remaining);
 });
 test('only observed cats change on normal door departure; return cue is once and restart is fresh',()=>{
-  const p=generatePlan('3'),cat=p.story.cat,v=catView(p);
+  const p=generatePlan('4'),cat=p.story.cat,v=catView(p);
   const door=p.doors.find(d=>d.cells.some(([x,z])=>p.cells.some(c=>c.x===x&&c.z===z&&c.roomId===cat.roomId)));
   const [inside,outside]=doorSides(p,door,cat.roomId);
   const unseen=createStoryState();

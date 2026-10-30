@@ -1,4 +1,4 @@
-import { CELL_SIZE, MODULE_TILES, DIRECTIONS, keyOf, templateCells, templateModules, ROOM_MASKS } from './templates.js';
+import { CELL_SIZE, DIRECTIONS, keyOf, templateCells, templateModules, ROOM_MASKS } from './templates.js';
 
 const variants=Object.keys(ROOM_MASKS).flatMap(type=>[0,1,2,3].map(rotation=>({type,rotation,cells:templateCells(type,rotation)})));
 const compatibilityCache=new Map();
@@ -6,10 +6,8 @@ function compatibleVariants(parent,dx,dz) {
   const key=`${parent.id==='bedroom'}:${parent.type}:${parent.rotation}:${dx}:${dz}`;
   if(!compatibilityCache.has(key)) {
     const parentCells=new Set(templateCells(parent.type,parent.rotation).map(c=>keyOf(...c)));
-    compatibilityCache.set(key,variants.filter(v=>v.cells.some(([x,z])=> {
-      const px=x+dx*9-dx,pz=z+dz*9-dz;
-      return (dx ? pz : px)%MODULE_TILES===0 && parentCells.has(keyOf(px,pz)) && (parent.id!=='bedroom' || px===0 && pz===-4);
-    })));
+    const available=parentCells.has(keyOf(dx*4,dz*4)) && (parent.id!=='bedroom' || dx===0 && dz===-1);
+    compatibilityCache.set(key,available ? variants.filter(v=>v.cells.some(([x,z])=>x===-dx*4 && z===-dz*4)) : []);
   }
   return compatibilityCache.get(key);
 }
@@ -19,17 +17,14 @@ function room(id, gridCenter, variant, tint) {
   return {id,name:id==='bedroom' ? '卧室':`房间 ${id.slice(5)}`,type:variant.type,rotation:variant.rotation,gridCenter,center,cells,modules:templateModules(variant.type,variant.rotation),tint};
 }
 function contacts(a,b) {
-  const bTiles=new Set(b.cells.map(c=>keyOf(...c))), result=[];
-  for (const p of a.cells) for (const [dx,dz] of DIRECTIONS) {
-    const q=[p[0]+dx,p[1]+dz];
-    if (!bTiles.has(keyOf(...q))) continue;
-    // Choose a shared module edge, never an off-center navigation tile on it.
-    if ((dx ? p[1]-a.gridCenter[1] : p[0]-a.gridCenter[0])%MODULE_TILES!==0) continue;
-    if (a.id==='bedroom' && (p[0]!==0 || p[1]!==-4 || dz!==-1)) continue;
-    if (b.id==='bedroom' && (q[0]!==0 || q[1]!==-4 || dz!==1)) continue;
-    result.push([p,q]);
-  }
-  return result;
+  const dx=(b.gridCenter[0]-a.gridCenter[0])/9,dz=(b.gridCenter[1]-a.gridCenter[1])/9;
+  if (!DIRECTIONS.some(([x,z])=>x===dx && z===dz)) return [];
+  if (a.id==='bedroom' && (dx!==0 || dz!==-1)) return [];
+  if (b.id==='bedroom' && (dx!==0 || dz!==1)) return [];
+  // Only the four outer-frame midpoints are ports; missing modules close that side.
+  const p=[a.gridCenter[0]+dx*4,a.gridCenter[1]+dz*4];
+  const q=[b.gridCenter[0]-dx*4,b.gridCenter[1]-dz*4];
+  return a.cells.some(([x,z])=>x===p[0] && z===p[1]) && b.cells.some(([x,z])=>x===q[0] && z===q[1]) ? [[p,q]] : [];
 }
 export function growTopology(rng,decor) {
   const rooms=[room('bedroom',[0,0],variants.find(v=>v.type==='tee' && v.rotation===2),0.02749206800945103)];

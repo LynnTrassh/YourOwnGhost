@@ -27,6 +27,7 @@ test('100 seeds produce varied connected topologies with traversable rooms and o
     const plan = generatePlan(String(seed));
     assert.equal(plan.validation.fallback, false, `seed ${seed}`);
     assert.equal(validatePlan(plan).valid, true);
+    assert.ok(plan.obstacles.every(b=>b.kind!=='partition'),'standalone partitions have been removed');
     assert.ok(plan.cells.every(c=>plan.rooms.some(r=>r.id===c.roomId)), 'no connector corridor cells');
     assert.equal(plan.doors.length,plan.edges.length, 'one shared-wall doorway per planned connection');
     for (const door of plan.doors) {
@@ -34,11 +35,9 @@ test('100 seeds produce varied connected topologies with traversable rooms and o
       assert.ok(plan.edges.some(e=>owners.includes(e.a) && owners.includes(e.b)));
       for(const id of owners) {
         const room=plan.rooms.find(r=>r.id===id);
-        const edgeCenters=room.modules.flatMap(([mx,mz])=>{
-          const cx=room.gridCenter[0]*plan.cellSize+mx*5,cz=room.gridCenter[1]*plan.cellSize+mz*5;
-          return [[cx-2.5,cz],[cx+2.5,cz],[cx,cz-2.5],[cx,cz+2.5]];
-        });
-        assert.ok(edgeCenters.some(([x,z])=>Math.hypot(door.x-x,door.z-z)<1e-6),`seed ${seed}, ${door.id} must center on both modules`);
+        const cx=room.gridCenter[0]*plan.cellSize,cz=room.gridCenter[1]*plan.cellSize;
+        const edgeCenters=[[cx-7.5,cz],[cx+7.5,cz],[cx,cz-7.5],[cx,cz+7.5]];
+        assert.ok(edgeCenters.some(([x,z])=>Math.hypot(door.x-x,door.z-z)<1e-6),`seed ${seed}, ${door.id} must center on both room frames`);
       }
     }
     fingerprints.add(JSON.stringify(plan.cells));
@@ -94,8 +93,22 @@ test('validator rejects a traversable door shifted to a side navigation tile', a
   d[d.axis==='x' ? 'z':'x']+=p.cellSize;
   p.obstacles=[];p.reserved.cat=null;p.walls=buildWalls(p);
   const errors=validatePlan(p).errors;
-  assert.ok(errors.includes(`OFF_CENTER_MODULE_DOOR:${d.id}`));
+  assert.ok(errors.includes(`OFF_CENTER_ROOM_DOOR:${d.id}`));
   assert.ok(!errors.includes(`BLOCKED_DOOR:${d.id}`),'off-center position can be physically traversable');
+});
+
+test('validator rejects a traversable side-module midpoint on the outer wall', async () => {
+  const {buildWalls}=await import('../src/planning/validate.js');
+  const p=generatePlan('42');
+  const d=p.doors.find(d=>d.id!=='bedroom' && d.cells.every(([x,z])=>
+    p.cells.some(c=>c.x===x+(d.axis==='z' ? 3:0) && c.z===z+(d.axis==='x' ? 3:0))));
+  assert.ok(d,'fixture includes a shared side-module edge');
+  const axis=d.axis==='x' ? 1:0;
+  d.cells=d.cells.map(c=>c.map((v,i)=>v+(i===axis ? 3:0)));
+  d[d.axis==='x' ? 'z':'x']+=5;
+  p.obstacles=[];p.reserved.cat=null;p.walls=buildWalls(p);
+  const errors=validatePlan(p).errors;
+  assert.deepEqual(errors,[`OFF_CENTER_ROOM_DOOR:${d.id}`], 'a passable module midpoint is still invalid away from the frame center');
 });
 
 test('bounded attempts use an explicitly reported, validated fallback', () => {

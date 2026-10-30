@@ -75,7 +75,7 @@ export function createWorld(scene, plan = generatePlan('42')) {
       }
       part(length-.2,.08,depth-.1,0,h-.04,-.05,wood);
     } else {
-      box(w,b.height-.08,d,x,(b.height-.08)/2,z,b.kind === 'partition' ? roomMaterials.get(b.roomId) : wood,true);
+      box(w,b.height-.08,d,x,(b.height-.08)/2,z,wood,true);
       box(w,.08,d,x,b.height-.04,z,trim,true);
     }
   }

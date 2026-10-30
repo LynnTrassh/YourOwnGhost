@@ -1,6 +1,6 @@
 import { CELL_SIZE, DIRECTIONS, keyOf, rotate } from './templates.js';
 
-export const INTERIOR_NAMES = { island: '中央绕行', partition: '隔断分区', staggered: '交错柜体', perimeter: '沿墙陈设' };
+export const INTERIOR_NAMES = { island: '中央绕行', empty: '留白空间', staggered: '交错柜体', perimeter: '沿墙陈设' };
 
 // Layout randomness is independent of shell geometry and cosmetic decoration.
 export function populateInteriors(plan, rng, decor) {
@@ -24,7 +24,7 @@ export function populateInteriors(plan, rng, decor) {
       const [lx,lz] = rotate([x-room.center[0], z-room.center[1]], (4-turn)%4);
       const boundary = DIRECTIONS.some(([dx,dz]) => !tiles.has(keyOf(x+dx,z+dz)));
       const fits = type === 'island' ? lx === 1 && Math.abs(lz) <= 1
-        : type === 'partition' ? lx === 1 && lz !== 1
+        : type === 'empty' ? false
         : type === 'staggered' ? (lz === -1 && lx <= 0 || lz === 1 && lx >= 0)
         : boundary && (lx + lz) % 2 === 0;
       if (fits && !protectedTiles.has(keyOf(x,z))) candidates.push([x,z]);
@@ -41,7 +41,7 @@ export function populateInteriors(plan, rng, decor) {
       }
       if (seen.size !== tiles.size-blocked.size) { blocked.delete(key); continue; }
       const wallNormal = DIRECTIONS.find(([dx,dz])=>!tiles.has(keyOf(x+dx,z+dz)));
-      const kind = type === 'partition' ? 'partition' : type === 'island' || !wallNormal ? 'counter' : 'bookshelf';
+      const kind = type === 'island' || !wallNormal ? 'counter' : 'bookshelf';
       const alongX = kind === 'bookshelf' ? wallNormal[1]!==0 : turn % 2 === 1;
       const length = CELL_SIZE - .35;
       const w = alongX ? length : .7, d = alongX ? .7 : length;
@@ -49,7 +49,7 @@ export function populateInteriors(plan, rng, decor) {
       const inset=kind==='bookshelf' ? CELL_SIZE/2-.09-.025-.7/2 : 0;
       const cx=x*CELL_SIZE+(wallNormal?.[0]??0)*inset,cz=z*CELL_SIZE+(wallNormal?.[1]??0)*inset;
       const id = `${room.id}-interior-${room.interior.obstacleIds.length}`;
-      plan.obstacles.push({ id, roomId: room.id, kind, height: kind === 'counter' ? 1 : kind === 'partition' ? 2.7 : 2.3,
+      plan.obstacles.push({ id, roomId: room.id, kind, height: kind === 'counter' ? 1 : 2.3,
         minX: cx-w/2, maxX: cx+w/2, minZ: cz-d/2, maxZ: cz+d/2,
         ...(kind==='bookshelf' ? {wallNormal:[...wallNormal]} : {}),
         decoration: room.id === 'bedroom' ? .35 : decor() });
