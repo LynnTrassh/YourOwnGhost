@@ -6,6 +6,7 @@ import { createWorld } from './world.js';
 import { generatePlan } from './planning/generate.js';
 import { TEMPLATE_NAMES } from './planning/templates.js';
 import { drawMap } from './map-preview.js';
+import { createVhsEffect } from './art/vhs-effect.js';
 
 const $ = id => document.getElementById(id);
 const canvas = $('game');
@@ -40,7 +41,7 @@ function init() {
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFShadowMap;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.25;
+  renderer.toneMappingExposure = 1.05;
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x111916);
   scene.fog = new THREE.Fog(0x111916, 9, 24);
@@ -48,12 +49,15 @@ function init() {
   camera.rotation.order = 'YXZ';
   scene.add(camera);
   const world = createWorld(scene, plan);
+  const vhs = createVhsEffect(renderer, scene, camera);
+  vhs.setIntensity($('vhs-intensity').value);
+  vhs.setFlashlight(state.player.flashlight);
   $('seed').value = plan.seed;
   const bedroom = plan.rooms.find(r => r.id === 'bedroom');
   const sizeX = (Math.max(...bedroom.cells.map(c => c[0])) - Math.min(...bedroom.cells.map(c => c[0])) + 1) * plan.cellSize;
   const sizeZ = (Math.max(...bedroom.cells.map(c => c[1])) - Math.min(...bedroom.cells.map(c => c[1])) + 1) * plan.cellSize;
   $('plan-status').textContent = `种子 ${plan.seed} · ${plan.rooms.length} 个房间 · ${plan.planHash}${plan.validation.fallback ? ' · 保底布局' : ' · 校验通过'} · 起始${TEMPLATE_NAMES[bedroom.type]} ${sizeX}×${sizeZ}米`;
-  const flashlight = new THREE.SpotLight(0xffe6b8, 24, 15, Math.PI / 7, .65, 1.5);
+  const flashlight = new THREE.SpotLight(0xffe6b8, 24, 15, Math.PI / 7, .82, 1.5);
   flashlight.position.set(.14, -.15, -.12);
   flashlight.target.position.set(0, -.08, -6);
   flashlight.castShadow = true;
@@ -119,6 +123,7 @@ function init() {
   });
   $('close-map').addEventListener('click', () => { $('map-panel').hidden = true; });
   $('sensitivity').addEventListener('input', event => { sensitivity = Number(event.target.value); });
+  $('vhs-intensity').addEventListener('input', event => vhs.setIntensity(event.target.value));
   document.addEventListener('pointerlockchange', () => {
     if (document.pointerLockElement === canvas) {
       activate();
@@ -150,7 +155,10 @@ function init() {
     if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'KeyE', 'KeyF', 'Space'].includes(event.code)) event.preventDefault();
     keys.add(event.code);
     if (event.repeat) return;
-    if (event.code === 'KeyF') state.player.flashlight = !state.player.flashlight;
+    if (event.code === 'KeyF') {
+      state.player.flashlight = !state.player.flashlight;
+      vhs.setFlashlight(state.player.flashlight);
+    }
     if (event.code === 'KeyE') {
       if (!state.player.standing) state.player.standing = true;
       else if (targetDoor) state.doors.bedroom.open = true;
@@ -161,6 +169,7 @@ function init() {
   window.addEventListener('resize', () => {
     camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
     renderer.setSize(innerWidth, innerHeight);
+    vhs.resize(innerWidth, innerHeight);
   });
   canvas.addEventListener('webglcontextlost', event => {
     event.preventDefault(); document.exitPointerLock(); pause();
@@ -193,6 +202,7 @@ function init() {
       $('prompt').hidden = !($('prompt').textContent);
     }
     $('location').textContent = world.roomAt(state.player.x, state.player.z);
-    renderer.render(scene, camera);
+    vhs.render(time / 1000);
   });
+  vhs.resize(innerWidth, innerHeight);
 }
