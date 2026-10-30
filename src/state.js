@@ -1,9 +1,13 @@
+import { createThreatState } from './threat.js';
 import { createStoryState } from './story/runtime.js';
-export function createState(plan) {
+import { selectFear } from './personalization/fear.js';
+export function createState(plan,fearId='generic') {
   return {
     layer: 1,
-    flow: { phase: 'waking', transition: null, transitionId: 0, falseAwakenings: 0, wakeExposure: 0, exitExposure: 0, history: [] },
+    fear: selectFear(fearId),
+    flow: { phase: 'waking', transition: null, transitionId: 0, falseAwakenings: 0, deaths: 0, graceRemaining: 0, wakeReason: 'initial', wakeExposure: 0, exitExposure: 0, history: [] },
     story: createStoryState(),
+    threat: createThreatState(plan),
     seed: plan?.seed ?? '42',
     planHash: plan?.planHash ?? null,
     completed: false,

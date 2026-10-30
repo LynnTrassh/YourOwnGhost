@@ -26,6 +26,20 @@ export function drawMap(canvas, plan, player) {
     ctx.beginPath(); ctx.moveTo(x - (d.axis === 'z' ? .25 * scale : 0), z - (d.axis === 'x' ? .25 * scale : 0));
     ctx.lineTo(x + (d.axis === 'z' ? .25 * scale : 0), z + (d.axis === 'x' ? .25 * scale : 0)); ctx.stroke();
   }
+  // Reservation diagnostics stay in the map, never in the playable scene.
+  ctx.strokeStyle = '#f5d583'; ctx.fillStyle = '#f5d583'; ctx.lineWidth = 1;
+  for (const slot of (plan.reserved.cat?.slots ?? [])) {
+    ctx.beginPath();
+    ctx.arc((slot.x/CELL_SIZE-minX)*scale, (slot.z/CELL_SIZE-minZ)*scale, 2, 0, Math.PI*2);
+    if (plan.story?.cat) ctx.fill(); else ctx.stroke();
+  }
+  if(plan.threat) {
+    const {spawn,observation}=plan.threat;
+    ctx.fillStyle='#e47e70';
+    ctx.fillRect((spawn.x/CELL_SIZE-minX)*scale-3,(spawn.z/CELL_SIZE-minZ)*scale-3,6,6);
+    ctx.strokeStyle='#e47e70';ctx.beginPath();
+    ctx.arc((observation.x/CELL_SIZE-minX)*scale,(observation.z/CELL_SIZE-minZ)*scale,3,0,Math.PI*2);ctx.stroke();
+  }
   ctx.font = '11px sans-serif'; ctx.textAlign = 'center'; ctx.fillStyle = '#f2f1df';
   for (const r of plan.rooms) ctx.fillText(r.id === plan.story?.cat?.roomId ? '猫群回访' : r.id === plan.reserved.cat?.roomId ? '回访候选' : r.name, (r.center[0] - minX) * scale, (r.center[1] - minZ) * scale + 4);
   ctx.beginPath(); ctx.arc((player.x / CELL_SIZE - minX) * scale, (player.z / CELL_SIZE - minZ) * scale, 5, 0, Math.PI * 2); ctx.fillStyle = '#fff'; ctx.fill();

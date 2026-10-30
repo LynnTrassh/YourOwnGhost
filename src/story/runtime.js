@@ -8,7 +8,7 @@ export function presentCue(state,kind,key,text,roomId,duration=4) {
 export function createStoryState() {
   return {catPhase:'unobserved',exposure:0,deadSeen:false,previous:null,entryDoorId:null,route:null,routeFinished:false,consumed:[],cue:null,behaviorCount:0,facts:[]};
 }
-export function stepStory(plan,state,view,dt,{active=true,cause='normal',boxes=[...plan.walls,...plan.obstacles]}={}) {
+export function stepStory(plan,state,view,dt,{active=true,cause='normal',suppressRoutes=false,boxes=[...plan.walls,...plan.obstacles]}={}) {
   if(!active) return;
   const roomId=roomIdAt(plan,view),previous=state.previous;
   if(cause!=='normal') {
@@ -50,8 +50,8 @@ export function stepStory(plan,state,view,dt,{active=true,cause='normal',boxes=[
       if(state.catPhase==='dead') {state.deadSeen=true;say('catDead','catDead',roomId);}
     }
   }
-  if(chosenRight && state.behaviorCount<2 && say('right','right',roomId,3)) {state.behaviorCount++;state.facts.push('route.rightAfterSuggestion');}
-  if(!state.route && !state.consumed.includes('suggest')) {
+  if(!suppressRoutes && chosenRight && state.behaviorCount<2 && say('right','right',roomId,3)) {state.behaviorCount++;state.facts.push('route.rightAfterSuggestion');}
+  if(!suppressRoutes && !state.route && !state.consumed.includes('suggest')) {
     const route=plan.story.routes.find(r=>r.roomId===roomId && r.entryDoorId===state.entryDoorId && Math.hypot(view.x-r.origin.x,view.z-r.origin.z)<2);
     if(route) {
       const left=plan.doors.find(d=>d.id===route.leftDoorId);

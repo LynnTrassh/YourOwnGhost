@@ -3,9 +3,12 @@ import { INTERIOR_NAMES } from './planning/interiors.js';
 import { generatePlan } from './planning/generate.js';
 import { CELL_SIZE, DIRECTIONS, keyOf } from './planning/templates.js';
 import { createBedroomSet } from './art/bedroom-set.js';
+import { createThreatProxy } from './rendering/threat-proxy.js';
+import { appearanceFor } from './personalization/fear.js';
 import { wallSurfaces, unionPatches } from './rendering/wall-surfaces.js';
 
-export function createWorld(scene, plan = generatePlan('42')) {
+export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceId='generic-proxy'}={}) {
+  appearanceFor(threatAppearanceId);
   const root = new THREE.Group();
   const solids = [], doorMeshes = [], resources = new Set();
   function material(color, extra = {}) {
@@ -108,14 +111,14 @@ export function createWorld(scene, plan = generatePlan('42')) {
       box(w,.08,d,x,b.height-.04,z,trim,true);
     }
   }
-  function label(text, x, z, y = 2.55) {
+  function label(text, x, z, y = 2.55, width = 2.4) {
     if (typeof document === 'undefined') return;
-    const canvas = document.createElement('canvas'); canvas.width = 512; canvas.height = 96;
-    const ctx = canvas.getContext('2d'); ctx.fillStyle = '#17211de6'; ctx.fillRect(0, 0, 512, 96);
-    ctx.fillStyle = '#d1d7bd'; ctx.font = '30px sans-serif'; ctx.textAlign = 'center'; ctx.fillText(text, 256, 59);
+    const canvas = document.createElement('canvas'); canvas.width = Math.round(width/.45*96); canvas.height = 96;
+    const ctx = canvas.getContext('2d'); ctx.fillStyle = '#17211de6'; ctx.fillRect(0, 0, canvas.width, 96);
+    ctx.fillStyle = '#d1d7bd'; ctx.font = '30px sans-serif'; ctx.textAlign = 'center'; ctx.fillText(text, canvas.width/2, 59);
     const texture = new THREE.CanvasTexture(canvas); resources.add(texture);
     const mat = new THREE.SpriteMaterial({ map: texture, depthTest: true }); resources.add(mat);
-    const sprite = new THREE.Sprite(mat); sprite.position.set(x, y, z); sprite.scale.set(2.4, .45, 1); root.add(sprite);
+    const sprite = new THREE.Sprite(mat); sprite.position.set(x, y, z); sprite.scale.set(width, .45, 1); root.add(sprite);
   }
   const windowMat = material(0x73838a, { emissive: 0x34454c, emissiveIntensity: .2 });
   for (const room of plan.rooms) {
@@ -139,25 +142,27 @@ export function createWorld(scene, plan = generatePlan('42')) {
     }
   }
   root.add(new THREE.HemisphereLight(0xb0bfb1, 0x3d382e, .62));
-  const markers = material(0xbcb18b, { emissive: 0x534527, emissiveIntensity: .3 });
-  for (const slot of (plan.reserved.cat?.slots ?? [])) box(.4, .025, .4, slot.x, .014, slot.z, markers);
   // Small non-interactive placeholders; do not change the validated walking space.
-  const cats = [], fur = material(0x7c776f), eyes = material(0xcbdba0, { emissive: 0x839257, emissiveIntensity: .6 });
-  for (const slot of (plan.story?.cat?.slots ?? [])) {
-    const body = new THREE.Group(), head = new THREE.Group();
-    body.position.set(slot.x, 0, slot.z); root.add(body);
-    const part = (parent, w, h, d, x, y, z, mat) => {
-      const mesh = new THREE.Mesh(unitBox, mat); mesh.scale.set(w, h, d); mesh.position.set(x, y, z); parent.add(mesh); return mesh;
-    };
-    part(body, .38, .36, .6, 0, .25, 0, fur);
-    head.position.set(0, .55, -.14); body.add(head);
-    part(head, .34, .28, .3, 0, 0, 0, fur);
-    for (const side of [-1, 1]) {
-      part(head, .09, .16, .12, side * .12, .19, 0, fur);
-      part(head, .045, .05, .015, side * .09, .02, -.155, eyes);
+  const cats = [];
+  if (plan.story?.cat) {
+    const group = new THREE.Group(); group.name = 'story-CAT01'; root.add(group);
+    const fur = material(0x7c776f), eyes = material(0xcbdba0, { emissive: 0x839257, emissiveIntensity: .6 });
+    for (const slot of plan.story.cat.slots) {
+      const body = new THREE.Group(), head = new THREE.Group();
+      body.position.set(slot.x, 0, slot.z); group.add(body);
+      const part = (parent, w, h, d, x, y, z, mat) => {
+        const mesh = new THREE.Mesh(unitBox, mat); mesh.scale.set(w, h, d); mesh.position.set(x, y, z); parent.add(mesh); return mesh;
+      };
+      part(body, .38, .36, .6, 0, .25, 0, fur);
+      head.position.set(0, .55, -.14); body.add(head);
+      part(head, .34, .28, .3, 0, 0, 0, fur);
+      for (const side of [-1, 1]) {
+        part(head, .09, .16, .12, side * .12, .19, 0, fur);
+        part(head, .045, .05, .015, side * .09, .02, -.155, eyes);
+      }
+      part(body, .08, .35, .08, 0, .4, .3, fur);
+      cats.push({ body, head });
     }
-    part(body, .08, .35, .08, 0, .4, .3, fur);
-    cats.push({ body, head });
   }
   function updateStory(story, player) {
     for (const { body, head } of cats) {
@@ -167,8 +172,31 @@ export function createWorld(scene, plan = generatePlan('42')) {
       head.rotation.y = dead ? 0 : Math.atan2(body.position.x - player.x, body.position.z - player.z);
     }
   }
+  let statue=null;
+  if(plan.threat) {
+    statue=createThreatProxy(threatAppearanceId,resources);root.add(statue);
+    statue.position.set(plan.threat.spawn.x,0,plan.threat.spawn.z);
+    statue.rotation.y=Math.atan2(plan.threat.observation.x-plan.threat.spawn.x,plan.threat.observation.z-plan.threat.spawn.z);
+  }
+
+  function updateThreat(threat,player) {
+    exitLight.intensity=threat?.phase==='escaped'?15:10;
+    exitMarker.material.emissiveIntensity=threat?.phase==='escaped'?1.2:.7;
+    if(!statue || !threat) return;
+    statue.position.set(threat.x,0,threat.z);
+    if(threat.seesPlayer && threat.phase!=='escaped') statue.rotation.y=Math.atan2(player.x-threat.x,player.z-threat.z);
+  }
   const exitMarker = box(1.25, .035, 1.25, plan.exit.x, .02, plan.exit.z, material(0x84bba2, { emissive: 0x497e61, emissiveIntensity: .7 }));
-  label('出口 · E 离开这里', plan.exit.x, plan.exit.z, 1.9);
+  exitMarker.name='exit-marker';
+  // Overhead fixture and pool of light occupy no additional walking space.
+  const exitFixture=box(.9,.06,.9,plan.exit.x,2.87,plan.exit.z,material(0xc3d7c9,{emissive:0xb3d1c0,emissiveIntensity:1}));
+  exitFixture.name='exit-fixture';
+  const exitLight=new THREE.SpotLight(0xb8e4cd,10,4,Math.PI/6,.7,1.5);
+  exitLight.name='exit-light';exitLight.position.set(plan.exit.x,2.82,plan.exit.z);
+  exitLight.target.position.set(plan.exit.x,0,plan.exit.z);
+  exitLight.castShadow=true;exitLight.shadow.mapSize.set(256,256);exitLight.shadow.bias=-.0003;
+  resources.add(exitLight);root.add(exitLight,exitLight.target);
+  label('出口', plan.exit.x, plan.exit.z, 2.15, 1.2);
 
   const doorCollider = bedroomDoor && { minX: bedroomDoor.x - (bedroomDoor.axis === 'x' ? .08 : .8), maxX: bedroomDoor.x + (bedroomDoor.axis === 'x' ? .08 : .8), minZ: bedroomDoor.z - (bedroomDoor.axis === 'x' ? .8 : .08), maxZ: bedroomDoor.z + (bedroomDoor.axis === 'x' ? .8 : .08) };
   scene.add(root);
@@ -181,7 +209,7 @@ export function createWorld(scene, plan = generatePlan('42')) {
       else if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = doorHeight < 3.9; }
     },
     reset() { updateStory({ catPhase: 'unobserved' }, plan.spawn); doorHeight = 1.2; if (bedroomDoorAssembly) { bedroomDoorAssembly.position.y = doorHeight; bedroomDoorAssembly.visible = true; } else if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = true; } },
-    updateStory,
+    updateStory, updateThreat,
     getColliders() { return doorHeight < 3 && doorCollider ? [...plan.walls, ...plan.obstacles, doorCollider] : [...plan.walls, ...plan.obstacles]; },
     roomAt(x, z) {
       const cell = plan.cells.find(c => c.x === Math.round(x / CELL_SIZE) && c.z === Math.round(z / CELL_SIZE));
