@@ -37,6 +37,7 @@ npm run preview
 - [游戏设计文档 v0.2](docs/game-design-v0.2.md)
 - [剧本总集](docs/script-catalog.md)
 - [制作与技术规则](docs/production-rules.md)
+- [个性化美术资产与动画流水线](docs/personalized-asset-pipeline.md)
 - [开发记录](docs/development-log.md)
 
 Three.js 与 Vite 的版本由锁文件固定；第三方依赖遵循各自附带的许可。
