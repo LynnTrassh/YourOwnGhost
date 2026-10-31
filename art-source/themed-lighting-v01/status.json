@@ -1,0 +1,489 @@
+{
+  "scope": "灯光首轮交付；不代表模型/房间整体最终验收",
+  "runtimeAnchorCheck": {
+    "rooms": 48,
+    "missing": []
+  },
+  "rooms": [
+    {
+      "id": "hospital-01",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hospital-01.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hospital-02",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hospital-02.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hospital-03",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hospital-03.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hospital-04",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "六间代表A/B已观察",
+      "screenshot": "captures/hospital-04.jpg",
+      "warnings": [],
+      "note": "检查灯已用普通落地灯替代；灯斑有效，主题模型是否达标由布局方确认。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hospital-05",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hospital-05.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hospital-06",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hospital-06.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hospital-07",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hospital-07.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hospital-08",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hospital-08.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "park-01",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/park-01.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "park-02",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "六间代表A/B已观察",
+      "screenshot": "captures/park-02.jpg",
+      "warnings": [],
+      "note": "已降低观众补光并关手电复核；舞台清楚、观众保持暗。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "park-03",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/park-03.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "park-04",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/park-04.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "park-05",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/park-05.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "park-06",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/park-06.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "park-07",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/park-07.jpg",
+      "warnings": [],
+      "note": "入口镜头偏向书架，餐桌在左缘；需布局方确认新版 focus。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "park-08",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/park-08.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "office-01",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/office-01.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "office-02",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "六间代表A/B已观察",
+      "screenshot": "captures/office-02.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "office-03",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/office-03.jpg",
+      "warnings": [],
+      "note": "桌面和展示板局部较亮，正式曝光下继续观察材质细节。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "office-04",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/office-04.jpg",
+      "warnings": [],
+      "note": "已修复新会议桌锚点并复拍。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "office-05",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/office-05.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "office-06",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/office-06.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "office-07",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/office-07.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "office-08",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/office-08.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "home-01",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/home-01.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "home-02",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "六间代表A/B已观察",
+      "screenshot": "captures/home-02.jpg",
+      "warnings": [],
+      "note": "电视右侧屏面可见；中部是沙发背，需布局方复核沙发朝向。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "home-03",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/home-03.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "home-04",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/home-04.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "home-05",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/home-05.jpg",
+      "warnings": [],
+      "note": "入口镜头偏镜台，摇椅位在边缘；需确认主功能区发现路线。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "home-06",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/home-06.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "home-07",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/home-07.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "home-08",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/home-08.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hotel-01",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "六间代表A/B已观察",
+      "screenshot": "captures/hotel-01.jpg",
+      "warnings": [],
+      "note": "布局方已翻转柜台，正式版本需复核；原六间A/B保留历史状态。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hotel-02",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hotel-02.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hotel-03",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hotel-03.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hotel-04",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hotel-04.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hotel-05",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hotel-05.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hotel-06",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hotel-06.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hotel-07",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hotel-07.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "hotel-08",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/hotel-08.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "ritual-01",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/ritual-01.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "ritual-02",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/ritual-02.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "ritual-03",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/ritual-03.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "ritual-04",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/ritual-04.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "ritual-05",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/ritual-05.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "ritual-06",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/ritual-06.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "ritual-07",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "六间代表A/B已观察",
+      "screenshot": "captures/ritual-07.jpg",
+      "warnings": [],
+      "note": "两层局部红已呈现，入口保持中性。",
+      "finalRoomAccepted": false
+    },
+    {
+      "id": "ritual-08",
+      "profile": "已配置",
+      "entryReview": "入口缩略初查",
+      "comparison": "未做逐间A/B与多视角精查",
+      "screenshot": "captures/ritual-08.jpg",
+      "warnings": [],
+      "note": "已保留功能区主次与暗区；正式游戏亮度和全路线仍待复验。",
+      "finalRoomAccepted": false
+    }
+  ]
+}

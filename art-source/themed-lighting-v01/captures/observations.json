@@ -1,0 +1,4639 @@
+{
+  "scope": "逐房入口截图与六间A/B；采集期间布局方有更新，非48间完整验收",
+  "rooms": [
+    {
+      "id": "hospital-01",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-01",
+        "intent": "先读空接诊位，候诊侧门保持低亮",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "接诊台",
+            "position": [
+              -0.8,
+              2.78,
+              -1.2
+            ],
+            "target": [
+              -0.6,
+              0.9,
+              -0.65
+            ],
+            "color": 15065557,
+            "intensity": 20,
+            "angle": 0.84,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "入口参照",
+            "position": [
+              0.9,
+              2.78,
+              1.6
+            ],
+            "target": [
+              0.7,
+              0.3,
+              1.2
+            ],
+            "color": 16765860,
+            "intensity": 5,
+            "angle": 0.8,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "柜边反射",
+            "position": [
+              -1.4,
+              1.5,
+              -1.4
+            ],
+            "color": 12176342,
+            "intensity": 0.8,
+            "range": 3.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 4,
+      "models": 7,
+      "skipped": [
+        {
+          "id": "hospital-01-layout-7",
+          "assetId": "prop-rotary-phone-v01",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 123,
+      "triangles": 185897
+    },
+    {
+      "id": "hospital-02",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-02",
+        "intent": "照两侧候诊席，末端反向孤椅不设专灯",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "左排座位",
+            "position": [
+              -1.5,
+              2.78,
+              1.1
+            ],
+            "target": [
+              -1.8,
+              0.5,
+              -0.1
+            ],
+            "color": 12176342,
+            "intensity": 12,
+            "angle": 0.62,
+            "range": 4.2,
+            "shadow": true
+          },
+          {
+            "role": "右排座位",
+            "position": [
+              1.5,
+              2.78,
+              1.1
+            ],
+            "target": [
+              1.8,
+              0.5,
+              -0.1
+            ],
+            "color": 15065557,
+            "intensity": 9,
+            "angle": 0.62,
+            "range": 4.2,
+            "shadow": true
+          },
+          {
+            "role": "入口低反射",
+            "position": [
+              0,
+              1.6,
+              1.6
+            ],
+            "color": 15065557,
+            "intensity": 0.5,
+            "range": 2.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 8,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 120,
+      "triangles": 225365
+    },
+    {
+      "id": "hospital-03",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-03",
+        "intent": "前中床组分段亮，最深空床冷暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "入口床组",
+            "position": [
+              -0.7,
+              2.78,
+              2.2
+            ],
+            "target": [
+              -1.5,
+              0.7,
+              2
+            ],
+            "color": 15065557,
+            "intensity": 18,
+            "angle": 0.85,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "中段床组",
+            "position": [
+              0.8,
+              2.78,
+              -0.2
+            ],
+            "target": [
+              1.5,
+              0.7,
+              -0.5
+            ],
+            "color": 12176342,
+            "intensity": 11,
+            "angle": 0.75,
+            "range": 4.8,
+            "shadow": true
+          },
+          {
+            "role": "末端冷反射",
+            "position": [
+              1.5,
+              1.2,
+              -3.1
+            ],
+            "color": 12176342,
+            "intensity": 0.55,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 11,
+      "models": 14,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 149,
+      "triangles": 370680
+    },
+    {
+      "id": "hospital-04",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-04",
+        "intent": "灯斑故意偏离检查床；药柜只接受反光",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "检查空位",
+            "position": [
+              1.25,
+              1.48,
+              -1.38
+            ],
+            "target": [
+              0.7,
+              0.12,
+              -0.55
+            ],
+            "color": 15065557,
+            "intensity": 22,
+            "angle": 0.44,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "观片工作面",
+            "position": [
+              -0.4,
+              2.75,
+              -1.7
+            ],
+            "target": [
+              -0.4,
+              1.72,
+              -2.32
+            ],
+            "color": 12176342,
+            "intensity": 3.5,
+            "angle": 0.58,
+            "range": 3,
+            "shadow": true
+          },
+          {
+            "role": "低工作反射",
+            "position": [
+              -0.8,
+              2.45,
+              0.3
+            ],
+            "color": 15065557,
+            "intensity": 1.1,
+            "range": 4.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 8,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 108,
+      "triangles": 167748
+    },
+    {
+      "id": "hospital-05",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-05",
+        "intent": "抽屉号冷白、配药台微暖；避免全屋绿色",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "左柜号码",
+            "position": [
+              -1.3,
+              2.78,
+              -0.1
+            ],
+            "target": [
+              -2,
+              1.3,
+              -0.3
+            ],
+            "color": 15065557,
+            "intensity": 13,
+            "angle": 0.75,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "配药面",
+            "position": [
+              0.8,
+              2.78,
+              -1.3
+            ],
+            "target": [
+              0,
+              0.8,
+              -1.55
+            ],
+            "color": 16765860,
+            "intensity": 9,
+            "angle": 0.62,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "右柜反射",
+            "position": [
+              1.4,
+              1.5,
+              -0.3
+            ],
+            "color": 12176342,
+            "intensity": 0.9,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 7,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 113,
+      "triangles": 153859
+    },
+    {
+      "id": "hospital-06",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-06",
+        "intent": "休息桌暖，床区暗；衣帽轮廓不打正面",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "休息桌",
+            "position": [
+              0.3,
+              1.45,
+              -2.15
+            ],
+            "target": [
+              1.25,
+              0.5,
+              -0.75
+            ],
+            "color": 16765860,
+            "intensity": 9,
+            "angle": 0.95,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "床边轮廓",
+            "position": [
+              -1.8,
+              2.78,
+              -1.5
+            ],
+            "target": [
+              -1.8,
+              0.7,
+              -0.6
+            ],
+            "color": 15065557,
+            "intensity": 5,
+            "angle": 0.5,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "值守微光",
+            "position": [
+              1.5,
+              1.5,
+              0.9
+            ],
+            "color": 12176342,
+            "intensity": 0.6,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 9,
+      "skipped": [
+        {
+          "id": "hospital-06-layout-9",
+          "assetId": "prop-rotary-phone-v01",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 121,
+      "triangles": 188778
+    },
+    {
+      "id": "hospital-07",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-07",
+        "intent": "整理台亮，柜列低侧光，空墙保持暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "整理台",
+            "position": [
+              1,
+              2.78,
+              -1.6
+            ],
+            "target": [
+              1.45,
+              0.8,
+              -2
+            ],
+            "color": 16765860,
+            "intensity": 19,
+            "angle": 0.72,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "近柜轮廓",
+            "position": [
+              -0.8,
+              2.78,
+              2.8
+            ],
+            "target": [
+              -2,
+              1.1,
+              0.8
+            ],
+            "color": 12176342,
+            "intensity": 7,
+            "angle": 0.47,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "柜列反射",
+            "position": [
+              1.35,
+              1.3,
+              0.3
+            ],
+            "color": 15065557,
+            "intensity": 0.6,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 10,
+      "models": 12,
+      "skipped": [
+        {
+          "id": "hospital-07-layout-12",
+          "assetId": "prop-archive-boxes-v01",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 149,
+      "triangles": 264112
+    },
+    {
+      "id": "hospital-08",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-08",
+        "intent": "保管物中性可读，等待空椅低暖",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "保管柜",
+            "position": [
+              -0.7,
+              2.78,
+              -1.1
+            ],
+            "target": [
+              -0.7,
+              1,
+              -2
+            ],
+            "color": 15065557,
+            "intensity": 17,
+            "angle": 0.82,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "等待位",
+            "position": [
+              1.6,
+              2.78,
+              1.5
+            ],
+            "target": [
+              1.7,
+              0.3,
+              1.3
+            ],
+            "color": 16765860,
+            "intensity": 4,
+            "angle": 0.52,
+            "range": 3.4,
+            "shadow": true
+          },
+          {
+            "role": "入口反射",
+            "position": [
+              -1.4,
+              1.2,
+              0.9
+            ],
+            "color": 12176342,
+            "intensity": 0.6,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 8,
+      "models": 10,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 112,
+      "triangles": 191309
+    },
+    {
+      "id": "park-01",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-01",
+        "intent": "售票口暖白，排队折返区域冷暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "售票工作面",
+            "position": [
+              -0.8,
+              2.78,
+              -1.2
+            ],
+            "target": [
+              -0.9,
+              0.9,
+              0
+            ],
+            "color": 16765860,
+            "intensity": 17,
+            "angle": 0.78,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "窗口边缘",
+            "position": [
+              -1,
+              2.65,
+              -1.5
+            ],
+            "target": [
+              1.1,
+              1.6500000000000001,
+              -2.42
+            ],
+            "color": 15065557,
+            "intensity": 6,
+            "angle": 0.48,
+            "range": 4,
+            "shadow": true
+          },
+          {
+            "role": "排队冷反射",
+            "position": [
+              1.5,
+              1.5,
+              1.2
+            ],
+            "color": 12176342,
+            "intensity": 0.8,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 8,
+      "skipped": [
+        {
+          "id": "park-01-layout-8",
+          "assetId": "theme-ticket-register-v05",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 100,
+      "triangles": 146022
+    },
+    {
+      "id": "park-02",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-02",
+        "intent": "舞台主次聚光，观众席只读轮廓，反向椅不抢焦点",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "台面主光",
+            "position": [
+              -1.5,
+              2.78,
+              -1.1
+            ],
+            "target": [
+              0.1,
+              0.7,
+              -2.7
+            ],
+            "color": 16765860,
+            "intensity": 36,
+            "angle": 0.9,
+            "range": 9,
+            "shadow": true
+          },
+          {
+            "role": "讲台侧缘",
+            "position": [
+              2.8,
+              2.76,
+              -1.8
+            ],
+            "target": [
+              1.1,
+              1,
+              -2.9
+            ],
+            "color": 15065557,
+            "intensity": 15,
+            "angle": 0.64,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "观众中性参照",
+            "position": [
+              0,
+              1.65,
+              2
+            ],
+            "color": 15065557,
+            "intensity": 1.1,
+            "range": 6,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 17,
+      "models": 26,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 150,
+      "triangles": 517997
+    },
+    {
+      "id": "park-03",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-03",
+        "intent": "机列低冷光，尽头兑换位一点暖，保留遮挡",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "左机列",
+            "position": [
+              -1.1,
+              2.78,
+              1.9
+            ],
+            "target": [
+              -1.8,
+              1.1,
+              0.6
+            ],
+            "color": 9419720,
+            "intensity": 12,
+            "angle": 0.65,
+            "range": 5.5,
+            "shadow": true
+          },
+          {
+            "role": "兑奖边缘",
+            "position": [
+              1.3,
+              2.6,
+              -3.5
+            ],
+            "target": [
+              0,
+              1,
+              -4.4
+            ],
+            "color": 16765860,
+            "intensity": 7,
+            "angle": 0.55,
+            "range": 4,
+            "shadow": true
+          },
+          {
+            "role": "右机反射",
+            "position": [
+              1.3,
+              1.3,
+              0.5
+            ],
+            "color": 9419720,
+            "intensity": 1.2,
+            "range": 4.3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 7,
+      "models": 9,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 115,
+      "triangles": 307720
+    },
+    {
+      "id": "park-04",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-04",
+        "intent": "儿童桌柔暖，登记角冷白，空座留轮廓",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "儿童角",
+            "position": [
+              0.8,
+              2.78,
+              -1.1
+            ],
+            "target": [
+              0.9,
+              0.5,
+              -1.7
+            ],
+            "color": 16765860,
+            "intensity": 13,
+            "angle": 0.9,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "登记一侧",
+            "position": [
+              -2.1,
+              1.45,
+              1.65
+            ],
+            "target": [
+              -1.7,
+              0.7,
+              0.2
+            ],
+            "color": 15065557,
+            "intensity": 7,
+            "angle": 0.75,
+            "range": 4,
+            "shadow": true
+          },
+          {
+            "role": "低反射",
+            "position": [
+              1.6,
+              1.5,
+              0.8
+            ],
+            "color": 12176342,
+            "intensity": 0.6,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 114,
+      "triangles": 304668
+    },
+    {
+      "id": "park-05",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-05",
+        "intent": "镜前局部暖白，衣帽区低冷轮廓",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "主镜前",
+            "position": [
+              -1.3,
+              2.6,
+              -1.35
+            ],
+            "target": [
+              -1.4,
+              1,
+              -1.95
+            ],
+            "color": 16765860,
+            "intensity": 12,
+            "angle": 0.64,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "侧镜前",
+            "position": [
+              1.3,
+              2.5,
+              -0.2
+            ],
+            "target": [
+              1.95,
+              1,
+              -0.3
+            ],
+            "color": 15065557,
+            "intensity": 7,
+            "angle": 0.6,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "衣帽冷反射",
+            "position": [
+              1.2,
+              1.5,
+              1.4
+            ],
+            "color": 12176342,
+            "intensity": 0.5,
+            "range": 2.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 7,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 96,
+      "triangles": 177415
+    },
+    {
+      "id": "park-06",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-06",
+        "intent": "箱面分段旧暖，远端孤立奖品冷暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "近端箱面",
+            "position": [
+              -1,
+              2.78,
+              2.5
+            ],
+            "target": [
+              -1,
+              0.8,
+              2
+            ],
+            "color": 16765860,
+            "intensity": 14,
+            "angle": 0.7,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "中段箱面",
+            "position": [
+              0.7,
+              2.78,
+              -1.2
+            ],
+            "target": [
+              1.5,
+              0.7,
+              -2.2
+            ],
+            "color": 16765860,
+            "intensity": 9,
+            "angle": 0.7,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "远端冷点",
+            "position": [
+              0.3,
+              1.2,
+              -4
+            ],
+            "color": 12176342,
+            "intensity": 0.6,
+            "range": 2.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 11,
+      "models": 13,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 127,
+      "triangles": 367206
+    },
+    {
+      "id": "park-07",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-07",
+        "intent": "餐桌生活暖光，侧门冷反光",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "交班餐桌",
+            "position": [
+              -0.8,
+              2.78,
+              -1.2
+            ],
+            "target": [
+              -1.1,
+              0.75,
+              -0.65
+            ],
+            "color": 16765860,
+            "intensity": 15,
+            "angle": 0.85,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "沙发边缘",
+            "position": [
+              1.6,
+              2.5,
+              0.3
+            ],
+            "target": [
+              1.7,
+              0.5,
+              -0.5
+            ],
+            "color": 15065557,
+            "intensity": 5,
+            "angle": 0.7,
+            "range": 3.8,
+            "shadow": true
+          },
+          {
+            "role": "侧门反射",
+            "position": [
+              1.5,
+              1.7,
+              1.7
+            ],
+            "color": 12176342,
+            "intensity": 0.65,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 9,
+      "skipped": [
+        {
+          "id": "park-07-layout-9",
+          "assetId": "prop-tea-tray-v01",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 106,
+      "triangles": 232601
+    },
+    {
+      "id": "park-08",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-08",
+        "intent": "台口暗红暖光，后台狭缝中性，观众低亮",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "台口红暖",
+            "position": [
+              -1.5,
+              2.72,
+              -0.9
+            ],
+            "target": [
+              0,
+              0.65,
+              -2.7
+            ],
+            "color": 13584700,
+            "intensity": 23,
+            "angle": 0.8,
+            "range": 8,
+            "shadow": true
+          },
+          {
+            "role": "后台狭缝",
+            "position": [
+              2.7,
+              2.7,
+              -4
+            ],
+            "target": [
+              1.8,
+              0.8,
+              -3.2
+            ],
+            "color": 15065557,
+            "intensity": 10,
+            "angle": 0.35,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "观众参照",
+            "position": [
+              0,
+              1.65,
+              2.1
+            ],
+            "color": 15065557,
+            "intensity": 1,
+            "range": 6,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 20,
+      "models": 25,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 140,
+      "triangles": 498028
+    },
+    {
+      "id": "office-01",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-01",
+        "intent": "前台冷白、访客位低暖",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "前台",
+            "position": [
+              -0.8,
+              2.78,
+              -1.2
+            ],
+            "target": [
+              -0.6,
+              0.9,
+              -0.7
+            ],
+            "color": 15065557,
+            "intensity": 19,
+            "angle": 0.85,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "访客侧",
+            "position": [
+              1.6,
+              2.6,
+              0.7
+            ],
+            "target": [
+              1.8,
+              0.55,
+              0.5
+            ],
+            "color": 16765860,
+            "intensity": 5,
+            "angle": 0.65,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "文件柜反射",
+            "position": [
+              -1.5,
+              1.6,
+              -1.5
+            ],
+            "color": 12176342,
+            "intensity": 0.65,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 9,
+      "skipped": [
+        {
+          "id": "office-01-layout-9",
+          "assetId": "prop-rotary-phone-v01",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 122,
+      "triangles": 175178
+    },
+    {
+      "id": "office-02",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-02",
+        "intent": "工位两段中性池，低蓝屏幕反射；末端不全亮",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "近段工作面",
+            "position": [
+              -0.7,
+              2.78,
+              2.1
+            ],
+            "target": [
+              -1.6,
+              0.85,
+              2.2
+            ],
+            "color": 15065557,
+            "intensity": 18,
+            "angle": 0.8,
+            "range": 5.5,
+            "shadow": true
+          },
+          {
+            "role": "中段工作面",
+            "position": [
+              0.8,
+              2.78,
+              -0.8
+            ],
+            "target": [
+              1.65,
+              0.85,
+              -0.3
+            ],
+            "color": 15065557,
+            "intensity": 13,
+            "angle": 0.72,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "显示器低反射",
+            "position": [
+              0.1,
+              1.1,
+              -2.2
+            ],
+            "color": 9419720,
+            "intensity": 1.2,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 13,
+      "models": 15,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 153,
+      "triangles": 362974
+    },
+    {
+      "id": "office-03",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-03",
+        "intent": "会议桌白，板面微冷，椅子低一档",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "会议桌",
+            "position": [
+              -0.4,
+              2.78,
+              -0.4
+            ],
+            "target": [
+              0,
+              0.8,
+              -0.3
+            ],
+            "color": 15065557,
+            "intensity": 19,
+            "angle": 0.7,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "展示板",
+            "position": [
+              0,
+              2.7,
+              -1.7
+            ],
+            "target": [
+              0,
+              1.6,
+              -2.3
+            ],
+            "color": 12176342,
+            "intensity": 4,
+            "angle": 0.55,
+            "range": 3,
+            "shadow": true
+          },
+          {
+            "role": "座位反射",
+            "position": [
+              1.4,
+              1.4,
+              0.5
+            ],
+            "color": 16765860,
+            "intensity": 0.5,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 7,
+      "models": 9,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 124,
+      "triangles": 233147
+    },
+    {
+      "id": "office-04",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-04",
+        "intent": "深处纸面暖白，档案柜背低灰",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "读档桌",
+            "position": [
+              0.4,
+              2.78,
+              -3.2
+            ],
+            "target": [
+              0,
+              0.8,
+              -3.7
+            ],
+            "color": 16765860,
+            "intensity": 19,
+            "angle": 0.7,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "近柜侧缘",
+            "position": [
+              -0.7,
+              2.78,
+              2.1
+            ],
+            "target": [
+              -2,
+              1.1,
+              0.7
+            ],
+            "color": 15065557,
+            "intensity": 7,
+            "angle": 0.48,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "柜间反射",
+            "position": [
+              1.2,
+              1.7,
+              -0.7
+            ],
+            "color": 11056557,
+            "intensity": 0.6,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 10,
+      "models": 14,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 150,
+      "triangles": 331528
+    },
+    {
+      "id": "office-05",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-05",
+        "intent": "主桌暖、会客中性、书柜留暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "主桌",
+            "position": [
+              -0.8,
+              2.78,
+              -1.2
+            ],
+            "target": [
+              -0.8,
+              0.8,
+              -1
+            ],
+            "color": 16765860,
+            "intensity": 16,
+            "angle": 0.72,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "会客位",
+            "position": [
+              1.6,
+              2.55,
+              0.4
+            ],
+            "target": [
+              1.3,
+              0.5,
+              0.7
+            ],
+            "color": 15065557,
+            "intensity": 6,
+            "angle": 0.66,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "入口反射",
+            "position": [
+              0,
+              1.4,
+              1.6
+            ],
+            "color": 15065557,
+            "intensity": 0.5,
+            "range": 2.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 10,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 129,
+      "triangles": 271154
+    },
+    {
+      "id": "office-06",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-06",
+        "intent": "分拣格口中性斜光，登记台暖，空格可读",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "格口",
+            "position": [
+              0.8,
+              2.6,
+              -1.5
+            ],
+            "target": [
+              0,
+              1,
+              -2.1
+            ],
+            "color": 15065557,
+            "intensity": 16,
+            "angle": 0.78,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "登记台",
+            "position": [
+              1.5,
+              2.55,
+              0.1
+            ],
+            "target": [
+              1.2,
+              0.8,
+              -0.6
+            ],
+            "color": 16765860,
+            "intensity": 8,
+            "angle": 0.6,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "收件区反射",
+            "position": [
+              -1.3,
+              1.5,
+              0.7
+            ],
+            "color": 12176342,
+            "intensity": 0.55,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 8,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 124,
+      "triangles": 250121
+    },
+    {
+      "id": "office-07",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-07",
+        "intent": "双人桌中性、入口暖暗，回望第三椅才清晰",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "会谈桌",
+            "position": [
+              0.8,
+              2.78,
+              -0.6
+            ],
+            "target": [
+              1,
+              0.8,
+              -0.9
+            ],
+            "color": 15065557,
+            "intensity": 14,
+            "angle": 0.65,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "低暖入口",
+            "position": [
+              2.05,
+              1.45,
+              1.3
+            ],
+            "target": [
+              1.7,
+              0.2,
+              1.4
+            ],
+            "color": 16765860,
+            "intensity": 3,
+            "angle": 0.55,
+            "range": 3,
+            "shadow": true
+          },
+          {
+            "role": "沙发反射",
+            "position": [
+              -1.4,
+              1.2,
+              -0.2
+            ],
+            "color": 15065557,
+            "intensity": 0.7,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 8,
+      "models": 12,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 115,
+      "triangles": 203847
+    },
+    {
+      "id": "office-08",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-08",
+        "intent": "阅读白光与复印角低青灰对照",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "阅读桌",
+            "position": [
+              -1,
+              2.78,
+              0.3
+            ],
+            "target": [
+              -1.5,
+              0.8,
+              0.1
+            ],
+            "color": 15065557,
+            "intensity": 15,
+            "angle": 0.7,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "复印角",
+            "position": [
+              1.7,
+              2.6,
+              1.1
+            ],
+            "target": [
+              1.8,
+              0.8,
+              1.2
+            ],
+            "color": 12176342,
+            "intensity": 7,
+            "angle": 0.65,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "书柜反射",
+            "position": [
+              0.3,
+              1.6,
+              -1.5
+            ],
+            "color": 15065557,
+            "intensity": 0.55,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 7,
+      "models": 10,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 120,
+      "triangles": 191869
+    },
+    {
+      "id": "home-01",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-01",
+        "intent": "床头暖、镜台中性，衣帽区维持阴影",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "床头",
+            "position": [
+              -0.6,
+              2.6,
+              -1.5
+            ],
+            "target": [
+              -1.4,
+              0.65,
+              -1.1
+            ],
+            "color": 16765860,
+            "intensity": 13,
+            "angle": 0.7,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "镜台",
+            "position": [
+              1.2,
+              2.65,
+              -1.4
+            ],
+            "target": [
+              1.25,
+              1,
+              -2.08
+            ],
+            "color": 15065557,
+            "intensity": 5,
+            "angle": 0.6,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "低墙面反射",
+            "position": [
+              -1.6,
+              1.3,
+              0.5
+            ],
+            "color": 16765860,
+            "intensity": 0.6,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 7,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 94,
+      "triangles": 209260
+    },
+    {
+      "id": "home-02",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-02",
+        "intent": "沙发暖灯与电视冷反光，两者之间留暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "沙发灯",
+            "position": [
+              0.3,
+              1.45,
+              -2.1
+            ],
+            "target": [
+              -0.9,
+              0.55,
+              -1.55
+            ],
+            "color": 16765860,
+            "intensity": 10,
+            "angle": 0.95,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "电视冷光",
+            "position": [
+              1.4,
+              1.15,
+              -0.7
+            ],
+            "target": [
+              -0.5,
+              0.45,
+              -0.9
+            ],
+            "color": 9419720,
+            "intensity": 3.8,
+            "angle": 0.85,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "近墙反射",
+            "position": [
+              -1.4,
+              1.45,
+              0.6
+            ],
+            "color": 15065557,
+            "intensity": 0.7,
+            "range": 3.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 10,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 97,
+      "triangles": 204285
+    },
+    {
+      "id": "home-03",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-03",
+        "intent": "玩具角暖、空床冷，中心无均匀顶光",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "玩具角",
+            "position": [
+              -1.1,
+              2.78,
+              0.6
+            ],
+            "target": [
+              -1.5,
+              0.4,
+              1
+            ],
+            "color": 16765860,
+            "intensity": 10,
+            "angle": 0.78,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "空床边缘",
+            "position": [
+              1.8,
+              2.5,
+              -1.6
+            ],
+            "target": [
+              1.55,
+              0.65,
+              -0.7
+            ],
+            "color": 12176342,
+            "intensity": 4,
+            "angle": 0.52,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "柜背反射",
+            "position": [
+              0,
+              1.5,
+              -1.7
+            ],
+            "color": 15065557,
+            "intensity": 0.45,
+            "range": 2.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 7,
+      "models": 9,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 102,
+      "triangles": 268844
+    },
+    {
+      "id": "home-04",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-04",
+        "intent": "工作面暖、窗方向冷，书背不平铺打亮",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "台灯方向",
+            "position": [
+              1.9,
+              1.45,
+              -1.9
+            ],
+            "target": [
+              0.7,
+              0.8,
+              -1.5
+            ],
+            "color": 16765860,
+            "intensity": 11,
+            "angle": 0.8,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "窗向冷光",
+            "position": [
+              0.7,
+              2.4,
+              -2.2
+            ],
+            "target": [
+              0.6,
+              0.7,
+              -0.9
+            ],
+            "color": 12176342,
+            "intensity": 5,
+            "angle": 0.65,
+            "range": 4,
+            "shadow": true
+          },
+          {
+            "role": "书架侧缘",
+            "position": [
+              -1.6,
+              1.6,
+              -0.3
+            ],
+            "color": 15065557,
+            "intensity": 0.5,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 110,
+      "triangles": 287888
+    },
+    {
+      "id": "home-05",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-05",
+        "intent": "旧灯暖、窗侧中性冷，空摇椅低亮",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "生活桌",
+            "position": [
+              -0.8,
+              2.78,
+              -1.2
+            ],
+            "target": [
+              -0.8,
+              0.6,
+              -0.6
+            ],
+            "color": 16765860,
+            "intensity": 14,
+            "angle": 0.83,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "窗侧",
+            "position": [
+              1.8,
+              2.55,
+              -1.5
+            ],
+            "target": [
+              1.3,
+              0.6,
+              -0.5
+            ],
+            "color": 12176342,
+            "intensity": 4,
+            "angle": 0.62,
+            "range": 3.8,
+            "shadow": true
+          },
+          {
+            "role": "入口反射",
+            "position": [
+              -1.3,
+              1.4,
+              1.2
+            ],
+            "color": 16765860,
+            "intensity": 0.6,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 10,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 104,
+      "triangles": 277216
+    },
+    {
+      "id": "home-06",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-06",
+        "intent": "餐桌暖白，柜中玻璃只给弱斜光",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "餐桌",
+            "position": [
+              -0.5,
+              2.78,
+              -0.5
+            ],
+            "target": [
+              0,
+              0.75,
+              -0.65
+            ],
+            "color": 16765860,
+            "intensity": 17,
+            "angle": 0.78,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "玻璃柜边",
+            "position": [
+              -0.8,
+              2.4,
+              -1.4
+            ],
+            "target": [
+              -1.45,
+              1,
+              -1.9
+            ],
+            "color": 15065557,
+            "intensity": 3,
+            "angle": 0.45,
+            "range": 3,
+            "shadow": true
+          },
+          {
+            "role": "入口低光",
+            "position": [
+              1.4,
+              1.5,
+              0.7
+            ],
+            "color": 15065557,
+            "intensity": 0.5,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 10,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 95,
+      "triangles": 255201
+    },
+    {
+      "id": "home-07",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-07",
+        "intent": "近暖深冷，尽头玩具一点侧光",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "近旧物",
+            "position": [
+              -1,
+              2.78,
+              2.4
+            ],
+            "target": [
+              -1.8,
+              0.8,
+              1.8
+            ],
+            "color": 16765860,
+            "intensity": 11,
+            "angle": 0.68,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "尽头孤物",
+            "position": [
+              0.8,
+              1.45,
+              -4.3
+            ],
+            "target": [
+              0,
+              0.5,
+              -3.5
+            ],
+            "color": 15065557,
+            "intensity": 7,
+            "angle": 0.6,
+            "range": 3.8,
+            "shadow": true
+          },
+          {
+            "role": "中段冷反射",
+            "position": [
+              1.25,
+              1.5,
+              -0.5
+            ],
+            "color": 12176342,
+            "intensity": 0.7,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 11,
+      "models": 14,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 112,
+      "triangles": 331687
+    },
+    {
+      "id": "home-08",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-08",
+        "intent": "床幔暖侧光，镜前中性，帘后保持暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "床幔侧",
+            "position": [
+              0.1,
+              2.5,
+              -1.2
+            ],
+            "target": [
+              -1,
+              1.1,
+              -0.65
+            ],
+            "color": 16765860,
+            "intensity": 12,
+            "angle": 0.65,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "镜前",
+            "position": [
+              1.5,
+              2.6,
+              -1.2
+            ],
+            "target": [
+              1.5,
+              1,
+              -1.95
+            ],
+            "color": 15065557,
+            "intensity": 5,
+            "angle": 0.58,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "入口反射",
+            "position": [
+              1.3,
+              1.4,
+              1
+            ],
+            "color": 15065557,
+            "intensity": 0.55,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 84,
+      "triangles": 115077
+    },
+    {
+      "id": "hotel-01",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-01",
+        "intent": "黄暖前台、钥匙格中性焦点，访客暗一档",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "接待台",
+            "position": [
+              -0.5,
+              2.78,
+              -0.6
+            ],
+            "target": [
+              0.5,
+              0.95,
+              -0.9
+            ],
+            "color": 16765860,
+            "intensity": 18,
+            "angle": 0.8,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "钥匙格",
+            "position": [
+              0.5,
+              2.75,
+              -1.7
+            ],
+            "target": [
+              0.5,
+              1.65,
+              -2.38
+            ],
+            "color": 15065557,
+            "intensity": 5,
+            "angle": 0.48,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "访客反射",
+            "position": [
+              -1.4,
+              1.5,
+              0.5
+            ],
+            "color": 15065557,
+            "intensity": 0.85,
+            "range": 3.8,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 9,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 93,
+      "triangles": 194156
+    },
+    {
+      "id": "hotel-02",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-02",
+        "intent": "床头暖、书桌冷，中央暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "床头",
+            "position": [
+              -0.5,
+              2.5,
+              -1.4
+            ],
+            "target": [
+              -1.5,
+              0.6,
+              -0.7
+            ],
+            "color": 16765860,
+            "intensity": 12,
+            "angle": 0.66,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "书桌",
+            "position": [
+              1.8,
+              2.6,
+              -0.4
+            ],
+            "target": [
+              1.9,
+              0.8,
+              -0.5
+            ],
+            "color": 12176342,
+            "intensity": 8,
+            "angle": 0.62,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "低入口光",
+            "position": [
+              0,
+              1.4,
+              1.5
+            ],
+            "color": 15065557,
+            "intensity": 0.45,
+            "range": 2.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 8,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 100,
+      "triangles": 210856
+    },
+    {
+      "id": "hotel-03",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-03",
+        "intent": "同色温双床、右床显著低亮",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "左床灯",
+            "position": [
+              -0.8,
+              2.6,
+              -1.3
+            ],
+            "target": [
+              -1.55,
+              0.6,
+              -0.65
+            ],
+            "color": 16765860,
+            "intensity": 13,
+            "angle": 0.62,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "右床灯",
+            "position": [
+              0.8,
+              2.6,
+              -1.3
+            ],
+            "target": [
+              1.55,
+              0.6,
+              -0.65
+            ],
+            "color": 16765860,
+            "intensity": 5,
+            "angle": 0.62,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "入口微光",
+            "position": [
+              0,
+              1.6,
+              1.3
+            ],
+            "color": 15065557,
+            "intensity": 0.55,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 10,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 99,
+      "triangles": 196032
+    },
+    {
+      "id": "hotel-04",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-04",
+        "intent": "前厅暖、深床中性、帘后留暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "前厅",
+            "position": [
+              -0.7,
+              2.78,
+              2
+            ],
+            "target": [
+              -1.1,
+              0.6,
+              2
+            ],
+            "color": 16765860,
+            "intensity": 15,
+            "angle": 0.86,
+            "range": 5.5,
+            "shadow": true
+          },
+          {
+            "role": "床沿",
+            "position": [
+              0.5,
+              2.6,
+              -2.3
+            ],
+            "target": [
+              -0.8,
+              0.8,
+              -2.8
+            ],
+            "color": 15065557,
+            "intensity": 11,
+            "angle": 0.68,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "连接段",
+            "position": [
+              1,
+              1.5,
+              -0.3
+            ],
+            "color": 12176342,
+            "intensity": 0.65,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 9,
+      "models": 12,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 107,
+      "triangles": 292253
+    },
+    {
+      "id": "hotel-05",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-05",
+        "intent": "布草工作面中性，深柜灰暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "推车工作面",
+            "position": [
+              0.9,
+              2.78,
+              0.4
+            ],
+            "target": [
+              -0.7,
+              0.45,
+              0.6
+            ],
+            "color": 15065557,
+            "intensity": 15,
+            "angle": 0.72,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "柜外沿",
+            "position": [
+              -1.4,
+              2.65,
+              0.6
+            ],
+            "target": [
+              -2,
+              1,
+              0.2
+            ],
+            "color": 15065557,
+            "intensity": 5,
+            "angle": 0.45,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "后柜反射",
+            "position": [
+              1,
+              1.5,
+              -1.4
+            ],
+            "color": 16765860,
+            "intensity": 0.55,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 8,
+      "models": 12,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 102,
+      "triangles": 311408
+    },
+    {
+      "id": "hotel-06",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-06",
+        "intent": "台面暖白，箱面低斜光；逆向箱不过曝",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "登记面",
+            "position": [
+              -0.3,
+              2.78,
+              -0.8
+            ],
+            "target": [
+              0,
+              0.5,
+              -0.9
+            ],
+            "color": 16765860,
+            "intensity": 12,
+            "angle": 0.7,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "箱组侧光",
+            "position": [
+              1.95,
+              1.45,
+              1.65
+            ],
+            "target": [
+              0.3,
+              0.3,
+              0.7
+            ],
+            "color": 15065557,
+            "intensity": 6,
+            "angle": 0.75,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "后墙反射",
+            "position": [
+              -1,
+              1.4,
+              -1.5
+            ],
+            "color": 15065557,
+            "intensity": 0.5,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 8,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 111,
+      "triangles": 409894
+    },
+    {
+      "id": "hotel-07",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-07",
+        "intent": "两侧暖池，中轴低中性",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "左会客",
+            "position": [
+              -2.1,
+              1.45,
+              -1.85
+            ],
+            "target": [
+              -1.8,
+              0.6,
+              -0.1
+            ],
+            "color": 16765860,
+            "intensity": 10,
+            "angle": 0.85,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "右会客",
+            "position": [
+              1.7,
+              2.5,
+              -0.5
+            ],
+            "target": [
+              1.9,
+              0.6,
+              0
+            ],
+            "color": 16765860,
+            "intensity": 8,
+            "angle": 0.72,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "中轴反射",
+            "position": [
+              0,
+              1.5,
+              0.5
+            ],
+            "color": 15065557,
+            "intensity": 0.7,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 12,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 108,
+      "triangles": 296415
+    },
+    {
+      "id": "hotel-08",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-08",
+        "intent": "电脑工作面冷白、床侧低暖，镜面不抢焦点",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "工作位",
+            "position": [
+              1.65,
+              2.6,
+              0.1
+            ],
+            "target": [
+              1.85,
+              0.9,
+              0.1
+            ],
+            "color": 12176342,
+            "intensity": 12,
+            "angle": 0.68,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "床侧",
+            "position": [
+              -0.5,
+              2.5,
+              -1.6
+            ],
+            "target": [
+              -1.55,
+              0.6,
+              -1.1
+            ],
+            "color": 16765860,
+            "intensity": 6,
+            "angle": 0.6,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "柜边反射",
+            "position": [
+              1,
+              1.5,
+              -1.5
+            ],
+            "color": 15065557,
+            "intensity": 0.55,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 7,
+      "models": 10,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 93,
+      "triangles": 196468
+    },
+    {
+      "id": "ritual-01",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-01",
+        "intent": "供桌暖，像脸遮阴，不直射面部",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "供碗侧光",
+            "position": [
+              -1.1,
+              1.5,
+              -1.4
+            ],
+            "target": [
+              0,
+              0.65,
+              -1.55
+            ],
+            "color": 16765860,
+            "intensity": 7,
+            "angle": 0.48,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "侧桌低光",
+            "position": [
+              1.8,
+              2.5,
+              0.3
+            ],
+            "target": [
+              1.6,
+              0.6,
+              0.5
+            ],
+            "color": 15065557,
+            "intensity": 4,
+            "angle": 0.56,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "入口冷灰",
+            "position": [
+              0,
+              1.6,
+              1.4
+            ],
+            "color": 12176342,
+            "intensity": 0.55,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 12,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 109,
+      "triangles": 313003
+    },
+    {
+      "id": "ritual-02",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-02",
+        "intent": "两侧低饱和冷暖、中轴保持暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "左像侧缘",
+            "position": [
+              -2.1,
+              2.5,
+              -0.4
+            ],
+            "target": [
+              -1.6,
+              1,
+              -0.8
+            ],
+            "color": 16765860,
+            "intensity": 10,
+            "angle": 0.4,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "右像侧缘",
+            "position": [
+              2.1,
+              2.5,
+              -0.4
+            ],
+            "target": [
+              1.6,
+              1,
+              -0.8
+            ],
+            "color": 12176342,
+            "intensity": 8,
+            "angle": 0.4,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "入口参照",
+            "position": [
+              0,
+              1.6,
+              1.7
+            ],
+            "color": 15065557,
+            "intensity": 0.35,
+            "range": 2,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 113,
+      "triangles": 459204
+    },
+    {
+      "id": "ritual-03",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-03",
+        "intent": "守夜灯温暖低位，出口冷灰可读",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "供桌",
+            "position": [
+              0.6,
+              2.78,
+              -3
+            ],
+            "target": [
+              0.6,
+              0.8,
+              -3.75
+            ],
+            "color": 16765860,
+            "intensity": 15,
+            "angle": 0.64,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "近守夜席",
+            "position": [
+              -1.5,
+              2.4,
+              2.1
+            ],
+            "target": [
+              -1.2,
+              0.5,
+              1.4
+            ],
+            "color": 16765860,
+            "intensity": 6,
+            "angle": 0.63,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "出口参照",
+            "position": [
+              0.5,
+              1.5,
+              3.4
+            ],
+            "color": 12176342,
+            "intensity": 0.8,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 9,
+      "models": 15,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 132,
+      "triangles": 318810
+    },
+    {
+      "id": "ritual-04",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-04",
+        "intent": "器物中性，红木颜色来自材质",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "器物台",
+            "position": [
+              1,
+              2.78,
+              0.5
+            ],
+            "target": [
+              1.4,
+              0.8,
+              0.6
+            ],
+            "color": 15065557,
+            "intensity": 14,
+            "angle": 0.62,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "柜边",
+            "position": [
+              -1.2,
+              2.6,
+              -1.5
+            ],
+            "target": [
+              -1.5,
+              1,
+              -2
+            ],
+            "color": 16765860,
+            "intensity": 5,
+            "angle": 0.46,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "低中性反射",
+            "position": [
+              -1.4,
+              1.3,
+              0.6
+            ],
+            "color": 15065557,
+            "intensity": 0.55,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 7,
+      "models": 12,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 98,
+      "triangles": 269965
+    },
+    {
+      "id": "ritual-05",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-05",
+        "intent": "外圈暖光、空心弱红，椅子保留暗层次",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "左外圈",
+            "position": [
+              -1.6,
+              2.6,
+              -0.8
+            ],
+            "target": [
+              -1,
+              0.6,
+              -0.45
+            ],
+            "color": 16765860,
+            "intensity": 10,
+            "angle": 0.45,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "右外圈",
+            "position": [
+              1.6,
+              2.6,
+              -0.1
+            ],
+            "target": [
+              1,
+              0.6,
+              -0.45
+            ],
+            "color": 16765860,
+            "intensity": 8,
+            "angle": 0.45,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "中心弱红",
+            "position": [
+              0,
+              0.8,
+              -0.45
+            ],
+            "color": 13584700,
+            "intensity": 0.32,
+            "range": 2.3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 7,
+      "models": 12,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 116,
+      "triangles": 297627
+    },
+    {
+      "id": "ritual-06",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-06",
+        "intent": "起居暖光、神龛低中性，两区靠遮挡划分",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "生活角",
+            "position": [
+              -2.1,
+              1.45,
+              1.7
+            ],
+            "target": [
+              -1.4,
+              0.5,
+              -0.1
+            ],
+            "color": 16765860,
+            "intensity": 11,
+            "angle": 0.8,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "神龛侧缘",
+            "position": [
+              1,
+              2.6,
+              -1.4
+            ],
+            "target": [
+              1.45,
+              1,
+              -2.08
+            ],
+            "color": 15065557,
+            "intensity": 6,
+            "angle": 0.48,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "中性门口",
+            "position": [
+              0,
+              1.5,
+              1.5
+            ],
+            "color": 15065557,
+            "intensity": 0.45,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 12,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 104,
+      "triangles": 223522
+    },
+    {
+      "id": "ritual-07",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-07",
+        "intent": "后端两层红，柜间门槛后才进入色区，入口中性",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "供桌暖红",
+            "position": [
+              0.4,
+              2.65,
+              -1.2
+            ],
+            "target": [
+              0,
+              0.7,
+              -1.7
+            ],
+            "color": 15760209,
+            "intensity": 16,
+            "angle": 0.66,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "帘面深红",
+            "position": [
+              -1.1,
+              2.6,
+              -1.4
+            ],
+            "target": [
+              0.3,
+              1.25,
+              -2.35
+            ],
+            "color": 12791612,
+            "intensity": 11,
+            "angle": 0.65,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "中性入口",
+            "position": [
+              0,
+              1.5,
+              1.8
+            ],
+            "color": 15065557,
+            "intensity": 0.9,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 11,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 116,
+      "triangles": 345069
+    },
+    {
+      "id": "ritual-08",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-08",
+        "intent": "柜背冷暗，尽头供桌暖白，左右微差",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "末端供桌",
+            "position": [
+              0.4,
+              2.78,
+              -3.3
+            ],
+            "target": [
+              0,
+              0.75,
+              -3.8
+            ],
+            "color": 16765860,
+            "intensity": 19,
+            "angle": 0.65,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "左柜背边",
+            "position": [
+              -1,
+              2.78,
+              2.5
+            ],
+            "target": [
+              -1.9,
+              1,
+              1
+            ],
+            "color": 12176342,
+            "intensity": 5,
+            "angle": 0.4,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "右柜低反射",
+            "position": [
+              1.3,
+              1.4,
+              -0.4
+            ],
+            "color": 15065557,
+            "intensity": 0.55,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 9,
+      "models": 15,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 134,
+      "triangles": 358272
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "hospital-04",
+      "mode": "old",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-04",
+        "intent": "灯斑故意偏离检查床；药柜只接受反光",
+        "enabled": false,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "检查空位",
+            "position": [
+              1.25,
+              1.48,
+              -1.38
+            ],
+            "target": [
+              0.7,
+              0.12,
+              -0.55
+            ],
+            "color": 15065557,
+            "intensity": 22,
+            "angle": 0.44,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "观片工作面",
+            "position": [
+              -0.4,
+              2.75,
+              -1.7
+            ],
+            "target": [
+              -0.4,
+              1.72,
+              -2.32
+            ],
+            "color": 12176342,
+            "intensity": 3.5,
+            "angle": 0.58,
+            "range": 3,
+            "shadow": true
+          },
+          {
+            "role": "低工作反射",
+            "position": [
+              -0.8,
+              2.45,
+              0.3
+            ],
+            "color": 15065557,
+            "intensity": 1.1,
+            "range": 4.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 8,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 195,
+      "triangles": 236736
+    },
+    {
+      "id": "hospital-04",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hospital-04",
+        "intent": "灯斑故意偏离检查床；药柜只接受反光",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "检查空位",
+            "position": [
+              1.25,
+              1.48,
+              -1.38
+            ],
+            "target": [
+              0.7,
+              0.12,
+              -0.55
+            ],
+            "color": 15065557,
+            "intensity": 22,
+            "angle": 0.44,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "观片工作面",
+            "position": [
+              -0.4,
+              2.75,
+              -1.7
+            ],
+            "target": [
+              -0.4,
+              1.72,
+              -2.32
+            ],
+            "color": 12176342,
+            "intensity": 3.5,
+            "angle": 0.58,
+            "range": 3,
+            "shadow": true
+          },
+          {
+            "role": "低工作反射",
+            "position": [
+              -0.8,
+              2.45,
+              0.3
+            ],
+            "color": 15065557,
+            "intensity": 1.1,
+            "range": 4.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 8,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 108,
+      "triangles": 167748
+    },
+    {
+      "id": "park-02",
+      "mode": "old",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-02",
+        "intent": "舞台主次聚光，观众席只读轮廓，反向椅不抢焦点",
+        "enabled": false,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "台面主光",
+            "position": [
+              -1.5,
+              2.78,
+              -1.1
+            ],
+            "target": [
+              0.1,
+              0.7,
+              -2.7
+            ],
+            "color": 16765860,
+            "intensity": 36,
+            "angle": 0.9,
+            "range": 9,
+            "shadow": true
+          },
+          {
+            "role": "讲台侧缘",
+            "position": [
+              2.8,
+              2.76,
+              -1.8
+            ],
+            "target": [
+              1.1,
+              1,
+              -2.9
+            ],
+            "color": 15065557,
+            "intensity": 15,
+            "angle": 0.64,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "观众中性参照",
+            "position": [
+              0,
+              2.5,
+              2
+            ],
+            "color": 15065557,
+            "intensity": 1.8,
+            "range": 6,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 17,
+      "models": 26,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 243,
+      "triangles": 685459
+    },
+    {
+      "id": "park-02",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "park-02",
+        "intent": "舞台主次聚光，观众席只读轮廓，反向椅不抢焦点",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "台面主光",
+            "position": [
+              -1.5,
+              2.78,
+              -1.1
+            ],
+            "target": [
+              0.1,
+              0.7,
+              -2.7
+            ],
+            "color": 16765860,
+            "intensity": 36,
+            "angle": 0.9,
+            "range": 9,
+            "shadow": true
+          },
+          {
+            "role": "讲台侧缘",
+            "position": [
+              2.8,
+              2.76,
+              -1.8
+            ],
+            "target": [
+              1.1,
+              1,
+              -2.9
+            ],
+            "color": 15065557,
+            "intensity": 15,
+            "angle": 0.64,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "观众中性参照",
+            "position": [
+              0,
+              2.5,
+              2
+            ],
+            "color": 15065557,
+            "intensity": 1.8,
+            "range": 6,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 17,
+      "models": 26,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 150,
+      "triangles": 517997
+    },
+    {
+      "id": "office-02",
+      "mode": "old",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-02",
+        "intent": "工位两段中性池，低蓝屏幕反射；末端不全亮",
+        "enabled": false,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "近段工作面",
+            "position": [
+              -0.7,
+              2.78,
+              2.1
+            ],
+            "target": [
+              -1.6,
+              0.85,
+              2.2
+            ],
+            "color": 15065557,
+            "intensity": 18,
+            "angle": 0.8,
+            "range": 5.5,
+            "shadow": true
+          },
+          {
+            "role": "中段工作面",
+            "position": [
+              0.8,
+              2.78,
+              -0.8
+            ],
+            "target": [
+              1.65,
+              0.85,
+              -0.3
+            ],
+            "color": 15065557,
+            "intensity": 13,
+            "angle": 0.72,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "显示器低反射",
+            "position": [
+              0.1,
+              1.1,
+              -2.2
+            ],
+            "color": 9419720,
+            "intensity": 1.2,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 12,
+      "models": 14,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 263,
+      "triangles": 440558
+    },
+    {
+      "id": "office-02",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "office-02",
+        "intent": "工位两段中性池，低蓝屏幕反射；末端不全亮",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "近段工作面",
+            "position": [
+              -0.7,
+              2.78,
+              2.1
+            ],
+            "target": [
+              -1.6,
+              0.85,
+              2.2
+            ],
+            "color": 15065557,
+            "intensity": 18,
+            "angle": 0.8,
+            "range": 5.5,
+            "shadow": true
+          },
+          {
+            "role": "中段工作面",
+            "position": [
+              0.8,
+              2.78,
+              -0.8
+            ],
+            "target": [
+              1.65,
+              0.85,
+              -0.3
+            ],
+            "color": 15065557,
+            "intensity": 13,
+            "angle": 0.72,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "显示器低反射",
+            "position": [
+              0.1,
+              1.1,
+              -2.2
+            ],
+            "color": 9419720,
+            "intensity": 1.2,
+            "range": 4,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 12,
+      "models": 14,
+      "skipped": [],
+      "position": [
+        0,
+        1.65,
+        4.35
+      ],
+      "drawCalls": 150,
+      "triangles": 345730
+    },
+    {
+      "id": "home-02",
+      "mode": "old",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-02",
+        "intent": "沙发暖灯与电视冷反光，两者之间留暗",
+        "enabled": false,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "沙发灯",
+            "position": [
+              0.3,
+              1.45,
+              -2.1
+            ],
+            "target": [
+              -0.9,
+              0.55,
+              -1.55
+            ],
+            "color": 16765860,
+            "intensity": 10,
+            "angle": 0.95,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "电视冷光",
+            "position": [
+              1.4,
+              1.15,
+              -0.7
+            ],
+            "target": [
+              -0.5,
+              0.45,
+              -0.9
+            ],
+            "color": 9419720,
+            "intensity": 3.8,
+            "angle": 0.85,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "近墙反射",
+            "position": [
+              -1.4,
+              1.45,
+              0.6
+            ],
+            "color": 15065557,
+            "intensity": 0.7,
+            "range": 3.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 9,
+      "skipped": [
+        {
+          "id": "home-02-layout-9",
+          "assetId": "prop-tea-tray-v01",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 149,
+      "triangles": 207594
+    },
+    {
+      "id": "home-02",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "home-02",
+        "intent": "沙发暖灯与电视冷反光，两者之间留暗",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "沙发灯",
+            "position": [
+              0.3,
+              1.45,
+              -2.1
+            ],
+            "target": [
+              -0.9,
+              0.55,
+              -1.55
+            ],
+            "color": 16765860,
+            "intensity": 10,
+            "angle": 0.95,
+            "range": 5,
+            "shadow": true
+          },
+          {
+            "role": "电视冷光",
+            "position": [
+              1.4,
+              1.15,
+              -0.7
+            ],
+            "target": [
+              -0.5,
+              0.45,
+              -0.9
+            ],
+            "color": 9419720,
+            "intensity": 3.8,
+            "angle": 0.85,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "近墙反射",
+            "position": [
+              -1.4,
+              1.45,
+              0.6
+            ],
+            "color": 15065557,
+            "intensity": 0.7,
+            "range": 3.5,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 9,
+      "skipped": [
+        {
+          "id": "home-02-layout-9",
+          "assetId": "prop-tea-tray-v01",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 93,
+      "triangles": 136081
+    },
+    {
+      "id": "hotel-01",
+      "mode": "old",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-01",
+        "intent": "黄暖前台、钥匙格中性焦点，访客暗一档",
+        "enabled": false,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "接待台",
+            "position": [
+              -0.5,
+              2.78,
+              -0.6
+            ],
+            "target": [
+              0.5,
+              0.95,
+              -0.9
+            ],
+            "color": 16765860,
+            "intensity": 18,
+            "angle": 0.8,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "钥匙格",
+            "position": [
+              0.5,
+              2.75,
+              -1.7
+            ],
+            "target": [
+              0.5,
+              1.65,
+              -2.38
+            ],
+            "color": 15065557,
+            "intensity": 5,
+            "angle": 0.48,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "访客反射",
+            "position": [
+              -1.4,
+              1.5,
+              0.5
+            ],
+            "color": 15065557,
+            "intensity": 0.85,
+            "range": 3.8,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 9,
+      "skipped": [
+        {
+          "id": "hotel-01-layout-9",
+          "assetId": "theme-hotel-service-bell-v05",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 157,
+      "triangles": 296546
+    },
+    {
+      "id": "hotel-01",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "hotel-01",
+        "intent": "黄暖前台、钥匙格中性焦点，访客暗一档",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "接待台",
+            "position": [
+              -0.5,
+              2.78,
+              -0.6
+            ],
+            "target": [
+              0.5,
+              0.95,
+              -0.9
+            ],
+            "color": 16765860,
+            "intensity": 18,
+            "angle": 0.8,
+            "range": 7,
+            "shadow": true
+          },
+          {
+            "role": "钥匙格",
+            "position": [
+              0.5,
+              2.75,
+              -1.7
+            ],
+            "target": [
+              0.5,
+              1.65,
+              -2.38
+            ],
+            "color": 15065557,
+            "intensity": 5,
+            "angle": 0.48,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "访客反射",
+            "position": [
+              -1.4,
+              1.5,
+              0.5
+            ],
+            "color": 15065557,
+            "intensity": 0.85,
+            "range": 3.8,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 6,
+      "models": 9,
+      "skipped": [
+        {
+          "id": "hotel-01-layout-9",
+          "assetId": "theme-hotel-service-bell-v05",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 94,
+      "triangles": 201947
+    },
+    {
+      "id": "ritual-07",
+      "mode": "old",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-07",
+        "intent": "后端两层红，柜间门槛后才进入色区，入口中性",
+        "enabled": false,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "供桌暖红",
+            "position": [
+              0.4,
+              2.65,
+              -1.2
+            ],
+            "target": [
+              0,
+              0.7,
+              -1.7
+            ],
+            "color": 15760209,
+            "intensity": 16,
+            "angle": 0.66,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "帘面深红",
+            "position": [
+              -1.1,
+              2.6,
+              -1.4
+            ],
+            "target": [
+              0.3,
+              1.25,
+              -2.35
+            ],
+            "color": 12791612,
+            "intensity": 11,
+            "angle": 0.65,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "中性入口",
+            "position": [
+              0,
+              1.5,
+              1.8
+            ],
+            "color": 15065557,
+            "intensity": 0.9,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 10,
+      "skipped": [
+        {
+          "id": "ritual-07-layout-9",
+          "assetId": "theme-offering-bowl-v05",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 179,
+      "triangles": 348019
+    },
+    {
+      "id": "ritual-07",
+      "mode": "new",
+      "flashlight": true,
+      "lighting": {
+        "version": 1,
+        "id": "ritual-07",
+        "intent": "后端两层红，柜间门槛后才进入色区，入口中性",
+        "enabled": true,
+        "ambient": 0.32,
+        "shadowLights": 2,
+        "shadowFaces": 2,
+        "lights": [
+          {
+            "role": "供桌暖红",
+            "position": [
+              0.4,
+              2.65,
+              -1.2
+            ],
+            "target": [
+              0,
+              0.7,
+              -1.7
+            ],
+            "color": 15760209,
+            "intensity": 16,
+            "angle": 0.66,
+            "range": 4.5,
+            "shadow": true
+          },
+          {
+            "role": "帘面深红",
+            "position": [
+              -1.1,
+              2.6,
+              -1.4
+            ],
+            "target": [
+              0.3,
+              1.25,
+              -2.35
+            ],
+            "color": 12791612,
+            "intensity": 11,
+            "angle": 0.65,
+            "range": 3.5,
+            "shadow": true
+          },
+          {
+            "role": "中性入口",
+            "position": [
+              0,
+              1.5,
+              1.8
+            ],
+            "color": 15065557,
+            "intensity": 0.9,
+            "range": 3,
+            "shadow": false
+          }
+        ],
+        "warnings": []
+      },
+      "layoutUnchanged": true,
+      "colliders": 5,
+      "models": 10,
+      "skipped": [
+        {
+          "id": "ritual-07-layout-9",
+          "assetId": "theme-offering-bowl-v05",
+          "reason": "原模型没有足够连续平整支撑面，未强行摆放"
+        }
+      ],
+      "position": [
+        0,
+        1.65,
+        1.85
+      ],
+      "drawCalls": 112,
+      "triangles": 277241
+    }
+  ]
+}
