@@ -12,7 +12,7 @@ const face=(from,to)=>({...from,y:1.65,
   yaw:Math.atan2(-(to.x-from.x),-(to.z-from.z)),
   pitch:Math.atan2((to.y??1.65)-1.65,Math.hypot(to.x-from.x,to.z-from.z))});
 
-test('IN02 uses a compatible confirmed doll fear, a real safe drawer, and a bounded recycled visual pool',()=>{
+test('IN02 uses a compatible confirmed doll fear, a real safe drawer, and a bounded persistent visual pool',()=>{
   for(const seed of ['4','12']) {
     const plan=generatePlan(seed,{catEnabled:false,contentIds:['IN02'],preferences:['fear.doll']});
     const instance=plan.content.instances.find(item=>item.definitionId==='IN02');
@@ -54,6 +54,9 @@ test('IN02 uses a compatible confirmed doll fear, a real safe drawer, and a boun
     stepContent(plan,state,view,12,boxes);world.updateStory(state,view);
     assert.ok(phase.elapsed>7.2);assert.ok(dolls.filter(doll=>doll.visible).length<=6);
     assert.equal(state.cue,null);
+    const settled=dolls.map(doll=>({visible:doll.visible,position:doll.position.toArray(),yaw:doll.rotation.y}));
+    stepContent(plan,state,view,10,boxes);world.updateStory(state,view);
+    assert.deepEqual(dolls.map(doll=>({visible:doll.visible,position:doll.position.toArray(),yaw:doll.rotation.y})),settled,'settled dolls must not teleport back to the drawer');
     world.reset();assert.ok(dolls.every(doll=>!doll.visible));
     world.updateStory(state,view);assert.ok(dolls.some(doll=>doll.visible));
     world.dispose();assert.equal(scene.children.length,0);

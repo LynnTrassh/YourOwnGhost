@@ -1,0 +1,53 @@
+{
+  "source": "art-source/gameplay-production-v01/props/control-cabinet/model.glb",
+  "destination": "public/art/gameplay-production-v01/control-cabinet.glb",
+  "sourceBytes": 794264,
+  "runtimeBytes": 794608,
+  "sourceSHA256": "eb1077cadc2a82cb2cd2628236027a119e2ce085b8f3e1007133d74278a530d7",
+  "runtimeSHA256": "29411c7e87fd4992138f91ebc5427418e1b8fd0141378eeadcfeb34ac57f0c2f",
+  "triangles": 5296,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1435546875,
+      -0.4990234375,
+      -0.2216796875
+    ],
+    "max": [
+      0.1435546875,
+      0.4990234375,
+      0.2216796875
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.22433463796477496,
+      0,
+      -0.14527397260273972
+    ],
+    "max": [
+      0.22433463796477496,
+      1.01,
+      0.14527397260273972
+    ],
+    "size": [
+      0.4486692759295499,
+      1.01,
+      0.29054794520547944
+    ]
+  },
+  "scale": 1.0119765166340509,
+  "scaleXYZ": [
+    1.0119765166340509,
+    1.0119765166340509,
+    1.0119765166340509
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "requires-visual-confirmation"
+}

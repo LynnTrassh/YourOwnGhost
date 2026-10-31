@@ -1,0 +1,13 @@
+{
+  "name": "watcher-effigy",
+  "prompt": "A full length narrow adult humanoid hotel watcher effigy, pale matte wax and cloth face, dark recessed eye sockets, expressionless closed mouth, charcoal worn long coat and trousers, plain dark shoes. Dry realistic old materials, restrained disturbing mannequin look, realistic adult proportions. Neutral standing pose, hands lowered, full body feet visible, no gore. Height1.68m width .48m. Solid smooth cloth mesh, no shredded strands. Single isolated complete game prop model. Realistic solid moderately low-poly 3D volume with subtle handpainted matte textures, muted natural colors matching an old psychological-horror hotel art style. No environment or ground plane, no animation, no text, only the described asset. Dry low specularity. Clean closed mesh and readable silhouette.",
+  "approval": "四款也按这版生成",
+  "approvedConcept": "../props-approval.png",
+  "mode": "text-to-model",
+  "parameters": {
+    "face_limit": 6000,
+    "texture": true,
+    "pbr": false,
+    "texture_quality": "standard"
+  }
+}

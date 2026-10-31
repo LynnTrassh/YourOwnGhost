@@ -1,0 +1,53 @@
+{
+  "source": "art-source/gameplay-production-v01/animals/rabbit-ivory/model.glb",
+  "destination": "public/art/animals-v01/rabbit-ivory.glb",
+  "sourceBytes": 726964,
+  "runtimeBytes": 727352,
+  "sourceSHA256": "13f1dd05bd8f4a05a6646a90c39c80c6d4fef09f9860b6dc51a819ac30564da1",
+  "runtimeSHA256": "4abc330c0091904662ce092b1991d66202774af322e04bc5146495c5af7999ac",
+  "triangles": 5837,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.3486328125,
+      -0.2333984524011612
+    ],
+    "max": [
+      0.4990234375,
+      0.3486328125,
+      0.2333984375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.12719888361228282,
+      0,
+      -0.2719607843137255
+    ],
+    "max": [
+      0.12719888361228282,
+      0.38,
+      0.2719607843137255
+    ],
+    "size": [
+      0.25439776722456564,
+      0.38,
+      0.543921568627451
+    ]
+  },
+  "scale": 0.5449859943977591,
+  "scaleXYZ": [
+    0.5449859943977591,
+    0.5449859943977591,
+    0.5449859943977591
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "requires-visual-confirmation"
+}

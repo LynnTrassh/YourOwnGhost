@@ -1,8 +1,9 @@
+import { groundEntities } from '../src/personalization/entity-grounding.js';
 import { createServer } from 'node:http';
 import { randomBytes } from 'node:crypto';
 import { fail } from '../src/personalization/contracts.js';
 import { DreamLedger } from './ledger.js';
-export function createDreamServer({ledger=new DreamLedger(),interpret=null,modelJobs=null,dreamJobs=null,allowedOrigins=['http://127.0.0.1:4190','http://localhost:4190']}={}) {
+export function createDreamServer({ledger=new DreamLedger(),interpret=null,groundThemes=false,modelJobs=null,dreamJobs=null,allowedOrigins=['http://127.0.0.1:4190','http://localhost:4190']}={}) {
   const inflight=new Map();
   return createServer(async(req,res)=>{
     res.setHeader('Cache-Control','no-store');res.setHeader('Content-Type','application/json');
@@ -34,9 +35,13 @@ export function createDreamServer({ledger=new DreamLedger(),interpret=null,model
       } else if(req.method!=='POST')throw fail('NOT_FOUND','接口不存在。',404);
       else if(req.url==='/api/interpretations') {
         if(!interpret)throw fail('PROVIDER_UNAVAILABLE','梦境生成服务尚未配置，你的描述已保留。',503);
-        const draft=ledger.begin(owner,data.raw), key=`${owner}:${draft.revision}`;
+        let draft=ledger.begin(owner,data.raw);
+        if(groundThemes&&draft.result&&!draft.result.groundingVersion&&(draft.result.relations.length||draft.result.ambiguities.length||['like','fear'].some(role=>data.raw[role]?.trim()&&draft.result.entities.filter(e=>e.role===role).length>1)||draft.result.entities.some(e=>data.raw[e.role]?.trim()&&!['physical-object','creature','person'].includes(e.kind)))){
+          ledger.cancel(owner,draft.revision);draft=ledger.begin(owner,data.raw);
+        }
+        const key=`${owner}:${draft.revision}`;
         if(!draft.result && !inflight.has(key)){
-          const work=Promise.resolve().then(()=>interpret(draft.raw)).then(value=>ledger.interpret(owner,draft.revision,value)).finally(()=>inflight.delete(key));
+          const work=Promise.resolve().then(()=>interpret(draft.raw)).then(value=>ledger.interpret(owner,draft.revision,groundThemes?groundEntities(value,draft.raw):value)).finally(()=>inflight.delete(key));
           inflight.set(key,work);
         }
         result=draft.result??await inflight.get(key);

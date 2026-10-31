@@ -97,3 +97,16 @@ export function summarizeComposition(plans,selection) {
       short:{count:short,min:4,max:plans.reduce((n,p)=>n+p.rooms.length-1,0),shortfall:Math.max(0,4-short)},restByLayer:rests},
     selectionReason:'FULL_ROOM_INTENSITY_RHYTHM'};
 }
+
+// Final completion must not undo the exclusions/uniqueness of the selector.
+export function validateComposition(plans) {
+  const ids=plans.flatMap(plan=>plan.content.instances.map(i=>i.definitionId));
+  const errors=[];
+  for(const id of new Set(ids)) {
+    if(id!=='B25'&&ids.filter(value=>value===id).length>1)errors.push(`REPEATED_UNIT:${id}`);
+    for(const other of definitions.get(id)?.exclusions??[])
+      if(ids.includes(other))errors.push(`EXCLUDED_PAIR:${id}:${other}`);
+  }
+  if(plans.some(plan=>plan.story?.cat)&&ids.includes('AB01'))errors.push('CAT_GROUP_CONFLICT:AB01');
+  return [...new Set(errors)];
+}

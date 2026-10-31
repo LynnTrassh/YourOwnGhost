@@ -26,19 +26,31 @@ function contacts(a,b) {
   const q=[b.gridCenter[0]-dx*4,b.gridCenter[1]-dz*4];
   return a.cells.some(([x,z])=>x===p[0] && z===p[1]) && b.cells.some(([x,z])=>x===q[0] && z===q[1]) ? [[p,q]] : [];
 }
-export function growTopology(rng,decor) {
+export function growTopology(rng,decor,{openingSequence=false}={}) {
   const rooms=[room('bedroom',[0,0],variants.find(v=>v.type==='tee' && v.rotation===2),0.02749206800945103)];
   const edges=[], doors=[], used=new Set(['0,0']);
-  const count=8+Math.floor(rng()*5);
+  // Keep the original random-region budget after reserving the two opening rooms.
+  const count=(openingSequence?10:8)+Math.floor(rng()*5);
   function connect(a,b,points) {
     const [p,q]=points, dx=q[0]-p[0];
     const edge={id:`link-${edges.length}`,a:a.id,b:b.id,connectorTiles:0};edges.push(edge);
     doors.push({id:a.id==='bedroom' || b.id==='bedroom' ? 'bedroom':`door-${doors.length}`,edgeId:edge.id,
       x:(p[0]+q[0])/2*CELL_SIZE,z:(p[1]+q[1])/2*CELL_SIZE,axis:dx ? 'x':'z',cells:[p,q],closed:a.id==='bedroom' || b.id==='bedroom'});
   }
+  if(openingSequence){
+    const corridor=room('room-1',[0,-9],variants.find(v=>v.type==='strip'&&v.rotation===0),decor());
+    corridor.name='开场长走廊';
+    const candidates=compatibleVariants(corridor,0,-1);
+    const third=room('room-2',[0,-18],candidates[Math.floor(rng()*candidates.length)],decor());
+    third.name='开场第三房';
+    connect(rooms[0],corridor,contacts(rooms[0],corridor)[0]);
+    connect(corridor,third,contacts(corridor,third)[0]);
+    rooms.push(corridor,third);used.add('0,-9');used.add('0,-18');
+  }
   while (rooms.length<count) {
     const frontier=[];
     for (const parent of rooms) {
+      if(openingSequence&&parent.id==='room-1')continue;
       if (parent.id==='bedroom' && rooms.length>1) continue;
       for (const [dx,dz] of DIRECTIONS) {
         if (parent.id==='bedroom' && (dx!==0 || dz!==-1)) continue;
@@ -63,7 +75,7 @@ export function growTopology(rng,decor) {
     const pairs=contacts(a,b);
     if (pairs.length && rng()<.5) connect(a,b,pairs[Math.floor(rng()*pairs.length)]);
   }
-  return {rooms,edges,doors,cells:rooms.flatMap(r=>r.cells.map(([x,z])=>({x,z,roomId:r.id})))};
+  return {rooms,edges,doors,...(openingSequence?{opening:{roomIds:['bedroom','room-1','room-2'],corridorRoomId:'room-1'}}:{}),cells:rooms.flatMap(r=>r.cells.map(([x,z])=>({x,z,roomId:r.id})))};
 }
 export function roomRoute(rooms,edges,from,to,omittedEdge=null) {
   const graph=new Map(rooms.map(r=>[r.id,[]]));

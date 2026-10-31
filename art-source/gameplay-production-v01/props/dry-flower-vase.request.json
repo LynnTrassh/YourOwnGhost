@@ -1,0 +1,13 @@
+{
+  "name": "dry-flower-vase",
+  "prompt": "A single old ivory ceramic vase with faded floral painted pattern, holding five dry dusty rose flowers, dark desaturated leaves and sparse stems. Total height .55m, ceramic foot flat and grounded. Realistic old hotel prop, matte dry materials. Solid flowers and leaves, no thin hairlike geometry. Single isolated complete game prop model. Realistic solid moderately low-poly 3D volume with subtle handpainted matte textures, muted natural colors matching an old psychological-horror hotel art style. No environment or ground plane, no animation, no text, only the described asset. Dry low specularity. Clean closed mesh and readable silhouette.",
+  "approval": "四款也按这版生成",
+  "approvedConcept": "../props-approval.png",
+  "mode": "text-to-model",
+  "parameters": {
+    "face_limit": 6000,
+    "texture": true,
+    "pbr": false,
+    "texture_quality": "standard"
+  }
+}

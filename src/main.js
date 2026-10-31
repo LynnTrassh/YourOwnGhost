@@ -1,3 +1,4 @@
+import { attachRuntime,bootUI,backgroundMusic as music } from './bootstrap.js';
 import { createStaticSessionPreparer,isStaticSession } from './personalization/static-session.js';
 import * as THREE from 'three';
 import './style.css';
@@ -5,15 +6,16 @@ import { createGameUI } from './ui/shell.js';
 import { createDreamApi } from './personalization/api-client.js';
 import './ui/runtime.css';
 import { createState } from './state.js';
-import { movePlayer } from './collision.js';
-import { createWorld } from './world.js';
+import { movePlayer,overlaps } from './collision.js';
+import { createWorld,createWorldAsync } from './world.js';
 import { planDream } from './planning/client.js';
+import { randomRunSeed } from './personalization/run-seed.js';
 import { generatePlan } from './planning/generate.js';
 import { canExplore, canUseExit, requestExit, requestDeath, stepRespawnProtection, stepTransition, commitTransition, cancelTransition, transitionOpacity, stepFlowNarration } from './flow.js';
 import { TEMPLATE_NAMES } from './planning/templates.js';
 import { stepStory } from './story/runtime.js';
 import { drawMap } from './map-preview.js';
-import { roomIdAt } from './story/spatial.js';
+import { roomIdAt,sightClear } from './story/spatial.js';
 import { stepThreat } from './threat.js';
 import { createVhsEffect } from './art/vhs-effect.js';
 import { configureInteriorFlashlight } from './art/interior-lighting.js';
@@ -35,7 +37,7 @@ const playtest = !legacyUI && query.get('playtest') === '1';
 document.body.classList.toggle('modern-ui', !legacyUI);
 $('legacy-ui').inert = !legacyUI;
 let ui;
-const seed = new URLSearchParams(location.search).get('seed')?.slice(0, 80) || '42';
+let seed = legacyUI ? query.get('seed')?.slice(0,80)||'42' : randomRunSeed();
 const previewId = new URLSearchParams(location.search).get('preview')?.slice(0, 12);
 const hearingPreview=previewId==='TH02';
 const avoiderPreview=previewId==='TH03';
@@ -55,9 +57,14 @@ let planError;
 const loadingNotice=document.createElement('div');
 loadingNotice.setAttribute('role','status');loadingNotice.textContent='正在布置房间…';
 loadingNotice.style.cssText='position:fixed;inset:0;display:grid;place-items:center;background:#111916;color:#e5e5d5;z-index:999;font:16px sans-serif';
-document.body.append(loadingNotice);
+if(legacyUI)document.body.append(loadingNotice);
 try {
-  if(chasePreview||bypassPreview) {
+  if(!legacyUI) {
+    // The title only needs a backdrop; the player's actual seed and scripts
+    // are prepared after their input, not twice before they can even start.
+    plan=generatePlan(seed,{openingSequence:true,catEnabled:false,contentIds:[]});
+    dream=[plan,plan];
+  } else if(chasePreview||bypassPreview) {
     plan=chasePreview?generatePlan(seed,{chaseEnabled:true,catEnabled:false,contentIds:[]})
       :generatePlan(seed,{threatEnabled:true,contentIds:[]});
     if(bypassPreview&&!plan.threat?.bypass)throw new Error('该种子没有可用的无追逐旁路，请使用种子 71');
@@ -121,7 +128,8 @@ if (renderer && plan) {
   else init();
 } else if (!legacyUI) {
   const message = $('error').textContent || '无法准备场景，请刷新重试。';
-  ui = createGameUI({surface:canvas,adapter:{prepareDream:async()=>{throw new Error(message);},start(){throw new Error(message);}}});
+  ui = bootUI??createGameUI({surface:canvas,adapter:{}});
+  attachRuntime({prepareDream:async()=>{throw new Error(message);},start(){throw new Error(message);}});
   ui.reportError(message);
 }
 
@@ -138,7 +146,7 @@ function init() {
   const camera = new THREE.PerspectiveCamera(72, innerWidth / innerHeight, .06, 40);
   camera.rotation.order = 'YXZ';
   scene.add(camera);
-  let world = createWorld(scene, plan,{threatAppearanceId:state.fear.appearanceId});
+  let world = legacyUI?createWorld(scene, plan,{threatAppearanceId:state.fear.appearanceId}):{dispose(){},clearGenerated(){},updateStory(){}};
   const playerNoise=createPlayerNoiseTracker();
   playerNoise.reset(state.player);
   if(threatPreview&&plan.threat) {
@@ -268,6 +276,7 @@ function init() {
   const ray = new THREE.Raycaster(); ray.far = 2.25;
 
   function pause() {
+    void music.setPlaying(false);
     active = false; dragging = false; lastPointer = null; keys.clear();
     if (!legacyUI) { ui?.pause(); return; }
     $('menu').hidden = false;
@@ -287,6 +296,7 @@ function init() {
   function activate() {
     if (!graphicsReady || editingFear || !fearConfirmed || (state.completed && !state.flow.transition)) return;
     active = true; started = true; keys.clear();
+    void music.setPlaying(true);
     if (!legacyUI) return;
     updateFearForm();
     $('map-panel').hidden = true;
@@ -318,9 +328,10 @@ function init() {
   });
   $('drag-mode').addEventListener('click', () => { dragMode = true; $('error').textContent = ''; activate(); });
   let runtimeRevision = 0,personalizedSession=null;
-  async function restartRun(fearId=state.fear.id,likeId=state.like.id,nextSession=personalizedSession) {
+  async function restartRun(fearId=state.fear.id,likeId=state.like.id,nextSession=personalizedSession,runSeed=nextSession?.runSeed??seed,preparedPlans=null) {
     const revision = runtimeRevision;
     if(generating)return;
+    music.reset();
     generating=true;updateFearForm();
     // Paint feedback before the synchronous topology/content validation work.
     await new Promise(resolve=>setTimeout(resolve,32));
@@ -328,21 +339,40 @@ function init() {
     if (!legacyUI && revision !== runtimeRevision) throw new Error('本次启动已取消。');
     const changed=state.input.confirmed&&(state.input.fearId!==fearId||state.input.likeId!==likeId);
     const version=state.input.confirmed?state.input.version+Number(changed):1;
-    const nextDream=isStaticSession(nextSession)?nextSession.plans:chasePreview||bypassPreview ? (()=>{
+    const nextDream=isStaticSession(nextSession)?preparedPlans??nextSession.plans:chasePreview||bypassPreview ? (()=>{
       const fitted=chasePreview?generatePlan(seed,{chaseEnabled:true,catEnabled:false,contentIds:[]})
         :generatePlan(seed,{threatEnabled:true,contentIds:[]});
       return [fitted,fitted];
-    })() : await planDream(seed,{catEnabled:likeId==='cat',
-      preferences:contentTokensForInputs(likeId,fearId),threatBehaviorId,activeEncounters:!previewId});
+    })() : await planDream(runSeed,{catEnabled:likeId==='cat',
+      preferences:contentTokensForInputs(likeId,fearId),threatBehaviorId,activeEncounters:!previewId}).catch(error=>{
+      if(legacyUI)throw error;
+      return [0,1].map(layer=>generatePlan(`${runSeed}:preset:${layer}`,{openingSequence:true,catEnabled:false}));
+    });
     const nextPlan=threatPreview?nextDream[1]:nextDream[0];
     const nextState=createState(nextPlan,fearId,likeId,version,state.input);
     if(threatPreview&&nextPlan.threat) {
       nextState.layer=2;nextState.flow.falseAwakenings=1;
       nextState.player={...(bypassPreview?nextPlan.threat.bypass.observation:nextPlan.threat.observation),standing:true,flashlight:true};
     }
-    const nextWorld=createWorld(scene,nextPlan,{threatAppearanceId:nextState.fear.appearanceId,generatedModels:nextSession?.models??[]});
+    const nextWorld=await createWorldAsync(scene,nextPlan,{threatAppearanceId:nextState.fear.appearanceId,generatedModels:nextSession?.models??[]});
+    // Keep the UI responsive while models decode and shaders compile, before
+    // giving control to the player. Missing art already retains its preset.
+    await Promise.race([nextWorld.artReady,new Promise(resolve=>setTimeout(resolve,5000))]);
+    camera.position.set(nextState.player.x,1.08,nextState.player.z);
+    camera.rotation.set(0,nextPlan.spawn.yaw,0);
+    const textures=new Set();
+    scene.traverse(node=>{for(const mat of [node.material].flat().filter(Boolean))
+      for(const value of Object.values(mat))if(value?.isTexture&&value.image)textures.add(value);});
+    let uploadStart=performance.now();
+    for(const texture of textures){
+      renderer.initTexture(texture);
+      if(performance.now()-uploadStart>8){await new Promise(resolve=>setTimeout(resolve,0));uploadStart=performance.now();}
+    }
+    await renderer.compileAsync(scene,camera).catch(()=>{});
+    await new Promise(resolve=>requestAnimationFrame(resolve));
     if (!legacyUI && revision !== runtimeRevision) { nextWorld.dispose(); throw new Error('本次启动已取消。'); }
     world.dispose();if(personalizedSession!==nextSession)personalizedSession?.dispose();personalizedSession=nextSession;world=nextWorld;dream=nextDream;plan=nextPlan;
+    seed=runSeed;if(isStaticSession(nextSession)){nextSession.plans=nextDream;nextSession.runSeed=runSeed;}
     state=nextState;yaw=inspectEncounter(plan,state)??plan.spawn.yaw;pitch=inspection==='lever'?-.35:0;targetDoor=false;keys.clear();
     if(threatPreview&&plan.threat)
       yaw=Math.atan2(plan.threat.spawn.x-state.player.x,plan.threat.spawn.z-state.player.z)+Math.PI;
@@ -445,32 +475,59 @@ function init() {
     }
   }
   if (!legacyUI) {
-    ui = createGameUI({surface:canvas,demo:playtest,adapter:{
-      prepareDream: createDreamApi({prepareSession:createStaticSessionPreparer({planDream})}).prepareDream,
+    const entrySeeds=new WeakMap();
+    ui = attachRuntime({
+      prepareDream: createDreamApi({prepareSession:createStaticSessionPreparer({planDream,background:true,scriptBound:true,seedFactory:randomRunSeed})}).prepareDream,
       async start(session) {
         if (!graphicsReady) throw new Error('图形不可用，请刷新重试。');
         if (!isStaticSession(session) && session?.presetFallback !== true && session?.defaultPreset !== true && (!playtest || session?.preview !== true)) throw new Error('生成内容尚未接入，无法开始这场梦。');
-        await restartRun('generic',isStaticSession(session)&&!session.manifest.defaults.includes('like')?'none':'cat',isStaticSession(session)?session:null);
+        if(!entrySeeds.has(session))entrySeeds.set(session,session.runSeed??randomRunSeed());
+        await restartRun('generic',isStaticSession(session)&&!session.manifest.defaults.includes('like')?'none':'cat',isStaticSession(session)?session:null,entrySeeds.get(session));
         activate();
       },
       pause,
       resume() { if(!graphicsReady)throw new Error('图形不可用，请刷新重试。');activate(); },
-      async restart() { if(!graphicsReady)throw new Error('图形不可用，请刷新重试。');await restartRun(); },
-      leave() { runtimeRevision++;world.clearGenerated();personalizedSession?.dispose();personalizedSession=null; active=false;started=false;editingFear=true;fearConfirmed=false;keys.clear();ui?.clearInput(); },
+      async restart() {
+        if(!graphicsReady)throw new Error('图形不可用，请刷新重试。');
+        const revision=runtimeRevision,current=personalizedSession,nextSeed=randomRunSeed();
+        const plans=isStaticSession(current)?await current.replan(nextSeed):null;
+        if(revision!==runtimeRevision||current!==personalizedSession)throw new Error('本次启动已取消。');
+        await restartRun(state.fear.id,state.like.id,current,nextSeed,plans);
+      },
+      leave() { music.reset();runtimeRevision++;world.clearGenerated();personalizedSession?.dispose();personalizedSession=null; active=false;started=false;editingFear=true;fearConfirmed=false;keys.clear();ui?.clearInput(); },
       action:handleAction,
       settings(settings) {
+        music.setVolume(settings.musicVolume);
         cameraMotionEnabled=settings.motion;
         renderer.setPixelRatio(Math.min(devicePixelRatio,{low:1,medium:1.5,high:2}[settings.quality]));
         renderer.setSize(innerWidth,innerHeight);
         vhs.setIntensity(settings.vhs);vhs.resize(innerWidth,innerHeight);
       }
-    }});
+    });
     if (playtest) {
       const panel=document.createElement('aside');panel.className='runtime-playtest';
       const label=document.createElement('span');label.textContent='玩法测试 · 非生成内容';
       const button=document.createElement('button');button.textContent='开始测试';
       button.addEventListener('click',()=>ui.previewPlay());panel.append(label,button);document.body.append(panel);
     }
+  }
+  if(query.get('inspectGenerated')==='1'){
+    const panel=document.createElement('aside');panel.className='runtime-playtest';
+    const info=document.createElement('span');info.textContent='调试定位 · 真实生成模型';panel.append(info);
+    for(const [role,label] of [['like','查看喜欢模型'],['fear','查看害怕模型']]){
+      const button=document.createElement('button');button.textContent=label;
+      button.addEventListener('click',()=>{
+        const slot=plan.generatedThemes?.find(s=>s.role===role);if(!slot||!isStaticSession(personalizedSession))return;
+        const boxes=world.getColliders(),focus={x:slot.x,y:slot.box.height/2,z:slot.z};
+        const points=plan.cells.filter(t=>t.roomId===slot.roomId).map(t=>({x:t.x*plan.cellSize,z:t.z*plan.cellSize,y:1.65}));
+        const point=points.find(p=>Math.hypot(p.x-slot.x,p.z-slot.z)>1.1&&Math.hypot(p.x-slot.x,p.z-slot.z)<3&&!boxes.some(b=>overlaps(p.x,p.z,b))&&sightClear(p,focus,boxes.filter(b=>b.kind!=='generated-theme')));
+        if(!point){info.textContent='未找到安全观察位置';return;}
+        state.player={...state.player,x:point.x,z:point.z,standing:true,flashlight:true};
+        yaw=Math.atan2(-(slot.x-point.x),-(slot.z-point.z));pitch=-Math.atan2(1.65-focus.y,Math.hypot(slot.x-point.x,slot.z-point.z));keys.clear();activate();
+        info.textContent=`${role} · ${slot.roomId} · 放置缩放 ${slot.scale??1} · 高 ${slot.box.height.toFixed(2)}m`;
+      });panel.append(button);
+    }
+    document.body.append(panel);
   }
   window.addEventListener('resize', () => {
     camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
@@ -505,6 +562,7 @@ function init() {
         cancelTransition(state);pause();$('error').textContent=`切换失败，可继续当前地图：${error.message}`;ui?.reportError('切换失败，可以继续当前地图。');
       }
     } else if(action.kind==='ending') {
+      music.reset();
       commitTransition(state,action.id);
       $('ending-new').disabled=true;$('ending-replay').disabled=true;
       $('ending').hidden=false;
@@ -519,6 +577,7 @@ function init() {
   let walkSway = 0;
   renderer.setAnimationLoop(time => {
     const dt = Math.min(Math.max((time - previous) / 1000, 0), .05); previous = time;
+    if(!legacyUI&&(!started||generating))return;
     advanceFlow(dt);
     stepRespawnProtection(state,dt,active);
     const exploring=active && canExplore(state);
@@ -587,7 +646,10 @@ function init() {
           if(!['statueDemo','chase'].includes(state.story.cue?.kind)) state.story.cue=null;
           state.story.route=null;state.story.routeFinished=false;
         } else stepFlowNarration(state,plan,view,dt,boxes);
-        stepStory(plan,state.story,view,dt,{boxes,threat:state.threat,suppressRoutes:Boolean(encounter)});
+        state.story.themeVariants=world.getThemeVariants();
+        const puzzle=plan.activeEncounters?.puzzle;
+        const blockedDoorIds=puzzle&&!activeState(plan,state).solved?[puzzle.doorId]:[];
+        stepStory(plan,state.story,view,dt,{boxes,threat:state.threat,suppressRoutes:Boolean(encounter),blockedDoorIds});
         world.updateStory(state.story,state.player);
       }
       world.updateThreat(state.threat,state.player);

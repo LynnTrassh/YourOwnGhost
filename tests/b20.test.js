@@ -7,6 +7,7 @@ import { createStoryState, stepContent, stepStory } from '../src/story/runtime.j
 import { createWorld } from '../src/world.js';
 import { overlaps, movePlayer } from '../src/collision.js';
 import { roomIdAt } from '../src/story/spatial.js';
+import { createState } from '../src/state.js';
 
 const look=(from,to)=>{
   const dx=to.x-from.x,dz=to.z-from.z,dy=to.y-(from.y??1.65);
@@ -24,6 +25,9 @@ test('B20 closes only after entrance and forward exit are seen, and keeps a vali
       wall=scene.getObjectByName(`story-${instance.instanceId}-sealed-wall`);
     assert.ok(wall);assert.equal(wall.visible,false);
     const initialTopology=world.getTopology();
+    // This scene starts after the player opened and crossed its entrance.
+    const game=createState(plan);
+    for(const portal of plan.doors)world.toggleDoor(portal.id,game);world.update(1,game);
     const entry=look(instance.observation,instance.focus),
       forward=look(instance.forwardObservation,instance.forwardFocus),
       confirmation=look(instance.confirmationObservation,instance.focus);

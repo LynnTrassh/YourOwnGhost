@@ -23,7 +23,19 @@ test('every portal has one physical leaf; both orientations rotate around a fixe
   for(let i=0;i<20;i++)system.update(1,state);
   assert.equal(state.doors.bedroom.open,true);assert.equal(bed.angle,Math.PI/2);
   system.toggle('bedroom',state);system.update(1,state);assert.equal(bed.angle,0);
+  system.toggle('other',state);system.update(1,state);assert.equal(Math.abs(system.records.get('other').angle),Math.PI/2);
   system.toggle('other',state);system.update(1,state);assert.equal(system.records.get('other').angle,0);dispose();
+});
+test('every door starts closed in both state and physical geometry, including unspecified legacy flags',()=>{
+  const {system,state,dispose}=make();
+  assert.ok(Object.values(createDoorStates({doors:[{id:'unspecified'}]})).every(d=>!d.open));
+  assert.ok(Object.values(state.doors).every(d=>!d.open));
+  for(const record of system.records.values()) {
+    assert.equal(record.angle,0);
+    assert.ok(system.colliders().some(b=>overlaps(record.door.x,record.door.z,b)));
+  }
+  system.update(1,state);assert.ok(Object.values(state.doors).every(d=>!d.open));
+  dispose();
 });
 test('open and closed hidden-art proxies remain targetable from either side, walls occlude',()=>{
   const {system,state,dispose}=make(),mesh=system.records.get('bedroom').mesh;

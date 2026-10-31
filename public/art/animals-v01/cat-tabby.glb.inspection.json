@@ -1,0 +1,53 @@
+{
+  "source": "art-source/gameplay-production-v01/animals/cat-tabby/model.glb",
+  "destination": "public/art/animals-v01/cat-tabby.glb",
+  "sourceBytes": 838132,
+  "runtimeBytes": 838496,
+  "sourceSHA256": "7854f3691248f8b44f6debbb319d6710740af65cc1111740b5f989ee4d7a8a0b",
+  "runtimeSHA256": "85c7dfe700a982e45d9a556416c4d888a467626fc35da96021371254615fb651",
+  "triangles": 5402,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.3017578125,
+      -0.1533203125
+    ],
+    "max": [
+      0.4990234375,
+      0.3017578125,
+      0.1533203125
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.10669902912621362,
+      0,
+      -0.3472815533980583
+    ],
+    "max": [
+      0.10669902912621362,
+      0.42,
+      0.3472815533980583
+    ],
+    "size": [
+      0.21339805825242725,
+      0.42,
+      0.6945631067961165
+    ]
+  },
+  "scale": 0.6959223300970874,
+  "scaleXYZ": [
+    0.6959223300970874,
+    0.6959223300970874,
+    0.6959223300970874
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "requires-visual-confirmation"
+}

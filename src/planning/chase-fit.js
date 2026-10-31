@@ -34,7 +34,7 @@ function roomPaths(plan,roomId,start,end,graph) {
 }
 export function fitChase(plan) {
   const route=plan.opportunities.exitRoute,graph=buildNavigation(plan);
-  const occupied=new Set([plan.story?.cat?.roomId,...plan.content?.instances?.map(i=>i.roomId)??[]].filter(Boolean));
+  const occupied=new Set([...(plan.opening?.roomIds??[]),plan.story?.cat?.roomId,...plan.content?.instances?.map(i=>i.roomId)??[]].filter(Boolean));
   for(let i=1;i+4<route.length;i++) {
     const stages=route.slice(i,i+4),before=route[i-1],after=route[i+4];
     if(stages.some(id=>occupied.has(id)))continue;

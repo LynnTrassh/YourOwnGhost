@@ -39,6 +39,9 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
     if(roomId!==instance.roomId && !(['IN03','IN04'].includes(instance.definitionId)
       &&roomId===instance.supportRoomId)) {
       phase.exposure=0;phase.pendingLine=false;
+      phase.screenTime=0;phase.chairTime=0;phase.mirrorTime=0;phase.awayTime=0;
+      if(phase.photoExposure)phase.photoExposure=phase.photoExposure.map(()=>0);
+      if(instance.definitionId==='TI02')phase.watchTime=0;
       if(['BO03','ME04'].includes(instance.definitionId))phase.watchTime=0;
       if(instance.definitionId==='ID02') {phase.previousView=null;phase.moving=false;phase.stopTime=0;}
       if(phase.metaLook)phase.metaLook={awayTime:0,away:false,returnExposure:0};continue;}
@@ -276,7 +279,7 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
       const chairs=visible(narrow,instance.chairFocus,
         boxes.filter(box=>!instance.chairSlots.some((_,index)=>box.id===`ME01-${instance.roomId}-chair-${index}`)));
       phase.mirrorTime=mirror?(phase.mirrorTime??0)+dt:0;
-      phase.chairTime=chairs?(phase.chairTime??0)+dt:0;
+      phase.chairTime=chairs&&phase.mirrorSeen?(phase.chairTime??0)+dt:0;
       if(!phase.mirrorSeen&&phase.mirrorTime>=.8) {
         phase.mirrorSeen=true;state.facts.push(`${instance.instanceId}.mirrorSeen`);
       }
@@ -415,9 +418,11 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
       if(phase.exposure>=1.6) {phase.phase='rested';phase.pendingLine=!instance.quietVariant||instance.quietNarration;state.facts.push(`${instance.instanceId}.rested`);}
     } else if(id==='TI02') {
       const sightBoxes=boxes.filter(b=>b.id!==`${instance.instanceId}-actor`);
-      if(visible(view,{...instance.focus,y:1.75},sightBoxes)) {
-        phase.progress=(phase.progress??0)+dt;
-        if(phase.phase==='waiting'&&phase.progress>=4) {
+      const loopSeen=visible(view,{...instance.focus,y:1.75},sightBoxes);
+      phase.progress=(phase.progress??0)+dt;
+      phase.watchTime=loopSeen?(phase.watchTime??0)+dt:0;
+      if(loopSeen) {
+        if(phase.phase==='waiting'&&phase.watchTime>=4) {
           phase.phase='twoLoopsSeen';phase.pendingLine=true;state.facts.push(`${instance.instanceId}.twoLoopsSeen`);
         }
       }
@@ -451,6 +456,7 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
       }
     } else if(id==='B08') {
       const observed=visible(view,instance.focus,boxes.filter(b=>b.id!==`${instance.instanceId}-pedestal`));
+      if(!observed)phase.exposure=0;
       if(observed) {
         phase.exposure+=dt;
         if(phase.phase==='waiting'&&phase.exposure>=.5) {
@@ -471,7 +477,7 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
       const observed=visible(view,{...instance.focus,y:1.55},sightBoxes)
         &&['left','right'].every(key=>visible(view,{...places[key],y:1.05},sightBoxes));
       phase.exposure=observed?phase.exposure+dt:0;
-      if(phase.exposure>=.9) {phase.phase='observed';phase.pendingLine=true;
+      if(phase.exposure>=.9) {phase.phase='observed';phase.pendingLine=!instance.themeBinding||state.themeVariants?.[instance.instanceId]==='generated';
         state.facts.push(`${instance.instanceId}.worshipSeen`);}
     } else if(id==='B11') {
       const sightBoxes=boxes.filter(b=>b.id!==`${instance.instanceId}-cabinet`);
@@ -506,7 +512,7 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
         const angle=Math.abs(Math.atan2(Math.sin(view.yaw-yaw),Math.cos(view.yaw-yaw)));
         phase.awayTime=angle>=.75?Math.min(.55,(phase.awayTime??0)+dt):0;
         if(phase.awayTime>=.5) {phase.phase='away';phase.exposure=0;state.facts.push(`${instance.instanceId}.lookedAway`);}
-      } else if(phase.phase==='away'&&observed) {
+      } else if(phase.phase==='away') {
         phase.exposure=observed?phase.exposure+dt:0;
         if(phase.exposure>=.25) {phase.phase='moving';phase.exposure=0;}
       } else if(phase.phase==='moving'&&observed) {
@@ -551,10 +557,15 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
         phase.previousView={x:view.x,z:view.z};
         if(!observed) {phase.moving=false;phase.stopTime=0;
           if(phase.phase==='moving')phase.phase='seen';}
-        else if(distance>=.035&&distance<=1) {
-          phase.offsetX=Math.max(-.4,Math.min(.4,(phase.offsetX??0)+dx));
-          phase.offsetZ=Math.max(-.4,Math.min(.4,(phase.offsetZ??0)+dz));
-          phase.phase='moving';phase.moving=true;phase.stopTime=0;phase.walkTime=(phase.walkTime??0)+dt;
+        else if(dt>0&&distance/dt>=.12&&distance<=1) {
+          const previousX=phase.offsetX??0,previousZ=phase.offsetZ??0;
+          phase.offsetX=Math.max(-.4,Math.min(.4,previousX+dx));
+          phase.offsetZ=Math.max(-.4,Math.min(.4,previousZ+dz));
+          const moved=Math.hypot(phase.offsetX-previousX,phase.offsetZ-previousZ);
+          // Only animate steps when the body actually moves. The authored safe
+          // footprint is small; reaching its edge must not cause a treadmill.
+          phase.moving=moved>1e-5;phase.phase=phase.moving?'moving':'seen';phase.stopTime=0;
+          if(phase.moving)phase.walkTime=(phase.walkTime??0)+moved/2.4;
         } else if(phase.moving) {
           phase.stopTime=(phase.stopTime??0)+dt;
           if(phase.stopTime>=.28) {
@@ -637,7 +648,7 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
       phase.pendingLine=false;
   }
 }
-export function stepStory(plan,state,view,dt,{active=true,cause='normal',suppressRoutes=false,boxes=[...plan.walls,...plan.obstacles],threat=null}={}) {
+export function stepStory(plan,state,view,dt,{active=true,cause='normal',suppressRoutes=false,blockedDoorIds=[],boxes=[...plan.walls,...plan.obstacles],threat=null}={}) {
   if(!active) return;
   const roomId=roomIdAt(plan,view),previous=state.previous;
   if(cause!=='normal') {
@@ -688,7 +699,7 @@ export function stepStory(plan,state,view,dt,{active=true,cause='normal',suppres
   }
   if(!suppressRoutes && chosenRight && state.behaviorCount<2 && say('right','right',roomId,3)) {state.behaviorCount++;state.facts.push('route.rightAfterSuggestion');}
   if(!suppressRoutes && !state.route && !state.consumed.includes('suggest')) {
-    const route=plan.story.routes.find(r=>r.roomId===roomId && r.entryDoorId===state.entryDoorId && Math.hypot(view.x-r.origin.x,view.z-r.origin.z)<2);
+    const route=plan.story.routes.find(r=>r.roomId===roomId && r.entryDoorId===state.entryDoorId && !blockedDoorIds.includes(r.leftDoorId) && Math.hypot(view.x-r.origin.x,view.z-r.origin.z)<2);
     if(route) {
       const left=plan.doors.find(d=>d.id===route.leftDoorId);
       const facing=Math.cos(view.yaw-route.yaw)>.5;

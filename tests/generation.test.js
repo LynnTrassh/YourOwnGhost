@@ -168,6 +168,9 @@ test('same shell supports different interiors; decoration leaves collision uncha
 test('furniture forces a traversable detour and is rendered with matching collisions', () => {
   const p = generatePlan('42');
   const scene = new THREE.Scene(), world = createWorld(scene,p);
+  // Isolate furniture clearance after the doors have been opened.
+  const state=createState(p);
+  for(const door of p.doors)world.toggleDoor(door.id,state);world.update(1,state);
   let detours = 0;
   for (const b of p.obstacles.filter(b => b.kind !== 'bed')) {
     assert.ok(world.getColliders().includes(b));

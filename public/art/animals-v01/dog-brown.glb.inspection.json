@@ -1,0 +1,53 @@
+{
+  "source": "art-source/gameplay-production-v01/animals/dog-brown/model.glb",
+  "destination": "public/art/animals-v01/dog-brown.glb",
+  "sourceBytes": 1094584,
+  "runtimeBytes": 1094948,
+  "sourceSHA256": "cb6639dbd031371a1f1df28492a29ce3c603bc6acd2d53c73d5e1f0b7eb31fb6",
+  "runtimeSHA256": "db7c0834e828ee474f980f5f09af3124cc58ba38f2630ed4bdcd5489ee7c398e",
+  "triangles": 5770,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.3134765625,
+      -0.1279297024011612
+    ],
+    "max": [
+      0.4990234375,
+      0.3134765625,
+      0.1279297024011612
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.14283490760304107,
+      0,
+      -0.5571651090342679
+    ],
+    "max": [
+      0.14283490760304107,
+      0.7,
+      0.5571651090342679
+    ],
+    "size": [
+      0.28566981520608214,
+      0.7,
+      1.1143302180685357
+    ]
+  },
+  "scale": 1.1165109034267913,
+  "scaleXYZ": [
+    1.1165109034267913,
+    1.1165109034267913,
+    1.1165109034267913
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "requires-visual-confirmation"
+}

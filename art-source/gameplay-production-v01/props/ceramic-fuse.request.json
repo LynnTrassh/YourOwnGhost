@@ -1,0 +1,13 @@
+{
+  "name": "ceramic-fuse",
+  "prompt": "One old ceramic cartridge electrical fuse, cylindrical off-white ivory body with fine aged cracks and tarnished brass endcaps. Length .24m diameter .10m. Lying horizontally, clean functional shape. Single isolated complete game prop model. Realistic solid moderately low-poly 3D volume with subtle handpainted matte textures, muted natural colors matching an old psychological-horror hotel art style. No environment or ground plane, no animation, no text, only the described asset. Dry low specularity. Clean closed mesh and readable silhouette.",
+  "approval": "四款也按这版生成",
+  "approvedConcept": "../props-approval.png",
+  "mode": "text-to-model",
+  "parameters": {
+    "face_limit": 6000,
+    "texture": true,
+    "pbr": false,
+    "texture_quality": "standard"
+  }
+}

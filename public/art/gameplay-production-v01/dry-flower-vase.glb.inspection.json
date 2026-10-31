@@ -1,0 +1,53 @@
+{
+  "source": "art-source/gameplay-production-v01/props/dry-flower-vase/model.glb",
+  "destination": "public/art/gameplay-production-v01/dry-flower-vase.glb",
+  "sourceBytes": 1290548,
+  "runtimeBytes": 1290868,
+  "sourceSHA256": "356785ea2f0a58879a47d437b6ae6ecec0521ef48c2893082132f6e71407a71f",
+  "runtimeSHA256": "1a06d41d6686050acfee8e63043ecf202ebc529869ad970819464ad7d8327327",
+  "triangles": 5836,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1943359375,
+      -0.4990234375,
+      -0.2568359375
+    ],
+    "max": [
+      0.1943359375,
+      0.4990234375,
+      0.2568359375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.15187866927592955,
+      0,
+      -0.20072407045009785
+    ],
+    "max": [
+      0.15187866927592955,
+      0.78,
+      0.20072407045009785
+    ],
+    "size": [
+      0.3037573385518591,
+      0.78,
+      0.4014481409001957
+    ]
+  },
+  "scale": 0.7815264187866928,
+  "scaleXYZ": [
+    0.7815264187866928,
+    0.7815264187866928,
+    0.7815264187866928
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "matte",
+  "orientationStatus": "requires-visual-confirmation"
+}

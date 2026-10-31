@@ -1,7 +1,7 @@
 export const defaults = Object.freeze({ mode: 'auto', look: 'stick', leftStick: 'fixed', mouseSensitivity: 1,
-  touchSensitivity: 1, vhs: .35, motion: false, subtitleSize: 18, subtitleBackground: .75, quality: 'low' });
+  touchSensitivity: 1, musicVolume: .35, vhs: .35, motion: false, subtitleSize: 18, subtitleBackground: .75, quality: 'low' });
 const choices = { mode: ['auto','keyboard','touch'], look: ['stick','swipe'], leftStick: ['fixed','floating'], quality: ['low','medium','high'] };
-const ranges = { mouseSensitivity: [.4,2], touchSensitivity: [.4,2], vhs: [0,1], subtitleSize: [16,26], subtitleBackground: [0,1] };
+const ranges = { musicVolume: [0,1], mouseSensitivity: [.4,2], touchSensitivity: [.4,2], vhs: [0,1], subtitleSize: [16,26], subtitleBackground: [0,1] };
 export function normalizeSettings(raw = {}) {
   const next = { ...defaults };
   if (!raw || typeof raw !== 'object') return next;

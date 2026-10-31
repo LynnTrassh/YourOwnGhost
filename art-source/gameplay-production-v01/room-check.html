@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>正式资产房间检查</title><style>body{margin:0;background:#101310;color:#ddd;font:14px system-ui}#status{position:fixed;top:14px;left:20px}canvas{display:block}</style><div id="status">布置真实房间…</div><script type="module">
+import * as T from 'three';
+import {generateDream} from '/src/planning/dream.js';
+import {createWorldAsync} from '/src/world.js';
+import {roomIdAt} from '/src/story/spatial.js';
+import {createState} from '/src/state.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const mode=new URLSearchParams(location.search).get('mode')||'lever';
+const plans=generateDream('12',{activeEncounters:true});const plan=plans.find(p=>p.activeEncounters?.puzzle?.fuse)||plans.find(p=>p.activeEncounters?.puzzle);
+const scene=new T.Scene();scene.background=new T.Color('#101310');const state=createState(plan);const world=await createWorldAsync(scene,plan);
+const p=plan.activeEncounters.puzzle;const target=mode==='fuse'?p.fuse:p.control;const yaw=p.yaw;
+const camera=new T.PerspectiveCamera(65,innerWidth/innerHeight,.05,150);const roomId=roomIdAt(plan,target);const viewCell=plan.cells.filter(c=>c.roomId===roomId).sort((a,b)=>Math.abs(Math.hypot(a.x*plan.cellSize-target.x,a.z*plan.cellSize-target.z)-1.6)-Math.abs(Math.hypot(b.x*plan.cellSize-target.x,b.z*plan.cellSize-target.z)-1.6))[0];camera.position.set(viewCell.x*plan.cellSize,1.65,viewCell.z*plan.cellSize);state.player={x:camera.position.x,z:camera.position.z,standing:true,flashlight:true};
+const renderer=new T.WebGLRenderer({antialias:true});renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.toneMapping=T.ACESFilmicToneMapping;document.body.append(renderer.domElement);
+scene.add(new T.HemisphereLight(0xb2b7a6,0x24221d,.5));const light=new T.PointLight(0xffe6bc,2,8);light.position.copy(camera.position);scene.add(light);
+const controls=new OrbitControls(camera,renderer.domElement);controls.target.set(target.x,.8,target.z);controls.update();world.update(.016,state);
+document.querySelector('#status').textContent='真实生成房间：'+mode+' · 拖动检查摆位（独立美术检查，不影响当前游戏）';
+renderer.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera);});addEventListener('pagehide',()=>{world.dispose();renderer.dispose();});
+</script></html>

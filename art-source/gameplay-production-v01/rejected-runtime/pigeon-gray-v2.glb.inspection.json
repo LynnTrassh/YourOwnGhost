@@ -1,0 +1,53 @@
+{
+  "source": "art-source/gameplay-production-v01/animals/pigeon-gray-v2/model.glb",
+  "destination": "public/art/animals-v01/pigeon-gray-v2.glb",
+  "sourceBytes": 931060,
+  "runtimeBytes": 931416,
+  "sourceSHA256": "95982cd623da8cfa5dcc63b7495fc58a48b3172166c23eb4a7d093d17072ee06",
+  "runtimeSHA256": "5191394f098221a6b0a63faff05188a2fa0502d85bda6e7eb088fb294dd2f735",
+  "triangles": 5916,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2763671875,
+      -0.4990234076976776,
+      -0.4931640923023224
+    ],
+    "max": [
+      0.2763671875,
+      0.4990234375,
+      0.4931640625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.08307240952560542,
+      0,
+      -0.14823875645941736
+    ],
+    "max": [
+      0.08307240952560542,
+      0.3,
+      0.14823875645941736
+    ],
+    "size": [
+      0.16614481905121084,
+      0.3,
+      0.29647751291883473
+    ]
+  },
+  "scale": 0.30058709312445214,
+  "scaleXYZ": [
+    0.30058709312445214,
+    0.30058709312445214,
+    0.30058709312445214
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "matte",
+  "orientationStatus": "requires-visual-confirmation"
+}

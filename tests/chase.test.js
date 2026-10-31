@@ -112,6 +112,9 @@ test('the player can run the generated four-room route into hiding without telep
       const target=route[waypoint],dx=target.x-state.player.x,dz=target.z-state.player.z;
       const distance=Math.hypot(dx,dz);
       if(distance<.08){waypoint++;continue;}
+      const currentRoom=roomIdAt(plan,state.player),nextRoom=route.slice(waypoint).map(point=>roomIdAt(plan,point)).find(id=>id!==currentRoom);
+      const nextEdge=plan.edges.find(edge=>[edge.a,edge.b].includes(currentRoom)&&[edge.a,edge.b].includes(nextRoom));
+      for(const door of plan.doors)if(door.edgeId===nextEdge?.id&&!state.doors[door.id]?.open&&Math.hypot(door.x-state.player.x,door.z-state.player.z)<2.2){if(world.toggleDoor(door.id,state))for(let wait=0;wait<13;wait++){world.update(.05,state);lethal ||= stepChase(world.getTopology(),state,.05,{boxes:world.getColliders()});}}
       world.update(.05,state);
       movePlayer(state.player,dx/distance*Math.min(distance,.12),dz/distance*Math.min(distance,.12),world.getColliders());
       const room=roomIdAt(plan,state.player);if(room)seen.add(room);
@@ -119,7 +122,7 @@ test('the player can run the generated four-room route into hiding without telep
       if(lethal)break;
     }
     assert.equal(lethal,false,`${seed}: reached by the investigator before the hiding room`);
-    assert.equal(roomIdAt(plan,state.player),plan.chase.hideRoomId,`${seed}: failed to enter hide room`);
+    assert.equal(roomIdAt(plan,state.player),plan.chase.hideRoomId,`${seed}: failed to enter hide room ${JSON.stringify({player:state.player,target:route[waypoint],doors:plan.doors.filter(d=>Math.hypot(d.x-state.player.x,d.z-state.player.z)<3).map(d=>({id:d.id,x:d.x,z:d.z,state:state.doors[d.id],prompt:world.doorPrompt(d.id,state)}))})}`);
     assert.ok(Object.values(plan.chase.stages).every(room=>seen.has(room)),`${seed}: stage not crossed`);
     assert.equal(state.threat.stage,4);
     world.dispose();

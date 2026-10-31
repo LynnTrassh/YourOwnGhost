@@ -1,0 +1,53 @@
+{
+  "source": "art-source/gameplay-production-v01/props/ceramic-fuse/model.glb",
+  "destination": "public/art/gameplay-production-v01/ceramic-fuse.glb",
+  "sourceBytes": 642096,
+  "runtimeBytes": 642484,
+  "sourceSHA256": "fccf71f28e21627dfb7a26744563d9cdce09d6c2f9a1777ece8bc0318838ed9f",
+  "runtimeSHA256": "b04ae0b1422cdaf408a21d183d563b11bdd951665a5097310e2c4b0079cd9614",
+  "triangles": 5768,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3017578125,
+      -0.1376953125,
+      -0.4990234375
+    ],
+    "max": [
+      0.3017578125,
+      0.1376953274011612,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.11959573820962362,
+      0,
+      -0.07231914502304052
+    ],
+    "max": [
+      0.11959573820962362,
+      0.066,
+      0.07231914502304052
+    ],
+    "size": [
+      0.23919147641924723,
+      0.066,
+      0.14463829004608103
+    ]
+  },
+  "scale": 0.23965956150030251,
+  "scaleXYZ": [
+    0.23965956150030251,
+    0.23965956150030251,
+    0.23965956150030251
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "requires-visual-confirmation"
+}

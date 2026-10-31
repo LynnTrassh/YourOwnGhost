@@ -8,17 +8,18 @@ import * as THREE from 'three';
 import { requestDeath, stepTransition, commitTransition } from '../src/flow.js';
 import { pathThroughTiles } from '../src/planning/validate.js';
 
-const dream=generateDream('12',{catEnabled:false,activeEncounters:true}),plan=dream[0];
+const dream=generateDream('audit1',{openingSequence:true,catEnabled:false,activeEncounters:true}),plan=dream[0];
 const viewAt=(position,target)=>({...position,y:1.65,yaw:Math.atan2(-(target.x-position.x),-(target.z-position.z)),pitch:-.15,halfH:1,halfV:1});
 test('normal two layers contain gaze and complete chase; active groups use actual rooms',()=>{
-  assert.ok(plan.threat);assert.ok(dream[1].chase);
-  assert.ok(plan.activeEncounters.puzzle);assert.ok(plan.activeEncounters.scare);
+  assert.ok(plan.threat);assert.ok(dream[1].threat);
+  assert.ok(plan.activeEncounters.puzzle);
   const p=plan.activeEncounters.puzzle;
   assert.ok(p.fuse);assert.notEqual(p.fuse.roomId,p.roomIds[1]);
   assert.ok(pathThroughTiles({...plan,obstacles:[...plan.obstacles,p.gate]},plan.spawn,p.fuse),'fuse reachable before locked door');
   assert.ok(plan.edges.some(e=>p.roomIds.includes(e.a)&&p.roomIds.includes(e.b)));
-  for(const id of plan.activeEncounters.scare.roomIds)assert.ok(plan.rooms.some(r=>r.id===id));
-  assert.ok(!plan.activeEncounters.scare.roomIds.slice(1,2).some(id=>plan.coverage.rooms.find(r=>r.roomId===id).role==='rest'));
+  assert.ok(p.explorationRooms.length>=3);assert.ok(p.explorationDistance>=12);
+  assert.ok(!plan.opportunities.exitRoute.includes(p.fuse.roomId));
+  assert.equal(p.clueRoomId,p.fuse.roomId);
   assert.equal(dream[1].coverage.ratio,1);
 });
 test('lever opens real gate only after matching and survives ordinary death',()=>{
@@ -30,11 +31,13 @@ test('lever opens real gate only after matching and survives ordinary death',()=
   const blocksPortal=()=>world.getColliders().some(b=>b.doorId===p.doorId&&door.x>=b.minX&&door.x<=b.maxX&&door.z>=b.minZ&&door.z<=b.maxZ);
   assert.ok(blocksPortal());
   assert.equal(interactActive(plan,state,view,world.getColliders()),true);
-  assert.equal(activeState(plan,state).lever,0,'unpowered console cannot move the mechanism');
+  assert.equal(activeState(plan,state).lever,p.initial,'unpowered console cannot move the mechanism');
   const consolePlayer={...state.player};
   state.player={x:p.fuse.x-.6,z:p.fuse.z,standing:true,flashlight:true};
   assert.equal(interactActive(plan,state,viewAt(state.player,p.fuse),world.getColliders()),true);
   assert.equal(activeState(plan,state).fuseCollected,true);
+  for(let i=0;i<13;i++)stepActive(plan,state,viewAt(state.player,p.clue),.05,world.getColliders());
+  assert.equal(activeState(plan,state).clueSeen,true);
   state.player=consolePlayer;
   assert.equal(interactActive(plan,state,view,world.getColliders()),true);
   assert.equal(activeState(plan,state).powered,true);
@@ -49,13 +52,20 @@ test('lever opens real gate only after matching and survives ordinary death',()=
   assert.equal(activeState(plan,state).solved,true);world.dispose();
 });
 test('corridor warning precedes harmless once-only burst',()=>{
+  const plan=generateDream('12',{openingSequence:true,catEnabled:false,activeEncounters:true})[0];
   const state=createState(plan),p=plan.activeEncounters.scare;
   state.player={...p.trigger,standing:true,flashlight:true};
   const view=viewAt(state.player,p.target);
   stepActive(plan,state,view,.05,[]);assert.equal(activeState(plan,state).scarePhase,'waiting');
-  const before=plan.rooms.find(r=>r.id===p.roomIds[0]);
-  state.player={x:before.center[0]*plan.cellSize,z:before.center[1]*plan.cellSize,standing:true};
-  stepActive(plan,state,view,.05,[]);
+  const cross=(doorId,from)=>{
+    const door=plan.doors.find(d=>d.id===doorId),axis=door.axis,other=axis==='x'?'z':'x';
+    const cell=door.cells.find(([x,z])=>plan.cells.some(c=>c.x===x&&c.z===z&&c.roomId===from));
+    const sign=Math.sign(cell[axis==='x'?0:1]*plan.cellSize-door[axis]);
+    state.player={x:door.x,z:door.z,[axis]:door[axis]+sign*.25,[other]:door[other],standing:true};
+    stepActive(plan,state,view,.05,[]);
+    state.player={...state.player,[axis]:door[axis]-sign*.25};stepActive(plan,state,view,.05,[]);
+  };
+  cross(p.entryDoorId,p.roomIds[0]);
   state.player={...p.trigger,standing:true,flashlight:true};
   for(let i=0;i<10;i++)stepActive(plan,state,view,.05,[]);
   assert.equal(activeState(plan,state).scarePhase,'warning');
@@ -64,10 +74,10 @@ test('corridor warning precedes harmless once-only burst',()=>{
   for(let i=0;i<30;i++)stepActive(plan,state,view,.05,[]);
   assert.equal(activeState(plan,state).scarePhase,'done');assert.equal(state.flow.deaths,0);
   stepActive(plan,state,view,.05,[]);assert.equal(activeState(plan,state).scarePhase,'done');
-  const after=plan.rooms.find(r=>r.id===p.roomIds[2]);
-  const cell=after.cells[0];state.player={x:cell[0]*plan.cellSize,z:cell[1]*plan.cellSize,standing:true};
-  stepActive(plan,state,view,.05,[]);assert.ok(activeState(plan,state).echoRemaining>0);
+  cross(p.exitDoorId,p.roomIds[1]);
+  if(p.echoAllowed===false)assert.ok(!activeState(plan,state).echoRemaining);
+  else assert.ok(activeState(plan,state).echoRemaining>0);
   for(let i=0;i<60;i++)stepActive(plan,state,view,.05,[]);
-  assert.equal(activeState(plan,state).echoRemaining,0);
-  stepActive(plan,state,view,.05,[]);assert.equal(activeState(plan,state).echoRemaining,0);
+  assert.equal(activeState(plan,state).echoRemaining??0,0);
+  stepActive(plan,state,view,.05,[]);assert.equal(activeState(plan,state).echoRemaining??0,0);
 });

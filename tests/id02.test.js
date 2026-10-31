@@ -46,3 +46,19 @@ test('ID02 follows visible player motion, stops with the player and stays inside
   stepContent(plan,unseen,{...moved,yaw:moved.yaw+Math.PI},.4,boxes);
   assert.ok(!unseen.facts.some(fact=>fact.endsWith('.syncStopSeen')));
 });
+
+test('ID02 stops its gait at the safe boundary and follows small high-frame-rate steps',()=>{
+  const instance={instanceId:'ID02-test',definitionId:'ID02',roomId:'r',focus:{x:0,y:1.45,z:-4}};
+  const plan={rooms:[{id:'r'}],cells:[{x:0,z:0,roomId:'r'}],cellSize:5,content:{instances:[instance],conditionalSlots:[]}};
+  const state=createStoryState(),first=look({x:0,z:0},instance.focus);
+  stepContent(plan,state,first,.6,[]);
+  for(let frame=1;frame<=60;frame++)stepContent(plan,state,look({x:frame*.01,z:0},instance.focus),1/240,[]);
+  const phase=state.instances[instance.instanceId];
+  assert.equal(phase.offsetX,.4);assert.equal(phase.moving,false);
+  assert.ok(!state.facts.some(f=>f.endsWith('.syncStopSeen')));
+  const frozenTime=phase.walkTime;
+  stepContent(plan,state,look({x:.61,z:0},instance.focus),1/240,[]);
+  assert.equal(phase.walkTime,frozenTime);
+  stepContent(plan,state,look({x:.60,z:0},instance.focus),1/240,[]);
+  assert.equal(phase.moving,true);assert.ok(phase.offsetX<.4);
+});

@@ -43,7 +43,7 @@ export function contentEligibility(id,{preferences=[],capabilities=['geometry','
   if(definition.readiness==='conditional-greybox'&&!allowConditional) reasons.push('CONDITIONAL_ONLY');
   if(definition.readiness==='conditional-greybox'&&!allowGreybox) reasons.push('GREYBOX_DISABLED');
   if(definition.preferenceRequirements.some(p=>p==='like.any'
-    ?!preferences.some(token=>token==='like.cat'||token==='like.flower')
+    ?!preferences.some(token=>token==='like.cat'||token==='like.flower'||token==='like.static-model')
     :!preferences.includes(p))) reasons.push('PREFERENCE_UNCONFIRMED');
   if(definition.capabilities.some(c=>!capabilities.includes(c))) reasons.push('CAPABILITY_MISSING');
   return {accepted:reasons.length===0,reason:reasons[0]??'GREYBOX_READY',reasons,definition};

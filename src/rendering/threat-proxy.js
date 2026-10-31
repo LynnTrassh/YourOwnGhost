@@ -1,3 +1,4 @@
+import { createProductionAssetLoader } from './production-assets.js';
 import * as THREE from 'three';
 import { appearanceFor } from '../personalization/fear.js';
 import { THREAT_BODY } from '../threat-profile.js';
@@ -50,5 +51,9 @@ export function createThreatProxy(appearanceId,resources) {
     ball(red,0,1.48,.18,.035);box(red,0,1.40,.153,.12,.018,.015);
     for(const y of [.76,.98,1.15]) ball(ruff,0,y,.145,.027);
   }
+  if(appearance.id==='generic')createProductionAssetLoader(resources).attach({
+    url:'/art/gameplay-production-v01/watcher-effigy.glb',parent:root,
+    width:.48,height:THREAT_BODY.height,depth:.48,yaw:Math.PI,fallback:[...root.children],
+  });
   return root;
 }

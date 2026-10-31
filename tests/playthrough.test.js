@@ -35,6 +35,7 @@ test('continuous seed 12 route: cat revisit, false awakening, demonstration, rea
       for(let frame=0;Math.hypot(point.x-s.player.x,point.z-s.player.z)>.005;frame++) {
         assert.ok(frame<100,'collision route must make progress');assert.ok(canExplore(s),'unexpected death on escape route');
         aim(watchStatue?s.threat:{...point,y:1.65});
+        for(const door of p.doors)if(!s.doors[door.id]?.open&&Math.hypot(door.x-s.player.x,door.z-s.player.z)<2.2){if(world.toggleDoor(door.id,s))for(let wait=0;wait<13;wait++)tick();}
         const dx=point.x-s.player.x,dz=point.z-s.player.z,d=Math.hypot(dx,dz),step=Math.min(.12,d);
         movePlayer(s.player,dx/d*step,dz/d*step,world.getColliders());tick();
       }

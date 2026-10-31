@@ -12,8 +12,23 @@ import { createStoryProxies } from './rendering/story-proxies.js';
 import { createDoorSystem } from './rendering/doors.js';
 import { createActiveProxies } from './rendering/active-proxies.js';
 import { sealDoorTransaction } from './planning/door-transaction.js';
+import { createGeneratedDisplay } from './rendering/generated-display.js';
 
-export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceId='generic-proxy',generatedModels=[]}={}) {
+export function createWorld(...args) {
+  const build=buildWorld(...args);let result;
+  do{result=build.next();}while(!result.done);
+  return result.value;
+}
+export async function createWorldAsync(...args) {
+  const build=buildWorld(...args);let result;
+  do {
+    result=build.next();
+    if(!result.done)await new Promise(resolve=>setTimeout(resolve,0));
+  }while(!result.done);
+  return result.value;
+}
+
+function* buildWorld(scene, plan = generatePlan('42'), {threatAppearanceId='generic-proxy',generatedModels=[]}={}) {
   appearanceFor(threatAppearanceId);
   const root = new THREE.Group();
   const solids = [], doorMeshes = [], resources = new Set();
@@ -74,6 +89,7 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
     for(const group of groups) geometry.addGroup(...group);
     const mesh=new THREE.Mesh(geometry,materials);mesh.castShadow=true;mesh.receiveShadow=true;root.add(mesh);return mesh;
   }
+  yield;
   const baseWalls=boundaryMesh(plan.walls,3,id=>roomMaterials.get(id)??wall);
   solids.push(baseWalls);
   const trimBoxes=plan.walls.map(b=>({...b,minX:b.minX-.0175,maxX:b.maxX+.0175,
@@ -117,12 +133,14 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
     }
     tiltRoom={instance:tiltInstance,group,wallMesh,trimMesh};
   }
+  yield;
   const bedroomDecor = createBedroomSet({
     THREE, plan, root, addBox: box, addMaterial: material, unitBox,
     doorAssembly: null, resources, interiorArt,
   });
   const tiltedArt = [];
   for (const b of plan.obstacles) {
+    yield;
     if(b.kind==='generated-theme')continue;
     activeParent=tiltRoom&&b.roomId===tiltRoom.instance.roomId
       ?{group:tiltRoom.group,pivot:tiltRoom.instance.pivot}:null;
@@ -144,6 +162,7 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
     if (activeParent) tiltedArt.push(...root.children.slice(artStart));
   }
   activeParent=null;
+  yield;
   const storyProxies=createStoryProxies(THREE,root,plan,{material,box,resources,scene});
   function label(text, x, z, y = 2.55, width = 2.4) {
     if (typeof document === 'undefined') return;
@@ -278,7 +297,7 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
   label('出口', plan.exit.x, plan.exit.z, 2.15, 1.2);
   if(plan.activeEncounters?.puzzle) {
     const p=plan.activeEncounters.puzzle;
-    label('摇杆 · 对齐亮灯',p.control.x,p.control.z,2.1,1.8);
+    label('配电台 · 按蓝灯接线提示',p.control.x,p.control.z,2.1,1.8);
   }
   if(plan.chase) {
     for(const id of plan.chase.routeDoorIds.slice(2)) {
@@ -299,16 +318,12 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
     if(!navigationPlans.has(base))navigationPlans.set(base,{...base,obstacles:[...base.obstacles,...doorSystem.navigationObstacles()]});
     return navigationPlans.get(base);
   }
-  const generatedRoots=[];
-  for(const slot of plan.generatedThemes??[]){
-    const handle=generatedModels.find(h=>h.entityId===slot.entityId);
-    if(!handle)throw new Error('主题资源缺失，不能安装世界。');
-    const group=new THREE.Group();group.name=`generated-${slot.role}-${slot.entityId}`;
-    group.position.set(slot.x,0,slot.z);group.add(handle.root.clone(true));root.add(group);generatedRoots.push(group);
-  }
+  yield;
+  const generatedDisplay=createGeneratedDisplay(root,plan,generatedModels);
   scene.add(root);
   return {
-    clearGenerated(){for(const group of generatedRoots)group.removeFromParent();},
+    clearGenerated(){generatedDisplay.clear();},
+    getThemeVariants:()=>generatedDisplay.variants,
     plan, solids, doorMeshes, door: doorSystem.records.get('bedroom')?.mesh, exitMarker, artStats: interiorArt.stats, artReady: Promise.all([interiorArt.ready(),doorSystem.ready()]),
     getDoorTargets:()=>doorSystem.targets(),
     toggleDoor:(id,state)=>doorSystem.toggle(id,state),
@@ -319,6 +334,7 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
       interiorArt.update(dt,state.player);
       storyProxies.updateAmbient(dt);
       doorSystem.update(dt,state);
+      generatedDisplay.update(state.player,[...plan.walls,...sealedDoors.filter(d=>d.active).map(d=>d.instance.sealedWall),...doorSystem.colliders()]);
       if(impactLight){impactElapsed=state.threat?.phase==='warning'?impactElapsed+dt:0;
         impactLight.intensity=state.threat?.phase==='warning'?1.1+.45*Math.abs(Math.sin(impactElapsed*13)):0;}
     },
@@ -336,6 +352,6 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
       const cell = plan.cells.find(c => c.x === Math.round(x / CELL_SIZE) && c.z === Math.round(z / CELL_SIZE));
       return plan.rooms.find(r => r.id === cell?.roomId)?.name ?? '房间边界';
     },
-    dispose() { scene.remove(root); for (const resource of resources) resource.dispose(); },
+    dispose() { scene.remove(root); generatedDisplay.dispose();for (const resource of resources) resource.dispose(); },
   };
 }

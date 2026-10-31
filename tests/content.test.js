@@ -116,7 +116,9 @@ test('TI02 counts two visible actor loops without creating a threat',()=>{
   stepContent(plan,state,view,2,boxes);
   assert.equal(state.instances[instance.instanceId].phase,'waiting');
   stepContent(plan,state,{...view,yaw:view.yaw+Math.PI},2,boxes);
-  assert.equal(state.instances[instance.instanceId].progress,2);
+  assert.equal(state.instances[instance.instanceId].progress,4);
+  stepContent(plan,state,view,2,boxes);
+  assert.equal(state.instances[instance.instanceId].phase,'waiting');
   stepContent(plan,state,view,2,boxes);
   assert.equal(state.instances[instance.instanceId].phase,'twoLoopsSeen');
   assert.equal(state.cue?.text,'再来一遍。它总觉得刚才没做好。');

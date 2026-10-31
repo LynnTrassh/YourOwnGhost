@@ -1,6 +1,7 @@
 export function createDoorStates(plan) {
   const result={bedroom:{open:false}};
-  for(const door of plan?.doors??[])result[door.id]={open:!door.closed};
+  // Initial leaf state is independent of the planning topology's door flags.
+  for(const door of plan?.doors??[])result[door.id]={open:false};
   if(plan?.chase)result[plan.chase.sideDoorId]={open:false};
   if(plan?.activeEncounters?.puzzle)result[plan.activeEncounters.puzzle.doorId]={open:false};
   return result;

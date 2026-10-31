@@ -5,8 +5,8 @@ import { startSession } from './start-session.js';
 import { createBrowserControls } from '../input/browser-controls.js';
 
 const randomDescriptions = {
-  like: ['雨天的旧书店，窗边有一盏暖黄色的灯。', '深海里缓慢漂浮、发着蓝光的水母。', '晒过太阳的被子，和蜷在床边睡觉的猫。', '开满白色小花的庭院，风吹过时花瓣轻轻飘落。', '夜晚的列车，窗外不断掠过陌生城市的灯火。', '可以走进去的星空，脚边漂浮着小小的星球。', '旧唱片里的音乐，和厨房里刚烤好的面包。', '下雪后的森林，只有自己留下的一串脚印。'],
-  fear: ['镜子里的我，比我慢半拍才做出动作。', '黑暗的走廊尽头，有人一直在叫我的名字。', '房间里所有人偶的眼睛，都在我转身后换了方向。', '水面之下，有一个看不清的巨大影子。', '熟悉的家人站在门外，却用陌生人的声音说话。', '走了很久的楼梯，总是回到同一层。', '空房间里传来脚步声，停在我的身后。', '墙壁慢慢靠近，门却越来越远。'],
+  like: ['一只蓝色的小鸟摆件。', '一朵白色的小花。', '一只橘色的猫。', '一张黑色唱片。', '一块金黄色的面包。', '一个蓝色星球模型。'],
+  fear: ['一张白色陶瓷面具。', '一个没有眼睛的布娃娃。', '一只黑色蜘蛛。', '一个红色小丑面具。', '一只灰色的手形雕塑。', '一个有裂纹的人偶。'],
 };
 
 // Adapter owns gameplay. This shell only emits intents and consumes snapshots.
@@ -14,7 +14,7 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
   try { storage ??= window.localStorage; } catch { /* Settings still work for this session. */ }
   let settings = loadSettings(storage), page = 'title', returnPage = 'title', tab = 'controls';
   let modeHint = matchMedia('(pointer: coarse)').matches && navigator.maxTouchPoints > 0;
-  let mode = resolveMode(settings,modeHint), hasSession = false, preparedSession, generationStatus='idle', stage='understanding';
+  let mode = resolveMode(settings,modeHint), hasSession = false, preparedSession, generationStatus='idle', stage='understanding',autoEnterAfterConfirm=false;
   let interpretationAnswer=null;
   let confirmAction, beforeRotate='paused', toastTimer, destroyed=false, pendingStart=false, entering=false, entrySequence=0;
   const abort = new AbortController(), signal = abort.signal, draft={like:'',fear:''};
@@ -28,13 +28,13 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
       <p class="title-note">包含恐怖与动物死亡表现。</p></div></section>
     <section class="screen form-screen" data-screen="like" hidden aria-labelledby="ui-like-title"><span class="brand">心里有鬼</span><span class="step">01 / 03</span>
       <div class="content"><h2 id="ui-like-title" tabindex="-1">你喜欢什么？</h2>
-      <label class="sr-only" for="ui-like">喜欢的事物与细节</label><textarea id="ui-like" maxlength="1200" placeholder="例如：雨天的旧书店、发光的水母……"></textarea>
-      <div class="field-meta"><span data-count="like" hidden>0 / 1200</span></div>
+      <label class="sr-only" for="ui-like">喜欢的事物与细节</label><textarea id="ui-like" maxlength="1200" placeholder="例如：一只蓝色小鸟，可补充颜色、材质、外形……"></textarea>
+      <p class="muted">可以自由描述。我们会提取代表性的实体；抽象感受会映射成语义接近的物件。可留空。</p><div class="field-meta"><span data-count="like" hidden>0 / 1200</span></div>
       <div class="actions"><button class="quiet random-button" data-action="random-like" aria-label="随机填写喜欢的事物">随机</button><button class="quiet" data-action="title">返回</button><button class="primary" data-action="next">下一步 / 跳过</button></div></div></section>
     <section class="screen form-screen" data-screen="fear" hidden aria-labelledby="ui-fear-title"><span class="brand">心里有鬼</span><span class="step">02 / 03</span>
       <div class="content"><h2 id="ui-fear-title" tabindex="-1">你害怕什么？</h2>
-      <label class="sr-only" for="ui-fear">害怕的事物与细节</label><textarea id="ui-fear" maxlength="1200" placeholder="例如：站在远处、模仿我动作的无脸人……"></textarea>
-      <div class="field-meta"><span data-count="fear" hidden>0 / 1200</span></div>
+      <label class="sr-only" for="ui-fear">害怕的事物与细节</label><textarea id="ui-fear" maxlength="1200" placeholder="例如：一张白色陶瓷面具……"></textarea>
+      <p class="muted">可以自由描述。我们会提取代表性的实体；抽象感受会映射成语义接近的物件。可留空。</p><div class="field-meta"><span data-count="fear" hidden>0 / 1200</span></div>
       <div class="actions"><button class="quiet random-button" data-action="random-fear" aria-label="随机填写害怕的事物">随机</button><button class="quiet" data-action="like">上一步</button><button class="primary" data-action="generate">编织梦境</button></div></div></section>
     <section class="screen form-screen" data-screen="generation" hidden aria-labelledby="ui-generation-title"><span class="brand">心里有鬼</span><span class="step">03 / 03</span>
       <div class="content"><h2 id="ui-generation-title" tabindex="-1">梦正在成形</h2><p class="muted" data-generation-copy hidden></p>
@@ -42,20 +42,20 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
       <article><header>害怕<button class="quiet" data-action="edit-fear">修改</button></header><p data-summary="fear"></p></article></div></details>
       <div class="progress" aria-label="准备进度" hidden><span data-stage="understanding">理解描述</span><span data-stage="generating">生成梦境</span><span data-stage="preparing">准备进入</span></div>
       <p class="message" data-generation-message role="status" aria-live="polite"></p>
-      <div class="actions"><button class="quiet" data-action="edit-fear">返回修改</button><button class="primary" data-action="fallback" hidden>直接进入</button><button class="primary" data-action="enter" disabled>入梦</button></div>
+      <div class="actions"><button class="quiet" data-action="edit-fear">返回修改</button><button class="primary" data-action="fallback" hidden>直接入梦</button><button class="primary" data-action="enter" disabled>入梦</button></div>
       <button class="quiet" data-action="settings" data-mode-label></button></div></section>
     <section class="screen form-screen" data-screen="interpretation" hidden aria-labelledby="ui-interpretation-title"><span class="brand">心里有鬼</span><span class="step">确认理解</span>
       <div class="content"><h2 id="ui-interpretation-title" tabindex="-1">这是你想表达的吗？</h2>
       <div class="summary"><article><header>喜欢</header><p data-interpretation="like"></p><details><summary>查看原文</summary><p data-original="like"></p></details></article>
       <article><header>害怕</header><p data-interpretation="fear"></p><details><summary>查看原文</summary><p data-original="fear"></p></details></article></div>
-      <p class="muted">本轮生成静态外观；声音、动作和抽象主题尚未接入。留空项目使用默认预设。</p><p class="message" data-ambiguities role="status"></p><div class="actions"><button data-action="interpretation-edit">返回修改</button><button class="primary" data-action="interpretation-accept">确认</button></div></div></section>
+      <p class="muted">本轮提取或映射代表性实体，生成其外观；声音和动作由已有剧本安排。留空项目使用默认预设。</p><p class="message" data-ambiguities role="status"></p><div class="actions"><button data-action="interpretation-edit">返回修改</button><button class="primary" data-action="interpretation-accept">确认</button></div></div></section>
     <section class="screen centered" data-screen="paused" hidden aria-labelledby="ui-pause-title"><div class="content title-content">
       <h2 id="ui-pause-title" tabindex="-1">梦境暂停</h2><div class="title-actions">
       <button class="primary" data-action="resume">继续探索</button><button data-action="settings">设置</button><button data-action="help">操作说明</button>
       <button class="quiet" data-action="restart">重新开始</button><button class="quiet" data-action="leave">返回标题</button></div></div></section>
     <section class="screen centered" data-screen="settings" hidden aria-labelledby="ui-settings-title"><div class="content settings-content">
       <h2 id="ui-settings-title" tabindex="-1">设置</h2><div class="tabs" role="tablist" aria-label="设置分类">
-      <button role="tab" id="ui-tab-controls" aria-controls="ui-panel-controls" data-tab="controls">操作</button><button role="tab" id="ui-tab-picture" aria-controls="ui-panel-picture" data-tab="picture">画面</button><button role="tab" id="ui-tab-subtitles" aria-controls="ui-panel-subtitles" data-tab="subtitles">字幕</button></div>
+      <button role="tab" id="ui-tab-controls" aria-controls="ui-panel-controls" data-tab="controls">操作</button><button role="tab" id="ui-tab-picture" aria-controls="ui-panel-picture" data-tab="picture">画面</button><button role="tab" id="ui-tab-subtitles" aria-controls="ui-panel-subtitles" data-tab="subtitles">声音与字幕</button></div>
       <div role="tabpanel" id="ui-panel-controls" aria-labelledby="ui-tab-controls" data-panel="controls">
         <div class="setting-row"><label for="ui-mode">操作方式</label><select id="ui-mode" data-setting="mode"><option value="auto">自动识别</option><option value="keyboard">键盘鼠标</option><option value="touch">触屏</option></select></div>
         <div class="setting-row" data-device="keyboard"><label for="ui-mouse">鼠标灵敏度</label><span class="range-wrap"><input id="ui-mouse" type="range" min="0.4" max="2" step="0.1" data-setting="mouseSensitivity"><output for="ui-mouse"></output></span></div>
@@ -69,12 +69,13 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
         <div class="setting-row"><label for="ui-motion">镜头微动</label><input id="ui-motion" type="checkbox" data-setting="motion"></div>
       </div>
       <div role="tabpanel" id="ui-panel-subtitles" aria-labelledby="ui-tab-subtitles" data-panel="subtitles" hidden>
+        <div class="setting-row"><label for="ui-music">背景音乐</label><span class="range-wrap"><input id="ui-music" type="range" min="0" max="1" step="0.05" data-setting="musicVolume"><output for="ui-music"></output></span></div>
         <div class="setting-row"><label for="ui-size">字幕大小</label><span class="range-wrap"><input id="ui-size" type="range" min="16" max="26" step="1" data-setting="subtitleSize"><output for="ui-size"></output></span></div>
         <div class="setting-row"><label for="ui-background">字幕背景</label><span class="range-wrap"><input id="ui-background" type="range" min="0" max="1" step="0.05" data-setting="subtitleBackground"><output for="ui-background"></output></span></div>
-        <p data-subtitle-preview style="padding:14px;text-align:center">门外，好像有什么。</p><p class="muted">当前暂无音效，字幕保持开启。</p>
+        <p data-subtitle-preview style="padding:14px;text-align:center">门外，好像有什么。</p><p class="muted">音乐音量调至 0 可静音，字幕保持开启。</p>
       </div><p class="message" data-storage-message role="status"></p><div class="actions"><button class="quiet" data-action="reset-settings">恢复默认</button><button class="primary" data-action="back">返回</button></div></div></section>
     <section class="screen centered" data-screen="help" hidden aria-labelledby="ui-help-title"><div class="content"><h2 id="ui-help-title" tabindex="-1">在梦里探索</h2>
-      <ul class="help-list"><li>键鼠：WASD 移动，鼠标环顾，E 交互，F 手电，Esc 暂停。</li><li>触屏：左摇杆移动，右摇杆环顾，点击“起身／开门”与“手电”。</li><li>靠近并看向可交互目标，才会出现对应提示。</li><li>手机横屏游玩。</li></ul><p class="muted">当前无音效。刷新会重开。</p><div class="actions"><button class="primary" data-action="back">知道了</button></div></div></section>
+      <ul class="help-list"><li>键鼠：WASD 移动，鼠标环顾，E 交互，F 手电，Esc 暂停。</li><li>触屏：左摇杆移动，右摇杆环顾，点击“起身／开门”与“手电”。</li><li>靠近并看向可交互目标，才会出现对应提示。</li><li>手机横屏游玩。</li></ul><p class="muted">背景音乐可在设置中调整。刷新会重开。</p><div class="actions"><button class="primary" data-action="back">知道了</button></div></div></section>
     <section class="screen centered" data-screen="ending" hidden aria-labelledby="ui-ending-title"><div class="content title-content"><h2 id="ui-ending-title" tabindex="-1">你醒了。</h2><div class="title-actions"><button class="primary" data-action="new-dream">再做一个梦</button><button class="quiet" data-action="leave">返回标题</button></div></div></section>
     <div class="hud" hidden><div class="reticle" aria-hidden="true"></div><span class="interaction"></span><p class="subtitle" hidden></p><button class="pause-button" aria-label="暂停" data-action="pause">Ⅱ</button>
       <div class="touch-controls"><div class="joystick move-stick" aria-label="移动摇杆"><div class="stick-base"><div class="stick-knob"></div></div><span class="stick-label">移动</span></div>
@@ -119,12 +120,15 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
         $(`[data-original=${role}]`).textContent=draft[role];
         $(`[data-interpretation=${role}]`).textContent=interpretation.displaySummary[role];
       }
-      const ambiguous=interpretation.ambiguities.length>0;
-      $('[data-ambiguities]').textContent=ambiguous?'还需要澄清：'+interpretation.ambiguities.map(item=>typeof item==='string'?item:(item?.question??item?.message??JSON.stringify(item))).join('；'):'';
+      const symbolic=interpretation.mappingNotes?.filter(n=>n.symbolic)??[];
+      const supportIssue='';
+      $('[data-action=interpretation-accept]').textContent=symbolic.length?'继续入梦':'确认';
+      const ambiguous=interpretation.ambiguities.length>0||Boolean(supportIssue);
+      $('[data-ambiguities]').textContent=supportIssue|| (ambiguous?'还需要澄清：'+interpretation.ambiguities.map(item=>typeof item==='string'?item:(item?.question??item?.message??JSON.stringify(item))).join('；'):symbolic.length?'没有识别到明确实体，建议填写具体物件或生物。也可继续入梦：'+symbolic.map(n=>`${n.role==='like'?'喜爱':'恐惧'}将呈现为${n.subject}`).join('；'):'');
       $('[data-action=interpretation-accept]').disabled=ambiguous;
       show('interpretation');
       return new Promise((resolve,reject)=>{
-        const answer={accept(){if(ambiguous||interpretationAnswer!==answer)return;cleanup();show('generation');resolve({decision:'accept'});}};
+        const answer={accept(){if(ambiguous||interpretationAnswer!==answer)return;autoEnterAfterConfirm=symbolic.length>0;cleanup();show('generation');resolve({decision:'accept'});}};
         function cleanup(){confirmationSignal.removeEventListener('abort',cancel);if(interpretationAnswer===answer)interpretationAnswer=null;}
         function cancel(){cleanup();reject(Object.assign(new Error('确认已取消。'),{code:'ABORTED'}));if(page==='interpretation'&&!destroyed)show('generation');}
         interpretationAnswer=answer;confirmationSignal.addEventListener('abort',cancel,{once:true});
@@ -133,9 +137,12 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
     if(destroyed)return;
     generationStatus=result.status;stage=result.stage??stage;preparedSession=result.session;
     $('#ui-generation-title').textContent=result.status==='error'?'梦还没有准备好':result.status==='ready'?'可以入梦了':'梦正在成形';
-    $('[data-generation-copy]').textContent=result.status==='error'?'你的描述还在这里。':result.status==='ready'?'梦境已准备好。':'你说过的事物，正在门后相遇。';
-    $('[data-generation-message]').textContent=result.status==='error'?'生成暂不可用，可进入预设梦境。':result.message??(result.status==='ready'?'梦境已准备好。':'');
-    $('[data-action=enter]').disabled=result.status!=='ready';$('[data-action=fallback]').hidden=result.status!=='error';$('[data-action=enter]').hidden=result.status==='error';
+    const readyCopy='';
+    $('[data-generation-copy]').textContent=result.status==='error'?'你的描述还在这里。':result.status==='ready'?readyCopy:'你说过的事物，正在门后相遇。';
+    $('[data-generation-message]').textContent=result.status==='error'?(result.message||'生成暂不可用，可进入预设梦境。'):result.message??(result.status==='ready'?readyCopy:'');
+    $('[data-action=enter]').disabled=result.status!=='ready';$('[data-action=fallback]').hidden=result.status==='ready'; $('[data-action=enter]').hidden=result.status==='error';
+    if(result.status==='ready'&&autoEnterAfterConfirm){autoEnterAfterConfirm=false;queueMicrotask(()=>{if(!destroyed&&generationStatus==='ready'&&page==='generation')void resume(true);});}
+    if(result.status==='error'){preparedSession={presetFallback:true,raw:{...draft}};toast('个性化准备暂不可用，先进入预设梦境。');queueMicrotask(()=>{if(!destroyed&&generationStatus==='error'&&page==='generation')void resume(true);});}
     all('[data-stage]').forEach(node=>node.classList.toggle('current',node.dataset.stage===stage||(stage==='ready'&&node.dataset.stage==='preparing')));
   }});
   function generate() {
@@ -143,6 +150,7 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
     for(const role of ['like','fear'])$(`[data-summary=${role}]`).textContent=draft[role];
     show('generation');void generation.run(draft);
   }
+  const entryNotice=document.createElement('div');entryNotice.className='entry-notice';entryNotice.hidden=true;entryNotice.setAttribute('role','status');entryNotice.textContent='正在进入梦境，准备房间与画面…';root.append(entryNotice);
   function portrait(){return mode==='touch'&&innerHeight>innerWidth;}
   async function resume(start=false) {
     if(entering)return;
@@ -150,6 +158,7 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
     if(portrait()){pendingStart=start;beforeRotate='paused';show('paused');$('.rotate').hidden=false;return;}
     entering=true;const entryId=++entrySequence;
     root.setAttribute('aria-busy','true');
+    entryNotice.hidden=false;
     $('[data-action=enter]').disabled=true;$('[data-action=resume]').disabled=true;
     try {
       // User activation remains synchronous until the adapter chooses to await.
@@ -160,7 +169,7 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
       hasSession=true;show('playing');
       try {await controls.lock();} catch {toast('鼠标锁定不可用，可按住画面拖动环顾。');}
     } catch(error){if(destroyed||entryId!==entrySequence)return;pendingStart=start;show('paused');toast(error.message||'无法进入，请重试。');}
-    finally{entering=false;root.removeAttribute('aria-busy');$('[data-action=enter]').disabled=generationStatus!=='ready';$('[data-action=resume]').disabled=false;}
+    finally{entryNotice.hidden=true;entering=false;root.removeAttribute('aria-busy');$('[data-action=enter]').disabled=generationStatus!=='ready';$('[data-action=resume]').disabled=false;}
   }
   function pause(){if(page==='playing'){show('paused');applySettings(false);}}
   function action(name){if(page==='playing')adapter.action?.(name);}
@@ -177,7 +186,7 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
     begin(){show('like');},title(){show('title');},like(){show('like');},next(){show('fear');},
     'interpretation-accept'(){interpretationAnswer?.accept();},'interpretation-edit'(){generation.cancel();generationStatus='idle';preparedSession=undefined;show('like');},
     generate,fallback(){
-      if(generationStatus!=='error'||entering)return;
+      if(entering)return;
       generation.cancel();preparedSession={presetFallback:true,raw:{...draft}};void resume(true);
     },'edit-like'(){generation.cancel();generationStatus='idle';preparedSession=undefined;show('like');},'edit-fear'(){generation.cancel();generationStatus='idle';preparedSession=undefined;show('fear');},
     enter(){if(generationStatus==='ready')void resume(true);},resume(){void resume();},pause,
@@ -189,7 +198,7 @@ export function createGameUI({ mount = document.body, surface, adapter = {}, sto
     confirm(){const callback=confirmAction;confirmAction=null;$('.dialog-backdrop').hidden=true;callback?.();},
     'cancel-confirm'(){confirmAction=null;$('.dialog-backdrop').hidden=true;$('[data-screen=paused] h2')?.focus();},
     'rotate-back'(){ $('.rotate').hidden=true;returnPage=beforeRotate;show('settings');},
-    'reset-settings'(){const keys=tab==='controls'?['mode','look','leftStick','mouseSensitivity','touchSensitivity']:tab==='picture'?['quality','vhs','motion']:['subtitleSize','subtitleBackground'];for(const key of keys)settings[key]=defaults[key];applySettings();}
+    'reset-settings'(){const keys=tab==='controls'?['mode','look','leftStick','mouseSensitivity','touchSensitivity']:tab==='picture'?['quality','vhs','motion']:['musicVolume','subtitleSize','subtitleBackground'];for(const key of keys)settings[key]=defaults[key];applySettings();}
   };
   root.addEventListener('click',event=>{const node=event.target.closest('button');if(!node||node.disabled||entering)return;if(node.dataset.tab)showTab(node.dataset.tab);else actions[node.dataset.action]?.();},{signal});
   root.addEventListener('input',event=>{

@@ -1,0 +1,120 @@
+{
+  "status": "integrated-static-models",
+  "models": [
+    {
+      "id": "cat-tabby",
+      "species": "cat",
+      "status": "ready",
+      "url": "/art/animals-v01/cat-tabby.glb",
+      "sha256": "85c7dfe700a982e45d9a556416c4d888a467626fc35da96021371254615fb651",
+      "height": 0.42,
+      "supportedTraits": [
+        "毛",
+        "耳",
+        "须",
+        "尾",
+        "口鼻",
+        "四肢",
+        "爪",
+        "眼睛",
+        "耳朵",
+        "尾巴",
+        "胡须",
+        "毛发"
+      ]
+    },
+    {
+      "id": "dog-brown",
+      "species": "dog",
+      "status": "ready",
+      "url": "/art/animals-v01/dog-brown.glb",
+      "sha256": "db7c0834e828ee474f980f5f09af3124cc58ba38f2630ed4bdcd5489ee7c398e",
+      "height": 0.7,
+      "supportedTraits": [
+        "毛",
+        "耳",
+        "须",
+        "尾",
+        "口鼻",
+        "四肢",
+        "爪",
+        "眼睛",
+        "耳朵",
+        "尾巴",
+        "胡须",
+        "毛发"
+      ]
+    },
+    {
+      "id": "rabbit-ivory",
+      "species": "rabbit",
+      "status": "ready",
+      "url": "/art/animals-v01/rabbit-ivory.glb",
+      "sha256": "4abc330c0091904662ce092b1991d66202774af322e04bc5146495c5af7999ac",
+      "height": 0.38,
+      "supportedTraits": [
+        "毛",
+        "耳",
+        "须",
+        "尾",
+        "口鼻",
+        "四肢",
+        "爪",
+        "眼睛",
+        "耳朵",
+        "尾巴",
+        "胡须",
+        "毛发"
+      ]
+    },
+    {
+      "id": "pigeon-gray-v3",
+      "species": "pigeon",
+      "status": "ready",
+      "url": "/art/animals-v01/pigeon-gray-v3.glb",
+      "sha256": "fde2a82fe7b85ff5288dd6abd8a1655517fa93321e3a4572857f7bf7428da36f",
+      "height": 0.3,
+      "supportedTraits": [
+        "羽毛",
+        "鸟喙",
+        "喙",
+        "翅膀",
+        "尾巴",
+        "尾",
+        "爪",
+        "眼睛",
+        "羽",
+        "翅"
+      ]
+    },
+    {
+      "id": "mouse-brown-v3",
+      "species": "mouse",
+      "status": "ready",
+      "url": "/art/animals-v01/mouse-brown-v3.glb",
+      "sha256": "4cd690aeff92836285c6d900356410edde4ca717f89424798ba79bb95bbf69b5",
+      "height": 0.12,
+      "supportedTraits": [
+        "毛",
+        "耳",
+        "须",
+        "尾",
+        "口鼻",
+        "四肢",
+        "爪",
+        "眼睛",
+        "耳朵",
+        "尾巴",
+        "胡须",
+        "毛发"
+      ]
+    }
+  ],
+  "rejectedCandidates": [
+    "pigeon-gray",
+    "pigeon-gray-v2",
+    "mouse-brown",
+    "mouse-brown-v2"
+  ],
+  "note": "Rejected variants retained only as production evidence, not selectable. Static models do not imply walking or flying animation."
+}

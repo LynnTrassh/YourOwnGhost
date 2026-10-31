@@ -1,0 +1,56 @@
+{
+  "source": "art-source/gameplay-production-v01/props/watcher-effigy/model.glb",
+  "destination": "public/art/gameplay-production-v01/watcher-effigy.glb",
+  "sourceBytes": 1028940,
+  "runtimeBytes": 1029304,
+  "sourceSHA256": "8f851be1685c56b75bc3b1b28da04984fc7042c575d8d3bb390b1b35b64d25e5",
+  "runtimeSHA256": "23edecad7bf6f69f3ca883fd1ce82edb291dddb80213d5e345fb3a107e3ebd5f",
+  "triangles": 5933,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.0966796875,
+      -0.4990234375,
+      -0.1708984375
+    ],
+    "max": [
+      0.0966796875,
+      0.4990234375,
+      0.1708984375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.24,
+      0,
+      -0.16273972600000003
+    ],
+    "max": [
+      0.24,
+      1.68,
+      0.16273972600000003
+    ],
+    "size": [
+      0.48,
+      1.68,
+      0.32547945200000006
+    ]
+  },
+  "scale": 1.6832876712328766,
+  "scaleXYZ": [
+    1.4043428571428571,
+    1.6832876712328766,
+    1.6832876709494948
+  ],
+  "footprint": [
+    0.48,
+    0.325479452
+  ],
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "requires-visual-confirmation"
+}

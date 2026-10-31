@@ -1,0 +1,13 @@
+{
+  "name": "control-cabinet",
+  "prompt": "A narrow vintage hotel electrical switch cabinet on two short grounded iron legs. Faded sage green enamel, worn edges, tarnished brass trim, cream ceramic sockets, three small unlit colored round indicator lenses at top. Closed solid rectangular cabinet, width .65m height 1.05m depth .32m. Empty round central socket for a separately attached lever. No protruding lever. Flat front facing camera. Single isolated complete game prop model. Realistic solid moderately low-poly 3D volume with subtle handpainted matte textures, muted natural colors matching an old psychological-horror hotel art style. No environment or ground plane, no animation, no text, only the described asset. Dry low specularity. Clean closed mesh and readable silhouette.",
+  "approval": "四款也按这版生成",
+  "approvedConcept": "../props-approval.png",
+  "mode": "text-to-model",
+  "parameters": {
+    "face_limit": 6000,
+    "texture": true,
+    "pbr": false,
+    "texture_quality": "standard"
+  }
+}

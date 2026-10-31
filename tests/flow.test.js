@@ -30,7 +30,13 @@ test('collision routes lead through one false awakening to a terminal second exi
     s.player.standing=true;s.doors.bedroom.open=true;world.update(2,s);
     const route=pathThroughTiles(world.getTopology(),s.player,p.exit);
     assert.ok(route);
-    for(const target of route) movePlayer(s.player,target.x-s.player.x,target.z-s.player.z,world.getColliders());
+    for(const target of route)for(let frame=0;Math.hypot(target.x-s.player.x,target.z-s.player.z)>.001;frame++) {
+      assert.ok(frame<100,'open doors and keep making progress');
+      for(const door of p.doors)if(!s.doors[door.id]?.open&&Math.hypot(door.x-s.player.x,door.z-s.player.z)<2.2){world.toggleDoor(door.id,s);world.update(1,s);}
+      world.update(.05,s);
+      const dx=target.x-s.player.x,dz=target.z-s.player.z,d=Math.hypot(dx,dz),step=Math.min(.12,d);
+      movePlayer(s.player,dx/d*step,dz/d*step,world.getColliders());
+    }
     assert.ok(Math.hypot(s.player.x-p.exit.x,s.player.z-p.exit.z)<.001);
     assert.equal(requestExit(s,p,view(s),world.getColliders()),true);
     assert.equal(requestExit(s,p,view(s),world.getColliders()),false);

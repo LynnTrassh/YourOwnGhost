@@ -4,6 +4,8 @@ import { overlaps } from '../collision.js';
 import { sightClear, roomIdAt, visible } from '../story/spatial.js';
 import { CONTENT_CATALOG, contentEligibility } from './content-catalog.js';
 import { sealDoorTransaction } from './door-transaction.js';
+import { openingRoomIds } from './opening.js';
+import { THEME_RULES } from '../personalization/theme-rules.js';
 
 const metre=cell=>cell*CELL_SIZE;
 const isFree=(p,boxes)=>!boxes.some(b=>overlaps(p.x,p.z,b));
@@ -266,6 +268,7 @@ function basinSlot(plan,room,entry,boxes) {
 export function fitContent(plan,random,allowedIds=null,reservedRoomIds=[],preferences=[],{complete=false,rhythm=false}={}) {
   const instances=[],report=[],used=new Set(['bedroom',...(!complete?[plan.exit.roomId]:[]),plan.story.cat?.roomId,...reservedRoomIds].filter(Boolean));
   const existing=complete?(plan.content?.instances??[]):[];
+  const openingRooms=openingRoomIds(plan);
   const boxes=[...plan.walls,...plan.obstacles];
   const returnRooms=new Set([...(plan.opportunities.revisitCandidates??[]),
     ...(plan.opportunities.branchReturnCandidates??[])]);
@@ -298,7 +301,7 @@ export function fitContent(plan,random,allowedIds=null,reservedRoomIds=[],prefer
   if(rhythm) {
     const quiet=new Set(CONTENT_CATALOG.filter(d=>d.role==='rest').map(d=>d.definitionId));
     const required=new Set(CONTENT_CATALOG.filter(d=>d.sourcePolicy==='required').map(d=>d.definitionId));
-    const priority=id=>id==='B25'?-2:required.has(id)?-1:quiet.has(id)?0:1;
+    const priority=id=>id==='B25'?-2:required.has(id)||(id==='B12'&&preferences.includes('fear.static-model'))?-1:quiet.has(id)?0:1;
     order.sort((a,b)=>priority(a)-priority(b));
   }
   for(const id of order) {
@@ -312,6 +315,8 @@ export function fitContent(plan,random,allowedIds=null,reservedRoomIds=[],prefer
     const quietRooms=new Set([...existing,...instances].filter(i=>i.role==='rest').map(i=>i.roomId));
     if((complete||rhythm)&&eligible.definition.role==='rest'&&quietRooms.size>=Math.ceil((plan.rooms.length-1)*.25))continue;
     const rooms=plan.rooms.filter(r=>!used.has(r.id)
+      &&(!(plan.opening&&THEME_RULES.some(rule=>rule.definitionId===id&&rule.role))||!openingRooms.has(r.id))
+      &&(!((id==='RI02'&&preferences.includes('like.static-model'))||(['B12','ME04'].includes(id)&&preferences.includes('fear.static-model')))||!openingRooms.has(r.id))
       &&(!(complete||rhythm)||eligible.definition.role!=='rest'||!plan.edges.some(e=>[e.a,e.b].includes(r.id)&&[e.a,e.b].some(id=>quietRooms.has(id))))
       &&(!(complete||rhythm)||eligible.definition.role!=='major'||!plan.edges.some(e=>[e.a,e.b].includes(r.id)&&[e.a,e.b].some(id=>majorRooms.has(id))))
       &&(id!=='ID02'||r.type!=='ring')

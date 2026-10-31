@@ -1,0 +1,53 @@
+{
+  "source": "art-source/gameplay-production-v01/animals/mouse-brown/model.glb",
+  "destination": "public/art/animals-v01/mouse-brown.glb",
+  "sourceBytes": 1148252,
+  "runtimeBytes": 1148636,
+  "sourceSHA256": "58d0e239656d181d08ad2d40a3270f87f57c173173de25c4846c61689b89f3f3",
+  "runtimeSHA256": "3696d3b9c802059ffe299dc9a393b6d2101f7c95b3d8bb888a6e6fbb3dc679d5",
+  "triangles": 5221,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.1767578125,
+      -0.1904296875
+    ],
+    "max": [
+      0.4990234375,
+      0.1767578125,
+      0.1904296875
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.06464088397790056,
+      0,
+      -0.16939226519337017
+    ],
+    "max": [
+      0.06464088397790056,
+      0.12000000000000001,
+      0.16939226519337017
+    ],
+    "size": [
+      0.12928176795580112,
+      0.12000000000000001,
+      0.33878453038674033
+    ]
+  },
+  "scale": 0.3394475138121547,
+  "scaleXYZ": [
+    0.3394475138121547,
+    0.3394475138121547,
+    0.3394475138121547
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "requires-visual-confirmation"
+}

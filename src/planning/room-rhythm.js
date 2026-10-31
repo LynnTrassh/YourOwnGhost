@@ -36,16 +36,19 @@ function quietSlot(plan,room) {
 }
 
 export function completeRoomContent(plans,seed) {
+  // Legacy isolated preview fixtures retain their original deterministic layouts.
+  const strict=plans.every(plan=>Boolean(plan.opening));
   const selected=new Set(plans.flatMap(p=>p.content.instances.map(i=>i.definitionId)));
   plans.forEach((plan,layer)=>{
     const random=rng(`${seed}:rhythm:${layer}`);
-    for(const uniqueOnly of [true,false]) {
+    for(const uniqueOnly of (strict?[true]:[true,false])) {
       const occupied=analyzeCoverage(plan).rooms.filter(r=>r.role!=='connector').map(r=>r.roomId);
       const own=new Set(plan.content.instances.map(i=>i.definitionId));
       const photos=['B05','ID03','AB02'];
       const allowed=new Set(CONTENT_CATALOG.filter(d=>d.readiness==='greybox'&&d.definitionId!=='B25'
         &&!own.has(d.definitionId)&&(!selected.has(d.definitionId)||(!uniqueOnly&&d.role!=='major'))
-        &&(!photos.includes(d.definitionId)||!photos.some(id=>own.has(id)))
+        &&(!photos.includes(d.definitionId)||!photos.some(id=>(strict?selected:own).has(id)))
+        &&(!strict||!d.exclusions.some(id=>selected.has(id)))
         &&!(d.definitionId==='AB01'&&plans.some(p=>p.story.cat)))
         .map(d=>d.definitionId));
       const extra=fitContent(plan,random,allowed,occupied,plan.content.preferences,{complete:true});

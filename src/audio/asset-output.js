@@ -4,7 +4,7 @@ export function validateAudioManifest(manifest) {
   if(!manifest||typeof manifest!=='object'||Array.isArray(manifest))throw Error('INVALID_AUDIO_MANIFEST');
   for(const [id,entry] of Object.entries(manifest)) {
     if(!/^[A-Za-z0-9._-]+$/.test(id)||!entry||typeof entry!=='object'
-      ||!/^\/art\/audio\/[A-Za-z0-9/_-]+\.(?:ogg|mp3|wav)$/.test(entry.url??'')
+      ||!/^\/art\/audio\/[A-Za-z0-9/_-]+\.(?:ogg|mp3|wav|m4a)$/.test(entry.url??'')
       ||!BUS_NAMES.includes(entry.bus)||!Number.isFinite(entry.authoredDuration)
       ||entry.authoredDuration<=0||entry.authoredDuration>180
       ||(entry.loop!==undefined&&typeof entry.loop!=='boolean'))throw Error(`INVALID_AUDIO_ASSET:${id}`);

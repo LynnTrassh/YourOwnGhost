@@ -91,3 +91,14 @@ test('teleports cannot manufacture a normal door choice and cancel stale cues',(
   assert.equal(s.facts.includes('route.rightAfterSuggestion'),false);
   assert.equal(s.route,null);assert.equal(s.cue,null);
 });
+
+test('route suggestion waits until its recommended puzzle gate is open',()=>{
+  const p=generatePlan('6'),s=createStoryState(),r=p.story.routes[0];
+  const entry=p.doors.find(d=>d.id===r.entryDoorId),[inside,outside]=doorSides(p,entry,r.roomId);
+  stepStory(p,s,outside,0);stepStory(p,s,inside,0,{blockedDoorIds:[r.leftDoorId]});
+  const left=p.doors.find(d=>d.id===r.leftDoorId);
+  const v=view({...r.origin,yaw:Math.atan2(r.origin.x-left.x,r.origin.z-left.z)});
+  stepStory(p,s,v,0,{blockedDoorIds:[r.leftDoorId]});
+  assert.equal(s.route,null);assert.ok(!s.consumed.includes('suggest'));
+  stepStory(p,s,v,0);assert.equal(s.cue?.kind,'suggest');
+});

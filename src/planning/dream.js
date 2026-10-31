@@ -1,11 +1,12 @@
 import { generatePlan, hashSeed } from './generate.js';
-import { chooseLayerContent, summarizeComposition } from './composition.js';
+import { chooseLayerContent, summarizeComposition, validateComposition } from './composition.js';
 import { analyzeCoverage } from './coverage.js';
 import { fitBedroomTrace, fitTraceFollow } from './trace-fit.js';
 import { validatePlan } from './validate.js';
 import { completeRoomContent } from './room-rhythm.js';
 import { completeFinalRoomInteriors } from './interiors.js';
 import { fitActiveEncounters } from './active-fit.js';
+import { HEARING_BEHAVIOR } from '../threat-profile.js';
 
 export function generateDream(seed,options={}) {
   const attempts=[];
@@ -18,13 +19,15 @@ export function generateDream(seed,options={}) {
     } catch(error) {
       if(!/内容编排校验失败|安静房缺少真实可见构图|追逐空间未能|主动玩法未能/.test(error.message))throw error;
       attempts.push({compositionSeed,reason:error.message});
+      options.onDiagnostic?.({compositionSeed,reason:error.message});
     }
   }
   throw new Error(`无法生成完整内容与合格节奏：${attempts.map(a=>a.reason).join('；')}`);
 }
 
-function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null,activeEncounters=false}={}) {
-  const first=generatePlan(seed,{catEnabled,preferences,threatEnabled:activeEncounters,rhythmEnabled:true});
+function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null,activeEncounters=false,openingSequence=false,onDiagnostic}={}) {
+  const first=generatePlan(seed,{catEnabled,preferences,threatEnabled:activeEncounters,rhythmEnabled:true,openingSequence});
+  onDiagnostic?.({stage:'first-ready',seed});
   const conditionalSlots=['B03','B04'].flatMap(definitionId=>{
     const source=first.content.instances.find(instance=>instance.definitionId===definitionId);
     if(!source)return [];
@@ -33,14 +36,24 @@ function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null
       roomId:'bedroom',focus:{x:-.45,y:.65,z:1.2}}];
   });
   const geometry=p=>JSON.stringify([p.cells,p.doors]);
+  function secondPlan(secondSeed,contentIds,allowChase=activeEncounters&&!threatBehaviorId){
+    const options={catEnabled:false,threatEnabled:!activeEncounters||Boolean(threatBehaviorId),chaseEnabled:allowChase,
+      threatBehaviorId,conditionalSlots,preferences,rhythmEnabled:true,openingSequence,contentIds};
+    if(!openingSequence||!activeEncounters||threatBehaviorId)return generatePlan(secondSeed,options);
+    // A random map need not contain a six-room chase opportunity. Reject that
+    // candidate and use the already implemented investigator, without blocking entry.
+    if(allowChase)try{return generatePlan(secondSeed,{...options,maxAttempts:3});}
+    catch(error){if(!error.message.startsWith('追逐空间未能'))throw error;}
+    return generatePlan(secondSeed,{...options,chaseEnabled:false,threatEnabled:true,threatBehaviorId:HEARING_BEHAVIOR});
+  }
   for(let attempt=0;attempt<8;attempt++) {
-    const second=generatePlan(`${seed}:dream:2:${attempt}`,{catEnabled:false,threatEnabled:!activeEncounters||Boolean(threatBehaviorId),chaseEnabled:activeEncounters&&!threatBehaviorId,
-      threatBehaviorId,conditionalSlots,preferences,rhythmEnabled:true});
+    onDiagnostic?.({stage:'second-start',attempt});
+    const second=secondPlan(`${seed}:dream:2:${attempt}`);
+    onDiagnostic?.({stage:'second-ready',attempt});
     if(geometry(first)!==geometry(second)) {
       const selection=chooseLayerContent([first,second],seed);
-      const fitted=[generatePlan(seed,{catEnabled,contentIds:selection.selectedIds[0],preferences,threatEnabled:activeEncounters,rhythmEnabled:true}),
-        generatePlan(`${seed}:dream:2:${attempt}`,{catEnabled:false,threatEnabled:!activeEncounters||Boolean(threatBehaviorId),chaseEnabled:activeEncounters&&!threatBehaviorId,
-          threatBehaviorId,contentIds:selection.selectedIds[1],conditionalSlots,preferences,rhythmEnabled:true})];
+      const fitted=[generatePlan(seed,{catEnabled,contentIds:selection.selectedIds[0],preferences,threatEnabled:activeEncounters,rhythmEnabled:true,openingSequence}),
+        secondPlan(`${seed}:dream:2:${attempt}`,selection.selectedIds[1],Boolean(second.chase))];
       const plans=[first,second].map((raw,index)=>{
         if(geometry(raw)!==geometry(fitted[index])) {
           selection.rejections.push({layer:index+1,reason:'LAYOUT_CHANGED_ON_REFIT'});
@@ -76,6 +89,8 @@ function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null
         }
       }
       completeRoomContent(plans,seed);
+      const compositionErrors=openingSequence?validateComposition(plans):[];
+      if(compositionErrors.length)throw new Error(`内容编排校验失败：${compositionErrors.join('、')}`);
       // Refit can add a source scene; derive its echo from the FINAL first layer.
       plans[1].content.conditionalSlots=[
         ...plans[1].content.conditionalSlots.filter(slot=>!['B27','B28'].includes(slot.id)),
@@ -91,7 +106,7 @@ function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null
       for(const plan of plans)completeFinalRoomInteriors(plan);
       if(activeEncounters) {
         plans[0].activeEncounters=fitActiveEncounters(plans[0]);
-        if(!plans[0].threat||!plans[0].activeEncounters.puzzle||!plans[0].activeEncounters.scare)
+        if(!plans[0].threat)
           throw new Error('主动玩法未能完整落位');
       }
       for(const plan of plans) {

@@ -1,3 +1,4 @@
+import { createProductionAssetLoader } from './production-assets.js';
 import { wallSurfaces } from './wall-surfaces.js';
 import { roomIdAt } from '../story/spatial.js';
 import { Reflector } from 'three/addons/objects/Reflector.js';
@@ -5,6 +6,7 @@ import { Reflector } from 'three/addons/objects/Reflector.js';
 // Program-owned greybox. Art can replace these meshes without changing plan bindings.
 export function createStoryProxies(THREE,root,plan,{material,box,resources,scene}) {
   const moving=[],ambient=[],monitors=[];
+  const productionArt=createProductionAssetLoader(resources);
   const stone=material(0x8a8980),face=material(0x59594f),panel=material(0x4c4237),shadow=material(0x151713),
     shoe=material(0x59483f),rug=material(0x66715e),warm=material(0xa5a18b,{emissive:0x615d47,emissiveIntensity:.12}),
     coat=material(0x696f69),skin=material(0xaaa18d),tableWood=material(0x554537),
@@ -519,7 +521,8 @@ export function createStoryProxies(THREE,root,plan,{material,box,resources,scene
         const mesh=new THREE.Mesh(geometry,mat);mesh.position.set(x,y,z);mesh.castShadow=true;parent.add(mesh);return mesh;};
       part(group,.72,.09,.7,0,.48,0,tableWood);
       for(const x of [-.28,.28])for(const z of [-.27,.27])part(group,.065,.46,.065,x,.23,z,tableWood);
-      part(group,.3,.42,.3,0,.73,0,vase);
+      part(bloom,.3,.42,.3,0,.73,0,vase);
+      part(withered,.3,.42,.3,0,.73,0,vase);
       group.add(bloom,withered);withered.visible=false;
       for(const [index,position] of [[0,[-.23,.05]],[1,[0,-.14]],[2,[.24,.07]]]) {
         const [x,z]=position,height=1.25+(index%2)*.16;
@@ -530,6 +533,7 @@ export function createStoryProxies(THREE,root,plan,{material,box,resources,scene
         const darkMesh=new THREE.Mesh(new THREE.SphereGeometry(.13,7,5),flowerDark);
         resources.add(darkMesh.geometry);darkMesh.scale.y=.45;darkMesh.position.set(x,height-.11,z);withered.add(darkMesh);
       }
+      productionArt.attach({url:'/art/gameplay-production-v01/dry-flower-vase.glb',parent:withered,width:.6,height:.9,depth:.6,position:[0,.525,0],tint:.36,fallback:[...withered.children]});
       moving.push({id:instance.instanceId,type:'B03',bloom,withered});
     } else if(instance.definitionId==='B04') {
       const doll=new THREE.Group();root.add(doll);doll.position.set(p.x,0,p.z);
@@ -608,6 +612,7 @@ export function createStoryProxies(THREE,root,plan,{material,box,resources,scene
       moving.push({id:instance.instanceId,type:'B11',person});
     } else if(instance.definitionId==='B12') {
       const figure=new THREE.Group();root.add(figure);figure.position.set(p.x,0,p.z);
+      figure.name=`story-${instance.instanceId}-theme`;
       figure.rotation.y=Math.atan2(-(instance.observation.x-p.x),-(instance.observation.z-p.z));
       const part=(w,h,d,x,y,z,mat)=>{const geometry=new THREE.BoxGeometry(w,h,d);resources.add(geometry);
         const mesh=new THREE.Mesh(geometry,mat);mesh.position.set(x,y,z);mesh.castShadow=true;figure.add(mesh);return mesh;};
@@ -967,13 +972,13 @@ export function createStoryProxies(THREE,root,plan,{material,box,resources,scene
         if(item.type==='IN02') {const phase=story.instances?.[item.id],elapsed=phase?.elapsed??0;
           item.dolls.forEach((doll,index)=>{
             const age=elapsed-index*1.05;
-            if(phase?.phase!=='pouring'||age<0||age%7.2>6.5) {doll.visible=false;return;}
-            const progress=Math.min(1,(age%7.2)/2.6),lateral=Math.sin(index*2.4)*.28*progress;
+            if(phase?.phase!=='pouring'||age<0) {doll.visible=false;return;}
+            const progress=Math.min(1,age/2.6),lateral=Math.sin(index*2.4)*.28*progress;
             doll.visible=true;
-            doll.position.set(item.origin.x+item.inward.x*(.05+1.5*progress)-item.inward.z*lateral,
+            doll.position.set(item.origin.x+item.inward.x*(.05+(1.1+index*.08)*progress)-item.inward.z*lateral,
               .46-.35*progress,
-              item.origin.z+item.inward.z*(.05+1.5*progress)+item.inward.x*lateral);
-            doll.rotation.y=Math.sin((age%7.2)*2+index)*.17;
+              item.origin.z+item.inward.z*(.05+(1.1+index*.08)*progress)+item.inward.x*lateral);
+            doll.rotation.y=Math.sin(Math.min(age,2.6)*2+index)*.17;
           });
           continue;}
         if(item.type==='IN03') {const phase=story.instances?.[item.id];

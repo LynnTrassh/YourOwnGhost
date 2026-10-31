@@ -21,5 +21,6 @@ export function validateSemantics(value) {
   if (!['like','fear'].every(role => value.entities.some(e=>e.role===role))) throw fail('MISSING_THEME','理解遗漏了输入主题。');
   for (const r of value.relations) if (!r || !ids.has(r.from) || !ids.has(r.to) || !['part-of','near','imitates','avoids','contrasts'].includes(r.type))
     throw fail('INVALID_RELATION','主题关系不合法。');
-  return structuredClone({displaySummary:value.displaySummary,entities:value.entities,relations:value.relations,ambiguities:value.ambiguities});
+  if(value.mappingNotes!==undefined && (!Array.isArray(value.mappingNotes)||value.mappingNotes.some(n=>!['like','fear'].includes(n.role)||typeof n.symbolic!=='boolean'||typeof n.subject!=='string'||typeof n.original!=='string')))throw fail('INVALID_INTERPRETATION','实体映射信息不完整。');
+  return structuredClone({...(value.mappingNotes?{mappingNotes:value.mappingNotes}:{}),...(value.groundingVersion===1?{groundingVersion:1}:{}),displaySummary:value.displaySummary,entities:value.entities,relations:value.relations,ambiguities:value.ambiguities});
 }

@@ -1,0 +1,17 @@
+{
+  "reason": "First UI test exposed generic anatomy phrase cache miss; fixed and retested without further model jobs.",
+  "jobs": [
+    {
+      "status": "assetValidated",
+      "taskId": "cc9b5e18-508e-4c20-95c8-0a0d73598e51",
+      "credits": 40,
+      "entityId": "like-cat"
+    },
+    {
+      "status": "assetValidated",
+      "taskId": "0af17205-05ad-4e55-84e2-b4fba38e457b",
+      "credits": 40,
+      "entityId": "fear-dog"
+    }
+  ]
+}

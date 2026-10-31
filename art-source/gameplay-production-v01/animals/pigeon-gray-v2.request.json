@@ -1,0 +1,13 @@
+{
+  "name": "pigeon-gray-v2",
+  "prompt": "An ordinary gray city pigeon, realistic anatomy, subtle green muted neck color, dark wing bars, wings completely folded closed into smooth solid body, standing on two complete feet. Feathers represented only by painted color on a single smooth closed surface. No individual feather geometry, no overlapping feathers, no feather cards. Single isolated complete animal model. Realistic solid moderately low-poly 3D volume with subtle handpainted matte textures, muted natural colors matching an old psychological-horror hotel art style. Natural ordinary animal, not monster, no clothing, no accessories, no base or pedestal, no scene, no animation, no text. Dry low specularity. Clean closed mesh and readable silhouette.",
+  "approval": "按这版生成五种动物",
+  "approvedConcept": "../animals-approval.png",
+  "mode": "text-to-model",
+  "parameters": {
+    "face_limit": 6000,
+    "texture": true,
+    "pbr": false,
+    "texture_quality": "standard"
+  }
+}

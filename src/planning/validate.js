@@ -5,6 +5,7 @@ import { roomIdAt, sightClear } from '../story/spatial.js';
 import { LIGHT_AVOIDER_BEHAVIOR, THREAT_BODY } from '../threat-profile.js';
 import { analyzeCoverage } from './coverage.js';
 import { CONTENT_CATALOG } from './content-catalog.js';
+import { THEME_RULES } from '../personalization/theme-rules.js';
 
 export function buildWalls(plan) {
   const tiles = new Map(plan.cells.map(t => [keyOf(t.x, t.z), t]));
@@ -56,19 +57,32 @@ export function validateRoomBoundaries(plan) {
 
 export function buildNavigation(plan) {
   const boxes = [...plan.walls, ...plan.obstacles];
+  // Index expanded bounds per tile. Every query still uses the exact original
+  // collision test, but no longer scans distant rooms for each navigation edge.
+  const buckets = new Map();
+  for(const box of boxes) {
+    for(let x=Math.floor((box.minX-PLAYER_RADIUS)/CELL_SIZE);x<=Math.floor((box.maxX+PLAYER_RADIUS)/CELL_SIZE);x++)
+      for(let z=Math.floor((box.minZ-PLAYER_RADIUS)/CELL_SIZE);z<=Math.floor((box.maxZ+PLAYER_RADIUS)/CELL_SIZE);z++) {
+        const key=keyOf(x,z);
+        if(!buckets.has(key))buckets.set(key,[]);
+        buckets.get(key).push(box);
+      }
+  }
   const tiles = new Map(plan.cells.map(t => [keyOf(t.x,t.z), t]));
   const graph = new Map();
   for (const t of plan.cells) {
     const x = t.x*CELL_SIZE, z = t.z*CELL_SIZE;
-    if (boxes.some(b => overlaps(x,z,b))) continue;
+    if ((buckets.get(keyOf(t.x,t.z))??[]).some(b => overlaps(x,z,b))) continue;
     const neighbors = [];
     for (const [dx,dz] of DIRECTIONS) {
       const next = keyOf(t.x+dx,t.z+dz);
       if (!tiles.has(next)) continue;
-      // Expanded AABBs conservatively include player clearance along straight edges.
       const nx=x+dx*CELL_SIZE, nz=z+dz*CELL_SIZE;
-      const blocked = boxes.some(b => Math.max(x,nx) > b.minX-PLAYER_RADIUS && Math.min(x,nx) < b.maxX+PLAYER_RADIUS
-        && Math.max(z,nz) > b.minZ-PLAYER_RADIUS && Math.min(z,nz) < b.maxZ+PLAYER_RADIUS);
+      let blocked=false;
+      for(let bx=Math.min(t.x,t.x+dx);bx<=Math.max(t.x,t.x+dx)&&!blocked;bx++)
+        for(let bz=Math.min(t.z,t.z+dz);bz<=Math.max(t.z,t.z+dz)&&!blocked;bz++)
+          blocked=(buckets.get(keyOf(bx,bz))??[]).some(b => Math.max(x,nx) > b.minX-PLAYER_RADIUS && Math.min(x,nx) < b.maxX+PLAYER_RADIUS
+            && Math.max(z,nz) > b.minZ-PLAYER_RADIUS && Math.min(z,nz) < b.maxZ+PLAYER_RADIUS);
       if (!blocked) neighbors.push(next);
     }
     graph.set(keyOf(t.x,t.z), neighbors);
@@ -94,6 +108,15 @@ export function pathThroughTiles(plan, from, to, excludedRooms = [], graph = bui
 }
 export function validatePlan(plan) {
   const errors = validateRoomBoundaries(plan);
+  if(plan.opening){
+    const ids=plan.opening.roomIds,neighbors=id=>plan.edges.flatMap(e=>e.a===id?[e.b]:e.b===id?[e.a]:[]);
+    const corridor=plan.rooms.find(r=>r.id===ids[1]);
+    if(ids.length!==3||ids[0]!=='bedroom'||corridor?.type!=='strip'||corridor.rotation!==0
+      ||neighbors(ids[0]).length!==1||neighbors(ids[0])[0]!==ids[1]
+      ||neighbors(ids[1]).length!==2||!neighbors(ids[1]).includes(ids[2]))errors.push('INVALID_OPENING_SEQUENCE');
+    if((plan.generatedThemes??[]).some(s=>ids.includes(s.roomId)))errors.push('GENERATED_THEME_IN_OPENING');
+    if((plan.content?.instances??[]).some(i=>ids.includes(i.roomId)&&THEME_RULES.some(r=>r.definitionId===i.definitionId&&r.role)))errors.push('GENERATIVE_SCRIPT_IN_OPENING');
+  }
   if (plan.edges.some(e=>e.unplaced)) errors.push('UNPLACED_CONNECTION');
   const keys = new Set(plan.cells.map(t => keyOf(t.x, t.z)));
   if (keys.size !== plan.cells.length) errors.push('ROOM_OVERLAP');
@@ -212,7 +235,7 @@ export function validatePlan(plan) {
       &&!plan.content.preferences?.includes('like.flower'))
       errors.push(`UNCONFIRMED_CONTENT_PREFERENCE:${instance.definitionId}`);
     if(instance.definitionId==='RI02'
-      &&!plan.content.preferences?.some(token=>['like.cat','like.flower'].includes(token)))
+      &&!plan.content.preferences?.some(token=>['like.cat','like.flower','like.static-model'].includes(token)))
       errors.push('UNCONFIRMED_CONTENT_PREFERENCE:RI02');
     if(instance.definitionId==='RI02'
       &&instance.likedObject!==(plan.content.preferences?.includes('like.cat')?'cat':'flower'))
@@ -261,10 +284,22 @@ export function validatePlan(plan) {
       const door=plan.doors.find(d=>d.id===puzzle.doorId);
       const pair=puzzle.roomIds;
       if(!door||pair.length!==2||!plan.edges.some(e=>pair.includes(e.a)&&pair.includes(e.b))
-        ||roomIdAt(plan,puzzle.control)!==pair[0]||roomIdAt(plan,puzzle.clue)!==pair[1])errors.push('ACTIVE_PAIR_NOT_CONNECTED');
-      const closed={...plan,obstacles:[...plan.obstacles,puzzle.gate]};
-      if(!pathThroughTiles(closed,plan.spawn,puzzle.control,[],buildNavigation(closed)))errors.push('ACTIVE_CONTROL_BEHIND_LOCK');
-      if(!sightClear({...puzzle.control,y:1.65},puzzle.clue,[...plan.walls,...plan.obstacles]))errors.push('ACTIVE_ANSWER_HIDDEN');
+        ||roomIdAt(plan,puzzle.control)!==pair[0])errors.push('ACTIVE_PAIR_NOT_CONNECTED');
+      const closed={...plan,obstacles:[...plan.obstacles,puzzle.gate]},closedGraph=buildNavigation(closed);
+      if(!pathThroughTiles(closed,plan.spawn,puzzle.control,[],closedGraph))errors.push('ACTIVE_CONTROL_BEHIND_LOCK');
+      if(pathThroughTiles(closed,plan.spawn,plan.exit,[],closedGraph))errors.push('ACTIVE_GATE_BYPASS');
+      const fuse=puzzle.fuse,clue=puzzle.clue;
+      if(!fuse||puzzle.supplyRoomId!==roomIdAt(plan,fuse)||pair.includes(puzzle.supplyRoomId)
+        ||plan.opportunities.exitRoute.includes(puzzle.supplyRoomId))errors.push('ACTIVE_SUPPLY_NOT_BRANCH');
+      if(!fuse||!pathThroughTiles(closed,plan.spawn,fuse,[],closedGraph))errors.push('ACTIVE_FUSE_BEHIND_LOCK');
+      if(!clue||roomIdAt(plan,clue)!==puzzle.supplyRoomId||!pathThroughTiles(closed,plan.spawn,clue,[],closedGraph))errors.push('ACTIVE_CLUE_BEHIND_LOCK');
+      if(fuse&&clue&&!sightClear({...fuse,y:1.65},clue,[...plan.walls,...plan.obstacles]))errors.push('ACTIVE_CLUE_UNREADABLE');
+      const supplyPath=fuse&&pathThroughTiles(closed,puzzle.control,fuse,[],closedGraph);
+      const supplyRooms=supplyPath?.map(p=>roomIdAt(plan,p)).filter((id,index,ids)=>index===0||id!==ids[index-1]);
+      const distance=supplyPath?.slice(1).reduce((sum,p,index)=>sum+Math.hypot(p.x-supplyPath[index].x,p.z-supplyPath[index].z),0)??0;
+      if(!supplyPath||distance<12||supplyRooms.length<3)errors.push('ACTIVE_SUPPLY_TOO_CLOSE');
+      if(fuse&&sightClear({...puzzle.control,y:1.65},fuse,[...plan.walls,...plan.obstacles]))errors.push('ACTIVE_SUPPLY_VISIBLE_FROM_CONTROL');
+      if(![0,1,2].includes(puzzle.target)||![0,1,2].includes(puzzle.initial)||puzzle.target===puzzle.initial)errors.push('ACTIVE_TRIVIAL_ANSWER');
     }
     if(scare) {
       if(scare.roomIds.length!==3||scare.roomIds.some((id,index)=>index&& !plan.edges.some(e=>

@@ -1,0 +1,13 @@
+{
+  "name": "dog-brown",
+  "prompt": "An ordinary medium brown mixed breed domestic dog, realistic anatomy, natural floppy ears, brown short fur with muted dark saddle, standing calmly on all four paws, tail lowered. Single isolated complete animal model. Realistic solid moderately low-poly 3D volume with subtle handpainted matte textures, muted natural colors matching an old psychological-horror hotel art style. Natural ordinary animal, not monster, no clothing, no accessories, no base or pedestal, no scene, no animation, no text. Dry low specularity. Clean closed mesh and readable silhouette.",
+  "approval": "按这版生成五种动物",
+  "approvedConcept": "../animals-approval.png",
+  "mode": "text-to-model",
+  "parameters": {
+    "face_limit": 6000,
+    "texture": true,
+    "pbr": false,
+    "texture_quality": "standard"
+  }
+}
