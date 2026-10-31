@@ -182,7 +182,7 @@ export const INTERIOR_ASSETS = {
     "height": 0.95,
     "width": 0.7,
     "depth": 0.7,
-    "prefabId": null,
+    "prefabId": "armchair",
     "theme": "parlor"
   },
   "furniture-dining-chair": {
@@ -190,7 +190,7 @@ export const INTERIOR_ASSETS = {
     "height": 0.96,
     "width": 0.44,
     "depth": 0.46,
-    "prefabId": null,
+    "prefabId": "dining-chair",
     "theme": "archive"
   },
   "lighting-table-lamp": {
@@ -206,7 +206,7 @@ export const INTERIOR_ASSETS = {
     "height": 1.65,
     "width": 0.42,
     "depth": 0.42,
-    "prefabId": null,
+    "prefabId": "floor-lamp",
     "theme": "parlor"
   },
   "lighting-strip-double": {

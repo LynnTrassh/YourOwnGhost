@@ -4,6 +4,7 @@ import { analyzeCoverage } from './coverage.js';
 import { fitBedroomTrace, fitTraceFollow } from './trace-fit.js';
 import { validatePlan } from './validate.js';
 import { completeRoomContent } from './room-rhythm.js';
+import { completeFinalRoomInteriors } from './interiors.js';
 
 export function generateDream(seed,options={}) {
   const attempts=[];
@@ -85,6 +86,7 @@ function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null
         }),
       ];
       for(const plan of plans) {
+        completeFinalRoomInteriors(plan);
         const validation=validatePlan(plan);
         if(!validation.valid)throw new Error(`内容编排校验失败：${validation.errors.join('、')}`);
         const {planHash,...withoutHash}=plan;

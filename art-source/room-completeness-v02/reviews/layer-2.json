@@ -1,0 +1,1601 @@
+{
+  "seed": "1844070019",
+  "layer": 2,
+  "planHash": "2fa3e1c7",
+  "rooms": [
+    {
+      "roomId": "bedroom",
+      "theme": "bedroom",
+      "areaM2": 125,
+      "floorFurniture": 3,
+      "desired": 5,
+      "placed": 5,
+      "placements": [
+        {
+          "kind": "linen",
+          "position": [
+            5.09,
+            1.2,
+            7.394
+          ],
+          "normal": [
+            0,
+            -1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": 7.25,
+            "maxZ": 7.398000000000001,
+            "minX": 4.5,
+            "maxX": 5.68
+          }
+        },
+        {
+          "kind": "pictures",
+          "position": [
+            -1.5766666666666667,
+            1.2,
+            -7.394
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -7.398000000000001,
+            "maxZ": -7.25,
+            "minX": -2.1666666666666665,
+            "maxX": -0.9866666666666667
+          }
+        },
+        {
+          "kind": "pegs",
+          "position": [
+            -7.394,
+            1.2,
+            5.09
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": -7.398000000000001,
+            "maxX": -7.25,
+            "minZ": 4.5,
+            "maxZ": 5.68
+          }
+        },
+        {
+          "kind": "linen",
+          "position": [
+            2.394,
+            1.2,
+            0.08999999999999997
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 2.25,
+            "maxX": 2.398,
+            "minZ": -0.5,
+            "maxZ": 0.6799999999999999
+          }
+        },
+        {
+          "kind": "linen",
+          "position": [
+            -1.6666666666666665,
+            1.2,
+            7.394
+          ],
+          "normal": [
+            0,
+            -1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": 7.25,
+            "maxZ": 7.398000000000001,
+            "minX": -2.2566666666666664,
+            "maxX": -1.0766666666666667
+          }
+        }
+      ],
+      "events": [
+        "B28"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "bedroom",
+        "before": 2,
+        "target": 6,
+        "placed": 2,
+        "groups": [],
+        "shortfall": 4,
+        "rejected": 0,
+        "reason": "固定出生房保持既有布局",
+        "excluded": true
+      },
+      "needsFloorPlan": true,
+      "reason": "固定出生房保持既有布局"
+    },
+    {
+      "roomId": "room-1",
+      "theme": "archive",
+      "areaM2": 175,
+      "floorFurniture": 9,
+      "desired": 6,
+      "placed": 6,
+      "placements": [
+        {
+          "kind": "records",
+          "position": [
+            3.3333333333333335,
+            1.2,
+            -17.605999999999998
+          ],
+          "normal": [
+            0,
+            -1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -17.75,
+            "maxZ": -17.602,
+            "minX": 2.7433333333333336,
+            "maxX": 3.9233333333333333
+          }
+        },
+        {
+          "kind": "index",
+          "position": [
+            -7.394,
+            1.2,
+            -8.333333333333332
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": -7.398000000000001,
+            "maxX": -7.25,
+            "minZ": -8.923333333333332,
+            "maxZ": -7.743333333333332
+          }
+        },
+        {
+          "kind": "records",
+          "position": [
+            -7.394,
+            1.2,
+            -21.576666666666668
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": -7.398000000000001,
+            "maxX": -7.25,
+            "minZ": -22.166666666666668,
+            "maxZ": -20.986666666666668
+          }
+        },
+        {
+          "kind": "records",
+          "position": [
+            6.666666666666667,
+            1.2,
+            -7.606
+          ],
+          "normal": [
+            0,
+            -1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -7.75,
+            "maxZ": -7.601999999999999,
+            "minX": 6.076666666666667,
+            "maxX": 7.256666666666667
+          }
+        },
+        {
+          "kind": "index",
+          "position": [
+            -2.394,
+            1.2,
+            -13.243333333333332
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": -2.398,
+            "maxX": -2.25,
+            "minZ": -13.833333333333332,
+            "maxZ": -12.653333333333332
+          }
+        },
+        {
+          "kind": "records",
+          "position": [
+            -1.5766666666666667,
+            1.2,
+            -22.394000000000002
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -22.398,
+            "maxZ": -22.25,
+            "minX": -2.1666666666666665,
+            "maxX": -0.9866666666666667
+          }
+        }
+      ],
+      "events": [],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-1",
+        "before": 2,
+        "target": 8,
+        "placed": 9,
+        "groups": [
+          {
+            "id": "room-1-dressing-0-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-1-dressing-0-reading-0",
+              "room-1-dressing-0-reading-1",
+              "room-1-dressing-0-reading-2"
+            ],
+            "anchor": {
+              "x": -3.3333333333333335,
+              "z": -12.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-1-dressing-1-stacks",
+            "recipeId": "stacks",
+            "items": [
+              "room-1-dressing-1-stacks-0",
+              "room-1-dressing-1-stacks-1"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -20,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-1-dressing-2-sorting",
+            "recipeId": "sorting",
+            "items": [
+              "room-1-dressing-2-sorting-0",
+              "room-1-dressing-2-sorting-1"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -8.333333333333334,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      "needsFloorPlan": false,
+      "reason": null
+    },
+    {
+      "roomId": "room-2",
+      "theme": "clinic",
+      "areaM2": 125,
+      "floorFurniture": 6,
+      "desired": 2,
+      "placed": 2,
+      "placements": [
+        {
+          "kind": "instruments",
+          "position": [
+            2.606,
+            1.2,
+            -31.66666666666667
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 2.602,
+            "maxX": 2.75,
+            "minZ": -32.256666666666675,
+            "maxZ": -31.07666666666667
+          }
+        },
+        {
+          "kind": "records",
+          "position": [
+            -7.394,
+            1.2,
+            -23.333333333333336
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": -7.398000000000001,
+            "maxX": -7.25,
+            "minZ": -23.923333333333336,
+            "maxZ": -22.743333333333336
+          }
+        }
+      ],
+      "events": [
+        "B08"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-2",
+        "before": 0,
+        "target": 6,
+        "placed": 6,
+        "groups": [
+          {
+            "id": "room-2-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-2-dressing-0-examination-0",
+              "room-2-dressing-0-examination-1",
+              "room-2-dressing-0-examination-2",
+              "room-2-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": -5,
+              "z": -27.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-2-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-2-dressing-1-supplies-0",
+              "room-2-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -35,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      "needsFloorPlan": false,
+      "reason": null
+    },
+    {
+      "roomId": "room-3",
+      "theme": "shrine",
+      "areaM2": 125,
+      "floorFurniture": 8,
+      "desired": 5,
+      "placed": 5,
+      "placements": [
+        {
+          "kind": "textile",
+          "position": [
+            18.333333333333336,
+            1.2,
+            -32.394
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -32.397999999999996,
+            "maxZ": -32.25,
+            "minX": 17.743333333333336,
+            "maxX": 18.923333333333336
+          }
+        },
+        {
+          "kind": "tablets",
+          "position": [
+            18.333333333333336,
+            1.2,
+            -27.605999999999998
+          ],
+          "normal": [
+            0,
+            -1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -27.75,
+            "maxZ": -27.602,
+            "minX": 17.743333333333336,
+            "maxX": 18.923333333333336
+          }
+        },
+        {
+          "kind": "linen",
+          "position": [
+            22.394000000000002,
+            1.2,
+            -31.576666666666668
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 22.25,
+            "maxX": 22.398,
+            "minZ": -32.16666666666667,
+            "maxZ": -30.986666666666668
+          }
+        },
+        {
+          "kind": "textile",
+          "position": [
+            22.394000000000002,
+            1.2,
+            -28.378333333333334
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 22.25,
+            "maxX": 22.398,
+            "minZ": -28.968333333333334,
+            "maxZ": -27.788333333333334
+          }
+        },
+        {
+          "kind": "tablets",
+          "position": [
+            12.606,
+            1.2,
+            -36.57666666666667
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 12.602,
+            "maxX": 12.75,
+            "minZ": -37.16666666666667,
+            "maxZ": -35.986666666666665
+          }
+        }
+      ],
+      "events": [
+        "B18"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-3",
+        "before": 8,
+        "target": 6,
+        "placed": 8,
+        "groups": [],
+        "shortfall": 0,
+        "rejected": 0,
+        "reason": "动态场面保留，需专用陈设适配",
+        "excluded": true
+      },
+      "needsFloorPlan": false,
+      "reason": "动态场面保留，需专用陈设适配"
+    },
+    {
+      "roomId": "room-4",
+      "theme": "parlor",
+      "areaM2": 150,
+      "floorFurniture": 11,
+      "desired": 6,
+      "placed": 6,
+      "placements": [
+        {
+          "kind": "textile",
+          "position": [
+            22.605999999999998,
+            1.2,
+            -28.288333333333334
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 22.602,
+            "maxX": 22.75,
+            "minZ": -28.878333333333334,
+            "maxZ": -27.698333333333334
+          }
+        },
+        {
+          "kind": "pegs",
+          "position": [
+            32.394,
+            1.2,
+            -36.57666666666667
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 32.25,
+            "maxX": 32.397999999999996,
+            "minZ": -37.16666666666667,
+            "maxZ": -35.986666666666665
+          }
+        },
+        {
+          "kind": "index",
+          "position": [
+            32.394,
+            1.2,
+            -23.333333333333336
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 32.25,
+            "maxX": 32.397999999999996,
+            "minZ": -23.923333333333336,
+            "maxZ": -22.743333333333336
+          }
+        },
+        {
+          "kind": "textile",
+          "position": [
+            23.423333333333332,
+            1.2,
+            -37.394
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -37.397999999999996,
+            "maxZ": -37.25,
+            "minX": 22.833333333333332,
+            "maxX": 24.013333333333332
+          }
+        },
+        {
+          "kind": "pegs",
+          "position": [
+            32.394,
+            1.2,
+            -29.910000000000004
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 32.25,
+            "maxX": 32.397999999999996,
+            "minZ": -30.500000000000004,
+            "maxZ": -29.320000000000004
+          }
+        },
+        {
+          "kind": "index",
+          "position": [
+            25.09,
+            1.2,
+            -22.605999999999998
+          ],
+          "normal": [
+            0,
+            -1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -22.75,
+            "maxZ": -22.602,
+            "minX": 24.5,
+            "maxX": 25.68
+          }
+        }
+      ],
+      "events": [
+        "BO01"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-4",
+        "before": 7,
+        "target": 7,
+        "placed": 11,
+        "groups": [
+          {
+            "id": "room-4-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-4-dressing-0-conversation-0",
+              "room-4-dressing-0-conversation-1",
+              "room-4-dressing-0-conversation-2",
+              "room-4-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -25,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      "needsFloorPlan": false,
+      "reason": null
+    },
+    {
+      "roomId": "room-5",
+      "theme": "archive",
+      "areaM2": 125,
+      "floorFurniture": 7,
+      "desired": 2,
+      "placed": 2,
+      "placements": [
+        {
+          "kind": "records",
+          "position": [
+            35.09,
+            1.2,
+            -22.394000000000002
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -22.398,
+            "maxZ": -22.25,
+            "minX": 34.5,
+            "maxX": 35.68000000000001
+          }
+        },
+        {
+          "kind": "index",
+          "position": [
+            27.394000000000002,
+            1.2,
+            -11.576666666666668
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 27.25,
+            "maxX": 27.398,
+            "minZ": -12.166666666666668,
+            "maxZ": -10.986666666666668
+          }
+        }
+      ],
+      "events": [
+        "AB04"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-5",
+        "before": 0,
+        "target": 6,
+        "placed": 7,
+        "groups": [
+          {
+            "id": "room-5-dressing-0-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-5-dressing-0-reading-0",
+              "room-5-dressing-0-reading-1",
+              "room-5-dressing-0-reading-2"
+            ],
+            "anchor": {
+              "x": 31.666666666666668,
+              "z": -17.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-5-dressing-1-stacks",
+            "recipeId": "stacks",
+            "items": [
+              "room-5-dressing-1-stacks-0",
+              "room-5-dressing-1-stacks-1"
+            ],
+            "anchor": {
+              "x": 25,
+              "z": -7.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-5-dressing-2-sorting",
+            "recipeId": "sorting",
+            "items": [
+              "room-5-dressing-2-sorting-0",
+              "room-5-dressing-2-sorting-1"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -21.666666666666668,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 2,
+        "missingFunctionalGroup": false
+      },
+      "needsFloorPlan": false,
+      "reason": null
+    },
+    {
+      "roomId": "room-6",
+      "theme": "nursery",
+      "areaM2": 200,
+      "floorFurniture": 19,
+      "desired": 7,
+      "placed": 7,
+      "placements": [
+        {
+          "kind": "growth",
+          "position": [
+            28.333333333333336,
+            0.62,
+            -42.394
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 0.62,
+            "maxY": 1.7400000000000002,
+            "minZ": -42.397999999999996,
+            "maxZ": -42.25,
+            "minX": 27.743333333333336,
+            "maxX": 28.923333333333336
+          }
+        },
+        {
+          "kind": "pockets",
+          "position": [
+            22.605999999999998,
+            1.2,
+            -39.910000000000004
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 22.602,
+            "maxX": 22.75,
+            "minZ": -40.50000000000001,
+            "maxZ": -39.32
+          }
+        },
+        {
+          "kind": "pictures",
+          "position": [
+            22.605999999999998,
+            1.2,
+            -46.66666666666667
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 22.602,
+            "maxX": 22.75,
+            "minZ": -47.256666666666675,
+            "maxZ": -46.07666666666667
+          }
+        },
+        {
+          "kind": "growth",
+          "position": [
+            22.605999999999998,
+            0.62,
+            -43.333333333333336
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 0.62,
+            "maxY": 1.7400000000000002,
+            "minX": 22.602,
+            "maxX": 22.75,
+            "minZ": -43.92333333333334,
+            "maxZ": -42.74333333333333
+          }
+        },
+        {
+          "kind": "pockets",
+          "position": [
+            28.333333333333336,
+            1.2,
+            -37.606
+          ],
+          "normal": [
+            0,
+            -1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -37.75,
+            "maxZ": -37.602000000000004,
+            "minX": 27.743333333333336,
+            "maxX": 28.923333333333336
+          }
+        },
+        {
+          "kind": "linen",
+          "position": [
+            30.09,
+            1.2,
+            -42.394
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -42.397999999999996,
+            "maxZ": -42.25,
+            "minX": 29.5,
+            "maxX": 30.68
+          }
+        },
+        {
+          "kind": "growth",
+          "position": [
+            31.756666666666668,
+            0.62,
+            -42.394
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 0.62,
+            "maxY": 1.7400000000000002,
+            "minZ": -42.397999999999996,
+            "maxZ": -42.25,
+            "minX": 31.166666666666668,
+            "maxX": 32.34666666666667
+          }
+        }
+      ],
+      "events": [
+        "B25"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-6",
+        "before": 16,
+        "target": 10,
+        "placed": 19,
+        "groups": [
+          {
+            "id": "room-6-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-6-dressing-0-play-0",
+              "room-6-dressing-0-play-1",
+              "room-6-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": 28.333333333333336,
+              "z": -42.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      "needsFloorPlan": false,
+      "reason": null
+    },
+    {
+      "roomId": "room-7",
+      "theme": "clinic",
+      "areaM2": 200,
+      "floorFurniture": 12,
+      "desired": 2,
+      "placed": 2,
+      "placements": [
+        {
+          "kind": "instruments",
+          "position": [
+            37.606,
+            1.2,
+            -41.66666666666667
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 37.602000000000004,
+            "maxX": 37.75,
+            "minZ": -42.256666666666675,
+            "maxZ": -41.07666666666667
+          }
+        },
+        {
+          "kind": "records",
+          "position": [
+            52.394,
+            1.2,
+            -51.57666666666667
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 52.25,
+            "maxX": 52.397999999999996,
+            "minZ": -52.16666666666667,
+            "maxZ": -50.986666666666665
+          }
+        }
+      ],
+      "events": [
+        "B10"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-7",
+        "before": 0,
+        "target": 10,
+        "placed": 12,
+        "groups": [
+          {
+            "id": "room-7-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-7-dressing-0-examination-0",
+              "room-7-dressing-0-examination-1",
+              "room-7-dressing-0-examination-2",
+              "room-7-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": 43.333333333333336,
+              "z": -42.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-7-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-7-dressing-1-supplies-0",
+              "room-7-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": 50,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-7-dressing-2-records",
+            "recipeId": "records",
+            "items": [
+              "room-7-dressing-2-records-0",
+              "room-7-dressing-2-records-1"
+            ],
+            "anchor": {
+              "x": 52.5,
+              "z": -38.333333333333336,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-7-dressing-3-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-7-dressing-3-examination-0",
+              "room-7-dressing-3-examination-1",
+              "room-7-dressing-3-examination-2",
+              "room-7-dressing-3-examination-3"
+            ],
+            "anchor": {
+              "x": 41.66666666666667,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      "needsFloorPlan": false,
+      "reason": null
+    },
+    {
+      "roomId": "room-8",
+      "theme": "shrine",
+      "areaM2": 175,
+      "floorFurniture": 8,
+      "desired": 6,
+      "placed": 6,
+      "placements": [
+        {
+          "kind": "textile",
+          "position": [
+            31.711666666666666,
+            1.2,
+            -52.606
+          ],
+          "normal": [
+            0,
+            -1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -52.75,
+            "maxZ": -52.602000000000004,
+            "minX": 31.121666666666666,
+            "maxX": 32.30166666666667
+          }
+        },
+        {
+          "kind": "tablets",
+          "position": [
+            23.423333333333332,
+            1.2,
+            -67.39399999999999
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -67.398,
+            "maxZ": -67.25,
+            "minX": 22.833333333333332,
+            "maxX": 24.013333333333332
+          }
+        },
+        {
+          "kind": "linen",
+          "position": [
+            37.394,
+            1.2,
+            -66.57666666666667
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 37.25,
+            "maxX": 37.397999999999996,
+            "minZ": -67.16666666666667,
+            "maxZ": -65.98666666666666
+          }
+        },
+        {
+          "kind": "textile",
+          "position": [
+            22.605999999999998,
+            1.2,
+            -56.57666666666667
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 22.602,
+            "maxX": 22.75,
+            "minZ": -57.16666666666667,
+            "maxZ": -55.986666666666665
+          }
+        },
+        {
+          "kind": "tablets",
+          "position": [
+            37.394,
+            1.2,
+            -58.24333333333334
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 37.25,
+            "maxX": 37.397999999999996,
+            "minZ": -58.83333333333334,
+            "maxZ": -57.653333333333336
+          }
+        },
+        {
+          "kind": "linen",
+          "position": [
+            27.394000000000002,
+            1.2,
+            -61.57666666666667
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 27.25,
+            "maxX": 27.398,
+            "minZ": -62.16666666666667,
+            "maxZ": -60.986666666666665
+          }
+        }
+      ],
+      "events": [
+        "B22"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-8",
+        "before": 5,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-8-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-8-dressing-0-offering-0",
+              "room-8-dressing-0-offering-1",
+              "room-8-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": 30,
+              "z": -57.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      "needsFloorPlan": false,
+      "reason": null
+    },
+    {
+      "roomId": "room-9",
+      "theme": "archive",
+      "areaM2": 200,
+      "floorFurniture": 15,
+      "desired": 7,
+      "placed": 7,
+      "placements": [
+        {
+          "kind": "records",
+          "position": [
+            7.606,
+            1.2,
+            -9.91
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 7.601999999999999,
+            "maxX": 7.75,
+            "minZ": -10.5,
+            "maxZ": -9.32
+          }
+        },
+        {
+          "kind": "index",
+          "position": [
+            22.394000000000002,
+            1.2,
+            -16.576666666666668
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 22.25,
+            "maxX": 22.398,
+            "minZ": -17.166666666666668,
+            "maxZ": -15.986666666666668
+          }
+        },
+        {
+          "kind": "records",
+          "position": [
+            10.09,
+            1.2,
+            -22.394000000000002
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -22.398,
+            "maxZ": -22.25,
+            "minX": 9.5,
+            "maxX": 10.68
+          }
+        },
+        {
+          "kind": "records",
+          "position": [
+            22.394000000000002,
+            1.2,
+            -9.91
+          ],
+          "normal": [
+            -1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 22.25,
+            "maxX": 22.398,
+            "minZ": -10.5,
+            "maxZ": -9.32
+          }
+        },
+        {
+          "kind": "index",
+          "position": [
+            7.606,
+            1.2,
+            -19.910000000000004
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minX": 7.601999999999999,
+            "maxX": 7.75,
+            "minZ": -20.500000000000004,
+            "maxZ": -19.320000000000004
+          }
+        },
+        {
+          "kind": "records",
+          "position": [
+            13.333333333333334,
+            1.2,
+            -22.394000000000002
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -22.398,
+            "maxZ": -22.25,
+            "minX": 12.743333333333334,
+            "maxX": 13.923333333333334
+          }
+        },
+        {
+          "kind": "records",
+          "position": [
+            16.621666666666666,
+            1.2,
+            -22.394000000000002
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -22.398,
+            "maxZ": -22.25,
+            "minX": 16.031666666666666,
+            "maxX": 17.211666666666666
+          }
+        }
+      ],
+      "events": [
+        "AB01"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-9",
+        "before": 13,
+        "target": 10,
+        "placed": 15,
+        "groups": [
+          {
+            "id": "room-9-dressing-2-sorting",
+            "recipeId": "sorting",
+            "items": [
+              "room-9-dressing-2-sorting-0",
+              "room-9-dressing-2-sorting-1"
+            ],
+            "anchor": {
+              "x": 18.333333333333336,
+              "z": -17.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      "needsFloorPlan": false,
+      "reason": null
+    },
+    {
+      "roomId": "room-10",
+      "theme": "shrine",
+      "areaM2": 225,
+      "floorFurniture": 11,
+      "desired": 2,
+      "placed": 2,
+      "placements": [
+        {
+          "kind": "textile",
+          "position": [
+            13.333333333333334,
+            1.2,
+            -52.394
+          ],
+          "normal": [
+            0,
+            1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -52.397999999999996,
+            "maxZ": -52.25,
+            "minX": 12.743333333333334,
+            "maxX": 13.923333333333334
+          }
+        },
+        {
+          "kind": "tablets",
+          "position": [
+            21.666666666666664,
+            1.2,
+            -37.606
+          ],
+          "normal": [
+            0,
+            -1
+          ],
+          "bounds": {
+            "minY": 1.2,
+            "maxY": 2.3200000000000003,
+            "minZ": -37.75,
+            "maxZ": -37.602000000000004,
+            "minX": 21.076666666666664,
+            "maxX": 22.256666666666664
+          }
+        }
+      ],
+      "events": [
+        "B06"
+      ],
+      "floorPlan": {
+        "version": 2,
+        "roomId": "room-10",
+        "before": 0,
+        "target": 11,
+        "placed": 11,
+        "groups": [
+          {
+            "id": "room-10-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-10-dressing-0-offering-0",
+              "room-10-dressing-0-offering-1",
+              "room-10-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": 10,
+              "z": -37.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-10-dressing-1-keeping",
+            "recipeId": "keeping",
+            "items": [
+              "room-10-dressing-1-keeping-0",
+              "room-10-dressing-1-keeping-1"
+            ],
+            "anchor": {
+              "x": 20,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-10-dressing-2-waiting",
+            "recipeId": "waiting",
+            "items": [
+              "room-10-dressing-2-waiting-0",
+              "room-10-dressing-2-waiting-1",
+              "room-10-dressing-2-waiting-2"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -40,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-10-dressing-3-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-10-dressing-3-offering-0",
+              "room-10-dressing-3-offering-1",
+              "room-10-dressing-3-offering-2"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -50,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      "needsFloorPlan": false,
+      "reason": null
+    }
+  ],
+  "clusters": 50,
+  "draws": 59,
+  "triangles": 33726,
+  "skipped": []
+}

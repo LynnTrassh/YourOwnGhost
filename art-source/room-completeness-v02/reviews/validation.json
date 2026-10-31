@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-31",
+  "seed": "1844070019",
+  "preferences": [],
+  "catEnabled": false,
+  "unit": {
+    "command": "npm test",
+    "tests": 172,
+    "pass": 172,
+    "fail": 0,
+    "durationMs": 238501.564917
+  },
+  "build": {
+    "command": "npm run build",
+    "passed": true,
+    "warning": "existing chunks larger than 500 kB"
+  },
+  "independentAudit": {
+    "command": "node art-source/room-completeness-v02/check.mjs",
+    "seeds": 3,
+    "layers": 6,
+    "rooms": 62,
+    "nonExcludedRoomsHaveFunctionalGroups": true
+  },
+  "browser": {
+    "themes": [
+      "bedroom",
+      "parlor",
+      "nursery",
+      "clinic",
+      "archive",
+      "shrine"
+    ],
+    "views": [
+      "entry",
+      "middle",
+      "reverse",
+      "furniture"
+    ],
+    "modelsLoaded": [
+      177,
+      151
+    ],
+    "failed": [
+      0,
+      0
+    ],
+    "consoleWarnings": 0,
+    "consoleErrors": 0,
+    "mainPreview": "/?seed=1844070019&preview=B12&like=none&fear=generic",
+    "mainPreviewPhase": "observed",
+    "humanPlaytest": false,
+    "fpsBenchmark": false
+  },
+  "scope": "existing furniture and final dream composition only; separate model task assets not included"
+}

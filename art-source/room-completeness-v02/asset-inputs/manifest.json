@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "horror-hand-reaching-a-v01",
+      "image": "horror-hand-reaching-a-v01.png",
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D GAME ASSET reference, based on the reaching hands in the provided approved corridor concept. Subject: ONE pale waxlike human RIGHT HAND with an elongated slim forearm, wrist unnervingly slightly bent down, fingers spread irregularly and gently curling as if reaching out of a narrow wall crack. Exactly five anatomically legible fingers including thumb, elegant tendons, slightly too-long proportions, quiet uncanny presence, no claws, no extra digits, no blood, no wound, no exposed cut stump. Forearm rear terminates in a smooth dark rounded hidden mounting cap for insertion into wall. Entire arm and fingers visible with generous margin, diagonally across frame from upper right forearm cap to lower left fingertips, three-quarter view that separates thumb and all four fingers. Matte gray ivory skin with subtle age mottling, restrained hand-painted texture character on solid realistic 3D volume; no strong baked shadows, no glossy wet skin. Neutral charcoal gray plain studio background, soft even readable neutral lighting, no room, no wall fragment, no text, no collage, no duplicates, no VHS. This is original production design, not a screenshot. Reference image supplies material mood only. Asset intended approximately 0.65 metres from cap to fingertip.",
+      "reference": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/horror-v03/scene-reaching-wall-corridor-v03.png",
+      "status": "reference-only-model-production-owned-by-other-chat",
+      "model": null,
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "horror-doll-porcelain-a-v01",
+      "image": "horror-doll-porcelain-a-v01.png",
+      "prompt": "Use case: stylized-concept. Create one isolated original antique DOLL 3D game asset reference matching the dolls in the provided approved suspended nursery concept. It is clearly a 0.48m manufactured vintage toy, not a real child. One complete doll only, full body from crown to shoes, three-quarter front view, standing in a neutral relaxed pose, arms slightly away from body so hands visible, feet separate. Thin body, subtly oversized old bisque porcelain head, asymmetric glass eyes looking a little off-center, closed small mouth, slightly tilted head, aged molded dark brown hair, fine glaze crazing, faded dusty rose and dirty cream cloth dress with simple hem, fabric limbs, dark worn shoes. Quietly disquieting and beautifully crafted, no exaggerated demon grin, no sharp teeth, no gore, no missing limbs. Tiny attachment eyelets at shoulder seams for later suspension; NO strings in this asset, strings will be independent geometry. Matte readable tactile surfaces with restrained hand-painted texture character over believable solid 3D form. Soft neutral studio lighting on plain charcoal gray background, no environment, no stand, no harsh baked shadows, no VHS, no lettering, no collage, no extra dolls. Reference supplies costume/material cohesion only.",
+      "reference": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/horror-v03/scene-suspended-dolls-nursery-v03.png",
+      "status": "reference-only-model-production-owned-by-other-chat",
+      "model": null,
+      "runtimeIntegrated": false
+    }
+  ]
+}

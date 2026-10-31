@@ -34,13 +34,18 @@ export function createDarkInteriors({ plan, root, resources }) {
     if (obstacle.kind === 'bed') yaw = 0;
     // Long-axis beds/cots share a physical primary slot with sofas/desks.
     if (obstacle.compositionRole === 'primary' && asset.depth > asset.width) yaw += Math.PI/2;
+    if (Number.isFinite(obstacle.furnitureYaw)) yaw = obstacle.furnitureYaw;
     const alongX = Math.abs(Math.cos(yaw)) > .5;
     const width = (alongX ? w : d) * .985, depth = (alongX ? d : w) * .985;
     const height = Math.min(asset.height,obstacle.height ?? asset.height);
     const position = [(obstacle.minX+obstacle.maxX)/2,0,(obstacle.minZ+obstacle.maxZ)/2];
     const anchor = new THREE.Group(); anchor.position.set(...position); anchor.rotation.y = yaw; root.add(anchor);
     const item = {obstacle,anchor,id,width,depth,height,position};
-    item.ready = place(id,{parent:anchor,width,height,depth,fallback,onReady:model=>details.furnish({...item,model})});
+    item.ready = place(id,{parent:anchor,width,height,depth,fallback,onReady:model=>{
+      details.furnish({...item,model});
+      if(id==='lighting-floor-lamp')illuminate(model,{emitter:[0,height*.78,0],target:[.25,.1,-.6],
+        color:surfaces.look(obstacle.roomId).light,intensity:6,distance:4.5,angle:1.15,roomId:obstacle.roomId});
+    }});
     furnished.push(item);
   }
   function wallModel(id, face, {height,width,depth = .07, y = 0, along, sourceYaw = 0, onReady} = {}) {
@@ -74,7 +79,7 @@ export function createDarkInteriors({ plan, root, resources }) {
         }));
         primary.set(obstacle.roomId,true);
       }
-      if (['furniture-writing-desk','furniture-child-table','furniture-document-table'].includes(id)) {
+      if (!obstacle.compositionGroup && ['furniture-writing-desk','furniture-child-table','furniture-document-table'].includes(id)) {
         // A tucked seat stays entirely within the already reserved furnishing footprint.
         place('furniture-dining-chair',{parent:anchor,position:[0,0,-depth*.18],width:Math.min(.36,width*.32),height:id==='furniture-child-table'?.5:.72,depth:depth*.48,yaw:Math.PI});
       }

@@ -7,11 +7,11 @@ import { createSurfaceDetailMaterials } from './surface-detail-materials.js';
 // A recipe is selected from existing room metadata, never a fresh layout RNG.
 export const ROOM_COMPLETENESS_PRESETS = {
   bedroom: { name:'旧卧室', groups:['linen','pictures','pegs'], accent:0x647367, paper:0xbfb198 },
-  parlor: { name:'旧客厅', groups:['pictures','textile','pictures'], accent:0x69443c, paper:0xbeb099 },
+  parlor: { name:'旧客厅', groups:['textile','pegs','index'], accent:0x69443c, paper:0xbeb099 },
   nursery: { name:'旧育儿室', groups:['growth','pockets','pictures'], accent:0x8e6f70, paper:0xc6b899 },
   clinic: { name:'诊疗室', groups:['instruments','records','linen'], accent:0x657f76, paper:0xb7c1b2 },
   archive: { name:'档案室', groups:['records','index','records'], accent:0x52666a, paper:0xb6a58a },
-  shrine: { name:'供奉室', groups:['textile','tablets','textile'], accent:0x663a34, paper:0xbba88b },
+  shrine: { name:'供奉室', groups:['textile','tablets','linen'], accent:0x663a34, paper:0xbba88b },
 };
 
 export function createRoomCompleteness({plan,root,resources,surfaces}) {
@@ -123,9 +123,10 @@ export function createRoomCompleteness({plan,root,resources,surfaces}) {
       const eventCleared=instances.length>0&&room.interior?.type==='empty';
       const desired=eventCleared?2:Math.min(7,Math.max(3,Math.ceil(area/30)));
       const entry={roomId:room.id,theme,areaM2:Math.round(area),floorFurniture:floorObjects.length,desired,placed:0,placements:[],
-        events:instances.map(i=>i.definitionId),floorPlan:room.interior?.completeness??null,
-        needsFloorPlan:!eventCleared&&!room.interior?.completeness?.preserved&&floorObjects.length<3&&area>65,
-        reason:eventCleared?'事件专用布景保留观测区域，墙面补足用途信息':room.interior?.completeness?.reason??null};stats.rooms.push(entry);
+        events:instances.map(i=>i.definitionId),floorPlan:room.interior?.finalDressing??room.interior?.completeness??null,
+        needsFloorPlan:(room.interior?.finalDressing?.shortfall??0)>0||!!room.interior?.finalDressing?.missingFunctionalGroup||(floorObjects.length<3&&area>65),
+        reason:room.interior?.finalDressing ? room.interior.finalDressing.reason??null
+          :eventCleared?'事件房家具不足，墙饰不计为家具补全':room.interior?.completeness?.reason??null};stats.rooms.push(entry);
       if(protectedRoom){entry.reason='建筑变化事件需共同变换墙饰，等待事件接口';stats.skipped.push(room.id);continue;}
       const m={wood:surfaces.material('floor-walnut-planks',0x75614c,.86),
         paper:surfaces.material(null,recipe.paper,.97),accent:surfaces.material(null,recipe.accent,.95),
@@ -144,7 +145,9 @@ export function createRoomCompleteness({plan,root,resources,surfaces}) {
         });
         const face=ranked.find(f=>{const p=position(f);return used.every(q=>Math.hypot(p[0]-q[0],p[1]-q[1])>2);});
         if(!face)break;
-        const kind=recipe.groups[i%recipe.groups.length],y=kind==='growth'?.62:1.20;
+        let kind=recipe.groups[i%recipe.groups.length];
+        if(kind==='pictures'&&entry.placements.some(p=>p.kind==='pictures'))kind='linen';
+        const y=kind==='growth'?.62:1.20;
         const slot=surfaces.decor.reserve({roomId:room.id,preferredFace:face,width:1.18,height:1.12,y,depth:.12,kind:`complete-${kind}`});
         if(!slot)break;
         const g=new THREE.Group();g.name=`room-completeness-${room.id}-${kind}`;

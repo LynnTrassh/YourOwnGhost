@@ -9,7 +9,7 @@ export const ROOM_PRESETS = {
     },
   },
   parlor: {
-    id: 'parlor', name: '空客厅',
+    id: 'parlor', name: '旧客厅',
     furnishings: {
       counter: ['sofa', 'low-table'],
       bookshelf: ['display-cabinet', 'bookcase'],
@@ -56,6 +56,42 @@ export const ROOM_FUNCTIONAL_PAIRS = {
   clinic: ['exam-cot', 'instrument-cart'],
   archive: ['writing-desk', 'copy-table'],
   shrine: ['offering-table', 'kneeler'],
+};
+
+// Authored groups in metres. Local -Z faces the room, back edge is Z=0.
+// [prefab, width, depth, height, x, z, quarterTurns]. Each member gets a real
+// collision footprint; a group is accepted or rejected as a whole.
+export const ROOM_DRESSING_GROUPS = {
+  bedroom: [
+    {id:'sleep',items:[['bed',.95,1.95,1.05,0,-1.1,0],['nightstand',.68,.48,.78,.98,-.4,0],['dresser',1.3,.65,.88,-1.35,-.45,0]]},
+    {id:'reading',items:[['writing-desk',1.3,.65,.82,0,-.45,0],['dining-chair',.48,.5,.9,0,-1.48,2],['bookcase',1.3,.65,2.25,1.7,-.45,0]]},
+    {id:'clothes',items:[['wardrobe',1.3,.65,2.25,-.8,-.45,0],['dresser',1.3,.65,.88,.8,-.45,0]]},
+  ],
+  parlor: [
+    {id:'conversation',items:[['sofa',1.8,.78,.94,0,-.52,0],['low-table',1.1,.6,.48,0,-1.72,0],['armchair',.68,.75,.94,1.55,-1.4,1],['floor-lamp',.42,.42,1.65,-1.3,-.35,0]]},
+    {id:'display',items:[['display-cabinet',1.3,.65,2.25,-.8,-.45,0],['bookcase',1.3,.65,2.25,.8,-.45,0]]},
+    {id:'writing',items:[['writing-desk',1.3,.65,.82,0,-.45,0],['dining-chair',.48,.5,.9,0,-1.48,2]]},
+  ],
+  nursery: [
+    {id:'play',items:[['small-table',1.2,.65,.6,0,-1.1,0],['dining-chair',.38,.4,.6,0,-2,2],['toy-chest',1.3,.65,.68,1.55,-.45,0]]},
+    {id:'toys',items:[['toy-shelf',1.3,.65,1.6,-.8,-.45,0],['wardrobe',1.3,.65,2.25,.8,-.45,0]]},
+    {id:'care',items:[['dresser',1.3,.65,.88,0,-.45,0],['armchair',.68,.75,.94,1.3,-.6,0]]},
+  ],
+  clinic: [
+    {id:'examination',items:[['exam-cot',1.8,.75,.9,0,-.52,0],['instrument-cart',.75,.55,.9,1.5,-.65,0],['dining-chair',.48,.5,.9,-1.45,-.5,0],['floor-lamp',.42,.42,1.65,1.5,-1.65,0]]},
+    {id:'supplies',items:[['medicine-cabinet',1.3,.65,2.25,-.8,-.45,0],['file-cabinet',1.1,.65,2.1,.65,-.45,0]]},
+    {id:'records',items:[['writing-desk',1.3,.65,.82,0,-.45,0],['dining-chair',.48,.5,.9,0,-1.48,2]]},
+  ],
+  archive: [
+    {id:'reading',items:[['writing-desk',1.3,.65,.82,0,-.45,0],['dining-chair',.48,.5,.9,0,-1.48,2],['filing-cabinet',1.3,.65,2.25,1.65,-.45,0]]},
+    {id:'stacks',items:[['archive-shelf',1.3,.65,2.25,-.8,-.45,0],['filing-cabinet',1.3,.65,2.25,.8,-.45,0]]},
+    {id:'sorting',items:[['copy-table',1.3,.65,.8,0,-.8,0],['dining-chair',.48,.5,.9,0,-1.8,2]]},
+  ],
+  shrine: [
+    {id:'offering',items:[['offering-table',1.5,.7,.9,0,-.5,0],['kneeler',.8,.5,.65,0,-1.65,0],['reliquary',1.1,.65,2.15,1.65,-.45,0]]},
+    {id:'keeping',items:[['reliquary',1.1,.65,2.15,-.7,-.45,0],['bookcase',1.3,.65,2.25,.8,-.45,0]]},
+    {id:'waiting',items:[['dining-chair',.48,.5,.9,-.6,-.4,0],['dining-chair',.48,.5,.9,.6,-.4,0],['low-table',.65,.5,.48,0,-1.3,0]]},
+  ],
 };
 
 export function createRoomPrefabPicker(presetId, rng) {

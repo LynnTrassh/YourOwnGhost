@@ -1,0 +1,2697 @@
+[
+  {
+    "seed": "1844070019",
+    "preferences": [],
+    "layer": 1,
+    "validation": "pass",
+    "eventsUnchanged": true,
+    "rooms": [
+      {
+        "version": 2,
+        "roomId": "bedroom",
+        "before": 2,
+        "target": 6,
+        "placed": 2,
+        "groups": [],
+        "shortfall": 4,
+        "rejected": 0,
+        "reason": "固定出生房保持既有布局",
+        "excluded": true
+      },
+      {
+        "version": 2,
+        "roomId": "room-1",
+        "before": 2,
+        "target": 10,
+        "placed": 10,
+        "groups": [
+          {
+            "id": "room-1-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-1-dressing-0-offering-0",
+              "room-1-dressing-0-offering-1",
+              "room-1-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": -2.5,
+              "z": -13.333333333333334,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-1-dressing-1-keeping",
+            "recipeId": "keeping",
+            "items": [
+              "room-1-dressing-1-keeping-0",
+              "room-1-dressing-1-keeping-1"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -20,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-1-dressing-2-waiting",
+            "recipeId": "waiting",
+            "items": [
+              "room-1-dressing-2-waiting-0",
+              "room-1-dressing-2-waiting-1",
+              "room-1-dressing-2-waiting-2"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -10,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-2",
+        "before": 0,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-2-dressing-0-sleep",
+            "recipeId": "sleep",
+            "items": [
+              "room-2-dressing-0-sleep-0",
+              "room-2-dressing-0-sleep-1",
+              "room-2-dressing-0-sleep-2"
+            ],
+            "anchor": {
+              "x": 12.5,
+              "z": -13.333333333333334,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-2-dressing-1-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-2-dressing-1-reading-0",
+              "room-2-dressing-1-reading-1",
+              "room-2-dressing-1-reading-2"
+            ],
+            "anchor": {
+              "x": 21.666666666666668,
+              "z": -22.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-2-dressing-2-clothes",
+            "recipeId": "clothes",
+            "items": [
+              "room-2-dressing-2-clothes-0",
+              "room-2-dressing-2-clothes-1"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -10,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-3",
+        "before": 0,
+        "target": 6,
+        "placed": 7,
+        "groups": [
+          {
+            "id": "room-3-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-3-dressing-0-play-0",
+              "room-3-dressing-0-play-1",
+              "room-3-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": -13.333333333333334,
+              "z": -17.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-3-dressing-1-toys",
+            "recipeId": "toys",
+            "items": [
+              "room-3-dressing-1-toys-0",
+              "room-3-dressing-1-toys-1"
+            ],
+            "anchor": {
+              "x": -10,
+              "z": -7.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-3-dressing-2-care",
+            "recipeId": "care",
+            "items": [
+              "room-3-dressing-2-care-0",
+              "room-3-dressing-2-care-1"
+            ],
+            "anchor": {
+              "x": -21.666666666666668,
+              "z": -12.5,
+              "nx": 0,
+              "nz": 1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-4",
+        "before": 10,
+        "target": 8,
+        "placed": 13,
+        "groups": [
+          {
+            "id": "room-4-dressing-0-sleep",
+            "recipeId": "sleep",
+            "items": [
+              "room-4-dressing-0-sleep-0",
+              "room-4-dressing-0-sleep-1",
+              "room-4-dressing-0-sleep-2"
+            ],
+            "anchor": {
+              "x": -27.5,
+              "z": -18.333333333333336,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-5",
+        "before": 0,
+        "target": 6,
+        "placed": 6,
+        "groups": [
+          {
+            "id": "room-5-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-5-dressing-0-conversation-0",
+              "room-5-dressing-0-conversation-1",
+              "room-5-dressing-0-conversation-2",
+              "room-5-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": 27.5,
+              "z": -16.666666666666668,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-5-dressing-1-display",
+            "recipeId": "display",
+            "items": [
+              "room-5-dressing-1-display-0",
+              "room-5-dressing-1-display-1"
+            ],
+            "anchor": {
+              "x": 37.5,
+              "z": -10,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-6",
+        "before": 0,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-6-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-6-dressing-0-examination-0",
+              "room-6-dressing-0-examination-1",
+              "room-6-dressing-0-examination-2",
+              "room-6-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": 32.5,
+              "z": -1.6666666666666667,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-6-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-6-dressing-1-supplies-0",
+              "room-6-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": 5,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-6-dressing-2-records",
+            "recipeId": "records",
+            "items": [
+              "room-6-dressing-2-records-0",
+              "room-6-dressing-2-records-1"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -6.666666666666667,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-7",
+        "before": 15,
+        "target": 10,
+        "placed": 19,
+        "groups": [
+          {
+            "id": "room-7-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-7-dressing-0-conversation-0",
+              "room-7-dressing-0-conversation-1",
+              "room-7-dressing-0-conversation-2",
+              "room-7-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": 2.5,
+              "z": -28.333333333333336,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-8",
+        "before": 10,
+        "target": 11,
+        "placed": 13,
+        "groups": [
+          {
+            "id": "room-8-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-8-dressing-0-play-0",
+              "room-8-dressing-0-play-1",
+              "room-8-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -25,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-9",
+        "before": 0,
+        "target": 8,
+        "placed": 10,
+        "groups": [
+          {
+            "id": "room-9-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-9-dressing-0-play-0",
+              "room-9-dressing-0-play-1",
+              "room-9-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": -1.6666666666666667,
+              "z": -42.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-9-dressing-1-toys",
+            "recipeId": "toys",
+            "items": [
+              "room-9-dressing-1-toys-0",
+              "room-9-dressing-1-toys-1"
+            ],
+            "anchor": {
+              "x": 5,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-9-dressing-2-care",
+            "recipeId": "care",
+            "items": [
+              "room-9-dressing-2-care-0",
+              "room-9-dressing-2-care-1"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -51.66666666666667,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-9-dressing-3-play",
+            "recipeId": "play",
+            "items": [
+              "room-9-dressing-3-play-0",
+              "room-9-dressing-3-play-1",
+              "room-9-dressing-3-play-2"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -38.333333333333336,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-10",
+        "before": 0,
+        "target": 10,
+        "placed": 12,
+        "groups": [
+          {
+            "id": "room-10-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-10-dressing-0-conversation-0",
+              "room-10-dressing-0-conversation-1",
+              "room-10-dressing-0-conversation-2",
+              "room-10-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": -12.5,
+              "z": -28.333333333333336,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-10-dressing-1-display",
+            "recipeId": "display",
+            "items": [
+              "room-10-dressing-1-display-0",
+              "room-10-dressing-1-display-1"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": -35,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-10-dressing-2-writing",
+            "recipeId": "writing",
+            "items": [
+              "room-10-dressing-2-writing-0",
+              "room-10-dressing-2-writing-1"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": -23.333333333333336,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-10-dressing-3-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-10-dressing-3-conversation-0",
+              "room-10-dressing-3-conversation-1",
+              "room-10-dressing-3-conversation-2",
+              "room-10-dressing-3-conversation-3"
+            ],
+            "anchor": {
+              "x": -10,
+              "z": -37.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 2,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-11",
+        "before": 10,
+        "target": 8,
+        "placed": 13,
+        "groups": [
+          {
+            "id": "room-11-dressing-0-sleep",
+            "recipeId": "sleep",
+            "items": [
+              "room-11-dressing-0-sleep-0",
+              "room-11-dressing-0-sleep-1",
+              "room-11-dressing-0-sleep-2"
+            ],
+            "anchor": {
+              "x": -43.333333333333336,
+              "z": -17.5,
+              "nx": 0,
+              "nz": 1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      }
+    ]
+  },
+  {
+    "seed": "1844070019",
+    "preferences": [],
+    "layer": 2,
+    "validation": "pass",
+    "eventsUnchanged": true,
+    "rooms": [
+      {
+        "version": 2,
+        "roomId": "bedroom",
+        "before": 2,
+        "target": 6,
+        "placed": 2,
+        "groups": [],
+        "shortfall": 4,
+        "rejected": 0,
+        "reason": "固定出生房保持既有布局",
+        "excluded": true
+      },
+      {
+        "version": 2,
+        "roomId": "room-1",
+        "before": 2,
+        "target": 8,
+        "placed": 9,
+        "groups": [
+          {
+            "id": "room-1-dressing-0-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-1-dressing-0-reading-0",
+              "room-1-dressing-0-reading-1",
+              "room-1-dressing-0-reading-2"
+            ],
+            "anchor": {
+              "x": -3.3333333333333335,
+              "z": -12.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-1-dressing-1-stacks",
+            "recipeId": "stacks",
+            "items": [
+              "room-1-dressing-1-stacks-0",
+              "room-1-dressing-1-stacks-1"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -20,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-1-dressing-2-sorting",
+            "recipeId": "sorting",
+            "items": [
+              "room-1-dressing-2-sorting-0",
+              "room-1-dressing-2-sorting-1"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -8.333333333333334,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-2",
+        "before": 0,
+        "target": 6,
+        "placed": 6,
+        "groups": [
+          {
+            "id": "room-2-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-2-dressing-0-examination-0",
+              "room-2-dressing-0-examination-1",
+              "room-2-dressing-0-examination-2",
+              "room-2-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": -5,
+              "z": -27.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-2-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-2-dressing-1-supplies-0",
+              "room-2-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -35,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-3",
+        "before": 8,
+        "target": 6,
+        "placed": 8,
+        "groups": [],
+        "shortfall": 0,
+        "rejected": 0,
+        "reason": "动态场面保留，需专用陈设适配",
+        "excluded": true
+      },
+      {
+        "version": 2,
+        "roomId": "room-4",
+        "before": 7,
+        "target": 7,
+        "placed": 11,
+        "groups": [
+          {
+            "id": "room-4-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-4-dressing-0-conversation-0",
+              "room-4-dressing-0-conversation-1",
+              "room-4-dressing-0-conversation-2",
+              "room-4-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -25,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-5",
+        "before": 0,
+        "target": 6,
+        "placed": 7,
+        "groups": [
+          {
+            "id": "room-5-dressing-0-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-5-dressing-0-reading-0",
+              "room-5-dressing-0-reading-1",
+              "room-5-dressing-0-reading-2"
+            ],
+            "anchor": {
+              "x": 31.666666666666668,
+              "z": -17.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-5-dressing-1-stacks",
+            "recipeId": "stacks",
+            "items": [
+              "room-5-dressing-1-stacks-0",
+              "room-5-dressing-1-stacks-1"
+            ],
+            "anchor": {
+              "x": 25,
+              "z": -7.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-5-dressing-2-sorting",
+            "recipeId": "sorting",
+            "items": [
+              "room-5-dressing-2-sorting-0",
+              "room-5-dressing-2-sorting-1"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -21.666666666666668,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 2,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-6",
+        "before": 16,
+        "target": 10,
+        "placed": 19,
+        "groups": [
+          {
+            "id": "room-6-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-6-dressing-0-play-0",
+              "room-6-dressing-0-play-1",
+              "room-6-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": 28.333333333333336,
+              "z": -42.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-7",
+        "before": 0,
+        "target": 10,
+        "placed": 12,
+        "groups": [
+          {
+            "id": "room-7-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-7-dressing-0-examination-0",
+              "room-7-dressing-0-examination-1",
+              "room-7-dressing-0-examination-2",
+              "room-7-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": 43.333333333333336,
+              "z": -42.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-7-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-7-dressing-1-supplies-0",
+              "room-7-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": 50,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-7-dressing-2-records",
+            "recipeId": "records",
+            "items": [
+              "room-7-dressing-2-records-0",
+              "room-7-dressing-2-records-1"
+            ],
+            "anchor": {
+              "x": 52.5,
+              "z": -38.333333333333336,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-7-dressing-3-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-7-dressing-3-examination-0",
+              "room-7-dressing-3-examination-1",
+              "room-7-dressing-3-examination-2",
+              "room-7-dressing-3-examination-3"
+            ],
+            "anchor": {
+              "x": 41.66666666666667,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-8",
+        "before": 5,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-8-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-8-dressing-0-offering-0",
+              "room-8-dressing-0-offering-1",
+              "room-8-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": 30,
+              "z": -57.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-9",
+        "before": 13,
+        "target": 10,
+        "placed": 15,
+        "groups": [
+          {
+            "id": "room-9-dressing-2-sorting",
+            "recipeId": "sorting",
+            "items": [
+              "room-9-dressing-2-sorting-0",
+              "room-9-dressing-2-sorting-1"
+            ],
+            "anchor": {
+              "x": 18.333333333333336,
+              "z": -17.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-10",
+        "before": 0,
+        "target": 11,
+        "placed": 11,
+        "groups": [
+          {
+            "id": "room-10-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-10-dressing-0-offering-0",
+              "room-10-dressing-0-offering-1",
+              "room-10-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": 10,
+              "z": -37.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-10-dressing-1-keeping",
+            "recipeId": "keeping",
+            "items": [
+              "room-10-dressing-1-keeping-0",
+              "room-10-dressing-1-keeping-1"
+            ],
+            "anchor": {
+              "x": 20,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-10-dressing-2-waiting",
+            "recipeId": "waiting",
+            "items": [
+              "room-10-dressing-2-waiting-0",
+              "room-10-dressing-2-waiting-1",
+              "room-10-dressing-2-waiting-2"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -40,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-10-dressing-3-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-10-dressing-3-offering-0",
+              "room-10-dressing-3-offering-1",
+              "room-10-dressing-3-offering-2"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -50,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      }
+    ]
+  },
+  {
+    "seed": "7",
+    "preferences": [
+      "fear.doll"
+    ],
+    "layer": 1,
+    "validation": "pass",
+    "eventsUnchanged": true,
+    "rooms": [
+      {
+        "version": 2,
+        "roomId": "bedroom",
+        "before": 2,
+        "target": 6,
+        "placed": 2,
+        "groups": [],
+        "shortfall": 4,
+        "rejected": 0,
+        "reason": "固定出生房保持既有布局",
+        "excluded": true
+      },
+      {
+        "version": 2,
+        "roomId": "room-1",
+        "before": 0,
+        "target": 6,
+        "placed": 6,
+        "groups": [
+          {
+            "id": "room-1-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-1-dressing-0-examination-0",
+              "room-1-dressing-0-examination-1",
+              "room-1-dressing-0-examination-2",
+              "room-1-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": 5,
+              "z": -12.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-1-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-1-dressing-1-supplies-0",
+              "room-1-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -20,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-2",
+        "before": 17,
+        "target": 10,
+        "placed": 20,
+        "groups": [
+          {
+            "id": "room-2-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-2-dressing-0-offering-0",
+              "room-2-dressing-0-offering-1",
+              "room-2-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": -12.5,
+              "z": -13.333333333333334,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-3",
+        "before": 0,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-3-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-3-dressing-0-conversation-0",
+              "room-3-dressing-0-conversation-1",
+              "room-3-dressing-0-conversation-2",
+              "room-3-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": -11.666666666666668,
+              "z": -37.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-3-dressing-1-display",
+            "recipeId": "display",
+            "items": [
+              "room-3-dressing-1-display-0",
+              "room-3-dressing-1-display-1"
+            ],
+            "anchor": {
+              "x": -17.5,
+              "z": -25,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-3-dressing-2-writing",
+            "recipeId": "writing",
+            "items": [
+              "room-3-dressing-2-writing-0",
+              "room-3-dressing-2-writing-1"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": -35,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 2,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-4",
+        "before": 17,
+        "target": 10,
+        "placed": 20,
+        "groups": [
+          {
+            "id": "room-4-dressing-0-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-4-dressing-0-reading-0",
+              "room-4-dressing-0-reading-1",
+              "room-4-dressing-0-reading-2"
+            ],
+            "anchor": {
+              "x": -2.5,
+              "z": -31.666666666666668,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-5",
+        "before": 0,
+        "target": 10,
+        "placed": 12,
+        "groups": [
+          {
+            "id": "room-5-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-5-dressing-0-examination-0",
+              "room-5-dressing-0-examination-1",
+              "room-5-dressing-0-examination-2",
+              "room-5-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": -28.333333333333336,
+              "z": -27.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-5-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-5-dressing-1-supplies-0",
+              "room-5-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": -35,
+              "z": -37.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-5-dressing-2-records",
+            "recipeId": "records",
+            "items": [
+              "room-5-dressing-2-records-0",
+              "room-5-dressing-2-records-1"
+            ],
+            "anchor": {
+              "x": -23.333333333333336,
+              "z": -37.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-5-dressing-3-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-5-dressing-3-examination-0",
+              "room-5-dressing-3-examination-1",
+              "room-5-dressing-3-examination-2",
+              "room-5-dressing-3-examination-3"
+            ],
+            "anchor": {
+              "x": -37.5,
+              "z": -25,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-6",
+        "before": 6,
+        "target": 6,
+        "placed": 9,
+        "groups": [
+          {
+            "id": "room-6-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-6-dressing-0-play-0",
+              "room-6-dressing-0-play-1",
+              "room-6-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": 13.333333333333334,
+              "z": -27.5,
+              "nx": 0,
+              "nz": 1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-7",
+        "before": 4,
+        "target": 8,
+        "placed": 9,
+        "groups": [
+          {
+            "id": "room-7-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-7-dressing-0-play-0",
+              "room-7-dressing-0-play-1",
+              "room-7-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": -18.333333333333336,
+              "z": -42.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-7-dressing-1-toys",
+            "recipeId": "toys",
+            "items": [
+              "room-7-dressing-1-toys-0",
+              "room-7-dressing-1-toys-1"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -50,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-8",
+        "before": 0,
+        "target": 10,
+        "placed": 10,
+        "groups": [
+          {
+            "id": "room-8-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-8-dressing-0-play-0",
+              "room-8-dressing-0-play-1",
+              "room-8-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": -27.5,
+              "z": -43.333333333333336,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-8-dressing-1-toys",
+            "recipeId": "toys",
+            "items": [
+              "room-8-dressing-1-toys-0",
+              "room-8-dressing-1-toys-1"
+            ],
+            "anchor": {
+              "x": -37.5,
+              "z": -50,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-8-dressing-2-care",
+            "recipeId": "care",
+            "items": [
+              "room-8-dressing-2-care-0",
+              "room-8-dressing-2-care-1"
+            ],
+            "anchor": {
+              "x": -36.66666666666667,
+              "z": -37.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-8-dressing-3-play",
+            "recipeId": "play",
+            "items": [
+              "room-8-dressing-3-play-0",
+              "room-8-dressing-3-play-1",
+              "room-8-dressing-3-play-2"
+            ],
+            "anchor": {
+              "x": -23.333333333333336,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-9",
+        "before": 0,
+        "target": 6,
+        "placed": 6,
+        "groups": [
+          {
+            "id": "room-9-dressing-0-sleep",
+            "recipeId": "sleep",
+            "items": [
+              "room-9-dressing-0-sleep-0",
+              "room-9-dressing-0-sleep-1",
+              "room-9-dressing-0-sleep-2"
+            ],
+            "anchor": {
+              "x": -32.5,
+              "z": -18.333333333333336,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-9-dressing-1-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-9-dressing-1-reading-0",
+              "room-9-dressing-1-reading-1",
+              "room-9-dressing-1-reading-2"
+            ],
+            "anchor": {
+              "x": -27.5,
+              "z": -8.333333333333334,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-10",
+        "before": 10,
+        "target": 10,
+        "placed": 13,
+        "groups": [
+          {
+            "id": "room-10-dressing-0-sleep",
+            "recipeId": "sleep",
+            "items": [
+              "room-10-dressing-0-sleep-0",
+              "room-10-dressing-0-sleep-1",
+              "room-10-dressing-0-sleep-2"
+            ],
+            "anchor": {
+              "x": 25,
+              "z": -37.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      }
+    ]
+  },
+  {
+    "seed": "7",
+    "preferences": [
+      "fear.doll"
+    ],
+    "layer": 2,
+    "validation": "pass",
+    "eventsUnchanged": true,
+    "rooms": [
+      {
+        "version": 2,
+        "roomId": "bedroom",
+        "before": 2,
+        "target": 6,
+        "placed": 2,
+        "groups": [],
+        "shortfall": 4,
+        "rejected": 0,
+        "reason": "固定出生房保持既有布局",
+        "excluded": true
+      },
+      {
+        "version": 2,
+        "roomId": "room-1",
+        "before": 8,
+        "target": 10,
+        "placed": 11,
+        "groups": [
+          {
+            "id": "room-1-dressing-0-sleep",
+            "recipeId": "sleep",
+            "items": [
+              "room-1-dressing-0-sleep-0",
+              "room-1-dressing-0-sleep-1",
+              "room-1-dressing-0-sleep-2"
+            ],
+            "anchor": {
+              "x": 0,
+              "z": -12.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-2",
+        "before": 0,
+        "target": 6,
+        "placed": 6,
+        "groups": [
+          {
+            "id": "room-2-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-2-dressing-0-conversation-0",
+              "room-2-dressing-0-conversation-1",
+              "room-2-dressing-0-conversation-2",
+              "room-2-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": -11.666666666666668,
+              "z": -17.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-2-dressing-1-display",
+            "recipeId": "display",
+            "items": [
+              "room-2-dressing-1-display-0",
+              "room-2-dressing-1-display-1"
+            ],
+            "anchor": {
+              "x": -20,
+              "z": -12.5,
+              "nx": 0,
+              "nz": 1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-3",
+        "before": 0,
+        "target": 6,
+        "placed": 0,
+        "groups": [],
+        "shortfall": 6,
+        "rejected": 0,
+        "reason": "动态场面保留，需专用陈设适配",
+        "excluded": true
+      },
+      {
+        "version": 2,
+        "roomId": "room-4",
+        "before": 0,
+        "target": 10,
+        "placed": 12,
+        "groups": [
+          {
+            "id": "room-4-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-4-dressing-0-conversation-0",
+              "room-4-dressing-0-conversation-1",
+              "room-4-dressing-0-conversation-2",
+              "room-4-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": -13.333333333333334,
+              "z": -2.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-4-dressing-1-display",
+            "recipeId": "display",
+            "items": [
+              "room-4-dressing-1-display-0",
+              "room-4-dressing-1-display-1"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": 5,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-4-dressing-2-writing",
+            "recipeId": "writing",
+            "items": [
+              "room-4-dressing-2-writing-0",
+              "room-4-dressing-2-writing-1"
+            ],
+            "anchor": {
+              "x": -8.333333333333334,
+              "z": 7.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-4-dressing-3-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-4-dressing-3-conversation-0",
+              "room-4-dressing-3-conversation-1",
+              "room-4-dressing-3-conversation-2",
+              "room-4-dressing-3-conversation-3"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": -5,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-5",
+        "before": 0,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-5-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-5-dressing-0-conversation-0",
+              "room-5-dressing-0-conversation-1",
+              "room-5-dressing-0-conversation-2",
+              "room-5-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": -12.5,
+              "z": 11.666666666666668,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-5-dressing-1-display",
+            "recipeId": "display",
+            "items": [
+              "room-5-dressing-1-display-0",
+              "room-5-dressing-1-display-1"
+            ],
+            "anchor": {
+              "x": -20,
+              "z": 22.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-5-dressing-2-writing",
+            "recipeId": "writing",
+            "items": [
+              "room-5-dressing-2-writing-0",
+              "room-5-dressing-2-writing-1"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": 8.333333333333334,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-6",
+        "before": 0,
+        "target": 10,
+        "placed": 11,
+        "groups": [
+          {
+            "id": "room-6-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-6-dressing-0-offering-0",
+              "room-6-dressing-0-offering-1",
+              "room-6-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": -15,
+              "z": -27.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-6-dressing-1-keeping",
+            "recipeId": "keeping",
+            "items": [
+              "room-6-dressing-1-keeping-0",
+              "room-6-dressing-1-keeping-1"
+            ],
+            "anchor": {
+              "x": -20,
+              "z": -37.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-6-dressing-2-waiting",
+            "recipeId": "waiting",
+            "items": [
+              "room-6-dressing-2-waiting-0",
+              "room-6-dressing-2-waiting-1",
+              "room-6-dressing-2-waiting-2"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -35,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-6-dressing-3-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-6-dressing-3-offering-0",
+              "room-6-dressing-3-offering-1",
+              "room-6-dressing-3-offering-2"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": -25,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-7",
+        "before": 0,
+        "target": 6,
+        "placed": 7,
+        "groups": [
+          {
+            "id": "room-7-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-7-dressing-0-play-0",
+              "room-7-dressing-0-play-1",
+              "room-7-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": -26.666666666666668,
+              "z": -17.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-7-dressing-1-toys",
+            "recipeId": "toys",
+            "items": [
+              "room-7-dressing-1-toys-0",
+              "room-7-dressing-1-toys-1"
+            ],
+            "anchor": {
+              "x": -37.5,
+              "z": -15,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-7-dressing-2-care",
+            "recipeId": "care",
+            "items": [
+              "room-7-dressing-2-care-0",
+              "room-7-dressing-2-care-1"
+            ],
+            "anchor": {
+              "x": -27.5,
+              "z": -8.333333333333334,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-8",
+        "before": 0,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-8-dressing-0-sleep",
+            "recipeId": "sleep",
+            "items": [
+              "room-8-dressing-0-sleep-0",
+              "room-8-dressing-0-sleep-1",
+              "room-8-dressing-0-sleep-2"
+            ],
+            "anchor": {
+              "x": -28.333333333333336,
+              "z": -32.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-8-dressing-1-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-8-dressing-1-reading-0",
+              "room-8-dressing-1-reading-1",
+              "room-8-dressing-1-reading-2"
+            ],
+            "anchor": {
+              "x": -36.66666666666667,
+              "z": -22.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-8-dressing-2-clothes",
+            "recipeId": "clothes",
+            "items": [
+              "room-8-dressing-2-clothes-0",
+              "room-8-dressing-2-clothes-1"
+            ],
+            "anchor": {
+              "x": -25,
+              "z": -22.5,
+              "nx": 0,
+              "nz": 1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-9",
+        "before": 3,
+        "target": 8,
+        "placed": 9,
+        "groups": [
+          {
+            "id": "room-9-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-9-dressing-0-examination-0",
+              "room-9-dressing-0-examination-1",
+              "room-9-dressing-0-examination-2",
+              "room-9-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": -26.666666666666668,
+              "z": 2.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-9-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-9-dressing-1-supplies-0",
+              "room-9-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": -37.5,
+              "z": -5,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-10",
+        "before": 3,
+        "target": 8,
+        "placed": 9,
+        "groups": [
+          {
+            "id": "room-10-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-10-dressing-0-conversation-0",
+              "room-10-dressing-0-conversation-1",
+              "room-10-dressing-0-conversation-2",
+              "room-10-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": -26.666666666666668,
+              "z": 17.5,
+              "nx": 0,
+              "nz": 1
+            }
+          },
+          {
+            "id": "room-10-dressing-1-display",
+            "recipeId": "display",
+            "items": [
+              "room-10-dressing-1-display-0",
+              "room-10-dressing-1-display-1"
+            ],
+            "anchor": {
+              "x": -37.5,
+              "z": 10,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      }
+    ]
+  },
+  {
+    "seed": "19",
+    "preferences": [
+      "like.flower"
+    ],
+    "layer": 1,
+    "validation": "pass",
+    "eventsUnchanged": true,
+    "rooms": [
+      {
+        "version": 2,
+        "roomId": "bedroom",
+        "before": 2,
+        "target": 6,
+        "placed": 2,
+        "groups": [],
+        "shortfall": 4,
+        "rejected": 0,
+        "reason": "固定出生房保持既有布局",
+        "excluded": true
+      },
+      {
+        "version": 2,
+        "roomId": "room-1",
+        "before": 0,
+        "target": 7,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-1-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-1-dressing-0-offering-0",
+              "room-1-dressing-0-offering-1",
+              "room-1-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": -2.5,
+              "z": -13.333333333333334,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-1-dressing-1-keeping",
+            "recipeId": "keeping",
+            "items": [
+              "room-1-dressing-1-keeping-0",
+              "room-1-dressing-1-keeping-1"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -20,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-1-dressing-2-waiting",
+            "recipeId": "waiting",
+            "items": [
+              "room-1-dressing-2-waiting-0",
+              "room-1-dressing-2-waiting-1",
+              "room-1-dressing-2-waiting-2"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -10,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-2",
+        "before": 0,
+        "target": 7,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-2-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-2-dressing-0-examination-0",
+              "room-2-dressing-0-examination-1",
+              "room-2-dressing-0-examination-2",
+              "room-2-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": 2.5,
+              "z": -28.333333333333336,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-2-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-2-dressing-1-supplies-0",
+              "room-2-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -35,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-2-dressing-2-records",
+            "recipeId": "records",
+            "items": [
+              "room-2-dressing-2-records-0",
+              "room-2-dressing-2-records-1"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -23.333333333333336,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-3",
+        "before": 0,
+        "target": 10,
+        "placed": 10,
+        "groups": [
+          {
+            "id": "room-3-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-3-dressing-0-play-0",
+              "room-3-dressing-0-play-1",
+              "room-3-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": -12.5,
+              "z": -31.666666666666668,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-3-dressing-1-toys",
+            "recipeId": "toys",
+            "items": [
+              "room-3-dressing-1-toys-0",
+              "room-3-dressing-1-toys-1"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": -25,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-3-dressing-2-care",
+            "recipeId": "care",
+            "items": [
+              "room-3-dressing-2-care-0",
+              "room-3-dressing-2-care-1"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": -36.66666666666667,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-3-dressing-3-play",
+            "recipeId": "play",
+            "items": [
+              "room-3-dressing-3-play-0",
+              "room-3-dressing-3-play-1",
+              "room-3-dressing-3-play-2"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -23.333333333333336,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-4",
+        "before": 0,
+        "target": 10,
+        "placed": 12,
+        "groups": [
+          {
+            "id": "room-4-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-4-dressing-0-examination-0",
+              "room-4-dressing-0-examination-1",
+              "room-4-dressing-0-examination-2",
+              "room-4-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": -17.5,
+              "z": -41.66666666666667,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-4-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-4-dressing-1-supplies-0",
+              "room-4-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": -10,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-4-dressing-2-records",
+            "recipeId": "records",
+            "items": [
+              "room-4-dressing-2-records-0",
+              "room-4-dressing-2-records-1"
+            ],
+            "anchor": {
+              "x": -21.666666666666668,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-4-dressing-3-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-4-dressing-3-examination-0",
+              "room-4-dressing-3-examination-1",
+              "room-4-dressing-3-examination-2",
+              "room-4-dressing-3-examination-3"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -40,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-5",
+        "before": 7,
+        "target": 7,
+        "placed": 10,
+        "groups": [
+          {
+            "id": "room-5-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-5-dressing-0-offering-0",
+              "room-5-dressing-0-offering-1",
+              "room-5-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": -10,
+              "z": -52.5,
+              "nx": 0,
+              "nz": 1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 3,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-6",
+        "before": 10,
+        "target": 10,
+        "placed": 13,
+        "groups": [
+          {
+            "id": "room-6-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-6-dressing-0-offering-0",
+              "room-6-dressing-0-offering-1",
+              "room-6-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": -25,
+              "z": -32.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-7",
+        "before": 10,
+        "target": 8,
+        "placed": 14,
+        "groups": [
+          {
+            "id": "room-7-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-7-dressing-0-conversation-0",
+              "room-7-dressing-0-conversation-1",
+              "room-7-dressing-0-conversation-2",
+              "room-7-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": -33.333333333333336,
+              "z": -57.5,
+              "nx": 0,
+              "nz": 1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      }
+    ]
+  },
+  {
+    "seed": "19",
+    "preferences": [
+      "like.flower"
+    ],
+    "layer": 2,
+    "validation": "pass",
+    "eventsUnchanged": true,
+    "rooms": [
+      {
+        "version": 2,
+        "roomId": "bedroom",
+        "before": 2,
+        "target": 6,
+        "placed": 2,
+        "groups": [],
+        "shortfall": 4,
+        "rejected": 0,
+        "reason": "固定出生房保持既有布局",
+        "excluded": true
+      },
+      {
+        "version": 2,
+        "roomId": "room-1",
+        "before": 11,
+        "target": 10,
+        "placed": 14,
+        "groups": [
+          {
+            "id": "room-1-dressing-0-offering",
+            "recipeId": "offering",
+            "items": [
+              "room-1-dressing-0-offering-0",
+              "room-1-dressing-0-offering-1",
+              "room-1-dressing-0-offering-2"
+            ],
+            "anchor": {
+              "x": -3.3333333333333335,
+              "z": -12.5,
+              "nx": 0,
+              "nz": 1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-2",
+        "before": 2,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-2-dressing-0-sleep",
+            "recipeId": "sleep",
+            "items": [
+              "room-2-dressing-0-sleep-0",
+              "room-2-dressing-0-sleep-1",
+              "room-2-dressing-0-sleep-2"
+            ],
+            "anchor": {
+              "x": -2.5,
+              "z": -25,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-2-dressing-1-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-2-dressing-1-reading-0",
+              "room-2-dressing-1-reading-1",
+              "room-2-dressing-1-reading-2"
+            ],
+            "anchor": {
+              "x": 6.666666666666667,
+              "z": -37.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 1,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-3",
+        "before": 0,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-3-dressing-0-conversation",
+            "recipeId": "conversation",
+            "items": [
+              "room-3-dressing-0-conversation-0",
+              "room-3-dressing-0-conversation-1",
+              "room-3-dressing-0-conversation-2",
+              "room-3-dressing-0-conversation-3"
+            ],
+            "anchor": {
+              "x": 2.5,
+              "z": -43.333333333333336,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-3-dressing-1-display",
+            "recipeId": "display",
+            "items": [
+              "room-3-dressing-1-display-0",
+              "room-3-dressing-1-display-1"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -50,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-3-dressing-2-writing",
+            "recipeId": "writing",
+            "items": [
+              "room-3-dressing-2-writing-0",
+              "room-3-dressing-2-writing-1"
+            ],
+            "anchor": {
+              "x": -7.5,
+              "z": -38.333333333333336,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-4",
+        "before": 0,
+        "target": 10,
+        "placed": 10,
+        "groups": [
+          {
+            "id": "room-4-dressing-0-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-4-dressing-0-reading-0",
+              "room-4-dressing-0-reading-1",
+              "room-4-dressing-0-reading-2"
+            ],
+            "anchor": {
+              "x": 13.333333333333334,
+              "z": -12.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-4-dressing-1-stacks",
+            "recipeId": "stacks",
+            "items": [
+              "room-4-dressing-1-stacks-0",
+              "room-4-dressing-1-stacks-1"
+            ],
+            "anchor": {
+              "x": 20,
+              "z": -22.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-4-dressing-2-sorting",
+            "recipeId": "sorting",
+            "items": [
+              "room-4-dressing-2-sorting-0",
+              "room-4-dressing-2-sorting-1"
+            ],
+            "anchor": {
+              "x": 8.333333333333334,
+              "z": -22.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-4-dressing-3-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-4-dressing-3-reading-0",
+              "room-4-dressing-3-reading-1",
+              "room-4-dressing-3-reading-2"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -8.333333333333334,
+              "nx": 1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-5",
+        "before": 8,
+        "target": 6,
+        "placed": 10,
+        "groups": [
+          {
+            "id": "room-5-dressing-2-records",
+            "recipeId": "records",
+            "items": [
+              "room-5-dressing-2-records-0",
+              "room-5-dressing-2-records-1"
+            ],
+            "anchor": {
+              "x": 12.5,
+              "z": -26.666666666666668,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-6",
+        "before": 0,
+        "target": 6,
+        "placed": 7,
+        "groups": [
+          {
+            "id": "room-6-dressing-0-play",
+            "recipeId": "play",
+            "items": [
+              "room-6-dressing-0-play-0",
+              "room-6-dressing-0-play-1",
+              "room-6-dressing-0-play-2"
+            ],
+            "anchor": {
+              "x": -13.333333333333334,
+              "z": -32.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-6-dressing-1-toys",
+            "recipeId": "toys",
+            "items": [
+              "room-6-dressing-1-toys-0",
+              "room-6-dressing-1-toys-1"
+            ],
+            "anchor": {
+              "x": -22.5,
+              "z": -30,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-6-dressing-2-care",
+            "recipeId": "care",
+            "items": [
+              "room-6-dressing-2-care-0",
+              "room-6-dressing-2-care-1"
+            ],
+            "anchor": {
+              "x": -10,
+              "z": -27.5,
+              "nx": 0,
+              "nz": 1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-7",
+        "before": 0,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-7-dressing-0-sleep",
+            "recipeId": "sleep",
+            "items": [
+              "room-7-dressing-0-sleep-0",
+              "room-7-dressing-0-sleep-1",
+              "room-7-dressing-0-sleep-2"
+            ],
+            "anchor": {
+              "x": 18.333333333333336,
+              "z": -47.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-7-dressing-1-reading",
+            "recipeId": "reading",
+            "items": [
+              "room-7-dressing-1-reading-0",
+              "room-7-dressing-1-reading-1",
+              "room-7-dressing-1-reading-2"
+            ],
+            "anchor": {
+              "x": 7.5,
+              "z": -41.66666666666667,
+              "nx": -1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-7-dressing-2-clothes",
+            "recipeId": "clothes",
+            "items": [
+              "room-7-dressing-2-clothes-0",
+              "room-7-dressing-2-clothes-1"
+            ],
+            "anchor": {
+              "x": 11.666666666666668,
+              "z": -47.5,
+              "nx": 0,
+              "nz": -1
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      },
+      {
+        "version": 2,
+        "roomId": "room-8",
+        "before": 0,
+        "target": 8,
+        "placed": 8,
+        "groups": [
+          {
+            "id": "room-8-dressing-0-examination",
+            "recipeId": "examination",
+            "items": [
+              "room-8-dressing-0-examination-0",
+              "room-8-dressing-0-examination-1",
+              "room-8-dressing-0-examination-2",
+              "room-8-dressing-0-examination-3"
+            ],
+            "anchor": {
+              "x": 32.5,
+              "z": -41.66666666666667,
+              "nx": 1,
+              "nz": 0
+            }
+          },
+          {
+            "id": "room-8-dressing-1-supplies",
+            "recipeId": "supplies",
+            "items": [
+              "room-8-dressing-1-supplies-0",
+              "room-8-dressing-1-supplies-1"
+            ],
+            "anchor": {
+              "x": 25,
+              "z": -52.5,
+              "nx": 0,
+              "nz": -1
+            }
+          },
+          {
+            "id": "room-8-dressing-2-records",
+            "recipeId": "records",
+            "items": [
+              "room-8-dressing-2-records-0",
+              "room-8-dressing-2-records-1"
+            ],
+            "anchor": {
+              "x": 22.5,
+              "z": -38.333333333333336,
+              "nx": -1,
+              "nz": 0
+            }
+          }
+        ],
+        "shortfall": 0,
+        "rejected": 0,
+        "missingFunctionalGroup": false
+      }
+    ]
+  }
+]
