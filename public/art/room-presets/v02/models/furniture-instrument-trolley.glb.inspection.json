@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-instrument-trolley/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-instrument-trolley.glb",
+  "sourceBytes": 973632,
+  "runtimeBytes": 974052,
+  "sourceSHA256": "611f4bd5dfe4413e3302a0738127d86d8d2b4bcc4a6e39b2ef4d9ceeea7f9840",
+  "runtimeSHA256": "a123de5a9be20f8448f973167f2b6ce6416f1073878fb5c85bb3a9a8b2783138",
+  "triangles": 5568,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3369140625,
+      -0.4560546576976776,
+      -0.4990234375
+    ],
+    "max": [
+      0.3291015625,
+      0.4560546875,
+      0.4990234076976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6,
+      0,
+      -0.32500000000000007
+    ],
+    "max": [
+      0.6,
+      0.8999999999999999,
+      0.32500000000000007
+    ],
+    "size": [
+      1.2,
+      0.8999999999999999,
+      0.6500000000000001
+    ]
+  },
+  "scale": 0.9867238009768958,
+  "scaleXYZ": [
+    1.2023483724978086,
+    0.9867238009768958,
+    0.9759530791788855
+  ],
+  "footprint": [
+    1.2,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

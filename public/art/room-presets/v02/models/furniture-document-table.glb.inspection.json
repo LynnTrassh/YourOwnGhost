@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-document-table/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-document-table.glb",
+  "sourceBytes": 1287740,
+  "runtimeBytes": 1288104,
+  "sourceSHA256": "05d33bc993d1caa310bc2579b3430a87f1799f420f5a6417f48495c59fea8a3f",
+  "runtimeSHA256": "7aa6a3616759b71d3ba7a06c3137dc28c4ebf3d615b58574d0d0812085ce172e",
+  "triangles": 5535,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2470703125,
+      -0.2119140774011612,
+      -0.4990234375
+    ],
+    "max": [
+      0.2470703125,
+      0.2119140774011612,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.65,
+      0,
+      -0.32500000000000007
+    ],
+    "max": [
+      0.65,
+      0.8,
+      0.32500000000000007
+    ],
+    "size": [
+      1.3,
+      0.8,
+      0.6500000000000001
+    ]
+  },
+  "scale": 1.8875574709592569,
+  "scaleXYZ": [
+    1.3025440313111547,
+    1.8875574709592569,
+    1.3154150197628458
+  ],
+  "footprint": [
+    1.3,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

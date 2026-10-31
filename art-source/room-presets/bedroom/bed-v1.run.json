@@ -1,0 +1,25 @@
+{
+  "assetId": "bed-v1",
+  "status": "succeeded",
+  "region": "ov",
+  "submittedAt": "2026-10-30T17:46:13.731062+00:00",
+  "taskId": "c048bd2b-f4c1-4625-824b-f8e30dece9d3",
+  "creditsConsumed": 50,
+  "triangles": 9383,
+  "runtimeBytes": 1039212,
+  "runtimeModel": "public/art/room-presets/bedroom/bed-v1.glb",
+  "dimensionsMeters": [
+    0.8,
+    1.05,
+    1.9
+  ],
+  "headboardDirection": "+Z",
+  "worldPosition": [
+    -1.55,
+    0,
+    1.25
+  ],
+  "integration": "loaded-in-game-bedroom",
+  "visualObservation": "在真实游戏页面进入卧室并转向床位，看到 GLB 床及手电/VHS 效果。被面隆起强于参考，纹理受强手电影响较浅；待用户评价。",
+  "tests": "未运行自动测试或构建。"
+}

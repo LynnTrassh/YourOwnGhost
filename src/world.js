@@ -1,11 +1,13 @@
 import * as THREE from 'three';
-import { INTERIOR_NAMES } from './planning/interiors.js';
 import { generatePlan } from './planning/generate.js';
 import { CELL_SIZE, DIRECTIONS, keyOf } from './planning/templates.js';
+import { ROOM_PRESETS } from './planning/room-presets.js';
 import { createBedroomSet } from './art/bedroom-set.js';
+import { renderRoomPrefab } from './art/room-prefabs.js';
+import { wallSurfaces, unionPatches } from './rendering/wall-surfaces.js';
+import { createDarkInteriors } from './art/dark-interiors.js';
 import { createThreatProxy } from './rendering/threat-proxy.js';
 import { appearanceFor } from './personalization/fear.js';
-import { wallSurfaces, unionPatches } from './rendering/wall-surfaces.js';
 import { createStoryProxies } from './rendering/story-proxies.js';
 import { sealDoorTransaction } from './planning/door-transaction.js';
 
@@ -31,20 +33,27 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
     mesh.receiveShadow = true; mesh.castShadow = solid;
     (activeParent?.group??root).add(mesh); if (solid) solids.push(mesh); return mesh;
   }
+  const interiorArt = createDarkInteriors({ plan, root, resources });
+  for (const room of plan.rooms) {
+    // Story visibility is per room, even when textures are shared by a theme.
+    const roomWall = interiorArt.wallMaterial(room.id).clone();
+    resources.add(roomWall); roomMaterials.set(room.id, roomWall);
+  }
   for (const tile of plan.cells) {
     const x = tile.x * CELL_SIZE, z = tile.z * CELL_SIZE;
     const isBedroom = tile.roomId === 'bedroom';
-    box(CELL_SIZE, .12, CELL_SIZE, x, -.06, z, isBedroom ? bedroomFloor : floor);
-    box(CELL_SIZE, .1, CELL_SIZE, x, 3.05, z, isBedroom ? roomMaterials.get('bedroom') : wall);
-    if (!isBedroom) for (const offset of [-1, 0, 1]) box(.012, .004, CELL_SIZE, x + offset * CELL_SIZE / 3, .002, z, trim);
+    box(CELL_SIZE, .12, CELL_SIZE, x, -.06, z, interiorArt.floorMaterial(tile.roomId));
+    box(CELL_SIZE, .1, CELL_SIZE, x, 3.05, z, interiorArt.ceilingMaterial);
   }
   function boundaryMesh(boxes, height, getMaterial, cap=false,roomFilter=null) {
-    const vertices=[],indices=[],groups=[],materials=[];
+    const vertices=[],indices=[],groups=[],materials=[],uvs=[];
     const quad=(points,mat)=>{
       let materialIndex=materials.indexOf(mat);
       if(materialIndex<0) {materialIndex=materials.length;materials.push(mat);}
       const offset=vertices.length/3,start=indices.length;
       vertices.push(...points.flat());indices.push(offset,offset+1,offset+2,offset,offset+2,offset+3);
+      const alongX = Math.abs(points[0][0]-points[2][0]) > .001;
+      for (const p of points) uvs.push((alongX?p[0]:p[2])/1.6,p[1]/1.6);
       groups.push([start,6,materialIndex]);
     };
     for(const f of wallSurfaces(boxes)) {
@@ -59,7 +68,7 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
       quad([[p.minX,height,p.minZ],[p.minX,height,p.maxZ],[p.maxX,height,p.maxZ],[p.maxX,height,p.minZ]],getMaterial(p.roomId));
     }
     const geometry=new THREE.BufferGeometry();resources.add(geometry);
-    geometry.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geometry.setIndex(indices);geometry.computeVertexNormals();
+    geometry.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geometry.setAttribute('uv',new THREE.Float32BufferAttribute(uvs,2));geometry.setIndex(indices);geometry.computeVertexNormals();
     for(const group of groups) geometry.addGroup(...group);
     const mesh=new THREE.Mesh(geometry,materials);mesh.castShadow=true;mesh.receiveShadow=true;root.add(mesh);return mesh;
   }
@@ -127,39 +136,28 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
   }
   const bedroomDecor = createBedroomSet({
     THREE, plan, root, addBox: box, addMaterial: material, unitBox,
-    doorAssembly: bedroomDoorAssembly, resources,
+    doorAssembly: bedroomDoorAssembly, resources, interiorArt,
   });
+  const tiltedArt = [];
   for (const b of plan.obstacles) {
     activeParent=tiltRoom&&b.roomId===tiltRoom.instance.roomId
       ?{group:tiltRoom.group,pivot:tiltRoom.instance.pivot}:null;
     if (bedroomDecor.handledObstacles.has(b.id)) continue;
     if (['statue-plinth','story-actor','banquet-table','banquet-chair','head-pedestal','doll-chair','joint-chair','monitor-chair','mirror-chair','story-door-leaf','memory-bed','water-story-bed','flower-stand','cabinet','side-door-figure','frozen-table','frozen-person','water-basin'].includes(b.kind)) continue;
+    const fallbackParent = activeParent?.group ?? root;
+    const fallbackStart = fallbackParent.children.length;
     const x = (b.minX + b.maxX) / 2, z = (b.minZ + b.maxZ) / 2;
     const w = b.maxX-b.minX, d = b.maxZ-b.minZ;
     if (b.kind === 'bed') {
       box(w, .45, d, x, .225, z, wood, true);
       box(w, .18, d, x, .54, z, cloth);
       box(.65, .12, .45, x, .69, z + .5, cloth);
-    } else if (b.kind === 'bookshelf') {
-      const alongX = w > d, h = b.height;
-      const [nx,nz]=b.wallNormal,tx=-nz,tz=nx,length=Math.max(w,d),depth=Math.min(w,d);
-      const part=(length,height,depth,u,y,v,mat,solid=false)=>box(alongX?length:depth,height,alongX?depth:length,x+tx*u+nx*v,y,z+tz*u+nz*v,mat,solid);
-      // Rear panel faces the wall; sides, shelves and books meet without overlapping.
-      part(length,h,.1,0,h/2,(depth-.1)/2,wood,true);
-      for (const sign of [-1,1]) part(.1,h,depth-.1,sign*(length-.1)/2,h/2,-.05,wood,true);
-      for (let row=0; row<4; row++) {
-        const y=.08+row*.56;
-        part(length-.2,.08,depth-.1,0,y,-.05,wood);
-        for (let col=0; col<7; col++) {
-          const bookStep=(length-.2)/7, offset=(col-3)*bookStep, bh=.29+.13*((col+row)%3)/2;
-          part(bookStep*.7,bh,depth-.2,offset,y+.04+bh/2,-.05,bookMaterials[(col+row+Math.floor(b.decoration*4))%4]);
-        }
-      }
-      part(length-.2,.08,depth-.1,0,h-.04,-.05,wood);
     } else {
-      box(w,b.height-.08,d,x,(b.height-.08)/2,z,wood,true);
-      box(w,.08,d,x,b.height-.04,z,trim,true);
+      renderRoomPrefab({ obstacle: b, box, material, wood, trim, cloth, bookMaterials });
     }
+    const artStart = root.children.length;
+    interiorArt.furnish(b,fallbackParent.children.slice(fallbackStart));
+    if (activeParent) tiltedArt.push(...root.children.slice(artStart));
   }
   activeParent=null;
   const storyProxies=createStoryProxies(THREE,root,plan,{material,box,resources,scene});
@@ -177,16 +175,16 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
   for (const room of plan.rooms) {
     const x = room.center[0] * CELL_SIZE, z = room.center[1] * CELL_SIZE;
     const isBedroom = room.id === 'bedroom';
-    const light = new THREE.PointLight(room.tint > .5 ? 0xf0cca1 : 0xaec7bc, isBedroom ? 2.6 : 5.5, 12, 2);
-    light.position.set(x, 2.65, z); root.add(light);
-    box(.65, .08, .65, x, 2.95, z, material(isBedroom ? 0x514a58 : 0x8d9488, { emissive: isBedroom ? 0x282431 : 0x777b70, emissiveIntensity: isBedroom ? .12 : .16 }));
-    if (!isBedroom) label(`${room.name} · ${INTERIOR_NAMES[room.interior.type]}`, x, z);
+    if (!isBedroom && typeof location !== 'undefined' && new URLSearchParams(location.search).has('artLabels')) {
+      const presetName = ROOM_PRESETS[room.interior.presetId]?.name ?? '默认陈设';
+      label(`${room.name} · ${presetName}`, x, z);
+    }
     const boundaries = [];
     const roomCells = new Set(room.cells.map(([x,z])=>keyOf(x,z)));
     for (const [cx, cz] of room.cells) for (const [dx, dz] of DIRECTIONS) {
       if (!roomCells.has(keyOf(cx + dx, cz + dz))) boundaries.push({ cx, cz, dx, dz });
     }
-    if (boundaries.length && !isBedroom) {
+    if (boundaries.length && !isBedroom && plan.content?.instances.some(instance=>instance.definitionId==='BO01'&&instance.roomId===room.id)) {
       const { cx, cz, dx, dz } = boundaries[Math.floor(room.tint * boundaries.length)];
       const wx = cx * CELL_SIZE + dx * (CELL_SIZE / 2 - .13), wz = cz * CELL_SIZE + dz * (CELL_SIZE / 2 - .13);
       box(dx ? .04 : 1.4, 1.3, dx ? 1.4 : .04, wx, 1.9, wz, trim);
@@ -195,7 +193,9 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
       box(dx ? .08 : .06, 1.15, dx ? .06 : .08, wx - dx * .06, 1.9, wz - dz * .06, trim);
     }
   }
-  root.add(new THREE.HemisphereLight(0xb0bfb1, 0x3d382e, .62));
+  interiorArt.dress(bedroomDoorAssembly);
+  root.updateMatrixWorld(true);
+  for (const anchor of tiltedArt) tiltRoom.group.attach(anchor);
   // Small non-interactive placeholders; do not change the validated walking space.
   const cats = [];
   if (plan.story?.cat) {
@@ -301,9 +301,10 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
   let chaseDoorClosed=false;
   scene.add(root);
   return {
-    plan, solids, doorMeshes, door: doorMeshes[0], exitMarker,
+    plan, solids, doorMeshes, door: doorMeshes[0], exitMarker, artStats: interiorArt.stats, artReady: interiorArt.ready(),
     getTopology() {return sealedDoors.find(door=>door.active)?.transaction.plan??plan;},
     update(dt, state) {
+      interiorArt.update(dt,state.player);
       storyProxies.updateAmbient(dt);
       chaseDoorClosed=Boolean(chaseDoorMesh&&state.threat?.doorRemaining>0);
       if(chaseDoorMesh)chaseDoorMesh.visible=chaseDoorClosed;

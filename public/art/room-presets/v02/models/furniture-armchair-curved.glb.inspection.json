@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-armchair-curved/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-armchair-curved.glb",
+  "sourceBytes": 1017148,
+  "runtimeBytes": 1017548,
+  "sourceSHA256": "7493b982aa2ba30ad6192ed13232a4cb8e1e5b8f46a81b3593be86f894b1267d",
+  "runtimeSHA256": "c3e5141742e51905d9e8f25af99dba45e4d17fe63df0319d56367677362f1efa",
+  "triangles": 5886,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.4990234673023224,
+      -0.4228515923023224
+    ],
+    "max": [
+      0.4990234375,
+      0.4990234375,
+      0.4228515326976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.35,
+      0,
+      -0.35
+    ],
+    "max": [
+      0.35,
+      0.95,
+      0.35
+    ],
+    "size": [
+      0.7,
+      0.95,
+      0.7
+    ]
+  },
+  "scale": 0.9518590713811804,
+  "scaleXYZ": [
+    0.8277136258660507,
+    0.9518590713811804,
+    0.7013698630136986
+  ],
+  "footprint": [
+    0.7,
+    0.7
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

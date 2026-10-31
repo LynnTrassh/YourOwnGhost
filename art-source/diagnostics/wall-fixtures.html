@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>墙饰与灯具检查</title>
+<style>body{margin:0;background:#111;color:#eee;font:14px/1.5 sans-serif}canvas{display:block}aside{position:fixed;top:12px;left:12px;padding:12px;background:#121a18ed;max-width:650px}select,button{padding:6px;margin:4px}#status{font-size:12px;white-space:pre-line}</style>
+<aside><strong>墙饰与灯具检查</strong> <span id="seed"></span><br>
+<select aria-label="检查对象" id="objects"></select><button id="next">下一个</button>
+<label><input type="checkbox" id="flash" checked>手电</label>
+<div id="status">模型加载中…</div><a id="game" style="color:#bdddce">返回游戏</a></aside>
+<script type="module">
+import * as THREE from 'three';
+import {generatePlan} from '/src/planning/generate.js';
+import {createWorld} from '/src/world.js';
+import {createState} from '/src/state.js';
+import {createVhsEffect} from '/src/art/vhs-effect.js';
+import {configureInteriorFlashlight} from '/src/art/interior-lighting.js';
+import {INTERIOR_ASSETS} from '/src/art/interior-catalog.js';
+const query = new URLSearchParams(location.search), seed = query.get('seed') ?? '1844070019';
+if(query.has('failLight')) INTERIOR_ASSETS['lighting-wall-sconce'].url='/art/diagnostic-missing-sconce.glb';
+const plan=generatePlan(seed), state=createState(plan);
+const renderer=new THREE.WebGLRenderer({antialias:true});document.body.append(renderer.domElement);
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFShadowMap;
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1025;
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x111916);scene.fog=new THREE.Fog(0x111916,9,24);
+const camera=new THREE.PerspectiveCamera(64,innerWidth/innerHeight,.06,40);scene.add(camera);
+const flashlight=new THREE.SpotLight(0xffe6b8,24,17,Math.PI/7,.72,1.65);
+configureInteriorFlashlight(flashlight);flashlight.position.set(.14,-.15,-.12);flashlight.target.position.set(0,-.08,-6);
+flashlight.castShadow=true;flashlight.shadow.mapSize.set(1024,1024);camera.add(flashlight,flashlight.target);
+const effect=createVhsEffect(renderer,scene,camera);effect.setIntensity(.6);effect.resize(innerWidth,innerHeight);
+const world=createWorld(scene,plan), select=document.querySelector('#objects'), status=document.querySelector('#status');
+document.querySelector('#seed').textContent=`seed ${seed}`;document.querySelector('#game').href=`/?seed=${seed}`;
+const targets=[];scene.updateMatrixWorld(true);
+scene.traverse(node=>{if(node.userData.wallDecor)targets.push(node);});
+for(const [i,node] of targets.entries()) {const p=node.userData.wallDecor;select.add(new Option(`${p.face.roomId} · ${p.kind} · ${p.face.axis}${p.face.sign}`,String(i)));}
+const first=targets.findIndex(t=>t.userData.wallDecor.kind==='lighting-wall-sconce');select.value=String(Math.max(0,first));
+function focus(){
+ const node=targets[Number(select.value)];if(!node)return;
+ const p=node.userData.wallDecor;
+ camera.position.copy(node.localToWorld(new THREE.Vector3(0,1.9,2.1)));
+ camera.lookAt(node.localToWorld(new THREE.Vector3(0,1.9,0)));
+ state.player.x=camera.position.x;state.player.z=camera.position.z;
+}
+focus();select.onchange=focus;document.querySelector('#next').onclick=()=>{select.selectedIndex=(select.selectedIndex+1)%targets.length;focus();};
+let checks='加载中';
+await world.artReady;
+scene.updateMatrixWorld(true);
+let fixtures=0,orphans=0,bulbs=0,misaligned=0;
+scene.traverse(node=>{
+ if(node.userData.assetId?.startsWith('lighting-'))fixtures++;
+ if(node.name==='fixture-bulb') {
+  bulbs++;
+  const bounds=new THREE.Box3().setFromObject(node.parent.children[0]);
+  if(!bounds.expandByScalar(.025).containsPoint(node.getWorldPosition(new THREE.Vector3())))misaligned++;
+ }
+ if(node.userData.fixtureLight||node.name==='fixture-bulb') {
+  if(!node.parent?.userData.assetId?.startsWith('lighting-'))orphans++;
+ }
+});
+checks=`模型 ${world.artStats.loaded}/${world.artStats.requested}；失败 ${world.artStats.failed.length}；灯具 ${fixtures}；灯泡 ${bulbs}；孤立光源 ${orphans}；灯泡超出模型包围盒 ${misaligned}`;
+status.textContent=checks;
+renderer.setAnimationLoop(time=>{
+ world.update(0,state);flashlight.visible=document.querySelector('#flash').checked;effect.setFlashlight(flashlight.visible);effect.render(time/1000);
+});
+addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();effect.resize(innerWidth,innerHeight);});
+</script></html>

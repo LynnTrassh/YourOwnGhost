@@ -5,6 +5,7 @@ import { populateInteriors } from './interiors.js';
 import { fitStatue } from './statue-fit.js';
 import { fitLightAvoider } from './avoider-fit.js';
 import { fitStories } from './story-fit.js';
+import { ROOM_PRESET_IDS } from './room-presets.js';
 import { fitContent } from './content-fit.js';
 import { fitChase } from './chase-fit.js';
 import { analyzeCoverage } from './coverage.js';
@@ -20,7 +21,7 @@ function random(seed) {
   let n = hashSeed(seed);
   return () => { n += 0x6D2B79F5; let t = n; t = Math.imul(t ^ t >>> 15, t | 1); t ^= t + Math.imul(t ^ t >>> 7, t | 61); return ((t ^ t >>> 14) >>> 0) / 4294967296; };
 }
-function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled, contentIds, conditionalSlots, preferences, threatBehaviorId, chaseEnabled) {
+function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled, contentIds, conditionalSlots, preferences, threatBehaviorId, chaseEnabled, roomPresetOverrides) {
   const rng=random(`${seed}:layout:${attempt}`), decor=random(`${decorationSeed}:decoration`);
   const topology=growTopology(rng,decor);
   const opportunities=inspectTopology(topology.rooms,topology.edges);
@@ -35,7 +36,7 @@ function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, thre
     reserved:{cat:reservation},
     obstacles:[{id:'bed',kind:'bed',roomId:'bedroom',minX:-1.95,maxX:-1.15,minZ:.3,maxZ:2.2}]};
   plan.walls=buildWalls(plan);
-  populateInteriors(plan,random(`${interiorSeed}:interior:${attempt}`),decor);
+  populateInteriors(plan,random(`${interiorSeed}:interior:${attempt}`),decor,roomPresetOverrides);
   plan.story=fitStories(plan);
   plan.chase=chaseEnabled ? fitChase(plan) : null;
   const threatReservation=threatEnabled
@@ -57,16 +58,21 @@ function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, thre
   return plan;
 }
 
-export function generatePlan(seed = '42', { maxAttempts = 20, decorationSeed = seed, interiorSeed = seed, catEnabled = true, threatEnabled = false, threatBehaviorId = null, chaseEnabled = false, contentIds = null, conditionalSlots = [], preferences = [] } = {}) {
+export function generatePlan(seed = '42', { maxAttempts = 20, decorationSeed = seed, interiorSeed = seed, catEnabled = true, threatEnabled = false, threatBehaviorId = null, chaseEnabled = false, contentIds = null, conditionalSlots = [], preferences = [], roomPresetOverrides = {} } = {}) {
   if(chaseEnabled&&threatEnabled)throw new Error('连续追逐与普通威胁不能同时占用同一层');
+  for (const [roomId, presetId] of Object.entries(roomPresetOverrides)) {
+    if (roomId === 'bedroom' && presetId !== 'bedroom') throw new Error('出生卧室固定使用 bedroom 预设');
+    if (roomId !== 'default' && roomId !== 'bedroom' && !/^room-\d+$/.test(roomId)) throw new Error(`无效房间预设目标：${roomId}`);
+    if (!ROOM_PRESET_IDS.includes(presetId)) throw new Error(`未知房间预设：${presetId}`);
+  }
   const reports = [];
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
-    const plan = candidate(String(seed), attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled);
+    const plan = candidate(String(seed), attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled,roomPresetOverrides);
     const report = validatePlan(plan); reports.push({ attempt, ...report });
     if (report.valid && (!chaseEnabled||plan.chase)) return finish(plan, String(seed), reports, false);
   }
   if(chaseEnabled) throw new Error(`追逐空间未能在 ${maxAttempts} 次生成内合法落位`);
-  const fallback = candidate('validated-layout-1', 0, decorationSeed, 'validated-interior-1', catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled);
+  const fallback = candidate('validated-layout-1', 0, decorationSeed, 'validated-interior-1', catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled,roomPresetOverrides);
   const report = validatePlan(fallback);
   if (!report.valid) throw new Error(`保底地图校验失败：${report.errors.join('、')}`);
   return finish(fallback, String(seed), [...reports, { attempt: 'fallback', ...report }], true);

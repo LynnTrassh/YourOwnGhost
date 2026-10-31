@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "status": "images-ready-awaiting-review",
+  "tripoAuthorized": false,
+  "userApprovalRule": "先把整套资产图生成齐，我确认后批量做模型",
+  "latestDirection": "房间完整、整齐、漂亮而心理不适。收回全局破败，以重复秩序、留白、颜色、材质和光影建立异样感。现有磨损版作为候选，不等于最终批准。",
+  "scene": {
+    "id": "scene-bedroom-corridor-mood",
+    "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-7cb90c08-2158-4c08-b38d-12cbff8ab206.png",
+    "destination": "art-source/room-presets/style/scene-bedroom-corridor-mood-v01.png",
+    "prompt": "Use case: stylized-concept. Create one original full-scene art direction keyframe for a first-person psychological horror game: believable old domestic bedroom opening into an eerily long institutional corridor. Use supplied bedroom board as furniture identity and material reference. The goal is sophisticated found-footage / pseudo-documentary realism with subtle artistic hand-painted surfaces. Attractive restrained composition, unsettling and coherent, not ugly random surrealism.\nWide cinematic landscape 16:9, human eye-height documentary camera from just inside doorway, 32mm lens, only slight handheld imperfect framing, no dramatic Dutch angle. Foreground left a complete narrow old dark wood bed with worn iron headboard and faded dusty mauve quilt and cream pillow, natural rumples with NO human-shaped lump. Midground a worn desk, simple chair, tall bookcase, one eerie framed portrait with slightly wrong eye alignment. Visible central path through an open doorway into a receding corridor. Ceiling has an old modest chandelier in bedroom; two spaced linear fluorescent strips in corridor. No people or monsters.\nLighting has deliberate hierarchy: a muted warm ivory bedside lamp reveals bed fabric and wood as the main readable pool; cold petrol-green fluorescent light shapes the corridor into repeated rectangles; distant very small dim oxblood-red doorway accent provides one mysterious focal point. Dark lavender ambient shadows, lifted enough to see silhouettes. No full-screen red wash, no rainbow lighting, no pure black hiding props. Soft indirect bounce, directional shadows, slight dusty air only at lights. Walls desaturated gray-green paint above old dark timber skirting, floor worn wide boards with tiny restrained sheen. Narrow curtains dusty rose. 70 percent desaturated dark neutral, 25 percent petrol green and faded mauve, 5 percent red accent.\nMaterials read physically real: dry wood grain, coarse faded cloth weave, tarnished metal, peeling wall paint. Subtle controlled brush-made color shapes in surface/albedo and fine imperfect hand-drawn framed art, while actual volume and light remain credible 3D; no flat illustration lines or painterly smearing. Found-footage character is restrained fine sensor grain, mild corner softness, tiny halation only on lights; no scanline overlays, huge color splitting or burned highlights.\nQuiet beauty and discomfort: carefully arranged negative space, slightly asymmetric picture alignment, identical corridor fixtures repeating too far. No gore, skull decorations, occult spam, floating debris, impossible fused furniture, grotesque random deformation, logos, captions, UI or text. This is a proposed visual target, not a screenshot of implemented gameplay.",
+    "role": "proposed-art-target-not-implemented-scene",
+    "bytes": 2361450
+  },
+  "sheets": [
+    {
+      "id": "parlor",
+      "title": "空客厅 · 预设 02",
+      "assets": [
+        "sofa",
+        "low-table",
+        "display-cabinet",
+        "bookcase"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-ec9ead85-5b03-49d5-8380-71ce24777dbc.png",
+      "destination": "art-source/room-presets/parlor/concept-parlor-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 空客厅 · 预设 02\nExactly four props in a 2x2 grid: (1) 磨损沙发 — narrow old two-seat sofa, faded dusty blue-gray coarse upholstery sagging at one seat, dark wood arms, no bright cushions. (2) 矮茶几 — long low battered dark wood table with thin legs and a faint ring stain, empty tabletop. (3) 陈列柜 — tall narrow smoky-glass wood cabinet, dusty small cups all facing the same direction, one conspicuously empty shelf. (4) 书柜 — same worn dark wooden bookcase family as reference, yellowed books, an empty rectangle in dust. Subtle wrongness through mismatched handles, uneven cushion wear, overly orderly objects. Not haunted cartoon furniture.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 2063279
+    },
+    {
+      "id": "nursery",
+      "title": "旧育儿室 · 预设 03",
+      "assets": [
+        "toy-chest",
+        "small-table",
+        "toy-shelf",
+        "wardrobe"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-1b703925-b0ea-4ae0-906a-fa3519ab3df5.png",
+      "destination": "art-source/room-presets/nursery/concept-nursery-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 旧育儿室 · 预设 03\nExactly four props 2x2: (1) 玩具箱 — low closed toy chest, faded pale sage paint exposing worn wood, subtle rubbed-away childish floral motif, no friendly character face. (2) 儿童桌 — little low wooden table, faded cream paint with uneven rubbed areas, a single old colored wooden block resting within tabletop. (3) 玩具架 — tall narrow four-tier shelf, only a few geometric blocks and old cloth toys with blank stitched faces, uncannily regular spacing; not crowded or cute. (4) 旧衣柜 — narrow tall gray-brown wardrobe matching reference family, worn floral-paper insert on one door, dry dirty cream and gray-green palette. Faint old nursery use, quiet absence, no bodies or violence.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 2051849
+    },
+    {
+      "id": "clinic",
+      "title": "诊疗室 · 预设 04",
+      "assets": [
+        "exam-cot",
+        "instrument-cart",
+        "medicine-cabinet",
+        "file-cabinet"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-bee95f14-0ac0-4cff-8a60-66a8e8d54894.png",
+      "destination": "art-source/room-presets/clinic/concept-clinic-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 诊疗室 · 预设 04\nExactly four props 2x2: (1) 诊疗床 — narrow low examination cot with heavily worn desaturated sage vinyl cushion and tarnished tubular metal legs, no straps or patient. (2) 器械推车 — small rectangular two-tier old metal trolley with four wheels and one dull empty tray, edges worn and dusty. (3) 药品柜 — tall narrow faded celadon metal cabinet with cloudy glass upper doors, sparse unlabeled amber glass bottles and yellow paper boxes. (4) 病历柜 — narrow tall gray-green steel filing cabinet, slightly misaligned drawers, yellowed blank label holders, black keyhole. Pale clinical green, bone white and oxidized gray; restrained oxidized metal, not shiny. No gore or real text labels, no needles in bodies.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 1962667
+    },
+    {
+      "id": "archive",
+      "title": "旧档案室 · 预设 05",
+      "assets": [
+        "writing-desk",
+        "copy-table",
+        "archive-shelf",
+        "filing-cabinet"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-f1ac596b-23f3-4af3-9f6a-9f276098f2e7.png",
+      "destination": "art-source/room-presets/archive/concept-archive-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 旧档案室 · 预设 05\nExactly four props 2x2: (1) 旧写字台 — narrow old wooden writing desk with slim central drawer, dark brown-gray wood, a thin closed ledger on top. (2) 整理台 — long narrow low worktable of worn gray timber, sparse uneven stack of yellowed documents tied with string, kept within tabletop. (3) 档案架 — tall narrow steel-and-wood open shelving with near-identical tied document boxes, a single oddly empty shelf compartment. (4) 抽屉档案柜 — tall narrow dusty charcoal metal filing cabinet with many thin drawers, offset blank brass label holders. Colors warm gray, faded ink blue, dirty paper ivory. Objects repeat obsessively but remain plausible, no readable document data.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 2039945
+    },
+    {
+      "id": "shrine",
+      "title": "供奉室 · 预设 06",
+      "assets": [
+        "offering-table",
+        "kneeler",
+        "reliquary",
+        "bookcase"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-7c2ffbab-1ef5-462a-a365-43c3123f8a49.png",
+      "destination": "art-source/room-presets/shrine/concept-shrine-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 供奉室 · 预设 06\nExactly four props 2x2: (1) 供桌 — long narrow low dark wooden offering table, two stubby unlit cream candles and empty shallow bowl, restrained old household style. (2) 跪凳 — narrow low wooden kneeling bench with worn muted deep gray-red cloth pad, compression mark, structurally stable. (3) 供奉柜 — tall narrow dark wood cabinet with closed uneven doors and an entirely empty central display niche, no deity statues or invented religious insignia. (4) 经册书架 — tall narrow dark timber shelf holding thin old cloth-bound volumes with blank spines and worn paper edges. Faded burgundy, soot brown, ash gray, old cream. Eerie absence rather than fantasy altar, no skulls, no pentagrams, no blood.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 1960736
+    },
+    {
+      "id": "seating",
+      "title": "通用桌椅 · 预设 07",
+      "assets": [
+        "dining-table",
+        "dining-chair",
+        "rocking-chair",
+        "wood-stool",
+        "waiting-bench"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-a48160d6-62f6-4761-9fe9-167ae5c6cfc3.png",
+      "destination": "art-source/room-presets/seating/concept-seating-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 通用桌椅 · 预设 07\nExactly five props, 3 upper and 2 lower: (1) 长餐桌 — narrow rectangular rough dark-wood dining table, four straight worn legs, restrained asymmetric wear, empty top. (2) 木餐椅 — old spindle-back timber chair, one slightly mismatched back spindle, four complete legs, seat matte. (3) 摇椅 — slim old wooden rocking chair with two complete rockers, faded gray cloth seat cushion, no person. (4) 木凳 — short four-legged wooden stool, dusty ring on seat, functional stable structure. (5) 等候长椅 — narrow old two-person bench with faded gray-blue cloth seat and dark wood back, one asymmetrically depressed place. Same domestic design language, no cartoon crooked legs, no impossible spikes.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 1997629
+    },
+    {
+      "id": "lighting",
+      "title": "室内灯具 · 预设 08",
+      "assets": [
+        "chandelier",
+        "strip-light",
+        "bare-pendant",
+        "wall-sconce",
+        "desk-lamp",
+        "floor-lamp"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-168673fd-1ab9-4b09-935e-82e468662790.png",
+      "destination": "art-source/room-presets/lighting/concept-lighting-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 室内灯具 · 预设 08\nExactly six isolated light fixtures in a clean 3x2 grid: (1) 旧吊灯 — modest three-arm tarnished brass pendant chandelier with three yellowed frosted glass shades, short chain and ceiling cap visible, dry muted metal. (2) 双管排灯 — long rectangular ceiling fluorescent fixture with two parallel tubes and dirty cream metal housing, worn rusty ends, both tube shapes fully visible, attached suspension brackets. (3) 裸泡吊灯 — one dusty bare frosted bulb with aged dark socket, short hanging cord and ceiling rose. (4) 旧壁灯 — wall-mounted frosted glass shade with aged bracket and visible backplate. (5) 床头台灯 — old small bedside lamp matching the reference, dull brown metal base and dusty stained beige fabric shade slightly tilted. (6) 落地灯 — tall slender old floor lamp, round heavy base, tarnished pole, faded gray fabric shade. All UNLIT for texture approval; no baked light beams, bloom, glow, room ceilings or attached floor platforms. Subtle uneven shades and stains make a neglected domestic atmosphere.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 1836392
+    },
+    {
+      "id": "wallart",
+      "title": "诡异壁画与镜面 · 预设 09",
+      "assets": [
+        "uncanny-portrait",
+        "uncanny-family-photo",
+        "uncanny-corridor-painting",
+        "uncanny-child-drawing",
+        "aged-mirror"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-59562705-263f-4170-8bb4-1a73a5350e2d.png",
+      "destination": "art-source/room-presets/wallart/concept-wallart-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 诡异壁画与镜面 · 预设 09\nExactly five separately framed wall decorations, large enough to read their unsettling images; 3 upper and 2 lower, mostly front-facing with slight visible frame thickness. (1) 错位肖像 — old sepia portrait painting of a fictional solemn adult in plain old clothes; eyes subtly misaligned and looking directly out, face proportions almost normal but disturbingly wrong, no gore; thin dark worn wood frame. (2) 空位合影 — faded grayscale fictional family group photograph in a medium horizontal frame; an obvious person-shaped EMPTY GAP between the posed figures, surrounding figures looking at the gap, all people fully clothed, no harmed child. (3) 无尽门廊 — old muted oil painting of an ordinary hallway where repeated identical doorways shrink into an implausibly deep black distance, restrained perspective wrongness, narrow tarnished frame. (4) 儿童旧画 — yellowed paper with a childish drawing of a simple house, one very tall thin faceless figure at an upstairs window, sparse faded crayon, held in a plain mismatched wood frame. (5) 旧镜子 — tall narrow wall mirror in worn dark frame, mottled oxidized silver edges and hairline crack, dull blank gray reflection, no scene or person reflected. Horror is uncanny gaze, absence and wrong proportions; avoid overt screaming monster faces, eyeball gore or camp horror. Artwork inside frames may be painted/photographic/crayon as specified, but frames are realistic textured 3D assets.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 2347305
+    },
+    {
+      "id": "fixtures",
+      "title": "门窗与室内杂物 · 预设 10",
+      "assets": [
+        "old-door",
+        "old-window",
+        "faded-curtain",
+        "radiator",
+        "stopped-clock",
+        "fuse-box"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-0d6e0aca-cd96-4cee-bbc9-b2e0abe0def4.png",
+      "destination": "art-source/room-presets/fixtures/concept-fixtures-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 门窗与室内杂物 · 预设 10\nExactly six isolated domestic fixtures in a 3x2 grid: (1) 旧木门 — complete old narrow paneled door leaf with dull brass knob, chipped gray-brown paint, detached from wall, no doorway or frame merged in. (2) 旧窗框 — narrow four-pane timber window with aged opaque dusty glass and worn cream paint, complete rectangular frame. (3) 褪色窗帘 — two long dusty gray-mauve coarse cloth curtain panels on one simple rod, sagging folds, no window behind, full rod and fabric hems visible. (4) 旧暖气 — short freestanding cast-iron ribbed radiator, dirty off-white peeling paint and dull rust, visible feet, no wall pipes extending arbitrarily. (5) 停摆挂钟 — old small rectangular dark wooden pendulum wall clock with round stained dial, mismatched hands, no readable brand. (6) 旧配电盒 — modest aged gray steel fuse box, closed slightly dented door, small blank faded yellow warning rectangle, subtle rust, no legible safety text. Same old house style, matte physical materials, no magical glow.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 2203396
+    },
+    {
+      "id": "wall-surfaces",
+      "title": "墙纸与墙面 · 预设 11",
+      "assets": [
+        "wallpaper-ochre-geometric",
+        "wallpaper-sage-damask",
+        "wallpaper-dustyrose-floral",
+        "wallpaper-bluegray-stripe",
+        "wall-wainscot-darkwood",
+        "floor-chevron-ivory-charcoal"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-e4d156eb-1eaf-43fa-b5bf-1c2bb65e5f80.png",
+      "destination": "art-source/room-presets/wall-surfaces/concept-wall-surfaces-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 墙纸与墙面 · 预设 11\nExactly six clearly separated flat architectural material panels in a 3x2 grid, large square samples, no rooms or furniture. (1) 赭黄几何墙纸 — original restrained interlocking small stepped diamond / fan pattern in muted ochre, burnt umber and dirty cream; unsettling obsessive repetition, subtle age. (2) 灰绿花纹墙纸 — faded sage-green classical damask with slightly irregular hand-printed edges and restrained water staining. (3) 灰粉碎花墙纸 — faded dusty rose tiny sparse florals on gray cream, eerie domestic familiarity, delicate handprinted marks. (4) 蓝灰细条墙纸 — faded muted bluegray and cream narrow stripes, fine paper grain and occasional slight misregistration. (5) 深木墙裙 — one flat dark walnut wainscot panel with simple rectangular framing and worn edges, old domestic realism. (6) 黑白折线地面 — high contrast charcoal and dirty ivory broad CHEVRON / zigzag floor material, physically worn matte linoleum, clear intentional rhythm. Inspiration is classic surreal red-curtain room staging and unsettling 1970s hotel repeated geometry; create ORIGINAL patterns, no movie still recreation. Samples evenly lit to inspect material, NOT dark cinematic lighting; no perspective distortion. Labels and title only. Not guaranteed seamless texture files; these are approval swatches.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 2651479
+    },
+    {
+      "id": "wall-damage",
+      "title": "破损墙体与帷幕 · 预设 12",
+      "assets": [
+        "wall-plaster-cracked",
+        "wall-plaster-exposed-brick",
+        "wall-plaster-exposed-lath",
+        "wallpaper-peeled",
+        "wall-skirt-worn",
+        "curtain-oxblood-velvet"
+      ],
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-1592a174-0a9c-404d-9d8d-b9a5d900c891.png",
+      "destination": "art-source/room-presets/wall-damage/concept-wall-damage-v01.png",
+      "prompt": "Use case: stylized-concept. Create a landscape production approval sheet for a coherent first-person psychological horror game's indoor asset library.\nUse the supplied old bedroom asset board as material/color/design-family reference ONLY; replace the furniture with the specified set. Real-time 3D game asset render appearance with clear geometric volumes and real physical wood grain, cloth weave, dull metal wear. Subtle artistic hand-painted variation is intentional in the albedo: broad restrained pigment patches, carefully edited edge wear and delicate drawn details, while the object retains convincing three-dimensional physical lighting. No heavy outlines, muddy brushwork, generalized paper overlay or flat watercolor flattening. Surface wear is actual material texture, broad low-poly geometry stays readable. Matte and high roughness, a carefully harmonized dusty domestic palette: desaturated petrol-green shadows, faded lavender/rose fabric, bone-cream paper, small oxblood accents; each object has a dominant neutral and only one restrained accent. Things are old and unsettling but still plausibly functional, with subtle asymmetry and eerie absence. No bloody gore, no monsters, no eyeballs attached to every object, no neon, no glossy plastic, no luxury polish.\nComposition: a neatly spaced grid of isolated complete objects on plain neutral warm-gray background, each in consistent three-quarter view, generous margins, soft diffuse studio light, no room walls or floor platforms, no huge dark cast shadows. Every requested asset once, clearly separate, not touching another. Text only the exact Chinese title and short labels specified; restrained legible typography. Keep all complete silhouettes, no cropping. This is a 2D art approval sheet, not a final 3D output. \nTitle exactly: 破损墙体与帷幕 · 预设 12\nExactly six complete separate modular architectural objects in 3x2 grid, three-quarter view with shallow physical depth, all isolated no room. (1) 开裂灰泥墙 — rectangular muted graygreen plaster wall panel with a few deliberate fine branching cracks and small chipped corners, broad intact surface. (2) 露砖破墙 — rectangular old plaster wall panel with a local irregular missing plaster patch exposing actual dull red-gray bricks, thickness visible; NOT a hole opening to another room. (3) 露木条破墙 — rectangular dull ivory plaster wall with local patch fallen away exposing narrow old wooden laths, readable layered cross-section. (4) 卷边剥落墙纸 — rectangular dusty mauve patterned paper on gray plaster with a few loose curled ragged paper edges, localized tears, intact large areas. (5) 磨损踢脚线 — single straight long low dark wood skirting rail with simple profile, rubbed corners, standalone narrow strip. (6) 暗红天鹅绒帷幕 — full-height heavy deep oxblood red velvet curtain on simple black rod, rich controlled vertical folds and matte velvet absorption, full silhouette, no floor behind. Haunted old-house staging with intentional negative space, subtle handpainted albedo plus physical geometry. Damage has hierarchy and material logic, no random shredded mess, no giant holes altering topology, no wet gore or faces.",
+      "status": "awaiting-review",
+      "generationMode": "built-in-imagegen",
+      "bytes": 2485719
+    }
+  ]
+}

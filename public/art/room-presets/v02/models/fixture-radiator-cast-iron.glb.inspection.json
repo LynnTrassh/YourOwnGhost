@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/fixture-radiator-cast-iron/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/fixture-radiator-cast-iron.glb",
+  "sourceBytes": 1004304,
+  "runtimeBytes": 1004656,
+  "sourceSHA256": "5ec0a44e60efd4883a25a98995089973b3f598673dd202f74d1a04783df3a852",
+  "runtimeSHA256": "246df2365b52dc4b0dcee8a0003389d3004184f04bfead567807594ad8c15a75",
+  "triangles": 5702,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1611328125,
+      -0.4990234375,
+      -0.4931640625
+    ],
+    "max": [
+      0.1611328125,
+      0.4990234375,
+      0.4931640625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.45,
+      0,
+      -0.09
+    ],
+    "max": [
+      0.45,
+      0.65,
+      0.09
+    ],
+    "size": [
+      0.9,
+      0.65,
+      0.18
+    ]
+  },
+  "scale": 0.6512720156555774,
+  "scaleXYZ": [
+    0.9124752475247525,
+    0.6512720156555774,
+    0.5585454545454545
+  ],
+  "footprint": [
+    0.9,
+    0.18
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

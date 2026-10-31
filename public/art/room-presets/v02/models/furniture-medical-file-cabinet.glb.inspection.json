@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-medical-file-cabinet/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-medical-file-cabinet.glb",
+  "sourceBytes": 774360,
+  "runtimeBytes": 774700,
+  "sourceSHA256": "2356a32115165c7becedd0773de08809630357c61642afea0d14b3205775c0b9",
+  "runtimeSHA256": "a6d3e8fbc86e9dde696d8735755f4d63c2b79fc0e51c1d235e97d99a4a1339e9",
+  "triangles": 5681,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2607421875,
+      -0.4990234375,
+      -0.1943359225988388
+    ],
+    "max": [
+      0.2607421875,
+      0.4990234375,
+      0.1943359524011612
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.55,
+      0,
+      -0.325
+    ],
+    "max": [
+      0.55,
+      2.1,
+      0.325
+    ],
+    "size": [
+      1.1,
+      2.1,
+      0.65
+    ]
+  },
+  "scale": 2.104109589041096,
+  "scaleXYZ": [
+    2.10936329588015,
+    2.104109589041096,
+    1.6723618090452261
+  ],
+  "footprint": [
+    1.1,
+    0.65
+  ],
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

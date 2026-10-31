@@ -1,0 +1,806 @@
+{
+  "schemaVersion": 1,
+  "logicalAssetCount": 56,
+  "approvalStatus": "awaiting-user-review-of-complete-pack",
+  "batchTripoSubmitted": false,
+  "namingRules": {
+    "assetId": "类别-物件-关键特征；lowercase-kebab-case，英文稳定 ID",
+    "variant": "theme 与 condition 单独保存；版本采用 v01/v02",
+    "exampleFiles": [
+      "lighting-strip-double-v01.glb",
+      "furniture-dining-chair-v01.glb",
+      "material-wallpaper-sage-damask-basecolor-v01.png"
+    ],
+    "compatibility": "现有游戏 prefabId 保留，使用显式映射，不批量改动现有资产名或程序 ID",
+    "surfaces": "material-* 是材质设计，确认后制作可重复纹理及所需贴图；不把展示样片直接当作无缝贴图"
+  },
+  "assets": [
+    {
+      "assetId": "furniture-bed-single",
+      "displayName": "单人旧床",
+      "gameplayPrefabId": "bed",
+      "legacyConceptId": "bed",
+      "sourceSheets": [
+        "bedroom/approval-v1.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "existing-trial-in-game",
+      "existingRuntimePath": "public/art/room-presets/bedroom/bed-v1.glb",
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-nightstand",
+      "displayName": "床头柜",
+      "gameplayPrefabId": "nightstand",
+      "legacyConceptId": "nightstand",
+      "sourceSheets": [
+        "bedroom/approval-v1.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-dresser",
+      "displayName": "斗柜",
+      "gameplayPrefabId": "dresser",
+      "legacyConceptId": "dresser",
+      "sourceSheets": [
+        "bedroom/approval-v1.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-wardrobe",
+      "displayName": "衣柜",
+      "gameplayPrefabId": "wardrobe",
+      "legacyConceptId": "wardrobe",
+      "sourceSheets": [
+        "bedroom/approval-v1.png",
+        "nursery/concept-nursery-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-bookcase",
+      "displayName": "书柜",
+      "gameplayPrefabId": "bookcase",
+      "legacyConceptId": "bookcase",
+      "sourceSheets": [
+        "bedroom/approval-v1.png",
+        "parlor/concept-parlor-v01.png",
+        "shrine/concept-shrine-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-sofa-two-seat",
+      "displayName": "双人沙发",
+      "gameplayPrefabId": "sofa",
+      "legacyConceptId": "sofa",
+      "sourceSheets": [
+        "parlor/concept-parlor-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-coffee-table",
+      "displayName": "矮茶几",
+      "gameplayPrefabId": "low-table",
+      "legacyConceptId": "low-table",
+      "sourceSheets": [
+        "parlor/concept-parlor-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-display-cabinet",
+      "displayName": "陈列柜",
+      "gameplayPrefabId": "display-cabinet",
+      "legacyConceptId": "display-cabinet",
+      "sourceSheets": [
+        "parlor/concept-parlor-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-toy-chest",
+      "displayName": "玩具箱",
+      "gameplayPrefabId": "toy-chest",
+      "legacyConceptId": "toy-chest",
+      "sourceSheets": [
+        "nursery/concept-nursery-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-child-table",
+      "displayName": "儿童桌",
+      "gameplayPrefabId": "small-table",
+      "legacyConceptId": "small-table",
+      "sourceSheets": [
+        "nursery/concept-nursery-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-toy-shelf",
+      "displayName": "玩具架",
+      "gameplayPrefabId": "toy-shelf",
+      "legacyConceptId": "toy-shelf",
+      "sourceSheets": [
+        "nursery/concept-nursery-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-examination-cot",
+      "displayName": "诊疗床",
+      "gameplayPrefabId": "exam-cot",
+      "legacyConceptId": "exam-cot",
+      "sourceSheets": [
+        "clinic/concept-clinic-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-instrument-trolley",
+      "displayName": "器械推车",
+      "gameplayPrefabId": "instrument-cart",
+      "legacyConceptId": "instrument-cart",
+      "sourceSheets": [
+        "clinic/concept-clinic-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-medicine-cabinet",
+      "displayName": "药品柜",
+      "gameplayPrefabId": "medicine-cabinet",
+      "legacyConceptId": "medicine-cabinet",
+      "sourceSheets": [
+        "clinic/concept-clinic-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-medical-file-cabinet",
+      "displayName": "病历柜",
+      "gameplayPrefabId": "file-cabinet",
+      "legacyConceptId": "file-cabinet",
+      "sourceSheets": [
+        "clinic/concept-clinic-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-writing-desk",
+      "displayName": "写字台",
+      "gameplayPrefabId": "writing-desk",
+      "legacyConceptId": "writing-desk",
+      "sourceSheets": [
+        "archive/concept-archive-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-document-table",
+      "displayName": "档案整理台",
+      "gameplayPrefabId": "copy-table",
+      "legacyConceptId": "copy-table",
+      "sourceSheets": [
+        "archive/concept-archive-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-archive-shelf",
+      "displayName": "档案架",
+      "gameplayPrefabId": "archive-shelf",
+      "legacyConceptId": "archive-shelf",
+      "sourceSheets": [
+        "archive/concept-archive-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-multi-drawer-file-cabinet",
+      "displayName": "多抽屉档案柜",
+      "gameplayPrefabId": "filing-cabinet",
+      "legacyConceptId": "filing-cabinet",
+      "sourceSheets": [
+        "archive/concept-archive-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-offering-table",
+      "displayName": "供桌",
+      "gameplayPrefabId": "offering-table",
+      "legacyConceptId": "offering-table",
+      "sourceSheets": [
+        "shrine/concept-shrine-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-kneeling-bench",
+      "displayName": "跪凳",
+      "gameplayPrefabId": "kneeler",
+      "legacyConceptId": "kneeler",
+      "sourceSheets": [
+        "shrine/concept-shrine-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-shrine-cabinet",
+      "displayName": "供奉柜",
+      "gameplayPrefabId": "reliquary",
+      "legacyConceptId": "reliquary",
+      "sourceSheets": [
+        "shrine/concept-shrine-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-dining-table",
+      "displayName": "长餐桌",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "dining-table",
+      "sourceSheets": [
+        "seating/concept-seating-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-dining-chair",
+      "displayName": "木餐椅",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "dining-chair",
+      "sourceSheets": [
+        "seating/concept-seating-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-rocking-chair",
+      "displayName": "摇椅",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "rocking-chair",
+      "sourceSheets": [
+        "seating/concept-seating-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-stool",
+      "displayName": "木凳",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wood-stool",
+      "sourceSheets": [
+        "seating/concept-seating-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "furniture-waiting-bench",
+      "displayName": "等候长椅",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "waiting-bench",
+      "sourceSheets": [
+        "seating/concept-seating-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "lighting-chandelier-three-arm",
+      "displayName": "三臂吊灯",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "chandelier",
+      "sourceSheets": [
+        "lighting/concept-lighting-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "lighting-strip-double",
+      "displayName": "双管排灯",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "strip-light",
+      "sourceSheets": [
+        "lighting/concept-lighting-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "lighting-pendant-bare-bulb",
+      "displayName": "裸泡吊灯",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "bare-pendant",
+      "sourceSheets": [
+        "lighting/concept-lighting-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "lighting-wall-sconce",
+      "displayName": "壁灯",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wall-sconce",
+      "sourceSheets": [
+        "lighting/concept-lighting-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "lighting-table-lamp",
+      "displayName": "台灯",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "desk-lamp",
+      "sourceSheets": [
+        "lighting/concept-lighting-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "lighting-floor-lamp",
+      "displayName": "落地灯",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "floor-lamp",
+      "sourceSheets": [
+        "lighting/concept-lighting-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "wall-art-misaligned-portrait",
+      "displayName": "错位肖像",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "uncanny-portrait",
+      "sourceSheets": [
+        "wallart/concept-wallart-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "wall-art-missing-person-photo",
+      "displayName": "空位合影",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "uncanny-family-photo",
+      "sourceSheets": [
+        "wallart/concept-wallart-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "wall-art-endless-corridor",
+      "displayName": "无尽门廊画",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "uncanny-corridor-painting",
+      "sourceSheets": [
+        "wallart/concept-wallart-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "wall-art-child-house-drawing",
+      "displayName": "儿童旧画",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "uncanny-child-drawing",
+      "sourceSheets": [
+        "wallart/concept-wallart-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "fixture-mirror-aged",
+      "displayName": "旧镜子",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "aged-mirror",
+      "sourceSheets": [
+        "wallart/concept-wallart-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "architecture-door-panelled",
+      "displayName": "旧木门扇",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "old-door",
+      "sourceSheets": [
+        "fixtures/concept-fixtures-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "architecture-window-four-pane",
+      "displayName": "四格窗框",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "old-window",
+      "sourceSheets": [
+        "fixtures/concept-fixtures-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "fixture-curtain-faded",
+      "displayName": "褪色窗帘",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "faded-curtain",
+      "sourceSheets": [
+        "fixtures/concept-fixtures-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "fixture-radiator-cast-iron",
+      "displayName": "铸铁暖气",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "radiator",
+      "sourceSheets": [
+        "fixtures/concept-fixtures-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "fixture-wall-clock-pendulum",
+      "displayName": "停摆挂钟",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "stopped-clock",
+      "sourceSheets": [
+        "fixtures/concept-fixtures-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "fixture-fuse-box",
+      "displayName": "配电盒",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "fuse-box",
+      "sourceSheets": [
+        "fixtures/concept-fixtures-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "material-wallpaper-ochre-geometric",
+      "displayName": "赭黄几何墙纸",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wallpaper-ochre-geometric",
+      "sourceSheets": [
+        "wall-surfaces/concept-wall-surfaces-v01.png"
+      ],
+      "assetKind": "material",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "material-wallpaper-sage-damask",
+      "displayName": "灰绿花纹墙纸",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wallpaper-sage-damask",
+      "sourceSheets": [
+        "wall-surfaces/concept-wall-surfaces-v01.png"
+      ],
+      "assetKind": "material",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "material-wallpaper-dustyrose-floral",
+      "displayName": "灰粉碎花墙纸",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wallpaper-dustyrose-floral",
+      "sourceSheets": [
+        "wall-surfaces/concept-wall-surfaces-v01.png"
+      ],
+      "assetKind": "material",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "material-wallpaper-bluegray-stripe",
+      "displayName": "蓝灰细条墙纸",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wallpaper-bluegray-stripe",
+      "sourceSheets": [
+        "wall-surfaces/concept-wall-surfaces-v01.png"
+      ],
+      "assetKind": "material",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "architecture-wainscot-darkwood",
+      "displayName": "深木墙裙",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wall-wainscot-darkwood",
+      "sourceSheets": [
+        "wall-surfaces/concept-wall-surfaces-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "material-floor-chevron-ivory-charcoal",
+      "displayName": "黑白折线地面",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "floor-chevron-ivory-charcoal",
+      "sourceSheets": [
+        "wall-surfaces/concept-wall-surfaces-v01.png"
+      ],
+      "assetKind": "material",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "architecture-wall-plaster-cracked",
+      "displayName": "开裂灰泥墙",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wall-plaster-cracked",
+      "sourceSheets": [
+        "wall-damage/concept-wall-damage-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "localized-damaged-variant"
+    },
+    {
+      "assetId": "architecture-wall-exposed-brick",
+      "displayName": "露砖破墙",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wall-plaster-exposed-brick",
+      "sourceSheets": [
+        "wall-damage/concept-wall-damage-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "localized-damaged-variant"
+    },
+    {
+      "assetId": "architecture-wall-exposed-lath",
+      "displayName": "露木条破墙",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wall-plaster-exposed-lath",
+      "sourceSheets": [
+        "wall-damage/concept-wall-damage-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "localized-damaged-variant"
+    },
+    {
+      "assetId": "architecture-wallpaper-peeled",
+      "displayName": "卷边剥落墙纸",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wallpaper-peeled",
+      "sourceSheets": [
+        "wall-damage/concept-wall-damage-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "localized-damaged-variant"
+    },
+    {
+      "assetId": "architecture-skirting-wood-worn",
+      "displayName": "磨损木踢脚线",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "wall-skirt-worn",
+      "sourceSheets": [
+        "wall-damage/concept-wall-damage-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    },
+    {
+      "assetId": "fixture-curtain-oxblood-velvet",
+      "displayName": "暗红天鹅绒帷幕",
+      "gameplayPrefabId": null,
+      "legacyConceptId": "curtain-oxblood-velvet",
+      "sourceSheets": [
+        "wall-damage/concept-wall-damage-v01.png"
+      ],
+      "assetKind": "model",
+      "conceptStatus": "generated-awaiting-review",
+      "modelStatus": "not-generated",
+      "existingRuntimePath": null,
+      "conditionDirection": "intact-or-lightly-aged-preferred; current weathered concept pending review"
+    }
+  ]
+}

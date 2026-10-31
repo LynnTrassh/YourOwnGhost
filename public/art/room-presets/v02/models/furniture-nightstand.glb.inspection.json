@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-nightstand/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-nightstand.glb",
+  "sourceBytes": 1102320,
+  "runtimeBytes": 1102708,
+  "sourceSHA256": "c47f07ab6a60ea12c9b211613ca5206f67a386ad4ca7b3db6e3a54f7dbb91546",
+  "runtimeSHA256": "210613805803249bd977e0a30ee9811dfde793e65c7b2c00f8598be2a086578a",
+  "triangles": 5562,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3447265625,
+      -0.4990234673023224,
+      -0.3974609076976776
+    ],
+    "max": [
+      0.3447265625,
+      0.4990234673023224,
+      0.3974609673023224
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.34,
+      0,
+      -0.24000000000000002
+    ],
+    "max": [
+      0.34,
+      0.78,
+      0.24000000000000002
+    ],
+    "size": [
+      0.68,
+      0.78,
+      0.48000000000000004
+    ]
+  },
+  "scale": 0.7815263721129313,
+  "scaleXYZ": [
+    0.8554299754299755,
+    0.7815263721129313,
+    0.6962039660056657
+  ],
+  "footprint": [
+    0.68,
+    0.48
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

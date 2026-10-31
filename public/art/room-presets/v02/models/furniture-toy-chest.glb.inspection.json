@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-toy-chest/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-toy-chest.glb",
+  "sourceBytes": 1270156,
+  "runtimeBytes": 1270520,
+  "sourceSHA256": "56e461ea21a97d470b3fd815e8e2c3de0139e4210e2a7813e63992e0e6da29b8",
+  "runtimeSHA256": "6edf38d97ef36caeb6c38e812ec0652e4c832edaccb3b24b1b441760c3adc231",
+  "triangles": 6282,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2783203125,
+      -0.2548828423023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.2783203125,
+      0.2548828423023224,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.65,
+      0,
+      -0.325
+    ],
+    "max": [
+      0.65,
+      0.68,
+      0.325
+    ],
+    "size": [
+      1.3,
+      0.68,
+      0.65
+    ]
+  },
+  "scale": 1.3339462041808143,
+  "scaleXYZ": [
+    1.3025440313111547,
+    1.3339462041808143,
+    1.167719298245614
+  ],
+  "footprint": [
+    1.3,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

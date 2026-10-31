@@ -1,0 +1,72 @@
+{"asset": "furniture-bed-single", "taskId": "a14196e7-a8dc-441b-bbe4-30baa798b8f1", "status": "watching"}
+{"asset": "furniture-nightstand", "taskId": "d89b6185-3250-4c40-b42b-58732be9ad6e", "status": "watching"}
+{"asset": "furniture-bed-single", "taskId": "a14196e7-a8dc-441b-bbe4-30baa798b8f1", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-bed-single/model.glb", "bytes": 1627364}
+{"asset": "furniture-nightstand", "taskId": "d89b6185-3250-4c40-b42b-58732be9ad6e", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-nightstand/model.glb", "bytes": 1102320}
+{"asset": "furniture-wardrobe", "taskId": "eed055c0-b67a-4037-92e0-e533d21e3b75", "status": "watching"}
+{"asset": "furniture-wardrobe", "taskId": "eed055c0-b67a-4037-92e0-e533d21e3b75", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-wardrobe/model.glb", "bytes": 981852}
+{"asset": "furniture-dresser", "taskId": "0b5a8c56-71b5-49f5-800c-1139ee84b7ce", "status": "watching"}
+{"asset": "furniture-bookcase", "taskId": "7dd36082-b6ef-480d-a539-8eba4e709fbd", "status": "watching"}
+{"asset": "furniture-dresser", "taskId": "0b5a8c56-71b5-49f5-800c-1139ee84b7ce", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-dresser/model.glb", "bytes": 949720}
+{"asset": "furniture-sofa-two-seat", "taskId": "16f8e58b-b67c-4b7c-9b5c-bcbb194e71ad", "status": "watching"}
+{"asset": "furniture-bookcase", "taskId": "7dd36082-b6ef-480d-a539-8eba4e709fbd", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-bookcase/model.glb", "bytes": 878608}
+{"asset": "furniture-coffee-table", "taskId": "ca91af58-1c79-4c68-bc6d-131d4cb0edf7", "status": "watching"}
+{"asset": "furniture-sofa-two-seat", "taskId": "16f8e58b-b67c-4b7c-9b5c-bcbb194e71ad", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-sofa-two-seat/model.glb", "bytes": 792828}
+{"asset": "furniture-display-cabinet", "taskId": "9a6baf5d-62c6-4e2d-9f86-390dbe20a438", "status": "watching"}
+{"asset": "furniture-coffee-table", "taskId": "ca91af58-1c79-4c68-bc6d-131d4cb0edf7", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-coffee-table/model.glb", "bytes": 969052}
+{"asset": "furniture-toy-chest", "taskId": "7c7ea171-534f-4756-bd8c-aad5cfcad00c", "status": "watching"}
+{"asset": "furniture-display-cabinet", "taskId": "9a6baf5d-62c6-4e2d-9f86-390dbe20a438", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-display-cabinet/model.glb", "bytes": 985220}
+{"asset": "furniture-child-table", "taskId": "867103fb-bb04-4d2b-acb2-8ae180125c58", "status": "watching"}
+{"asset": "furniture-toy-chest", "taskId": "7c7ea171-534f-4756-bd8c-aad5cfcad00c", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-toy-chest/model.glb", "bytes": 1270156}
+{"asset": "furniture-toy-shelf", "taskId": "dcd13c22-06ee-440d-9236-dff5320bd822", "status": "watching"}
+{"asset": "furniture-child-table", "taskId": "867103fb-bb04-4d2b-acb2-8ae180125c58", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-child-table/model.glb", "bytes": 1025896}
+{"asset": "furniture-examination-cot", "taskId": "cde5f0c6-a9bb-40f5-9b48-2029f1112fcc", "status": "watching"}
+{"asset": "furniture-toy-shelf", "taskId": "dcd13c22-06ee-440d-9236-dff5320bd822", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-toy-shelf/model.glb", "bytes": 959580}
+{"asset": "furniture-instrument-trolley", "taskId": "8b06aba1-86c8-469c-b758-4e63189e7895", "status": "watching"}
+{"asset": "furniture-examination-cot", "taskId": "cde5f0c6-a9bb-40f5-9b48-2029f1112fcc", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-examination-cot/model.glb", "bytes": 1017236}
+{"asset": "furniture-medicine-cabinet", "taskId": "29d96d78-7311-43e5-83c7-223cc08a4aea", "status": "watching"}
+{"asset": "furniture-instrument-trolley", "taskId": "8b06aba1-86c8-469c-b758-4e63189e7895", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-instrument-trolley/model.glb", "bytes": 973632}
+{"asset": "furniture-medical-file-cabinet", "taskId": "a568f79c-ac58-46c6-b6af-c600f33fbb7d", "status": "watching"}
+{"asset": "furniture-medicine-cabinet", "taskId": "29d96d78-7311-43e5-83c7-223cc08a4aea", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-medicine-cabinet/model.glb", "bytes": 820380}
+{"asset": "furniture-writing-desk", "taskId": "f6cd1ad5-e30e-4b6a-9f87-fdc6d8d455e3", "status": "watching"}
+{"asset": "furniture-medical-file-cabinet", "taskId": "a568f79c-ac58-46c6-b6af-c600f33fbb7d", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-medical-file-cabinet/model.glb", "bytes": 774360}
+{"asset": "furniture-document-table", "taskId": "06c28afe-31a9-493d-9b2f-fcc901f81007", "status": "watching"}
+{"asset": "furniture-writing-desk", "taskId": "f6cd1ad5-e30e-4b6a-9f87-fdc6d8d455e3", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-writing-desk/model.glb", "bytes": 1413512}
+{"asset": "furniture-archive-shelf", "taskId": "5c62ba74-8c06-48d7-bbf6-18f4c9b72175", "status": "watching"}
+{"asset": "furniture-document-table", "taskId": "06c28afe-31a9-493d-9b2f-fcc901f81007", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-document-table/model.glb", "bytes": 1287740}
+{"asset": "furniture-multi-drawer-file-cabinet", "taskId": "92e1fb6b-b6b1-4789-9920-8fc09597d9d2", "status": "watching"}
+{"asset": "furniture-archive-shelf", "taskId": "5c62ba74-8c06-48d7-bbf6-18f4c9b72175", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-archive-shelf/model.glb", "bytes": 1077316}
+{"asset": "furniture-offering-table", "taskId": "dc81564f-e481-4b2d-9b8f-df8bc2566ae9", "status": "watching"}
+{"asset": "furniture-multi-drawer-file-cabinet", "taskId": "92e1fb6b-b6b1-4789-9920-8fc09597d9d2", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-multi-drawer-file-cabinet/model.glb", "bytes": 1255264}
+{"asset": "furniture-kneeling-bench", "taskId": "d71a0cdb-525d-4e94-ad7a-bbf7b5ff2cbf", "status": "watching"}
+{"asset": "furniture-offering-table", "taskId": "dc81564f-e481-4b2d-9b8f-df8bc2566ae9", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-offering-table/model.glb", "bytes": 1148812}
+{"asset": "furniture-shrine-cabinet", "taskId": "f59c8d43-edd4-4863-91eb-4e3af13b2d05", "status": "watching"}
+{"asset": "furniture-kneeling-bench", "taskId": "d71a0cdb-525d-4e94-ad7a-bbf7b5ff2cbf", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-kneeling-bench/model.glb", "bytes": 1211856}
+{"asset": "furniture-armchair-curved", "taskId": "0da2ad79-a8fa-485b-84ad-0d1d33b97c95", "status": "watching"}
+{"asset": "furniture-shrine-cabinet", "taskId": "f59c8d43-edd4-4863-91eb-4e3af13b2d05", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-shrine-cabinet/model.glb", "bytes": 1098552}
+{"asset": "furniture-dining-chair", "taskId": "cee32bd5-f05c-4bf8-a84e-17e49990cf35", "status": "watching"}
+{"asset": "furniture-armchair-curved", "taskId": "0da2ad79-a8fa-485b-84ad-0d1d33b97c95", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-armchair-curved/model.glb", "bytes": 1017148}
+{"asset": "furniture-dining-chair", "taskId": "cee32bd5-f05c-4bf8-a84e-17e49990cf35", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/furniture-dining-chair/model.glb", "bytes": 1037664}
+{"asset": "lighting-table-lamp", "taskId": "15ff0661-7f31-49c8-8d49-8f727878a4d4", "status": "watching"}
+{"asset": "lighting-floor-lamp", "taskId": "2b5f716a-9754-48d9-8635-2f9ccf451003", "status": "watching"}
+{"asset": "lighting-table-lamp", "taskId": "15ff0661-7f31-49c8-8d49-8f727878a4d4", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/lighting-table-lamp/model.glb", "bytes": 1201572}
+{"asset": "lighting-strip-double", "taskId": "8d598d51-e2ef-4ab3-9929-63825bbdfae5", "status": "watching"}
+{"asset": "lighting-floor-lamp", "taskId": "2b5f716a-9754-48d9-8635-2f9ccf451003", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/lighting-floor-lamp/model.glb", "bytes": 1170216}
+{"asset": "lighting-chandelier-three-arm", "taskId": "abf25cc8-c0fc-494f-b7dd-390c79a8d0b6", "status": "watching"}
+{"asset": "lighting-strip-double", "taskId": "8d598d51-e2ef-4ab3-9929-63825bbdfae5", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/lighting-strip-double/model.glb", "bytes": 857696}
+{"asset": "lighting-wall-sconce", "taskId": "420f00ca-48c6-4c71-919f-565f4bfba235", "status": "watching"}
+{"asset": "lighting-chandelier-three-arm", "taskId": "abf25cc8-c0fc-494f-b7dd-390c79a8d0b6", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/lighting-chandelier-three-arm/model.glb", "bytes": 981384}
+{"asset": "lighting-desk-lamp-green", "taskId": "97da77ee-07f9-4d70-a084-f48036cc7fa3", "status": "watching"}
+{"asset": "lighting-wall-sconce", "taskId": "420f00ca-48c6-4c71-919f-565f4bfba235", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/lighting-wall-sconce/model.glb", "bytes": 1335864}
+{"asset": "fixture-curtain-oxblood-velvet", "taskId": "5c8ba505-9e50-4b4e-9ac9-41b64ff50f96", "status": "watching"}
+{"asset": "lighting-desk-lamp-green", "taskId": "97da77ee-07f9-4d70-a084-f48036cc7fa3", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/lighting-desk-lamp-green/model.glb", "bytes": 903764}
+{"asset": "lighting-pendant-bare-bulb", "taskId": "ab7e12a1-6988-481c-99ec-080dd868b71f", "status": "watching"}
+{"asset": "fixture-curtain-oxblood-velvet", "taskId": "5c8ba505-9e50-4b4e-9ac9-41b64ff50f96", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/fixture-curtain-oxblood-velvet/model.glb", "bytes": 730816}
+{"asset": "architecture-door-panelled", "taskId": "6bce4837-c844-4e3e-be05-5464d25733f5", "status": "watching"}
+{"asset": "lighting-pendant-bare-bulb", "taskId": "ab7e12a1-6988-481c-99ec-080dd868b71f", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/lighting-pendant-bare-bulb/model.glb", "bytes": 1129768}
+{"asset": "fixture-radiator-cast-iron", "taskId": "8786c3e6-57a0-4d62-b764-f8b92ea855af", "status": "watching"}
+{"asset": "architecture-door-panelled", "taskId": "6bce4837-c844-4e3e-be05-5464d25733f5", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/architecture-door-panelled/model.glb", "bytes": 774372}
+{"asset": "fixture-mirror-aged", "taskId": "612d12f4-a16a-4cba-9463-0eb848d1ba43", "status": "watching"}
+{"asset": "fixture-radiator-cast-iron", "taskId": "8786c3e6-57a0-4d62-b764-f8b92ea855af", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/fixture-radiator-cast-iron/model.glb", "bytes": 1004304}
+{"asset": "architecture-window-four-pane", "taskId": "a77161bf-bf8a-42e8-8aee-4de7f6006204", "status": "watching"}
+{"asset": "fixture-mirror-aged", "taskId": "612d12f4-a16a-4cba-9463-0eb848d1ba43", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/fixture-mirror-aged/model.glb", "bytes": 948696}
+{"asset": "architecture-window-four-pane", "taskId": "a77161bf-bf8a-42e8-8aee-4de7f6006204", "status": "downloaded", "source": "art-source/room-presets/models-v02/output/architecture-window-four-pane/model.glb", "bytes": 1108960}

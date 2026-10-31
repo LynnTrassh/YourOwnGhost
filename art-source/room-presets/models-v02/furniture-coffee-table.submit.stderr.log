@@ -1,0 +1,12 @@
+── Plan ──────────────────────────
+input: /Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/inputs/furniture-coffee-table.png
+model: P1-20260311 — explicit --model
+steps:
+  1. image-to-model  POST /v3/generation/image-to-model — generate a 3D model from one image
+     face_limit=6000 texture=true pbr=false texture_quality="standard" model="P1-20260311"
+deliverables: GLB
+cost impact:
+  · cost not estimated (not zero credits); notes below are cost impacts only; check regional official pricing and balance before running
+──────────────────────────────────
+model: P1-20260311 (explicit --model)
+task created ca91af58-1c79-4c68-bc6d-131d4cb0edf7 (@dark-v02-furniture-coffee-table)

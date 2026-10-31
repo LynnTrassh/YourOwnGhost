@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-dining-chair/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-dining-chair.glb",
+  "sourceBytes": 1037664,
+  "runtimeBytes": 1038008,
+  "sourceSHA256": "20c6689c1307e8cb758147c0ff61ef24af158f2f9a11b7705dd04e6e3386e227",
+  "runtimeSHA256": "2d03bee97e89dd4037ae6f5273e6c5fdc271a069601a94325da59309cf036d38",
+  "triangles": 5964,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3349609375,
+      -0.4990234375,
+      -0.2958984375
+    ],
+    "max": [
+      0.3349609375,
+      0.4990234375,
+      0.2958984375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.22000000000000003,
+      0,
+      -0.23
+    ],
+    "max": [
+      0.22000000000000003,
+      0.96,
+      0.23
+    ],
+    "size": [
+      0.44000000000000006,
+      0.96,
+      0.46
+    ]
+  },
+  "scale": 0.9618786692759295,
+  "scaleXYZ": [
+    0.7434983498349835,
+    0.9618786692759295,
+    0.6866472303206997
+  ],
+  "footprint": [
+    0.44,
+    0.46
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

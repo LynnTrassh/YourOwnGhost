@@ -1,0 +1,22 @@
+{
+  "assetId": "watcher-cat-v1",
+  "purpose": "B12 门边窥视的原创猫形异物造型样板；静态模型，尚不包含窥视或追逐动画。",
+  "reference": "../../docs/art/references/20261031-bedroom-watcher.png",
+  "prompt": "A single original low-poly cat-shaped watcher character for a first-person horror game set inside an old lived-in house. Complete full body, standing upright on two long slim legs, relaxed arms separated from the torso, both feet visible, a short crooked tail. Clearly recognizable cat ears and a geometric cat muzzle. Slightly oversized angular head, one ear folded at the tip, subtly unequal round eyes with dark pupils and a small dull amber iris detail. Closed mouth, quiet attentive expression. Thin elongated torso, worn stitched fabric patches and painted rough surfaces, muted warm gray, faded dusty pink and dark brown. Broad simple polygon planes, readable silhouette, matte low-resolution textures, restrained surface wear. Neutral forward-facing pose, feet on a common ground plane. Isolated character only, no room, door, pedestal, camera effects, text, glow, weapons or gore.",
+  "model": "tripo-p1",
+  "parameters": {
+    "face_limit": 6000,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "standard"
+  },
+  "candidateCount": 1,
+  "targetRuntime": {
+    "format": "GLB",
+    "targetHeightMeters": 1.98,
+    "forwardAxis": "-Z",
+    "origin": "bottom-center",
+    "note": "这些为下载后的归一化和验收目标，不表示生成服务保证尺寸、朝向、原点或骨骼。"
+  },
+  "generationStatus": "succeeded-art-rejected"
+}

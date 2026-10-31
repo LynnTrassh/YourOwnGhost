@@ -1,0 +1,22 @@
+{
+  "assetId": "watcher-cat-v1",
+  "provider": "Tripo",
+  "cliVersion": "0.8.1",
+  "apiVersion": "v3",
+  "model": "P1-20260311",
+  "region": "ov",
+  "status": "succeeded",
+  "submittedAt": "2026-10-30T17:28:37.082Z",
+  "creditsBefore": 3000,
+  "taskId": "2fffe244-5710-4d01-8da2-d91f0c2b9f84",
+  "animationStatus": "not-requested",
+  "creditsConsumed": 40,
+  "creditsAfter": 2960,
+  "artStatus": "not-approved",
+  "review": "用户认为材质不对。浏览器实际观察反光偏强、尾巴过长；预览正面按钮显示侧面，朝向待校正。保留为旧候选，暂不继续修改或接入。",
+  "nextGenerationGate": "先提供图片，经用户明确确认 OK 后才可调用 Tripo API。",
+  "sourceModel": "output/watcher-cat-v1/model.glb",
+  "triangles": 5683,
+  "sourceBytes": 3985844,
+  "animations": 0
+}

@@ -1,0 +1,7 @@
+{
+  "id": "wallpaper-ochre-geometric",
+  "prompt": "Use case: stylized-concept. Create production game material or wall art from the supplied approved scene. Flat orthographic front view (floor seen straight down), even neutral diffuse albedo lighting, no baked shadows, no light gradient, no vignette, no surrounding props, no room perspective, no labels, no watermark. Square high-resolution image. Preserve scene material palette and subtly hand-crafted print character. Exact seamless tiling at left/right and top/bottom edges, no visible border. A seamlessly repeating ochre and dark desaturated umber ornamental geometric trellis wallpaper, subtle printed pigment variation, intact elegant paper. Entire square filled with wallpaper only.",
+  "theme": "shrine",
+  "tile": true,
+  "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-a24038aa-e998-4e1e-96f3-f4abddf40408.png"
+}

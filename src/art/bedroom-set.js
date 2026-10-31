@@ -1,4 +1,6 @@
-export function createBedroomSet({ THREE, plan, root, addBox, addMaterial, unitBox, doorAssembly, resources }) {
+import { attachGeneratedBed } from './generated-bed.js';
+
+export function createBedroomSet({ THREE, plan, root, addBox, addMaterial, unitBox, doorAssembly, resources, interiorArt }) {
   const handledObstacles = new Set();
   const darkWood = addMaterial(0x302a2b);
   const warmWood = addMaterial(0x51413f);
@@ -51,17 +53,21 @@ export function createBedroomSet({ THREE, plan, root, addBox, addMaterial, unitB
       const z = (obstacle.minZ + obstacle.maxZ) / 2;
       const w = obstacle.maxX - obstacle.minX;
       const d = obstacle.maxZ - obstacle.minZ;
-      addBox(w, 0.34, d, x, 0.17, z, darkWood);
-      addBox(w - 0.1, 0.24, d - 0.1, x, 0.43, z, linen);
-      addBox(w - 0.12, 0.17, d * 0.58, x, 0.62, z - d * 0.18, blanket);
-      addBox(w - 0.18, 0.1, d * 0.2, x, 0.62, z + d * 0.34, paper);
+      const fallbackMeshes = [];
+      const bedBox = (...args) => { const object = addBox(...args); fallbackMeshes.push(object); };
+      bedBox(w, 0.34, d, x, 0.17, z, darkWood);
+      bedBox(w - 0.1, 0.24, d - 0.1, x, 0.43, z, linen);
+      bedBox(w - 0.12, 0.17, d * 0.58, x, 0.62, z - d * 0.18, blanket);
+      bedBox(w - 0.18, 0.1, d * 0.2, x, 0.62, z + d * 0.34, paper);
       for (const dx of [-1, 1]) for (const dz of [-1, 1]) {
-        addBox(0.09, 0.2, 0.09, x + dx * (w / 2 - 0.08), 0.1, z + dz * (d / 2 - 0.08), darkWood);
+        bedBox(0.09, 0.2, 0.09, x + dx * (w / 2 - 0.08), 0.1, z + dz * (d / 2 - 0.08), darkWood);
       }
+      if (interiorArt) interiorArt.furnish(obstacle,fallbackMeshes);
+      else attachGeneratedBed({ root, obstacle, resources, fallbackMeshes });
       continue;
     }
 
-    if (obstacle.kind !== 'counter') continue;
+    if (obstacle.kind !== 'counter' || interiorArt) continue;
     handledObstacles.add(obstacle.id);
     const x = (obstacle.minX + obstacle.maxX) / 2;
     const z = (obstacle.minZ + obstacle.maxZ) / 2;
@@ -75,6 +81,8 @@ export function createBedroomSet({ THREE, plan, root, addBox, addMaterial, unitB
       mesh(pull, brass, [x, drawerY, z + d / 2 + 0.04], [1.3, 1, 0.55]);
     }
   }
+
+  if (interiorArt) return { handledObstacles };
 
   // A small plant and a crooked stack of old books make the dresser legible at a glance.
   const dresser = bedroomObstacles.find(item => item.kind === 'counter');

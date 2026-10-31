@@ -1,0 +1,2590 @@
+{
+  "version": 2,
+  "models": [
+    {
+      "id": "furniture-bed-single",
+      "theme": "bedroom",
+      "description": "narrow single wooden bed with dusty rose quilt and one pillow, gently flat bedding, no human shaped bulge",
+      "height": 1.05,
+      "width": 0.8,
+      "depth": 1.9,
+      "prefabId": "bed",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-bed-single.glb",
+      "runtimeBytes": 1627732,
+      "taskId": "a14196e7-a8dc-441b-bbe4-30baa798b8f1",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-bed-single/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-bed-single.glb",
+        "sourceBytes": 1627364,
+        "runtimeBytes": 1627732,
+        "sourceSHA256": "55e0fe7b1eddf282ec93788b3fba752dd0028489a914338e97a3b46fba81d051",
+        "runtimeSHA256": "98c378017fbc2b9cd033094dc2ffecd16491dcb0bf3b78110c302a98adbc6e4d",
+        "triangles": 5760,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4990234375,
+            -0.2744140625,
+            -0.3291015625
+          ],
+          "max": [
+            0.4990234375,
+            0.2744140625,
+            0.3291015625
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.4,
+            0,
+            -0.95
+          ],
+          "max": [
+            0.4,
+            1.05,
+            0.95
+          ],
+          "size": [
+            0.8,
+            1.05,
+            1.9
+          ]
+        },
+        "scale": 1.913167259786477,
+        "scaleXYZ": [
+          1.2154302670623145,
+          1.913167259786477,
+          1.9037181996086106
+        ],
+        "footprint": [
+          0.8,
+          1.9
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-nightstand",
+      "theme": "bedroom",
+      "description": "small walnut two drawer bedside cabinet, empty top, brass handles",
+      "height": 0.78,
+      "width": 0.68,
+      "depth": 0.48,
+      "prefabId": "nightstand",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-nightstand.glb",
+      "runtimeBytes": 1102708,
+      "taskId": "d89b6185-3250-4c40-b42b-58732be9ad6e",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-nightstand/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-nightstand.glb",
+        "sourceBytes": 1102320,
+        "runtimeBytes": 1102708,
+        "sourceSHA256": "c47f07ab6a60ea12c9b211613ca5206f67a386ad4ca7b3db6e3a54f7dbb91546",
+        "runtimeSHA256": "210613805803249bd977e0a30ee9811dfde793e65c7b2c00f8598be2a086578a",
+        "triangles": 5562,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3447265625,
+            -0.4990234673023224,
+            -0.3974609076976776
+          ],
+          "max": [
+            0.3447265625,
+            0.4990234673023224,
+            0.3974609673023224
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.34,
+            0,
+            -0.24000000000000002
+          ],
+          "max": [
+            0.34,
+            0.78,
+            0.24000000000000002
+          ],
+          "size": [
+            0.68,
+            0.78,
+            0.48000000000000004
+          ]
+        },
+        "scale": 0.7815263721129313,
+        "scaleXYZ": [
+          0.8554299754299755,
+          0.7815263721129313,
+          0.6962039660056657
+        ],
+        "footprint": [
+          0.68,
+          0.48
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-dresser",
+      "theme": "bedroom",
+      "description": "wide walnut chest of three drawers, empty top, no mirror attached",
+      "height": 0.88,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "dresser",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-dresser.glb",
+      "runtimeBytes": 950104,
+      "taskId": "0b5a8c56-71b5-49f5-800c-1139ee84b7ce",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-dresser/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-dresser.glb",
+        "sourceBytes": 949720,
+        "runtimeBytes": 950104,
+        "sourceSHA256": "8842204667da4d3075d40400482c45f030896fdbcde9cfe5d4efa0f131722507",
+        "runtimeSHA256": "839d2f6ad4a6976894e7e50bf47f9e2fa04501027bf8db2ee47d26075208e08d",
+        "triangles": 5118,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2841796875,
+            -0.3564453423023224,
+            -0.4990234375
+          ],
+          "max": [
+            0.2841796875,
+            0.3564453423023224,
+            0.4990234673023224
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.32499999999999996
+          ],
+          "max": [
+            0.65,
+            0.88,
+            0.32499999999999996
+          ],
+          "size": [
+            1.3,
+            0.88,
+            0.6499999999999999
+          ]
+        },
+        "scale": 1.234410855695261,
+        "scaleXYZ": [
+          1.3025439924163522,
+          1.234410855695261,
+          1.1436426116838485
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-wardrobe",
+      "theme": "bedroom",
+      "description": "tall walnut double door wardrobe, closed doors, simple crown cornice",
+      "height": 2.25,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "wardrobe",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-wardrobe.glb",
+      "runtimeBytes": 982240,
+      "taskId": "eed055c0-b67a-4037-92e0-e533d21e3b75",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-wardrobe/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-wardrobe.glb",
+        "sourceBytes": 981852,
+        "runtimeBytes": 982240,
+        "sourceSHA256": "fce9465f5a58cdc6dfddb1b9cfe729ec6ac13052bbf8fb8814c7e6fd97f9868a",
+        "runtimeSHA256": "fbdd3aff72c6c5cd60b883bf925c039d8b40c8bbecd0b3238b1b18f7a80d98a0",
+        "triangles": 5156,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1767578125,
+            -0.4990234375,
+            -0.3134765326976776
+          ],
+          "max": [
+            0.1767578125,
+            0.4990234375,
+            0.3134765923023224
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.6500000000000001,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.6500000000000001,
+            2.25,
+            0.325
+          ],
+          "size": [
+            1.3000000000000003,
+            2.25,
+            0.65
+          ]
+        },
+        "scale": 2.2544031311154598,
+        "scaleXYZ": [
+          2.073520249221184,
+          2.2544031311154598,
+          1.838674033149171
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-bookcase",
+      "theme": "bedroom",
+      "description": "tall walnut open bookcase with books and small ceramic ornaments on shelves",
+      "height": 2.25,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "bookcase",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-bookcase.glb",
+      "runtimeBytes": 878952,
+      "taskId": "7dd36082-b6ef-480d-a539-8eba4e709fbd",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-bookcase/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-bookcase.glb",
+        "sourceBytes": 878608,
+        "runtimeBytes": 878952,
+        "sourceSHA256": "a9768b8efdfc3b4c5d53a3298b1bd6475ecb2111be9c2cb82dc6e76a0d61dcf9",
+        "runtimeSHA256": "96c8f396d3f797bb32a29d03a94dcdb42029be724305a8fdee57888472d81412",
+        "triangles": 5809,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1279296875,
+            -0.4990234375,
+            -0.1982421875
+          ],
+          "max": [
+            0.1279296875,
+            0.4990234375,
+            0.1982421875
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.32500000000000007
+          ],
+          "max": [
+            0.65,
+            2.25,
+            0.32500000000000007
+          ],
+          "size": [
+            1.3,
+            2.25,
+            0.6500000000000001
+          ]
+        },
+        "scale": 2.2544031311154598,
+        "scaleXYZ": [
+          3.278817733990148,
+          2.2544031311154598,
+          2.5404580152671756
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-sofa-two-seat",
+      "theme": "parlor",
+      "description": "charcoal fabric two seat sofa with two muted oxblood cushions",
+      "height": 0.94,
+      "width": 1.3,
+      "depth": 0.7,
+      "prefabId": "sofa",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-sofa-two-seat.glb",
+      "runtimeBytes": 793192,
+      "taskId": "16f8e58b-b67c-4b7c-9b5c-bcbb194e71ad",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-sofa-two-seat/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-sofa-two-seat.glb",
+        "sourceBytes": 792828,
+        "runtimeBytes": 793192,
+        "sourceSHA256": "641d85bfea9484267023259dac69e58037ae982d159d9bac8d143662169c1436",
+        "runtimeSHA256": "4d80eef558b7288c5ae7a5ffd8debc2ac9152f0ec96a3f1855f18576d3479dd8",
+        "triangles": 5618,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2333984375,
+            -0.2119140774011612,
+            -0.4990234375
+          ],
+          "max": [
+            0.2333984375,
+            0.2119140774011612,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.35000000000000003
+          ],
+          "max": [
+            0.65,
+            0.94,
+            0.35000000000000003
+          ],
+          "size": [
+            1.3,
+            0.94,
+            0.7000000000000001
+          ]
+        },
+        "scale": 2.2178800283771265,
+        "scaleXYZ": [
+          1.3025440313111547,
+          2.2178800283771265,
+          1.4995815899581588
+        ],
+        "footprint": [
+          1.3,
+          0.7
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-coffee-table",
+      "theme": "parlor",
+      "description": "oval low walnut coffee table with one small brass bowl, no other objects",
+      "height": 0.48,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "low-table",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-coffee-table.glb",
+      "runtimeBytes": 969436,
+      "taskId": "ca91af58-1c79-4c68-bc6d-131d4cb0edf7",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-coffee-table/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-coffee-table.glb",
+        "sourceBytes": 969052,
+        "runtimeBytes": 969436,
+        "sourceSHA256": "8713f48b50f5890814371f0174eab1621451f6f91ae8fad359bfdbed64b2c6c3",
+        "runtimeSHA256": "f9c78375941d871c0a0e1b546da9219321d255db036a66f57baf84a357d66398",
+        "triangles": 6009,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3251953125,
+            -0.1513672024011612,
+            -0.4990234375
+          ],
+          "max": [
+            0.3251953125,
+            0.1513671875,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.65,
+            0.48,
+            0.325
+          ],
+          "size": [
+            1.3,
+            0.48,
+            0.65
+          ]
+        },
+        "scale": 1.5855483090530735,
+        "scaleXYZ": [
+          1.3025440313111547,
+          1.5855483090530735,
+          0.9993993993993993
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-display-cabinet",
+      "theme": "parlor",
+      "description": "tall dark wood glass front display cabinet with a few small antique objects inside",
+      "height": 2.25,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "display-cabinet",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-display-cabinet.glb",
+      "runtimeBytes": 985608,
+      "taskId": "9a6baf5d-62c6-4e2d-9f86-390dbe20a438",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-display-cabinet/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-display-cabinet.glb",
+        "sourceBytes": 985220,
+        "runtimeBytes": 985608,
+        "sourceSHA256": "2abb425d4aa96bfa248e81912dbe9dee4e66ecd484a2947fe102f544f721cbec",
+        "runtimeSHA256": "53a6cf2a1f65e982fb0b54bccf3ff787cbe70240258d303b26e6cd897f76c79c",
+        "triangles": 5830,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1259765625,
+            -0.4990234375,
+            -0.2275390774011612
+          ],
+          "max": [
+            0.1259765625,
+            0.4990234375,
+            0.2275390475988388
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.6499999999999999,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.6499999999999999,
+            2.25,
+            0.325
+          ],
+          "size": [
+            1.2999999999999998,
+            2.25,
+            0.65
+          ]
+        },
+        "scale": 2.2544031311154598,
+        "scaleXYZ": [
+          2.8566523605150214,
+          2.2544031311154598,
+          2.5798449612403096
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-toy-chest",
+      "theme": "nursery",
+      "description": "closed low wood toy chest with faded floral hand painted motifs",
+      "height": 0.68,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "toy-chest",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-toy-chest.glb",
+      "runtimeBytes": 1270520,
+      "taskId": "7c7ea171-534f-4756-bd8c-aad5cfcad00c",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-toy-chest/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-toy-chest.glb",
+        "sourceBytes": 1270156,
+        "runtimeBytes": 1270520,
+        "sourceSHA256": "56e461ea21a97d470b3fd815e8e2c3de0139e4210e2a7813e63992e0e6da29b8",
+        "runtimeSHA256": "6edf38d97ef36caeb6c38e812ec0652e4c832edaccb3b24b1b441760c3adc231",
+        "triangles": 6282,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2783203125,
+            -0.2548828423023224,
+            -0.4990234375
+          ],
+          "max": [
+            0.2783203125,
+            0.2548828423023224,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.65,
+            0.68,
+            0.325
+          ],
+          "size": [
+            1.3,
+            0.68,
+            0.65
+          ]
+        },
+        "scale": 1.3339462041808143,
+        "scaleXYZ": [
+          1.3025440313111547,
+          1.3339462041808143,
+          1.167719298245614
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-child-table",
+      "theme": "nursery",
+      "description": "small faded sage wooden child table, empty tabletop, no chair",
+      "height": 0.6,
+      "width": 1.2,
+      "depth": 0.65,
+      "prefabId": "small-table",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-child-table.glb",
+      "runtimeBytes": 1026236,
+      "taskId": "867103fb-bb04-4d2b-acb2-8ae180125c58",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-child-table/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-child-table.glb",
+        "sourceBytes": 1025896,
+        "runtimeBytes": 1026236,
+        "sourceSHA256": "89b516da4eece08eb9df6e3d2c45162eade99afaa0c2584c97556c5c32814b28",
+        "runtimeSHA256": "7b0a35e755e05ba58a10de61e6c3bb894cea5b0f804819545cd591b7bdda36b0",
+        "triangles": 5621,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4267578125,
+            -0.3544921875,
+            -0.4990234375
+          ],
+          "max": [
+            0.4267578125,
+            0.3544921875,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.6,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.6,
+            0.6,
+            0.325
+          ],
+          "size": [
+            1.2,
+            0.6,
+            0.65
+          ]
+        },
+        "scale": 0.8462809917355372,
+        "scaleXYZ": [
+          1.202348336594912,
+          0.8462809917355372,
+          0.7615560640732265
+        ],
+        "footprint": [
+          1.2,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-toy-shelf",
+      "theme": "nursery",
+      "description": "wood toy shelf with geometric wooden blocks, no dolls or children",
+      "height": 1.6,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "toy-shelf",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-toy-shelf.glb",
+      "runtimeBytes": 959920,
+      "taskId": "dcd13c22-06ee-440d-9236-dff5320bd822",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-toy-shelf/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-toy-shelf.glb",
+        "sourceBytes": 959580,
+        "runtimeBytes": 959920,
+        "sourceSHA256": "2803b25f7680507c58d173b96c6a0038dd3445fe71b793fb6e9b8d510e03529e",
+        "runtimeSHA256": "8c2d401000c56f5056113546d2d75dd27ab6e21b77db3fce08d172e91955aa0b",
+        "triangles": 5908,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1533203125,
+            -0.4306640625,
+            -0.4990234375
+          ],
+          "max": [
+            0.1533203125,
+            0.4306640625,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.65,
+            1.6,
+            0.325
+          ],
+          "size": [
+            1.3,
+            1.6,
+            0.65
+          ]
+        },
+        "scale": 1.8575963718820863,
+        "scaleXYZ": [
+          1.3025440313111547,
+          1.8575963718820863,
+          2.119745222929936
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-examination-cot",
+      "theme": "clinic",
+      "description": "vintage steel examination cot with green upholstery, gently angled raised head section, empty bed, no stairs",
+      "height": 0.9,
+      "width": 1.3,
+      "depth": 0.7,
+      "prefabId": "exam-cot",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-examination-cot.glb",
+      "runtimeBytes": 1017600,
+      "taskId": "cde5f0c6-a9bb-40f5-9b48-2029f1112fcc",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-examination-cot/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-examination-cot.glb",
+        "sourceBytes": 1017236,
+        "runtimeBytes": 1017600,
+        "sourceSHA256": "cedab79e86836b97a9e9cc84a0100114cfa776134fa6c2c3c01259aacf0a675e",
+        "runtimeSHA256": "4f774cd1d95b2ea34539288bb48d84b25b4e6f0c0cc7624f0abebf7566b93fbf",
+        "triangles": 5503,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2275390625,
+            -0.2587890923023224,
+            -0.4990234375
+          ],
+          "max": [
+            0.2275390625,
+            0.2587890923023224,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.35
+          ],
+          "max": [
+            0.65,
+            0.9,
+            0.35
+          ],
+          "size": [
+            1.3,
+            0.9,
+            0.7
+          ]
+        },
+        "scale": 1.738867724279126,
+        "scaleXYZ": [
+          1.3025440313111547,
+          1.738867724279126,
+          1.5381974248927035
+        ],
+        "footprint": [
+          1.3,
+          0.7
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-instrument-trolley",
+      "theme": "clinic",
+      "description": "two tier stainless steel medical trolley on four castors, a few closed metal canisters on upper shelf",
+      "height": 0.9,
+      "width": 1.2,
+      "depth": 0.65,
+      "prefabId": "instrument-cart",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-instrument-trolley.glb",
+      "runtimeBytes": 974052,
+      "taskId": "8b06aba1-86c8-469c-b758-4e63189e7895",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-instrument-trolley/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-instrument-trolley.glb",
+        "sourceBytes": 973632,
+        "runtimeBytes": 974052,
+        "sourceSHA256": "611f4bd5dfe4413e3302a0738127d86d8d2b4bcc4a6e39b2ef4d9ceeea7f9840",
+        "runtimeSHA256": "a123de5a9be20f8448f973167f2b6ce6416f1073878fb5c85bb3a9a8b2783138",
+        "triangles": 5568,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3369140625,
+            -0.4560546576976776,
+            -0.4990234375
+          ],
+          "max": [
+            0.3291015625,
+            0.4560546875,
+            0.4990234076976776
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.6,
+            0,
+            -0.32500000000000007
+          ],
+          "max": [
+            0.6,
+            0.8999999999999999,
+            0.32500000000000007
+          ],
+          "size": [
+            1.2,
+            0.8999999999999999,
+            0.6500000000000001
+          ]
+        },
+        "scale": 0.9867238009768958,
+        "scaleXYZ": [
+          1.2023483724978086,
+          0.9867238009768958,
+          0.9759530791788855
+        ],
+        "footprint": [
+          1.2,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-medicine-cabinet",
+      "theme": "clinic",
+      "description": "tall double frosted glass steel medical cabinet with indistinct bottles behind glass",
+      "height": 2.25,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "medicine-cabinet",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-medicine-cabinet.glb",
+      "runtimeBytes": 820768,
+      "taskId": "29d96d78-7311-43e5-83c7-223cc08a4aea",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-medicine-cabinet/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-medicine-cabinet.glb",
+        "sourceBytes": 820380,
+        "runtimeBytes": 820768,
+        "sourceSHA256": "fad360f34e951e2a473709c9bf94c0db70bd957fa1a75150124b3baf6de36554",
+        "runtimeSHA256": "d3479fe863f71dc9840d321ede1f89a92d3fd26fb5d8e61daa05ef766105e886",
+        "triangles": 5256,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1298828125,
+            -0.4990234375,
+            -0.2900390326976776
+          ],
+          "max": [
+            0.1298828125,
+            0.4990234375,
+            0.2900390923023224
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.6499999999999999,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.6499999999999999,
+            2.25,
+            0.325
+          ],
+          "size": [
+            1.2999999999999998,
+            2.25,
+            0.65
+          ]
+        },
+        "scale": 2.2544031311154598,
+        "scaleXYZ": [
+          2.241077441077441,
+          2.2544031311154598,
+          2.502255639097744
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-medical-file-cabinet",
+      "theme": "clinic",
+      "description": "tall narrow olive enamel steel four drawer medical file cabinet",
+      "height": 2.1,
+      "width": 1.1,
+      "depth": 0.65,
+      "prefabId": "file-cabinet",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-medical-file-cabinet.glb",
+      "runtimeBytes": 774700,
+      "taskId": "a568f79c-ac58-46c6-b6af-c600f33fbb7d",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-medical-file-cabinet/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-medical-file-cabinet.glb",
+        "sourceBytes": 774360,
+        "runtimeBytes": 774700,
+        "sourceSHA256": "2356a32115165c7becedd0773de08809630357c61642afea0d14b3205775c0b9",
+        "runtimeSHA256": "a6d3e8fbc86e9dde696d8735755f4d63c2b79fc0e51c1d235e97d99a4a1339e9",
+        "triangles": 5681,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2607421875,
+            -0.4990234375,
+            -0.1943359225988388
+          ],
+          "max": [
+            0.2607421875,
+            0.4990234375,
+            0.1943359524011612
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.55,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.55,
+            2.1,
+            0.325
+          ],
+          "size": [
+            1.1,
+            2.1,
+            0.65
+          ]
+        },
+        "scale": 2.104109589041096,
+        "scaleXYZ": [
+          2.10936329588015,
+          2.104109589041096,
+          1.6723618090452261
+        ],
+        "footprint": [
+          1.1,
+          0.65
+        ],
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-writing-desk",
+      "theme": "archive",
+      "description": "walnut writing desk with shallow drawers and small neat stack of folders, no lamp or chair",
+      "height": 0.82,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "writing-desk",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-writing-desk.glb",
+      "runtimeBytes": 1413892,
+      "taskId": "f6cd1ad5-e30e-4b6a-9f87-fdc6d8d455e3",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-writing-desk/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-writing-desk.glb",
+        "sourceBytes": 1413512,
+        "runtimeBytes": 1413892,
+        "sourceSHA256": "74a29c434b872ecef5664292b3a2a18e6b36be0d5e446d33b1c94f25dec32e9f",
+        "runtimeSHA256": "cf0d61db6ce346b512699a1f43adc91d31adaae9041471b96caf31b130a80045",
+        "triangles": 5748,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2353515625,
+            -0.2744140923023224,
+            -0.4990234375
+          ],
+          "max": [
+            0.2353515625,
+            0.2744140625,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.32500000000000007
+          ],
+          "max": [
+            0.65,
+            0.82,
+            0.32500000000000007
+          ],
+          "size": [
+            1.3,
+            0.82,
+            0.6500000000000001
+          ]
+        },
+        "scale": 1.4940924455585711,
+        "scaleXYZ": [
+          1.3025440313111547,
+          1.4940924455585711,
+          1.3809128630705394
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-document-table",
+      "theme": "archive",
+      "description": "simple walnut document sorting table with neat small stacks of paper, no chairs",
+      "height": 0.8,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "copy-table",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-document-table.glb",
+      "runtimeBytes": 1288104,
+      "taskId": "06c28afe-31a9-493d-9b2f-fcc901f81007",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-document-table/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-document-table.glb",
+        "sourceBytes": 1287740,
+        "runtimeBytes": 1288104,
+        "sourceSHA256": "05d33bc993d1caa310bc2579b3430a87f1799f420f5a6417f48495c59fea8a3f",
+        "runtimeSHA256": "7aa6a3616759b71d3ba7a06c3137dc28c4ebf3d615b58574d0d0812085ce172e",
+        "triangles": 5535,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2470703125,
+            -0.2119140774011612,
+            -0.4990234375
+          ],
+          "max": [
+            0.2470703125,
+            0.2119140774011612,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.32500000000000007
+          ],
+          "max": [
+            0.65,
+            0.8,
+            0.32500000000000007
+          ],
+          "size": [
+            1.3,
+            0.8,
+            0.6500000000000001
+          ]
+        },
+        "scale": 1.8875574709592569,
+        "scaleXYZ": [
+          1.3025440313111547,
+          1.8875574709592569,
+          1.3154150197628458
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-archive-shelf",
+      "theme": "archive",
+      "description": "tall dark walnut archive shelving with rows of blue-gray folders and one empty shelf bay",
+      "height": 2.25,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "archive-shelf",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-archive-shelf.glb",
+      "runtimeBytes": 1077656,
+      "taskId": "5c62ba74-8c06-48d7-bbf6-18f4c9b72175",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-archive-shelf/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-archive-shelf.glb",
+        "sourceBytes": 1077316,
+        "runtimeBytes": 1077656,
+        "sourceSHA256": "afe8eb3bc60afe0b867fd6f35a653ebae4825a412ff2362a90c5c92e0b7f56da",
+        "runtimeSHA256": "2613f8ab6fca1dc3e5ad869d9cfe2571a498b8ca4d7b78e71d9ffa36e267e186",
+        "triangles": 5157,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1279296875,
+            -0.4521484375,
+            -0.4990234375
+          ],
+          "max": [
+            0.1279296875,
+            0.4521484375,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.65,
+            2.25,
+            0.325
+          ],
+          "size": [
+            1.3,
+            2.25,
+            0.65
+          ]
+        },
+        "scale": 2.488120950323974,
+        "scaleXYZ": [
+          1.3025440313111547,
+          2.488120950323974,
+          2.540458015267175
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-multi-drawer-file-cabinet",
+      "theme": "archive",
+      "description": "tall dark wood archive cabinet with numerous tiny drawers and brass label pulls",
+      "height": 2.25,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "filing-cabinet",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-multi-drawer-file-cabinet.glb",
+      "runtimeBytes": 1255652,
+      "taskId": "92e1fb6b-b6b1-4789-9920-8fc09597d9d2",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-multi-drawer-file-cabinet/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-multi-drawer-file-cabinet.glb",
+        "sourceBytes": 1255264,
+        "runtimeBytes": 1255652,
+        "sourceSHA256": "f2991057010a681e7eee6d0fe6f8ac133a87e03c73ad87f72e06ac9aacd8d8cb",
+        "runtimeSHA256": "08a3f2039e0ebdf7408160b356b3f5f42d2a76bb24a911ee662f72b2da1a4b4d",
+        "triangles": 4899,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1962890625,
+            -0.4970703423023224,
+            -0.4990234076976776
+          ],
+          "max": [
+            0.1962890625,
+            0.4970703423023224,
+            0.4990234673023224
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.32500000000000007
+          ],
+          "max": [
+            0.65,
+            2.25,
+            0.32500000000000007
+          ],
+          "size": [
+            1.3,
+            2.25,
+            0.6500000000000001
+          ]
+        },
+        "scale": 2.263261160964147,
+        "scaleXYZ": [
+          1.3025440313111547,
+          2.263261160964147,
+          1.6557213930348258
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-offering-table",
+      "theme": "shrine",
+      "description": "walnut offering table with restrained carved apron and three small empty ceramic bowls arranged symmetrically",
+      "height": 0.86,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "offering-table",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-offering-table.glb",
+      "runtimeBytes": 1149180,
+      "taskId": "dc81564f-e481-4b2d-9b8f-df8bc2566ae9",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-offering-table/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-offering-table.glb",
+        "sourceBytes": 1148812,
+        "runtimeBytes": 1149180,
+        "sourceSHA256": "d4ee4609776cc10cdbab9e787138b9e79bde946dd12da82e55b1d0b5039345df",
+        "runtimeSHA256": "39d8a5fa3a3ee3bddf9dba416a012122328136389c04a2486ec36893e1710c4d",
+        "triangles": 6256,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1884765625,
+            -0.2275390774011612,
+            -0.4990234375
+          ],
+          "max": [
+            0.1884765625,
+            0.2275390774011612,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.65,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.65,
+            0.86,
+            0.325
+          ],
+          "size": [
+            1.3,
+            0.86,
+            0.65
+          ]
+        },
+        "scale": 1.8897852839663734,
+        "scaleXYZ": [
+          1.3025440313111547,
+          1.8897852839663734,
+          1.7243523316062175
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-kneeling-bench",
+      "theme": "shrine",
+      "description": "low wooden kneeling bench with muted ochre cushion",
+      "height": 0.48,
+      "width": 1.2,
+      "depth": 0.65,
+      "prefabId": "kneeler",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-kneeling-bench.glb",
+      "runtimeBytes": 1212220,
+      "taskId": "d71a0cdb-525d-4e94-ad7a-bbf7b5ff2cbf",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-kneeling-bench/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-kneeling-bench.glb",
+        "sourceBytes": 1211856,
+        "runtimeBytes": 1212220,
+        "sourceSHA256": "87f5a0f0bb9574ec444024a88b5181fe78d018c04e53e070fee36e5fcbfe3fa7",
+        "runtimeSHA256": "f07a5abdfe5e6ebbe9eb522386e2f28a9d4044e2984b2e500a20c5a400a5a32a",
+        "triangles": 5758,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1865234375,
+            -0.1748047024011612,
+            -0.4990234375
+          ],
+          "max": [
+            0.1865234375,
+            0.1748047024011612,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.6,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.6,
+            0.48,
+            0.325
+          ],
+          "size": [
+            1.2,
+            0.48,
+            0.65
+          ]
+        },
+        "scale": 1.372960776817213,
+        "scaleXYZ": [
+          1.202348336594912,
+          1.372960776817213,
+          1.7424083769633505
+        ],
+        "footprint": [
+          1.2,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-shrine-cabinet",
+      "theme": "shrine",
+      "description": "tall closed carved walnut ritual cabinet, geometric lattice doors, avoid letters or readable symbols",
+      "height": 2.25,
+      "width": 1.3,
+      "depth": 0.65,
+      "prefabId": "reliquary",
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-shrine-cabinet.glb",
+      "runtimeBytes": 1098936,
+      "taskId": "f59c8d43-edd4-4863-91eb-4e3af13b2d05",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-shrine-cabinet/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-shrine-cabinet.glb",
+        "sourceBytes": 1098552,
+        "runtimeBytes": 1098936,
+        "sourceSHA256": "05beca32716edd83667608804525eb2c23b1bc19e013cf05312062eeef964005",
+        "runtimeSHA256": "23041186dbf0ed70da310a94e85e0bf1047756a18702ed005471312329b38e34",
+        "triangles": 5487,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1767578125,
+            -0.4990234375,
+            -0.2978515923023224
+          ],
+          "max": [
+            0.1767578125,
+            0.4990234375,
+            0.2978515625
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.6500000000000001,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.6500000000000001,
+            2.25,
+            0.325
+          ],
+          "size": [
+            1.3000000000000003,
+            2.25,
+            0.65
+          ]
+        },
+        "scale": 2.2544031311154598,
+        "scaleXYZ": [
+          2.1822949727895784,
+          2.2544031311154598,
+          1.838674033149171
+        ],
+        "footprint": [
+          1.3,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-armchair-curved",
+      "theme": "parlor",
+      "description": "single charcoal upholstered armchair with curved dark wood arms",
+      "height": 0.95,
+      "width": 0.7,
+      "depth": 0.7,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-armchair-curved.glb",
+      "runtimeBytes": 1017548,
+      "taskId": "0da2ad79-a8fa-485b-84ad-0d1d33b97c95",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-armchair-curved/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-armchair-curved.glb",
+        "sourceBytes": 1017148,
+        "runtimeBytes": 1017548,
+        "sourceSHA256": "7493b982aa2ba30ad6192ed13232a4cb8e1e5b8f46a81b3593be86f894b1267d",
+        "runtimeSHA256": "c3e5141742e51905d9e8f25af99dba45e4d17fe63df0319d56367677362f1efa",
+        "triangles": 5886,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4990234375,
+            -0.4990234673023224,
+            -0.4228515923023224
+          ],
+          "max": [
+            0.4990234375,
+            0.4990234375,
+            0.4228515326976776
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.35,
+            0,
+            -0.35
+          ],
+          "max": [
+            0.35,
+            0.95,
+            0.35
+          ],
+          "size": [
+            0.7,
+            0.95,
+            0.7
+          ]
+        },
+        "scale": 0.9518590713811804,
+        "scaleXYZ": [
+          0.8277136258660507,
+          0.9518590713811804,
+          0.7013698630136986
+        ],
+        "footprint": [
+          0.7,
+          0.7
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "furniture-dining-chair",
+      "theme": "archive",
+      "description": "single worn walnut wooden spindle back desk chair, no cushion",
+      "height": 0.96,
+      "width": 0.44,
+      "depth": 0.46,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/furniture-dining-chair.glb",
+      "runtimeBytes": 1038008,
+      "taskId": "cee32bd5-f05c-4bf8-a84e-17e49990cf35",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-dining-chair/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-dining-chair.glb",
+        "sourceBytes": 1037664,
+        "runtimeBytes": 1038008,
+        "sourceSHA256": "20c6689c1307e8cb758147c0ff61ef24af158f2f9a11b7705dd04e6e3386e227",
+        "runtimeSHA256": "2d03bee97e89dd4037ae6f5273e6c5fdc271a069601a94325da59309cf036d38",
+        "triangles": 5964,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3349609375,
+            -0.4990234375,
+            -0.2958984375
+          ],
+          "max": [
+            0.3349609375,
+            0.4990234375,
+            0.2958984375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.22000000000000003,
+            0,
+            -0.23
+          ],
+          "max": [
+            0.22000000000000003,
+            0.96,
+            0.23
+          ],
+          "size": [
+            0.44000000000000006,
+            0.96,
+            0.46
+          ]
+        },
+        "scale": 0.9618786692759295,
+        "scaleXYZ": [
+          0.7434983498349835,
+          0.9618786692759295,
+          0.6866472303206997
+        ],
+        "footprint": [
+          0.44,
+          0.46
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "lighting-table-lamp",
+      "theme": "bedroom",
+      "description": "single cream pleated shade brass table lamp, lamp switched OFF, preserve ivory lampshade",
+      "height": 0.5,
+      "width": 0.3,
+      "depth": 0.3,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/lighting-table-lamp.glb",
+      "runtimeBytes": 1201936,
+      "taskId": "15ff0661-7f31-49c8-8d49-8f727878a4d4",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-table-lamp/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-table-lamp.glb",
+        "sourceBytes": 1201572,
+        "runtimeBytes": 1201936,
+        "sourceSHA256": "ce937eaad23cc49c05fad9f407e0dda061ed96bfb8ae17ad7fc681ac01b63320",
+        "runtimeSHA256": "6e8e7691753ac6ff2db27142d8fbfdeb7e542922c07fac747620a47ae804a85c",
+        "triangles": 5798,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3212890625,
+            -0.4990234375,
+            -0.3212890625
+          ],
+          "max": [
+            0.3212890625,
+            0.4990234375,
+            0.3212890625
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.15,
+            0,
+            -0.15
+          ],
+          "max": [
+            0.15,
+            0.5,
+            0.15
+          ],
+          "size": [
+            0.3,
+            0.5,
+            0.3
+          ]
+        },
+        "scale": 0.5009784735812133,
+        "scaleXYZ": [
+          0.4668693009118541,
+          0.5009784735812133,
+          0.4668693009118541
+        ],
+        "footprint": [
+          0.3,
+          0.3
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "lighting-floor-lamp",
+      "theme": "parlor",
+      "description": "slender antique bronze floor lamp with dark warm fabric conical shade, switched OFF",
+      "height": 1.65,
+      "width": 0.42,
+      "depth": 0.42,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/lighting-floor-lamp.glb",
+      "runtimeBytes": 1170604,
+      "taskId": "2b5f716a-9754-48d9-8635-2f9ccf451003",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-floor-lamp/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-floor-lamp.glb",
+        "sourceBytes": 1170216,
+        "runtimeBytes": 1170604,
+        "sourceSHA256": "1dc6dcca16e79130a6389179beced1d50493788b36634cc7e6f85de44a6a2b36",
+        "runtimeSHA256": "88776939f87952f0e81adf4313dd6419504d4c7f5b0ab23812811395bd0febbe",
+        "triangles": 5661,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2001953125,
+            -0.4990234375,
+            -0.2001952975988388
+          ],
+          "max": [
+            0.2001953125,
+            0.4990234375,
+            0.2001953274011612
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.21000000000000002,
+            0,
+            -0.21000000000000002
+          ],
+          "max": [
+            0.21000000000000002,
+            1.65,
+            0.21000000000000002
+          ],
+          "size": [
+            0.42000000000000004,
+            1.65,
+            0.42000000000000004
+          ]
+        },
+        "scale": 1.653228962818004,
+        "scaleXYZ": [
+          1.0489756097560976,
+          1.653228962818004,
+          1.0489756097560976
+        ],
+        "footprint": [
+          0.42,
+          0.42
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "lighting-strip-double",
+      "theme": "clinic",
+      "description": "ceiling suspended rectangular metal double fluorescent tube fixture, tubes switched OFF, short mounting stems",
+      "height": 0.18,
+      "width": 1,
+      "depth": 0.25,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/lighting-strip-double.glb",
+      "runtimeBytes": 858060,
+      "taskId": "8d598d51-e2ef-4ab3-9929-63825bbdfae5",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-strip-double/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-strip-double.glb",
+        "sourceBytes": 857696,
+        "runtimeBytes": 858060,
+        "sourceSHA256": "40bf4fb6e9260c488a70d5e364438dc15049dcfaa23a3d6891f634576de016fc",
+        "runtimeSHA256": "c5aa156c55d351ad7d336e1065a97123a24e58111b458f421d4512634d403e29",
+        "triangles": 5531,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1611328125,
+            -0.1611328274011612,
+            -0.4990234375
+          ],
+          "max": [
+            0.1611328125,
+            0.1611328274011612,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.5,
+            0,
+            -0.125
+          ],
+          "max": [
+            0.5,
+            0.18,
+            0.125
+          ],
+          "size": [
+            1,
+            0.18,
+            0.25
+          ]
+        },
+        "scale": 0.5585454028925667,
+        "scaleXYZ": [
+          1.0019569471624266,
+          0.5585454028925667,
+          0.7757575757575756
+        ],
+        "footprint": [
+          1,
+          0.25
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "lighting-chandelier-three-arm",
+      "theme": "shrine",
+      "description": "small aged brass three arm chandelier with three cream glass flower shaped shades, all switched OFF",
+      "height": 0.5,
+      "width": 0.65,
+      "depth": 0.65,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/lighting-chandelier-three-arm.glb",
+      "runtimeBytes": 981728,
+      "taskId": "abf25cc8-c0fc-494f-b7dd-390c79a8d0b6",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-chandelier-three-arm/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-chandelier-three-arm.glb",
+        "sourceBytes": 981384,
+        "runtimeBytes": 981728,
+        "sourceSHA256": "812f77c0253cf89eaee6ca56bb29678eec9ef1d0a650a1add0be1fbd749cddf9",
+        "runtimeSHA256": "0639d5a815a291272dbe736152c46d02150641c82bee1e6f8aebf41dff1f3642",
+        "triangles": 5946,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4384765625,
+            -0.4501953125,
+            -0.4990234375
+          ],
+          "max": [
+            0.4384765625,
+            0.4501953125,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.325,
+            0,
+            -0.32499999999999996
+          ],
+          "max": [
+            0.325,
+            0.5,
+            0.32499999999999996
+          ],
+          "size": [
+            0.65,
+            0.5,
+            0.6499999999999999
+          ]
+        },
+        "scale": 0.5553145336225597,
+        "scaleXYZ": [
+          0.6512720156555774,
+          0.5553145336225597,
+          0.7412026726057905
+        ],
+        "footprint": [
+          0.65,
+          0.65
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "lighting-wall-sconce",
+      "theme": "corridor",
+      "description": "single brass wall sconce with cream fabric shade and curved bracket, switched OFF",
+      "height": 0.4,
+      "width": 0.24,
+      "depth": 0.22,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/lighting-wall-sconce.glb",
+      "runtimeBytes": 1336264,
+      "taskId": "420f00ca-48c6-4c71-919f-565f4bfba235",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-wall-sconce/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-wall-sconce.glb",
+        "sourceBytes": 1335864,
+        "runtimeBytes": 1336264,
+        "sourceSHA256": "54606510706c3d9005134323ba34ff436bcae74c4ec96f17de9fb6f34db4d605",
+        "runtimeSHA256": "447fd19444c87e47b33e15d4e0ba398ce76aef3776945ac484f69fb4a285626a",
+        "triangles": 5788,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2998046875,
+            -0.4990234076976776,
+            -0.3974609673023224
+          ],
+          "max": [
+            0.2998046875,
+            0.4990234375,
+            0.3974609375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.12,
+            0,
+            -0.11000000000000001
+          ],
+          "max": [
+            0.12,
+            0.4,
+            0.11000000000000001
+          ],
+          "size": [
+            0.24,
+            0.4,
+            0.22000000000000003
+          ]
+        },
+        "scale": 0.4007827908326029,
+        "scaleXYZ": [
+          0.30191645059734784,
+          0.4007827908326029,
+          0.3669055374592834
+        ],
+        "footprint": [
+          0.24,
+          0.22
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "lighting-pendant-bare-bulb",
+      "theme": "corridor",
+      "description": "small antique dark metal pendant ceiling light with shallow shade and short hanging stem, switched OFF",
+      "height": 0.35,
+      "width": 0.28,
+      "depth": 0.28,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/lighting-pendant-bare-bulb.glb",
+      "runtimeBytes": 1130160,
+      "taskId": "ab7e12a1-6988-481c-99ec-080dd868b71f",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-pendant-bare-bulb/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-pendant-bare-bulb.glb",
+        "sourceBytes": 1129768,
+        "runtimeBytes": 1130160,
+        "sourceSHA256": "a0f799852b0249c7d0ce2e6ab12871e0d614de34340d2edd011caf4e598de195",
+        "runtimeSHA256": "bba1ce0490d6f63c60dc11a162066bcc4fa3a2871fca9ad55219601e94123a9d",
+        "triangles": 5620,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3310546875,
+            -0.4990234375,
+            -0.3310547173023224
+          ],
+          "max": [
+            0.3310546875,
+            0.4990234375,
+            0.3310546576976776
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.14,
+            0,
+            -0.14
+          ],
+          "max": [
+            0.14,
+            0.35,
+            0.14
+          ],
+          "size": [
+            0.28,
+            0.35,
+            0.28
+          ]
+        },
+        "scale": 0.3506849315068493,
+        "scaleXYZ": [
+          0.42289085545722715,
+          0.3506849315068493,
+          0.42289085545722715
+        ],
+        "footprint": [
+          0.28,
+          0.28
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "lighting-desk-lamp-green",
+      "theme": "archive",
+      "description": "single green glass banker desk lamp on brass base, switched OFF",
+      "height": 0.4,
+      "width": 0.3,
+      "depth": 0.24,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/lighting-desk-lamp-green.glb",
+      "runtimeBytes": 904068,
+      "taskId": "97da77ee-07f9-4d70-a084-f48036cc7fa3",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-desk-lamp-green/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-desk-lamp-green.glb",
+        "sourceBytes": 903764,
+        "runtimeBytes": 904068,
+        "sourceSHA256": "4046bf0d43a72ec6591f4e7a3e80af01b68db071eab4f2590872d3c434fd3c8b",
+        "runtimeSHA256": "da0247ed4c47f10f58bd2442cb7b671cd820651ecb49e606555b5b056da45786",
+        "triangles": 5875,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4912109375,
+            -0.4990234375,
+            -0.3857421875
+          ],
+          "max": [
+            0.4912109375,
+            0.4990234375,
+            0.3857421875
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.15,
+            0,
+            -0.11999999999999998
+          ],
+          "max": [
+            0.15,
+            0.4,
+            0.11999999999999998
+          ],
+          "size": [
+            0.3,
+            0.4,
+            0.23999999999999996
+          ]
+        },
+        "scale": 0.40078277886497066,
+        "scaleXYZ": [
+          0.30536779324055663,
+          0.40078277886497066,
+          0.3110886075949367
+        ],
+        "footprint": [
+          0.3,
+          0.24
+        ],
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "fixture-curtain-oxblood-velvet",
+      "theme": "parlor",
+      "description": "one full height oxblood velvet curtain panel with deep vertical folds and straight hanging hem, single panel only",
+      "height": 2.55,
+      "width": 1.2,
+      "depth": 0.1,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/fixture-curtain-oxblood-velvet.glb",
+      "runtimeBytes": 731200,
+      "taskId": "5c8ba505-9e50-4b4e-9ac9-41b64ff50f96",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/fixture-curtain-oxblood-velvet/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/fixture-curtain-oxblood-velvet.glb",
+        "sourceBytes": 730816,
+        "runtimeBytes": 731200,
+        "sourceSHA256": "af9f88fef97d9bc3c52af9c9b70c9897720d88f8f604c7c67c3d47d7ad627de9",
+        "runtimeSHA256": "a52ebb9e78bb31ae5a7bae4416b406672f71892770d58a49487be04b41ba63f2",
+        "triangles": 6116,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.0966796875,
+            -0.4990234375,
+            -0.2822265923023224
+          ],
+          "max": [
+            0.0966796875,
+            0.4990234375,
+            0.2822265326976776
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.5999999999999999,
+            0,
+            -0.05000000000000001
+          ],
+          "max": [
+            0.5999999999999999,
+            2.55,
+            0.05000000000000001
+          ],
+          "size": [
+            1.1999999999999997,
+            2.55,
+            0.10000000000000002
+          ]
+        },
+        "scale": 2.554990215264188,
+        "scaleXYZ": [
+          2.1259515570934253,
+          2.554990215264188,
+          0.5171717171717172
+        ],
+        "footprint": [
+          1.2,
+          0.1
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "architecture-door-panelled",
+      "theme": "corridor",
+      "description": "one cream painted wooden panelled door leaf with dark brass knob, no frame, closed flat door",
+      "height": 2.4,
+      "width": 1.55,
+      "depth": 0.12,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/architecture-door-panelled.glb",
+      "runtimeBytes": 774736,
+      "taskId": "6bce4837-c844-4e3e-be05-5464d25733f5",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/architecture-door-panelled/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/architecture-door-panelled.glb",
+        "sourceBytes": 774372,
+        "runtimeBytes": 774736,
+        "sourceSHA256": "21b75d926d54665aaeb7d3ce4af315e7b89fc9d85baddcfafcd11bd10b5a9dab",
+        "runtimeSHA256": "3cb07b09aca5fc4126741500f424ce774a139933be694185c8f2ce5b9df2251d",
+        "triangles": 5625,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1650390625,
+            -0.4990234375,
+            -0.1884765774011612
+          ],
+          "max": [
+            0.1650390625,
+            0.4990234375,
+            0.1884765774011612
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.775,
+            0,
+            -0.060000000000000005
+          ],
+          "max": [
+            0.775,
+            2.4,
+            0.060000000000000005
+          ],
+          "size": [
+            1.55,
+            2.4,
+            0.12000000000000001
+          ]
+        },
+        "scale": 2.404696673189824,
+        "scaleXYZ": [
+          4.111916773353002,
+          2.404696673189824,
+          0.36355029585798815
+        ],
+        "footprint": [
+          1.55,
+          0.12
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "fixture-radiator-cast-iron",
+      "theme": "clinic",
+      "description": "single short aged cast iron radiator with eight ribs and feet, no pipe network",
+      "height": 0.65,
+      "width": 0.9,
+      "depth": 0.18,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/fixture-radiator-cast-iron.glb",
+      "runtimeBytes": 1004656,
+      "taskId": "8786c3e6-57a0-4d62-b764-f8b92ea855af",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/fixture-radiator-cast-iron/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/fixture-radiator-cast-iron.glb",
+        "sourceBytes": 1004304,
+        "runtimeBytes": 1004656,
+        "sourceSHA256": "5ec0a44e60efd4883a25a98995089973b3f598673dd202f74d1a04783df3a852",
+        "runtimeSHA256": "246df2365b52dc4b0dcee8a0003389d3004184f04bfead567807594ad8c15a75",
+        "triangles": 5702,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1611328125,
+            -0.4990234375,
+            -0.4931640625
+          ],
+          "max": [
+            0.1611328125,
+            0.4990234375,
+            0.4931640625
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.45,
+            0,
+            -0.09
+          ],
+          "max": [
+            0.45,
+            0.65,
+            0.09
+          ],
+          "size": [
+            0.9,
+            0.65,
+            0.18
+          ]
+        },
+        "scale": 0.6512720156555774,
+        "scaleXYZ": [
+          0.9124752475247525,
+          0.6512720156555774,
+          0.5585454545454545
+        ],
+        "footprint": [
+          0.9,
+          0.18
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "fixture-mirror-aged",
+      "theme": "bedroom",
+      "description": "single tall narrow framed antique mirror, dark walnut frame, neutral gray silver surface without any room reflection",
+      "height": 0.8,
+      "width": 0.5,
+      "depth": 0.06,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/fixture-mirror-aged.glb",
+      "runtimeBytes": 949056,
+      "taskId": "612d12f4-a16a-4cba-9463-0eb848d1ba43",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/fixture-mirror-aged/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/fixture-mirror-aged.glb",
+        "sourceBytes": 948696,
+        "runtimeBytes": 949056,
+        "sourceSHA256": "2374b6ec3ad2dcaf5ad11361cd7534d0dfab799f515915c80fbcd7d10138a2cf",
+        "runtimeSHA256": "95554f8437912b7c9798b0e9a822487e923992f9f0ea1bb1ea35e5f5b66bceac",
+        "triangles": 6070,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.0341796875,
+            -0.4990234375,
+            -0.2705078125
+          ],
+          "max": [
+            0.0341796875,
+            0.4990234375,
+            0.2705078125
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.25,
+            0,
+            -0.030000000000000002
+          ],
+          "max": [
+            0.25,
+            0.8,
+            0.030000000000000002
+          ],
+          "size": [
+            0.5,
+            0.8,
+            0.060000000000000005
+          ]
+        },
+        "scale": 0.8015655577299413,
+        "scaleXYZ": [
+          0.924187725631769,
+          0.8015655577299413,
+          0.8777142857142853
+        ],
+        "footprint": [
+          0.5,
+          0.06
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    },
+    {
+      "id": "architecture-window-four-pane",
+      "theme": "nursery",
+      "description": "single aged painted wooden four pane window frame, closed, neutral translucent gray glass, no scene reflected",
+      "height": 1.2,
+      "width": 1.2,
+      "depth": 0.08,
+      "prefabId": null,
+      "status": "exported",
+      "runtimeUrl": "/art/room-presets/v02/models/architecture-window-four-pane.glb",
+      "runtimeBytes": 1109344,
+      "taskId": "a77161bf-bf8a-42e8-8aee-4de7f6006204",
+      "credits": 50,
+      "inspection": {
+        "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/architecture-window-four-pane/model.glb",
+        "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/architecture-window-four-pane.glb",
+        "sourceBytes": 1108960,
+        "runtimeBytes": 1109344,
+        "sourceSHA256": "0e77a73a2024fefd375a4d7403df62db3a85c224a9a7b8f89e1d95a3299d3bde",
+        "runtimeSHA256": "2322bb96488a358b8968546918062541d71f75a5919719221f84034b953999c2",
+        "triangles": 5306,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.0537109375,
+            -0.4990234673023224,
+            -0.4248047173023224
+          ],
+          "max": [
+            0.0537109375,
+            0.4990234673023224,
+            0.4248046576976776
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.5999999999999999,
+            0,
+            -0.04
+          ],
+          "max": [
+            0.5999999999999999,
+            1.2,
+            0.04
+          ],
+          "size": [
+            1.1999999999999997,
+            1.2,
+            0.08
+          ]
+        },
+        "scale": 1.202348264789125,
+        "scaleXYZ": [
+          1.4124137931034482,
+          1.202348264789125,
+          0.7447272727272723
+        ],
+        "footprint": [
+          1.2,
+          0.08
+        ],
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation"
+      }
+    }
+  ],
+  "textures": [
+    {
+      "id": "art-child-room",
+      "url": "/art/room-presets/v02/textures/art-child-room.png",
+      "bytes": 3925342
+    },
+    {
+      "id": "art-endless-corridor",
+      "url": "/art/room-presets/v02/textures/art-endless-corridor.png",
+      "bytes": 2828901
+    },
+    {
+      "id": "art-misaligned-portrait",
+      "url": "/art/room-presets/v02/textures/art-misaligned-portrait.png",
+      "bytes": 2718457
+    },
+    {
+      "id": "floor-carpet-geometric",
+      "url": "/art/room-presets/v02/textures/floor-carpet-geometric.png",
+      "bytes": 3912788
+    },
+    {
+      "id": "floor-chevron-stone",
+      "url": "/art/room-presets/v02/textures/floor-chevron-stone.png",
+      "bytes": 2868023
+    },
+    {
+      "id": "floor-walnut-planks",
+      "url": "/art/room-presets/v02/textures/floor-walnut-planks.png",
+      "bytes": 2963874
+    },
+    {
+      "id": "wall-clinic-tiles",
+      "url": "/art/room-presets/v02/textures/wall-clinic-tiles.png",
+      "bytes": 2531789
+    },
+    {
+      "id": "wall-damage-plaster",
+      "url": "/art/room-presets/v02/textures/wall-damage-plaster.png",
+      "bytes": 3609003
+    },
+    {
+      "id": "wallpaper-bluegray-stripe",
+      "url": "/art/room-presets/v02/textures/wallpaper-bluegray-stripe.png",
+      "bytes": 2786366
+    },
+    {
+      "id": "wallpaper-dustyrose-floral",
+      "url": "/art/room-presets/v02/textures/wallpaper-dustyrose-floral.png",
+      "bytes": 3254500
+    },
+    {
+      "id": "wallpaper-ochre-geometric",
+      "url": "/art/room-presets/v02/textures/wallpaper-ochre-geometric.png",
+      "bytes": 2749158
+    },
+    {
+      "id": "wallpaper-sage-floral",
+      "url": "/art/room-presets/v02/textures/wallpaper-sage-floral.png",
+      "bytes": 3242754
+    }
+  ],
+  "modelCount": 36,
+  "creditsConsumed": 1800,
+  "runtimeBytes": 75227731
+}

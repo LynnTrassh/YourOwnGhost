@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/architecture-window-four-pane/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/architecture-window-four-pane.glb",
+  "sourceBytes": 1108960,
+  "runtimeBytes": 1109344,
+  "sourceSHA256": "0e77a73a2024fefd375a4d7403df62db3a85c224a9a7b8f89e1d95a3299d3bde",
+  "runtimeSHA256": "2322bb96488a358b8968546918062541d71f75a5919719221f84034b953999c2",
+  "triangles": 5306,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.0537109375,
+      -0.4990234673023224,
+      -0.4248047173023224
+    ],
+    "max": [
+      0.0537109375,
+      0.4990234673023224,
+      0.4248046576976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5999999999999999,
+      0,
+      -0.04
+    ],
+    "max": [
+      0.5999999999999999,
+      1.2,
+      0.04
+    ],
+    "size": [
+      1.1999999999999997,
+      1.2,
+      0.08
+    ]
+  },
+  "scale": 1.202348264789125,
+  "scaleXYZ": [
+    1.4124137931034482,
+    1.202348264789125,
+    0.7447272727272723
+  ],
+  "footprint": [
+    1.2,
+    0.08
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

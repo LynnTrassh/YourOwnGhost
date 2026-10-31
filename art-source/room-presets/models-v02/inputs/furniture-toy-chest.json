@@ -1,0 +1,7 @@
+{
+  "id": "furniture-toy-chest",
+  "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-e8d78c0c-d34e-40cd-b080-545d97e6d39c.png",
+  "input": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/inputs/furniture-toy-chest.png",
+  "prompt": "Use case: background-extraction / precise-object-edit. Produce a clean isolated 3D-model input photograph of ONE specified asset from the supplied approved room concept. Preserve its visible design, silhouette, era, colors, wood grain, upholstery and subtle hand-painted material details. Reconstruct unseen sides conservatively. Remove all other furniture, room architecture, shadows and scene lights. Single object centered fully visible with generous margin, front three-quarter view, plain uniform light gray background, softly and evenly lit neutral albedo, no dramatic dark lighting, no baked directional shadows or strong highlights. Photoreal tangible game prop, NOT drawing or sketch, no outlines, no text, no layout board, no duplicates. Lamp objects unlit. Do not add new grotesque details. Target object: closed low wood toy chest with faded floral hand painted motifs",
+  "approvedScene": "nursery"
+}

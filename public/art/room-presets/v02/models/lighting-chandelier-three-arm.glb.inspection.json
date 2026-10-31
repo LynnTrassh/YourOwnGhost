@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-chandelier-three-arm/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-chandelier-three-arm.glb",
+  "sourceBytes": 981384,
+  "runtimeBytes": 981728,
+  "sourceSHA256": "812f77c0253cf89eaee6ca56bb29678eec9ef1d0a650a1add0be1fbd749cddf9",
+  "runtimeSHA256": "0639d5a815a291272dbe736152c46d02150641c82bee1e6f8aebf41dff1f3642",
+  "triangles": 5946,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4384765625,
+      -0.4501953125,
+      -0.4990234375
+    ],
+    "max": [
+      0.4384765625,
+      0.4501953125,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.325,
+      0,
+      -0.32499999999999996
+    ],
+    "max": [
+      0.325,
+      0.5,
+      0.32499999999999996
+    ],
+    "size": [
+      0.65,
+      0.5,
+      0.6499999999999999
+    ]
+  },
+  "scale": 0.5553145336225597,
+  "scaleXYZ": [
+    0.6512720156555774,
+    0.5553145336225597,
+    0.7412026726057905
+  ],
+  "footprint": [
+    0.65,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

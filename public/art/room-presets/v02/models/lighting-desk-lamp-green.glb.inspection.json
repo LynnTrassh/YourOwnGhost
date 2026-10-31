@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-desk-lamp-green/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-desk-lamp-green.glb",
+  "sourceBytes": 903764,
+  "runtimeBytes": 904068,
+  "sourceSHA256": "4046bf0d43a72ec6591f4e7a3e80af01b68db071eab4f2590872d3c434fd3c8b",
+  "runtimeSHA256": "da0247ed4c47f10f58bd2442cb7b671cd820651ecb49e606555b5b056da45786",
+  "triangles": 5875,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4912109375,
+      -0.4990234375,
+      -0.3857421875
+    ],
+    "max": [
+      0.4912109375,
+      0.4990234375,
+      0.3857421875
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.15,
+      0,
+      -0.11999999999999998
+    ],
+    "max": [
+      0.15,
+      0.4,
+      0.11999999999999998
+    ],
+    "size": [
+      0.3,
+      0.4,
+      0.23999999999999996
+    ]
+  },
+  "scale": 0.40078277886497066,
+  "scaleXYZ": [
+    0.30536779324055663,
+    0.40078277886497066,
+    0.3110886075949367
+  ],
+  "footprint": [
+    0.3,
+    0.24
+  ],
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

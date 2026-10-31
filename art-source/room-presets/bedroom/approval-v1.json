@@ -1,0 +1,26 @@
+{
+  "presetId": "bedroom",
+  "image": "approval-v1.png",
+  "mode": "built-in-imagegen",
+  "status": "bed-only-trial-authorized",
+  "tripoSubmitted": true,
+  "assets": [
+    "bed",
+    "nightstand",
+    "dresser",
+    "wardrobe",
+    "bookcase"
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: art-director approval board for the FIRST old-bedroom furniture prefab kit in a first-person psychological horror game. This is a 2D concept sheet, NOT a model output.\nInput image: the supplied old-bedroom/cat triptych is a STYLE reference for lived-in old-house furniture, faded quilt, dirty plaster and restrained low-poly game realism. Do NOT include its cat creature and do not copy its three-panel composition.\nCreate a polished landscape 3:2 production concept board on a flat warm-gray paper background. Exactly FIVE clearly separated complete furniture objects, each in a consistent three-quarter view, all silhouettes uncropped with ample negative space. Three objects in the top row (bed, nightstand, dresser), two tall objects in the bottom row (wardrobe, bookcase). Consistent scale within each row, larger tall assets on lower row. Each is a convincing textured low-poly game prop with broad geometric planes and fully matte aged surfaces. Soft neutral diffuse light makes material readable, small grounding shadows, no dramatic spotlight.\nObjects:\n01 A very narrow old SINGLE BED about 0.8m wide and 1.9m long. A low worn dark wooden frame with an understated tarnished iron headboard, thin sagging off-white mattress, creased dusty mauve-pink patchwork quilt pulled back just enough to leave a strangely precise human-shaped depression WITHOUT any person or body. One old discolored pillow. No appendages extending beyond the bed footprint. Quietly unsettling abandoned lived-in quality, no cute motifs.\n02 A low wide two-drawer BEDSIDE CABINET with warm-gray brown aged wood, dirty matte finish, one small old bedside lamp on top unlit with tilted yellowed fabric shade. Very slightly mismatched drawer pulls and an unnaturally narrow black seam at one drawer. Compact silhouette, realistic useful furniture.\n03 A low wide DRESSER / chest of drawers, pale desaturated brown-gray wood, faded finish, subtly misaligned drawer fronts, dull brass pulls. Sparse stack of old books and a tiny desiccated plant fully within its top footprint. No mirror.\n04 A tall narrow WARDROBE, nearly 2.3m tall, aged dark gray-brown paneled wood, slightly unequal door panels, one recessed panel has faint rubbed-away floral wallpaper, a hairline pitch-black seam between shut doors. No creature inside, no visible eyes, no moving doors. Keep it a complete believable solid object.\n05 A tall narrow BOOKCASE about 2.3m tall, dark worn wood, four shelves of yellowed books and restrained old domestic objects. Most spines face inward; one shelf is unnaturally empty with a clean rectangular absence in the dust. Slightly warped uprights but structurally upright, no collapse.\nAll storage furniture keeps a slim rectangular footprint, about 1.3m width and .7m depth, tall units about2.3m high; do not stretch household furniture into monsters.\nUnified palette: weathered warm gray and brown wood, faded gray-pink/mauve cloth, dirty cream paper, tiny dull brass accents. Horror is quiet domestic wrongness: abnormal absence, obsessive repetition, slight asymmetry. No bloody splatter, no occult symbol decoration, no giant human faces, no eyeballs on furniture, no glossy plastic, no wet shine, no pristine luxury, no fluffy cute toys, no fantasy spikes. Paper/fabric patchwork cat style does NOT mean all furniture becomes papercraft: wood reads wood, cloth reads cloth.\nTypography: restrained neat Chinese title at top “旧卧室 · 预设 01”. Small legible labels under each object exactly “床”, “床头柜”, “斗柜”, “衣柜”, “书柜”. Small subtitle “材质与造型确认图”. No other text, no dimensions, no logos or watermark. Not a room layout plan; no walls, floor platforms or room architecture.",
+  "note": "套装材质/造型确认图；非精确比例图或地图布局图。模型输入需分项，实际尺寸依 plan 占位整理。",
+  "approvedAssets": [
+    "bed"
+  ],
+  "remainingAssets": [
+    "nightstand",
+    "dresser",
+    "wardrobe",
+    "bookcase"
+  ],
+  "userFeedback": "整体有手绘感；用户要求先生成床放入实际场景判断，整套尚未最终批准。"
+}

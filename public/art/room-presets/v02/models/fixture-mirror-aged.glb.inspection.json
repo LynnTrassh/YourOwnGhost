@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/fixture-mirror-aged/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/fixture-mirror-aged.glb",
+  "sourceBytes": 948696,
+  "runtimeBytes": 949056,
+  "sourceSHA256": "2374b6ec3ad2dcaf5ad11361cd7534d0dfab799f515915c80fbcd7d10138a2cf",
+  "runtimeSHA256": "95554f8437912b7c9798b0e9a822487e923992f9f0ea1bb1ea35e5f5b66bceac",
+  "triangles": 6070,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.0341796875,
+      -0.4990234375,
+      -0.2705078125
+    ],
+    "max": [
+      0.0341796875,
+      0.4990234375,
+      0.2705078125
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.25,
+      0,
+      -0.030000000000000002
+    ],
+    "max": [
+      0.25,
+      0.8,
+      0.030000000000000002
+    ],
+    "size": [
+      0.5,
+      0.8,
+      0.060000000000000005
+    ]
+  },
+  "scale": 0.8015655577299413,
+  "scaleXYZ": [
+    0.924187725631769,
+    0.8015655577299413,
+    0.8777142857142853
+  ],
+  "footprint": [
+    0.5,
+    0.06
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

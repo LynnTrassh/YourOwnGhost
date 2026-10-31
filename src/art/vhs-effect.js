@@ -30,6 +30,11 @@ const VHSShader = {
       return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);
     }
 
+    float sampleLuma(vec2 sampleUv) {
+      vec3 sampleColor = texture2D(tDiffuse, sampleUv).rgb;
+      return dot(sampleColor, vec3(0.2126, 0.7152, 0.0722));
+    }
+
     void main() {
       float amount = clamp(uIntensity, 0.0, 1.0);
       vec2 pixel = 1.0 / max(uResolution, vec2(1.0));
@@ -48,10 +53,49 @@ const VHSShader = {
       vec2 radial = vec2((uv.x - 0.5) * aspect, uv.y - 0.5);
       float radius = length(radial);
       float angle = atan(radial.y, radial.x);
-      float rimRadius = 0.305 + 0.003 * sin(angle * 5.0 + uTime * 0.7)
-        + 0.002 * sin(angle * 9.0 - uTime * 0.43);
-      float flashlightRim = (1.0 - smoothstep(0.035, 0.075, abs(radius - rimRadius))) * uFlashlight;
-      vec2 radialDirection = vec2(radial.x / max(aspect, 0.001), radial.y) / max(radius, 0.001);
+      vec2 ray = radial / max(radius, 0.001);
+      vec2 radialDirection = vec2(ray.x / max(aspect, 0.001), ray.y);
+
+      // Find the real light falloff on this screen-space ray instead of assuming
+      // the flashlight always lands on a wall at one fixed distance. This also
+      // follows the oval/uneven edge when the beam hits a surface obliquely.
+      float strongestDrop = 0.0;
+      float detectedRimRadius = 0.305;
+      float previousRadius = 0.10;
+      float previousLuma = sampleLuma(vec2(
+        0.5 + ray.x * previousRadius / max(aspect, 0.001),
+        0.5 + ray.y * previousRadius
+      ));
+      for (int i = 0; i < 10; i++) {
+        float sampleRadius = 0.165 + float(i) * 0.065;
+        vec2 sampleUv = vec2(
+          0.5 + ray.x * sampleRadius / max(aspect, 0.001),
+          0.5 + ray.y * sampleRadius
+        );
+        float sampleBrightness = sampleLuma(sampleUv);
+        float drop = previousLuma - sampleBrightness;
+        if (drop > strongestDrop) {
+          strongestDrop = drop;
+          detectedRimRadius = (previousRadius + sampleRadius) * 0.5;
+        }
+        previousRadius = sampleRadius;
+        previousLuma = sampleBrightness;
+      }
+
+      float rimRadius = detectedRimRadius
+        + 0.0018 * sin(angle * 5.0 + uTime * 0.7)
+        + 0.0012 * sin(angle * 9.0 - uTime * 0.43);
+      float edgeConfidence = smoothstep(0.012, 0.065, strongestDrop);
+      float detectedRim = (1.0 - smoothstep(0.018, 0.052, abs(radius - rimRadius)))
+        * edgeConfidence;
+      // Retain a faint version of the familiar near-field edge when the image
+      // has no clear brightness transition to detect.
+      float fallbackRadius = 0.305
+        + 0.002 * sin(angle * 5.0 + uTime * 0.7)
+        + 0.001 * sin(angle * 9.0 - uTime * 0.43);
+      float fallbackRim = (1.0 - smoothstep(0.035, 0.075, abs(radius - fallbackRadius)))
+        * (1.0 - edgeConfidence) * 0.18;
+      float flashlightRim = (detectedRim + fallbackRim) * uFlashlight;
 
       float globalChromaShift = pixel.x * amount * 0.12;
       float edgeShiftPixels = 17.0 * amount * flashlightRim;

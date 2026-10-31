@@ -1,0 +1,43 @@
+{
+  "assetId": "watcher-cat-v2",
+  "region": "ov",
+  "status": "succeeded",
+  "submittedAt": "2026-10-30T17:36:52.935747+00:00",
+  "creditsBefore": 2960,
+  "approvedImage": "watcher-cat-approval-v2.png",
+  "model": "P1-20260311",
+  "taskId": "9dfda88f-5811-4213-bb1b-895cc8b7d5d2",
+  "creditsConsumed": 50,
+  "sourceModel": "output/watcher-cat-v2/model.glb",
+  "runtimeModel": "../../public/art/generated/watcher-cat-v2.glb",
+  "runtimeBytes": 1387476,
+  "triangles": 5912,
+  "runtimeBounds": {
+    "min": [
+      -0.4049119521587096,
+      0,
+      -0.5134050880626223
+    ],
+    "max": [
+      0.4049119521587096,
+      1.98,
+      0.5134050880626223
+    ],
+    "size": [
+      0.8098239043174192,
+      1.98,
+      1.0268101761252446
+    ]
+  },
+  "forwardAxis": "-Z",
+  "origin": "bottom-center-of-bounds",
+  "material": {
+    "metallicFactor": 0,
+    "roughnessFactor": 1,
+    "embeddedColorTextures": 1
+  },
+  "animations": 0,
+  "skins": 0,
+  "visualObservation": "浏览器已实际查看正、侧、背面。保留偏斜长颈、不对称眼窝和细长四肢；材质已设置哑光。背面由单图生成推断，纹理较正面少。尚待用户对实际模型验收。",
+  "gameIntegration": "not-integrated"
+}

@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-floor-lamp/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-floor-lamp.glb",
+  "sourceBytes": 1170216,
+  "runtimeBytes": 1170604,
+  "sourceSHA256": "1dc6dcca16e79130a6389179beced1d50493788b36634cc7e6f85de44a6a2b36",
+  "runtimeSHA256": "88776939f87952f0e81adf4313dd6419504d4c7f5b0ab23812811395bd0febbe",
+  "triangles": 5661,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2001953125,
+      -0.4990234375,
+      -0.2001952975988388
+    ],
+    "max": [
+      0.2001953125,
+      0.4990234375,
+      0.2001953274011612
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.21000000000000002,
+      0,
+      -0.21000000000000002
+    ],
+    "max": [
+      0.21000000000000002,
+      1.65,
+      0.21000000000000002
+    ],
+    "size": [
+      0.42000000000000004,
+      1.65,
+      0.42000000000000004
+    ]
+  },
+  "scale": 1.653228962818004,
+  "scaleXYZ": [
+    1.0489756097560976,
+    1.653228962818004,
+    1.0489756097560976
+  ],
+  "footprint": [
+    0.42,
+    0.42
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

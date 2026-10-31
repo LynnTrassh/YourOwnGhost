@@ -1,0 +1,46 @@
+{
+  "source": "art-source/tripo/output/watcher-cat-v1/model.glb",
+  "destination": "public/art/generated/watcher-cat-v1.glb",
+  "sourceBytes": 3985844,
+  "runtimeBytes": 3986232,
+  "sourceSHA256": "e56d6eb64e090afa772a860f9dd08900f89ac26f59552f8457c4b130ddf30634",
+  "runtimeSHA256": "f640990cc0c961b8331750318bf78c51165ce03312f0ac6c8f61a481a4b833be",
+  "triangles": 5683,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4072265625,
+      -0.4990234375,
+      -0.1923827975988388
+    ],
+    "max": [
+      0.4072265625,
+      0.4990234375,
+      0.1923828125
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.8078864970645793,
+      0,
+      -0.381663390307044
+    ],
+    "max": [
+      0.8078864970645793,
+      1.98,
+      0.381663390307044
+    ],
+    "size": [
+      1.6157729941291585,
+      1.98,
+      0.763326780614088
+    ]
+  },
+  "scale": 1.9838747553816047,
+  "yawDegrees": 180,
+  "orientationStatus": "requires-visual-confirmation"
+}

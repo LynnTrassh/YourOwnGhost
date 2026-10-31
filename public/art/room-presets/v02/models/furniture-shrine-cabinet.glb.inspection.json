@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-shrine-cabinet/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-shrine-cabinet.glb",
+  "sourceBytes": 1098552,
+  "runtimeBytes": 1098936,
+  "sourceSHA256": "05beca32716edd83667608804525eb2c23b1bc19e013cf05312062eeef964005",
+  "runtimeSHA256": "23041186dbf0ed70da310a94e85e0bf1047756a18702ed005471312329b38e34",
+  "triangles": 5487,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1767578125,
+      -0.4990234375,
+      -0.2978515923023224
+    ],
+    "max": [
+      0.1767578125,
+      0.4990234375,
+      0.2978515625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6500000000000001,
+      0,
+      -0.325
+    ],
+    "max": [
+      0.6500000000000001,
+      2.25,
+      0.325
+    ],
+    "size": [
+      1.3000000000000003,
+      2.25,
+      0.65
+    ]
+  },
+  "scale": 2.2544031311154598,
+  "scaleXYZ": [
+    2.1822949727895784,
+    2.2544031311154598,
+    1.838674033149171
+  ],
+  "footprint": [
+    1.3,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

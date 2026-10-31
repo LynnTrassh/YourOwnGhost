@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-pendant-bare-bulb/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-pendant-bare-bulb.glb",
+  "sourceBytes": 1129768,
+  "runtimeBytes": 1130160,
+  "sourceSHA256": "a0f799852b0249c7d0ce2e6ab12871e0d614de34340d2edd011caf4e598de195",
+  "runtimeSHA256": "bba1ce0490d6f63c60dc11a162066bcc4fa3a2871fca9ad55219601e94123a9d",
+  "triangles": 5620,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3310546875,
+      -0.4990234375,
+      -0.3310547173023224
+    ],
+    "max": [
+      0.3310546875,
+      0.4990234375,
+      0.3310546576976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.14,
+      0,
+      -0.14
+    ],
+    "max": [
+      0.14,
+      0.35,
+      0.14
+    ],
+    "size": [
+      0.28,
+      0.35,
+      0.28
+    ]
+  },
+  "scale": 0.3506849315068493,
+  "scaleXYZ": [
+    0.42289085545722715,
+    0.3506849315068493,
+    0.42289085545722715
+  ],
+  "footprint": [
+    0.28,
+    0.28
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

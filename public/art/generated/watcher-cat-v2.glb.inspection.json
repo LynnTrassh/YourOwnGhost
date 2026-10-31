@@ -1,0 +1,48 @@
+{
+  "source": "art-source/tripo/output/watcher-cat-v2/model.glb",
+  "destination": "public/art/generated/watcher-cat-v2.glb",
+  "sourceBytes": 1387088,
+  "runtimeBytes": 1387476,
+  "sourceSHA256": "a986f67909f19931ecb38ca25f06e55b74dab00180e769218bf8d0f34c09b68e",
+  "runtimeSHA256": "6740306b7f4ed96ae9eda2e3147ad241985e65b6d2e94a469a389a0dee2b508b",
+  "triangles": 5912,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2587890625,
+      -0.4990234375,
+      -0.2041015625
+    ],
+    "max": [
+      0.2587890625,
+      0.4990234375,
+      0.2041015774011612
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.4049119521587096,
+      0,
+      -0.5134050880626223
+    ],
+    "max": [
+      0.4049119521587096,
+      1.98,
+      0.5134050880626223
+    ],
+    "size": [
+      0.8098239043174192,
+      1.98,
+      1.0268101761252446
+    ]
+  },
+  "scale": 1.9838747553816047,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "visually-confirmed-front-negative-Z",
+  "visualObservation": "通过本地三维预览正、侧、背面观察确认；不代表游戏验收。"
+}

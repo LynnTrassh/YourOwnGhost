@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-table-lamp/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-table-lamp.glb",
+  "sourceBytes": 1201572,
+  "runtimeBytes": 1201936,
+  "sourceSHA256": "ce937eaad23cc49c05fad9f407e0dda061ed96bfb8ae17ad7fc681ac01b63320",
+  "runtimeSHA256": "6e8e7691753ac6ff2db27142d8fbfdeb7e542922c07fac747620a47ae804a85c",
+  "triangles": 5798,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3212890625,
+      -0.4990234375,
+      -0.3212890625
+    ],
+    "max": [
+      0.3212890625,
+      0.4990234375,
+      0.3212890625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.15,
+      0,
+      -0.15
+    ],
+    "max": [
+      0.15,
+      0.5,
+      0.15
+    ],
+    "size": [
+      0.3,
+      0.5,
+      0.3
+    ]
+  },
+  "scale": 0.5009784735812133,
+  "scaleXYZ": [
+    0.4668693009118541,
+    0.5009784735812133,
+    0.4668693009118541
+  ],
+  "footprint": [
+    0.3,
+    0.3
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

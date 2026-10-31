@@ -1,0 +1,57 @@
+{
+  "source": "art-source/room-presets/bedroom/output/bed-v1/model.glb",
+  "destination": "public/art/room-presets/bedroom/bed-v1.glb",
+  "sourceBytes": 1038868,
+  "runtimeBytes": 1039212,
+  "sourceSHA256": "54b0a8707e246491ec8e46cfb6d45829a2ad979744eb01afb623e71ae031d2de",
+  "runtimeSHA256": "fb522576f8982a8d5a18aaec9465b6ae38e07b27754ea5c01853c40c2d458426",
+  "triangles": 9383,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.2197265625,
+      -0.3349609375
+    ],
+    "max": [
+      0.4990234375,
+      0.2197265625,
+      0.3349609375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.39999999999999997,
+      0,
+      -0.95
+    ],
+    "max": [
+      0.39999999999999997,
+      1.05,
+      0.95
+    ],
+    "size": [
+      0.7999999999999999,
+      1.05,
+      1.9
+    ]
+  },
+  "scale": 2.3893333333333335,
+  "scaleXYZ": [
+    1.1941690962099123,
+    2.3893333333333335,
+    1.9037181996086106
+  ],
+  "footprint": [
+    0.8,
+    1.9
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "visually-confirmed-headboard-positive-Z",
+  "inGameObservation": "游戏卧室实景已看到模型，用户美术验收待定。"
+}

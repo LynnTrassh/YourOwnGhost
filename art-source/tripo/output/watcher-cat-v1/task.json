@@ -1,0 +1,29 @@
+{
+  "task_id": "2fffe244-5710-4d01-8da2-d91f0c2b9f84",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A single original low-poly cat-shaped watcher character for a first-person horror game set inside an old lived-in house. Complete full body, standing upright on two long slim legs, relaxed arms separated from the torso, both feet visible, a short crooked tail. Clearly recognizable cat ears and a geometric cat muzzle. Slightly oversized angular head, one ear folded at the tip, subtly unequal round eyes with dark pupils and a small dull amber iris detail. Closed mouth, quiet attentive expression. Thin elongated torso, worn stitched fabric patches and painted rough surfaces, muted warm gray, faded dusty pink and dark brown. Broad simple polygon planes, readable silhouette, matte low-resolution textures, restrained surface wear. Neutral forward-facing pose, feet on a common ground plane. Isolated character only, no room, door, pedestal, camera effects, text, glow, weapons or gore.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 6000,
+    "model_version": "P1-20260311",
+    "texture_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 40,
+  "created_at": "2026-10-30T17:28:43.800942Z",
+  "completed_at": "2026-10-30T17:29:38.232896Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

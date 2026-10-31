@@ -1,0 +1,898 @@
+{
+  "version": 3,
+  "purpose": "Texture size and encoding optimization; unchanged geometry and bounds",
+  "models": [
+    {
+      "id": "furniture-bed-single",
+      "url": "/art/room-presets/v03/models/furniture-bed-single.glb",
+      "beforeBytes": 1627732,
+      "bytes": 691140,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5760,
+      "sha256": "a204c518328a010a3e4441d1f7022ff36ebea2fc9808f122b2400557453439c9"
+    },
+    {
+      "id": "furniture-nightstand",
+      "url": "/art/room-presets/v03/models/furniture-nightstand.glb",
+      "beforeBytes": 1102708,
+      "bytes": 480056,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5562,
+      "sha256": "de1bd819d0e4936ea380d4ce39ce6a10c2bd939e810acc539ffbf55bb970f258"
+    },
+    {
+      "id": "furniture-dresser",
+      "url": "/art/room-presets/v03/models/furniture-dresser.glb",
+      "beforeBytes": 950104,
+      "bytes": 422708,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5118,
+      "sha256": "5ca19defc0e372766320c6e938499cf5194b2245f77a50e4ce065b4f3bed2d75"
+    },
+    {
+      "id": "furniture-wardrobe",
+      "url": "/art/room-presets/v03/models/furniture-wardrobe.glb",
+      "beforeBytes": 982240,
+      "bytes": 469776,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5156,
+      "sha256": "8e0632fcecafd5f47c25b5eda596a4bf9d0bfb9e0facecd9f55789fdbe3efed1"
+    },
+    {
+      "id": "furniture-bookcase",
+      "url": "/art/room-presets/v03/models/furniture-bookcase.glb",
+      "beforeBytes": 878952,
+      "bytes": 414408,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5809,
+      "sha256": "0933d840c12f22db8ab91ed7d7fe347cc679dd131e7b164874782412f1825555"
+    },
+    {
+      "id": "furniture-sofa-two-seat",
+      "url": "/art/room-presets/v03/models/furniture-sofa-two-seat.glb",
+      "beforeBytes": 793192,
+      "bytes": 411416,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5618,
+      "sha256": "3271982ac7a4d7b028b670e0e1aa3f6c534096dc41b363d42fd2fd71620c5108"
+    },
+    {
+      "id": "furniture-coffee-table",
+      "url": "/art/room-presets/v03/models/furniture-coffee-table.glb",
+      "beforeBytes": 969436,
+      "bytes": 473344,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 6009,
+      "sha256": "e71340618137ce9f318e22b248258c4d78393c31bda31acc19260add31df2b16"
+    },
+    {
+      "id": "furniture-display-cabinet",
+      "url": "/art/room-presets/v03/models/furniture-display-cabinet.glb",
+      "beforeBytes": 985608,
+      "bytes": 532224,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5830,
+      "sha256": "9622cbdc12daa17a9b2835a68b23f9f1e8fad01b402f26b936e4f84895b6500e"
+    },
+    {
+      "id": "furniture-toy-chest",
+      "url": "/art/room-presets/v03/models/furniture-toy-chest.glb",
+      "beforeBytes": 1270520,
+      "bytes": 566172,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 6282,
+      "sha256": "aec86fe45d350e2205e7481ce4ab3606e89830a4cea31a323bb976cec01e3bde"
+    },
+    {
+      "id": "furniture-child-table",
+      "url": "/art/room-presets/v03/models/furniture-child-table.glb",
+      "beforeBytes": 1026236,
+      "bytes": 473576,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5621,
+      "sha256": "00dbfb6cdf7295d075018864147c916c423ab28fb62552bcfd4a59326c052123"
+    },
+    {
+      "id": "furniture-toy-shelf",
+      "url": "/art/room-presets/v03/models/furniture-toy-shelf.glb",
+      "beforeBytes": 959920,
+      "bytes": 441904,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5908,
+      "sha256": "ee9efa7038181ac67c753b457a4dad28e0d8085b10ef9b40ed3f72b9e8f5c988"
+    },
+    {
+      "id": "furniture-examination-cot",
+      "url": "/art/room-presets/v03/models/furniture-examination-cot.glb",
+      "beforeBytes": 1017600,
+      "bytes": 526196,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5503,
+      "sha256": "fbabc376b0e59822a95c169f51a0a391cda13b14a5b3aba92c60a490401360ac"
+    },
+    {
+      "id": "furniture-instrument-trolley",
+      "url": "/art/room-presets/v03/models/furniture-instrument-trolley.glb",
+      "beforeBytes": 974052,
+      "bytes": 492088,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5568,
+      "sha256": "85ddda72eacc82b74079fa3f30f69d53fba457dd2df5bfdf6a130e17384e7526"
+    },
+    {
+      "id": "furniture-medicine-cabinet",
+      "url": "/art/room-presets/v03/models/furniture-medicine-cabinet.glb",
+      "beforeBytes": 820768,
+      "bytes": 429800,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5256,
+      "sha256": "38c2cadf70d78985f7d37044802963b887296ec143c5dcc67d4bd61471100105"
+    },
+    {
+      "id": "furniture-medical-file-cabinet",
+      "url": "/art/room-presets/v03/models/furniture-medical-file-cabinet.glb",
+      "beforeBytes": 774700,
+      "bytes": 408984,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5681,
+      "sha256": "2d3b1b43348d7e2f121eaa7fa47ca43b4ee37ca47d2238b5a25f666464e55270"
+    },
+    {
+      "id": "furniture-writing-desk",
+      "url": "/art/room-presets/v03/models/furniture-writing-desk.glb",
+      "beforeBytes": 1413892,
+      "bytes": 647824,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5748,
+      "sha256": "941199b04ec6e1abbfb240a2036af5fa1adbd2ba9b0c8b755d203e5b2c42a66f"
+    },
+    {
+      "id": "furniture-document-table",
+      "url": "/art/room-presets/v03/models/furniture-document-table.glb",
+      "beforeBytes": 1288104,
+      "bytes": 626448,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5535,
+      "sha256": "a604455886553467f7a35a4ed976d43bfa6477f3ece65bae37cc9af9181e939b"
+    },
+    {
+      "id": "furniture-archive-shelf",
+      "url": "/art/room-presets/v03/models/furniture-archive-shelf.glb",
+      "beforeBytes": 1077656,
+      "bytes": 475812,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5157,
+      "sha256": "74b4918abae5359d81f39c646112a6544363fc6882f34a19fd6990d98ace5858"
+    },
+    {
+      "id": "furniture-multi-drawer-file-cabinet",
+      "url": "/art/room-presets/v03/models/furniture-multi-drawer-file-cabinet.glb",
+      "beforeBytes": 1255652,
+      "bytes": 575916,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 4899,
+      "sha256": "da3d28cf8e0525e61c8a6b90ad6e13b258eccc8a3e84fb2d77b444f78870b263"
+    },
+    {
+      "id": "furniture-offering-table",
+      "url": "/art/room-presets/v03/models/furniture-offering-table.glb",
+      "beforeBytes": 1149180,
+      "bytes": 525188,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 6256,
+      "sha256": "e2c5e8fad7e40a1f4e59de4607fbcbae42059909050c19c78f3bb904fb3205e4"
+    },
+    {
+      "id": "furniture-kneeling-bench",
+      "url": "/art/room-presets/v03/models/furniture-kneeling-bench.glb",
+      "beforeBytes": 1212220,
+      "bytes": 514240,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5758,
+      "sha256": "7b8336bb8fce89420ad33116abc8b6685a5949e2c678ccfe1c074bea4c554537"
+    },
+    {
+      "id": "furniture-shrine-cabinet",
+      "url": "/art/room-presets/v03/models/furniture-shrine-cabinet.glb",
+      "beforeBytes": 1098936,
+      "bytes": 498536,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5487,
+      "sha256": "74faa8f46906da16c3dc47eace2a02bd1c094a92837f46cc17a4c9e94e08d49b"
+    },
+    {
+      "id": "furniture-armchair-curved",
+      "url": "/art/room-presets/v03/models/furniture-armchair-curved.glb",
+      "beforeBytes": 1017548,
+      "bytes": 471648,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5886,
+      "sha256": "155e5a353b7e5b5af1652135687b4197f4242b0412522211ced721c1e85808aa"
+    },
+    {
+      "id": "furniture-dining-chair",
+      "url": "/art/room-presets/v03/models/furniture-dining-chair.glb",
+      "beforeBytes": 1038008,
+      "bytes": 441656,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5964,
+      "sha256": "bb6c6ec157517fcc508ce68848c28227444003b92f68c21b4894290b4de22d9b"
+    },
+    {
+      "id": "lighting-table-lamp",
+      "url": "/art/room-presets/v03/models/lighting-table-lamp.glb",
+      "beforeBytes": 1201936,
+      "bytes": 344740,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            512,
+            512
+          ]
+        }
+      ],
+      "triangles": 5798,
+      "sha256": "d62b8353867c840b557179447175254089d4c15e79c5fda5384f679d85b8d6bc"
+    },
+    {
+      "id": "lighting-floor-lamp",
+      "url": "/art/room-presets/v03/models/lighting-floor-lamp.glb",
+      "beforeBytes": 1170604,
+      "bytes": 366832,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            512,
+            512
+          ]
+        }
+      ],
+      "triangles": 5661,
+      "sha256": "d0270a54de60b3316139ff7bae28215eabb680094aacef59da4a6bc2d62feff8"
+    },
+    {
+      "id": "lighting-strip-double",
+      "url": "/art/room-presets/v03/models/lighting-strip-double.glb",
+      "beforeBytes": 858060,
+      "bytes": 314980,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            512,
+            512
+          ]
+        }
+      ],
+      "triangles": 5531,
+      "sha256": "74f86ec85a3c3005ad0da4d6ea39e44f5aaca5db7c232dc276bb3f8c3b78cbe7"
+    },
+    {
+      "id": "lighting-chandelier-three-arm",
+      "url": "/art/room-presets/v03/models/lighting-chandelier-three-arm.glb",
+      "beforeBytes": 981728,
+      "bytes": 296208,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            512,
+            512
+          ]
+        }
+      ],
+      "triangles": 5946,
+      "sha256": "3b9a1d8bf2fb99576e7607e0c7e7e8e07286f276b8db84ad9286318642a11946"
+    },
+    {
+      "id": "lighting-wall-sconce",
+      "url": "/art/room-presets/v03/models/lighting-wall-sconce.glb",
+      "beforeBytes": 1336264,
+      "bytes": 337132,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            512,
+            512
+          ]
+        }
+      ],
+      "triangles": 5788,
+      "sha256": "47607ff257dc2a1d79626de7bdb66a0d53c039e179cae47929bb828857de0799"
+    },
+    {
+      "id": "lighting-pendant-bare-bulb",
+      "url": "/art/room-presets/v03/models/lighting-pendant-bare-bulb.glb",
+      "beforeBytes": 1130160,
+      "bytes": 359324,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            512,
+            512
+          ]
+        }
+      ],
+      "triangles": 5620,
+      "sha256": "251c14a9cfdfbd7021a33bb0143d1ce4721412ac45c73a7d6e67305da9a74f03"
+    },
+    {
+      "id": "lighting-desk-lamp-green",
+      "url": "/art/room-presets/v03/models/lighting-desk-lamp-green.glb",
+      "beforeBytes": 904068,
+      "bytes": 286892,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            512,
+            512
+          ]
+        }
+      ],
+      "triangles": 5875,
+      "sha256": "52f21bf6328060452c5651bf7494649784546154062de594479272b41e7660af"
+    },
+    {
+      "id": "fixture-curtain-oxblood-velvet",
+      "url": "/art/room-presets/v03/models/fixture-curtain-oxblood-velvet.glb",
+      "beforeBytes": 731200,
+      "bytes": 450800,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 6116,
+      "sha256": "e17cde9fae637d174998a0dda62c2b2fc40fd1dc9a658e6d54dcbc7af8f342f0"
+    },
+    {
+      "id": "architecture-door-panelled",
+      "url": "/art/room-presets/v03/models/architecture-door-panelled.glb",
+      "beforeBytes": 774736,
+      "bytes": 398528,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5625,
+      "sha256": "1b7a20373f8accf283a8d88bbdb1ed8e7a97d38c13a9d655f841fde7caf06659"
+    },
+    {
+      "id": "fixture-radiator-cast-iron",
+      "url": "/art/room-presets/v03/models/fixture-radiator-cast-iron.glb",
+      "beforeBytes": 1004656,
+      "bytes": 459076,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5702,
+      "sha256": "7727207478fa9f15b396d74b5d5797bc6afa4a5eaedb16e8920174eede370cd1"
+    },
+    {
+      "id": "fixture-mirror-aged",
+      "url": "/art/room-presets/v03/models/fixture-mirror-aged.glb",
+      "beforeBytes": 949056,
+      "bytes": 492348,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 6070,
+      "sha256": "e83697443154795c6f02ef315fa247e46f65cb54cbdaa9018e4c3c5deb66fb64"
+    },
+    {
+      "id": "architecture-window-four-pane",
+      "url": "/art/room-presets/v03/models/architecture-window-four-pane.glb",
+      "beforeBytes": 1109344,
+      "bytes": 522336,
+      "textureSizes": [
+        {
+          "before": [
+            2048,
+            2048
+          ],
+          "after": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "triangles": 5306,
+      "sha256": "6e49c86cf09a95cadb93abfff7b5d749e5d74aea053c8473c2d2b935baac5ca8"
+    }
+  ],
+  "textures": [
+    {
+      "id": "art-child-room",
+      "url": "/art/room-presets/v03/textures/art-child-room.jpg",
+      "beforeBytes": 3925342,
+      "bytes": 591856,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "art-endless-corridor",
+      "url": "/art/room-presets/v03/textures/art-endless-corridor.jpg",
+      "beforeBytes": 2828901,
+      "bytes": 392175,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "art-misaligned-portrait",
+      "url": "/art/room-presets/v03/textures/art-misaligned-portrait.jpg",
+      "beforeBytes": 2718457,
+      "bytes": 346838,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "floor-carpet-geometric",
+      "url": "/art/room-presets/v03/textures/floor-carpet-geometric.jpg",
+      "beforeBytes": 3912788,
+      "bytes": 630461,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "floor-chevron-stone",
+      "url": "/art/room-presets/v03/textures/floor-chevron-stone.jpg",
+      "beforeBytes": 2868023,
+      "bytes": 446604,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "floor-walnut-planks",
+      "url": "/art/room-presets/v03/textures/floor-walnut-planks.jpg",
+      "beforeBytes": 2963874,
+      "bytes": 384578,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "wall-clinic-tiles",
+      "url": "/art/room-presets/v03/textures/wall-clinic-tiles.jpg",
+      "beforeBytes": 2531789,
+      "bytes": 285854,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "wall-damage-plaster",
+      "url": "/art/room-presets/v03/textures/wall-damage-plaster.jpg",
+      "beforeBytes": 3609003,
+      "bytes": 472967,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "wallpaper-bluegray-stripe",
+      "url": "/art/room-presets/v03/textures/wallpaper-bluegray-stripe.jpg",
+      "beforeBytes": 2786366,
+      "bytes": 355494,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "wallpaper-dustyrose-floral",
+      "url": "/art/room-presets/v03/textures/wallpaper-dustyrose-floral.jpg",
+      "beforeBytes": 3254500,
+      "bytes": 500263,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "wallpaper-ochre-geometric",
+      "url": "/art/room-presets/v03/textures/wallpaper-ochre-geometric.jpg",
+      "beforeBytes": 2749158,
+      "bytes": 389157,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "wallpaper-sage-floral",
+      "url": "/art/room-presets/v03/textures/wallpaper-sage-floral.jpg",
+      "beforeBytes": 3242754,
+      "bytes": 505531,
+      "beforeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "beforeBytes": 75227731,
+  "bytes": 21942034
+}

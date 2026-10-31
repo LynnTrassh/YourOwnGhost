@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-multi-drawer-file-cabinet/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-multi-drawer-file-cabinet.glb",
+  "sourceBytes": 1255264,
+  "runtimeBytes": 1255652,
+  "sourceSHA256": "f2991057010a681e7eee6d0fe6f8ac133a87e03c73ad87f72e06ac9aacd8d8cb",
+  "runtimeSHA256": "08a3f2039e0ebdf7408160b356b3f5f42d2a76bb24a911ee662f72b2da1a4b4d",
+  "triangles": 4899,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1962890625,
+      -0.4970703423023224,
+      -0.4990234076976776
+    ],
+    "max": [
+      0.1962890625,
+      0.4970703423023224,
+      0.4990234673023224
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.65,
+      0,
+      -0.32500000000000007
+    ],
+    "max": [
+      0.65,
+      2.25,
+      0.32500000000000007
+    ],
+    "size": [
+      1.3,
+      2.25,
+      0.6500000000000001
+    ]
+  },
+  "scale": 2.263261160964147,
+  "scaleXYZ": [
+    1.3025440313111547,
+    2.263261160964147,
+    1.6557213930348258
+  ],
+  "footprint": [
+    1.3,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

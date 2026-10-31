@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/fixture-curtain-oxblood-velvet/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/fixture-curtain-oxblood-velvet.glb",
+  "sourceBytes": 730816,
+  "runtimeBytes": 731200,
+  "sourceSHA256": "af9f88fef97d9bc3c52af9c9b70c9897720d88f8f604c7c67c3d47d7ad627de9",
+  "runtimeSHA256": "a52ebb9e78bb31ae5a7bae4416b406672f71892770d58a49487be04b41ba63f2",
+  "triangles": 6116,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.0966796875,
+      -0.4990234375,
+      -0.2822265923023224
+    ],
+    "max": [
+      0.0966796875,
+      0.4990234375,
+      0.2822265326976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5999999999999999,
+      0,
+      -0.05000000000000001
+    ],
+    "max": [
+      0.5999999999999999,
+      2.55,
+      0.05000000000000001
+    ],
+    "size": [
+      1.1999999999999997,
+      2.55,
+      0.10000000000000002
+    ]
+  },
+  "scale": 2.554990215264188,
+  "scaleXYZ": [
+    2.1259515570934253,
+    2.554990215264188,
+    0.5171717171717172
+  ],
+  "footprint": [
+    1.2,
+    0.1
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

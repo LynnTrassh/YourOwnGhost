@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-child-table/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-child-table.glb",
+  "sourceBytes": 1025896,
+  "runtimeBytes": 1026236,
+  "sourceSHA256": "89b516da4eece08eb9df6e3d2c45162eade99afaa0c2584c97556c5c32814b28",
+  "runtimeSHA256": "7b0a35e755e05ba58a10de61e6c3bb894cea5b0f804819545cd591b7bdda36b0",
+  "triangles": 5621,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4267578125,
+      -0.3544921875,
+      -0.4990234375
+    ],
+    "max": [
+      0.4267578125,
+      0.3544921875,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6,
+      0,
+      -0.325
+    ],
+    "max": [
+      0.6,
+      0.6,
+      0.325
+    ],
+    "size": [
+      1.2,
+      0.6,
+      0.65
+    ]
+  },
+  "scale": 0.8462809917355372,
+  "scaleXYZ": [
+    1.202348336594912,
+    0.8462809917355372,
+    0.7615560640732265
+  ],
+  "footprint": [
+    1.2,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

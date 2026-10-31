@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-writing-desk/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-writing-desk.glb",
+  "sourceBytes": 1413512,
+  "runtimeBytes": 1413892,
+  "sourceSHA256": "74a29c434b872ecef5664292b3a2a18e6b36be0d5e446d33b1c94f25dec32e9f",
+  "runtimeSHA256": "cf0d61db6ce346b512699a1f43adc91d31adaae9041471b96caf31b130a80045",
+  "triangles": 5748,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2353515625,
+      -0.2744140923023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.2353515625,
+      0.2744140625,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.65,
+      0,
+      -0.32500000000000007
+    ],
+    "max": [
+      0.65,
+      0.82,
+      0.32500000000000007
+    ],
+    "size": [
+      1.3,
+      0.82,
+      0.6500000000000001
+    ]
+  },
+  "scale": 1.4940924455585711,
+  "scaleXYZ": [
+    1.3025440313111547,
+    1.4940924455585711,
+    1.3809128630705394
+  ],
+  "footprint": [
+    1.3,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

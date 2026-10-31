@@ -1,0 +1,33 @@
+{
+  "dry_run": true,
+  "valid": true,
+  "input": "A single original low-poly cat-shaped watcher character for a first-person horror game set inside an old lived-in house. Complete full body, standing upright on two long slim legs, relaxed arms separated from the torso, both feet visible, a short crooked tail. Clearly recognizable cat ears and a geometric cat muzzle. Slightly oversized angular head, one ear folded at the tip, subtly unequal round eyes with dark pupils and a small dull amber iris detail. Closed mouth, quiet attentive expression. Thin elongated torso, worn stitched fabric patches and painted rough surfaces, muted warm gray, faded dusty pink and dark brown. Broad simple polygon planes, readable silhouette, matte low-resolution textures, restrained surface wear. Neutral forward-facing pose, feet on a common ground plane. Isolated character only, no room, door, pedestal, camera effects, text, glow, weapons or gore.",
+  "model": "P1-20260311",
+  "model_reason": "explicit --model",
+  "steps": [
+    {
+      "name": "text-to-model",
+      "endpoint": "/v3/generation/text-to-model",
+      "task_type": "text_to_model",
+      "payload": {
+        "prompt": "A single original low-poly cat-shaped watcher character for a first-person horror game set inside an old lived-in house. Complete full body, standing upright on two long slim legs, relaxed arms separated from the torso, both feet visible, a short crooked tail. Clearly recognizable cat ears and a geometric cat muzzle. Slightly oversized angular head, one ear folded at the tip, subtly unequal round eyes with dark pupils and a small dull amber iris detail. Closed mouth, quiet attentive expression. Thin elongated torso, worn stitched fabric patches and painted rough surfaces, muted warm gray, faded dusty pink and dark brown. Broad simple polygon planes, readable silhouette, matte low-resolution textures, restrained surface wear. Neutral forward-facing pose, feet on a common ground plane. Isolated character only, no room, door, pedestal, camera effects, text, glow, weapons or gore.",
+        "face_limit": 6000,
+        "texture": true,
+        "pbr": true,
+        "texture_quality": "standard",
+        "model": "P1-20260311"
+      }
+    }
+  ],
+  "pending_uploads": [],
+  "deliverables": [
+    "GLB"
+  ],
+  "candidates": 1,
+  "warnings": [],
+  "errors": [],
+  "generation_credits_estimate": null,
+  "cost_notes": [
+    "cost not estimated (not zero credits); notes below are cost impacts only; check regional official pricing and balance before running"
+  ]
+}

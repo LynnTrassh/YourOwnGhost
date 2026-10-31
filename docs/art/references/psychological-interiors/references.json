@@ -1,0 +1,50 @@
+[
+  {
+    "file": "red-curtain-lounge-close.png",
+    "source": "user-attached visual reference",
+    "use": "style research only, not runtime assets",
+    "readability": "visible"
+  },
+  {
+    "file": "red-curtain-lounge-wide.png",
+    "source": "user-attached visual reference",
+    "use": "style research only, not runtime assets",
+    "readability": "visible"
+  },
+  {
+    "file": "unreadable-black-reference.png",
+    "source": "user-attached visual reference",
+    "use": "style research only, not runtime assets",
+    "readability": "black/unusable"
+  },
+  {
+    "file": "red-lit-symmetrical-interior.png",
+    "source": "user-attached visual reference",
+    "use": "style research only, not runtime assets",
+    "readability": "visible"
+  },
+  {
+    "file": "floral-wallpaper-corridor.png",
+    "source": "user-attached visual reference",
+    "use": "style research only, not runtime assets",
+    "readability": "visible"
+  },
+  {
+    "file": "geometric-carpet-corridor.png",
+    "source": "user-attached visual reference",
+    "use": "style research only, not runtime assets",
+    "readability": "visible"
+  },
+  {
+    "file": "green-red-bathrooms-and-corridor.png",
+    "source": "user-attached visual reference",
+    "use": "style research only, not runtime assets",
+    "readability": "visible"
+  },
+  {
+    "file": "hotel-interior-color-montage.png",
+    "source": "user-attached visual reference",
+    "use": "style research only, not runtime assets",
+    "readability": "visible"
+  }
+]

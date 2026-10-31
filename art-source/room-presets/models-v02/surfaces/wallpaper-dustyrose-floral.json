@@ -1,0 +1,7 @@
+{
+  "id": "wallpaper-dustyrose-floral",
+  "prompt": "Use case: stylized-concept. Create production game material or wall art from the supplied approved scene. Flat orthographic front view (floor seen straight down), even neutral diffuse albedo lighting, no baked shadows, no light gradient, no vignette, no surrounding props, no room perspective, no labels, no watermark. Square high-resolution image. Preserve scene material palette and subtly hand-crafted print character. Exact seamless tiling at left/right and top/bottom edges, no visible border. A seamlessly repeating muted dusty rose small floral wallpaper print on desaturated warm ivory, faded but largely intact, delicate uneven printing. Entire square filled with paper pattern only.",
+  "theme": "nursery",
+  "tile": true,
+  "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-c680eb34-a156-4f39-99e5-ea26f8b7e682.png"
+}

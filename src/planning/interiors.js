@@ -1,14 +1,18 @@
 import { CELL_SIZE, DIRECTIONS, keyOf, rotate } from './templates.js';
+import { createRoomPrefabPicker, ROOM_PRESET_IDS } from './room-presets.js';
 
 export const INTERIOR_NAMES = { island: '中央绕行', empty: '留白空间', staggered: '交错柜体', perimeter: '沿墙陈设' };
 
 // Layout randomness is independent of shell geometry and cosmetic decoration.
-export function populateInteriors(plan, rng, decor) {
+export function populateInteriors(plan, rng, decor, presetOverrides = {}) {
   for (const room of plan.rooms) {
     const types = Object.keys(INTERIOR_NAMES);
     const sampledType = types[Math.floor(rng() * types.length)], sampledTurn = Math.floor(rng() * 4);
     const type = room.id === 'bedroom' ? 'island' : sampledType;
     const turn = room.id === 'bedroom' ? 3 : sampledTurn;
+    const presetId = room.id === 'bedroom' ? 'bedroom'
+      : presetOverrides[room.id] ?? presetOverrides.default ?? ROOM_PRESET_IDS[Math.floor(rng() * ROOM_PRESET_IDS.length)];
+    const choosePrefab = createRoomPrefabPicker(presetId, rng);
     const tiles = new Set(room.cells.map(([x,z]) => keyOf(x,z)));
     const protectedTiles = new Set([keyOf(...room.center)]);
     for (const door of plan.doors) for (const [x,z] of door.cells) if (tiles.has(keyOf(x,z))) protectedTiles.add(keyOf(x,z));
@@ -29,7 +33,7 @@ export function populateInteriors(plan, rng, decor) {
         : boundary && (lx + lz) % 2 === 0;
       if (fits && !protectedTiles.has(keyOf(x,z))) candidates.push([x,z]);
     }
-    room.interior = { type, rotation: turn, obstacleIds: [] };
+    room.interior = { type, rotation: turn, presetId, obstacleIds: [] };
     for (const [x,z] of candidates) {
       const key = keyOf(x,z); blocked.add(key);
       // Conservatively reserve an entire tile per furnishing. All remaining tiles,
@@ -49,7 +53,7 @@ export function populateInteriors(plan, rng, decor) {
       const inset=kind==='bookshelf' ? CELL_SIZE/2-.09-.025-.7/2 : 0;
       const cx=x*CELL_SIZE+(wallNormal?.[0]??0)*inset,cz=z*CELL_SIZE+(wallNormal?.[1]??0)*inset;
       const id = `${room.id}-interior-${room.interior.obstacleIds.length}`;
-      plan.obstacles.push({ id, roomId: room.id, kind, height: kind === 'counter' ? 1 : 2.3,
+      plan.obstacles.push({ id, roomId: room.id, kind, prefabId: choosePrefab(kind), height: kind === 'counter' ? 1 : 2.3,
         minX: cx-w/2, maxX: cx+w/2, minZ: cz-d/2, maxZ: cz+d/2,
         ...(kind==='bookshelf' ? {wallNormal:[...wallNormal]} : {}),
         decoration: room.id === 'bedroom' ? .35 : decor() });

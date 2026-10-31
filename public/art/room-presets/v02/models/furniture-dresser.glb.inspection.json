@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-dresser/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-dresser.glb",
+  "sourceBytes": 949720,
+  "runtimeBytes": 950104,
+  "sourceSHA256": "8842204667da4d3075d40400482c45f030896fdbcde9cfe5d4efa0f131722507",
+  "runtimeSHA256": "839d2f6ad4a6976894e7e50bf47f9e2fa04501027bf8db2ee47d26075208e08d",
+  "triangles": 5118,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2841796875,
+      -0.3564453423023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.2841796875,
+      0.3564453423023224,
+      0.4990234673023224
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.65,
+      0,
+      -0.32499999999999996
+    ],
+    "max": [
+      0.65,
+      0.88,
+      0.32499999999999996
+    ],
+    "size": [
+      1.3,
+      0.88,
+      0.6499999999999999
+    ]
+  },
+  "scale": 1.234410855695261,
+  "scaleXYZ": [
+    1.3025439924163522,
+    1.234410855695261,
+    1.1436426116838485
+  ],
+  "footprint": [
+    1.3,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

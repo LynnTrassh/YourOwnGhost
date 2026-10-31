@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/architecture-door-panelled/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/architecture-door-panelled.glb",
+  "sourceBytes": 774372,
+  "runtimeBytes": 774736,
+  "sourceSHA256": "21b75d926d54665aaeb7d3ce4af315e7b89fc9d85baddcfafcd11bd10b5a9dab",
+  "runtimeSHA256": "3cb07b09aca5fc4126741500f424ce774a139933be694185c8f2ce5b9df2251d",
+  "triangles": 5625,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1650390625,
+      -0.4990234375,
+      -0.1884765774011612
+    ],
+    "max": [
+      0.1650390625,
+      0.4990234375,
+      0.1884765774011612
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.775,
+      0,
+      -0.060000000000000005
+    ],
+    "max": [
+      0.775,
+      2.4,
+      0.060000000000000005
+    ],
+    "size": [
+      1.55,
+      2.4,
+      0.12000000000000001
+    ]
+  },
+  "scale": 2.404696673189824,
+  "scaleXYZ": [
+    4.111916773353002,
+    2.404696673189824,
+    0.36355029585798815
+  ],
+  "footprint": [
+    1.55,
+    0.12
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

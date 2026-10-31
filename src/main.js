@@ -12,6 +12,7 @@ import { drawMap } from './map-preview.js';
 import { roomIdAt } from './story/spatial.js';
 import { stepThreat } from './threat.js';
 import { createVhsEffect } from './art/vhs-effect.js';
+import { configureInteriorFlashlight } from './art/interior-lighting.js';
 import { interpretFear, selectFear } from './personalization/fear.js';
 import { interpretLike, selectLike } from './personalization/like.js';
 import { contentTokensForInputs } from './personalization/content-tokens.js';
@@ -77,12 +78,12 @@ if (renderer && plan) {
 }
 
 function init() {
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
   renderer.setSize(innerWidth, innerHeight);
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFShadowMap;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.05;
+  renderer.toneMappingExposure = 1.1025;
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x111916);
   scene.fog = new THREE.Fog(0x111916, 9, 24);
@@ -205,6 +206,7 @@ function init() {
   flashlight.castShadow = true;
   flashlight.shadow.mapSize.set(1024, 1024);
   flashlight.shadow.bias = -.0003;
+  configureInteriorFlashlight(flashlight);
   camera.add(flashlight, flashlight.target);
   const ray = new THREE.Raycaster(); ray.far = 2.25;
 

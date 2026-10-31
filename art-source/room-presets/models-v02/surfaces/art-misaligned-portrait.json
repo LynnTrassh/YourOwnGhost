@@ -1,0 +1,7 @@
+{
+  "id": "art-misaligned-portrait",
+  "prompt": "Use case: stylized-concept. Create production game material or wall art from the supplied approved scene. Flat orthographic front view (floor seen straight down), even neutral diffuse albedo lighting, no baked shadows, no light gradient, no vignette, no surrounding props, no room perspective, no labels, no watermark. Square high-resolution image. Preserve scene material palette and subtly hand-crafted print character. Extract ONLY the painted portrait artwork: an original antique oil portrait of a woman in muted brown clothes looking sideways, subtly uneasy gaze, elegant subdued brushwork. Flat rectangular artwork fills image edge to edge, no frame, no wall, no surrounding room.",
+  "theme": "bedroom",
+  "tile": false,
+  "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-342c34e5-97e5-4de2-bd76-79c545955792.png"
+}

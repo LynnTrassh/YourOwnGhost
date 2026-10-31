@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-bed-single/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-bed-single.glb",
+  "sourceBytes": 1627364,
+  "runtimeBytes": 1627732,
+  "sourceSHA256": "55e0fe7b1eddf282ec93788b3fba752dd0028489a914338e97a3b46fba81d051",
+  "runtimeSHA256": "98c378017fbc2b9cd033094dc2ffecd16491dcb0bf3b78110c302a98adbc6e4d",
+  "triangles": 5760,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.2744140625,
+      -0.3291015625
+    ],
+    "max": [
+      0.4990234375,
+      0.2744140625,
+      0.3291015625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.4,
+      0,
+      -0.95
+    ],
+    "max": [
+      0.4,
+      1.05,
+      0.95
+    ],
+    "size": [
+      0.8,
+      1.05,
+      1.9
+    ]
+  },
+  "scale": 1.913167259786477,
+  "scaleXYZ": [
+    1.2154302670623145,
+    1.913167259786477,
+    1.9037181996086106
+  ],
+  "footprint": [
+    0.8,
+    1.9
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

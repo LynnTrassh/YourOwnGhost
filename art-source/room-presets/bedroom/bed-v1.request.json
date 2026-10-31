@@ -1,0 +1,21 @@
+{
+  "assetId": "bed-v1",
+  "input": "art-source/room-presets/bedroom/bed-input-v1.png",
+  "inputSHA256": "fd0e59bac770e5020f26bf809a7f35d2b15610b730a95bbfd5d5e87b040d6a6d",
+  "sourceBoard": "approval-v1.png",
+  "authorization": "现在看起来有很手绘感。你生成床放进场景我看看？",
+  "approvalScope": "仅床的生成和游戏中放置；不代表其他四件或材质已最终批准",
+  "model": "P1-20260311",
+  "parameters": {
+    "face_limit": 10000,
+    "texture": true,
+    "pbr": false,
+    "texture_quality": "standard"
+  },
+  "candidateCount": 1,
+  "targetFootprintMeters": [
+    0.8,
+    1.9
+  ],
+  "status": "succeeded"
+}

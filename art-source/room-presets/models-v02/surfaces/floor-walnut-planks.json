@@ -1,0 +1,7 @@
+{
+  "id": "floor-walnut-planks",
+  "prompt": "Use case: stylized-concept. Create production game material or wall art from the supplied approved scene. Flat orthographic front view (floor seen straight down), even neutral diffuse albedo lighting, no baked shadows, no light gradient, no vignette, no surrounding props, no room perspective, no labels, no watermark. Square high-resolution image. Preserve scene material palette and subtly hand-crafted print character. Exact seamless tiling at left/right and top/bottom edges, no visible border. Seamlessly repeating old walnut wood floor planks seen straight down, subtle scratches, dark neutral warm wood with real grain, credible staggered seams, no dirt piles.",
+  "theme": "bedroom",
+  "tile": true,
+  "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-ac419684-11f6-41b2-bf2f-2a6a5e751a49.png"
+}

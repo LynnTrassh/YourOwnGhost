@@ -1,0 +1,7 @@
+{
+  "id": "art-endless-corridor",
+  "prompt": "Use case: stylized-concept. Create production game material or wall art from the supplied approved scene. Flat orthographic front view (floor seen straight down), even neutral diffuse albedo lighting, no baked shadows, no light gradient, no vignette, no surrounding props, no room perspective, no labels, no watermark. Square high-resolution image. Preserve scene material palette and subtly hand-crafted print character. Extract ONLY the framed painting image of nested repeated doorway corridor, impossible recursive spatial depth, dark muted brown and gray oil painting. Artwork fills entire image edge to edge, no frame, no wall.",
+  "theme": "archive",
+  "tile": false,
+  "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-6bfe8bac-fa02-43fb-bcb0-4ed1d5246219.png"
+}

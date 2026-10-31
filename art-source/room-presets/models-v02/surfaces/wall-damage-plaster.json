@@ -1,0 +1,7 @@
+{
+  "id": "wall-damage-plaster",
+  "prompt": "Use case: stylized-concept. Create production game material or wall art from the supplied approved scene. Flat orthographic front view (floor seen straight down), even neutral diffuse albedo lighting, no baked shadows, no light gradient, no vignette, no surrounding props, no room perspective, no labels, no watermark. Square high-resolution image. Preserve scene material palette and subtly hand-crafted print character. Flat front view square patch of aged warm beige plaster with a narrow central irregular peeled area exposing wood laths, fine hairline cracks, no wallpaper flowers, no perspective, complete opaque surface material, minimal wear outside central damaged patch.",
+  "theme": "corridor",
+  "tile": false,
+  "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-4da2f024-4c82-49a3-8334-c6a05beb36b0.png"
+}

@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-wall-sconce/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-wall-sconce.glb",
+  "sourceBytes": 1335864,
+  "runtimeBytes": 1336264,
+  "sourceSHA256": "54606510706c3d9005134323ba34ff436bcae74c4ec96f17de9fb6f34db4d605",
+  "runtimeSHA256": "447fd19444c87e47b33e15d4e0ba398ce76aef3776945ac484f69fb4a285626a",
+  "triangles": 5788,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2998046875,
+      -0.4990234076976776,
+      -0.3974609673023224
+    ],
+    "max": [
+      0.2998046875,
+      0.4990234375,
+      0.3974609375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.12,
+      0,
+      -0.11000000000000001
+    ],
+    "max": [
+      0.12,
+      0.4,
+      0.11000000000000001
+    ],
+    "size": [
+      0.24,
+      0.4,
+      0.22000000000000003
+    ]
+  },
+  "scale": 0.4007827908326029,
+  "scaleXYZ": [
+    0.30191645059734784,
+    0.4007827908326029,
+    0.3669055374592834
+  ],
+  "footprint": [
+    0.24,
+    0.22
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

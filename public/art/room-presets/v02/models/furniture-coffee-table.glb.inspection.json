@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-coffee-table/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-coffee-table.glb",
+  "sourceBytes": 969052,
+  "runtimeBytes": 969436,
+  "sourceSHA256": "8713f48b50f5890814371f0174eab1621451f6f91ae8fad359bfdbed64b2c6c3",
+  "runtimeSHA256": "f9c78375941d871c0a0e1b546da9219321d255db036a66f57baf84a357d66398",
+  "triangles": 6009,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3251953125,
+      -0.1513672024011612,
+      -0.4990234375
+    ],
+    "max": [
+      0.3251953125,
+      0.1513671875,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.65,
+      0,
+      -0.325
+    ],
+    "max": [
+      0.65,
+      0.48,
+      0.325
+    ],
+    "size": [
+      1.3,
+      0.48,
+      0.65
+    ]
+  },
+  "scale": 1.5855483090530735,
+  "scaleXYZ": [
+    1.3025440313111547,
+    1.5855483090530735,
+    0.9993993993993993
+  ],
+  "footprint": [
+    1.3,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

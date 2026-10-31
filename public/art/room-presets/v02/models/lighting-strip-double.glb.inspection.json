@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/lighting-strip-double/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/lighting-strip-double.glb",
+  "sourceBytes": 857696,
+  "runtimeBytes": 858060,
+  "sourceSHA256": "40bf4fb6e9260c488a70d5e364438dc15049dcfaa23a3d6891f634576de016fc",
+  "runtimeSHA256": "c5aa156c55d351ad7d336e1065a97123a24e58111b458f421d4512634d403e29",
+  "triangles": 5531,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1611328125,
+      -0.1611328274011612,
+      -0.4990234375
+    ],
+    "max": [
+      0.1611328125,
+      0.1611328274011612,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5,
+      0,
+      -0.125
+    ],
+    "max": [
+      0.5,
+      0.18,
+      0.125
+    ],
+    "size": [
+      1,
+      0.18,
+      0.25
+    ]
+  },
+  "scale": 0.5585454028925667,
+  "scaleXYZ": [
+    1.0019569471624266,
+    0.5585454028925667,
+    0.7757575757575756
+  ],
+  "footprint": [
+    1,
+    0.25
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

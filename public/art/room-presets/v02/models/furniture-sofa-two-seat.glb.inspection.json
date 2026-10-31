@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-sofa-two-seat/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-sofa-two-seat.glb",
+  "sourceBytes": 792828,
+  "runtimeBytes": 793192,
+  "sourceSHA256": "641d85bfea9484267023259dac69e58037ae982d159d9bac8d143662169c1436",
+  "runtimeSHA256": "4d80eef558b7288c5ae7a5ffd8debc2ac9152f0ec96a3f1855f18576d3479dd8",
+  "triangles": 5618,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2333984375,
+      -0.2119140774011612,
+      -0.4990234375
+    ],
+    "max": [
+      0.2333984375,
+      0.2119140774011612,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.65,
+      0,
+      -0.35000000000000003
+    ],
+    "max": [
+      0.65,
+      0.94,
+      0.35000000000000003
+    ],
+    "size": [
+      1.3,
+      0.94,
+      0.7000000000000001
+    ]
+  },
+  "scale": 2.2178800283771265,
+  "scaleXYZ": [
+    1.3025440313111547,
+    2.2178800283771265,
+    1.4995815899581588
+  ],
+  "footprint": [
+    1.3,
+    0.7
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

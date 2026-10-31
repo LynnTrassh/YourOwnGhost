@@ -1,0 +1,17 @@
+{
+  "assetId": "watcher-cat-v2",
+  "mode": "image-to-model",
+  "input": "art-source/tripo/watcher-cat-approval-v2.png",
+  "inputSHA256": "c2fc86d7f27a9382ee7d66de0536dcd70d3ca4ebc0da7dad2d1e11eea4ffe42c",
+  "model": "tripo-p1",
+  "parameters": {
+    "face_limit": 6000,
+    "texture": true,
+    "pbr": false,
+    "texture_quality": "standard"
+  },
+  "candidateCount": 1,
+  "approvalQuote": "对 这个好。出一个这个模型。",
+  "materialIntent": "保留原图哑光纸布拼接；不请求金属度/粗糙度贴图，运行材质使用非金属粗糙表面。",
+  "status": "succeeded"
+}

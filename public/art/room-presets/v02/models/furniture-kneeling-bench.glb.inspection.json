@@ -1,0 +1,56 @@
+{
+  "source": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/models-v02/output/furniture-kneeling-bench/model.glb",
+  "destination": "/Users/ftc_art/Work/vibe/YourOwnGhost/public/art/room-presets/v02/models/furniture-kneeling-bench.glb",
+  "sourceBytes": 1211856,
+  "runtimeBytes": 1212220,
+  "sourceSHA256": "87f5a0f0bb9574ec444024a88b5181fe78d018c04e53e070fee36e5fcbfe3fa7",
+  "runtimeSHA256": "f07a5abdfe5e6ebbe9eb522386e2f28a9d4044e2984b2e500a20c5a400a5a32a",
+  "triangles": 5758,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1865234375,
+      -0.1748047024011612,
+      -0.4990234375
+    ],
+    "max": [
+      0.1865234375,
+      0.1748047024011612,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6,
+      0,
+      -0.325
+    ],
+    "max": [
+      0.6,
+      0.48,
+      0.325
+    ],
+    "size": [
+      1.2,
+      0.48,
+      0.65
+    ]
+  },
+  "scale": 1.372960776817213,
+  "scaleXYZ": [
+    1.202348336594912,
+    1.372960776817213,
+    1.7424083769633505
+  ],
+  "footprint": [
+    1.2,
+    0.65
+  ],
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}
