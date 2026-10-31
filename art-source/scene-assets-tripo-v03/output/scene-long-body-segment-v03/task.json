@@ -1,0 +1,30 @@
+{
+  "task_id": "b5373c3e-eaa2-45bb-8790-9b61e794eac3",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A single elongated flexible torso segment wrapped in worn dark green wool coat fabric, rounded cylindrical form with visible seam folds and dark leather joint collars on both ends, non-graphic surreal mannequin component. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "v3.1-20260211",
+    "texture_quality": "detailed",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 30,
+  "created_at": "2026-10-31T07:05:50.668977Z",
+  "completed_at": "2026-10-31T07:08:36.787354Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

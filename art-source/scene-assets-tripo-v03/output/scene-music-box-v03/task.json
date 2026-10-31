@@ -1,0 +1,30 @@
+{
+  "task_id": "8c12e756-5f2e-4ac9-8831-fde634a0728f",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A small open wooden music box with a delicate generic dancing figurine on a circular turntable, brass hinge and faded velvet lining, worn varnish. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "v3.1-20260211",
+    "texture_quality": "detailed",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 30,
+  "created_at": "2026-10-31T06:51:35.690491Z",
+  "completed_at": "2026-10-31T06:54:30.985002Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

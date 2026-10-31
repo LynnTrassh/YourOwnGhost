@@ -1,0 +1,30 @@
+{
+  "task_id": "99662954-d4d3-45f8-9cc5-8bb40954c200",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A standing headless tailor mannequin body wearing an old dark grey wool coat, trousers and leather shoes, arms relaxed at sides, open neck collar for separate head, no base, no gore. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "v3.1-20260211",
+    "texture_quality": "detailed",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 30,
+  "created_at": "2026-10-31T07:05:24.487632Z",
+  "completed_at": "2026-10-31T07:07:47.958495Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

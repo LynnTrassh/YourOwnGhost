@@ -1,0 +1,30 @@
+{
+  "task_id": "b7e8745a-b1c7-4c28-a4f7-9e1aaa144038",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A small antique bronze incense burner with rounded body, three short feet and two small handles, dark patina, dry ash inside, three unlit incense sticks. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "v3.1-20260211",
+    "texture_quality": "detailed",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 30,
+  "created_at": "2026-10-31T06:51:42.119300Z",
+  "completed_at": "2026-10-31T06:54:23.964452Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

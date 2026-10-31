@@ -1,0 +1,30 @@
+{
+  "task_id": "cfc57ba3-061a-4ea9-98b1-65e5be22dbd4",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "An antique black cast iron hand sewing machine on a small wooden base, large side wheel, needle arm, faded gold decorative pinstripes, spool of dark thread. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "v3.1-20260211",
+    "texture_quality": "detailed",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 30,
+  "created_at": "2026-10-31T06:39:02.015740Z",
+  "completed_at": "2026-10-31T06:41:41.592881Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}
