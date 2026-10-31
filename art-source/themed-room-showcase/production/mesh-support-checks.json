@@ -1,0 +1,2761 @@
+{
+  "scope": "GLB geometry-only support and placement load; no material/light or gameplay acceptance",
+  "reports": [
+    {
+      "id": "hospital-01",
+      "instances": [
+        {
+          "id": "hospital-01-layout-0",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-01-layout-1",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-01-layout-3",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "hospital-01-layout-5",
+          "assetId": "theme-hospital-triage-counter-v05",
+          "y": 0
+        },
+        {
+          "id": "hospital-01-layout-6",
+          "assetId": "theme-waiting-bench-v05",
+          "y": 0
+        },
+        {
+          "id": "hospital-01-layout-7",
+          "assetId": "prop-rotary-phone-v01",
+          "y": 0.5625479714285833
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hospital-02",
+      "instances": [
+        {
+          "id": "hospital-02-layout-0",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "hospital-02-layout-1",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-02-layout-3",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "hospital-02-layout-5",
+          "assetId": "scene-wheelchair-v03",
+          "y": 0
+        },
+        {
+          "id": "hospital-02-layout-6",
+          "assetId": "theme-waiting-bench-v05",
+          "y": 0
+        },
+        {
+          "id": "hospital-02-layout-7",
+          "assetId": "theme-waiting-bench-v05",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hospital-03",
+      "instances": [
+        {
+          "id": "hospital-03-layout-0",
+          "assetId": "bed-iron-rail-v01",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-1",
+          "assetId": "bed-iron-rail-v01",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-2",
+          "assetId": "furniture-examination-cot",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-3",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-4",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-5",
+          "assetId": "furniture-medicine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-6",
+          "assetId": "furniture-instrument-trolley",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-8",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "hospital-03-layout-10",
+          "assetId": "scene-hospital-bed-v03",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-11",
+          "assetId": "scene-hospital-bed-v03",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-12",
+          "assetId": "prop-folding-screen-v01",
+          "y": 0
+        },
+        {
+          "id": "hospital-03-layout-13",
+          "assetId": "prop-iv-stand-v01",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hospital-04",
+      "instances": [
+        {
+          "id": "hospital-04-layout-0",
+          "assetId": "furniture-instrument-trolley",
+          "y": 0
+        },
+        {
+          "id": "hospital-04-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "hospital-04-layout-2",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-04-layout-3",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "hospital-04-layout-5",
+          "assetId": "scene-hospital-bed-v03",
+          "y": 0
+        },
+        {
+          "id": "hospital-04-layout-6",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "hospital-04-layout-7",
+          "assetId": "theme-xray-viewer-v05",
+          "y": 1.5
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hospital-05",
+      "instances": [
+        {
+          "id": "hospital-05-layout-0",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-05-layout-1",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-05-layout-2",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "hospital-05-layout-4",
+          "assetId": "theme-pharmacy-drawers-v05",
+          "y": 0
+        },
+        {
+          "id": "hospital-05-layout-5",
+          "assetId": "theme-pharmacy-drawers-v05",
+          "y": 0
+        },
+        {
+          "id": "hospital-05-layout-6",
+          "assetId": "furniture-instrument-trolley",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hospital-06",
+      "instances": [
+        {
+          "id": "hospital-06-layout-0",
+          "assetId": "furniture-bed-single",
+          "y": 0
+        },
+        {
+          "id": "hospital-06-layout-1",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "hospital-06-layout-2",
+          "assetId": "furniture-coffee-table",
+          "y": 0
+        },
+        {
+          "id": "hospital-06-layout-3",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-06-layout-4",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "hospital-06-layout-5",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "hospital-06-layout-7",
+          "assetId": "prop-clothes-rack-v01",
+          "y": 0
+        },
+        {
+          "id": "hospital-06-layout-8",
+          "assetId": "prop-wood-radio-v01",
+          "y": 0.3935241812701955
+        },
+        {
+          "id": "hospital-06-layout-9",
+          "assetId": "prop-rotary-phone-v01",
+          "y": 0.3999236350642187
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hospital-07",
+      "instances": [
+        {
+          "id": "hospital-07-layout-0",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-1",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-2",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-3",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-4",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-5",
+          "assetId": "furniture-document-table",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-6",
+          "assetId": "furniture-archive-shelf",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-7",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-8",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "hospital-07-layout-10",
+          "assetId": "prop-cardboard-box-v01",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-11",
+          "assetId": "prop-archive-stack-v01",
+          "y": 0
+        },
+        {
+          "id": "hospital-07-layout-12",
+          "assetId": "prop-archive-boxes-v01",
+          "y": 0.6655944555837678
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hospital-08",
+      "instances": [
+        {
+          "id": "hospital-08-layout-0",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-08-layout-1",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-08-layout-2",
+          "assetId": "furniture-toy-chest",
+          "y": 0
+        },
+        {
+          "id": "hospital-08-layout-3",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "hospital-08-layout-4",
+          "assetId": "furniture-medical-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hospital-08-layout-5",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "hospital-08-layout-7",
+          "assetId": "prop-clothes-rack-v01",
+          "y": 0
+        },
+        {
+          "id": "hospital-08-layout-8",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "hospital-08-layout-9",
+          "assetId": "prop-shoes-pair-v01",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "park-01",
+      "instances": [
+        {
+          "id": "park-01-layout-0",
+          "assetId": "furniture-document-table",
+          "y": 0
+        },
+        {
+          "id": "park-01-layout-1",
+          "assetId": "furniture-toy-shelf",
+          "y": 0
+        },
+        {
+          "id": "park-01-layout-3",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "park-01-layout-5",
+          "assetId": "theme-ticket-counter-v05",
+          "y": 0
+        },
+        {
+          "id": "park-01-layout-6",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-01-layout-7",
+          "assetId": "furniture-document-table",
+          "y": 0
+        },
+        {
+          "id": "park-01-layout-8",
+          "assetId": "theme-ticket-register-v05",
+          "y": 1.2519999999999998
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "park-02",
+      "instances": [
+        {
+          "id": "park-02-layout-0",
+          "assetId": "theme-stage-deck-v06",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-1",
+          "assetId": "theme-stage-stairs-v06",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-2",
+          "assetId": "theme-award-podium-v05",
+          "y": 0.4519999487578125
+        },
+        {
+          "id": "park-02-layout-3",
+          "assetId": "theme-ceremony-lectern-v05",
+          "y": 0.4516281093739257
+        },
+        {
+          "id": "park-02-layout-4",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-5",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-6",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-7",
+          "assetId": "theme-trophy-cup-v05",
+          "y": 0.8819999671702545
+        },
+        {
+          "id": "park-02-layout-10",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-11",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-12",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-13",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-14",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-15",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-16",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-17",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-18",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-19",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-20",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-21",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-22",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-23",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "park-02-layout-24",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "park-03",
+      "instances": [
+        {
+          "id": "park-03-layout-0",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "park-03-layout-2",
+          "assetId": "theme-arcade-cabinet-v05",
+          "y": 0
+        },
+        {
+          "id": "park-03-layout-3",
+          "assetId": "theme-arcade-cabinet-v05",
+          "y": 0
+        },
+        {
+          "id": "park-03-layout-4",
+          "assetId": "theme-arcade-cabinet-v05",
+          "y": 0
+        },
+        {
+          "id": "park-03-layout-5",
+          "assetId": "theme-arcade-cabinet-v05",
+          "y": 0
+        },
+        {
+          "id": "park-03-layout-6",
+          "assetId": "theme-arcade-cabinet-v05",
+          "y": 0
+        },
+        {
+          "id": "park-03-layout-7",
+          "assetId": "theme-arcade-cabinet-v05",
+          "y": 0
+        },
+        {
+          "id": "park-03-layout-8",
+          "assetId": "theme-prize-display-v05",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "park-04",
+      "instances": [
+        {
+          "id": "park-04-layout-0",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "park-04-layout-1",
+          "assetId": "furniture-child-table",
+          "y": 0
+        },
+        {
+          "id": "park-04-layout-2",
+          "assetId": "furniture-toy-chest",
+          "y": 0
+        },
+        {
+          "id": "park-04-layout-3",
+          "assetId": "furniture-toy-shelf",
+          "y": 0
+        },
+        {
+          "id": "park-04-layout-4",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "park-04-layout-6",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "park-04-layout-8",
+          "assetId": "scene-pram-v03",
+          "y": 0
+        },
+        {
+          "id": "park-04-layout-9",
+          "assetId": "scene-teddy-bear-v03",
+          "y": 0
+        },
+        {
+          "id": "park-04-layout-10",
+          "assetId": "prop-toy-train-v01",
+          "y": 0.6019999999999998
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "park-05",
+      "instances": [
+        {
+          "id": "park-05-layout-0",
+          "assetId": "vanity-oval-mirror-v01",
+          "y": 0
+        },
+        {
+          "id": "park-05-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-05-layout-2",
+          "assetId": "vanity-oval-mirror-v01",
+          "y": 0
+        },
+        {
+          "id": "park-05-layout-3",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-05-layout-4",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "park-05-layout-5",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "park-05-layout-6",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "park-05-layout-8",
+          "assetId": "prop-clothes-rack-v01",
+          "y": 0
+        },
+        {
+          "id": "park-05-layout-9",
+          "assetId": "scene-clothes-hanging-dress-v03",
+          "y": 1.1
+        },
+        {
+          "id": "park-05-layout-10",
+          "assetId": "theme-performer-mask-v05",
+          "y": 0.8819999662338994
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "park-06",
+      "instances": [
+        {
+          "id": "park-06-layout-0",
+          "assetId": "furniture-toy-shelf",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-1",
+          "assetId": "furniture-toy-chest",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-2",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-3",
+          "assetId": "furniture-wardrobe",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-4",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-5",
+          "assetId": "furniture-toy-chest",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-6",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-7",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "park-06-layout-9",
+          "assetId": "scene-teddy-bear-v03",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-10",
+          "assetId": "theme-prize-display-v05",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-11",
+          "assetId": "prop-cardboard-box-v01",
+          "y": 0
+        },
+        {
+          "id": "park-06-layout-12",
+          "assetId": "scene-teddy-bear-v03",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "park-07",
+      "instances": [
+        {
+          "id": "park-07-layout-0",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-07-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-07-layout-2",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "park-07-layout-3",
+          "assetId": "furniture-toy-shelf",
+          "y": 0
+        },
+        {
+          "id": "park-07-layout-5",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "park-07-layout-7",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "park-07-layout-8",
+          "assetId": "prop-clothes-rack-v01",
+          "y": 0
+        },
+        {
+          "id": "park-07-layout-9",
+          "assetId": "prop-tea-tray-v01",
+          "y": 0.7537601778362892
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "park-08",
+      "instances": [
+        {
+          "id": "park-08-layout-0",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-1",
+          "assetId": "furniture-toy-chest",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-3",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-4",
+          "assetId": "theme-stage-deck-v06",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-5",
+          "assetId": "theme-stage-stairs-v06",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-6",
+          "assetId": "theme-stage-pillar-v05",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-7",
+          "assetId": "theme-stage-pillar-v05",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-8",
+          "assetId": "theme-stage-lintel-v05",
+          "y": 2.65
+        },
+        {
+          "id": "park-08-layout-9",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-12",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-13",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-14",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-15",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-16",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-17",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-18",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-19",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-20",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-21",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-22",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-23",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "park-08-layout-24",
+          "assetId": "theme-performer-mask-v05",
+          "y": 0.8819999662338994
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "office-01",
+      "instances": [
+        {
+          "id": "office-01-layout-0",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-01-layout-1",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-01-layout-2",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-01-layout-3",
+          "assetId": "furniture-armchair-curved",
+          "y": 0
+        },
+        {
+          "id": "office-01-layout-4",
+          "assetId": "furniture-armchair-curved",
+          "y": 0
+        },
+        {
+          "id": "office-01-layout-6",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "office-01-layout-8",
+          "assetId": "theme-office-reception-v05",
+          "y": 0
+        },
+        {
+          "id": "office-01-layout-9",
+          "assetId": "prop-rotary-phone-v01",
+          "y": 0.7445770177216762
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "office-02",
+      "instances": [
+        {
+          "id": "office-02-layout-0",
+          "assetId": "furniture-writing-desk",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-2",
+          "assetId": "furniture-writing-desk",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-3",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-4",
+          "assetId": "furniture-writing-desk",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-5",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-6",
+          "assetId": "furniture-writing-desk",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-7",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-8",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-9",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "office-02-layout-11",
+          "assetId": "prop-computer-desk-v01",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-12",
+          "assetId": "prop-computer-desk-v01",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-13",
+          "assetId": "theme-office-chair-v05",
+          "y": 0
+        },
+        {
+          "id": "office-02-layout-14",
+          "assetId": "theme-office-chair-v05",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "office-03",
+      "instances": [
+        {
+          "id": "office-03-layout-0",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-03-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-03-layout-2",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-03-layout-3",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-03-layout-4",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-03-layout-5",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "office-03-layout-7",
+          "assetId": "theme-conference-table-v05",
+          "y": 0
+        },
+        {
+          "id": "office-03-layout-8",
+          "assetId": "theme-meeting-board-v05",
+          "y": 1.2
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "office-04",
+      "instances": [
+        {
+          "id": "office-04-layout-0",
+          "assetId": "furniture-archive-shelf",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-1",
+          "assetId": "furniture-archive-shelf",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-2",
+          "assetId": "furniture-archive-shelf",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-3",
+          "assetId": "furniture-archive-shelf",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-4",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-5",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-6",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-7",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-8",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "office-04-layout-10",
+          "assetId": "prop-archive-stack-v01",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-11",
+          "assetId": "theme-conference-table-v05",
+          "y": 0
+        },
+        {
+          "id": "office-04-layout-12",
+          "assetId": "prop-archive-boxes-v01",
+          "y": 0.7534123969897084
+        },
+        {
+          "id": "office-04-layout-13",
+          "assetId": "scene-typewriter-v03",
+          "y": 0.7534123969897084
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "office-05",
+      "instances": [
+        {
+          "id": "office-05-layout-0",
+          "assetId": "furniture-writing-desk",
+          "y": 0
+        },
+        {
+          "id": "office-05-layout-1",
+          "assetId": "furniture-bookcase",
+          "y": 0
+        },
+        {
+          "id": "office-05-layout-2",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "office-05-layout-3",
+          "assetId": "furniture-coffee-table",
+          "y": 0
+        },
+        {
+          "id": "office-05-layout-4",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "office-05-layout-5",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "office-05-layout-7",
+          "assetId": "scene-armchair-wingback-v03",
+          "y": 0
+        },
+        {
+          "id": "office-05-layout-8",
+          "assetId": "scene-sideboard-v03",
+          "y": 0
+        },
+        {
+          "id": "office-05-layout-9",
+          "assetId": "prop-rotary-phone-v01",
+          "y": 0.6148114023208232
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "office-06",
+      "instances": [
+        {
+          "id": "office-06-layout-0",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-06-layout-1",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-06-layout-2",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-06-layout-3",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-06-layout-4",
+          "assetId": "furniture-archive-shelf",
+          "y": 0
+        },
+        {
+          "id": "office-06-layout-5",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "office-06-layout-7",
+          "assetId": "theme-mail-sorting-rack-v05",
+          "y": 0
+        },
+        {
+          "id": "office-06-layout-8",
+          "assetId": "prop-cardboard-box-v01",
+          "y": 0
+        },
+        {
+          "id": "office-06-layout-9",
+          "assetId": "furniture-document-table",
+          "y": 0
+        },
+        {
+          "id": "office-06-layout-10",
+          "assetId": "scene-typewriter-v03",
+          "y": 0.7614469763382301
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "office-07",
+      "instances": [
+        {
+          "id": "office-07-layout-0",
+          "assetId": "furniture-writing-desk",
+          "y": 0
+        },
+        {
+          "id": "office-07-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-07-layout-2",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-07-layout-3",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "office-07-layout-4",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-07-layout-5",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "office-07-layout-6",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "office-07-layout-8",
+          "assetId": "prop-cardboard-box-v01",
+          "y": 0
+        },
+        {
+          "id": "office-07-layout-9",
+          "assetId": "prop-clothes-rack-v01",
+          "y": 0
+        },
+        {
+          "id": "office-07-layout-10",
+          "assetId": "prop-cardboard-box-v01",
+          "y": 0
+        },
+        {
+          "id": "office-07-layout-11",
+          "assetId": "scene-desk-organizer-v03",
+          "y": 0.6148114015339267
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "office-08",
+      "instances": [
+        {
+          "id": "office-08-layout-0",
+          "assetId": "furniture-bookcase",
+          "y": 0
+        },
+        {
+          "id": "office-08-layout-1",
+          "assetId": "furniture-bookcase",
+          "y": 0
+        },
+        {
+          "id": "office-08-layout-2",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-08-layout-3",
+          "assetId": "furniture-multi-drawer-file-cabinet",
+          "y": 0
+        },
+        {
+          "id": "office-08-layout-4",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "office-08-layout-5",
+          "assetId": "lighting-strip-double",
+          "y": 2.48
+        },
+        {
+          "id": "office-08-layout-7",
+          "assetId": "theme-photocopier-v05",
+          "y": 0
+        },
+        {
+          "id": "office-08-layout-8",
+          "assetId": "prop-computer-desk-v01",
+          "y": 0
+        },
+        {
+          "id": "office-08-layout-9",
+          "assetId": "prop-archive-boxes-v01",
+          "y": 2.2496390203180567
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "home-01",
+      "instances": [
+        {
+          "id": "home-01-layout-0",
+          "assetId": "furniture-bed-single",
+          "y": 0
+        },
+        {
+          "id": "home-01-layout-1",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "home-01-layout-2",
+          "assetId": "vanity-oval-mirror-v01",
+          "y": 0
+        },
+        {
+          "id": "home-01-layout-3",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "home-01-layout-4",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "home-01-layout-5",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "home-01-layout-7",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "home-01-layout-8",
+          "assetId": "prop-clothes-rack-v01",
+          "y": 0
+        },
+        {
+          "id": "home-01-layout-9",
+          "assetId": "prop-shoes-pair-v01",
+          "y": 0
+        },
+        {
+          "id": "home-01-layout-10",
+          "assetId": "prop-books-stack-v01",
+          "y": 0.7819999816384267
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "home-02",
+      "instances": [
+        {
+          "id": "home-02-layout-0",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "home-02-layout-1",
+          "assetId": "furniture-coffee-table",
+          "y": 0
+        },
+        {
+          "id": "home-02-layout-2",
+          "assetId": "furniture-bookcase",
+          "y": 0
+        },
+        {
+          "id": "home-02-layout-3",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "home-02-layout-4",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "home-02-layout-6",
+          "assetId": "prop-tv-console-v01",
+          "y": 0
+        },
+        {
+          "id": "home-02-layout-7",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "home-02-layout-8",
+          "assetId": "scene-record-player-v03",
+          "y": 0.8819999683135827
+        },
+        {
+          "id": "home-02-layout-9",
+          "assetId": "prop-tea-tray-v01",
+          "y": 0.3931970337091002
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "home-03",
+      "instances": [
+        {
+          "id": "home-03-layout-0",
+          "assetId": "furniture-bed-single",
+          "y": 0
+        },
+        {
+          "id": "home-03-layout-1",
+          "assetId": "furniture-bed-single",
+          "y": 0
+        },
+        {
+          "id": "home-03-layout-2",
+          "assetId": "furniture-toy-chest",
+          "y": 0
+        },
+        {
+          "id": "home-03-layout-3",
+          "assetId": "furniture-toy-shelf",
+          "y": 0
+        },
+        {
+          "id": "home-03-layout-4",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "home-03-layout-6",
+          "assetId": "scene-tricycle-v03",
+          "y": 0
+        },
+        {
+          "id": "home-03-layout-7",
+          "assetId": "scene-teddy-bear-v03",
+          "y": 0
+        },
+        {
+          "id": "home-03-layout-8",
+          "assetId": "prop-hanging-mobile-v01",
+          "y": 2.1
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "home-04",
+      "instances": [
+        {
+          "id": "home-04-layout-0",
+          "assetId": "furniture-writing-desk",
+          "y": 0
+        },
+        {
+          "id": "home-04-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "home-04-layout-2",
+          "assetId": "furniture-bookcase",
+          "y": 0
+        },
+        {
+          "id": "home-04-layout-3",
+          "assetId": "furniture-bookcase",
+          "y": 0
+        },
+        {
+          "id": "home-04-layout-4",
+          "assetId": "furniture-archive-shelf",
+          "y": 0
+        },
+        {
+          "id": "home-04-layout-5",
+          "assetId": "furniture-armchair-curved",
+          "y": 0
+        },
+        {
+          "id": "home-04-layout-6",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "home-04-layout-7",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "home-04-layout-9",
+          "assetId": "scene-typewriter-v03",
+          "y": 0.6148114097886873
+        },
+        {
+          "id": "home-04-layout-10",
+          "assetId": "prop-books-stack-v01",
+          "y": 0.614811399151057
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "home-05",
+      "instances": [
+        {
+          "id": "home-05-layout-0",
+          "assetId": "bed-low-divan-v01",
+          "y": 0
+        },
+        {
+          "id": "home-05-layout-1",
+          "assetId": "vanity-oval-mirror-v01",
+          "y": 0
+        },
+        {
+          "id": "home-05-layout-2",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "home-05-layout-4",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "home-05-layout-6",
+          "assetId": "scene-rocking-chair-v03",
+          "y": 0
+        },
+        {
+          "id": "home-05-layout-7",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "home-05-layout-8",
+          "assetId": "scene-sewing-machine-v03",
+          "y": 0.7513842120785941
+        },
+        {
+          "id": "home-05-layout-9",
+          "assetId": "theme-sewing-basket-v05",
+          "y": 0.754865865174916
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "home-06",
+      "instances": [
+        {
+          "id": "home-06-layout-0",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "home-06-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "home-06-layout-2",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "home-06-layout-3",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "home-06-layout-5",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "home-06-layout-7",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "home-06-layout-8",
+          "assetId": "theme-china-cabinet-v05",
+          "y": 0
+        },
+        {
+          "id": "home-06-layout-9",
+          "assetId": "prop-tea-tray-v01",
+          "y": 0.7537601778362892
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "home-07",
+      "instances": [
+        {
+          "id": "home-07-layout-0",
+          "assetId": "furniture-wardrobe",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-1",
+          "assetId": "furniture-bookcase",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-2",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-3",
+          "assetId": "furniture-toy-chest",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-4",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-5",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-6",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-7",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-8",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "home-07-layout-10",
+          "assetId": "prop-covered-shape-v01",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-11",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-12",
+          "assetId": "prop-cardboard-box-v01",
+          "y": 0
+        },
+        {
+          "id": "home-07-layout-13",
+          "assetId": "scene-teddy-bear-v03",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "home-08",
+      "instances": [
+        {
+          "id": "home-08-layout-0",
+          "assetId": "bed-canopy-linen-v01",
+          "y": 0
+        },
+        {
+          "id": "home-08-layout-1",
+          "assetId": "vanity-oval-mirror-v01",
+          "y": 0
+        },
+        {
+          "id": "home-08-layout-2",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "home-08-layout-3",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "home-08-layout-4",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "home-08-layout-6",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "home-08-layout-8",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "home-08-layout-9",
+          "assetId": "prop-empty-hanger-v01",
+          "y": 1.8
+        },
+        {
+          "id": "home-08-layout-10",
+          "assetId": "scene-folded-linen-v03",
+          "y": 0.8819999697321633
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hotel-01",
+      "instances": [
+        {
+          "id": "hotel-01-layout-0",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hotel-01-layout-1",
+          "assetId": "furniture-armchair-curved",
+          "y": 0
+        },
+        {
+          "id": "hotel-01-layout-2",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "hotel-01-layout-3",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "hotel-01-layout-5",
+          "assetId": "theme-hotel-reception-v05",
+          "y": 0
+        },
+        {
+          "id": "hotel-01-layout-6",
+          "assetId": "theme-hotel-key-rack-v05",
+          "y": 1.3
+        },
+        {
+          "id": "hotel-01-layout-7",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "hotel-01-layout-8",
+          "assetId": "theme-hotel-service-bell-v05",
+          "y": 0.8819999661824204
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hotel-02",
+      "instances": [
+        {
+          "id": "hotel-02-layout-0",
+          "assetId": "bed-iron-rail-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-02-layout-1",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "hotel-02-layout-2",
+          "assetId": "furniture-writing-desk",
+          "y": 0
+        },
+        {
+          "id": "hotel-02-layout-3",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "hotel-02-layout-4",
+          "assetId": "furniture-wardrobe",
+          "y": 0
+        },
+        {
+          "id": "hotel-02-layout-6",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "hotel-02-layout-8",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-02-layout-9",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-02-layout-10",
+          "assetId": "prop-shoes-pair-v01",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hotel-03",
+      "instances": [
+        {
+          "id": "hotel-03-layout-0",
+          "assetId": "bed-iron-rail-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-03-layout-1",
+          "assetId": "furniture-bed-single",
+          "y": 0
+        },
+        {
+          "id": "hotel-03-layout-2",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "hotel-03-layout-3",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "hotel-03-layout-4",
+          "assetId": "furniture-wardrobe",
+          "y": 0
+        },
+        {
+          "id": "hotel-03-layout-6",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "hotel-03-layout-8",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-03-layout-9",
+          "assetId": "scene-folded-linen-v03",
+          "y": 0.8819999697321633
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hotel-04",
+      "instances": [
+        {
+          "id": "hotel-04-layout-0",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "hotel-04-layout-1",
+          "assetId": "furniture-coffee-table",
+          "y": 0
+        },
+        {
+          "id": "hotel-04-layout-2",
+          "assetId": "furniture-armchair-curved",
+          "y": 0
+        },
+        {
+          "id": "hotel-04-layout-3",
+          "assetId": "bed-canopy-linen-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-04-layout-4",
+          "assetId": "vanity-oval-mirror-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-04-layout-5",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "hotel-04-layout-6",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "hotel-04-layout-7",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "hotel-04-layout-9",
+          "assetId": "prop-clothes-rack-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-04-layout-10",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-04-layout-11",
+          "assetId": "prop-tea-tray-v01",
+          "y": 0.3931970337091001
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hotel-05",
+      "instances": [
+        {
+          "id": "hotel-05-layout-0",
+          "assetId": "furniture-wardrobe",
+          "y": 0
+        },
+        {
+          "id": "hotel-05-layout-1",
+          "assetId": "furniture-wardrobe",
+          "y": 0
+        },
+        {
+          "id": "hotel-05-layout-2",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "hotel-05-layout-3",
+          "assetId": "furniture-toy-chest",
+          "y": 0
+        },
+        {
+          "id": "hotel-05-layout-4",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "hotel-05-layout-5",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "hotel-05-layout-6",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "hotel-05-layout-8",
+          "assetId": "theme-linen-cart-v05",
+          "y": 0
+        },
+        {
+          "id": "hotel-05-layout-9",
+          "assetId": "scene-laundry-basket-v03",
+          "y": 0
+        },
+        {
+          "id": "hotel-05-layout-10",
+          "assetId": "scene-folded-linen-v03",
+          "y": 0.8819999697321633
+        },
+        {
+          "id": "hotel-05-layout-11",
+          "assetId": "scene-pillow-pair-v03",
+          "y": 0.6741838711197782
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hotel-06",
+      "instances": [
+        {
+          "id": "hotel-06-layout-0",
+          "assetId": "furniture-wardrobe",
+          "y": 0
+        },
+        {
+          "id": "hotel-06-layout-1",
+          "assetId": "furniture-coffee-table",
+          "y": 0
+        },
+        {
+          "id": "hotel-06-layout-2",
+          "assetId": "furniture-armchair-curved",
+          "y": 0
+        },
+        {
+          "id": "hotel-06-layout-3",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "hotel-06-layout-4",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "hotel-06-layout-6",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-06-layout-7",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-06-layout-8",
+          "assetId": "theme-luggage-trolley-v05",
+          "y": 0
+        },
+        {
+          "id": "hotel-06-layout-9",
+          "assetId": "prop-suitcase-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-06-layout-10",
+          "assetId": "prop-clothes-rack-v01",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hotel-07",
+      "instances": [
+        {
+          "id": "hotel-07-layout-0",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "hotel-07-layout-1",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "hotel-07-layout-2",
+          "assetId": "furniture-coffee-table",
+          "y": 0
+        },
+        {
+          "id": "hotel-07-layout-3",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "hotel-07-layout-4",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "hotel-07-layout-6",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "hotel-07-layout-8",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "hotel-07-layout-9",
+          "assetId": "prop-rotary-phone-v01",
+          "y": 0.39353686344539096
+        },
+        {
+          "id": "hotel-07-layout-10",
+          "assetId": "prop-books-stack-v01",
+          "y": 0.39897112036268273
+        },
+        {
+          "id": "hotel-07-layout-11",
+          "assetId": "prop-dried-flowers-v01",
+          "y": 0.7819999807265201
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "hotel-08",
+      "instances": [
+        {
+          "id": "hotel-08-layout-0",
+          "assetId": "bed-low-divan-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-08-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "hotel-08-layout-2",
+          "assetId": "vanity-oval-mirror-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-08-layout-3",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "hotel-08-layout-4",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "hotel-08-layout-5",
+          "assetId": "lighting-chandelier-three-arm",
+          "y": 2.48
+        },
+        {
+          "id": "hotel-08-layout-7",
+          "assetId": "prop-computer-desk-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-08-layout-8",
+          "assetId": "prop-clothes-rack-v01",
+          "y": 0
+        },
+        {
+          "id": "hotel-08-layout-9",
+          "assetId": "scene-laundry-basket-v03",
+          "y": 0
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "ritual-01",
+      "instances": [
+        {
+          "id": "ritual-01-layout-0",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-01-layout-1",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-01-layout-3",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "ritual-01-layout-4",
+          "assetId": "lighting-pendant-bare-bulb",
+          "y": 2.48
+        },
+        {
+          "id": "ritual-01-layout-6",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "ritual-01-layout-7",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "ritual-01-layout-8",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "ritual-01-layout-9",
+          "assetId": "theme-ritual-idol-v05",
+          "y": 0.7530273347741426
+        },
+        {
+          "id": "ritual-01-layout-10",
+          "assetId": "theme-offering-bowl-v05",
+          "y": 0.7501772924180707
+        },
+        {
+          "id": "ritual-01-layout-11",
+          "assetId": "scene-incense-burner-v03",
+          "y": 0.7819999829800719
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "ritual-02",
+      "instances": [
+        {
+          "id": "ritual-02-layout-0",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-02-layout-1",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-02-layout-3",
+          "assetId": "lighting-pendant-bare-bulb",
+          "y": 2.48
+        },
+        {
+          "id": "ritual-02-layout-5",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "ritual-02-layout-6",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "ritual-02-layout-7",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "ritual-02-layout-8",
+          "assetId": "theme-ritual-idol-v05",
+          "y": 0.7530273347741426
+        },
+        {
+          "id": "ritual-02-layout-9",
+          "assetId": "theme-ritual-idol-v05",
+          "y": 0.7530273347741426
+        },
+        {
+          "id": "ritual-02-layout-10",
+          "assetId": "theme-offering-bowl-v05",
+          "y": 0.7501772924180707
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "ritual-03",
+      "instances": [
+        {
+          "id": "ritual-03-layout-0",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-03-layout-1",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-03-layout-2",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-03-layout-3",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-03-layout-4",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-03-layout-5",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-03-layout-6",
+          "assetId": "furniture-offering-table",
+          "y": 0
+        },
+        {
+          "id": "ritual-03-layout-7",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-03-layout-9",
+          "assetId": "lighting-pendant-bare-bulb",
+          "y": 2.48
+        },
+        {
+          "id": "ritual-03-layout-11",
+          "assetId": "theme-ritual-lantern-v05",
+          "y": 2.2
+        },
+        {
+          "id": "ritual-03-layout-12",
+          "assetId": "theme-ritual-lantern-v05",
+          "y": 2.2
+        },
+        {
+          "id": "ritual-03-layout-13",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-03-layout-14",
+          "assetId": "scene-candelabrum-v03",
+          "y": 0.8080527868200484
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "ritual-04",
+      "instances": [
+        {
+          "id": "ritual-04-layout-0",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-04-layout-1",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-04-layout-2",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-04-layout-3",
+          "assetId": "furniture-display-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-04-layout-4",
+          "assetId": "furniture-offering-table",
+          "y": 0
+        },
+        {
+          "id": "ritual-04-layout-5",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-04-layout-6",
+          "assetId": "lighting-pendant-bare-bulb",
+          "y": 2.48
+        },
+        {
+          "id": "ritual-04-layout-8",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "ritual-04-layout-9",
+          "assetId": "scene-incense-burner-v03",
+          "y": 0.8049661402104159
+        },
+        {
+          "id": "ritual-04-layout-10",
+          "assetId": "scene-ritual-bell-v03",
+          "y": 0.8048871870429891
+        },
+        {
+          "id": "ritual-04-layout-11",
+          "assetId": "theme-offering-bowl-v05",
+          "y": 0.7501772924180707
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "ritual-05",
+      "instances": [
+        {
+          "id": "ritual-05-layout-0",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "ritual-05-layout-1",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "ritual-05-layout-2",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "ritual-05-layout-3",
+          "assetId": "furniture-dining-chair",
+          "y": 0
+        },
+        {
+          "id": "ritual-05-layout-4",
+          "assetId": "furniture-offering-table",
+          "y": 0
+        },
+        {
+          "id": "ritual-05-layout-5",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-05-layout-7",
+          "assetId": "lighting-pendant-bare-bulb",
+          "y": 2.48
+        },
+        {
+          "id": "ritual-05-layout-9",
+          "assetId": "theme-ritual-lantern-v05",
+          "y": 2.1
+        },
+        {
+          "id": "ritual-05-layout-10",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "ritual-05-layout-11",
+          "assetId": "theme-offering-bowl-v05",
+          "y": 0.7501772924180707
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "ritual-06",
+      "instances": [
+        {
+          "id": "ritual-06-layout-0",
+          "assetId": "furniture-sofa-two-seat",
+          "y": 0
+        },
+        {
+          "id": "ritual-06-layout-1",
+          "assetId": "furniture-coffee-table",
+          "y": 0
+        },
+        {
+          "id": "ritual-06-layout-2",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-06-layout-3",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-06-layout-4",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "ritual-06-layout-5",
+          "assetId": "furniture-wardrobe",
+          "y": 0
+        },
+        {
+          "id": "ritual-06-layout-6",
+          "assetId": "lighting-floor-lamp",
+          "y": 0
+        },
+        {
+          "id": "ritual-06-layout-7",
+          "assetId": "lighting-pendant-bare-bulb",
+          "y": 2.48
+        },
+        {
+          "id": "ritual-06-layout-9",
+          "assetId": "prop-portrait-frame-v01",
+          "y": 1.6
+        },
+        {
+          "id": "ritual-06-layout-10",
+          "assetId": "theme-ritual-tablet-v05",
+          "y": 0.8819999806122494
+        },
+        {
+          "id": "ritual-06-layout-11",
+          "assetId": "scene-incense-burner-v03",
+          "y": 0.8819999576528065
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "ritual-07",
+      "instances": [
+        {
+          "id": "ritual-07-layout-0",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-07-layout-1",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-07-layout-2",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-07-layout-5",
+          "assetId": "lighting-pendant-bare-bulb",
+          "y": 2.48
+        },
+        {
+          "id": "ritual-07-layout-7",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "ritual-07-layout-8",
+          "assetId": "furniture-nightstand",
+          "y": 0
+        },
+        {
+          "id": "ritual-07-layout-9",
+          "assetId": "theme-offering-bowl-v05",
+          "y": 0.7501772924180707
+        },
+        {
+          "id": "ritual-07-layout-10",
+          "assetId": "scene-candelabrum-v03",
+          "y": 0.7819999826887516
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    },
+    {
+      "id": "ritual-08",
+      "instances": [
+        {
+          "id": "ritual-08-layout-0",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-08-layout-1",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-08-layout-2",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-08-layout-3",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-08-layout-4",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-08-layout-5",
+          "assetId": "furniture-shrine-cabinet",
+          "y": 0
+        },
+        {
+          "id": "ritual-08-layout-6",
+          "assetId": "furniture-kneeling-bench",
+          "y": 0
+        },
+        {
+          "id": "ritual-08-layout-8",
+          "assetId": "lighting-pendant-bare-bulb",
+          "y": 2.48
+        },
+        {
+          "id": "ritual-08-layout-10",
+          "assetId": "scene-round-table-v03",
+          "y": 0
+        },
+        {
+          "id": "ritual-08-layout-11",
+          "assetId": "furniture-dresser",
+          "y": 0
+        },
+        {
+          "id": "ritual-08-layout-12",
+          "assetId": "theme-ritual-idol-v05",
+          "y": 0.7530273347741424
+        },
+        {
+          "id": "ritual-08-layout-13",
+          "assetId": "theme-ritual-tablet-v05",
+          "y": 0.8819999806122494
+        },
+        {
+          "id": "ritual-08-layout-14",
+          "assetId": "scene-incense-burner-v03",
+          "y": 0.8819999576528065
+        }
+      ],
+      "failed": [],
+      "skipped": []
+    }
+  ]
+}

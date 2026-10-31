@@ -1,7 +1,8 @@
 import * as T from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {THEMED_ASSETS as INTERIOR_ASSETS} from './themed-room-assets.js';
-import {findTableSupport} from './room-detail-dressing.js';
+import {createThemedProps} from './themed-room-props.js';
+import {createThemedRoomLighting} from './themed-room-lighting.js';
 import {ROOM_LOOKS} from './interior-surfaces.js';
 import {ROOM_THEMES,getRoomColliders} from './themed-room-library.js';
 
@@ -71,34 +72,11 @@ export async function createThemedRoomStage({recipe,depot}) {
   if(recipe.ceilingStyle==='ritual')for(let z=-d/2+1;z<d/2;z+=2)box([w,.12,.14],[0,2.94,z],wood);
   if(recipe.ceilingStyle==='park')for(let z=-d/2+1;z<d/2;z+=2.5)box([w,.10,.12],[0,2.95,z],trim);
 
-  const instances=[],skipped=[],supports=new Map();
-  for(const item of recipe.placements){
-   const object=await depot.model(item.assetId);object.name=item.id;object.position.set(item.x,item.y,item.z);object.rotation.y=item.yaw*Math.PI/180;root.add(object);root.updateMatrixWorld(true);
-   if(item.supportKey){
-    const support=supports.get(item.supportKey);if(!support)throw new Error(`Missing support: ${item.supportKey}`);
-    if(item.autoSupport){
-     const sa=INTERIOR_ASSETS[support.userData.assetId],pa=INTERIOR_ASSETS[item.assetId];
-     const preferred=support.worldToLocal(new T.Vector3(item.x,item.y,item.z));
-     const patch=findTableSupport({model:support,anchor:support,width:sa.width,depth:sa.depth,height:sa.height,scale:Math.max(pa.width/.45,pa.depth/.38),factors:[1],...(item.fixedSupportSlot?{x:preferred.x}:{})});
-     if(!patch){root.remove(object);skipped.push({id:item.id,assetId:item.assetId,reason:'原模型没有足够连续平整支撑面，未强行摆放'});continue;}
-     const point=support.localToWorld(new T.Vector3(patch.x,patch.y+.002,patch.z));object.position.copy(point);
-    }else{
-    const ray=new T.Raycaster(new T.Vector3(item.x,item.y+.25,item.z),new T.Vector3(0,-1,0),0,.5);
-    const hit=ray.intersectObject(support,true)[0];if(!hit)throw new Error(`No real supporting surface: ${item.id}`);
-    object.position.y=hit.point.y+.002;
-    }
-   }
-   object.userData.assetId=item.assetId;
-   if(item.key)supports.set(item.key,object);
-   const bounds=new T.Box3().setFromObject(object);
-   if(item.autoSupport&&instances.some(other=>other.supportKey===item.supportKey&&Math.min(bounds.max.x,other.bounds.max[0])-Math.max(bounds.min.x,other.bounds.min[0])>.005&&Math.min(bounds.max.z,other.bounds.max[2])-Math.max(bounds.min.z,other.bounds.min[2])>.005)){root.remove(object);skipped.push({id:item.id,assetId:item.assetId,reason:'台面同组物件重叠，未强行摆放'});continue;}
-   instances.push({id:item.id,assetId:item.assetId,supportKey:item.supportKey??null,bottomY:object.position.y,bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}});
-  }
-  const key=new T.PointLight(recipe.keyColor??theme.color,18,Math.max(8,d),1.8);key.position.set(...recipe.key);key.castShadow=true;key.shadow.mapSize.set(1024,1024);key.shadow.camera.near=.08;key.shadow.bias=-.0002;key.shadow.normalBias=.025;root.add(key);owned.add(key);
-  const fill=new T.PointLight(theme.accent,2.4,8,2);fill.position.set(1.8,1.8,d/2-1);root.add(fill);owned.add(fill);
-  const bounce=new T.PointLight(0xcac9b7,4,Math.max(8,d),2);bounce.position.set(0,2.65,d/2-1);root.add(bounce);owned.add(bounce);
-  const ambient=new T.HemisphereLight(0x9ca8a8,0x574b3c,.5);root.add(ambient);
+  const result=await createThemedProps({root,recipe,depot});
+  if(result.failed.length)throw new Error('Themed model load failed: '+result.failed.map(f=>f.assetId).join(', '));
+  const instances=result.instances,skipped=result.skipped;
+  const lighting=createThemedRoomLighting({root,recipe,owned});
   const colliders=getRoomColliders(recipe);
-  return {root,colliders,recipe,inspect(){return {id:recipe.id,models:instances.length,failed:0,skippedDressing:skipped,ceiling:3,dimensions:[w,3,d],instances};},dispose(){root.removeFromParent();for(const r of owned)r.dispose();root.clear();}};
+  return {root,colliders,recipe,inspect(){return {id:recipe.id,models:instances.length,failed:0,skippedDressing:skipped,ceiling:3,dimensions:[w,3,d],instances,lighting:lighting.inspect()};},dispose(){root.removeFromParent();for(const r of owned)r.dispose();root.clear();}};
  }catch(error){for(const r of owned)r.dispose();root.clear();throw error;}
 }

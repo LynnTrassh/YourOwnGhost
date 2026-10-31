@@ -81,13 +81,13 @@ export const THEMED_ROOM_RECIPES = [
         "x": -0.6,
         "y": 0,
         "z": -0.65,
-        "yaw": 0,
+        "yaw": 180,
         "group": "主功能组",
         "bounds": {
-          "minX": -1.3699999678102273,
-          "maxX": 0.1699999678102273,
+          "minX": -1.3699999678102275,
+          "maxX": 0.16999996781022741,
           "minZ": -1.4199999678102273,
-          "maxZ": 0.11999996781022726,
+          "maxZ": 0.11999996781022737,
           "minY": 0,
           "maxY": 1.1
         }
@@ -99,7 +99,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": 1.9,
         "y": 0,
         "z": 0.2,
-        "yaw": -90,
+        "yaw": 90,
         "group": "候诊",
         "bounds": {
           "minX": 1.5945936279836053,
@@ -117,14 +117,14 @@ export const THEMED_ROOM_RECIPES = [
         "x": -0.6,
         "y": 1.102,
         "z": -0.65,
-        "yaw": 0,
+        "yaw": 180,
         "group": "桌面物件",
         "supportKey": "hospital-01-layout-5",
         "bounds": {
           "minX": -0.7311729791054055,
           "maxX": -0.4688270208945945,
-          "minZ": -0.7917111888432604,
-          "maxZ": -0.5082888111567396,
+          "minZ": -0.7917111888432605,
+          "maxZ": -0.5082888111567395,
           "minY": 1.102,
           "maxY": 1.2744938541301527
         }
@@ -237,7 +237,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": -1.9,
         "y": 0,
         "z": -0.2,
-        "yaw": 90,
+        "yaw": -90,
         "group": "候诊左列",
         "bounds": {
           "minX": -2.2054063720163946,
@@ -255,7 +255,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": 1.9,
         "y": 0,
         "z": -0.2,
-        "yaw": -90,
+        "yaw": 90,
         "group": "候诊右列",
         "bounds": {
           "minX": 1.5945936279836053,
@@ -756,7 +756,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": -2.1,
         "y": 0,
         "z": -0.3,
-        "yaw": 90,
+        "yaw": -90,
         "group": "药柜",
         "bounds": {
           "minX": -2.3411937377690806,
@@ -774,7 +774,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": 2.1,
         "y": 0,
         "z": -0.3,
-        "yaw": -90,
+        "yaw": 90,
         "group": "药柜",
         "bounds": {
           "minX": 1.8588062622309198,
@@ -1227,17 +1227,17 @@ export const THEMED_ROOM_RECIPES = [
         "id": "hospital-07-layout-12",
         "key": "hospital-07-layout-12",
         "assetId": "prop-archive-boxes-v01",
-        "x": 1.45,
+        "x": 1.5,
         "y": 0.802,
-        "z": -2,
+        "z": -2.15,
         "yaw": 0,
         "group": "桌面物件",
         "supportKey": "hospital-07-layout-5",
         "bounds": {
-          "minX": 1.2703077043584712,
-          "maxX": 1.6296922956415287,
-          "minZ": -2.1550769126769356,
-          "maxZ": -1.8449230873230642,
+          "minX": 1.3203077043584712,
+          "maxX": 1.6796922956415288,
+          "minZ": -2.3050769126769355,
+          "maxZ": -1.9949230873230641,
           "minY": 0.802,
           "maxY": 1.121999989271164
         }
@@ -1574,15 +1574,15 @@ export const THEMED_ROOM_RECIPES = [
         "id": "park-01-layout-8",
         "key": "park-01-layout-8",
         "assetId": "theme-ticket-register-v05",
-        "x": -0.9,
+        "x": -0.95,
         "y": 1.252,
         "z": 0,
         "yaw": 0,
         "group": "桌面物件",
         "supportKey": "park-01-layout-5",
         "bounds": {
-          "minX": -1.0970893845848426,
-          "maxX": -0.7029106154151574,
+          "minX": -1.1470893845848427,
+          "maxX": -0.7529106154151572,
           "minZ": -0.25496879879203693,
           "maxZ": 0.25496879879203693,
           "minY": 1.252,
@@ -2089,7 +2089,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": -1.85,
         "y": 0,
         "z": 2.4,
-        "yaw": 90,
+        "yaw": -90,
         "group": "游艺机列",
         "bounds": {
           "minX": -2.3026419055438554,
@@ -2107,7 +2107,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": -1.85,
         "y": 0,
         "z": 0.7,
-        "yaw": 90,
+        "yaw": -90,
         "group": "游艺机列",
         "bounds": {
           "minX": -2.3026419055438554,
@@ -2125,7 +2125,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": -1.85,
         "y": 0,
         "z": -1,
-        "yaw": 90,
+        "yaw": -90,
         "group": "游艺机列",
         "bounds": {
           "minX": -2.3026419055438554,
@@ -2143,7 +2143,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": 1.85,
         "y": 0,
         "z": 2.4,
-        "yaw": -90,
+        "yaw": 90,
         "group": "游艺机列",
         "bounds": {
           "minX": 1.3973580944561446,
@@ -2161,7 +2161,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": 1.85,
         "y": 0,
         "z": 0.7,
-        "yaw": -90,
+        "yaw": 90,
         "group": "游艺机列",
         "bounds": {
           "minX": 1.3973580944561446,
@@ -2179,7 +2179,7 @@ export const THEMED_ROOM_RECIPES = [
         "x": 1.85,
         "y": 0,
         "z": -1,
-        "yaw": -90,
+        "yaw": 90,
         "group": "游艺机列",
         "bounds": {
           "minX": 1.3973580944561446,
@@ -3599,13 +3599,13 @@ export const THEMED_ROOM_RECIPES = [
         "x": -0.6,
         "y": 0,
         "z": -0.7,
-        "yaw": 0,
+        "yaw": 180,
         "group": "接待",
         "bounds": {
-          "minX": -1.3872548346635547,
-          "maxX": 0.18725483466355486,
+          "minX": -1.387254834663555,
+          "maxX": 0.18725483466355497,
           "minZ": -1.1945377728512743,
-          "maxZ": -0.2054622271487257,
+          "maxZ": -0.20546222714872558,
           "minY": 0,
           "maxY": 1.1
         }
@@ -3614,17 +3614,17 @@ export const THEMED_ROOM_RECIPES = [
         "id": "office-01-layout-9",
         "key": "office-01-layout-9",
         "assetId": "prop-rotary-phone-v01",
-        "x": -0.6,
+        "x": -0.55,
         "y": 1.102,
-        "z": -0.7,
-        "yaw": 0,
+        "z": -0.4,
+        "yaw": 180,
         "group": "桌面物件",
         "supportKey": "office-01-layout-8",
         "bounds": {
-          "minX": -0.7311729791054055,
-          "maxX": -0.4688270208945945,
-          "minZ": -0.8417111888432605,
-          "maxZ": -0.5582888111567395,
+          "minX": -0.6811729791054055,
+          "maxX": -0.41882702089459456,
+          "minZ": -0.5417111888432605,
+          "maxZ": -0.2582888111567395,
           "minY": 1.102,
           "maxY": 1.2744938541301527
         }
@@ -3733,6 +3733,24 @@ export const THEMED_ROOM_RECIPES = [
       {
         "id": "office-02-layout-4",
         "key": "office-02-layout-4",
+        "assetId": "furniture-writing-desk",
+        "x": 1.65,
+        "y": 0,
+        "z": -1.5,
+        "yaw": -90,
+        "group": "主体",
+        "bounds": {
+          "minX": 1.3249999999999997,
+          "maxX": 1.975,
+          "minZ": -2.15,
+          "maxZ": -0.85,
+          "minY": 0,
+          "maxY": 0.82
+        }
+      },
+      {
+        "id": "office-02-layout-5",
+        "key": "office-02-layout-5",
         "assetId": "furniture-dining-chair",
         "x": 0.65,
         "y": 0,
@@ -3749,8 +3767,8 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "office-02-layout-5",
-        "key": "office-02-layout-5",
+        "id": "office-02-layout-6",
+        "key": "office-02-layout-6",
         "assetId": "furniture-writing-desk",
         "x": 0,
         "y": 0,
@@ -3767,8 +3785,8 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "office-02-layout-6",
-        "key": "office-02-layout-6",
+        "id": "office-02-layout-7",
+        "key": "office-02-layout-7",
         "assetId": "furniture-dining-chair",
         "x": 0,
         "y": 0,
@@ -3785,8 +3803,8 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "office-02-layout-7",
-        "key": "office-02-layout-7",
+        "id": "office-02-layout-8",
+        "key": "office-02-layout-8",
         "assetId": "furniture-multi-drawer-file-cabinet",
         "x": -1.65,
         "y": 0,
@@ -3803,8 +3821,8 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "office-02-layout-8",
-        "key": "office-02-layout-8",
+        "id": "office-02-layout-9",
+        "key": "office-02-layout-9",
         "assetId": "lighting-strip-double",
         "x": -0.8,
         "y": 2.48,
@@ -3821,37 +3839,19 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "office-02-layout-10",
-        "key": "office-02-layout-10",
+        "id": "office-02-layout-11",
+        "key": "office-02-layout-11",
         "assetId": "prop-computer-desk-v01",
         "x": -1.7,
         "y": 0,
         "z": 2.4,
-        "yaw": 0,
+        "yaw": -90,
         "group": "工位A",
         "bounds": {
-          "minX": -2.1607462488714004,
-          "maxX": -1.2392537511285993,
-          "minZ": 1.7135821190283214,
-          "maxZ": 3.0864178809716787,
-          "minY": 0,
-          "maxY": 1.259999986886978
-        }
-      },
-      {
-        "id": "office-02-layout-11",
-        "key": "office-02-layout-11",
-        "assetId": "prop-computer-desk-v01",
-        "x": 1.7,
-        "y": 0,
-        "z": -0.3,
-        "yaw": 180,
-        "group": "工位B",
-        "bounds": {
-          "minX": 1.2392537511285993,
-          "maxX": 2.160746248871401,
-          "minZ": -0.9864178809716786,
-          "maxZ": 0.3864178809716787,
+          "minX": -2.3864178809716785,
+          "maxX": -1.0135821190283214,
+          "minZ": 1.9392537511285992,
+          "maxZ": 2.8607462488714006,
           "minY": 0,
           "maxY": 1.259999986886978
         }
@@ -3859,6 +3859,24 @@ export const THEMED_ROOM_RECIPES = [
       {
         "id": "office-02-layout-12",
         "key": "office-02-layout-12",
+        "assetId": "prop-computer-desk-v01",
+        "x": 1.7,
+        "y": 0,
+        "z": -0.3,
+        "yaw": 90,
+        "group": "工位B",
+        "bounds": {
+          "minX": 1.0135821190283214,
+          "maxX": 2.3864178809716785,
+          "minZ": -0.7607462488714007,
+          "maxZ": 0.1607462488714007,
+          "minY": 0,
+          "maxY": 1.259999986886978
+        }
+      },
+      {
+        "id": "office-02-layout-13",
+        "key": "office-02-layout-13",
         "assetId": "theme-office-chair-v05",
         "x": -0.65,
         "y": 0,
@@ -3875,8 +3893,8 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "office-02-layout-13",
-        "key": "office-02-layout-13",
+        "id": "office-02-layout-14",
+        "key": "office-02-layout-14",
         "assetId": "theme-office-chair-v05",
         "x": 0.65,
         "y": 0,
@@ -4223,24 +4241,6 @@ export const THEMED_ROOM_RECIPES = [
       {
         "id": "office-04-layout-7",
         "key": "office-04-layout-7",
-        "assetId": "furniture-document-table",
-        "x": 0,
-        "y": 0,
-        "z": -3.7,
-        "yaw": 0,
-        "group": "主体",
-        "bounds": {
-          "minX": -0.65,
-          "maxX": 0.65,
-          "minZ": -4.025,
-          "maxZ": -3.375,
-          "minY": 0,
-          "maxY": 0.8
-        }
-      },
-      {
-        "id": "office-04-layout-8",
-        "key": "office-04-layout-8",
         "assetId": "furniture-dining-chair",
         "x": 0,
         "y": 0,
@@ -4257,26 +4257,8 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "office-04-layout-9",
-        "key": "office-04-layout-9",
-        "assetId": "furniture-bookcase",
-        "x": 1.6,
-        "y": 0,
-        "z": -4.55,
-        "yaw": 0,
-        "group": "主体",
-        "bounds": {
-          "minX": 0.9500000000000001,
-          "maxX": 2.25,
-          "minZ": -4.875,
-          "maxZ": -4.225,
-          "minY": 0,
-          "maxY": 2.25
-        }
-      },
-      {
-        "id": "office-04-layout-10",
-        "key": "office-04-layout-10",
+        "id": "office-04-layout-8",
+        "key": "office-04-layout-8",
         "assetId": "lighting-strip-double",
         "x": -0.8,
         "y": 2.48,
@@ -4293,8 +4275,8 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "office-04-layout-12",
-        "key": "office-04-layout-12",
+        "id": "office-04-layout-10",
+        "key": "office-04-layout-10",
         "assetId": "prop-archive-stack-v01",
         "x": 1.5,
         "y": 0,
@@ -4311,41 +4293,59 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "office-04-layout-13",
-        "key": "office-04-layout-13",
+        "id": "office-04-layout-11",
+        "key": "office-04-layout-11",
+        "assetId": "theme-conference-table-v05",
+        "x": 0,
+        "y": 0,
+        "z": -3.7,
+        "yaw": 0,
+        "group": "档案整理",
+        "bounds": {
+          "minX": -1.0970620996049743,
+          "maxX": 1.0970620996049743,
+          "minZ": -4.191638396887552,
+          "maxZ": -3.208361603112448,
+          "minY": 0,
+          "maxY": 0.76
+        }
+      },
+      {
+        "id": "office-04-layout-12",
+        "key": "office-04-layout-12",
         "assetId": "prop-archive-boxes-v01",
         "x": -0.25219515509114376,
-        "y": 0.802,
+        "y": 0.762,
         "z": -3.7,
         "yaw": 0,
         "group": "桌面物件",
-        "supportKey": "office-04-layout-7",
+        "supportKey": "office-04-layout-11",
         "bounds": {
           "minX": -0.4318874507326725,
           "maxX": -0.07250285944961504,
           "minZ": -3.8550769126769358,
           "maxZ": -3.5449230873230646,
-          "minY": 0.802,
-          "maxY": 1.121999989271164
+          "minY": 0.762,
+          "maxY": 1.081999989271164
         }
       },
       {
-        "id": "office-04-layout-14",
-        "key": "office-04-layout-14",
+        "id": "office-04-layout-13",
+        "key": "office-04-layout-13",
         "assetId": "scene-typewriter-v03",
         "x": 0.21969229564152878,
-        "y": 0.802,
+        "y": 0.762,
         "z": -3.7,
         "yaw": 0,
         "group": "桌面物件",
-        "supportKey": "office-04-layout-7",
+        "supportKey": "office-04-layout-11",
         "bounds": {
           "minX": 0.007497140550384973,
           "maxX": 0.4318874507326726,
           "minZ": -3.8877215156710068,
           "maxZ": -3.5122784843289936,
-          "minY": 0.802,
-          "maxY": 1.082
+          "minY": 0.762,
+          "maxY": 1.042
         }
       }
     ],
@@ -4735,17 +4735,17 @@ export const THEMED_ROOM_RECIPES = [
         "id": "office-06-layout-10",
         "key": "office-06-layout-10",
         "assetId": "scene-typewriter-v03",
-        "x": -0.9,
+        "x": -0.8,
         "y": 0.802,
-        "z": -0.6,
+        "z": -0.55,
         "yaw": 0,
         "group": "桌面物件",
         "supportKey": "office-06-layout-9",
         "bounds": {
-          "minX": -1.1121951550911438,
-          "maxX": -0.6878048449088562,
-          "minZ": -0.7877215156710065,
-          "maxZ": -0.4122784843289935,
+          "minX": -1.0121951550911439,
+          "maxX": -0.5878048449088562,
+          "minZ": -0.7377215156710065,
+          "maxZ": -0.36227848432899357,
           "minY": 0.802,
           "maxY": 1.082
         }
@@ -5923,17 +5923,17 @@ export const THEMED_ROOM_RECIPES = [
         "id": "home-04-layout-9",
         "key": "home-04-layout-9",
         "assetId": "scene-typewriter-v03",
-        "x": 0.5515895519729481,
+        "x": 0.55159,
         "y": 0.822,
-        "z": -1.5,
+        "z": -1.55,
         "yaw": 0,
         "group": "桌面物件",
         "supportKey": "home-04-layout-0",
         "bounds": {
-          "minX": 0.3393943968818043,
-          "maxX": 0.763784707064092,
-          "minZ": -1.6877215156710064,
-          "maxZ": -1.3122784843289936,
+          "minX": 0.3393948449088562,
+          "maxX": 0.7637851550911439,
+          "minZ": -1.7377215156710064,
+          "maxZ": -1.3622784843289937,
           "minY": 0.822,
           "maxY": 1.1019999999999999
         }
@@ -6079,19 +6079,19 @@ export const THEMED_ROOM_RECIPES = [
       {
         "id": "home-05-layout-7",
         "key": "home-05-layout-7",
-        "assetId": "furniture-document-table",
+        "assetId": "scene-round-table-v03",
         "x": -1.3,
         "y": 0,
         "z": 1.5,
         "yaw": 180,
         "group": "缝补",
         "bounds": {
-          "minX": -1.9500000000000002,
-          "maxX": -0.65,
-          "minZ": 1.1749999999999998,
-          "maxZ": 1.8250000000000002,
+          "minX": -1.8107336010533288,
+          "maxX": -0.7892663989466712,
+          "minZ": 0.9882855314658214,
+          "maxZ": 2.0117144685341786,
           "minY": 0,
-          "maxY": 0.8
+          "maxY": 0.76
         }
       },
       {
@@ -6099,7 +6099,7 @@ export const THEMED_ROOM_RECIPES = [
         "key": "home-05-layout-8",
         "assetId": "scene-sewing-machine-v03",
         "x": -1.0845007719526438,
-        "y": 0.802,
+        "y": 0.762,
         "z": 1.5,
         "yaw": 180,
         "group": "桌面物件",
@@ -6109,8 +6109,8 @@ export const THEMED_ROOM_RECIPES = [
           "maxX": -0.9547015884585277,
           "minZ": 1.2521841169449532,
           "maxZ": 1.7478158830550468,
-          "minY": 0.802,
-          "maxY": 1.1520000000000001
+          "minY": 0.762,
+          "maxY": 1.112
         }
       },
       {
@@ -6118,7 +6118,7 @@ export const THEMED_ROOM_RECIPES = [
         "key": "home-05-layout-9",
         "assetId": "theme-sewing-basket-v05",
         "x": -1.4697991834941162,
-        "y": 0.802,
+        "y": 0.762,
         "z": 1.5,
         "yaw": 180,
         "group": "桌面物件",
@@ -6128,8 +6128,8 @@ export const THEMED_ROOM_RECIPES = [
           "maxX": -1.29429995544676,
           "minZ": 1.34112660180267,
           "maxZ": 1.65887339819733,
-          "minY": 0.802,
-          "maxY": 1.082
+          "minY": 0.762,
+          "maxY": 1.042
         }
       }
     ],
@@ -6829,42 +6829,6 @@ export const THEMED_ROOM_RECIPES = [
       {
         "id": "hotel-01-layout-2",
         "key": "hotel-01-layout-2",
-        "assetId": "furniture-armchair-curved",
-        "x": -1.8,
-        "y": 0,
-        "z": 1.1,
-        "yaw": 90,
-        "group": "主体",
-        "bounds": {
-          "minX": -2.15,
-          "maxX": -1.4500000000000002,
-          "minZ": 0.7500000000000001,
-          "maxZ": 1.4500000000000002,
-          "minY": 0,
-          "maxY": 0.95
-        }
-      },
-      {
-        "id": "hotel-01-layout-3",
-        "key": "hotel-01-layout-3",
-        "assetId": "furniture-coffee-table",
-        "x": -0.7,
-        "y": 0,
-        "z": 0.5,
-        "yaw": 90,
-        "group": "主体",
-        "bounds": {
-          "minX": -1.025,
-          "maxX": -0.3749999999999999,
-          "minZ": -0.15000000000000002,
-          "maxZ": 1.15,
-          "minY": 0,
-          "maxY": 0.48
-        }
-      },
-      {
-        "id": "hotel-01-layout-4",
-        "key": "hotel-01-layout-4",
         "assetId": "lighting-floor-lamp",
         "x": 2,
         "y": 0,
@@ -6881,8 +6845,8 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "hotel-01-layout-5",
-        "key": "hotel-01-layout-5",
+        "id": "hotel-01-layout-3",
+        "key": "hotel-01-layout-3",
         "assetId": "lighting-chandelier-three-arm",
         "x": -0.8,
         "y": 2.48,
@@ -6899,26 +6863,26 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "hotel-01-layout-7",
-        "key": "hotel-01-layout-7",
+        "id": "hotel-01-layout-5",
+        "key": "hotel-01-layout-5",
         "assetId": "theme-hotel-reception-v05",
         "x": 0.5,
         "y": 0,
         "z": -0.9,
-        "yaw": 0,
+        "yaw": 180,
         "group": "前台",
         "bounds": {
-          "minX": -0.3282416255628664,
-          "maxX": 1.3282416255628664,
+          "minX": -0.3282416255628665,
+          "maxX": 1.3282416255628666,
           "minZ": -1.5596758349705304,
-          "maxZ": -0.24032416502946963,
+          "maxZ": -0.24032416502946952,
           "minY": 0,
           "maxY": 1.65
         }
       },
       {
-        "id": "hotel-01-layout-8",
-        "key": "hotel-01-layout-8",
+        "id": "hotel-01-layout-6",
+        "key": "hotel-01-layout-6",
         "assetId": "theme-hotel-key-rack-v05",
         "x": 0.5,
         "y": 1.3,
@@ -6935,22 +6899,40 @@ export const THEMED_ROOM_RECIPES = [
         }
       },
       {
-        "id": "hotel-01-layout-9",
-        "key": "hotel-01-layout-9",
+        "id": "hotel-01-layout-7",
+        "key": "hotel-01-layout-7",
+        "assetId": "furniture-dresser",
+        "x": -1.45,
+        "y": 0,
+        "z": 0.65,
+        "yaw": 0,
+        "group": "侧面服务台",
+        "bounds": {
+          "minX": -2.1,
+          "maxX": -0.7999999999999999,
+          "minZ": 0.325,
+          "maxZ": 0.9750000000000001,
+          "minY": 0,
+          "maxY": 0.88
+        }
+      },
+      {
+        "id": "hotel-01-layout-8",
+        "key": "hotel-01-layout-8",
         "assetId": "theme-hotel-service-bell-v05",
-        "x": 0.5,
-        "y": 1.652,
-        "z": -0.9,
+        "x": -1.45,
+        "y": 0.882,
+        "z": 0.65,
         "yaw": 0,
         "group": "桌面物件",
         "supportKey": "hotel-01-layout-7",
         "bounds": {
-          "minX": 0.4374705359451204,
-          "maxX": 0.5625294640548796,
-          "minZ": -0.9626262709214107,
-          "maxZ": -0.8373737290785893,
-          "minY": 1.652,
-          "maxY": 1.752
+          "minX": -1.5125294640548794,
+          "maxX": -1.3874705359451205,
+          "minZ": 0.5873737290785893,
+          "maxZ": 0.7126262709214107,
+          "minY": 0.882,
+          "maxY": 0.982
         }
       }
     ],

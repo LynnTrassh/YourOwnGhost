@@ -6,6 +6,7 @@ import { validatePlan } from './validate.js';
 import { completeRoomContent } from './room-rhythm.js';
 import { completeFinalRoomInteriors } from './interiors.js';
 import { fitActiveEncounters } from './active-fit.js';
+import { populateThemedRooms } from './themed-rooms.js';
 import { HEARING_BEHAVIOR } from '../threat-profile.js';
 
 export function generateDream(seed,options={}) {
@@ -25,7 +26,7 @@ export function generateDream(seed,options={}) {
   throw new Error(`无法生成完整内容与合格节奏：${attempts.map(a=>a.reason).join('；')}`);
 }
 
-function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null,activeEncounters=false,openingSequence=false,onDiagnostic}={}) {
+function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null,activeEncounters=false,openingSequence=false,themedRooms=false,onDiagnostic}={}) {
   const first=generatePlan(seed,{catEnabled,preferences,threatEnabled:activeEncounters,rhythmEnabled:true,openingSequence});
   onDiagnostic?.({stage:'first-ready',seed});
   const conditionalSlots=['B03','B04'].flatMap(definitionId=>{
@@ -110,6 +111,7 @@ function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null
           throw new Error('主动玩法未能完整落位');
       }
       for(const plan of plans) {
+        if(themedRooms)populateThemedRooms(plan);
         plan.coverage=analyzeCoverage(plan);
         const validation=validatePlan(plan);
         if(!validation.valid)throw new Error(`内容编排校验失败：${validation.errors.join('、')}`);

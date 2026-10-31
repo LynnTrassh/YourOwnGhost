@@ -1,7 +1,7 @@
 {
   "version": "production-design-2",
   "date": "2026-10-31",
-  "scope": "48间完整制作方案及当前实装对照；正式游戏未接入",
+  "scope": "48间制作方案；正式随机池通过确定性空间适配择选，未声称逐间视觉验收完成",
   "rooms": [
     {
       "id": "hospital-01",
@@ -121,7 +121,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -346,10 +346,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -518,16 +519,16 @@
             "assetId": "theme-hospital-triage-counter-v05",
             "x": -0.6,
             "z": -0.65,
-            "yaw": 0,
+            "yaw": 180,
             "y": 0,
             "group": "主功能组",
             "source": "authored-functional-anchor",
             "layoutId": "hospital-01-layout-5",
             "bounds": {
-              "minX": -1.3699999678102273,
-              "maxX": 0.1699999678102273,
+              "minX": -1.3699999678102275,
+              "maxX": 0.16999996781022741,
               "minZ": -1.4199999678102273,
-              "maxZ": 0.11999996781022726,
+              "maxZ": 0.11999996781022737,
               "minY": 0,
               "maxY": 1.1
             },
@@ -548,7 +549,7 @@
             "assetId": "theme-waiting-bench-v05",
             "x": 1.9,
             "z": 0.2,
-            "yaw": -90,
+            "yaw": 90,
             "y": 0,
             "group": "候诊",
             "source": "authored-functional-anchor",
@@ -580,7 +581,7 @@
             "x": -0.6,
             "z": -0.65,
             "y": 1.102,
-            "yaw": 0,
+            "yaw": 180,
             "group": "桌面物件",
             "supportId": "hospital-01-layout-5",
             "source": "authored-tabletop-slot",
@@ -588,8 +589,8 @@
             "bounds": {
               "minX": -0.7311729791054055,
               "maxX": -0.4688270208945945,
-              "minZ": -0.7917111888432604,
-              "maxZ": -0.5082888111567396,
+              "minZ": -0.7917111888432605,
+              "maxZ": -0.5082888111567395,
               "minY": 1.102,
               "maxY": 1.2744938541301527
             },
@@ -726,7 +727,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-dining-chair",
@@ -1037,10 +1038,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -1240,7 +1242,7 @@
             "assetId": "theme-waiting-bench-v05",
             "x": -1.9,
             "z": -0.2,
-            "yaw": 90,
+            "yaw": -90,
             "y": 0,
             "group": "候诊左列",
             "source": "authored-functional-anchor",
@@ -1270,7 +1272,7 @@
             "assetId": "theme-waiting-bench-v05",
             "x": 1.9,
             "z": -0.2,
-            "yaw": -90,
+            "yaw": 90,
             "y": 0,
             "group": "候诊右列",
             "source": "authored-functional-anchor",
@@ -1440,7 +1442,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-iron-rail-v01",
@@ -1778,10 +1780,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -2369,7 +2372,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-examination-cot",
@@ -2603,10 +2606,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -2992,7 +2996,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-medicine-cabinet",
@@ -3253,10 +3257,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -3394,7 +3399,7 @@
             "assetId": "theme-pharmacy-drawers-v05",
             "x": -2.1,
             "z": -0.3,
-            "yaw": 90,
+            "yaw": -90,
             "y": 0,
             "group": "药柜",
             "source": "authored-functional-anchor",
@@ -3424,7 +3429,7 @@
             "assetId": "theme-pharmacy-drawers-v05",
             "x": 2.1,
             "z": -0.3,
-            "yaw": -90,
+            "yaw": 90,
             "y": 0,
             "group": "药柜",
             "source": "authored-functional-anchor",
@@ -3624,7 +3629,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-bed-single",
@@ -3849,10 +3854,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -4304,7 +4310,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-medical-file-cabinet",
@@ -4646,10 +4652,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -5034,8 +5041,8 @@
           {
             "layoutId": "hospital-07-layout-12",
             "assetId": "prop-archive-boxes-v01",
-            "x": 1.45,
-            "z": -2,
+            "x": 1.5,
+            "z": -2.15,
             "y": 0.802,
             "yaw": 0,
             "group": "桌面物件",
@@ -5043,10 +5050,10 @@
             "source": "authored-tabletop-slot",
             "surfaceCheck": "requires-mesh-contact-check",
             "bounds": {
-              "minX": 1.2703077043584712,
-              "maxX": 1.6296922956415287,
-              "minZ": -2.1550769126769356,
-              "maxZ": -1.8449230873230642,
+              "minX": 1.3203077043584712,
+              "maxX": 1.6796922956415288,
+              "minZ": -2.3050769126769355,
+              "maxZ": -1.9949230873230641,
               "minY": 0.802,
               "maxY": 1.121999989271164
             },
@@ -5207,7 +5214,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-display-cabinet",
@@ -5473,10 +5480,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -5945,7 +5953,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -6170,10 +6178,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -6431,7 +6440,7 @@
           {
             "layoutId": "park-01-layout-8",
             "assetId": "theme-ticket-register-v05",
-            "x": -0.9,
+            "x": -0.95,
             "z": 0,
             "y": 1.252,
             "yaw": 0,
@@ -6440,8 +6449,8 @@
             "source": "authored-tabletop-slot",
             "surfaceCheck": "requires-mesh-contact-check",
             "bounds": {
-              "minX": -1.0970893845848426,
-              "maxX": -0.7029106154151574,
+              "minX": -1.1470893845848427,
+              "maxX": -0.7529106154151572,
               "minZ": -0.25496879879203693,
               "maxZ": 0.25496879879203693,
               "minY": 1.252,
@@ -6644,7 +6653,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "主席台重构候选",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "theme-stage-deck-v06",
@@ -7284,10 +7293,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -8242,7 +8252,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-child-table",
@@ -8503,10 +8513,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -8582,7 +8593,7 @@
             "assetId": "theme-arcade-cabinet-v05",
             "x": -1.85,
             "z": 2.4,
-            "yaw": 90,
+            "yaw": -90,
             "y": 0,
             "group": "游艺机列",
             "source": "authored-functional-anchor",
@@ -8612,7 +8623,7 @@
             "assetId": "theme-arcade-cabinet-v05",
             "x": -1.85,
             "z": 0.7,
-            "yaw": 90,
+            "yaw": -90,
             "y": 0,
             "group": "游艺机列",
             "source": "authored-functional-anchor",
@@ -8642,7 +8653,7 @@
             "assetId": "theme-arcade-cabinet-v05",
             "x": -1.85,
             "z": -1,
-            "yaw": 90,
+            "yaw": -90,
             "y": 0,
             "group": "游艺机列",
             "source": "authored-functional-anchor",
@@ -8672,7 +8683,7 @@
             "assetId": "theme-arcade-cabinet-v05",
             "x": 1.85,
             "z": 2.4,
-            "yaw": -90,
+            "yaw": 90,
             "y": 0,
             "group": "游艺机列",
             "source": "authored-functional-anchor",
@@ -8702,7 +8713,7 @@
             "assetId": "theme-arcade-cabinet-v05",
             "x": 1.85,
             "z": 0.7,
-            "yaw": -90,
+            "yaw": 90,
             "y": 0,
             "group": "游艺机列",
             "source": "authored-functional-anchor",
@@ -8732,7 +8743,7 @@
             "assetId": "theme-arcade-cabinet-v05",
             "x": 1.85,
             "z": -1,
-            "yaw": -90,
+            "yaw": 90,
             "y": 0,
             "group": "游艺机列",
             "source": "authored-functional-anchor",
@@ -8932,7 +8943,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -9175,10 +9186,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -9677,7 +9689,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "vanity-oval-mirror-v01",
@@ -9929,10 +9941,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -10431,7 +10444,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-toy-shelf",
@@ -10778,10 +10791,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -11335,7 +11349,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "scene-round-table-v03",
@@ -11587,10 +11601,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -12093,7 +12108,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-dining-chair",
@@ -12368,10 +12383,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -13265,7 +13281,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -13517,10 +13533,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -13782,16 +13799,16 @@
             "assetId": "theme-office-reception-v05",
             "x": -0.6,
             "z": -0.7,
-            "yaw": 0,
+            "yaw": 180,
             "y": 0,
             "group": "接待",
             "source": "authored-functional-anchor",
             "layoutId": "office-01-layout-8",
             "bounds": {
-              "minX": -1.3872548346635547,
-              "maxX": 0.18725483466355486,
+              "minX": -1.387254834663555,
+              "maxX": 0.18725483466355497,
               "minZ": -1.1945377728512743,
-              "maxZ": -0.2054622271487257,
+              "maxZ": -0.20546222714872558,
               "minY": 0,
               "maxY": 1.1
             },
@@ -13811,19 +13828,19 @@
           {
             "layoutId": "office-01-layout-9",
             "assetId": "prop-rotary-phone-v01",
-            "x": -0.6,
-            "z": -0.7,
+            "x": -0.55,
+            "z": -0.4,
             "y": 1.102,
-            "yaw": 0,
+            "yaw": 180,
             "group": "桌面物件",
             "supportId": "office-01-layout-8",
             "source": "authored-tabletop-slot",
             "surfaceCheck": "requires-mesh-contact-check",
             "bounds": {
-              "minX": -0.7311729791054055,
-              "maxX": -0.4688270208945945,
-              "minZ": -0.8417111888432605,
-              "maxZ": -0.5582888111567395,
+              "minX": -0.6811729791054055,
+              "maxX": -0.41882702089459456,
+              "minZ": -0.5417111888432605,
+              "maxZ": -0.2582888111567395,
               "minY": 1.102,
               "maxY": 1.2744938541301527
             },
@@ -13974,7 +13991,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -14343,10 +14360,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -14481,6 +14499,37 @@
             }
           },
           {
+            "assetId": "furniture-writing-desk",
+            "x": 1.65,
+            "z": -1.5,
+            "yaw": -90,
+            "y": 0,
+            "group": "主体",
+            "id": "office-02-6",
+            "source": "retained-layout",
+            "layoutId": "office-02-layout-4",
+            "bounds": {
+              "minX": 1.3249999999999997,
+              "maxX": 1.975,
+              "minZ": -2.15,
+              "maxZ": -0.85,
+              "minY": 0,
+              "maxY": 0.82
+            },
+            "asset": {
+              "id": "furniture-writing-desk",
+              "name": "furniture-writing-desk",
+              "url": "/art/room-presets/v03/models/furniture-writing-desk.glb",
+              "size": [
+                1.3,
+                0.82,
+                0.65
+              ],
+              "boundsSource": "delivered-bounds",
+              "available": true
+            }
+          },
+          {
             "assetId": "furniture-dining-chair",
             "x": 0.65,
             "z": -1.5,
@@ -14489,7 +14538,7 @@
             "group": "主体",
             "id": "office-02-7",
             "source": "retained-layout",
-            "layoutId": "office-02-layout-4",
+            "layoutId": "office-02-layout-5",
             "bounds": {
               "minX": 0.42000000000000004,
               "maxX": 0.88,
@@ -14520,7 +14569,7 @@
             "group": "主体",
             "id": "office-02-8",
             "source": "retained-layout",
-            "layoutId": "office-02-layout-5",
+            "layoutId": "office-02-layout-6",
             "bounds": {
               "minX": -0.65,
               "maxX": 0.65,
@@ -14551,7 +14600,7 @@
             "group": "主体",
             "id": "office-02-9",
             "source": "retained-layout",
-            "layoutId": "office-02-layout-6",
+            "layoutId": "office-02-layout-7",
             "bounds": {
               "minX": -0.22000000000000003,
               "maxX": 0.22000000000000003,
@@ -14582,7 +14631,7 @@
             "group": "主体",
             "id": "office-02-10",
             "source": "retained-layout",
-            "layoutId": "office-02-layout-7",
+            "layoutId": "office-02-layout-8",
             "bounds": {
               "minX": -2.3,
               "maxX": -0.9999999999999999,
@@ -14613,7 +14662,7 @@
             "group": "照明",
             "id": "office-02-11",
             "source": "retained-layout",
-            "layoutId": "office-02-layout-8",
+            "layoutId": "office-02-layout-9",
             "bounds": {
               "minX": -1.3,
               "maxX": -0.30000000000000004,
@@ -14644,7 +14693,7 @@
             "group": "入口",
             "id": "office-02-12",
             "source": "retained-layout",
-            "layoutId": "office-02-layout-9",
+            "layoutId": "office-02-layout-10",
             "bounds": {
               "minX": -0.775,
               "maxX": 0.775,
@@ -14670,16 +14719,16 @@
             "assetId": "prop-computer-desk-v01",
             "x": -1.7,
             "z": 2.4,
-            "yaw": 0,
+            "yaw": -90,
             "y": 0,
             "group": "工位A",
             "source": "authored-functional-anchor",
-            "layoutId": "office-02-layout-10",
+            "layoutId": "office-02-layout-11",
             "bounds": {
-              "minX": -2.1607462488714004,
-              "maxX": -1.2392537511285993,
-              "minZ": 1.7135821190283214,
-              "maxZ": 3.0864178809716787,
+              "minX": -2.3864178809716785,
+              "maxX": -1.0135821190283214,
+              "minZ": 1.9392537511285992,
+              "maxZ": 2.8607462488714006,
               "minY": 0,
               "maxY": 1.259999986886978
             },
@@ -14700,16 +14749,16 @@
             "assetId": "prop-computer-desk-v01",
             "x": 1.7,
             "z": -0.3,
-            "yaw": 180,
+            "yaw": 90,
             "y": 0,
             "group": "工位B",
             "source": "authored-functional-anchor",
-            "layoutId": "office-02-layout-11",
+            "layoutId": "office-02-layout-12",
             "bounds": {
-              "minX": 1.2392537511285993,
-              "maxX": 2.160746248871401,
-              "minZ": -0.9864178809716786,
-              "maxZ": 0.3864178809716787,
+              "minX": 1.0135821190283214,
+              "maxX": 2.3864178809716785,
+              "minZ": -0.7607462488714007,
+              "maxZ": 0.1607462488714007,
               "minY": 0,
               "maxY": 1.259999986886978
             },
@@ -14734,7 +14783,7 @@
             "y": 0,
             "group": "工位A",
             "source": "authored-functional-anchor",
-            "layoutId": "office-02-layout-12",
+            "layoutId": "office-02-layout-13",
             "bounds": {
               "minX": -0.9643198025226594,
               "maxX": -0.33568019747734074,
@@ -14764,7 +14813,7 @@
             "y": 0,
             "group": "工位B",
             "source": "authored-functional-anchor",
-            "layoutId": "office-02-layout-13",
+            "layoutId": "office-02-layout-14",
             "bounds": {
               "minX": 0.33568019747734074,
               "maxX": 0.9643198025226594,
@@ -14795,7 +14844,7 @@
           ],
           "approach": [
             -1.7000000000000002,
-            1.4000000000000001
+            1.6
           ],
           "note": "位置为静态平面通行采样，正式导航和镜头遮挡另验"
         }
@@ -14924,7 +14973,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-document-table",
@@ -15185,10 +15234,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -15619,7 +15669,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-archive-shelf",
@@ -15961,10 +16011,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -16192,38 +16243,6 @@
             }
           },
           {
-            "assetId": "furniture-document-table",
-            "x": 0,
-            "z": -3.7,
-            "yaw": 0,
-            "y": 0,
-            "group": "主体",
-            "id": "office-04-7",
-            "key": "office-04-support-7",
-            "source": "retained-layout",
-            "layoutId": "office-04-layout-7",
-            "bounds": {
-              "minX": -0.65,
-              "maxX": 0.65,
-              "minZ": -4.025,
-              "maxZ": -3.375,
-              "minY": 0,
-              "maxY": 0.8
-            },
-            "asset": {
-              "id": "furniture-document-table",
-              "name": "furniture-document-table",
-              "url": "/art/room-presets/v03/models/furniture-document-table.glb",
-              "size": [
-                1.3,
-                0.8,
-                0.65
-              ],
-              "boundsSource": "delivered-bounds",
-              "available": true
-            }
-          },
-          {
             "assetId": "furniture-dining-chair",
             "x": 0,
             "z": -2.65,
@@ -16232,7 +16251,7 @@
             "group": "主体",
             "id": "office-04-8",
             "source": "retained-layout",
-            "layoutId": "office-04-layout-8",
+            "layoutId": "office-04-layout-7",
             "bounds": {
               "minX": -0.22000000000000003,
               "maxX": 0.22000000000000003,
@@ -16255,37 +16274,6 @@
             }
           },
           {
-            "assetId": "furniture-bookcase",
-            "x": 1.6,
-            "z": -4.55,
-            "yaw": 0,
-            "y": 0,
-            "group": "主体",
-            "id": "office-04-9",
-            "source": "retained-layout",
-            "layoutId": "office-04-layout-9",
-            "bounds": {
-              "minX": 0.9500000000000001,
-              "maxX": 2.25,
-              "minZ": -4.875,
-              "maxZ": -4.225,
-              "minY": 0,
-              "maxY": 2.25
-            },
-            "asset": {
-              "id": "furniture-bookcase",
-              "name": "furniture-bookcase",
-              "url": "/art/room-presets/v03/models/furniture-bookcase.glb",
-              "size": [
-                1.3,
-                2.25,
-                0.65
-              ],
-              "boundsSource": "delivered-bounds",
-              "available": true
-            }
-          },
-          {
             "assetId": "lighting-strip-double",
             "x": -0.8,
             "z": -1.2,
@@ -16294,7 +16282,7 @@
             "group": "照明",
             "id": "office-04-10",
             "source": "retained-layout",
-            "layoutId": "office-04-layout-10",
+            "layoutId": "office-04-layout-8",
             "bounds": {
               "minX": -1.3,
               "maxX": -0.30000000000000004,
@@ -16325,7 +16313,7 @@
             "group": "入口",
             "id": "office-04-11",
             "source": "retained-layout",
-            "layoutId": "office-04-layout-11",
+            "layoutId": "office-04-layout-9",
             "bounds": {
               "minX": -0.775,
               "maxX": 0.775,
@@ -16355,7 +16343,7 @@
             "y": 0,
             "group": "待归档",
             "source": "authored-functional-anchor",
-            "layoutId": "office-04-layout-12",
+            "layoutId": "office-04-layout-10",
             "bounds": {
               "minX": 1.2468478305600144,
               "maxX": 1.7531521694399856,
@@ -16378,14 +16366,44 @@
             }
           },
           {
-            "layoutId": "office-04-layout-13",
+            "assetId": "theme-conference-table-v05",
+            "x": 0,
+            "z": -3.7,
+            "yaw": 0,
+            "y": 0,
+            "group": "档案整理",
+            "source": "authored-functional-anchor",
+            "layoutId": "office-04-layout-11",
+            "bounds": {
+              "minX": -1.0970620996049743,
+              "maxX": 1.0970620996049743,
+              "minZ": -4.191638396887552,
+              "maxZ": -3.208361603112448,
+              "minY": 0,
+              "maxY": 0.76
+            },
+            "asset": {
+              "id": "theme-conference-table-v05",
+              "name": "公司长会议桌",
+              "url": "/art/theme-specific/v05/theme-conference-table-v05.glb",
+              "size": [
+                2.1941241992099485,
+                0.76,
+                0.983276793775104
+              ],
+              "boundsSource": "delivered-bounds",
+              "available": true
+            }
+          },
+          {
+            "layoutId": "office-04-layout-12",
             "assetId": "prop-archive-boxes-v01",
             "x": -0.25219515509114376,
             "z": -3.7,
-            "y": 0.802,
+            "y": 0.762,
             "yaw": 0,
             "group": "桌面物件",
-            "supportId": "office-04-layout-7",
+            "supportId": "office-04-layout-11",
             "source": "authored-tabletop-slot",
             "surfaceCheck": "requires-mesh-contact-check",
             "bounds": {
@@ -16393,8 +16411,8 @@
               "maxX": -0.07250285944961504,
               "minZ": -3.8550769126769358,
               "maxZ": -3.5449230873230646,
-              "minY": 0.802,
-              "maxY": 1.121999989271164
+              "minY": 0.762,
+              "maxY": 1.081999989271164
             },
             "asset": {
               "id": "prop-archive-boxes-v01",
@@ -16410,14 +16428,14 @@
             }
           },
           {
-            "layoutId": "office-04-layout-14",
+            "layoutId": "office-04-layout-13",
             "assetId": "scene-typewriter-v03",
             "x": 0.21969229564152878,
             "z": -3.7,
-            "y": 0.802,
+            "y": 0.762,
             "yaw": 0,
             "group": "桌面物件",
-            "supportId": "office-04-layout-7",
+            "supportId": "office-04-layout-11",
             "source": "authored-tabletop-slot",
             "surfaceCheck": "requires-mesh-contact-check",
             "bounds": {
@@ -16425,8 +16443,8 @@
               "maxX": 0.4318874507326726,
               "minZ": -3.8877215156710068,
               "maxZ": -3.5122784843289936,
-              "minY": 0.802,
-              "maxY": 1.082
+              "minY": 0.762,
+              "maxY": 1.042
             },
             "asset": {
               "id": "scene-typewriter-v03",
@@ -16585,7 +16603,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -16837,10 +16855,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -17308,7 +17327,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-document-table",
@@ -17569,10 +17588,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -17892,8 +17912,8 @@
           {
             "layoutId": "office-06-layout-10",
             "assetId": "scene-typewriter-v03",
-            "x": -0.9,
-            "z": -0.6,
+            "x": -0.8,
+            "z": -0.55,
             "y": 0.802,
             "yaw": 0,
             "group": "桌面物件",
@@ -17901,10 +17921,10 @@
             "source": "authored-tabletop-slot",
             "surfaceCheck": "requires-mesh-contact-check",
             "bounds": {
-              "minX": -1.1121951550911438,
-              "maxX": -0.6878048449088562,
-              "minZ": -0.7877215156710065,
-              "maxZ": -0.4122784843289935,
+              "minX": -1.0121951550911439,
+              "maxX": -0.5878048449088562,
+              "minZ": -0.7377215156710065,
+              "maxZ": -0.36227848432899357,
               "minY": 0.802,
               "maxY": 1.082
             },
@@ -18065,7 +18085,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -18322,10 +18342,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -18850,7 +18871,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-bookcase",
@@ -19111,10 +19132,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -19577,7 +19599,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-bed-single",
@@ -19834,10 +19856,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -20331,7 +20354,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -20556,10 +20579,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -21024,7 +21048,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-bed-single",
@@ -21280,10 +21304,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -21700,7 +21725,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -21952,10 +21977,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -22248,8 +22274,8 @@
           {
             "layoutId": "home-04-layout-9",
             "assetId": "scene-typewriter-v03",
-            "x": 0.5515895519729481,
-            "z": -1.5,
+            "x": 0.55159,
+            "z": -1.55,
             "y": 0.822,
             "yaw": 0,
             "group": "桌面物件",
@@ -22257,10 +22283,10 @@
             "source": "authored-tabletop-slot",
             "surfaceCheck": "requires-mesh-contact-check",
             "bounds": {
-              "minX": 0.3393943968818043,
-              "maxX": 0.763784707064092,
-              "minZ": -1.6877215156710064,
-              "maxZ": -1.3122784843289936,
+              "minX": 0.3393948449088562,
+              "maxX": 0.7637851550911439,
+              "minZ": -1.7377215156710064,
+              "maxZ": -1.3622784843289937,
               "minY": 0.822,
               "maxY": 1.1019999999999999
             },
@@ -22453,7 +22479,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-low-divan-v01",
@@ -22678,10 +22704,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -22909,7 +22936,7 @@
             }
           },
           {
-            "assetId": "furniture-document-table",
+            "assetId": "scene-round-table-v03",
             "x": -1.3,
             "z": 1.5,
             "yaw": 180,
@@ -22918,21 +22945,21 @@
             "source": "authored-functional-anchor",
             "layoutId": "home-05-layout-7",
             "bounds": {
-              "minX": -1.9500000000000002,
-              "maxX": -0.65,
-              "minZ": 1.1749999999999998,
-              "maxZ": 1.8250000000000002,
+              "minX": -1.8107336010533288,
+              "maxX": -0.7892663989466712,
+              "minZ": 0.9882855314658214,
+              "maxZ": 2.0117144685341786,
               "minY": 0,
-              "maxY": 0.8
+              "maxY": 0.76
             },
             "asset": {
-              "id": "furniture-document-table",
-              "name": "furniture-document-table",
-              "url": "/art/room-presets/v03/models/furniture-document-table.glb",
+              "id": "scene-round-table-v03",
+              "name": "圆形餐桌",
+              "url": "/art/scene-assets/v03/scene-round-table-v03.glb",
               "size": [
-                1.3,
-                0.8,
-                0.65
+                1.0214672021066575,
+                0.76,
+                1.023428937068357
               ],
               "boundsSource": "delivered-bounds",
               "available": true
@@ -22943,7 +22970,7 @@
             "assetId": "scene-sewing-machine-v03",
             "x": -1.0845007719526438,
             "z": 1.5,
-            "y": 0.802,
+            "y": 0.762,
             "yaw": 180,
             "group": "桌面物件",
             "supportId": "home-05-layout-7",
@@ -22954,8 +22981,8 @@
               "maxX": -0.9547015884585277,
               "minZ": 1.2521841169449532,
               "maxZ": 1.7478158830550468,
-              "minY": 0.802,
-              "maxY": 1.1520000000000001
+              "minY": 0.762,
+              "maxY": 1.112
             },
             "asset": {
               "id": "scene-sewing-machine-v03",
@@ -22975,7 +23002,7 @@
             "assetId": "theme-sewing-basket-v05",
             "x": -1.4697991834941162,
             "z": 1.5,
-            "y": 0.802,
+            "y": 0.762,
             "yaw": 180,
             "group": "桌面物件",
             "supportId": "home-05-layout-7",
@@ -22986,8 +23013,8 @@
               "maxX": -1.29429995544676,
               "minZ": 1.34112660180267,
               "maxZ": 1.65887339819733,
-              "minY": 0.802,
-              "maxY": 1.082
+              "minY": 0.762,
+              "maxY": 1.042
             },
             "asset": {
               "id": "theme-sewing-basket-v05",
@@ -23132,7 +23159,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "scene-round-table-v03",
@@ -23384,10 +23411,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -23864,7 +23892,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-wardrobe",
@@ -24229,10 +24257,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -24816,7 +24845,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-canopy-linen-v01",
@@ -25041,10 +25070,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -25547,7 +25577,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -25799,10 +25829,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -25875,68 +25906,6 @@
             }
           },
           {
-            "assetId": "furniture-armchair-curved",
-            "x": -1.8,
-            "z": 1.1,
-            "yaw": 90,
-            "y": 0,
-            "group": "主体",
-            "id": "hotel-01-4",
-            "source": "retained-layout",
-            "layoutId": "hotel-01-layout-2",
-            "bounds": {
-              "minX": -2.15,
-              "maxX": -1.4500000000000002,
-              "minZ": 0.7500000000000001,
-              "maxZ": 1.4500000000000002,
-              "minY": 0,
-              "maxY": 0.95
-            },
-            "asset": {
-              "id": "furniture-armchair-curved",
-              "name": "furniture-armchair-curved",
-              "url": "/art/room-presets/v03/models/furniture-armchair-curved.glb",
-              "size": [
-                0.7,
-                0.95,
-                0.7
-              ],
-              "boundsSource": "delivered-bounds",
-              "available": true
-            }
-          },
-          {
-            "assetId": "furniture-coffee-table",
-            "x": -0.7,
-            "z": 0.5,
-            "yaw": 90,
-            "y": 0,
-            "group": "主体",
-            "id": "hotel-01-5",
-            "source": "retained-layout",
-            "layoutId": "hotel-01-layout-3",
-            "bounds": {
-              "minX": -1.025,
-              "maxX": -0.3749999999999999,
-              "minZ": -0.15000000000000002,
-              "maxZ": 1.15,
-              "minY": 0,
-              "maxY": 0.48
-            },
-            "asset": {
-              "id": "furniture-coffee-table",
-              "name": "furniture-coffee-table",
-              "url": "/art/room-presets/v03/models/furniture-coffee-table.glb",
-              "size": [
-                1.3,
-                0.48,
-                0.65
-              ],
-              "boundsSource": "delivered-bounds",
-              "available": true
-            }
-          },
-          {
             "assetId": "lighting-floor-lamp",
             "x": 2,
             "z": 1.4,
@@ -25945,7 +25914,7 @@
             "group": "主体",
             "id": "hotel-01-6",
             "source": "retained-layout",
-            "layoutId": "hotel-01-layout-4",
+            "layoutId": "hotel-01-layout-2",
             "bounds": {
               "minX": 1.79,
               "maxX": 2.21,
@@ -25976,7 +25945,7 @@
             "group": "照明",
             "id": "hotel-01-7",
             "source": "retained-layout",
-            "layoutId": "hotel-01-layout-5",
+            "layoutId": "hotel-01-layout-3",
             "bounds": {
               "minX": -1.125,
               "maxX": -0.47500000000000003,
@@ -26007,7 +25976,7 @@
             "group": "入口",
             "id": "hotel-01-8",
             "source": "retained-layout",
-            "layoutId": "hotel-01-layout-6",
+            "layoutId": "hotel-01-layout-4",
             "bounds": {
               "minX": -0.775,
               "maxX": 0.775,
@@ -26033,16 +26002,16 @@
             "assetId": "theme-hotel-reception-v05",
             "x": 0.5,
             "z": -0.9,
-            "yaw": 0,
+            "yaw": 180,
             "y": 0,
             "group": "前台",
             "source": "authored-functional-anchor",
-            "layoutId": "hotel-01-layout-7",
+            "layoutId": "hotel-01-layout-5",
             "bounds": {
-              "minX": -0.3282416255628664,
-              "maxX": 1.3282416255628664,
+              "minX": -0.3282416255628665,
+              "maxX": 1.3282416255628666,
               "minZ": -1.5596758349705304,
-              "maxZ": -0.24032416502946963,
+              "maxZ": -0.24032416502946952,
               "minY": 0,
               "maxY": 1.65
             },
@@ -26067,7 +26036,7 @@
             "y": 1.3,
             "group": "钥匙墙",
             "source": "authored-functional-anchor",
-            "layoutId": "hotel-01-layout-8",
+            "layoutId": "hotel-01-layout-6",
             "bounds": {
               "minX": 0.1797945396710277,
               "maxX": 0.8202054603289723,
@@ -26090,23 +26059,53 @@
             }
           },
           {
-            "layoutId": "hotel-01-layout-9",
+            "assetId": "furniture-dresser",
+            "x": -1.45,
+            "z": 0.65,
+            "yaw": 0,
+            "y": 0,
+            "group": "侧面服务台",
+            "source": "authored-functional-anchor",
+            "layoutId": "hotel-01-layout-7",
+            "bounds": {
+              "minX": -2.1,
+              "maxX": -0.7999999999999999,
+              "minZ": 0.325,
+              "maxZ": 0.9750000000000001,
+              "minY": 0,
+              "maxY": 0.88
+            },
+            "asset": {
+              "id": "furniture-dresser",
+              "name": "furniture-dresser",
+              "url": "/art/room-presets/v03/models/furniture-dresser.glb",
+              "size": [
+                1.3,
+                0.88,
+                0.65
+              ],
+              "boundsSource": "delivered-bounds",
+              "available": true
+            }
+          },
+          {
+            "layoutId": "hotel-01-layout-8",
             "assetId": "theme-hotel-service-bell-v05",
-            "x": 0.5,
-            "z": -0.9,
-            "y": 1.652,
+            "x": -1.45,
+            "z": 0.65,
+            "y": 0.882,
             "yaw": 0,
             "group": "桌面物件",
             "supportId": "hotel-01-layout-7",
             "source": "authored-tabletop-slot",
             "surfaceCheck": "requires-mesh-contact-check",
             "bounds": {
-              "minX": 0.4374705359451204,
-              "maxX": 0.5625294640548796,
-              "minZ": -0.9626262709214107,
-              "maxZ": -0.8373737290785893,
-              "minY": 1.652,
-              "maxY": 1.752
+              "minX": -1.5125294640548794,
+              "maxX": -1.3874705359451205,
+              "minZ": 0.5873737290785893,
+              "maxZ": 0.7126262709214107,
+              "minY": 0.882,
+              "maxY": 0.982
             },
             "asset": {
               "id": "theme-hotel-service-bell-v05",
@@ -26251,7 +26250,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-iron-rail-v01",
@@ -26481,10 +26480,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -26963,7 +26963,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-iron-rail-v01",
@@ -27188,10 +27188,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -27656,7 +27657,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -27971,10 +27972,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -28518,7 +28520,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-wardrobe",
@@ -28801,10 +28803,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -29336,7 +29339,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-wardrobe",
@@ -29620,10 +29623,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -30115,7 +30119,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -30358,10 +30362,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -30890,7 +30895,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-low-divan-v01",
@@ -31147,10 +31152,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -31615,7 +31621,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-offering-table",
@@ -31813,10 +31819,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -32332,7 +32339,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-shrine-cabinet",
@@ -32557,10 +32564,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -33055,7 +33063,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-kneeling-bench",
@@ -33361,10 +33369,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -33986,7 +33995,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-display-cabinet",
@@ -34220,10 +34229,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -34742,7 +34752,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-dining-chair",
@@ -34994,10 +35004,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -35527,7 +35538,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -35779,10 +35790,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -36301,7 +36313,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-shrine-cabinet",
@@ -36517,10 +36529,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -37019,7 +37032,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-shrine-cabinet",
@@ -37325,10 +37338,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"

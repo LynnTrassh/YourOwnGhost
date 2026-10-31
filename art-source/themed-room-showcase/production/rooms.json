@@ -1,7 +1,7 @@
 {
   "version": "production-design-2",
   "date": "2026-10-31",
-  "scope": "48间完整制作方案及当前实装对照；正式游戏未接入",
+  "scope": "48间制作方案；正式随机池通过确定性空间适配择选，未声称逐间视觉验收完成",
   "rooms": [
     {
       "id": "hospital-01",
@@ -121,7 +121,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -346,10 +346,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -460,7 +461,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-dining-chair",
@@ -771,10 +772,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -909,7 +911,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-iron-rail-v01",
@@ -1247,10 +1249,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -1389,7 +1392,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-examination-cot",
@@ -1623,10 +1626,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -1747,7 +1751,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-medicine-cabinet",
@@ -2008,10 +2012,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -2146,7 +2151,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-bed-single",
@@ -2371,10 +2376,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -2495,7 +2501,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-medical-file-cabinet",
@@ -2837,10 +2843,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -2975,7 +2982,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-display-cabinet",
@@ -3241,10 +3248,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -3387,7 +3395,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -3612,10 +3620,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -3790,7 +3799,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "主席台重构候选",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "theme-stage-deck-v06",
@@ -4430,10 +4439,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -4558,7 +4568,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-child-table",
@@ -4819,10 +4829,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -4957,7 +4968,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -5200,10 +5211,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -5342,7 +5354,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "vanity-oval-mirror-v01",
@@ -5594,10 +5606,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -5736,7 +5749,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-toy-shelf",
@@ -6083,10 +6096,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -6221,7 +6235,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "scene-round-table-v03",
@@ -6473,10 +6487,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -6651,7 +6666,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-dining-chair",
@@ -6926,10 +6941,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -7050,7 +7066,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -7302,10 +7318,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -7430,7 +7447,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -7799,10 +7816,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -7931,7 +7949,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-document-table",
@@ -8192,10 +8210,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -8330,7 +8349,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-archive-shelf",
@@ -8672,10 +8691,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -8810,7 +8830,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -9062,10 +9082,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -9204,7 +9225,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-document-table",
@@ -9465,10 +9486,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -9603,7 +9625,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -9860,10 +9882,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -9998,7 +10021,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-bookcase",
@@ -10259,10 +10282,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -10397,7 +10421,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-bed-single",
@@ -10654,10 +10678,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -10792,7 +10817,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -11017,10 +11042,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -11155,7 +11181,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-bed-single",
@@ -11411,10 +11437,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -11535,7 +11562,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -11787,10 +11814,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -11925,7 +11953,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-low-divan-v01",
@@ -12150,10 +12178,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -12274,7 +12303,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "scene-round-table-v03",
@@ -12526,10 +12555,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -12678,7 +12708,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-wardrobe",
@@ -13043,10 +13073,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -13181,7 +13212,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-canopy-linen-v01",
@@ -13406,10 +13437,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -13552,7 +13584,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-writing-desk",
@@ -13804,10 +13836,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -13928,7 +13961,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-iron-rail-v01",
@@ -14158,10 +14191,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -14282,7 +14316,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-iron-rail-v01",
@@ -14507,10 +14541,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -14645,7 +14680,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -14960,10 +14995,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -15116,7 +15152,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-wardrobe",
@@ -15399,10 +15435,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -15541,7 +15578,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-wardrobe",
@@ -15825,10 +15862,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -15963,7 +16001,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -16206,10 +16244,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -16344,7 +16383,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "bed-low-divan-v01",
@@ -16601,10 +16640,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -16743,7 +16783,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-offering-table",
@@ -16941,10 +16981,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -17069,7 +17110,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-shrine-cabinet",
@@ -17294,10 +17335,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -17432,7 +17474,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-kneeling-bench",
@@ -17738,10 +17780,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -17880,7 +17923,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-display-cabinet",
@@ -18114,10 +18157,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -18242,7 +18286,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-dining-chair",
@@ -18494,10 +18538,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -18636,7 +18681,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-sofa-two-seat",
@@ -18888,10 +18933,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -19016,7 +19062,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-shrine-cabinet",
@@ -19232,10 +19278,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"
@@ -19374,7 +19421,7 @@
       ],
       "missingAssets": [],
       "currentVisual": {
-        "status": "已补现有道具；仍须按本设计完成核心结构",
+        "status": "历史基础布局快照；当前制作布局见layouts.json，正式候选见src/art/themed-room-recipes.js",
         "placements": [
           {
             "assetId": "furniture-shrine-cabinet",
@@ -19680,10 +19727,11 @@
         "四视点实景复核；未做真人试玩不写通过"
       ],
       "integration": {
-        "runtimeEnabled": false,
+        "runtimeEnabled": true,
+        "poolVersion": 1,
         "plannerOwner": "程序/策划",
         "requirements": [
-          "确定房间尺寸、门位与种子版本后再注册",
+          "已注册48候选，按真实房型/门位/导航匹配并整组回退",
           "陈设占地进入实际碰撞，不在加载阶段再随机摆放",
           "事件/追逐/交互保留原锚点，逐房验收",
           "楼梯和高台当前预览按障碍处理，正式需独立可走面适配"

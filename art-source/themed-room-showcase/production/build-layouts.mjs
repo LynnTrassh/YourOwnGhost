@@ -18,26 +18,26 @@ const f=(id,x,z,yaw=0,group='主功能组',y=0)=>({assetId:id,x,z,yaw,y,group});
 const top=(id,supportAsset,group='桌面物件',index=0)=>({assetId:id,supportAsset,index,group});
 // Explicit authored coordinates for the design's real functional anchors.
 const cores={
- 'hospital-01':[f(t('hospital-triage-counter'),-.6,-.65),f(t('waiting-bench'),1.9,.2,-90,'候诊'),top(p('rotary-phone'),t('hospital-triage-counter'))],
- 'hospital-02':[f(t('waiting-bench'),-1.9,-.2,90,'候诊左列'),f(t('waiting-bench'),1.9,-.2,-90,'候诊右列')],
+ 'hospital-01':[f(t('hospital-triage-counter'),-.6,-.65,180),f(t('waiting-bench'),1.9,.2,90,'候诊'),top(p('rotary-phone'),t('hospital-triage-counter'))],
+ 'hospital-02':[f(t('waiting-bench'),-1.9,-.2,-90,'候诊左列'),f(t('waiting-bench'),1.9,-.2,90,'候诊右列')],
  'hospital-03':[f(s('hospital-bed'),-1.5,2,90,'床组A'),f(s('hospital-bed'),1.5,-.5,90,'床组B'),f(p('folding-screen'),-1.35,-2.4,0,'隔离'),f(p('iv-stand'),1.5,-2.1,0,'输液')],
  'hospital-04':[f(s('hospital-bed'),-.75,-.6,90,'检查床'),f('lighting-floor-lamp',1.5,-1.5,0,'工作灯'),f(t('xray-viewer'),-.4,-2.32,180,'观片',1.5)],
- 'hospital-05':[f(t('pharmacy-drawers'),-2.1,-.3,90,'药柜'),f(t('pharmacy-drawers'),2.1,-.3,-90,'药柜'),f('furniture-instrument-trolley',0,-1.55,90,'配药')],
+ 'hospital-05':[f(t('pharmacy-drawers'),-2.1,-.3,-90,'药柜'),f(t('pharmacy-drawers'),2.1,-.3,90,'药柜'),f('furniture-instrument-trolley',0,-1.55,90,'配药')],
  'hospital-06':[f(p('clothes-rack'),-1.5,1.5,180,'换衣'),top(p('wood-radio'),'furniture-coffee-table'),top(p('rotary-phone'),'furniture-coffee-table')],
  'hospital-07':[f(p('archive-stack'),-.7,-3.8,90,'封存'),top(p('archive-boxes'),'furniture-document-table')],
  'hospital-08':[f(p('clothes-rack'),-1.7,.2,90,'遗留衣物'),f(p('suitcase'),.8,.75,0,'遗留箱包'),f(p('shoes-pair'),1.5,.15,0,'遗留鞋')],
  'park-01':[f(t('ticket-counter'),-.9,0,0,'售票'),f('furniture-dining-chair',-.9,-1.15,180,'售票员工'),f('furniture-document-table',1.35,.3,90,'人工验票'),top(t('ticket-register'),t('ticket-counter'))],
  'park-02':[],
- 'park-03':[...[-1.85,1.85].flatMap((x,i)=>[2.4,.7,-1].map(z=>f(t('arcade-cabinet'),x,z,i?-90:90,'游艺机列'))),f(t('prize-display'),0,-4.55,180,'兑换奖品')],
+ 'park-03':[...[-1.85,1.85].flatMap((x,i)=>[2.4,.7,-1].map(z=>f(t('arcade-cabinet'),x,z,i?90:-90,'游艺机列'))),f(t('prize-display'),0,-4.55,180,'兑换奖品')],
  'park-04':[f(s('pram'),1.75,.3,-90,'儿童等候'),f(s('teddy-bear'),-1.2,.6,0,'玩具'),top(p('toy-train'),'furniture-child-table')],
  'park-05':[f(p('clothes-rack'),1.3,1.5,180,'服装'),f(s('clothes-hanging-dress'),-2.1,1.4,90,'服装',1.1),top(t('performer-mask'),'furniture-dresser')],
  'park-06':[f(t('prize-display'),-2.1,.5,-90,'奖品层架'),f(p('cardboard-box'),-.9,2.5,0,'包装'),f(s('teddy-bear'),0,-3.7,180,'单件奖品')],
  'park-07':[f(s('round-table'),-1.1,-.65,0,'用餐'),f(p('clothes-rack'),1.5,1.5,180,'换衣'),top(p('tea-tray'),s('round-table'))],
  'park-08':[f('theme-stage-deck-v06',0,-2.7,90,'舞台'),f('theme-stage-stairs-v06',-2.37,-2.7,90,'侧阶'),f(t('stage-pillar'),-2.6,-.8,0,'台口'),f(t('stage-pillar'),2.6,-.8,0,'台口'),f(t('stage-lintel'),0,-1,0,'台口',2.65),f('furniture-dresser',3.5,-2,0,'后台道具台'),top(t('performer-mask'),'furniture-dresser')],
- 'office-01':[f(t('office-reception'),-.6,-.7,0,'接待'),top(p('rotary-phone'),t('office-reception'))],
- 'office-02':[f(p('computer-desk'),-1.7,2.4,0,'工位A'),f(p('computer-desk'),1.7,-.3,180,'工位B'),f(t('office-chair'),-.65,2.4,-90,'工位A'),f(t('office-chair'),.65,-.3,90,'工位B')],
+ 'office-01':[f(t('office-reception'),-.6,-.7,180,'接待'),top(p('rotary-phone'),t('office-reception'))],
+ 'office-02':[f(p('computer-desk'),-1.7,2.4,-90,'工位A'),f(p('computer-desk'),1.7,-.3,90,'工位B'),f(t('office-chair'),-.65,2.4,-90,'工位A'),f(t('office-chair'),.65,-.3,90,'工位B')],
  'office-03':[f(t('conference-table'),0,-.3,90,'会议'),f(t('meeting-board'),0,-2.3,180,'展示',1.2)],
- 'office-04':[f(p('archive-stack'),1.5,-2.7,90,'待归档'),top(p('archive-boxes'),'furniture-document-table'),top(s('typewriter'),'furniture-document-table')],
+ 'office-04':[f(p('archive-stack'),1.5,-2.7,90,'待归档'),f(t('conference-table'),0,-3.7,0,'档案整理'),top(p('archive-boxes'),t('conference-table')),top(s('typewriter'),t('conference-table'))],
  'office-05':[f(s('armchair-wingback'),-.8,-2,0,'主管'),f(s('sideboard'),-1.9,1.2,0,'会客备品'),top(p('rotary-phone'),'furniture-writing-desk')],
  'office-06':[f(t('mail-sorting-rack'),0,-2.1,180,'邮件格口'),f(p('cardboard-box'),1.2,1.5,0,'待领包裹'),f('furniture-document-table',-.9,-.6,0,'登记'),top(s('typewriter'),'furniture-document-table')],
  'office-07':[f(p('clothes-rack'),-1.6,1.5,180,'私物交还'),f(p('cardboard-box'),-.55,.95,0,'私物交还'),top(s('desk-organizer'),'furniture-writing-desk')],
@@ -46,11 +46,11 @@ const cores={
  'home-02':[f(p('tv-console'),1.85,-.7,90,'电视'),f('furniture-dresser',1.65,1.5,180,'唱机柜'),top(s('record-player'),'furniture-dresser','唱机'),top(p('tea-tray'),'furniture-coffee-table')],
  'home-03':[f(s('tricycle'),-.55,.4,0,'游戏'),f(s('teddy-bear'),1.55,1.2,180,'游戏'),f(p('hanging-mobile'),-1.5,-.7,0,'床上吊饰',2.1)],
  'home-04':[top(s('typewriter'),'furniture-writing-desk'),top(p('books-stack'),'furniture-writing-desk')],
- 'home-05':[f(s('rocking-chair'),1.6,.1,-90,'收音'),f('furniture-document-table',-1.3,1.5,180,'缝补'),top(s('sewing-machine'),'furniture-document-table'),top(t('sewing-basket'),'furniture-document-table')],
+ 'home-05':[f(s('rocking-chair'),1.6,.1,-90,'收音'),f(s('round-table'),-1.3,1.5,180,'缝补'),top(s('sewing-machine'),s('round-table')),top(t('sewing-basket'),s('round-table'))],
  'home-06':[f(s('round-table'),0,-.65,0,'餐桌'),f(t('china-cabinet'),-1.45,-1.9,180,'餐具柜'),top(p('tea-tray'),s('round-table'))],
  'home-07':[f(p('covered-shape'),-1.5,-1.8,0,'被覆盖旧物'),f(p('suitcase'),-.85,1.7,90,'行李旧物'),f(p('cardboard-box'),1.5,2.7,0,'封存'),f(s('teddy-bear'),0,-3,180,'尽头')],
  'home-08':[f(p('suitcase'),.3,.6,90,'婚房行李'),f(p('empty-hanger'),2.2,1.5,90,'空衣架',1.8),top(s('folded-linen'),'furniture-dresser')],
- 'hotel-01':[f(t('hotel-reception'),.5,-.9,0,'前台'),f(t('hotel-key-rack'),.5,-2.38,180,'钥匙墙',1.3),top(t('hotel-service-bell'),t('hotel-reception'))],
+ 'hotel-01':[f(t('hotel-reception'),.5,-.9,180,'前台'),f(t('hotel-key-rack'),.5,-2.38,180,'钥匙墙',1.3),f('furniture-dresser',-1.45,.65,0,'侧面服务台'),top(t('hotel-service-bell'),'furniture-dresser')],
  'hotel-02':[f(p('suitcase'),.6,.65,90,'行李箱'),f(p('shoes-pair'),-.6,.6,0,'床边私物')],
  'hotel-03':[f(p('suitcase'),.6,.65,90,'行李箱'),top(s('folded-linen'),'furniture-dresser')],
  'hotel-04':[f(p('clothes-rack'),1.9,-.5,-90,'衣帽'),f(p('suitcase'),1.3,.7,90,'行李'),top(p('tea-tray'),'furniture-coffee-table')],
@@ -69,6 +69,7 @@ const cores={
 };
 const bounds=item=>{const a=asset(item.assetId),[w,h,d]=a.size,angle=item.yaw*Math.PI/180,c=Math.abs(Math.cos(angle)),s=Math.abs(Math.sin(angle));return {minX:item.x-(w*c+d*s)/2,maxX:item.x+(w*c+d*s)/2,minZ:item.z-(w*s+d*c)/2,maxZ:item.z+(w*s+d*c)/2,minY:item.y,maxY:item.y+h};};
 const overlap=(a,b,pad=.04)=>a.minX<b.maxX+pad&&a.maxX>b.minX-pad&&a.minZ<b.maxZ+pad&&a.maxZ>b.minZ-pad&&a.minY<b.maxY-.005&&a.maxY>b.minY+.005;
+const supportAdjustments=JSON.parse(fs.readFileSync(new URL('./support-adjustments.json',import.meta.url)));
 const results=[];
 for(const room of pack.rooms){
  const original=THEMED_ROOMS.find(r=>r.id===room.id);
@@ -106,6 +107,7 @@ for(const room of pack.rooms){
    placements.push({layoutId:`${room.id}-layout-${n++}`,assetId:spec.assetId,x:support.x+Math.cos(angle)*lx,z:support.z-Math.sin(angle)*lx,y:support.y+sh+.002,yaw:support.yaw,group:spec.group,supportId,source:'authored-tabletop-slot',surfaceCheck:'requires-mesh-contact-check'});
   }
  }
+ for(const a of supportAdjustments.filter(a=>a.roomId===room.id)){const p=placements.find(p=>p.assetId===a.assetId&&p.supportId);if(p)Object.assign(p,{x:a.x,z:a.z});}
  room.layout={version:2,coordinateSystem:'metres; bottom-centre; +Z entrance; source forward must be verified',placements:placements.map(p=>({...p,bounds:bounds(p),asset:asset(p.assetId)}))};
  const used=new Set(placements.map(p=>p.assetId));room.unplacedRequired=room.requiredAssets.filter(id=>!used.has(id));
  results.push({id:room.id,items:placements.length,unplacedRequired:room.unplacedRequired,tabletopCapacityIssues:room.tabletopCapacityIssues??[]});

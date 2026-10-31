@@ -208,9 +208,9 @@
     },
     {
       "id": "office-02",
-      "items": 14,
-      "reachableSamples": 2394,
-      "nearestPrimary": 0.314,
+      "items": 15,
+      "reachableSamples": 2305,
+      "nearestPrimary": 0.339,
       "missingCoreBindings": 0,
       "dimensions": [
         5,
@@ -232,8 +232,8 @@
     },
     {
       "id": "office-04",
-      "items": 15,
-      "reachableSamples": 2766,
+      "items": 14,
+      "reachableSamples": 2751,
       "nearestPrimary": 0.338,
       "missingCoreBindings": 0,
       "dimensions": [
@@ -341,7 +341,7 @@
     {
       "id": "home-05",
       "items": 10,
-      "reachableSamples": 992,
+      "reachableSamples": 951,
       "nearestPrimary": 0.304,
       "missingCoreBindings": 0,
       "dimensions": [
@@ -388,8 +388,8 @@
     },
     {
       "id": "hotel-01",
-      "items": 10,
-      "reachableSamples": 849,
+      "items": 9,
+      "reachableSamples": 974,
       "nearestPrimary": 0.34,
       "missingCoreBindings": 0,
       "dimensions": [

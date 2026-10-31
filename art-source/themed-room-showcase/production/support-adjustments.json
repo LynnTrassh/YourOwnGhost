@@ -1,0 +1,40 @@
+[
+  {
+    "roomId": "hospital-07",
+    "id": "hospital-07-layout-12",
+    "assetId": "prop-archive-boxes-v01",
+    "x": 1.5,
+    "z": -2.15,
+    "y": 0.6655944555837678
+  },
+  {
+    "roomId": "park-01",
+    "id": "park-01-layout-8",
+    "assetId": "theme-ticket-register-v05",
+    "x": -0.95,
+    "z": 0,
+    "y": 1.2519999999999998
+  },
+  {
+    "roomId": "office-06",
+    "id": "office-06-layout-10",
+    "assetId": "scene-typewriter-v03",
+    "x": -0.8,
+    "z": -0.55,
+    "y": 0.7614469763382301
+  },
+  {
+    "roomId": "home-04",
+    "id": "home-04-layout-9",
+    "assetId": "scene-typewriter-v03",
+    "x": 0.55159,
+    "z": -1.55,
+    "y": 0.6148114097887031
+  },
+  {
+    "roomId": "office-01",
+    "assetId": "prop-rotary-phone-v01",
+    "x": -0.55,
+    "z": -0.4
+  }
+]

@@ -7,6 +7,7 @@ import { createRoomDetailDressing, findTableSupport } from './room-detail-dressi
 import { createRoomCompleteness } from './room-completeness.js';
 import { createRoomComposition } from './room-composition.js';
 import { createModelSurfaceRepair } from './model-surface-repair.js';
+import { createThemedRoomRuntime } from './themed-room-runtime.js';
 
 export function createDarkInteriors({ plan, root, resources }) {
   const models = createInteriorModelLoader(resources);
@@ -16,6 +17,7 @@ export function createDarkInteriors({ plan, root, resources }) {
   const details = createRoomDetailDressing({ plan, root, resources });
   const completeness = createRoomCompleteness({ plan, root, resources, surfaces });
   const furnished = [], pending = [];
+  const themed = createThemedRoomRuntime({plan,root,resources});
   let disposed = false, composition = null;
   resources.add({dispose(){disposed=true;}});
   function place(id, options) { const ready = models.attach(id,options); pending.push(ready); return ready; }
@@ -28,6 +30,7 @@ export function createDarkInteriors({ plan, root, resources }) {
     if (fill) lighting.accent(emitter,color,.6,2.2,group);
   }
   function furnish(obstacle, fallback) {
+    if(themed.furnish(obstacle,fallback))return;
     const id = resolveInteriorAsset(obstacle);
     if (!id) return;
     const asset = INTERIOR_ASSETS[id];
@@ -124,8 +127,8 @@ export function createDarkInteriors({ plan, root, resources }) {
     completeness.dress();
     lighting.update(0,plan.spawn);
   }
-  return { ...surfaces, furnish, dress, update:lighting.update, stats:models.stats, ready:async()=>{
-    const loaded=await Promise.all(pending);
+  return { ...surfaces, furnish, dress, update(dt,player){lighting.update(dt,player);themed.update(dt,player);}, stats:models.stats, themedStats:themed.stats, ready:async()=>{
+    const loaded=await Promise.all([...pending,themed.ready()]);
     if(!disposed&&!composition){composition=createRoomComposition({plan,root,resources,surfaces});root.userData.roomComposition=composition;}
     return loaded;
   }, lights:lighting, models, detailStats:details.stats };

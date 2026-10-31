@@ -2,7 +2,7 @@
 const completed=new Map();
 export function planDream(seed,options,{signal}={}) {
   if(signal?.aborted)return Promise.reject(new DOMException('已取消','AbortError'));
-  options={...options,openingSequence:true};
+  options={themedRooms:true,...options,openingSequence:true};
   const key=JSON.stringify([String(seed),options]);
   if(completed.has(key))return Promise.resolve(structuredClone(completed.get(key)));
   return new Promise((resolve,reject)=>{
