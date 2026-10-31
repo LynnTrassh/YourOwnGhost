@@ -1,0 +1,646 @@
+{
+  "schemaVersion": 1,
+  "recipeId": "crt-records",
+  "status": "proposal-requires-planner-validation",
+  "parameters": {
+    "width": 10,
+    "depth": 10,
+    "rows": 4,
+    "columnsPerBank": 1,
+    "aisle": 1.8
+  },
+  "room": {
+    "width": 10,
+    "depth": 10,
+    "height": 3
+  },
+  "placements": [
+    {
+      "id": "crt-0-L-0-desk",
+      "assetId": "prop-computer-desk-v01",
+      "position": [
+        -1.75,
+        0,
+        -3.75
+      ],
+      "yaw": 3.141592653589793,
+      "size": [
+        1.28,
+        1.26,
+        0.82
+      ],
+      "bounds": {
+        "minX": -2.39,
+        "maxX": -1.1099999999999999,
+        "minZ": -4.16,
+        "maxZ": -3.34,
+        "minY": 0,
+        "maxY": 1.26
+      }
+    },
+    {
+      "id": "crt-0-L-0-chair",
+      "assetId": "furniture-dining-chair",
+      "position": [
+        -1.75,
+        0,
+        -2.67
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        0.96,
+        0.46
+      ],
+      "bounds": {
+        "minX": -1.97,
+        "maxX": -1.53,
+        "minZ": -2.9,
+        "maxZ": -2.44,
+        "minY": 0,
+        "maxY": 0.96
+      }
+    },
+    {
+      "id": "crt-0-R-0-desk",
+      "assetId": "prop-computer-desk-v01",
+      "position": [
+        1.75,
+        0,
+        -3.75
+      ],
+      "yaw": 3.141592653589793,
+      "size": [
+        1.28,
+        1.26,
+        0.82
+      ],
+      "bounds": {
+        "minX": 1.1099999999999999,
+        "maxX": 2.39,
+        "minZ": -4.16,
+        "maxZ": -3.34,
+        "minY": 0,
+        "maxY": 1.26
+      }
+    },
+    {
+      "id": "crt-0-R-0-chair",
+      "assetId": "furniture-dining-chair",
+      "position": [
+        1.75,
+        0,
+        -2.67
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        0.96,
+        0.46
+      ],
+      "bounds": {
+        "minX": 1.53,
+        "maxX": 1.97,
+        "minZ": -2.9,
+        "maxZ": -2.44,
+        "minY": 0,
+        "maxY": 0.96
+      }
+    },
+    {
+      "id": "crt-1-L-0-desk",
+      "assetId": "prop-computer-desk-v01",
+      "position": [
+        -1.75,
+        0,
+        -1.5166666666666666
+      ],
+      "yaw": 3.141592653589793,
+      "size": [
+        1.28,
+        1.26,
+        0.82
+      ],
+      "bounds": {
+        "minX": -2.39,
+        "maxX": -1.1099999999999999,
+        "minZ": -1.9266666666666665,
+        "maxZ": -1.1066666666666667,
+        "minY": 0,
+        "maxY": 1.26
+      }
+    },
+    {
+      "id": "crt-1-L-0-chair",
+      "assetId": "furniture-dining-chair",
+      "position": [
+        -1.75,
+        0,
+        -0.43666666666666654
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        0.96,
+        0.46
+      ],
+      "bounds": {
+        "minX": -1.97,
+        "maxX": -1.53,
+        "minZ": -0.6666666666666665,
+        "maxZ": -0.20666666666666653,
+        "minY": 0,
+        "maxY": 0.96
+      }
+    },
+    {
+      "id": "crt-1-R-0-desk",
+      "assetId": "prop-computer-desk-v01",
+      "position": [
+        1.75,
+        0,
+        -1.5166666666666666
+      ],
+      "yaw": 3.141592653589793,
+      "size": [
+        1.28,
+        1.26,
+        0.82
+      ],
+      "bounds": {
+        "minX": 1.1099999999999999,
+        "maxX": 2.39,
+        "minZ": -1.9266666666666665,
+        "maxZ": -1.1066666666666667,
+        "minY": 0,
+        "maxY": 1.26
+      }
+    },
+    {
+      "id": "crt-1-R-0-chair",
+      "assetId": "furniture-dining-chair",
+      "position": [
+        1.75,
+        0,
+        -0.43666666666666654
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        0.96,
+        0.46
+      ],
+      "bounds": {
+        "minX": 1.53,
+        "maxX": 1.97,
+        "minZ": -0.6666666666666665,
+        "maxZ": -0.20666666666666653,
+        "minY": 0,
+        "maxY": 0.96
+      }
+    },
+    {
+      "id": "crt-2-L-0-desk",
+      "assetId": "prop-computer-desk-v01",
+      "position": [
+        -1.75,
+        0,
+        0.7166666666666668
+      ],
+      "yaw": 3.141592653589793,
+      "size": [
+        1.28,
+        1.26,
+        0.82
+      ],
+      "bounds": {
+        "minX": -2.39,
+        "maxX": -1.1099999999999999,
+        "minZ": 0.3066666666666668,
+        "maxZ": 1.1266666666666667,
+        "minY": 0,
+        "maxY": 1.26
+      }
+    },
+    {
+      "id": "crt-2-L-0-chair",
+      "assetId": "furniture-dining-chair",
+      "position": [
+        -1.75,
+        0,
+        1.7966666666666669
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        0.96,
+        0.46
+      ],
+      "bounds": {
+        "minX": -1.97,
+        "maxX": -1.53,
+        "minZ": 1.5666666666666669,
+        "maxZ": 2.026666666666667,
+        "minY": 0,
+        "maxY": 0.96
+      }
+    },
+    {
+      "id": "crt-2-R-0-desk",
+      "assetId": "prop-computer-desk-v01",
+      "position": [
+        1.75,
+        0,
+        0.7166666666666668
+      ],
+      "yaw": 3.141592653589793,
+      "size": [
+        1.28,
+        1.26,
+        0.82
+      ],
+      "bounds": {
+        "minX": 1.1099999999999999,
+        "maxX": 2.39,
+        "minZ": 0.3066666666666668,
+        "maxZ": 1.1266666666666667,
+        "minY": 0,
+        "maxY": 1.26
+      }
+    },
+    {
+      "id": "crt-2-R-0-chair",
+      "assetId": "furniture-dining-chair",
+      "position": [
+        1.75,
+        0,
+        1.7966666666666669
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        0.96,
+        0.46
+      ],
+      "bounds": {
+        "minX": 1.53,
+        "maxX": 1.97,
+        "minZ": 1.5666666666666669,
+        "maxZ": 2.026666666666667,
+        "minY": 0,
+        "maxY": 0.96
+      }
+    },
+    {
+      "id": "crt-3-L-0-desk",
+      "assetId": "prop-computer-desk-v01",
+      "position": [
+        -1.75,
+        0,
+        2.95
+      ],
+      "yaw": 3.141592653589793,
+      "size": [
+        1.28,
+        1.26,
+        0.82
+      ],
+      "bounds": {
+        "minX": -2.39,
+        "maxX": -1.1099999999999999,
+        "minZ": 2.54,
+        "maxZ": 3.3600000000000003,
+        "minY": 0,
+        "maxY": 1.26
+      }
+    },
+    {
+      "id": "crt-3-L-0-chair",
+      "assetId": "furniture-dining-chair",
+      "position": [
+        -1.75,
+        0,
+        4.03
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        0.96,
+        0.46
+      ],
+      "bounds": {
+        "minX": -1.97,
+        "maxX": -1.53,
+        "minZ": 3.8000000000000003,
+        "maxZ": 4.260000000000001,
+        "minY": 0,
+        "maxY": 0.96
+      }
+    },
+    {
+      "id": "crt-3-R-0-desk",
+      "assetId": "prop-computer-desk-v01",
+      "position": [
+        1.75,
+        0,
+        2.95
+      ],
+      "yaw": 3.141592653589793,
+      "size": [
+        1.28,
+        1.26,
+        0.82
+      ],
+      "bounds": {
+        "minX": 1.1099999999999999,
+        "maxX": 2.39,
+        "minZ": 2.54,
+        "maxZ": 3.3600000000000003,
+        "minY": 0,
+        "maxY": 1.26
+      }
+    },
+    {
+      "id": "crt-3-R-0-chair",
+      "assetId": "furniture-dining-chair",
+      "position": [
+        1.75,
+        0,
+        4.03
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        0.96,
+        0.46
+      ],
+      "bounds": {
+        "minX": 1.53,
+        "maxX": 1.97,
+        "minZ": 3.8000000000000003,
+        "maxZ": 4.260000000000001,
+        "minY": 0,
+        "maxY": 0.96
+      }
+    }
+  ],
+  "stations": [
+    {
+      "id": "crt-0-L-0",
+      "row": 0,
+      "side": -1,
+      "column": 0,
+      "position": [
+        -1.75,
+        0,
+        -3.75
+      ],
+      "reservation": {
+        "minX": -2.49,
+        "maxX": -1.01,
+        "minZ": -4.26,
+        "maxZ": -2.34
+      },
+      "deskId": "crt-0-L-0-desk"
+    },
+    {
+      "id": "crt-0-R-0",
+      "row": 0,
+      "side": 1,
+      "column": 0,
+      "position": [
+        1.75,
+        0,
+        -3.75
+      ],
+      "reservation": {
+        "minX": 1.01,
+        "maxX": 2.49,
+        "minZ": -4.26,
+        "maxZ": -2.34
+      },
+      "deskId": "crt-0-R-0-desk"
+    },
+    {
+      "id": "crt-1-L-0",
+      "row": 1,
+      "side": -1,
+      "column": 0,
+      "position": [
+        -1.75,
+        0,
+        -1.5166666666666666
+      ],
+      "reservation": {
+        "minX": -2.49,
+        "maxX": -1.01,
+        "minZ": -2.0266666666666664,
+        "maxZ": -0.10666666666666669
+      },
+      "deskId": "crt-1-L-0-desk"
+    },
+    {
+      "id": "crt-1-R-0",
+      "row": 1,
+      "side": 1,
+      "column": 0,
+      "position": [
+        1.75,
+        0,
+        -1.5166666666666666
+      ],
+      "reservation": {
+        "minX": 1.01,
+        "maxX": 2.49,
+        "minZ": -2.0266666666666664,
+        "maxZ": -0.10666666666666669
+      },
+      "deskId": "crt-1-R-0-desk"
+    },
+    {
+      "id": "crt-2-L-0",
+      "row": 2,
+      "side": -1,
+      "column": 0,
+      "position": [
+        -1.75,
+        0,
+        0.7166666666666668
+      ],
+      "reservation": {
+        "minX": -2.49,
+        "maxX": -1.01,
+        "minZ": 0.20666666666666678,
+        "maxZ": 2.126666666666667
+      },
+      "deskId": "crt-2-L-0-desk"
+    },
+    {
+      "id": "crt-2-R-0",
+      "row": 2,
+      "side": 1,
+      "column": 0,
+      "position": [
+        1.75,
+        0,
+        0.7166666666666668
+      ],
+      "reservation": {
+        "minX": 1.01,
+        "maxX": 2.49,
+        "minZ": 0.20666666666666678,
+        "maxZ": 2.126666666666667
+      },
+      "deskId": "crt-2-R-0-desk"
+    },
+    {
+      "id": "crt-3-L-0",
+      "row": 3,
+      "side": -1,
+      "column": 0,
+      "position": [
+        -1.75,
+        0,
+        2.95
+      ],
+      "reservation": {
+        "minX": -2.49,
+        "maxX": -1.01,
+        "minZ": 2.4400000000000004,
+        "maxZ": 4.36
+      },
+      "deskId": "crt-3-L-0-desk"
+    },
+    {
+      "id": "crt-3-R-0",
+      "row": 3,
+      "side": 1,
+      "column": 0,
+      "position": [
+        1.75,
+        0,
+        2.95
+      ],
+      "reservation": {
+        "minX": 1.01,
+        "maxX": 2.49,
+        "minZ": 2.4400000000000004,
+        "maxZ": 4.36
+      },
+      "deskId": "crt-3-R-0-desk"
+    }
+  ],
+  "rejected": [],
+  "reservations": [
+    {
+      "id": "main-aisle",
+      "minX": -0.9,
+      "maxX": 0.9,
+      "minZ": -5,
+      "maxZ": 5
+    }
+  ],
+  "cameras": {
+    "entry": {
+      "position": [
+        0,
+        1.65,
+        4.6
+      ],
+      "target": [
+        0,
+        1.15,
+        -4
+      ]
+    },
+    "close": {
+      "position": [
+        0,
+        1.65,
+        0.5
+      ],
+      "target": [
+        -1.75,
+        1.05,
+        -3.75
+      ]
+    },
+    "reverse": {
+      "position": [
+        0,
+        1.65,
+        -4.35
+      ],
+      "target": [
+        0,
+        1.1,
+        5
+      ]
+    }
+  },
+  "budget": {
+    "maxLocalLights": 4,
+    "maxShadowLights": 0,
+    "screenMaterials": "shared by row; emissive only"
+  },
+  "integration": [
+    "Validate room containment, door approaches, event reservations and collision graph before accepting",
+    "Transform local placements and all bounds into room coordinates",
+    "No automatic room assignment or event trigger"
+  ],
+  "preview": {
+    "variant": "night",
+    "stations": 8,
+    "localLights": 4,
+    "models": {
+      "requested": 16,
+      "loaded": 16,
+      "failed": [],
+      "pending": 0
+    },
+    "playback": {
+      "frame": "gpt",
+      "playing": false,
+      "elapsed": 17.06659999999991,
+      "level": 0.24,
+      "offsetSeconds": 0,
+      "noiseStrength": 0.16,
+      "fps": 10,
+      "sequence": [
+        {
+          "frame": "ue5",
+          "seconds": 2
+        },
+        {
+          "frame": "snow",
+          "seconds": 0.7
+        },
+        {
+          "frame": "unity",
+          "seconds": 2
+        },
+        {
+          "frame": "tear",
+          "seconds": 0.9
+        },
+        {
+          "frame": "gpt",
+          "seconds": 2
+        },
+        {
+          "frame": "black",
+          "seconds": 1.2
+        }
+      ],
+      "missingLogos": [],
+      "disposed": false
+    },
+    "exception": {
+      "stationId": "crt-3-L-0",
+      "mode": "freeze",
+      "frame": "unity",
+      "delaySeconds": 2
+    },
+    "disposed": false
+  }
+}

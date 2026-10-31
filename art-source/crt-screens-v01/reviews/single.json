@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "recipeId": "crt-records",
+  "status": "proposal-requires-planner-validation",
+  "parameters": {
+    "width": 10,
+    "depth": 10,
+    "rows": 4,
+    "columnsPerBank": 1,
+    "aisle": 1.8
+  },
+  "room": {
+    "width": 10,
+    "depth": 10,
+    "height": 3
+  },
+  "placements": [
+    {
+      "id": "crt-0-L-0-desk",
+      "assetId": "prop-computer-desk-v01",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 3.141592653589793,
+      "size": [
+        1.28,
+        1.26,
+        0.82
+      ],
+      "bounds": {
+        "minX": -0.6400000000000001,
+        "maxX": 0.6400000000000001,
+        "minZ": -0.41000000000000014,
+        "maxZ": 0.41000000000000014,
+        "minY": 0,
+        "maxY": 1.26
+      }
+    },
+    {
+      "id": "crt-0-L-0-chair",
+      "assetId": "furniture-dining-chair",
+      "position": [
+        0,
+        0,
+        1.08
+      ],
+      "yaw": 0,
+      "size": [
+        0.44,
+        0.96,
+        0.46
+      ],
+      "bounds": {
+        "minX": -0.21999999999999997,
+        "maxX": 0.21999999999999997,
+        "minZ": 0.8500000000000001,
+        "maxZ": 1.31,
+        "minY": 0,
+        "maxY": 0.96
+      }
+    }
+  ],
+  "stations": [
+    {
+      "id": "crt-0-L-0",
+      "row": 0,
+      "side": -1,
+      "column": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reservation": {
+        "minX": -0.74,
+        "maxX": 0.74,
+        "minZ": -0.51,
+        "maxZ": 1.41
+      },
+      "deskId": "crt-0-L-0-desk"
+    }
+  ],
+  "rejected": [],
+  "reservations": [],
+  "cameras": {
+    "entry": {
+      "position": [
+        0,
+        1.65,
+        3.2
+      ],
+      "target": [
+        0,
+        1.05,
+        0
+      ]
+    },
+    "close": {
+      "position": [
+        0,
+        1.65,
+        0.5
+      ],
+      "target": [
+        -1.75,
+        1.05,
+        -3.75
+      ]
+    },
+    "reverse": {
+      "position": [
+        0,
+        1.65,
+        -4.35
+      ],
+      "target": [
+        0,
+        1.1,
+        5
+      ]
+    }
+  },
+  "budget": {
+    "maxLocalLights": 4,
+    "maxShadowLights": 0,
+    "screenMaterials": "shared by row; emissive only"
+  },
+  "integration": [
+    "Validate room containment, door approaches, event reservations and collision graph before accepting",
+    "Transform local placements and all bounds into room coordinates",
+    "No automatic room assignment or event trigger"
+  ],
+  "previewOnlySingle": true,
+  "preview": {
+    "variant": "night",
+    "stations": 1,
+    "localLights": 4,
+    "models": {
+      "requested": 2,
+      "loaded": 2,
+      "failed": [],
+      "pending": 0
+    },
+    "playback": {
+      "frame": "ue5",
+      "playing": false,
+      "elapsed": 0.09920000000000073,
+      "level": 0.24,
+      "offsetSeconds": 0,
+      "noiseStrength": 0.16,
+      "fps": 10,
+      "sequence": [
+        {
+          "frame": "ue5",
+          "seconds": 2
+        },
+        {
+          "frame": "snow",
+          "seconds": 0.7
+        },
+        {
+          "frame": "unity",
+          "seconds": 2
+        },
+        {
+          "frame": "tear",
+          "seconds": 0.9
+        },
+        {
+          "frame": "gpt",
+          "seconds": 2
+        },
+        {
+          "frame": "black",
+          "seconds": 1.2
+        }
+      ],
+      "missingLogos": [],
+      "disposed": false
+    },
+    "exception": null,
+    "disposed": false
+  }
+}

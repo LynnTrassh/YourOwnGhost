@@ -1,10 +1,12 @@
 import { Box3, Group, Vector3 } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { INTERIOR_ASSETS } from './interior-catalog.js';
+import { bindCrtMonitor } from './crt-screen-playback.js';
 
 // A world owns one cached resource set; instances share meshes and textures.
 export function createInteriorModelLoader(resources) {
   const cache = new Map(), owned = new Set(), instances = new Set(), queue = [];
+  const screenBindings = new Set();
   const stats = { requested: 0, loaded: 0, failed: [], pending: 0 };
   let disposed = false, active = 0;
   const loader = new GLTFLoader();
@@ -20,6 +22,8 @@ export function createInteriorModelLoader(resources) {
     });
   }
   function release() {
+    for (const binding of screenBindings) binding.dispose();
+    screenBindings.clear();
     for (const instance of instances) instance.removeFromParent();
     instances.clear();
     for (const item of owned) { item.dispose(); if (item.isTexture) item.image?.close?.(); }
@@ -40,7 +44,7 @@ export function createInteriorModelLoader(resources) {
     if (!cache.has(id)) cache.set(id, new Promise((resolve, reject) => { queue.push({ id, resolve, reject }); pump(); }));
     return cache.get(id);
   }
-  function attach(id, { parent, position = [0, 0, 0], yaw = 0, sourceYaw = 0, width, height, depth, fallback = [], onReady } = {}) {
+  function attach(id, { parent, position = [0, 0, 0], yaw = 0, sourceYaw = 0, width, height, depth, fallback = [], onReady, screenPlayback = true } = {}) {
     stats.requested++; stats.pending++;
     const ready = source(id).then(template => {
       if (disposed) return null;
@@ -57,6 +61,10 @@ export function createInteriorModelLoader(resources) {
       group.add(model); group.position.set(...position); group.rotation.y = yaw;
       group.name = id; group.userData.assetId = id;
       parent.add(group); instances.add(group);
+      if (screenPlayback && ['prop-crt-computer-v01','prop-computer-desk-v01'].includes(id)) {
+        const binding=bindCrtMonitor(group,screenPlayback===true?{}:{playback:screenPlayback});
+        screenBindings.add(binding);group.userData.crtScreenBinding=binding;
+      }
       for (const mesh of fallback) mesh.visible = false;
       stats.loaded++; onReady?.(group); return group;
     }).catch(error => {
