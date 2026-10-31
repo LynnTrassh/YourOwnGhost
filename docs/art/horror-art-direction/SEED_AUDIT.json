@@ -1,0 +1,1426 @@
+{
+  "revision": "1f3085e",
+  "seed": "1844070019",
+  "configurations": [
+    {
+      "name": "menu-default",
+      "options": {},
+      "equal": true,
+      "layers": [
+        {
+          "seed": "1844070019",
+          "hash": "e7595c71",
+          "valid": true,
+          "fallback": false,
+          "rooms": [
+            {
+              "id": "bedroom",
+              "type": "tee",
+              "center": [
+                0,
+                0
+              ],
+              "preset": "bedroom",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-1",
+              "type": "ring",
+              "center": [
+                0,
+                -11
+              ],
+              "preset": "shrine",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-2",
+              "type": "u",
+              "center": [
+                7,
+                -9
+              ],
+              "preset": "bedroom",
+              "layout": "staggered",
+              "events": []
+            },
+            {
+              "id": "room-3",
+              "type": "tee",
+              "center": [
+                -9,
+                -9
+              ],
+              "preset": "nursery",
+              "layout": "empty",
+              "events": [
+                "B04"
+              ]
+            },
+            {
+              "id": "room-4",
+              "type": "doubleCut",
+              "center": [
+                -18,
+                -9
+              ],
+              "preset": "bedroom",
+              "layout": "perimeter",
+              "events": []
+            },
+            {
+              "id": "room-5",
+              "type": "elbow",
+              "center": [
+                16,
+                -9
+              ],
+              "preset": "parlor",
+              "layout": "empty",
+              "events": [
+                "B08"
+              ]
+            },
+            {
+              "id": "room-6",
+              "type": "i",
+              "center": [
+                18,
+                0
+              ],
+              "preset": "clinic",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-7",
+              "type": "ring",
+              "center": [
+                2,
+                -18
+              ],
+              "preset": "parlor",
+              "layout": "perimeter",
+              "events": [
+                "TI02"
+              ]
+            },
+            {
+              "id": "room-8",
+              "type": "square",
+              "center": [
+                9,
+                -18
+              ],
+              "preset": "nursery",
+              "layout": "staggered",
+              "events": [
+                "B25"
+              ]
+            },
+            {
+              "id": "room-9",
+              "type": "u",
+              "center": [
+                0,
+                -25
+              ],
+              "preset": "nursery",
+              "layout": "empty",
+              "events": [
+                "ME02"
+              ]
+            },
+            {
+              "id": "room-10",
+              "type": "ring",
+              "center": [
+                -7,
+                -18
+              ],
+              "preset": "parlor",
+              "layout": "perimeter",
+              "events": []
+            },
+            {
+              "id": "room-11",
+              "type": "u",
+              "center": [
+                -27,
+                -7
+              ],
+              "preset": "bedroom",
+              "layout": "staggered",
+              "events": []
+            }
+          ],
+          "doors": [
+            {
+              "id": "bedroom",
+              "edgeId": "link-0",
+              "x": 0,
+              "z": -7.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -4
+                ],
+                [
+                  0,
+                  -5
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "id": "door-1",
+              "edgeId": "link-1",
+              "x": 7.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  4,
+                  -9
+                ],
+                [
+                  5,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-2",
+              "edgeId": "link-2",
+              "x": -7.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  -4,
+                  -9
+                ],
+                [
+                  -5,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-3",
+              "edgeId": "link-3",
+              "x": -22.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  -13,
+                  -9
+                ],
+                [
+                  -14,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-4",
+              "edgeId": "link-4",
+              "x": 22.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  13,
+                  -9
+                ],
+                [
+                  14,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-5",
+              "edgeId": "link-5",
+              "x": 30,
+              "z": -7.5,
+              "axis": "z",
+              "cells": [
+                [
+                  18,
+                  -5
+                ],
+                [
+                  18,
+                  -4
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-6",
+              "edgeId": "link-6",
+              "x": 0,
+              "z": -22.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -13
+                ],
+                [
+                  0,
+                  -14
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-7",
+              "edgeId": "link-7",
+              "x": 7.5,
+              "z": -30,
+              "axis": "x",
+              "cells": [
+                [
+                  4,
+                  -18
+                ],
+                [
+                  5,
+                  -18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-8",
+              "edgeId": "link-8",
+              "x": 0,
+              "z": -37.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -22
+                ],
+                [
+                  0,
+                  -23
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-9",
+              "edgeId": "link-9",
+              "x": -7.5,
+              "z": -30,
+              "axis": "x",
+              "cells": [
+                [
+                  -4,
+                  -18
+                ],
+                [
+                  -5,
+                  -18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-10",
+              "edgeId": "link-10",
+              "x": -37.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  -22,
+                  -9
+                ],
+                [
+                  -23,
+                  -9
+                ]
+              ],
+              "closed": false
+            }
+          ],
+          "spawn": {
+            "x": 0,
+            "z": 0,
+            "yaw": 0
+          }
+        },
+        {
+          "seed": "1844070019:dream:2:0",
+          "hash": "639ffada",
+          "valid": true,
+          "fallback": false,
+          "rooms": [
+            {
+              "id": "bedroom",
+              "type": "tee",
+              "center": [
+                0,
+                0
+              ],
+              "preset": "bedroom",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-1",
+              "type": "i",
+              "center": [
+                0,
+                -9
+              ],
+              "preset": "archive",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-2",
+              "type": "elbow",
+              "center": [
+                0,
+                -16
+              ],
+              "preset": "clinic",
+              "layout": "perimeter",
+              "events": []
+            },
+            {
+              "id": "room-3",
+              "type": "cross",
+              "center": [
+                9,
+                -18
+              ],
+              "preset": "shrine",
+              "layout": "perimeter",
+              "events": [
+                "B18"
+              ]
+            },
+            {
+              "id": "room-4",
+              "type": "rectangle",
+              "center": [
+                18,
+                -18
+              ],
+              "preset": "parlor",
+              "layout": "staggered",
+              "events": [
+                "AB01"
+              ]
+            },
+            {
+              "id": "room-5",
+              "type": "elbow",
+              "center": [
+                18,
+                -11
+              ],
+              "preset": "archive",
+              "layout": "staggered",
+              "events": []
+            },
+            {
+              "id": "room-6",
+              "type": "ring",
+              "center": [
+                18,
+                -25
+              ],
+              "preset": "nursery",
+              "layout": "perimeter",
+              "events": [
+                "B25"
+              ]
+            },
+            {
+              "id": "room-7",
+              "type": "ring",
+              "center": [
+                27,
+                -29
+              ],
+              "preset": "clinic",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-8",
+              "type": "u",
+              "center": [
+                16,
+                -36
+              ],
+              "preset": "shrine",
+              "layout": "staggered",
+              "events": [
+                "B07"
+              ]
+            },
+            {
+              "id": "room-9",
+              "type": "cutCorner",
+              "center": [
+                9,
+                -9
+              ],
+              "preset": "archive",
+              "layout": "perimeter",
+              "events": []
+            },
+            {
+              "id": "room-10",
+              "type": "square",
+              "center": [
+                9,
+                -27
+              ],
+              "preset": "shrine",
+              "layout": "empty",
+              "events": [
+                "RI01"
+              ]
+            }
+          ],
+          "doors": [
+            {
+              "id": "bedroom",
+              "edgeId": "link-0",
+              "x": 0,
+              "z": -7.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -4
+                ],
+                [
+                  0,
+                  -5
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "id": "door-1",
+              "edgeId": "link-1",
+              "x": 0,
+              "z": -22.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -13
+                ],
+                [
+                  0,
+                  -14
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-2",
+              "edgeId": "link-2",
+              "x": 7.5,
+              "z": -30,
+              "axis": "x",
+              "cells": [
+                [
+                  4,
+                  -18
+                ],
+                [
+                  5,
+                  -18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-3",
+              "edgeId": "link-3",
+              "x": 22.5,
+              "z": -30,
+              "axis": "x",
+              "cells": [
+                [
+                  13,
+                  -18
+                ],
+                [
+                  14,
+                  -18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-4",
+              "edgeId": "link-4",
+              "x": 30,
+              "z": -22.5,
+              "axis": "z",
+              "cells": [
+                [
+                  18,
+                  -14
+                ],
+                [
+                  18,
+                  -13
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-5",
+              "edgeId": "link-5",
+              "x": 30,
+              "z": -37.5,
+              "axis": "z",
+              "cells": [
+                [
+                  18,
+                  -22
+                ],
+                [
+                  18,
+                  -23
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-6",
+              "edgeId": "link-6",
+              "x": 37.5,
+              "z": -45,
+              "axis": "x",
+              "cells": [
+                [
+                  22,
+                  -27
+                ],
+                [
+                  23,
+                  -27
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-7",
+              "edgeId": "link-7",
+              "x": 30,
+              "z": -52.5,
+              "axis": "z",
+              "cells": [
+                [
+                  18,
+                  -31
+                ],
+                [
+                  18,
+                  -32
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-8",
+              "edgeId": "link-8",
+              "x": 22.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  14,
+                  -9
+                ],
+                [
+                  13,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-9",
+              "edgeId": "link-9",
+              "x": 15,
+              "z": -37.5,
+              "axis": "z",
+              "cells": [
+                [
+                  9,
+                  -22
+                ],
+                [
+                  9,
+                  -23
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-10",
+              "edgeId": "link-10",
+              "x": 15,
+              "z": -22.5,
+              "axis": "z",
+              "cells": [
+                [
+                  9,
+                  -14
+                ],
+                [
+                  9,
+                  -13
+                ]
+              ],
+              "closed": false
+            }
+          ],
+          "spawn": {
+            "x": 0,
+            "z": 0,
+            "yaw": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "none-generic",
+      "options": {
+        "catEnabled": false,
+        "preferences": [],
+        "threatBehaviorId": null
+      },
+      "equal": true,
+      "layers": [
+        {
+          "seed": "1844070019",
+          "hash": "e7595c71",
+          "valid": true,
+          "fallback": false,
+          "rooms": [
+            {
+              "id": "bedroom",
+              "type": "tee",
+              "center": [
+                0,
+                0
+              ],
+              "preset": "bedroom",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-1",
+              "type": "ring",
+              "center": [
+                0,
+                -11
+              ],
+              "preset": "shrine",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-2",
+              "type": "u",
+              "center": [
+                7,
+                -9
+              ],
+              "preset": "bedroom",
+              "layout": "staggered",
+              "events": []
+            },
+            {
+              "id": "room-3",
+              "type": "tee",
+              "center": [
+                -9,
+                -9
+              ],
+              "preset": "nursery",
+              "layout": "empty",
+              "events": [
+                "B04"
+              ]
+            },
+            {
+              "id": "room-4",
+              "type": "doubleCut",
+              "center": [
+                -18,
+                -9
+              ],
+              "preset": "bedroom",
+              "layout": "perimeter",
+              "events": []
+            },
+            {
+              "id": "room-5",
+              "type": "elbow",
+              "center": [
+                16,
+                -9
+              ],
+              "preset": "parlor",
+              "layout": "empty",
+              "events": [
+                "B08"
+              ]
+            },
+            {
+              "id": "room-6",
+              "type": "i",
+              "center": [
+                18,
+                0
+              ],
+              "preset": "clinic",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-7",
+              "type": "ring",
+              "center": [
+                2,
+                -18
+              ],
+              "preset": "parlor",
+              "layout": "perimeter",
+              "events": [
+                "TI02"
+              ]
+            },
+            {
+              "id": "room-8",
+              "type": "square",
+              "center": [
+                9,
+                -18
+              ],
+              "preset": "nursery",
+              "layout": "staggered",
+              "events": [
+                "B25"
+              ]
+            },
+            {
+              "id": "room-9",
+              "type": "u",
+              "center": [
+                0,
+                -25
+              ],
+              "preset": "nursery",
+              "layout": "empty",
+              "events": [
+                "ME02"
+              ]
+            },
+            {
+              "id": "room-10",
+              "type": "ring",
+              "center": [
+                -7,
+                -18
+              ],
+              "preset": "parlor",
+              "layout": "perimeter",
+              "events": []
+            },
+            {
+              "id": "room-11",
+              "type": "u",
+              "center": [
+                -27,
+                -7
+              ],
+              "preset": "bedroom",
+              "layout": "staggered",
+              "events": []
+            }
+          ],
+          "doors": [
+            {
+              "id": "bedroom",
+              "edgeId": "link-0",
+              "x": 0,
+              "z": -7.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -4
+                ],
+                [
+                  0,
+                  -5
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "id": "door-1",
+              "edgeId": "link-1",
+              "x": 7.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  4,
+                  -9
+                ],
+                [
+                  5,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-2",
+              "edgeId": "link-2",
+              "x": -7.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  -4,
+                  -9
+                ],
+                [
+                  -5,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-3",
+              "edgeId": "link-3",
+              "x": -22.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  -13,
+                  -9
+                ],
+                [
+                  -14,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-4",
+              "edgeId": "link-4",
+              "x": 22.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  13,
+                  -9
+                ],
+                [
+                  14,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-5",
+              "edgeId": "link-5",
+              "x": 30,
+              "z": -7.5,
+              "axis": "z",
+              "cells": [
+                [
+                  18,
+                  -5
+                ],
+                [
+                  18,
+                  -4
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-6",
+              "edgeId": "link-6",
+              "x": 0,
+              "z": -22.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -13
+                ],
+                [
+                  0,
+                  -14
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-7",
+              "edgeId": "link-7",
+              "x": 7.5,
+              "z": -30,
+              "axis": "x",
+              "cells": [
+                [
+                  4,
+                  -18
+                ],
+                [
+                  5,
+                  -18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-8",
+              "edgeId": "link-8",
+              "x": 0,
+              "z": -37.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -22
+                ],
+                [
+                  0,
+                  -23
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-9",
+              "edgeId": "link-9",
+              "x": -7.5,
+              "z": -30,
+              "axis": "x",
+              "cells": [
+                [
+                  -4,
+                  -18
+                ],
+                [
+                  -5,
+                  -18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-10",
+              "edgeId": "link-10",
+              "x": -37.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  -22,
+                  -9
+                ],
+                [
+                  -23,
+                  -9
+                ]
+              ],
+              "closed": false
+            }
+          ],
+          "spawn": {
+            "x": 0,
+            "z": 0,
+            "yaw": 0
+          }
+        },
+        {
+          "seed": "1844070019:dream:2:0",
+          "hash": "639ffada",
+          "valid": true,
+          "fallback": false,
+          "rooms": [
+            {
+              "id": "bedroom",
+              "type": "tee",
+              "center": [
+                0,
+                0
+              ],
+              "preset": "bedroom",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-1",
+              "type": "i",
+              "center": [
+                0,
+                -9
+              ],
+              "preset": "archive",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-2",
+              "type": "elbow",
+              "center": [
+                0,
+                -16
+              ],
+              "preset": "clinic",
+              "layout": "perimeter",
+              "events": []
+            },
+            {
+              "id": "room-3",
+              "type": "cross",
+              "center": [
+                9,
+                -18
+              ],
+              "preset": "shrine",
+              "layout": "perimeter",
+              "events": [
+                "B18"
+              ]
+            },
+            {
+              "id": "room-4",
+              "type": "rectangle",
+              "center": [
+                18,
+                -18
+              ],
+              "preset": "parlor",
+              "layout": "staggered",
+              "events": [
+                "AB01"
+              ]
+            },
+            {
+              "id": "room-5",
+              "type": "elbow",
+              "center": [
+                18,
+                -11
+              ],
+              "preset": "archive",
+              "layout": "staggered",
+              "events": []
+            },
+            {
+              "id": "room-6",
+              "type": "ring",
+              "center": [
+                18,
+                -25
+              ],
+              "preset": "nursery",
+              "layout": "perimeter",
+              "events": [
+                "B25"
+              ]
+            },
+            {
+              "id": "room-7",
+              "type": "ring",
+              "center": [
+                27,
+                -29
+              ],
+              "preset": "clinic",
+              "layout": "island",
+              "events": []
+            },
+            {
+              "id": "room-8",
+              "type": "u",
+              "center": [
+                16,
+                -36
+              ],
+              "preset": "shrine",
+              "layout": "staggered",
+              "events": [
+                "B07"
+              ]
+            },
+            {
+              "id": "room-9",
+              "type": "cutCorner",
+              "center": [
+                9,
+                -9
+              ],
+              "preset": "archive",
+              "layout": "perimeter",
+              "events": []
+            },
+            {
+              "id": "room-10",
+              "type": "square",
+              "center": [
+                9,
+                -27
+              ],
+              "preset": "shrine",
+              "layout": "empty",
+              "events": [
+                "RI01"
+              ]
+            }
+          ],
+          "doors": [
+            {
+              "id": "bedroom",
+              "edgeId": "link-0",
+              "x": 0,
+              "z": -7.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -4
+                ],
+                [
+                  0,
+                  -5
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "id": "door-1",
+              "edgeId": "link-1",
+              "x": 0,
+              "z": -22.5,
+              "axis": "z",
+              "cells": [
+                [
+                  0,
+                  -13
+                ],
+                [
+                  0,
+                  -14
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-2",
+              "edgeId": "link-2",
+              "x": 7.5,
+              "z": -30,
+              "axis": "x",
+              "cells": [
+                [
+                  4,
+                  -18
+                ],
+                [
+                  5,
+                  -18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-3",
+              "edgeId": "link-3",
+              "x": 22.5,
+              "z": -30,
+              "axis": "x",
+              "cells": [
+                [
+                  13,
+                  -18
+                ],
+                [
+                  14,
+                  -18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-4",
+              "edgeId": "link-4",
+              "x": 30,
+              "z": -22.5,
+              "axis": "z",
+              "cells": [
+                [
+                  18,
+                  -14
+                ],
+                [
+                  18,
+                  -13
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-5",
+              "edgeId": "link-5",
+              "x": 30,
+              "z": -37.5,
+              "axis": "z",
+              "cells": [
+                [
+                  18,
+                  -22
+                ],
+                [
+                  18,
+                  -23
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-6",
+              "edgeId": "link-6",
+              "x": 37.5,
+              "z": -45,
+              "axis": "x",
+              "cells": [
+                [
+                  22,
+                  -27
+                ],
+                [
+                  23,
+                  -27
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-7",
+              "edgeId": "link-7",
+              "x": 30,
+              "z": -52.5,
+              "axis": "z",
+              "cells": [
+                [
+                  18,
+                  -31
+                ],
+                [
+                  18,
+                  -32
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-8",
+              "edgeId": "link-8",
+              "x": 22.5,
+              "z": -15,
+              "axis": "x",
+              "cells": [
+                [
+                  14,
+                  -9
+                ],
+                [
+                  13,
+                  -9
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-9",
+              "edgeId": "link-9",
+              "x": 15,
+              "z": -37.5,
+              "axis": "z",
+              "cells": [
+                [
+                  9,
+                  -22
+                ],
+                [
+                  9,
+                  -23
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "id": "door-10",
+              "edgeId": "link-10",
+              "x": 15,
+              "z": -22.5,
+              "axis": "z",
+              "cells": [
+                [
+                  9,
+                  -14
+                ],
+                [
+                  9,
+                  -13
+                ]
+              ],
+              "closed": false
+            }
+          ],
+          "spawn": {
+            "x": 0,
+            "z": 0,
+            "yaw": 0
+          }
+        }
+      ]
+    }
+  ],
+  "assets": {
+    "count": 36,
+    "missing": []
+  }
+}

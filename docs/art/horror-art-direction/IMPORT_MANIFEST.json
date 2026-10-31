@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-31",
+  "source": "心里有鬼_Codex恐怖房间美术研究与验收包_v1.1.zip",
+  "adaptation": "迁入 docs/art；按仓库约定调整非产品措辞与路径；补充用户明确的主题数量开放要求；README 更新为本轮交付索引；图片字节不变。",
+  "files": [
+    {
+      "path": "CODEX_心里有鬼_恐怖房间构图与联网研究规范_v1.1.md",
+      "source_sha256": "a43a6b641bf4bdf29f08923a56fd6b62d344f347dd3a363d139a0737733f8f8c",
+      "import_sha256": "4774ea0ed7a6919a5ee0e6551b515101e14537119ecc879679cce66e77ae5b95",
+      "bytes": 38153
+    },
+    {
+      "path": "QA_恐怖房间生成审美检查清单_v1.1.md",
+      "source_sha256": "0affa8336e1c86846d4bf9c5cd89848f6fd208186fc64d3dc9eea0bfd79d17a1",
+      "import_sha256": "3b524d29fe7ded52b12895631225f8e47725eb463940245901072ac74cfddbce",
+      "bytes": 11738
+    },
+    {
+      "path": "README.md",
+      "source_sha256": "7282c296e16b64f74ace55fef4ca8801a6472ef0c0ecb00db59d84a310f19281",
+      "import_sha256": "a89d92474ac3d9dbdac50a5ee9bb9d6ad343dd86af96f9a3c7049c65c721e49e",
+      "bytes": 2478
+    },
+    {
+      "path": "references/user-images/U01_高处栏杆_静止凝视.png",
+      "source_sha256": "695bfcf5e3258b01a3cf698c1b1c2ffb5b68fe53475b845a98ec7ceee829ae8f",
+      "import_sha256": "695bfcf5e3258b01a3cf698c1b1c2ffb5b68fe53475b845a98ec7ceee829ae8f",
+      "bytes": 702202
+    },
+    {
+      "path": "references/user-images/U02_狭窄走廊_异常肢体.png",
+      "source_sha256": "83ea3c51044a051cc3f0409cf1ab5ede65a18d74db874fca321f2fbe41ae841e",
+      "import_sha256": "83ea3c51044a051cc3f0409cf1ab5ede65a18d74db874fca321f2fbe41ae841e",
+      "bytes": 2909627
+    },
+    {
+      "path": "references/user-images/U03_同一走廊_光色矩阵.png",
+      "source_sha256": "f06f0ccec5e11fed2fa784f6bbff34de38c56af9c2f4bd870c88505de0e7f13d",
+      "import_sha256": "f06f0ccec5e11fed2fa784f6bbff34de38c56af9c2f4bd870c88505de0e7f13d",
+      "bytes": 650354
+    },
+    {
+      "path": "references/user-images/U04_生活空间_局部显现四宫格.png",
+      "source_sha256": "13dbe9677f0caf27f4eff59172a3384636fd074ba3f6c0477567f51d16152173",
+      "import_sha256": "13dbe9677f0caf27f4eff59172a3384636fd074ba3f6c0477567f51d16152173",
+      "bytes": 610739
+    },
+    {
+      "path": "references/user-images/U05_天花板_倾斜视角与影子.png",
+      "source_sha256": "a25319285bae16d3564ca7e0d61dba5e98c575388ab74d4607a4012a1bc71f13",
+      "import_sha256": "a25319285bae16d3564ca7e0d61dba5e98c575388ab74d4607a4012a1bc71f13",
+      "bytes": 509341
+    },
+    {
+      "path": "references/user-images/U06_旧窗框_人物局部遮挡.png",
+      "source_sha256": "292d8c312c9248505c4bf79c3959bf889a02c6164f369cd8e99be403482bf4cd",
+      "import_sha256": "292d8c312c9248505c4bf79c3959bf889a02c6164f369cd8e99be403482bf4cd",
+      "bytes": 866937
+    },
+    {
+      "path": "references/user-images/preview/U01_高处栏杆_静止凝视.jpg",
+      "source_sha256": "ae9a0e5b5e5580a2b89cad6f92df77857f3822fe3af1f6171d8500525b2bccb8",
+      "import_sha256": "ae9a0e5b5e5580a2b89cad6f92df77857f3822fe3af1f6171d8500525b2bccb8",
+      "bytes": 59796
+    },
+    {
+      "path": "references/user-images/preview/U02_狭窄走廊_异常肢体.jpg",
+      "source_sha256": "57906ac1b0789731bdf955f9fd741aa71ebdef42fb8f19317827aaa78673854f",
+      "import_sha256": "57906ac1b0789731bdf955f9fd741aa71ebdef42fb8f19317827aaa78673854f",
+      "bytes": 31347
+    },
+    {
+      "path": "references/user-images/preview/U03_同一走廊_光色矩阵.jpg",
+      "source_sha256": "169f32c1aede852e79f6cc66e61029677d3f83e7f3666939b9eb999d0d6974a4",
+      "import_sha256": "169f32c1aede852e79f6cc66e61029677d3f83e7f3666939b9eb999d0d6974a4",
+      "bytes": 39623
+    },
+    {
+      "path": "references/user-images/preview/U04_生活空间_局部显现四宫格.jpg",
+      "source_sha256": "0acd3ab938a02eb9cc40c80ab256fe1fc91f92ba839818950fa36fc9d414c9be",
+      "import_sha256": "0acd3ab938a02eb9cc40c80ab256fe1fc91f92ba839818950fa36fc9d414c9be",
+      "bytes": 31859
+    },
+    {
+      "path": "references/user-images/preview/U05_天花板_倾斜视角与影子.jpg",
+      "source_sha256": "b135a8358187f2a7efbcfc8a2521792498c4f0af3b6e343fc47e09d9e0ad0285",
+      "import_sha256": "b135a8358187f2a7efbcfc8a2521792498c4f0af3b6e343fc47e09d9e0ad0285",
+      "bytes": 15232
+    },
+    {
+      "path": "references/user-images/preview/U06_旧窗框_人物局部遮挡.jpg",
+      "source_sha256": "aeb57d127e533573935b9961b50aa6227fb14d6c9e886062ae68fd87919b4c9d",
+      "import_sha256": "aeb57d127e533573935b9961b50aa6227fb14d6c9e886062ae68fd87919b4c9d",
+      "bytes": 24510
+    }
+  ]
+}
