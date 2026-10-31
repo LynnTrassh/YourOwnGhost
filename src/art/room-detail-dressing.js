@@ -13,12 +13,74 @@ const PALETTES = {
 };
 const TABLES = new Set(['nightstand','dresser','low-table','small-table','instrument-cart','writing-desk','copy-table','offering-table','toy-chest']);
 
+// Generated GLBs may include books, raised rims, or a desk organizer. Their
+// maximum Y is not the tabletop. Require a continuous, near-horizontal patch.
+export function findTableSupport({model,anchor,width,depth,height,scale,x:preferredX,factors=[1,.72,.52]}) {
+  if(!model)return {x:preferredX??width*.22,z:0,y:height,scale};
+  anchor.updateWorldMatrix(true,true);
+  model.updateWorldMatrix(true,true);
+  const inverse=anchor.matrixWorld.clone().invert(), quaternion=anchor.getWorldQuaternion(new THREE.Quaternion());
+  const down=new THREE.Vector3(0,-1,0).applyQuaternion(quaternion),up=down.clone().negate();
+  const ray=new THREE.Raycaster(),normalMatrix=new THREE.Matrix3(),normal=new THREE.Vector3();
+  const triangles=[],point=new THREE.Vector3();
+  model.traverse(node=>{
+    if(!node.isMesh)return;
+    const positions=node.geometry.getAttribute('position'),index=node.geometry.index;
+    const matrix=new THREE.Matrix4().multiplyMatrices(inverse,node.matrixWorld);
+    const transformed=new Float32Array(positions.count*3);
+    for(let i=0;i<positions.count;i++)point.fromBufferAttribute(positions,i).applyMatrix4(matrix).toArray(transformed,i*3);
+    const count=index?index.count:positions.count,bounds=new Float32Array(count/3*5);
+    for(let i=0;i<count;i+=3) {
+      let minX=Infinity,maxX=-Infinity,minZ=Infinity,maxZ=-Infinity,maxY=-Infinity;
+      for(let j=0;j<3;j++) {
+        const offset=(index?index.getX(i+j):i+j)*3;
+        minX=Math.min(minX,transformed[offset]);maxX=Math.max(maxX,transformed[offset]);
+        minZ=Math.min(minZ,transformed[offset+2]);maxZ=Math.max(maxZ,transformed[offset+2]);maxY=Math.max(maxY,transformed[offset+1]);
+      }
+      bounds.set([minX,maxX,minZ,maxZ,maxY],i/3*5);
+    }
+    triangles.push(bounds);
+  });
+  function hasRaisedGeometry(x,z,halfW,halfD,y) {
+    // A hollow bowl can look flat to downward samples; its narrow rim still
+    // intersects a book. Reject triangle bounds crossing the patch as well.
+    for(const bounds of triangles)for(let i=0;i<bounds.length;i+=5) {
+      if(bounds[i]<x+halfW && bounds[i+1]>x-halfW && bounds[i+2]<z+halfD && bounds[i+3]>z-halfD && bounds[i+4]>y+.014)return true;
+    }
+    return false;
+  }
+  for(const factor of factors) {
+    const size=scale*factor,halfW=.225*size,halfD=.19*size;
+    for(const x of preferredX===undefined?[width*.22,width*.08]:[preferredX])for(const z of [0,-depth*.23,depth*.23]) {
+      if(Math.abs(x)+halfW>width/2-.012||Math.abs(z)+halfD>depth/2-.012)continue;
+      const levels=[];
+      for(const dx of [-halfW,-halfW/2,0,halfW/2,halfW])for(const dz of [-halfD,-halfD/2,0,halfD/2,halfD]) {
+        const from=anchor.localToWorld(new THREE.Vector3(x+dx,height+.3,z+dz));
+        ray.set(from,down);ray.far=height+.4;
+        const hit=ray.intersectObject(model,true)[0];
+        if(!hit?.face)continue;
+        normalMatrix.getNormalMatrix(hit.object.matrixWorld);
+        normal.copy(hit.face.normal).applyNormalMatrix(normalMatrix);
+        if(normal.dot(up)<.8)continue;
+        const y=hit.point.clone().applyMatrix4(inverse).y;
+        if(y<height*.53)continue;
+        levels.push(y);
+      }
+      if(levels.length!==25||Math.max(...levels)-Math.min(...levels)>.012)continue;
+      const y=Math.max(...levels);
+      if(hasRaisedGeometry(x,z,halfW,halfD,y))continue;
+      return {x,z,y,scale:size};
+    }
+  }
+  return null;
+}
+
 // All pieces are visual dressing inside existing furnishing AABBs. No new
 // floor obstacle, gameplay state, layout RNG, or per-frame animation is added.
 export function createRoomDetailDressing({plan,root,resources}) {
   const palettes=new Map(), ownedGroups=new Set(), micro=createSurfaceDetailMaterials({resources});
   const roomById=new Map(plan.rooms.map(r=>[r.id,r]));
-  const stats={furnished:0,clusters:0,rugs:0,draws:0};
+  const stats={furnished:0,clusters:0,rugs:0,draws:0,skippedClutter:0};
   let disposed=false;
   resources.add({dispose(){disposed=true;for(const group of ownedGroups)group.removeFromParent();ownedGroups.clear();}});
   const own = value => {resources.add(value);return value;};
@@ -80,12 +142,15 @@ export function createRoomDetailDressing({plan,root,resources}) {
     const clearance=(obstacle.height??height)-height-.015;
     if(clearance<.04)return;
     const theme=roomById.get(obstacle.roomId)?.interior?.presetId??'bedroom';
+    const scale=Math.min(width*.45/.5,depth*.72/.4,1);
+    const support=findTableSupport({...item,scale,...(prefab==='low-table'?{x:-width*.22}:{})});
+    if(!support){stats.skippedClutter++;return;}
+    support.scale=Math.min(support.scale,((obstacle.height??height)-support.y-.015)/.19);
     const group=new THREE.Group();group.name=`room-detail-${prefab}`;
-    // Lamp occupies the negative-X end; place the still life at the other end.
-    group.position.set(width*.22,height+.006,0);
-    const scale=Math.min(width*.45/.5,depth*.72/.4,clearance/.19,1);
-    group.scale.setScalar(scale);anchor.add(group);ownedGroups.add(group);
-    group.userData.roomDetail={roomId:obstacle.roomId,prefab,kind:'tabletop',obstacleId:obstacle.id};
+    // Keep lamp tables on the opposite side; coffee tables avoid their bowl.
+    group.position.set(support.x,support.y+.003,support.z);
+    group.scale.setScalar(support.scale);anchor.add(group);ownedGroups.add(group);
+    group.userData.roomDetail={roomId:obstacle.roomId,prefab,kind:'tabletop',obstacleId:obstacle.id,supportHeight:support.y};
     const b=batch(group,palette(theme));
     if(theme==='clinic') {
       b.box(.32,.008,.21,0,.004,0,3);

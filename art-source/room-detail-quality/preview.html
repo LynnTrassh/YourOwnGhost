@@ -1,0 +1,62 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>房间陈设实景检查</title>
+<style>body{margin:0;background:#111;color:#eee;font:14px/1.5 sans-serif}canvas{display:block}aside{position:fixed;top:14px;left:14px;padding:12px;background:#101916e8;max-width:600px}select,button{padding:6px;margin:4px}#status{font-size:12px}a{color:#c8d9c5}</style>
+<aside><strong>房间陈设 · 实际游戏场景</strong><br><select id="views" aria-label="查看陈设"></select>
+<label><input type="checkbox" id="wide" checked>环境视角</label><label><input type="checkbox" id="flash" checked>手电</label>
+<div id="status">正在加载家具与陈设…</div><a id="back">返回游戏</a></aside>
+<script type="module">
+import * as THREE from 'three';
+import {generatePlan} from '/src/planning/generate.js';
+import {createWorld} from '/src/world.js';
+import {createState} from '/src/state.js';
+import {createVhsEffect} from '/src/art/vhs-effect.js';
+import {configureInteriorFlashlight} from '/src/art/interior-lighting.js';
+const query=new URLSearchParams(location.search),seed=query.get('seed')??'1844070019',theme=query.get('theme');
+const plan=generatePlan(seed,{roomPresetOverrides:theme?{default:theme}:{}}), state=createState(plan);
+const renderer=new THREE.WebGLRenderer({antialias:true});document.body.append(renderer.domElement);
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFShadowMap;
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1025;
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x111916);scene.fog=new THREE.Fog(0x111916,9,24);
+const camera=new THREE.PerspectiveCamera(64,innerWidth/innerHeight,.06,80);scene.add(camera);
+const flashlight=new THREE.SpotLight(0xffe6b8,24,17,Math.PI/7,.72,1.65);configureInteriorFlashlight(flashlight);
+flashlight.position.set(.14,-.15,-.12);flashlight.target.position.set(0,-.08,-6);flashlight.castShadow=true;
+flashlight.shadow.mapSize.set(1024,1024);camera.add(flashlight,flashlight.target);
+const effect=createVhsEffect(renderer,scene,camera);effect.setIntensity(.6);effect.resize(innerWidth,innerHeight);
+const world=createWorld(scene,plan), select=document.querySelector('#views');
+document.querySelector('#back').href=`/?seed=${seed}`;
+await world.artReady;scene.updateMatrixWorld(true);
+const targets=[];scene.traverse(node=>{if(node.userData.roomDetail)targets.push(node);});
+const names={bedroom:'卧室',parlor:'客厅',nursery:'育儿室',clinic:'诊疗室',archive:'档案室',shrine:'供奉室'};
+const propNames={nightstand:'床头书杯',dresser:'斗柜陈设','low-table':'茶几书杯','small-table':'儿童积木','toy-chest':'玩具箱陈设','instrument-cart':'诊疗托盘','writing-desk':'书桌文件','copy-table':'档案文件','offering-table':'供奉器皿'};
+targets.sort((a,b)=>(a.userData.roomDetail.kind==='rug')-(b.userData.roomDetail.kind==='rug'));
+for(const [i,node] of targets.entries()) {
+ const info=node.userData.roomDetail,room=plan.rooms.find(r=>r.id===info.roomId);
+ select.add(new Option(`${names[room.interior.presetId]} · ${info.roomId} · ${propNames[info.prefab]??'地毯'}`,String(i)));
+}
+function focus(){
+ const node=targets[Number(select.value)];if(!node)return;
+ const wide=document.querySelector('#wide').checked,info=node.userData.roomDetail;
+ const at=node.getWorldPosition(new THREE.Vector3()),rot=node.getWorldQuaternion(new THREE.Quaternion());
+ if(info.kind==='rug') {
+  camera.position.copy(at).add(new THREE.Vector3(1.2,1.65,2.4));camera.lookAt(at);
+ } else {
+  const offsets=wide?[[.85,.95,-1.65],[-.85,.95,1.65],[-1.65,.95,-.5],[1.65,.95,.5],[0,.85,-1.1],[0,.85,1.1]]:[[.38,.43,-.65],[-.38,.43,.65],[-.65,.43,0],[.65,.43,0]];
+  const inside=(p,b,pad=0)=>p.x>b.minX-pad&&p.x<b.maxX+pad&&p.z>b.minZ-pad&&p.z<b.maxZ+pad;
+  const candidates=offsets.map(o=>at.clone().add(new THREE.Vector3(...o).applyQuaternion(rot)));
+  const from=candidates.find(p=>{
+    if(plan.cells.find(c=>c.x===Math.round(p.x/plan.cellSize)&&c.z===Math.round(p.z/plan.cellSize))?.roomId!==info.roomId)return false;
+    if([...plan.walls,...plan.obstacles].some(b=>inside(p,b,.12)))return false;
+    for(let i=1;i<16;i++)if(plan.walls.some(b=>inside(p.clone().lerp(at,i/16),b)))return false;
+    return true;
+  })??candidates[0];
+  camera.position.copy(from);camera.lookAt(at.clone().add(new THREE.Vector3(0,wide?-.18:.02,0)));
+ }
+ state.player.x=camera.position.x;state.player.z=camera.position.z;
+}
+select.onchange=focus;document.querySelector('#wide').onchange=focus;focus();
+let clusters=0,shadows=0,rugs=0,microMaterials=new Set();
+scene.traverse(node=>{if(node.userData.roomDetail?.kind==='tabletop')clusters++;if(node.userData.roomDetail?.kind==='rug')rugs++;if(node.name==='furniture-contact-shadow')shadows++;if(node.isMesh)for(const m of [node.material].flat())if(m.userData.microSurface)microMaterials.add(m);});
+document.querySelector('#status').textContent=`模型 ${world.artStats.loaded}/${world.artStats.requested}；陈设组 ${clusters}；接触阴影 ${shadows}；地毯 ${rugs}；微表面材质 ${microMaterials.size}；资源失败 ${world.artStats.failed.length}`;
+renderer.setAnimationLoop(time=>{world.update(0,state);flashlight.visible=document.querySelector('#flash').checked;effect.setFlashlight(flashlight.visible);effect.render(time/1000);});
+addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();effect.resize(innerWidth,innerHeight);});
+</script></html>

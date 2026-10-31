@@ -1,0 +1,45 @@
+{
+  "seed": "1844070019",
+  "layer": 1,
+  "roomId": "room-3",
+  "theme": "nursery",
+  "planHash": "652a7dd9",
+  "mode": "1",
+  "flashlight": false,
+  "view": "notice",
+  "camera": [
+    -12.866666666666667,
+    1.65,
+    -15
+  ],
+  "target": [
+    -15,
+    1.25,
+    -15
+  ],
+  "safe": true,
+  "drawCalls": 533,
+  "triangles": 290894,
+  "lights": [
+    {
+      "quality": true,
+      "ambient": 0.52,
+      "activeKeys": [
+        {
+          "roomId": "room-3",
+          "fixture": "lighting-pendant-bare-bulb",
+          "intensity": 23.799999999999997,
+          "shadow": 1024
+        },
+        {
+          "roomId": "room-3",
+          "fixture": "lighting-wall-sconce",
+          "intensity": 6.6,
+          "shadow": 1024
+        }
+      ],
+      "activeAccents": 0,
+      "allocatedShadows": 2
+    }
+  ]
+}

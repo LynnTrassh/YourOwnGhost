@@ -1,0 +1,183 @@
+{
+  "results": [
+    {
+      "name": "parlor",
+      "seed": "2",
+      "planHash": "9599aef8",
+      "roomId": "room-11",
+      "routeEdges": 19,
+      "doors": [
+        {
+          "id": "door-10",
+          "clear": true
+        }
+      ],
+      "views": [
+        {
+          "id": "entry",
+          "position": [
+            -23.333333333333336,
+            1.65,
+            -59.333333333333336
+          ],
+          "pitch": -0.2556021250017098,
+          "yaw": 2.2277235614429003
+        },
+        {
+          "id": "notice",
+          "position": [
+            -25,
+            1.65,
+            -57.00000000000001
+          ],
+          "pitch": -0.860569427637917,
+          "yaw": 0
+        },
+        {
+          "id": "recheck",
+          "position": [
+            -26,
+            1.65,
+            -58.333333333333336
+          ],
+          "pitch": -0.8644046588600776,
+          "yaw": -1.848732960744992
+        },
+        {
+          "id": "exit",
+          "position": [
+            -26,
+            1.65,
+            -58.333333333333336
+          ],
+          "pitch": -0.05154632779896857,
+          "yaw": -1.1263771168937984
+        }
+      ],
+      "performance": {
+        "entry-B": {
+          "calls": 217,
+          "triangles": 152448,
+          "frameMsMedian": 22.799999713897705
+        },
+        "notice-B": {
+          "calls": 185,
+          "triangles": 151512,
+          "frameMsMedian": 20.90000009536743
+        },
+        "notice-A": {
+          "calls": 185,
+          "triangles": 150748,
+          "frameMsMedian": 20.300000190734863
+        },
+        "entry-A": {
+          "calls": 217,
+          "triangles": 151684,
+          "frameMsMedian": 22.5
+        },
+        "recheck-B": {
+          "calls": 194,
+          "triangles": 147614,
+          "frameMsMedian": 22.90000009536743
+        },
+        "exit-B": {
+          "calls": 377,
+          "triangles": 220387,
+          "frameMsMedian": 20.699999809265137
+        }
+      }
+    },
+    {
+      "name": "archive",
+      "seed": "1844070019",
+      "planHash": "639ffada",
+      "roomId": "room-5",
+      "routeEdges": 15,
+      "doors": [
+        {
+          "id": "door-4",
+          "clear": true
+        },
+        {
+          "id": "door-8",
+          "clear": true
+        }
+      ],
+      "views": [
+        {
+          "id": "entry",
+          "position": [
+            30.333333333333332,
+            1.65,
+            -21.333333333333336
+          ],
+          "pitch": -0.40755226439238906,
+          "yaw": 2.8768602422274863
+        },
+        {
+          "id": "notice",
+          "position": [
+            31,
+            1.65,
+            -20.333333333333332
+          ],
+          "pitch": -0.7721526177960373,
+          "yaw": 1.7964657799280834
+        },
+        {
+          "id": "recheck",
+          "position": [
+            29.000000000000004,
+            1.65,
+            -20.333333333333332
+          ],
+          "pitch": -0.772152617796039,
+          "yaw": -1.796465779928084
+        },
+        {
+          "id": "exit",
+          "position": [
+            29.000000000000004,
+            1.65,
+            -20.333333333333332
+          ],
+          "pitch": -0.08361621657453931,
+          "yaw": -0.4324077755705363
+        }
+      ],
+      "performance": {
+        "entry-B": {
+          "calls": 223,
+          "triangles": 212458,
+          "frameMsMedian": 18.40000009536743
+        },
+        "entry-A": {
+          "calls": 223,
+          "triangles": 208978,
+          "frameMsMedian": 21.59999990463257
+        },
+        "notice-A": {
+          "calls": 253,
+          "triangles": 235881,
+          "frameMsMedian": 21.199999809265137
+        },
+        "notice-B": {
+          "calls": 253,
+          "triangles": 239361,
+          "frameMsMedian": 22
+        },
+        "recheck-B": {
+          "calls": 160,
+          "triangles": 154722,
+          "frameMsMedian": 19.800000190734863
+        },
+        "exit-B": {
+          "calls": 577,
+          "triangles": 314532,
+          "frameMsMedian": 22.899999618530273
+        }
+      }
+    }
+  ],
+  "note": "静态碰撞与未激活剧情状态检查，不代表真人试玩或完整事件触发验收"
+}

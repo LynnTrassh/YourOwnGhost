@@ -1,0 +1,39 @@
+{
+  "seed": "1844070019",
+  "layer": 1,
+  "roomId": "room-5",
+  "theme": "parlor",
+  "planHash": "7616d014",
+  "mode": "1",
+  "flashlight": false,
+  "view": "notice",
+  "camera": [
+    24.533333333333335,
+    1.65,
+    -15
+  ],
+  "target": [
+    26.666666666666668,
+    1.25,
+    -15
+  ],
+  "safe": true,
+  "drawCalls": 212,
+  "triangles": 173845,
+  "lights": [
+    {
+      "quality": true,
+      "ambient": 0.52,
+      "activeKeys": [
+        {
+          "roomId": "room-5",
+          "fixture": "lighting-pendant-bare-bulb",
+          "intensity": 23.799999999999997,
+          "shadow": 1024
+        }
+      ],
+      "activeAccents": 0,
+      "allocatedShadows": 1
+    }
+  ]
+}

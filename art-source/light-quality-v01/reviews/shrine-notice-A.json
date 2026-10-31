@@ -1,0 +1,39 @@
+{
+  "seed": "1844070019",
+  "layer": 1,
+  "roomId": "room-1",
+  "theme": "shrine",
+  "planHash": "652a7dd9",
+  "mode": "0",
+  "flashlight": false,
+  "view": "notice",
+  "camera": [
+    2.8666666666666663,
+    1.65,
+    -8.2
+  ],
+  "target": [
+    5,
+    1.1,
+    -8.14
+  ],
+  "safe": true,
+  "drawCalls": 1943,
+  "triangles": 926228,
+  "lights": [
+    {
+      "quality": false,
+      "ambient": 0.68,
+      "activeKeys": [
+        {
+          "roomId": "room-1",
+          "fixture": "lighting-table-lamp",
+          "intensity": 7,
+          "shadow": 512
+        }
+      ],
+      "activeAccents": 1,
+      "allocatedShadows": 1
+    }
+  ]
+}

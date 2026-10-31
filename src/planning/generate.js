@@ -1,7 +1,7 @@
 import { CELL_SIZE, MODULE_SIZE } from './templates.js';
 import { growTopology, inspectTopology } from './topology.js';
 import { validatePlan, buildWalls } from './validate.js';
-import { populateInteriors } from './interiors.js';
+import { populateInteriors, completeRoomInteriors } from './interiors.js';
 import { fitStatue } from './statue-fit.js';
 import { fitLightAvoider } from './avoider-fit.js';
 import { fitStories } from './story-fit.js';
@@ -54,6 +54,7 @@ function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, thre
   }
   if(plan.threat&&!plan.chase&&threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR)
     plan.threat={...plan.threat,behaviorId:LIGHT_AVOIDER_BEHAVIOR};
+  completeRoomInteriors(plan);
   plan.coverage=analyzeCoverage(plan);
   return plan;
 }

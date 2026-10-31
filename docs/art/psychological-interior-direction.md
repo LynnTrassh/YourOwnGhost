@@ -46,3 +46,20 @@
 [资产确认册](../../art-source/room-presets/catalog.html)收录 12 张套装图、56 个独立资产类别，以及整体氛围提案。所有图已生成保存；其中旧化较重的图作为候选变体，不等于全部最终批准。下一轮优先按最新参考调整完整表面和色彩秩序，再落实用户批准的模型。
 
 最新已生成 [7 张黑暗场景 V02](../../art-source/room-presets/style/dark-scenes-v02/index.html)，将上述参考转为六主题与走廊的低照度方案，等待用户确认。原候选图保留用于对比。
+
+## 2026-10-31 补充：诡异、不稳定与参考研究
+
+用户明确要求：以后每套房间布局必须先联网搜索优质恐怖参考，记录来源，再提炼并组合。少量用户图校准品味，搜索与取舍由美术负责。黑暗基调和可读通路继续保留。
+
+新增用户参考保存在 `art-source/room-presets/horror-v03/references/`：窗框切割人形的局部显露、接近天花板的人形高度、倾斜视角与夸大的投影。图片不能证明动画、触发规则或原作来源；这些属于本项目后续设计，不从静态参考推断。
+
+每套布局先做：入口看到什么 → 视线被什么挡住 → 一处主异常 → 玩家经过时的视差 → 回看能核对的参照物。失衡主要来自家具/门窗/人形的比例与位置关系。可用重复中的缺位、边缘窥视、过高轮廓和阴影偏移；镜头不持续乱摇，避免把视觉不稳定做成操作不适。几何开洞、路径变化、事件触发依旧交玩法接口，不由美术暗中改碰撞。
+
+本轮联网研究来源（2026-10-31）：
+
+- [Stuart Macdonald：Developing Control’s Brutalism](https://machinefire.artstation.com/projects/xzynYY)：创作者本人提供世界方向探索、建筑语汇与变化楼层的早期地图。用于研究重复结构、尺度与空间秩序；本项目仍使用旧住宅/旅馆主题，不直接变成混凝土办公楼。
+- [Control 环境美术 Miro Vesterinen 的材质访谈](https://www.adobe.com/products/substance3d/magazine/control-how-one-senior-environment-artist-created-entire-brutalist-material-library.html)：用于研究可复用材料与光照的协作关系。
+- [KARMA: The Dark World 官方画面入口](https://wiredproductions.com/games/karma-the-dark-world/)：用于继续筛选记忆空间、人体尺度和局部色光的视觉参考。
+- [Little Nightmares II 官方页面](https://en.bandainamcoent.eu/little-nightmares/little-nightmares-ii)：作为后续尺度压迫和人偶主题研究入口，不把攻略推断写成开发者设计事实。
+
+本轮已出两张原创概念图：伸手墙面走廊、悬偶育儿室，见 `art-source/room-presets/horror-v03/index.html`。图片状态为待确认；未调用 Tripo。伸手走廊的破墙先作为独立浅景片，悬偶由肩部牵线；真实摆位、遮挡与剧情含义待接入设计。

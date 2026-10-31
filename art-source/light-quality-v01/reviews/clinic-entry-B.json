@@ -1,0 +1,51 @@
+{
+  "seed": "1844070019",
+  "layer": 1,
+  "roomId": "room-6",
+  "theme": "clinic",
+  "planHash": "e7595c71",
+  "mode": "1",
+  "flashlight": false,
+  "view": "entry",
+  "camera": [
+    30,
+    1.65,
+    -7.2666666666666675
+  ],
+  "target": [
+    30,
+    1.4,
+    0
+  ],
+  "safe": true,
+  "drawCalls": 279,
+  "triangles": 118585,
+  "lights": [
+    {
+      "quality": true,
+      "ambient": 0.52,
+      "activeKeys": [
+        {
+          "roomId": "room-5",
+          "fixture": "lighting-pendant-bare-bulb",
+          "intensity": 23.799999999999997,
+          "shadow": 1024
+        },
+        {
+          "roomId": "room-5",
+          "fixture": "lighting-wall-sconce",
+          "intensity": 6.6,
+          "shadow": 1024
+        },
+        {
+          "roomId": "room-6",
+          "fixture": "lighting-strip-double",
+          "intensity": 23.799999999999997,
+          "shadow": 1024
+        }
+      ],
+      "activeAccents": 0,
+      "allocatedShadows": 3
+    }
+  ]
+}

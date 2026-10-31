@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>手电后处理轮廓验证</title><style>body{margin:0;background:#080808;color:#eee;font:13px system-ui}canvas{display:block}aside{position:fixed;top:12px;left:12px;background:#101512df;padding:12px}select,input{margin:6px}small{display:block}</style>
+<aside><strong>手电后处理轮廓验证</strong><br><select id="view" aria-label="照射表面"><option value="wall">正面墙 / 跨越物件</option><option value="oblique">斜墙 / 椭圆光斑</option></select><br><label>VHS 强度<input id="amount" aria-label="VHS 强度" type="range" min="0" max="1" step=".1" value=".6"></label><label><input id="on" type="checkbox" checked>手电</label><small>诊断几何；使用游戏公共后处理与手电配置</small></aside>
+<script type="module">
+import * as THREE from 'three';
+import {createVhsEffect} from '/src/art/vhs-effect.js';
+import {configureInteriorFlashlight} from '/src/art/interior-lighting.js';
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);document.body.append(renderer.domElement);
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1025;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFShadowMap;
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x070909);scene.add(new THREE.HemisphereLight(0xacaeac,0x252423,.035));
+const camera=new THREE.PerspectiveCamera(72,innerWidth/innerHeight,.06,30);camera.position.set(0,1.65,0);scene.add(camera);
+function box(w,h,d,x,y,z,color){const mesh=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshStandardMaterial({color,roughness:.9}));mesh.position.set(x,y,z);mesh.castShadow=true;mesh.receiveShadow=true;scene.add(mesh);return mesh;}
+box(8,5,.15,0,1.65,-3,0x939386);box(8,.15,8,0,-.1,-3,0x33302a);
+box(2.1,.075,.4,0,1.15,-2.75,0x82796b);
+for(const [i,h] of [.35,.48,.4,.3,.43].entries())box(.13,h,.18,-.65+i*.15,1.188+h/2,-2.75,[0x35404b,0x8c795e,0x605951][i%3]);
+box(.42,.22,.18,.48,1.298,-2.75,0xa8a799);
+const light=new THREE.SpotLight(0xffe6b8,24,17,Math.PI/7,.72,1.65);configureInteriorFlashlight(light);light.position.set(.14,-.15,-.12);light.target.position.set(0,-.08,-6);light.castShadow=true;light.shadow.mapSize.set(1024,1024);camera.add(light,light.target);
+const effect=createVhsEffect(renderer,scene,camera);effect.resize(innerWidth,innerHeight);
+document.querySelector('#view').onchange=e=>{const oblique=e.target.value==='oblique';camera.position.set(oblique?2.8:0,1.65,0);camera.lookAt(0,1.65,-3);};
+renderer.setAnimationLoop(()=>{const on=document.querySelector('#on').checked;light.visible=on;effect.setFlashlight(on);effect.setIntensity(Number(document.querySelector('#amount').value));effect.render(0);});
+addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();effect.resize(innerWidth,innerHeight);});
+</script></html>

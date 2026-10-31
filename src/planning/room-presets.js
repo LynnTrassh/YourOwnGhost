@@ -47,6 +47,17 @@ export const ROOM_PRESETS = {
 
 export const ROOM_PRESET_IDS = Object.keys(ROOM_PRESETS);
 
+// Author-controlled functional pairs. Their physical slots are theme-independent:
+// switching a room's look must never silently change collision or story fitting.
+export const ROOM_FUNCTIONAL_PAIRS = {
+  bedroom: ['bed', 'nightstand'],
+  parlor: ['sofa', 'low-table'],
+  nursery: ['small-table', 'toy-chest'],
+  clinic: ['exam-cot', 'instrument-cart'],
+  archive: ['writing-desk', 'copy-table'],
+  shrine: ['offering-table', 'kneeler'],
+};
+
 export function createRoomPrefabPicker(presetId, rng) {
   const offsets = new Map(), counts = new Map();
   return kind => {

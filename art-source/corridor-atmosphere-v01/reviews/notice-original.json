@@ -1,0 +1,41 @@
+{
+  "seed": "1844070019",
+  "layer": 2,
+  "roomId": "room-1",
+  "planHash": "639ffada",
+  "theme": "archive",
+  "view": "notice",
+  "camera": {
+    "position": [
+      1.4,
+      1.65,
+      -14.9
+    ],
+    "yaw": -1.0347563605676078,
+    "pitch": 0.042535612989884466,
+    "fov": 72
+  },
+  "light": "celadon",
+  "paperAging": false,
+  "pathLighting": true,
+  "flashlight": true,
+  "exposure": 1.1025,
+  "vhs": 0.62,
+  "frozenEffectTime": 0,
+  "study": {
+    "fixtures": 2,
+    "lights": 2,
+    "wallMaterials": 1,
+    "additionalLights": 0,
+    "additionalGeometry": 0
+  },
+  "models": {
+    "requested": 119,
+    "loaded": 119,
+    "failed": [],
+    "pending": 0
+  },
+  "drawCalls": 1145,
+  "triangles": 603937,
+  "scope": "实际 world 的独立预览；剧情状态未推进；非真人试玩验收"
+}

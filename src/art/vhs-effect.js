@@ -30,80 +30,24 @@ const VHSShader = {
       return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);
     }
 
-    float sampleLuma(vec2 sampleUv) {
-      vec3 sampleColor = texture2D(tDiffuse, sampleUv).rgb;
-      return dot(sampleColor, vec3(0.2126, 0.7152, 0.0722));
-    }
-
     void main() {
       float amount = clamp(uIntensity, 0.0, 1.0);
       vec2 pixel = 1.0 / max(uResolution, vec2(1.0));
       float frame = floor(uTime * 12.0);
 
-      // A rare, short tracking slip keeps the footage imperfect without hiding play.
+      // Rare tracking noise changes luminance only, never geometry or the beam.
       float glitch = step(0.965, hash(vec2(floor(uTime * 2.4), 19.0))) * amount;
       float bandY = hash(vec2(floor(uTime * 2.4), 31.0));
       float inBand = 1.0 - smoothstep(0.012, 0.035, abs(vUv.y - bandY));
-      float slip = glitch * inBand * pixel.x * 2.0;
-      vec2 uv = vUv + vec2(slip, 0.0);
-
-      // Keep global VHS chroma nearly invisible. The stronger color split below
-      // is reserved for the flashlight's projected rim, not every scene edge.
-      float aspect = uResolution.x / max(uResolution.y, 1.0);
-      vec2 radial = vec2((uv.x - 0.5) * aspect, uv.y - 0.5);
-      float radius = length(radial);
-      float angle = atan(radial.y, radial.x);
-      vec2 ray = radial / max(radius, 0.001);
-      vec2 radialDirection = vec2(ray.x / max(aspect, 0.001), ray.y);
-
-      // Find the real light falloff on this screen-space ray instead of assuming
-      // the flashlight always lands on a wall at one fixed distance. This also
-      // follows the oval/uneven edge when the beam hits a surface obliquely.
-      float strongestDrop = 0.0;
-      float detectedRimRadius = 0.305;
-      float previousRadius = 0.10;
-      float previousLuma = sampleLuma(vec2(
-        0.5 + ray.x * previousRadius / max(aspect, 0.001),
-        0.5 + ray.y * previousRadius
-      ));
-      for (int i = 0; i < 10; i++) {
-        float sampleRadius = 0.165 + float(i) * 0.065;
-        vec2 sampleUv = vec2(
-          0.5 + ray.x * sampleRadius / max(aspect, 0.001),
-          0.5 + ray.y * sampleRadius
-        );
-        float sampleBrightness = sampleLuma(sampleUv);
-        float drop = previousLuma - sampleBrightness;
-        if (drop > strongestDrop) {
-          strongestDrop = drop;
-          detectedRimRadius = (previousRadius + sampleRadius) * 0.5;
-        }
-        previousRadius = sampleRadius;
-        previousLuma = sampleBrightness;
-      }
-
-      float rimRadius = detectedRimRadius
-        + 0.0018 * sin(angle * 5.0 + uTime * 0.7)
-        + 0.0012 * sin(angle * 9.0 - uTime * 0.43);
-      float edgeConfidence = smoothstep(0.012, 0.065, strongestDrop);
-      float detectedRim = (1.0 - smoothstep(0.018, 0.052, abs(radius - rimRadius)))
-        * edgeConfidence;
-      // Retain a faint version of the familiar near-field edge when the image
-      // has no clear brightness transition to detect.
-      float fallbackRadius = 0.305
-        + 0.002 * sin(angle * 5.0 + uTime * 0.7)
-        + 0.001 * sin(angle * 9.0 - uTime * 0.43);
-      float fallbackRim = (1.0 - smoothstep(0.035, 0.075, abs(radius - fallbackRadius)))
-        * (1.0 - edgeConfidence) * 0.18;
-      float flashlightRim = (detectedRim + fallbackRim) * uFlashlight;
-
-      float globalChromaShift = pixel.x * amount * 0.12;
-      float edgeShiftPixels = 17.0 * amount * flashlightRim;
-      vec2 channelShift = radialDirection * pixel * edgeShiftPixels;
-      vec2 sampleUv = uv + radialDirection * pixel * flashlightRim * amount * 5.0;
-      vec4 center = texture2D(tDiffuse, sampleUv);
-      float red = texture2D(tDiffuse, sampleUv + vec2(globalChromaShift, 0.0) + channelShift).r;
-      float blue = texture2D(tDiffuse, sampleUv - vec2(globalChromaShift, 0.0) - channelShift).b;
+      // Scene brightness edges are not a beam mask: table edges and objects
+      // must not become quantized rings or displaced wedges. The actual
+      // spotlight supplies the continuous falloff and world-space occlusion.
+      // A subpixel, spatially constant chroma offset retains a restrained VHS
+      // character, reduced further while the flashlight reveals fine detail.
+      float globalChromaShift = pixel.x * amount * mix(0.12, 0.04, uFlashlight);
+      vec4 center = texture2D(tDiffuse, vUv);
+      float red = texture2D(tDiffuse, vUv + vec2(globalChromaShift, 0.0)).r;
+      float blue = texture2D(tDiffuse, vUv - vec2(globalChromaShift, 0.0)).b;
       vec3 color = vec3(red, center.g, blue);
 
 

@@ -3,14 +3,18 @@ import { INTERIOR_ASSETS, PREFAB_ASSETS } from './interior-catalog.js';
 import { createInteriorModelLoader } from './interior-models.js';
 import { createInteriorSurfaces } from './interior-surfaces.js';
 import { createInteriorLighting } from './interior-lighting.js';
-import { createRoomDetailDressing } from './room-detail-dressing.js';
+import { createRoomDetailDressing, findTableSupport } from './room-detail-dressing.js';
+import { createRoomCompleteness } from './room-completeness.js';
 
 export function createDarkInteriors({ plan, root, resources }) {
   const models = createInteriorModelLoader(resources);
   const surfaces = createInteriorSurfaces({ plan, root, resources });
-  const lighting = createInteriorLighting({ root, resources });
+  const lighting = createInteriorLighting({ root, resources, plan });
   const details = createRoomDetailDressing({ plan, root, resources });
+  const completeness = createRoomCompleteness({ plan, root, resources, surfaces });
   const furnished = [], pending = [];
+  let disposed = false;
+  resources.add({dispose(){disposed=true;}});
   function place(id, options) { const ready = models.attach(id,options); pending.push(ready); return ready; }
   function illuminate(group, {emitter, target, color, intensity, distance, angle, roomId, glow = true, fill = false}) {
     // The fitted model is the transform and lifetime owner of all its light.
@@ -28,13 +32,15 @@ export function createDarkInteriors({ plan, root, resources }) {
     let yaw = w >= d ? 0 : Math.PI/2;
     if (obstacle.wallNormal) yaw = Math.atan2(...obstacle.wallNormal);
     if (obstacle.kind === 'bed') yaw = 0;
+    // Long-axis beds/cots share a physical primary slot with sofas/desks.
+    if (obstacle.compositionRole === 'primary' && asset.depth > asset.width) yaw += Math.PI/2;
     const alongX = Math.abs(Math.cos(yaw)) > .5;
     const width = (alongX ? w : d) * .985, depth = (alongX ? d : w) * .985;
     const height = Math.min(asset.height,obstacle.height ?? asset.height);
     const position = [(obstacle.minX+obstacle.maxX)/2,0,(obstacle.minZ+obstacle.maxZ)/2];
     const anchor = new THREE.Group(); anchor.position.set(...position); anchor.rotation.y = yaw; root.add(anchor);
     const item = {obstacle,anchor,id,width,depth,height,position};
-    place(id,{parent:anchor,width,height,depth,fallback,onReady:()=>details.furnish(item)});
+    item.ready = place(id,{parent:anchor,width,height,depth,fallback,onReady:model=>details.furnish({...item,model})});
     furnished.push(item);
   }
   function wallModel(id, face, {height,width,depth = .07, y = 0, along, sourceYaw = 0, onReady} = {}) {
@@ -56,9 +62,16 @@ export function createDarkInteriors({ plan, root, resources }) {
       const {obstacle,anchor,id,width,depth,height} = item;
       if (!primary.has(obstacle.roomId) && ['furniture-nightstand','furniture-dresser','furniture-writing-desk','furniture-child-table','furniture-offering-table'].includes(id)) {
         const lamp = id === 'furniture-writing-desk' ? 'lighting-desk-lamp-green' : 'lighting-table-lamp';
-        place(lamp,{parent:anchor,position:[-width*.27,height,0],width:.24,height:.4,depth:.24,
-          onReady:group=>illuminate(group,{emitter:[lamp==='lighting-desk-lamp-green'?.05:0,.29,0],target:[.15,-.4,-.3],
-            color:surfaces.look(obstacle.roomId).light,intensity:7,distance:5,angle:1.2,roomId:obstacle.roomId,fill:true})});
+        // The furniture GLB can include a raised organizer; use its actual top,
+        // and await this nested load in ready() rather than leaving a floating lamp.
+        pending.push(item.ready.then(model=>{
+          if(!model||disposed)return null;
+          const support=findTableSupport({model,anchor,width,depth,height,scale:.62,x:-width*.27,factors:[1]});
+          if(!support)return null;
+          return place(lamp,{parent:anchor,position:[support.x,support.y+.003,support.z],width:.24,height:.4,depth:.24,
+            onReady:group=>illuminate(group,{emitter:[lamp==='lighting-desk-lamp-green'?.05:0,.29,0],target:[.15,-.4,-.3],
+              color:surfaces.look(obstacle.roomId).light,intensity:7,distance:5,angle:1.2,roomId:obstacle.roomId,fill:true})});
+        }));
         primary.set(obstacle.roomId,true);
       }
       if (['furniture-writing-desk','furniture-child-table','furniture-document-table'].includes(id)) {
@@ -96,6 +109,7 @@ export function createDarkInteriors({ plan, root, resources }) {
       }
     }
     details.dress();
+    completeness.dress();
     lighting.update(0,plan.spawn);
   }
   return { ...surfaces, furnish, dress, update:lighting.update, stats:models.stats, ready:()=>Promise.all(pending), lights:lighting, models, detailStats:details.stats };

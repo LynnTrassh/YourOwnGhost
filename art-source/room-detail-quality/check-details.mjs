@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
-import {Group,Box3,Vector3,MeshStandardMaterial} from 'three';
-import {createRoomDetailDressing} from '../../src/art/room-detail-dressing.js';
+import {Group,Box3,Vector3,MeshStandardMaterial,Mesh,BoxGeometry} from 'three';
+import {createRoomDetailDressing,findTableSupport} from '../../src/art/room-detail-dressing.js';
 import {createSurfaceDetailMaterials} from '../../src/art/surface-detail-materials.js';
 import {INTERIOR_ASSETS} from '../../src/art/interior-catalog.js';
 
@@ -41,4 +41,16 @@ assert.equal(a.bumpMap,a.roughnessMap,'Height and roughness share packed data te
 assert.equal(a.bumpMap.image.width,128);
 const imageMaterial=new MeshStandardMaterial();micro.apply(imageMaterial,'art-misaligned-portrait');assert.equal(imageMaterial.bumpMap,null);
 for(const resource of resources)resource.dispose?.();
-console.log(JSON.stringify({themes:6,furnishingVariants:9,orientations:4,clusters,draws,bounds:'passed',disposal:'passed',materialSharing:'passed'}));
+const anchor=new Group(),model=new Group(),testMaterial=new MeshStandardMaterial();
+anchor.position.set(23,0,-17);anchor.rotation.y=Math.PI/2;anchor.add(model);
+const top=new Mesh(new BoxGeometry(1.28,.7,.68),testMaterial);top.position.y=.35;model.add(top);
+const clutter=new Mesh(new BoxGeometry(.18,.4,.15),testMaterial);clutter.position.set(-.4,.9,0);model.add(clutter);
+const support=findTableSupport({model,anchor,width:1.28,depth:.68,height:1.1,scale:.8});
+assert(support);assert(Math.abs(support.y-.7)<1e-6,'Use actual table, not top of attached clutter');
+const rim=new Mesh(new BoxGeometry(.006,.04,.68),testMaterial);rim.position.set(1.28*.22+.04,.72,0);model.add(rim);
+assert.equal(findTableSupport({model,anchor,width:1.28,depth:.68,height:1.1,scale:.8,x:1.28*.22,factors:[1]}),null,'Reject narrow raised rims between support samples');
+model.remove(rim);rim.geometry.dispose();
+top.rotation.z=.3;clutter.visible=false;model.remove(clutter);
+assert.equal(findTableSupport({model,anchor,width:1.28,depth:.68,height:1.1,scale:.8}),null,'Reject sloping/non-continuous surfaces');
+top.geometry.dispose();clutter.geometry.dispose();testMaterial.dispose();
+console.log(JSON.stringify({themes:6,furnishingVariants:9,orientations:4,clusters,draws,bounds:'passed',disposal:'passed',materialSharing:'passed',actualSupport:'passed'}));

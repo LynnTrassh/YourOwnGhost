@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>通道研究 · 旧暖黄 / 灰绿</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101510;color:#e4dfcf;font:14px/1.5 system-ui}canvas{display:block;width:100%;height:100%}header{position:fixed;z-index:2;top:0;left:0;right:0;background:#141b18ed;border-bottom:1px solid #4c5142;padding:12px 22px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}h1{margin:0;font-size:18px}small{color:#b8bcae}button,select,a{font:inherit;background:#29332d;border:1px solid #62715c;color:inherit;border-radius:4px;padding:6px 10px;text-decoration:none}button[aria-pressed=true]{background:#596442;border-color:#bcbd87}button:disabled{opacity:.4}aside{position:fixed;bottom:22px;left:22px;max-width:640px;background:#141b18e8;padding:14px 18px;border-left:2px solid #979a70;pointer-events:none}#status{font-size:12px;color:#b7beb1;margin-top:6px}#note{margin:3px 0}#export{margin-left:auto}details{position:fixed;right:22px;bottom:22px;max-width:350px;background:#141b18ed;padding:10px 14px}pre{white-space:pre-wrap;max-height:40vh;overflow:auto;font-size:11px}summary{cursor:pointer}@media(max-width:750px){header{padding:8px;gap:5px}header h1{width:100%}aside{bottom:10px;left:10px;max-width:75vw}details{display:none}}
+</style></head><body>
+<header><h1>通道 · 灯色与纸面研究</h1>
+<label>灯光 <select id="light" disabled aria-label="灯光方案"><option value="baseline">A · 原灯色</option><option value="tobacco">B · 旧暖黄</option><option value="celadon">C · 灰绿</option></select></label>
+<label><input id="path" type="checkbox" disabled>通路照明</label><label><input id="paper" type="checkbox" disabled>纸面老化</label><label><input id="flash" type="checkbox" checked>手电</label>
+<button data-view="entry" disabled>入口</button><button data-view="passage" disabled>通道</button><button data-view="notice" disabled>发现</button><button data-view="recheck" disabled>侧移确认</button><button data-view="return" disabled>回望出口</button>
+<button id="export" disabled>保存当前画面</button><a href="/?seed=1844070019">游戏首页</a></header>
+<canvas id="view" tabindex="0" aria-label="房间预览，拖动环顾，WASD移动"></canvas>
+<aside><strong id="caption">正在装配真实房间…</strong><p id="note">独立候选预览；不改变主游戏默认效果。</p><small>拖动环顾 · WASD 移动 · F 手电 · 1/2/3 灯色</small><div id="status" role="status">加载中</div></aside>
+<details><summary>观察记录与来源</summary><p><a href="/docs/art/corridor-atmosphere-v01.md">研究与交接文档</a></p><pre id="diagnostics"></pre></details>
+<script type="module" src="./preview.js"></script></body></html>

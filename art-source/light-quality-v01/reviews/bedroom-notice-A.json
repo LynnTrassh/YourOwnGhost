@@ -1,0 +1,45 @@
+{
+  "seed": "1844070019",
+  "layer": 1,
+  "roomId": "bedroom",
+  "theme": "bedroom",
+  "planHash": "e7595c71",
+  "mode": "0",
+  "flashlight": false,
+  "view": "notice",
+  "camera": [
+    -0.6000000000000002,
+    1.65,
+    -3.466666666666667
+  ],
+  "target": [
+    -1.6666666666666667,
+    1.1,
+    -1.6666666666666667
+  ],
+  "safe": true,
+  "drawCalls": 202,
+  "triangles": 123550,
+  "lights": [
+    {
+      "quality": false,
+      "ambient": 0.68,
+      "activeKeys": [
+        {
+          "roomId": "bedroom",
+          "fixture": "lighting-pendant-bare-bulb",
+          "intensity": 3.5,
+          "shadow": 512
+        },
+        {
+          "roomId": "bedroom",
+          "fixture": "lighting-table-lamp",
+          "intensity": 7,
+          "shadow": 512
+        }
+      ],
+      "activeAccents": 1,
+      "allocatedShadows": 2
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "assets": [
+    {
+      "id": "scene-reaching-wall-corridor-v03",
+      "ref": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/style/dark-scenes-v02/scene-corridor-dark-v02.png",
+      "prompt": "Generate one new original psychological horror game environment concept, landscape 16:9. Reference image is approved visual art direction only. Keep its believable old hotel domestic corridor, faded sage floral wallpaper, dark walnut wainscoting, geometric muted rust carpet, cream panelled doors, brass wall lamps, 3 meter ceiling and realistic human scale. New horror intervention: selected wallpaper panels have split to reveal horizontal old plaster laths with many pale waxlike HUMAN HANDS reaching between the laths at different heights, forearms disappear into pitch black cavities, no severed stumps or gore. Density increases farther down corridor, 3 reusable hand pose families, unnervingly almost the same hands. One close side hand held unnaturally still is focal point; others barely catch rim light. Foreground left and right framing, clear central walkable 1.2m path, intact doors remain legible, no boards blocking passage. First-person found-footage 28mm view, powerful restrained flashlight reveals middle-distance hand and tactile wallpaper, dim tungsten sconces along right, faint sickly gray-green reflection, small oxblood door at far end. DARK overall but read materials and outlines in shadows, lovely coherent composition, subtle painterly craft only in surface texture, physically solid photorealistic 3D forms. No illustration outlines, no noisy sketch, no whole-screen VHS stripes, no pumpkins, no carnival props, no typography, no visible human character. Not a screenshot recreation; newly compose the room. Render an atmospheric production concept for our existing modular horror game.",
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-000d4636-8f65-4385-ada1-f6139fef7b61.png",
+      "file": "scene-reaching-wall-corridor-v03.png",
+      "status": "awaiting-image-review",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "scene-suspended-dolls-nursery-v03",
+      "ref": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/room-presets/style/dark-scenes-v02/scene-nursery-dark-v02.png",
+      "prompt": "Generate one new original psychological horror game environment concept, landscape 16:9. Reference is approved room/material/lighting art direction only. Keep its domestic old nursery, faded dusty rose floral wallpaper, walnut plank floor, vintage cream cabinet, small table, worn toy chest, deep dark blue window. New unsettling intervention: many small old cloth-and-painted-porcelain DOLLS suspended by thin strings attached to their SHOULDER JOINTS as marionettes, not by their necks. They are recognizably antique toys, not real children. 20-30 dolls, repeating 3 coherent silhouettes, faded cream/rust/dusty rose clothing, cracked glaze faces, naturally uncanny asymmetrical glass eyes; no exaggerated monster teeth. Most hang high above walkable headroom; closest ones at sides, central path open. In the center deeper in room a single empty chair under a gap in the suspended dolls gives an unsettling absent person composition. Most dolls face toward that empty chair; one peripheral doll faces camera. Strings disappear into upper shadow. DARK found-footage domestic psychological dread with elegant measured composition, 3m ceiling and 5x5m room. First-person human height 28mm lens; flashlight grazing dolls in foreground, low warm tablelamp left and cool window rim right, selective sparse amber highlights, richly black shadows with readable contours, no orange wash. Subtle hand-painted surface character but solid realistic materials and geometry. No pumpkins, no haunted-house carnival set, no text, no overt blood, no real children, no mist hiding all asset detail. New original room composition integrated into our established visual world.",
+      "source": "/Users/ftc_art/.codex/generated_images/01a18dc6-d70e-7c23-a755-1831b6ae1088/exec-f4cdcde3-caf2-4bac-bbe5-6f7ae31cbf79.png",
+      "file": "scene-suspended-dolls-nursery-v03.png",
+      "status": "awaiting-image-review",
+      "tool": "built-in image_gen"
+    }
+  ]
+}

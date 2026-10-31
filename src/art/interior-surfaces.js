@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { wallSurfaces } from '../rendering/wall-surfaces.js';
 import { createWallDecorLayout } from './wall-decor-layout.js';
-import { batchStaticInteriorGroups } from './static-interior-batch.js';
+import { batchStaticInteriorGroups, compactOpaqueMaterialGroups } from './static-interior-batch.js';
 import { createSurfaceDetailMaterials } from './surface-detail-materials.js';
 
 export const ROOM_LOOKS = {
@@ -71,6 +71,7 @@ export function createInteriorSurfaces({ plan, root, resources }) {
     picture.position.set(0, 1.96, .051);
   }
   function dressWalls() {
+    root.userData.wallMaterialBatchStats = compactOpaqueMaterialGroups(root);
     const staticGroups = [];
     for (const face of faces) {
       const length = face.end - face.start;
