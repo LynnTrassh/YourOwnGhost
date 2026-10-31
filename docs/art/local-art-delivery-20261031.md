@@ -4,6 +4,14 @@
 
 ## 策划从这里找
 
+策划拉取后看这里（以下为远端 `main` 的直接链接）：
+
+- [全部功能路径与预览入口](https://github.com/LynnTrassh/YourOwnGhost/blob/main/docs/art/local-art-delivery-20261031.md)
+- [闪帧模块](https://github.com/LynnTrassh/YourOwnGhost/blob/main/src/art/encounter-flash.js)
+- [灯光颜色模块](https://github.com/LynnTrassh/YourOwnGhost/blob/main/src/art/light-moods.js)
+
+代码与素材已推送；闪帧和光色情绪作为独立模块交付，正式事件触发及房间绑定状态见下表。
+
 在仓库运行 `npm install`、`npm run dev`，打开以下本地预览。端口沿用 package.json 的 4190。
 
 | 内容 | 模块／资源 | 预览或交接 | 当前状态 |
