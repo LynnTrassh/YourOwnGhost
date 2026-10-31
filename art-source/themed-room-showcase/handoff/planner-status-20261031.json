@@ -1,0 +1,237 @@
+{
+  "capturedAt": "2026-10-31T15:05:22.481573+08:00",
+  "baseCommit": "36a3d451f30d624eff83deab3927a1641a10eb3d",
+  "scope": "Read-only local snapshot of another model task, not an acceptance or integration result. Old 29-group v1 gap list is not a fresh generation order.",
+  "sourceManifest": "art-source/theme-specific-tripo-v05/manifest.json",
+  "sourceCoverage": "docs/art/theme-model-coverage-v05.md",
+  "assets": [
+    {
+      "id": "theme-award-podium-v05",
+      "name": "三级领奖台",
+      "status": "runtime-file-present-QA-not-confirmed",
+      "runtimeFile": "public/art/theme-specific/v05/theme-award-podium-v05.glb"
+    },
+    {
+      "id": "theme-sleeping-person-v05",
+      "name": "终点床上熟睡的人",
+      "status": "runtime-file-present-QA-not-confirmed",
+      "runtimeFile": "public/art/theme-specific/v05/theme-sleeping-person-v05.glb"
+    },
+    {
+      "id": "theme-ceremony-lectern-v05",
+      "name": "颁奖典礼讲台",
+      "status": "runtime-file-present-QA-not-confirmed",
+      "runtimeFile": "public/art/theme-specific/v05/theme-ceremony-lectern-v05.glb"
+    },
+    {
+      "id": "theme-trophy-cup-v05",
+      "name": "双耳奖杯",
+      "status": "runtime-file-present-QA-not-confirmed",
+      "runtimeFile": "public/art/theme-specific/v05/theme-trophy-cup-v05.glb"
+    },
+    {
+      "id": "theme-ticket-counter-v05",
+      "name": "售票柜台",
+      "status": "runtime-file-present-QA-not-confirmed",
+      "runtimeFile": "public/art/theme-specific/v05/theme-ticket-counter-v05.glb"
+    },
+    {
+      "id": "theme-ticket-register-v05",
+      "name": "机械售票机",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-prize-display-v05",
+      "name": "游园奖品陈列架",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-arcade-cabinet-v05",
+      "name": "旧街机柜",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-carousel-horse-v05",
+      "name": "旋转木马单体",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-theatre-stage-v05",
+      "name": "室内小舞台台座",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-performer-mask-v05",
+      "name": "后台表演面具",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-hospital-triage-counter-v05",
+      "name": "医院分诊柜台",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-waiting-bench-v05",
+      "name": "三联候诊椅",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-exam-lamp-v05",
+      "name": "医用检查灯",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-ecg-cart-v05",
+      "name": "心电监护设备车",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-pharmacy-drawers-v05",
+      "name": "药房小抽屉柜",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-privacy-curtain-v05",
+      "name": "病床隔帘架",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-office-reception-v05",
+      "name": "公司接待柜台",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-conference-table-v05",
+      "name": "公司长会议桌",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-office-chair-v05",
+      "name": "旧办公转椅",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-photocopier-v05",
+      "name": "旧复印机",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-water-dispenser-v05",
+      "name": "桶装饮水机",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-mail-sorting-rack-v05",
+      "name": "公司信件分拣架",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-dining-table-v05",
+      "name": "家庭餐桌",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-china-cabinet-v05",
+      "name": "家庭餐具柜",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-sewing-basket-v05",
+      "name": "祖母针线篮",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-hotel-reception-v05",
+      "name": "旅馆接待总台",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-hotel-key-rack-v05",
+      "name": "旅馆钥匙柜",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-hotel-service-bell-v05",
+      "name": "旅馆柜台服务铃",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-luggage-trolley-v05",
+      "name": "旅馆行李车",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-linen-cart-v05",
+      "name": "旅馆布草车",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-hotel-luggage-rack-v05",
+      "name": "客房行李架",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-ritual-idol-v05",
+      "name": "原创祭祀坐像",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-offering-bowl-v05",
+      "name": "祭祀供果碗",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-ritual-lantern-v05",
+      "name": "旧祭祀灯笼",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-prayer-cushion-v05",
+      "name": "跪拜蒲团",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    },
+    {
+      "id": "theme-ritual-vessel-set-v05",
+      "name": "成组祭器",
+      "status": "listed-in-manifest",
+      "runtimeFile": null
+    }
+  ],
+  "orientationContract": {
+    "roomProposalForward": "+Z",
+    "modelDeliveryForwardPerCoverageDocument": "-Z",
+    "requiredAdapterYawRadians": "Math.PI; verify against each actual model before adopting"
+  },
+  "includedInThisCommit": "documents and snapshots only; implementation and runtime model files are separate deliveries"
+}

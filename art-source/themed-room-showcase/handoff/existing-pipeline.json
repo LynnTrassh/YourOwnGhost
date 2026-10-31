@@ -1,0 +1,1086 @@
+{
+  "capturedAt": "2026-10-31T14:42:14.026296+08:00",
+  "scope": "Local filesystem snapshot only; planned/queued/generated are not approved, loaded or integrated. Do not duplicate these IDs.",
+  "assets": [
+    {
+      "id": "prop-crt-tv-v01",
+      "name": "厚壳旋钮电视",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-crt-tv-v01.glb",
+      "bytes": 3777972,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-crt-computer-v01",
+      "name": "老式电脑与键鼠",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-crt-computer-v01.glb",
+      "bytes": 3552260,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-rotary-phone-v01",
+      "name": "拨盘电话",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-rotary-phone-v01.glb",
+      "bytes": 3435524,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-wood-radio-v01",
+      "name": "木壳收音机",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-wood-radio-v01.glb",
+      "bytes": 4002264,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-wall-clock-v01",
+      "name": "圆形挂钟",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-wall-clock-v01.glb",
+      "bytes": 4115380,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-pendulum-clock-v01",
+      "name": "落地摆钟",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-pendulum-clock-v01.glb",
+      "bytes": 3163584,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-hanging-coat-v01",
+      "name": "悬挂旧外套",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-hanging-coat-v01.glb",
+      "bytes": 4272968,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-empty-hanger-v01",
+      "name": "空衣架",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-empty-hanger-v01.glb",
+      "bytes": 4616548,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-felt-hat-v01",
+      "name": "旧毡帽",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-felt-hat-v01.glb",
+      "bytes": 4213728,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-clothes-rack-v01",
+      "name": "衣架外套帽子组",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-clothes-rack-v01.glb",
+      "bytes": 4349560,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-shoes-pair-v01",
+      "name": "旧皮鞋",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-shoes-pair-v01.glb",
+      "bytes": 4518736,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-suitcase-v01",
+      "name": "绑带旅行箱",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-suitcase-v01.glb",
+      "bytes": 4405700,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-cardboard-box-v01",
+      "name": "贴签纸箱",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-cardboard-box-v01.glb",
+      "bytes": 3404384,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-archive-boxes-v01",
+      "name": "成组档案盒",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-archive-boxes-v01.glb",
+      "bytes": 4207320,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-books-stack-v01",
+      "name": "散叠旧书",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-books-stack-v01.glb",
+      "bytes": 4473280,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-paper-wave-v01",
+      "name": "散页纸堆",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-paper-wave-v01.glb",
+      "bytes": 3703284,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-tea-tray-v01",
+      "name": "茶具托盘",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-tea-tray-v01.glb",
+      "bytes": 3258452,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-medicine-tray-v01",
+      "name": "药瓶器械盘",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-medicine-tray-v01.glb",
+      "bytes": 3377020,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-washstand-v01",
+      "name": "搪瓷盆洗漱架",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-washstand-v01.glb",
+      "bytes": 3118376,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-iv-stand-v01",
+      "name": "输液架",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-iv-stand-v01.glb",
+      "bytes": 4710216,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-folding-screen-v01",
+      "name": "三折布屏风",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-folding-screen-v01.glb",
+      "bytes": 4083300,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-cradle-v01",
+      "name": "木栏摇篮",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-cradle-v01.glb",
+      "bytes": 4257500,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-rocking-horse-v01",
+      "name": "旧木摇马",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-rocking-horse-v01.glb",
+      "bytes": 4168016,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-toy-train-v01",
+      "name": "三节木玩具车",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/room-props/v02/prop-toy-train-v01.glb",
+      "bytes": 4315344,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-hanging-mobile-v01",
+      "name": "悬吊环饰",
+      "status": "generated-pending-export",
+      "localWatchStatus": "success",
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-dried-flowers-v01",
+      "name": "枯花陶瓶",
+      "status": "generated-pending-export",
+      "localWatchStatus": "success",
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-candlesticks-v01",
+      "name": "旧烛台组",
+      "status": "generated-pending-export",
+      "localWatchStatus": "success",
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-portrait-frame-v01",
+      "name": "原创剪影像框",
+      "status": "generated-pending-export",
+      "localWatchStatus": "success",
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-hanging-drape-v01",
+      "name": "褶皱悬布",
+      "status": "generated-pending-export",
+      "localWatchStatus": "success",
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-covered-shape-v01",
+      "name": "白布覆盖轮廓",
+      "status": "submitted-local-record",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-cable-coil-v01",
+      "name": "盘地电缆",
+      "status": "submitted-local-record",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-cable-wall-v01",
+      "name": "沿墙线束",
+      "status": "submitted-local-record",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-cable-ceiling-v01",
+      "name": "垂弧顶线",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-cable-curtain-v01",
+      "name": "垂落线帘",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-organic-rib-v01",
+      "name": "原创有机褶边",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-tv-console-v01",
+      "name": "电视与矮柜组",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-computer-desk-v01",
+      "name": "旧电脑工作台",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-archive-stack-v01",
+      "name": "纸箱与档案堆组",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-tea-cart-v01",
+      "name": "茶具推车",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-toy-bench-v01",
+      "name": "玩具整理矮台",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-medical-cart-v01",
+      "name": "药品器械推架",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "prop-candle-altar-v01",
+      "name": "烛台与遗像供桌",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/room-props-tripo-v02/manifest.json"
+    },
+    {
+      "id": "scene-wardrobe-panelled-v03",
+      "name": "双门旧衣柜",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-wardrobe-panelled-v03.glb",
+      "bytes": 4020768,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-wardrobe-mirrored-v03",
+      "name": "镜门衣橱",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-wardrobe-mirrored-v03.glb",
+      "bytes": 2903964,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-sofa-leather-v03",
+      "name": "旧皮沙发",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-sofa-leather-v03.glb",
+      "bytes": 4076664,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-sofa-linen-v03",
+      "name": "褪色布沙发",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-sofa-linen-v03.glb",
+      "bytes": 3918316,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-armchair-wingback-v03",
+      "name": "高背扶手椅",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-armchair-wingback-v03.glb",
+      "bytes": 4695400,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-armchair-wicker-v03",
+      "name": "旧藤椅",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-armchair-wicker-v03.glb",
+      "bytes": 4321260,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-chair-spindle-v03",
+      "name": "木条背餐椅",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-chair-spindle-v03.glb",
+      "bytes": 3503444,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-chair-upholstered-v03",
+      "name": "软垫餐椅",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-chair-upholstered-v03.glb",
+      "bytes": 4234244,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-rocking-chair-v03",
+      "name": "木摇椅",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-rocking-chair-v03.glb",
+      "bytes": 3827032,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-writing-bureau-v03",
+      "name": "翻板写字柜",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-writing-bureau-v03.glb",
+      "bytes": 3565740,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-round-table-v03",
+      "name": "圆形餐桌",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-round-table-v03.glb",
+      "bytes": 3828536,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-sideboard-v03",
+      "name": "旧餐边柜",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-sideboard-v03.glb",
+      "bytes": 3594888,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-bench-wood-v03",
+      "name": "旧长木凳",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-bench-wood-v03.glb",
+      "bytes": 3872168,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-hospital-bed-v03",
+      "name": "铁架诊疗床",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-hospital-bed-v03.glb",
+      "bytes": 3916640,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-wheelchair-v03",
+      "name": "旧轮椅",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-wheelchair-v03.glb",
+      "bytes": 3777896,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-stool-metal-v03",
+      "name": "医用圆凳",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-stool-metal-v03.glb",
+      "bytes": 4132424,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-sink-wall-v03",
+      "name": "搪瓷壁挂洗手池",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-sink-wall-v03.glb",
+      "bytes": 3166804,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-bathtub-v03",
+      "name": "旧浴缸",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-bathtub-v03.glb",
+      "bytes": 3609080,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-toilet-v03",
+      "name": "旧瓷马桶",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-toilet-v03.glb",
+      "bytes": 3371828,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-mop-bucket-v03",
+      "name": "拖把与铁桶",
+      "status": "exported-pending-QA",
+      "localWatchStatus": "success",
+      "fileExists": true,
+      "runtimeFile": "public/art/scene-assets/v03/scene-mop-bucket-v03.glb",
+      "bytes": 3956072,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-laundry-basket-v03",
+      "name": "旧洗衣篮",
+      "status": "submitted-local-record",
+      "localWatchStatus": "unreadable-watch",
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-umbrella-stand-v03",
+      "name": "伞桶与旧雨伞",
+      "status": "submitted-local-record",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-wall-coat-pegs-v03",
+      "name": "挂钩与围巾组",
+      "status": "submitted-local-record",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-folded-linen-v03",
+      "name": "折叠床单组",
+      "status": "submitted-local-record",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-pillow-pair-v03",
+      "name": "旧枕头组",
+      "status": "submitted-local-record",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-sewing-machine-v03",
+      "name": "老式缝纫机",
+      "status": "submitted-local-record",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-typewriter-v03",
+      "name": "旧打字机",
+      "status": "submitted-local-record",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-reel-projector-v03",
+      "name": "胶片放映机",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-record-player-v03",
+      "name": "木箱唱机",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-electric-fan-v03",
+      "name": "老电风扇",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-wall-fan-v03",
+      "name": "旧排风扇",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-key-tray-v03",
+      "name": "钥匙与小托盘",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-medicine-bottles-v03",
+      "name": "旧药瓶组",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-calendar-board-v03",
+      "name": "旧日历板",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-desk-organizer-v03",
+      "name": "旧文具整理架",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-clothes-hanging-dress-v03",
+      "name": "悬挂旧长裙",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-coat-raincoat-v03",
+      "name": "悬挂旧雨衣",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-pram-v03",
+      "name": "旧婴儿车",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-tricycle-v03",
+      "name": "旧三轮车",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-teddy-bear-v03",
+      "name": "旧泰迪熊",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-toy-blocks-v03",
+      "name": "旧积木组",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-music-box-v03",
+      "name": "旧八音盒",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-incense-burner-v03",
+      "name": "旧香炉",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-ritual-bell-v03",
+      "name": "铜铃",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-candelabrum-v03",
+      "name": "五臂烛台",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-red-drapery-v03",
+      "name": "旧红绒布幔",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-cat-seated-v03",
+      "name": "坐姿猫",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-cat-reclining-v03",
+      "name": "侧卧猫",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-flower-pot-live-v03",
+      "name": "盛花盆栽",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-flower-pot-dead-v03",
+      "name": "枯黑盆栽",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-rag-doll-intact-v03",
+      "name": "完整布偶",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-rag-doll-torn-v03",
+      "name": "破损布偶",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-mannequin-head-v03",
+      "name": "陈旧人偶头",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-seated-body-v03",
+      "name": "坐姿旧衣人偶躯干",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-standing-body-v03",
+      "name": "站姿旧衣人偶躯干",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-statue-human-v03",
+      "name": "旧石膏人形雕像",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-threat-doll-v03",
+      "name": "旧瓷偶威胁形体",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-threat-clown-v03",
+      "name": "陈旧小丑人偶",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-long-body-segment-v03",
+      "name": "修长身体连接段",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-shoe-single-v03",
+      "name": "门缝旧皮鞋",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-chair-seat-back-v03",
+      "name": "关节椅上半部",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-chair-leg-joint-v03",
+      "name": "关节椅腿",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-fuse-switchboard-v03",
+      "name": "旧电路控制箱",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-lever-handle-v03",
+      "name": "旧控制拉杆",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-fuse-cartridge-v03",
+      "name": "旧保险丝",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    },
+    {
+      "id": "scene-frame-empty-v03",
+      "name": "旧空相框",
+      "status": "planned-not-submitted-in-snapshot",
+      "localWatchStatus": null,
+      "fileExists": false,
+      "runtimeFile": null,
+      "bytes": null,
+      "sourceManifest": "art-source/scene-assets-tripo-v03/manifest.json"
+    }
+  ]
+}

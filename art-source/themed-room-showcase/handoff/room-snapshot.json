@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "hospital-01",
+    "theme": "hospital",
+    "name": "夜间分诊室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "左侧问诊，右侧空椅；文件柜封住后景。",
+    "placements": [
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-medical-file-cabinet",
+      "furniture-medical-file-cabinet",
+      "furniture-armchair-curved",
+      "fixture-radiator-cast-iron",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hospital-02",
+    "theme": "hospital",
+    "name": "末班候诊室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "两组侧向候诊椅，中间留出纵深；最后一把椅子面墙。",
+    "placements": [
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-medical-file-cabinet",
+      "fixture-radiator-cast-iron",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hospital-03",
+    "theme": "hospital",
+    "name": "隔离病房",
+    "dimensions": [
+      5,
+      3,
+      10
+    ],
+    "composition": "双床沿两边排列，尽头只有一张偏离床轴的空床。",
+    "placements": [
+      "bed-iron-rail-v01",
+      "bed-iron-rail-v01",
+      "bed-iron-rail-v01",
+      "bed-iron-rail-v01",
+      "furniture-examination-cot",
+      "furniture-nightstand",
+      "furniture-nightstand",
+      "furniture-medicine-cabinet",
+      "furniture-instrument-trolley",
+      "fixture-curtain-oxblood-velvet",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hospital-04",
+    "theme": "hospital",
+    "name": "检查室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "偏左检查床与右侧器械工作区，中后景留出轮廓。",
+    "placements": [
+      "furniture-examination-cot",
+      "furniture-instrument-trolley",
+      "furniture-medicine-cabinet",
+      "furniture-medicine-cabinet",
+      "furniture-dining-chair",
+      "furniture-medical-file-cabinet",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hospital-05",
+    "theme": "hospital",
+    "name": "夜班药房",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "两侧药柜形成窄巷，终点是孤立的配药台。",
+    "placements": [
+      "furniture-medicine-cabinet",
+      "furniture-medicine-cabinet",
+      "furniture-medicine-cabinet",
+      "furniture-medicine-cabinet",
+      "furniture-instrument-trolley",
+      "furniture-medical-file-cabinet",
+      "furniture-medical-file-cabinet",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hospital-06",
+    "theme": "hospital",
+    "name": "值班休息室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "侧床、靠墙沙发与低桌构成有人生活过的角落。",
+    "placements": [
+      "furniture-bed-single",
+      "furniture-sofa-two-seat",
+      "furniture-coffee-table",
+      "furniture-wardrobe",
+      "furniture-medical-file-cabinet",
+      "lighting-floor-lamp",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hospital-07",
+    "theme": "hospital",
+    "name": "病案封存库",
+    "dimensions": [
+      5,
+      3,
+      10
+    ],
+    "composition": "双列病案柜与断开的工作岛；一条阅读路径。",
+    "placements": [
+      "furniture-medical-file-cabinet",
+      "furniture-medical-file-cabinet",
+      "furniture-medical-file-cabinet",
+      "furniture-medical-file-cabinet",
+      "furniture-medical-file-cabinet",
+      "furniture-document-table",
+      "furniture-examination-cot",
+      "furniture-archive-shelf",
+      "furniture-dining-chair",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hospital-08",
+    "theme": "hospital",
+    "name": "遗留物保管室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "正面陈列柜、左侧床与右侧空白墙构成不均衡。",
+    "placements": [
+      "furniture-display-cabinet",
+      "furniture-display-cabinet",
+      "furniture-examination-cot",
+      "furniture-toy-chest",
+      "furniture-dining-chair",
+      "furniture-medical-file-cabinet",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "park-01",
+    "theme": "park",
+    "name": "闭园售票室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "双柜台错位，售票员椅子退入侧后方。",
+    "placements": [
+      "furniture-writing-desk",
+      "furniture-document-table",
+      "furniture-dining-chair",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-toy-shelf",
+      "architecture-window-four-pane",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "park-02",
+    "theme": "park",
+    "name": "无人领奖台",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "三柜形成后方展带，儿童桌退至一侧。",
+    "placements": [
+      "furniture-display-cabinet",
+      "furniture-display-cabinet",
+      "furniture-display-cabinet",
+      "furniture-child-table",
+      "furniture-dining-chair",
+      "furniture-toy-chest",
+      "furniture-toy-shelf",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "park-03",
+    "theme": "park",
+    "name": "雨天手工教室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "三张小桌错落组成斜线，教具集中一侧。",
+    "placements": [
+      "furniture-child-table",
+      "furniture-child-table",
+      "furniture-child-table",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-toy-shelf",
+      "furniture-toy-chest",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "park-04",
+    "theme": "park",
+    "name": "走失儿童等候室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "两侧成人座位围住低矮玩具区，后墙保留空缺。",
+    "placements": [
+      "furniture-sofa-two-seat",
+      "furniture-armchair-curved",
+      "furniture-child-table",
+      "furniture-toy-chest",
+      "furniture-toy-shelf",
+      "lighting-floor-lamp",
+      "fixture-curtain-oxblood-velvet",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "park-05",
+    "theme": "park",
+    "name": "演员化妆间",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "两面梳妆镜不对称，衣柜占据一侧后景。",
+    "placements": [
+      "vanity-oval-mirror-v01",
+      "furniture-dining-chair",
+      "vanity-oval-mirror-v01",
+      "furniture-dining-chair",
+      "furniture-wardrobe",
+      "furniture-dresser",
+      "lighting-floor-lamp",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "park-06",
+    "theme": "park",
+    "name": "旧奖品仓",
+    "dimensions": [
+      5,
+      3,
+      10
+    ],
+    "composition": "两侧高低储物错位，尽头儿童桌被大柜夹住。",
+    "placements": [
+      "furniture-toy-shelf",
+      "furniture-toy-chest",
+      "furniture-display-cabinet",
+      "furniture-toy-shelf",
+      "furniture-wardrobe",
+      "furniture-display-cabinet",
+      "furniture-child-table",
+      "furniture-toy-chest",
+      "furniture-dining-chair",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "park-07",
+    "theme": "park",
+    "name": "闭园员工室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "一边用餐一边休息，中央留出大片空地。",
+    "placements": [
+      "furniture-document-table",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-sofa-two-seat",
+      "furniture-wardrobe",
+      "furniture-toy-shelf",
+      "fixture-radiator-cast-iron",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "park-08",
+    "theme": "park",
+    "name": "帷幕后等候厅",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "错位座椅面向封闭帷幕，角落只留一个陈列柜。",
+    "placements": [
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "fixture-curtain-oxblood-velvet",
+      "fixture-curtain-oxblood-velvet",
+      "furniture-display-cabinet",
+      "furniture-toy-chest",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "office-01",
+    "theme": "office",
+    "name": "无人前台",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "单张前台桌偏左，右侧接待席，后景密集柜墙。",
+    "placements": [
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-armchair-curved",
+      "furniture-armchair-curved",
+      "fixture-radiator-cast-iron",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "office-02",
+    "theme": "office",
+    "name": "夜班工位",
+    "dimensions": [
+      5,
+      3,
+      10
+    ],
+    "composition": "四个侧向工作位，尽头唯一一张桌子面向来人。",
+    "placements": [
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-multi-drawer-file-cabinet",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "office-03",
+    "theme": "office",
+    "name": "裁撤会议室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "三张文件桌接成纵轴，座椅集中左侧，右侧空缺。",
+    "placements": [
+      "furniture-document-table",
+      "furniture-document-table",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-multi-drawer-file-cabinet",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "office-04",
+    "theme": "office",
+    "name": "封存档案室",
+    "dimensions": [
+      5,
+      3,
+      10
+    ],
+    "composition": "两侧档案墙与尽头孤立文件桌，形成狭长透视。",
+    "placements": [
+      "furniture-archive-shelf",
+      "furniture-archive-shelf",
+      "furniture-archive-shelf",
+      "furniture-archive-shelf",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-document-table",
+      "furniture-dining-chair",
+      "furniture-bookcase",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "office-05",
+    "theme": "office",
+    "name": "合伙人办公室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "斜向观看的宽阔书桌，后墙书柜与侧面会客区。",
+    "placements": [
+      "furniture-writing-desk",
+      "furniture-armchair-curved",
+      "furniture-bookcase",
+      "furniture-sofa-two-seat",
+      "furniture-coffee-table",
+      "furniture-dining-chair",
+      "lighting-floor-lamp",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "office-06",
+    "theme": "office",
+    "name": "收发登记室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "前方交接桌与后方双柜错位；左边候取区。",
+    "placements": [
+      "furniture-document-table",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-archive-shelf",
+      "furniture-dresser",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "office-07",
+    "theme": "office",
+    "name": "离职面谈室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "桌子在右，低沙发在左，背后只有一组孤立档案柜。",
+    "placements": [
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-sofa-two-seat",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-dining-chair",
+      "lighting-floor-lamp",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "office-08",
+    "theme": "office",
+    "name": "停用阅档室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "低阅读桌与高书柜形成尺度反差，后墙出现一个空位。",
+    "placements": [
+      "furniture-bookcase",
+      "furniture-bookcase",
+      "furniture-document-table",
+      "furniture-dining-chair",
+      "furniture-archive-shelf",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-dining-chair",
+      "lighting-strip-double",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "home-01",
+    "theme": "home",
+    "name": "独居卧室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "床贴左侧，梳妆区在远端，右侧大面积留白。",
+    "placements": [
+      "furniture-bed-single",
+      "furniture-nightstand",
+      "vanity-oval-mirror-v01",
+      "furniture-dining-chair",
+      "furniture-wardrobe",
+      "lighting-floor-lamp",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "home-02",
+    "theme": "home",
+    "name": "旧客厅",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "沙发、低桌与单人椅构成不闭合的会客三角。",
+    "placements": [
+      "furniture-sofa-two-seat",
+      "furniture-coffee-table",
+      "furniture-armchair-curved",
+      "furniture-display-cabinet",
+      "furniture-bookcase",
+      "lighting-floor-lamp",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "home-03",
+    "theme": "home",
+    "name": "双人儿童房",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "双床的对称被一侧封住的玩具柜打断。",
+    "placements": [
+      "furniture-bed-single",
+      "furniture-bed-single",
+      "furniture-toy-chest",
+      "furniture-child-table",
+      "furniture-toy-shelf",
+      "furniture-dining-chair",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "home-04",
+    "theme": "home",
+    "name": "家中书房",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "书桌靠后，书柜包住左角，空椅留在入口右侧。",
+    "placements": [
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-bookcase",
+      "furniture-bookcase",
+      "furniture-archive-shelf",
+      "furniture-armchair-curved",
+      "lighting-floor-lamp",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "home-05",
+    "theme": "home",
+    "name": "祖母起居室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "低床、扶手椅与镜台三组各自独立，中央保留迂回动线。",
+    "placements": [
+      "bed-low-divan-v01",
+      "vanity-oval-mirror-v01",
+      "furniture-armchair-curved",
+      "furniture-nightstand",
+      "furniture-wardrobe",
+      "fixture-radiator-cast-iron",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "home-06",
+    "theme": "home",
+    "name": "家庭餐室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "两张旧桌拼成横向餐台；只摆三把椅子。",
+    "placements": [
+      "furniture-document-table",
+      "furniture-document-table",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-display-cabinet",
+      "furniture-dresser",
+      "fixture-radiator-cast-iron",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "home-07",
+    "theme": "home",
+    "name": "旧物储藏间",
+    "dimensions": [
+      5,
+      3,
+      10
+    ],
+    "composition": "高柜封侧墙、旧家具由近密到远疏，尽头只留床头柜。",
+    "placements": [
+      "furniture-wardrobe",
+      "furniture-bookcase",
+      "furniture-dresser",
+      "furniture-toy-chest",
+      "furniture-sofa-two-seat",
+      "furniture-display-cabinet",
+      "furniture-nightstand",
+      "furniture-dining-chair",
+      "lighting-floor-lamp",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "home-08",
+    "theme": "home",
+    "name": "被遮住的婚房",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "高架床占据左侧，双镜梳妆的秩序被一张转向的椅子破坏。",
+    "placements": [
+      "bed-canopy-linen-v01",
+      "vanity-oval-mirror-v01",
+      "furniture-dining-chair",
+      "furniture-dresser",
+      "furniture-nightstand",
+      "fixture-curtain-oxblood-velvet",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hotel-01",
+    "theme": "hotel",
+    "name": "深夜接待间",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "前台靠后偏右，左侧等候椅引导视线横移。",
+    "placements": [
+      "furniture-writing-desk",
+      "furniture-multi-drawer-file-cabinet",
+      "furniture-display-cabinet",
+      "furniture-armchair-curved",
+      "furniture-armchair-curved",
+      "furniture-coffee-table",
+      "lighting-floor-lamp",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hotel-02",
+    "theme": "hotel",
+    "name": "经济单人间",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "铁床与窄桌沿左右两边，后墙保持压抑的空白。",
+    "placements": [
+      "bed-iron-rail-v01",
+      "furniture-nightstand",
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "furniture-wardrobe",
+      "fixture-curtain-oxblood-velvet",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hotel-03",
+    "theme": "hotel",
+    "name": "无人双床间",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "同向双床与两件不同床头家具，中央一条空走道。",
+    "placements": [
+      "bed-iron-rail-v01",
+      "furniture-bed-single",
+      "furniture-nightstand",
+      "furniture-dresser",
+      "furniture-wardrobe",
+      "fixture-mirror-aged",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hotel-04",
+    "theme": "hotel",
+    "name": "蜜月套房",
+    "dimensions": [
+      5,
+      3,
+      10
+    ],
+    "composition": "前方客厅到后方高架床两段空间，右侧梳妆结束视线。",
+    "placements": [
+      "furniture-sofa-two-seat",
+      "furniture-coffee-table",
+      "furniture-armchair-curved",
+      "bed-canopy-linen-v01",
+      "vanity-oval-mirror-v01",
+      "furniture-dining-chair",
+      "furniture-nightstand",
+      "furniture-wardrobe",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hotel-05",
+    "theme": "hotel",
+    "name": "换季布草间",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "衣柜沿两侧排开，矮柜组成后方工作带。",
+    "placements": [
+      "furniture-wardrobe",
+      "furniture-wardrobe",
+      "furniture-wardrobe",
+      "furniture-dresser",
+      "furniture-toy-chest",
+      "furniture-dining-chair",
+      "furniture-nightstand",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hotel-06",
+    "theme": "hotel",
+    "name": "退房行李室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "高低柜按三组分布，中央靠后一张孤立低桌。",
+    "placements": [
+      "furniture-wardrobe",
+      "furniture-display-cabinet",
+      "furniture-toy-chest",
+      "furniture-dresser",
+      "furniture-coffee-table",
+      "furniture-armchair-curved",
+      "lighting-floor-lamp",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hotel-07",
+    "theme": "hotel",
+    "name": "楼层休息厅",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "两张沙发互望，末端单椅形成不对称第三组。",
+    "placements": [
+      "furniture-sofa-two-seat",
+      "furniture-sofa-two-seat",
+      "furniture-coffee-table",
+      "furniture-armchair-curved",
+      "furniture-display-cabinet",
+      "lighting-floor-lamp",
+      "fixture-radiator-cast-iron",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "hotel-08",
+    "theme": "hotel",
+    "name": "长住客房",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "床被推到角落，办公与梳妆争夺房间中央的视线。",
+    "placements": [
+      "bed-low-divan-v01",
+      "furniture-writing-desk",
+      "furniture-dining-chair",
+      "vanity-oval-mirror-v01",
+      "furniture-wardrobe",
+      "furniture-nightstand",
+      "lighting-floor-lamp",
+      "lighting-chandelier-three-arm",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "ritual-01",
+    "theme": "ritual",
+    "name": "单人祈祷室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "矮凳对准供桌，单侧神柜打破中轴。",
+    "placements": [
+      "furniture-offering-table",
+      "furniture-kneeling-bench",
+      "furniture-shrine-cabinet",
+      "fixture-curtain-oxblood-velvet",
+      "furniture-dining-chair",
+      "lighting-pendant-bare-bulb",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "ritual-02",
+    "theme": "ritual",
+    "name": "双像对视室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "左右两柜互相对视，主轴上没有神像。",
+    "placements": [
+      "furniture-shrine-cabinet",
+      "furniture-shrine-cabinet",
+      "furniture-offering-table",
+      "furniture-kneeling-bench",
+      "furniture-kneeling-bench",
+      "fixture-curtain-oxblood-velvet",
+      "lighting-pendant-bare-bulb",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "ritual-03",
+    "theme": "ritual",
+    "name": "守夜席",
+    "dimensions": [
+      5,
+      3,
+      10
+    ],
+    "composition": "两列跪凳重复推进，终点供桌偏离中轴。",
+    "placements": [
+      "furniture-kneeling-bench",
+      "furniture-kneeling-bench",
+      "furniture-kneeling-bench",
+      "furniture-kneeling-bench",
+      "furniture-kneeling-bench",
+      "furniture-kneeling-bench",
+      "furniture-offering-table",
+      "furniture-shrine-cabinet",
+      "fixture-curtain-oxblood-velvet",
+      "lighting-pendant-bare-bulb",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "ritual-04",
+    "theme": "ritual",
+    "name": "祭器保管室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "陈列柜与神柜交替，不同高度把供桌切成局部。",
+    "placements": [
+      "furniture-display-cabinet",
+      "furniture-shrine-cabinet",
+      "furniture-display-cabinet",
+      "furniture-display-cabinet",
+      "furniture-offering-table",
+      "furniture-kneeling-bench",
+      "lighting-pendant-bare-bulb",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "ritual-05",
+    "theme": "ritual",
+    "name": "空座仪式",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "四把椅子围绕空心，供桌退到远端。",
+    "placements": [
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-dining-chair",
+      "furniture-offering-table",
+      "furniture-shrine-cabinet",
+      "fixture-curtain-oxblood-velvet",
+      "lighting-pendant-bare-bulb",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "ritual-06",
+    "theme": "ritual",
+    "name": "旧宅神龛",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "生活家具与祭器分开成两组，空走道划出边界。",
+    "placements": [
+      "furniture-sofa-two-seat",
+      "furniture-coffee-table",
+      "furniture-shrine-cabinet",
+      "furniture-kneeling-bench",
+      "furniture-dresser",
+      "furniture-wardrobe",
+      "lighting-floor-lamp",
+      "lighting-pendant-bare-bulb",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "ritual-07",
+    "theme": "ritual",
+    "name": "血色前室",
+    "dimensions": [
+      5,
+      3,
+      5
+    ],
+    "composition": "红光只停留在远端，前景两柜压出一道入口。",
+    "placements": [
+      "furniture-shrine-cabinet",
+      "furniture-shrine-cabinet",
+      "furniture-kneeling-bench",
+      "furniture-offering-table",
+      "fixture-curtain-oxblood-velvet",
+      "fixture-curtain-oxblood-velvet",
+      "lighting-pendant-bare-bulb",
+      "architecture-door-panelled"
+    ]
+  },
+  {
+    "id": "ritual-08",
+    "theme": "ritual",
+    "name": "背向神柜长室",
+    "dimensions": [
+      5,
+      3,
+      10
+    ],
+    "composition": "神柜沿两侧朝墙，尽头保留一张空供桌。",
+    "placements": [
+      "furniture-shrine-cabinet",
+      "furniture-shrine-cabinet",
+      "furniture-shrine-cabinet",
+      "furniture-shrine-cabinet",
+      "furniture-shrine-cabinet",
+      "furniture-shrine-cabinet",
+      "furniture-offering-table",
+      "furniture-kneeling-bench",
+      "fixture-curtain-oxblood-velvet",
+      "lighting-pendant-bare-bulb",
+      "architecture-door-panelled"
+    ]
+  }
+]
