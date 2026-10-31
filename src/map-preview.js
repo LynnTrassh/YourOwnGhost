@@ -9,8 +9,10 @@ export function drawMap(canvas, plan, player) {
   canvas.width = Math.ceil(width * scale); canvas.height = Math.ceil(height * scale);
   ctx.fillStyle = '#101a17'; ctx.fillRect(0, 0, canvas.width, canvas.height);
   const colors = { bedroom: '#829888', cat: '#b8a56f', fork: '#6f9ba4', left: '#727f95', back: '#727f95', right: '#837c9e', merge: '#837c9e', exit: '#67b18e' };
+  const roles=new Map((plan.coverage?.rooms??[]).map(room=>[room.roomId,room.role]));
+  const roleColors={start:'#829888',rest:'#59765f',short:'#76788f',major:'#9a7161',danger:'#9b5059',connector:'#383b3e'};
   for (const c of plan.cells) {
-    ctx.fillStyle = c.roomId===plan.exit.roomId ? '#67b18e' : c.roomId===plan.reserved.cat?.roomId ? '#b8a56f' : colors[c.roomId] ?? '#727f95';
+    ctx.fillStyle = roleColors[roles.get(c.roomId)] ?? colors[c.roomId] ?? '#727f95';
     ctx.fillRect((c.x - minX - .5) * scale, (c.z - minZ - .5) * scale, scale - .5, scale - .5);
   }
   ctx.fillStyle = '#25201c';
@@ -45,8 +47,8 @@ export function drawMap(canvas, plan, player) {
   for(const instance of plan.content?.instances??[]) {
     const room=plan.rooms.find(r=>r.id===instance.roomId);
     if(!room) continue;
-    ctx.fillStyle=instance.definitionId==='B25'?'#bce7ac':'#f3bf83';
-    ctx.fillText(instance.definitionId,(room.center[0]-minX)*scale,(room.center[1]-minZ)*scale-8);
+    ctx.fillStyle=instance.role==='rest'?'#bce7ac':instance.role==='major'?'#f18e77':'#f3bf83';
+    ctx.fillText(`${instance.definitionId} ${instance.role==='rest'?'静':instance.role==='major'?'重点':'短'}`,(room.center[0]-minX)*scale,(room.center[1]-minZ)*scale-8);
   }
   if(plan.chase) {
     ctx.fillStyle='#ffcf85';

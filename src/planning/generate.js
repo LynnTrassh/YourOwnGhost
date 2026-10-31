@@ -21,7 +21,7 @@ function random(seed) {
   let n = hashSeed(seed);
   return () => { n += 0x6D2B79F5; let t = n; t = Math.imul(t ^ t >>> 15, t | 1); t ^= t + Math.imul(t ^ t >>> 7, t | 61); return ((t ^ t >>> 14) >>> 0) / 4294967296; };
 }
-function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled, contentIds, conditionalSlots, preferences, threatBehaviorId, chaseEnabled, roomPresetOverrides) {
+function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled, contentIds, conditionalSlots, preferences, threatBehaviorId, chaseEnabled, roomPresetOverrides, rhythmEnabled) {
   const rng=random(`${seed}:layout:${attempt}`), decor=random(`${decorationSeed}:decoration`);
   const topology=growTopology(rng,decor);
   const opportunities=inspectTopology(topology.rooms,topology.edges);
@@ -43,7 +43,7 @@ function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, thre
     ?threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR?fitLightAvoider(plan):fitStatue(plan):null;
   plan.content=fitContent(plan,random(`${seed}:content:${attempt}`),contentIds,
     [threatReservation?.roomId,...Object.values(plan.chase?.stages??{}),
-      plan.chase?.sourceRoomId,plan.chase?.hideRoomId].filter(Boolean),preferences);
+      plan.chase?.sourceRoomId,plan.chase?.hideRoomId].filter(Boolean),preferences,{rhythm:rhythmEnabled});
   plan.content.preferences=[...preferences];
   plan.content.conditionalSlots=conditionalSlots.map(slot=>({...slot,focus:{...slot.focus}}));
   plan.threat=plan.chase ? {id:'chase-1',behaviorId:CHASE_BEHAVIOR,
@@ -58,7 +58,7 @@ function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, thre
   return plan;
 }
 
-export function generatePlan(seed = '42', { maxAttempts = 20, decorationSeed = seed, interiorSeed = seed, catEnabled = true, threatEnabled = false, threatBehaviorId = null, chaseEnabled = false, contentIds = null, conditionalSlots = [], preferences = [], roomPresetOverrides = {} } = {}) {
+export function generatePlan(seed = '42', { maxAttempts = 20, decorationSeed = seed, interiorSeed = seed, catEnabled = true, threatEnabled = false, threatBehaviorId = null, chaseEnabled = false, contentIds = null, conditionalSlots = [], preferences = [], roomPresetOverrides = {}, rhythmEnabled = false } = {}) {
   if(chaseEnabled&&threatEnabled)throw new Error('连续追逐与普通威胁不能同时占用同一层');
   for (const [roomId, presetId] of Object.entries(roomPresetOverrides)) {
     if (roomId === 'bedroom' && presetId !== 'bedroom') throw new Error('出生卧室固定使用 bedroom 预设');
@@ -67,12 +67,12 @@ export function generatePlan(seed = '42', { maxAttempts = 20, decorationSeed = s
   }
   const reports = [];
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
-    const plan = candidate(String(seed), attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled,roomPresetOverrides);
+    const plan = candidate(String(seed), attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled,roomPresetOverrides,rhythmEnabled);
     const report = validatePlan(plan); reports.push({ attempt, ...report });
     if (report.valid && (!chaseEnabled||plan.chase)) return finish(plan, String(seed), reports, false);
   }
   if(chaseEnabled) throw new Error(`追逐空间未能在 ${maxAttempts} 次生成内合法落位`);
-  const fallback = candidate('validated-layout-1', 0, decorationSeed, 'validated-interior-1', catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled,roomPresetOverrides);
+  const fallback = candidate('validated-layout-1', 0, decorationSeed, 'validated-interior-1', catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled,roomPresetOverrides,rhythmEnabled);
   const report = validatePlan(fallback);
   if (!report.valid) throw new Error(`保底地图校验失败：${report.errors.join('、')}`);
   return finish(fallback, String(seed), [...reports, { attempt: 'fallback', ...report }], true);

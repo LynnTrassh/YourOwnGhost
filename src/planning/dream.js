@@ -3,9 +3,26 @@ import { chooseLayerContent, summarizeComposition } from './composition.js';
 import { analyzeCoverage } from './coverage.js';
 import { fitBedroomTrace, fitTraceFollow } from './trace-fit.js';
 import { validatePlan } from './validate.js';
+import { completeRoomContent } from './room-rhythm.js';
 
-export function generateDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null}={}) {
-  const first=generatePlan(seed,{catEnabled,preferences});
+export function generateDream(seed,options={}) {
+  const attempts=[];
+  for(let attempt=0;attempt<4;attempt++) {
+    const compositionSeed=attempt?`${seed}:rhythm:${attempt}`:String(seed);
+    try {
+      const plans=composeDream(compositionSeed,options);
+      plans.composition.rhythmGeneration={requestedSeed:String(seed),compositionSeed,attempt,rejections:attempts};
+      return plans;
+    } catch(error) {
+      if(!/内容编排校验失败|安静房缺少真实可见构图/.test(error.message))throw error;
+      attempts.push({compositionSeed,reason:error.message});
+    }
+  }
+  throw new Error(`无法生成完整内容与合格节奏：${attempts.map(a=>a.reason).join('；')}`);
+}
+
+function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null}={}) {
+  const first=generatePlan(seed,{catEnabled,preferences,rhythmEnabled:true});
   const conditionalSlots=['B03','B04'].flatMap(definitionId=>{
     const source=first.content.instances.find(instance=>instance.definitionId===definitionId);
     if(!source)return [];
@@ -16,12 +33,12 @@ export function generateDream(seed,{catEnabled=true,preferences=[],threatBehavio
   const geometry=p=>JSON.stringify([p.cells,p.doors]);
   for(let attempt=0;attempt<8;attempt++) {
     const second=generatePlan(`${seed}:dream:2:${attempt}`,{catEnabled:false,threatEnabled:true,
-      threatBehaviorId,conditionalSlots,preferences});
+      threatBehaviorId,conditionalSlots,preferences,rhythmEnabled:true});
     if(geometry(first)!==geometry(second)) {
       const selection=chooseLayerContent([first,second],seed);
-      const fitted=[generatePlan(seed,{catEnabled,contentIds:selection.selectedIds[0],preferences}),
+      const fitted=[generatePlan(seed,{catEnabled,contentIds:selection.selectedIds[0],preferences,rhythmEnabled:true}),
         generatePlan(`${seed}:dream:2:${attempt}`,{catEnabled:false,threatEnabled:true,
-          threatBehaviorId,contentIds:selection.selectedIds[1],conditionalSlots,preferences})];
+          threatBehaviorId,contentIds:selection.selectedIds[1],conditionalSlots,preferences,rhythmEnabled:true})];
       const plans=[first,second].map((raw,index)=>{
         if(geometry(raw)!==geometry(fitted[index])) {
           selection.rejections.push({layer:index+1,reason:'LAYOUT_CHANGED_ON_REFIT'});
@@ -42,9 +59,8 @@ export function generateDream(seed,{catEnabled=true,preferences=[],threatBehavio
         const finalSource=plans[0].content.instances.find(instance=>instance.definitionId===sourceId);
         return finalSource?[{...slot,sourceInstanceId:finalSource.instanceId,focus:{...slot.focus}}]:[];
       });
-      const shorts=new Set(plans.flatMap(plan=>plan.content.instances
-        .filter(instance=>instance.role==='short').map(instance=>instance.definitionId)));
-      if(shorts.size<6) {
+      // Source-bound echoes do not consume the short-event budget.
+      {
         const trace=fitTraceFollow(plans[0]);
         const bedroom=trace&&fitBedroomTrace(plans[1],trace);
         if(bedroom) {
@@ -57,7 +73,20 @@ export function generateDream(seed,{catEnabled=true,preferences=[],threatBehavio
           } else plans[1].content.conditionalSlots.pop();
         }
       }
+      completeRoomContent(plans,seed);
+      // Refit can add a source scene; derive its echo from the FINAL first layer.
+      plans[1].content.conditionalSlots=[
+        ...plans[1].content.conditionalSlots.filter(slot=>!['B27','B28'].includes(slot.id)),
+        ...['B03','B04'].flatMap(definitionId=>{
+          const source=plans[0].content.instances.find(i=>i.definitionId===definitionId);
+          if(!source)return [];
+          const id=definitionId==='B03'?'B27':'B28';
+          return [{id,definitionId:id,sourceInstanceId:source.instanceId,roomId:'bedroom',focus:{x:-.45,y:.65,z:1.2}}];
+        }),
+      ];
       for(const plan of plans) {
+        const validation=validatePlan(plan);
+        if(!validation.valid)throw new Error(`内容编排校验失败：${validation.errors.join('、')}`);
         const {planHash,...withoutHash}=plan;
         plan.planHash=hashSeed(JSON.stringify(withoutHash)).toString(16).padStart(8,'0');
       }

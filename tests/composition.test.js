@@ -30,11 +30,11 @@ test('spatial candidates are assigned once when removing repeats keeps enough co
   assert.ok(choice.rejections.some(r=>r.reason==='ONE_INSTANCE_PER_RUN'));
 });
 
-test('a coverage regression cannot restore unselected short scenes above the run budget',()=>{
+test('full-room composition uses map-sized budgets instead of the old six-scene cap',()=>{
   const dream=generateDream('7');
-  assert.ok(dream.every(plan=>validatePlan(plan).valid));
-  assert.ok(dream.composition.budget.short.count<=6);
-  assert.ok(dream.composition.budget.major.count<=6);
+  assert.ok(dream.every(plan=>validatePlan(plan).valid&&plan.coverage.ratio===1));
+  assert.ok(dream.composition.budget.short.count<=dream.composition.budget.short.max);
+  assert.ok(dream.composition.budget.major.count<=dream.composition.budget.major.max);
   const selected=dream.composition.selectedUnits.filter(unit=>unit.role==='short');
   assert.equal(new Set(selected.map(unit=>unit.narrativeUnitId)).size,dream.composition.budget.short.count);
 });

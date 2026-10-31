@@ -639,6 +639,35 @@ export function createStoryProxies(THREE,root,plan,{material,box,resources,scene
       const room=plan.rooms.find(r=>r.id===instance.roomId),cx=room.center[0]*plan.cellSize,cz=room.center[1]*plan.cellSize;
       box(2.2,.012,1.6,cx,.012,cz,rug);
       box(.85,.05,.85,cx,2.95,cz,warm);
+      if(instance.quietVariant) {
+        const group=new THREE.Group();group.name=`quiet-${instance.instanceId}-${instance.quietVariant}`;
+        group.position.set(p.x,0,p.z);group.rotation.y=instance.yaw;root.add(group);
+        const piece=(w,h,d,x,y,z,mat)=>dollPiece(group,w,h,d,x,y,z,mat);
+        piece(1.5,.08,.22,0,.89,0,tableWood);
+        for(const x of [-.6,.6])piece(.06,.85,.20,x,.43,0,tableWood);
+        const cup=(x,z)=>{
+          const geometry=new THREE.CylinderGeometry(.07,.055,.12,12,1,true);resources.add(geometry);
+          const mesh=new THREE.Mesh(geometry,warm);mesh.position.set(x,1,z);group.add(mesh);
+          piece(.19,.015,.17,x,.94,z,stone);
+        };
+        if(['tea','place-setting'].includes(instance.quietVariant)) {
+          cup(-.38,0);cup(.38,0);
+          if(instance.quietVariant==='place-setting')cup(0,0);
+          else {piece(.2,.02,.22,0,.95,0,panel);piece(.16,.015,.19,.02,.97,0,photoBase);}
+        } else if(instance.quietVariant==='letters') {
+          for(let i=0;i<4;i++)piece(.3,.012,.2,-.3+i*.08,.94+i*.015,0,warm);
+          piece(.2,.3,.05,.4,1.08,0,panel);piece(.15,.24,.012,.4,1.08,.031,photoBase);
+        } else {
+          for(const [index,x] of [-.38,.38].entries()) {
+            piece(.36,.4,.08,x,1.15,0,panel);piece(.3,.34,.012,x,1.15,.047,warm);
+            piece(.018,.12,.018,x,1.2,.06,shadow);
+            const hand=piece(.12,.018,.018,x+(index?-.05:.05),1.15,.06,shadow);
+            hand.rotation.z=index?.5:0;
+          }
+        }
+        const light=new THREE.PointLight(0xffd6a1,1.8,4,2);
+        light.position.set(0,1.9,.7);group.add(light);
+      }
     } else if(instance.definitionId==='TI02') {
       const actor=new THREE.Group();root.add(actor);actor.position.set(p.x,0,p.z);
       actor.rotation.y=Math.atan2(instance.observation.x-p.x,instance.observation.z-p.z);

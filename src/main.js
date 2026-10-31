@@ -19,6 +19,7 @@ import { contentTokensForInputs } from './personalization/content-tokens.js';
 import { createPlayerNoiseTracker } from './player-noise.js';
 import { HEARING_BEHAVIOR, LIGHT_AVOIDER_BEHAVIOR } from './threat-profile.js';
 import { canCloseChaseDoor, closeChaseDoor } from './chase.js';
+import { targetsBedroomDoor } from './door-interaction.js';
 
 const $ = id => document.getElementById(id);
 const canvas = $('game');
@@ -151,7 +152,7 @@ function init() {
     previewStatus.style.cssText='position:fixed;right:22px;top:55px;z-index:9;padding:9px 13px;background:#101917d8;color:#e1e7d8;font:13px sans-serif';
     document.body.append(previewStatus);
   }
-  let editingFear=true,fearConfirmed=false,draftFear=null,draftLike=null,graphicsReady=true;
+  let editingFear=true,fearConfirmed=false,draftFear=null,draftLike=null,graphicsReady=true,generating=false;
   const vhs = createVhsEffect(renderer, scene, camera);
   vhs.setIntensity($('vhs-intensity').value);
   vhs.setFlashlight(state.player.flashlight);
@@ -169,10 +170,10 @@ function init() {
       :threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR?'避光者灰盒':'凝视型威胁';
     $('plan-status').textContent = `种子 ${seed}${state.input.confirmed?'':' · 待输入确认（以下为预览）'} · 第 ${state.layer} 层 · ${plan.rooms.length} 个房间 · ${plan.opportunities.cycles.length} 个环路 / ${plan.opportunities.forks.length} 个分叉 · ${plan.planHash}${plan.validation.fallback ? ' · 保底布局' : ' · 校验通过'} · 猫场景 ${!state.input.confirmed?'待输入确认':state.layer===2?'本层未启用':plan.story.cat?'可用':state.like.id==='cat'?'空间不适配':'未选择猫'} / 左右建议 ${plan.story.routes.length} 处 · ${threatLabel} ${plan.threat?'已适配':state.layer===1?'本层未安排':'空间不适配'} · 自带灰盒 ${content} · 起始${TEMPLATE_NAMES[bedroom.type]} ${sizeX}×${sizeZ}米`;
     const composition=dream.composition;
-    if(composition) $('plan-status').textContent+=` · 整局独立单元 主要 ${composition.budget.major.count}/4、短场面 ${composition.budget.short.count}/4${composition.repeatedUnits.length?' · 跨层重复 '+composition.repeatedUnits.join('、'):''}`;
+    if(composition) $('plan-status').textContent+=` · 整局独立单元 重点 ${composition.budget.major.count}、短事件 ${composition.budget.short.count}${composition.repeatedUnits.length?' · 跨层重复 '+composition.repeatedUnits.join('、'):''}`;
     const coverage=plan.coverage;
-    const names={start:'起点',connector:'连接',rest:'喘息',short:'短场面',major:'主要',danger:'危险'};
-    $('coverage-report').textContent=`本层内容覆盖 ${coverage.covered}/${coverage.total}（${Math.round(coverage.ratio*100)}%）· 最长连续空白 ${coverage.longestGap.length} 间${coverage.longestGap.rooms.length?'：'+coverage.longestGap.rooms.join(' → '):''} · 房间角色：${coverage.rooms.map(row=>`${row.roomId} ${names[row.role]}${row.units.length?'['+row.units.join('+')+']':''}`).join(' / ')}${coverage.incomplete?' · 路径检查达到预算，结果未完成':''}`;
+    const names={start:'起点',connector:'未分配',rest:'安静／轻微异常',short:'短事件',major:'重点事件',danger:'危险'};
+    $('coverage-report').textContent=`本层房间绑定 ${coverage.covered}/${coverage.total}（${Math.round(coverage.ratio*100)}%）· 最长连续空白 ${coverage.longestGap.length} 间${coverage.longestGap.rooms.length?'：'+coverage.longestGap.rooms.join(' → '):''} · 安静房 ${coverage.rhythm.quietCount} · 最长连续安静 ${coverage.rhythm.longestQuiet} / 高强度 ${coverage.rhythm.longestStrong} · 出口路线至少 ${coverage.rhythm.minExitEvents} 个事件 · 房间角色：${coverage.rooms.map(row=>`${row.roomId} ${names[row.role]}${row.units.length?'['+row.units.join('+')+']':''}`).join(' / ')}${coverage.incomplete?' · 路径检查达到预算，结果未完成':''}`;
     $('preview-links').replaceChildren(...['B01','B03','B04','B05','B06','B07','B08','B09','B10','B11','B12','B18','B19','B20','B22','B25','ID02','ID03','ME01','ME02','ME03','ME04','IN01','IN02','IN03','IN04','TI02','TI03','RI01','RI02','BO01','BO02','BO03','BO04','AB01','AB02','AB04','B27','B28','TH02','TH03','CHASE','M03'].map(id=>{
       const link=document.createElement('a');link.textContent=`${id} 独立预览`;
       link.href=`/?seed=${encodeURIComponent(id==='M03'?'71':plan.seed)}&preview=${id}&like=${encodeURIComponent(state.like.id)}&fear=${encodeURIComponent(state.fear.id)}`;
@@ -189,8 +190,8 @@ function init() {
     $('cancel-fear').hidden=!editingFear || !state.input.confirmed;
     $('change-fear').hidden=editingFear || !state.input.confirmed;
     $('restart').hidden=editingFear || !started;
-    $('start').disabled=!graphicsReady || (editingFear && (!draftFear||!draftLike));
-    $('start').textContent=editingFear ? (started?'确认并重新开始':'确认并进入梦境') : (started?'继续探索':'进入梦境');
+    $('start').disabled=generating || !graphicsReady || (editingFear && (!draftFear||!draftLike));
+    $('start').textContent=generating?'正在布置房间…':editingFear ? (started?'确认并重新开始':'确认并进入梦境') : (started?'继续探索':'进入梦境');
     if(editingFear) $('drag-mode').hidden=true;
     if(draftFear) $('fear-result').textContent=`${draftFear.id==='generic'?'主动选择':'本次理解'}：${draftFear.label}。将使用对应简模；它可能在第二层出现。`;
   }
@@ -277,7 +278,12 @@ function init() {
     enter();
   });
   $('drag-mode').addEventListener('click', () => { dragMode = true; $('error').textContent = ''; activate(); });
-  function restartRun(fearId=state.fear.id,likeId=state.like.id) {
+  async function restartRun(fearId=state.fear.id,likeId=state.like.id) {
+    if(generating)return;
+    generating=true;updateFearForm();
+    // Paint feedback before the synchronous topology/content validation work.
+    await new Promise(resolve=>setTimeout(resolve,32));
+    try {
     const changed=state.input.confirmed&&(state.input.fearId!==fearId||state.input.likeId!==likeId);
     const version=state.input.confirmed?state.input.version+Number(changed):1;
     const nextDream=chasePreview||bypassPreview ? (()=>{
@@ -302,6 +308,9 @@ function init() {
     editingFear=false;fearConfirmed=true;draftFear=null;draftLike=null;updateFearForm();
     vhs.setFlashlight(state.player.flashlight);
     $('ending').hidden=true;$('ending-line').textContent='';$('fade').style.opacity='0';updatePlanStatus();enter();
+    } catch(error) {
+      pause();$('error').textContent=`房间布置失败，请重试或更换种子：${error.message}`;
+    } finally {generating=false;updateFearForm();}
   }
   $('restart').addEventListener('click',()=>restartRun());
   $('ending-replay').addEventListener('click',()=>restartRun());
@@ -470,8 +479,7 @@ function init() {
     flashlight.visible = state.player.flashlight;
     if (exploring) {
       ray.setFromCamera(new THREE.Vector2(), camera);
-      const hit = ray.intersectObjects([...world.solids, ...world.doorMeshes.filter(d => d.visible)], false)[0];
-      targetDoor = state.player.standing && !state.doors.bedroom.open && hit?.object === world.door;
+      targetDoor = targetsBedroomDoor(ray, world, state);
       $('prompt').textContent = !state.player.standing ? 'E  起身' : targetDoor ? 'E  开门'
         :chasePreview&&canCloseChaseDoor(plan,state)?'E  关门阻挡'
         :canUseExit(state,plan,currentView(),world.getColliders()) ? 'E  离开这里' : '';

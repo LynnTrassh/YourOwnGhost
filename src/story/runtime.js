@@ -412,7 +412,7 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
       }
     } else if(id==='B25' && phase.phase==='waiting') {
       phase.exposure+=dt;
-      if(phase.exposure>=1.6) {phase.phase='rested';phase.pendingLine=true;state.facts.push(`${instance.instanceId}.rested`);}
+      if(phase.exposure>=1.6) {phase.phase='rested';phase.pendingLine=!instance.quietVariant||instance.quietNarration;state.facts.push(`${instance.instanceId}.rested`);}
     } else if(id==='TI02') {
       const sightBoxes=boxes.filter(b=>b.id!==`${instance.instanceId}-actor`);
       if(visible(view,{...instance.focus,y:1.75},sightBoxes)) {

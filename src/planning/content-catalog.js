@@ -8,8 +8,9 @@ const required = new Map([['CAT01','like.cat'],['B01','like.flower'],['B03','lik
 const conditional = new Set(['B14','B15','B16','B27','B28','IN04']);
 const optional = new Set(['B02','B04','B09','B10','B12','B13','ME04','IN01','BO01','BO02','AB01']);
 const flow = new Set(['B26']);
-const major = new Set(['CAT01','B03','B04','B13','B17','B19','RI01','RI02','RI04','AB02']);
-const rest = new Set(['B25']);
+const major = new Set(['CAT01','B03','B04','AB01','RI01','RI02','RI04','ME01','ME04','BO01','BO02','B10','B17','B19','B20','BO03','IN01','IN03','B23']);
+const rest = new Set(['B25','B01','B07','ID03','ME03','BO04','AB03','B18']);
+const echoes = new Set(['B27','B28','IN04']);
 const greybox = new Set(['B01','B03','B04','B05','B06','B07','B08','B09','B10','B11','B12','B18','B19','B20','B22','B25','ID02','ID03','ME01','ME02','ME03','ME04','IN01','IN02','IN03','TI02','TI03','RI01','RI02','BO01','BO02','BO03','BO04','AB01','AB02','AB04']);
 const conditionalGreybox = new Set(['B27','B28','IN04']);
 const previewOnly = new Set(['B13','B14','B15','B16']);
@@ -20,6 +21,8 @@ export const CONTENT_CATALOG = Object.freeze(ids.map(id=>Object.freeze({
   capabilities:greybox.has(id)||conditionalGreybox.has(id)||previewOnly.has(id)?['geometry','subtitle','proxy']:[],
   readiness:greybox.has(id)?'greybox':conditionalGreybox.has(id)?'conditional-greybox'
     :previewOnly.has(id)?'preview-only':id==='CAT01'?'fixed-test':id==='B26'?'existing-flow':'unimplemented',
+  roomClass:previewOnly.has(id)?'danger':flow.has(id)?'flow':echoes.has(id)?'echo':rest.has(id)?'quiet':major.has(id)?'major':'short',
+  intensity:previewOnly.has(id)?3:major.has(id)?2:rest.has(id)||flow.has(id)||echoes.has(id)?0:1,
   variants:[],
   role:rest.has(id)?'rest':flow.has(id)?'flow':major.has(id)?'major':'short',
   narrativeUnitId:['B13','B14','B15','B16'].includes(id)?'B13-B16':id,

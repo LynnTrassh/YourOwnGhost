@@ -143,7 +143,7 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
     activeParent=tiltRoom&&b.roomId===tiltRoom.instance.roomId
       ?{group:tiltRoom.group,pivot:tiltRoom.instance.pivot}:null;
     if (bedroomDecor.handledObstacles.has(b.id)) continue;
-    if (['statue-plinth','story-actor','banquet-table','banquet-chair','head-pedestal','doll-chair','joint-chair','monitor-chair','mirror-chair','story-door-leaf','memory-bed','water-story-bed','flower-stand','cabinet','side-door-figure','frozen-table','frozen-person','water-basin'].includes(b.kind)) continue;
+    if (['quiet-shelf','statue-plinth','story-actor','banquet-table','banquet-chair','head-pedestal','doll-chair','joint-chair','monitor-chair','mirror-chair','story-door-leaf','memory-bed','water-story-bed','flower-stand','cabinet','side-door-figure','frozen-table','frozen-person','water-basin'].includes(b.kind)) continue;
     const fallbackParent = activeParent?.group ?? root;
     const fallbackStart = fallbackParent.children.length;
     const x = (b.minX + b.maxX) / 2, z = (b.minZ + b.maxZ) / 2;

@@ -2,7 +2,7 @@ import { CELL_SIZE, DIRECTIONS, keyOf } from './templates.js';
 import { buildNavigation, pathThroughTiles } from './validate.js';
 import { overlaps } from '../collision.js';
 import { sightClear, roomIdAt, visible } from '../story/spatial.js';
-import { contentEligibility } from './content-catalog.js';
+import { CONTENT_CATALOG, contentEligibility } from './content-catalog.js';
 import { sealDoorTransaction } from './door-transaction.js';
 
 const metre=cell=>cell*CELL_SIZE;
@@ -263,8 +263,9 @@ function basinSlot(plan,room,entry,boxes) {
   return null;
 }
 
-export function fitContent(plan,random,allowedIds=null,reservedRoomIds=[],preferences=[]) {
-  const instances=[],report=[],used=new Set(['bedroom',plan.exit.roomId,plan.story.cat?.roomId,...reservedRoomIds].filter(Boolean));
+export function fitContent(plan,random,allowedIds=null,reservedRoomIds=[],preferences=[],{complete=false,rhythm=false}={}) {
+  const instances=[],report=[],used=new Set(['bedroom',...(!complete?[plan.exit.roomId]:[]),plan.story.cat?.roomId,...reservedRoomIds].filter(Boolean));
+  const existing=complete?(plan.content?.instances??[]):[];
   const boxes=[...plan.walls,...plan.obstacles];
   const returnRooms=new Set([...(plan.opportunities.revisitCandidates??[]),
     ...(plan.opportunities.branchReturnCandidates??[])]);
@@ -276,7 +277,7 @@ export function fitContent(plan,random,allowedIds=null,reservedRoomIds=[],prefer
     earlyIndent=contentSeedCode%11===7,earlyWaterSource=contentSeedCode%7===5,
     earlySealedDoor=contentSeedCode%11===6,earlyTilt=contentSeedCode%9===4,
     earlyOverflow=contentSeedCode%4===1;
-  for(const id of ['B25','B03','AB02','B04',...(earlyJoint?['BO04']:[]),
+  const order=['B25','B03','AB02','B04',...(earlyJoint?['BO04']:[]),
     'IN01','RI02',...(earlyOverflow?['IN02']:[]),
     ...(earlyTilt?['B19']:[]),...(earlyWaterSource?['IN03']:[]),
     ...(earlySealedDoor?['B20']:[]),
@@ -293,13 +294,26 @@ export function fitContent(plan,random,allowedIds=null,reservedRoomIds=[],prefer
     ...(earlyDelayedMirror?[]:['ME02']),...(earlyLongBody?[]:['BO02']),
     ...(earlyIndent?[]:['AB04']),...(earlyWaterSource?[]:['IN03']),
     ...(earlySealedDoor?[]:['B20']),...(earlyTilt?[]:['B19']),
-    ...(earlyShadow?[]:['ME04'])]) {
+    ...(earlyShadow?[]:['ME04'])];
+  if(rhythm) {
+    const quiet=new Set(CONTENT_CATALOG.filter(d=>d.role==='rest').map(d=>d.definitionId));
+    const required=new Set(CONTENT_CATALOG.filter(d=>d.sourcePolicy==='required').map(d=>d.definitionId));
+    const priority=id=>id==='B25'?-2:required.has(id)?-1:quiet.has(id)?0:1;
+    order.sort((a,b)=>priority(a)-priority(b));
+  }
+  for(const id of order) {
     if(allowedIds && !allowedIds.has(id)) {report.push({id,accepted:false,reason:'COMPOSITION_NOT_SELECTED',attempts:[]});continue;}
     if(id==='AB01'&&plan.story.cat) {report.push({id,accepted:false,reason:'MUTUALLY_EXCLUSIVE_CAT01',attempts:[]});continue;}
     const eligible=contentEligibility(id,{preferences});
     if(!eligible.accepted) {report.push({id,accepted:false,reason:eligible.reason});continue;}
-    const groupRooms=new Set([plan.story.cat?.roomId,...instances.filter(i=>['RI01','RI02'].includes(i.definitionId)).map(i=>i.roomId)].filter(Boolean));
+    const groupRooms=new Set([plan.story.cat?.roomId,...[...existing,...instances].filter(i=>['RI01','RI02'].includes(i.definitionId)).map(i=>i.roomId)].filter(Boolean));
+    const majorRooms=new Set([plan.story.cat?.roomId,plan.threat?.roomId,...(!complete?reservedRoomIds:[]),...[...existing,...instances].filter(i=>i.role==='major').map(i=>i.roomId)].filter(Boolean));
+    if((complete||rhythm)&&eligible.definition.role==='major'&&majorRooms.size>=Math.ceil((plan.rooms.length-1)*.4))continue;
+    const quietRooms=new Set([...existing,...instances].filter(i=>i.role==='rest').map(i=>i.roomId));
+    if((complete||rhythm)&&eligible.definition.role==='rest'&&quietRooms.size>=Math.ceil((plan.rooms.length-1)*.25))continue;
     const rooms=plan.rooms.filter(r=>!used.has(r.id)
+      &&(!(complete||rhythm)||eligible.definition.role!=='rest'||!plan.edges.some(e=>[e.a,e.b].includes(r.id)&&[e.a,e.b].some(id=>quietRooms.has(id))))
+      &&(!(complete||rhythm)||eligible.definition.role!=='major'||!plan.edges.some(e=>[e.a,e.b].includes(r.id)&&[e.a,e.b].some(id=>majorRooms.has(id))))
       &&(id!=='ID02'||r.type!=='ring')
       &&(!['AB01','AB02','B03','B04','B05','B18','IN01','BO04'].includes(id)||returnRooms.has(r.id))
       &&(!['RI01','RI02','B06'].includes(id)||!plan.edges.some(edge=>[edge.a,edge.b].includes(r.id)
@@ -710,7 +724,7 @@ export function fitContent(plan,random,allowedIds=null,reservedRoomIds=[],prefer
           chosen={slot,photos,focus:photos[0].focus,observation:photos[0].observation,
             entryDoorId:entry.door.id};
           const candidate={instanceId:`${id}-${room.id}`,definitionId:id,roomId:room.id,
-            role:eligible.definition.role,readiness:'greybox',...chosen};
+            role:eligible.definition.role,roomClass:eligible.definition.roomClass,readiness:'greybox',...chosen};
           chosen=candidate;break;
         }
         const focus={x:slot.wall.x-slot.normal.x*.25,z:slot.wall.z-slot.normal.z*.25,y:1.65};
@@ -793,7 +807,7 @@ export function fitContent(plan,random,allowedIds=null,reservedRoomIds=[],prefer
           chosen={focus:ceiling,observation:entry.point,entryDoorId:entry.door.id};
         } else chosen={focus,observation:entry.point,entryDoorId:entry.door.id};
       }
-      const candidate={instanceId:`${id}-${room.id}`,definitionId:id,roomId:room.id,role:eligible.definition.role,readiness:'greybox',...chosen};
+      const candidate={instanceId:`${id}-${room.id}`,definitionId:id,roomId:room.id,role:eligible.definition.role,roomClass:eligible.definition.roomClass,readiness:'greybox',...chosen};
       if(id==='B06') {
         const score=Math.abs(Math.hypot(candidate.observation.x-candidate.focus.x,candidate.observation.z-candidate.focus.z)-5.5);
         const best=bestB06&&Math.abs(Math.hypot(bestB06.observation.x-bestB06.focus.x,bestB06.observation.z-bestB06.focus.z)-5.5);

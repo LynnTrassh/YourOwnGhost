@@ -3,6 +3,8 @@ import { CELL_SIZE, MODULE_SIZE, DIRECTIONS, keyOf } from './templates.js';
 import { PLAYER_RADIUS, overlaps } from '../collision.js';
 import { roomIdAt, sightClear } from '../story/spatial.js';
 import { LIGHT_AVOIDER_BEHAVIOR, THREAT_BODY } from '../threat-profile.js';
+import { analyzeCoverage } from './coverage.js';
+import { CONTENT_CATALOG } from './content-catalog.js';
 
 export function buildWalls(plan) {
   const tiles = new Map(plan.cells.map(t => [keyOf(t.x, t.z), t]));
@@ -236,6 +238,22 @@ export function validatePlan(plan) {
       &&cell.z===Math.round(slot.focus.z/CELL_SIZE))?.roomId;
     if(owner!==slot.roomId||boxes.some(box=>overlaps(slot.focus.x,slot.focus.z,box))
       ||!path(plan.spawn,slot.focus))errors.push(`INVALID_CONDITIONAL_SLOT:${slot.id}`);
+  }
+  if(plan.content?.requireCompleteRooms) {
+    const coverage=analyzeCoverage(plan);
+    if(coverage.incomplete)errors.push('CONTENT_PATH_CHECK_INCOMPLETE');
+    for(const [key,failed] of Object.entries(coverage.deficits))if(failed)errors.push(`ROOM_RHYTHM:${key}`);
+    for(const instance of plan.content.instances) {
+      const definition=CONTENT_CATALOG.find(d=>d.definitionId===instance.definitionId);
+      if(!definition||!['greybox','conditional-greybox'].includes(definition.readiness))
+        errors.push(`UNAVAILABLE_ROOM_CONTENT:${instance.definitionId}`);
+      if(definition&&instance.role!==definition.role)errors.push(`WRONG_ROOM_INTENSITY:${instance.instanceId}`);
+    }
+    for(const instance of plan.content.instances.filter(i=>i.definitionId==='B25')) {
+      if(!['tea','letters','clocks','place-setting'].includes(instance.quietVariant)
+        ||!instance.fixture||!plan.obstacles.some(o=>o.id===instance.fixture.id)
+        ||!instance.quietLabel||!instance.observation)errors.push(`EMPTY_QUIET_LABEL:${instance.roomId}`);
+    }
   }
   return { valid: errors.length === 0, errors: [...new Set(errors)] };
 }

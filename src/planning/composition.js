@@ -7,13 +7,13 @@ const countFixed=plan=>Number(!!plan.story?.cat)+Number(!!plan.threat);
 // Choose from spatially fitted candidates, then regenerate only the chosen scenes.
 // This is a bounded selection: a shortage is reported, never filled by duplication.
 export function chooseLayerContent(plans,seed) {
-  const selected=[new Set(),new Set()],counts=[{major:countFixed(plans[0]),short:0},{major:countFixed(plans[1]),short:0}];
+  const selected=[new Set(),new Set()],counts=[{major:countFixed(plans[0]),short:0,rest:0},{major:countFixed(plans[1]),short:0,rest:0}];
   const candidates=new Map(),rejections=[];
   plans.forEach((plan,layer)=>{
     for(const row of plan.content.report) if(!row.accepted)
       rejections.push({id:row.id,layer:layer+1,reason:row.reason});
     for(const instance of plan.content.instances) {
-      if(instance.role==='rest') {selected[layer].add(instance.definitionId);continue;}
+      if(instance.definitionId==='B25') {selected[layer].add(instance.definitionId);continue;}
       const rows=candidates.get(instance.definitionId)??[];
       rows.push({layer,instance});candidates.set(instance.definitionId,rows);
     }
@@ -42,9 +42,9 @@ export function chooseLayerContent(plans,seed) {
     if(definition.exclusions.some(exclusion=>selected.some(set=>set.has(exclusion)))) {
       rejections.push({id,reason:'MUTUALLY_EXCLUSIVE'});continue;
     }
-    const limit=role==='major'?6:6;
+    const limit=role==='major'?Math.ceil(plans.reduce((n,p)=>n+p.rooms.length-1,0)*.4):plans.reduce((n,p)=>n+p.rooms.length-1,0);
     const options=rows.filter(({layer})=>counts[0][role]+counts[1][role]<limit)
-      .sort((a,b)=>(id==='B04'&&rows.some(row=>row.layer===0)?a.layer-b.layer:0)
+      .sort((a,b)=>(['B03','B04'].includes(id)&&rows.some(row=>row.layer===0)?a.layer-b.layer:0)
         ||counts[a.layer][role]-counts[b.layer][role]
         ||plans[a.layer].coverage.ratio-plans[b.layer].coverage.ratio
         ||(hashSeed(`${seed}:${id}:${a.layer}`)%2)-(hashSeed(`${seed}:${id}:${b.layer}`)%2));
@@ -64,7 +64,7 @@ export function summarizeComposition(plans,selection) {
     for(const instance of plan.content.instances) {
       const definition=definitions.get(instance.definitionId);
       selectedUnits.push({definitionId:instance.definitionId,narrativeUnitId:definition.narrativeUnitId,
-        layer,roomId:instance.roomId,role:instance.role,sourcePolicy:definition.sourcePolicy});
+        layer,roomId:instance.roomId,role:definition.roomClass==='echo'?'echo':instance.role,sourcePolicy:definition.sourcePolicy});
     }
     if(plan.story?.cat) selectedUnits.push({definitionId:'CAT01',narrativeUnitId:'CAT01',layer,
       roomId:plan.story.cat.roomId,role:'major',sourcePolicy:'fixed-test'});
@@ -88,7 +88,7 @@ export function summarizeComposition(plans,selection) {
     conditionalSlots:(plans[1].content.conditionalSlots??[]).map(slot=>({id:slot.id,layer:2,
       sourceInstanceId:slot.sourceInstanceId,roomId:slot.roomId,
       sourcePlanned:plans[0].content.instances.some(instance=>instance.instanceId===slot.sourceInstanceId)})),rejections,
-    budget:{major:{count:major,min:4,max:6,shortfall:Math.max(0,4-major)},
-      short:{count:short,min:4,max:6,shortfall:Math.max(0,4-short)},restByLayer:rests},
-    selectionReason:'SPATIALLY_FITTED_UNIQUE_UNITS'};
+    budget:{major:{count:major,min:4,max:Math.ceil(plans.reduce((n,p)=>n+p.rooms.length-1,0)*.4),shortfall:Math.max(0,4-major)},
+      short:{count:short,min:4,max:plans.reduce((n,p)=>n+p.rooms.length-1,0),shortfall:Math.max(0,4-short)},restByLayer:rests},
+    selectionReason:'FULL_ROOM_INTENSITY_RHYTHM'};
 }

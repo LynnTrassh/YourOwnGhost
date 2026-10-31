@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
-import { generateDream } from '../src/planning/dream.js';
+import { generatePlan } from '../src/planning/generate.js';
 import { validatePlan, pathThroughTiles } from '../src/planning/validate.js';
 import { createStoryState, stepContent, stepStory } from '../src/story/runtime.js';
 import { createWorld } from '../src/world.js';
@@ -12,7 +12,7 @@ const look=(from,to)=>{
 };
 
 test('IN01 spreads from a visible wall crack onto real furniture only after observed normal departure',()=>{
-  const plan=generateDream('9')[1],instance=plan.content.instances.find(item=>item.definitionId==='IN01');
+  const plan=generatePlan('9:dream:2:0',{catEnabled:false,contentIds:['IN01']}),instance=plan.content.instances.find(item=>item.definitionId==='IN01');
   assert.ok(instance);assert.equal(validatePlan(plan).valid,true);
   assert.ok(pathThroughTiles(plan,plan.spawn,instance.observation));
   assert.ok(pathThroughTiles(plan,instance.observation,instance.spreadObservation));

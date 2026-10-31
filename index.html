@@ -49,7 +49,7 @@
     </div>
     <span class="version">随机地图原型 / 02</span>
   </section>
-  <section id="map-panel" hidden aria-label="调试地图"><div><button id="close-map">关闭地图</button><h2>空间布局预览</h2><p id="death-status"></p><button id="debug-death" disabled>调试：模拟普通死亡</button><p id="coverage-report"></p><canvas id="map-canvas" aria-label="生成房间与通道平面图"></canvas><nav id="preview-links" aria-label="独立内容预览"></nav><p>白点为玩家 · 金色为回访空间候选 · 绿色为出口<br>金色小点：实心为已启用落点，空心为未启用预留。<br>橙色编号为已落位场面，绿色 B25 为喘息房；未落位原因见菜单报告。<br>红方块为威胁复位点，红圆圈为安全观察点；出口房结束本次追踪。<br>标为“猫群回访”的房间已通过适配，其余候选未启用；旁白暂用字幕。</p></div></section>
+  <section id="map-panel" hidden aria-label="调试地图"><div><button id="close-map">关闭地图</button><h2>空间布局预览</h2><p id="death-status"></p><button id="debug-death" disabled>调试：模拟普通死亡</button><p id="coverage-report"></p><canvas id="map-canvas" aria-label="生成房间与通道平面图"></canvas><nav id="preview-links" aria-label="独立内容预览"></nav><p>白点为玩家 · 房间名称标注出口 · 绿色安静、灰紫短事件、棕色重点、暗红危险<br>金色小点：实心为已启用落点，空心为未启用预留。<br>编号后标明静／短／重点；安静房允许轻微异常，深灰房间表示尚未绑定内容。<br>红方块为威胁复位点，红圆圈为安全观察点；出口房结束本次追踪。<br>标为“猫群回访”的房间已通过适配，其余候选未启用；旁白暂用字幕。</p></div></section>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

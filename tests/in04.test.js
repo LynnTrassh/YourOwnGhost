@@ -89,7 +89,8 @@ test('IN04 follows an actually seen source through a real door and only then ech
   assert.equal(requestExit(onlySource,first,exitView,firstBoxes),true);
   assert.equal(commitTransition(onlySource,stepTransition(onlySource,.6).id,second),true);
   assert.equal(onlySource.story.conditional.IN04,undefined);
-  const withoutSource=generateDream('flower-audit-002',{catEnabled:false,preferences:['like.flower']});
+  const withoutSource=generateDream('flower-audit-002',{catEnabled:false,preferences:[]});
+  assert.equal(withoutSource[0].content.instances.some(item=>item.definitionId==='B03'),false);
   assert.equal(withoutSource[0].content.instances.some(item=>item.definitionId==='IN04'),false);
   assert.equal(withoutSource[1].content.conditionalSlots.some(item=>item.id==='IN04'),false);
 });
