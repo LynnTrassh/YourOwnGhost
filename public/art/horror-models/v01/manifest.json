@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "horror-hand-reaching-a-v01",
+      "name": "伸墙手臂",
+      "runtimeUrl": "/art/horror-models/v01/horror-hand-reaching-a-v01.glb",
+      "taskId": "483beaeb-f330-4b47-acab-11aea8799c6c",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/horror-models-v01/output/horror-hand-reaching-a-v01/model.glb",
+        "destination": "public/art/horror-models/v01/horror-hand-reaching-a-v01.glb",
+        "sourceBytes": 613516,
+        "runtimeBytes": 613944,
+        "sourceSHA256": "2a4944c0d1cb817cd74697df5cca635de2771d6c3d260f36036f3fdf137f1841",
+        "runtimeSHA256": "da425fee04a7667f0d82876fe18664ac858e630453da921309271c69ab760797",
+        "triangles": 6033,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3095703125,
+            -0.1318359375,
+            -0.4990234375
+          ],
+          "max": [
+            0.3095703125,
+            0.1318359375,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.323091976516634,
+            -0.09031311154598826,
+            -0.65
+          ],
+          "max": [
+            0.08013698630136988,
+            0.08140900195694717,
+            0
+          ],
+          "size": [
+            0.4032289628180039,
+            0.17172211350293543,
+            0.65
+          ]
+        },
+        "scale": 0.6512720156555774,
+        "scaleXYZ": [
+          0.6512720156555774,
+          0.6512720156555774,
+          0.6512720156555774
+        ],
+        "footprint": null,
+        "yawDegrees": 180,
+        "materialMode": "matte",
+        "orientationStatus": "front-side-back-observed",
+        "mounting": {
+          "anchor": [
+            0,
+            0,
+            0
+          ],
+          "forward": "-Z",
+          "capCenterMethod": "bbox centre of rearmost 10 mm, z at rear extreme",
+          "hideCapInsideWallMetres": 0.02,
+          "requiresPlacementReview": true
+        },
+        "pivot": "rear-cap-centre",
+        "forward": "-Z",
+        "finiteVerticesChecked": 3914
+      },
+      "status": "exported-technical-review-complete-awaiting-user-art-review",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "horror-doll-porcelain-a-v01",
+      "name": "悬吊瓷偶",
+      "runtimeUrl": "/art/horror-models/v01/horror-doll-porcelain-a-v01.glb",
+      "taskId": "d19f8e9f-2af3-4f0e-8fdc-4fea00a0ed42",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/horror-models-v01/output/horror-doll-porcelain-a-v01/model.glb",
+        "destination": "public/art/horror-models/v01/horror-doll-porcelain-a-v01.glb",
+        "sourceBytes": 1465796,
+        "runtimeBytes": 1466192,
+        "sourceSHA256": "c845d215ffaf987d4fae1579d327bec7e8d18aeb880c5680d527ff99f5409e99",
+        "runtimeSHA256": "922979c1a98ccd49176a5e191425a43f54605984f6d2533ce14d0c6f412d2121",
+        "triangles": 5725,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1884765625,
+            -0.4990234375,
+            -0.2255859375
+          ],
+          "max": [
+            0.1884765625,
+            0.4990234375,
+            0.2255859375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.1084931506849315,
+            0,
+            -0.09064579256360078
+          ],
+          "max": [
+            0.1084931506849315,
+            0.48,
+            0.09064579256360078
+          ],
+          "size": [
+            0.216986301369863,
+            0.48,
+            0.18129158512720156
+          ]
+        },
+        "scale": 0.48093933463796473,
+        "scaleXYZ": [
+          0.48093933463796473,
+          0.48093933463796473,
+          0.48093933463796473
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "matte",
+        "orientationStatus": "front-side-back-observed",
+        "pivot": "bottom-centre",
+        "forward": "-Z",
+        "suspension": {
+          "method": "nearest surface vertex to shoulder estimates; static attachment suggestions, not bones",
+          "left": [
+            0.06340509522917685,
+            0.33534246575342463,
+            0.0023483365949119412
+          ],
+          "right": [
+            -0.0652837501719973,
+            0.3334637964774951,
+            0.0023483365949119334
+          ],
+          "requiresPlacementReview": true
+        },
+        "finiteVerticesChecked": 7826
+      },
+      "status": "exported-technical-review-complete-awaiting-user-art-review",
+      "runtimeIntegrated": false
+    }
+  ],
+  "creditsConsumed": 100
+}

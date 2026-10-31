@@ -1,0 +1,53 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-sofa-leather-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-sofa-leather-v03.glb",
+  "sourceBytes": 13345644,
+  "runtimeBytes": 13345968,
+  "sourceSHA256": "d0e432f88acfc52c73745c789c9e0542f12d7fd0232365bbd139c284016f4785",
+  "runtimeSHA256": "c0ee32bab76df7da8c0edf8f9f60a0bb3b422c4d24e6e34b43ea87ab513e53bb",
+  "triangles": 17575,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.35742059350013733,
+      -0.39050737023353577,
+      -0.5
+    ],
+    "max": [
+      0.35742059350013733,
+      0.39050737023353577,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.43475436023405795,
+      0,
+      -0.6081831435293206
+    ],
+    "max": [
+      0.43475436023405795,
+      0.9500000000000001,
+      0.6081831435293206
+    ],
+    "size": [
+      0.8695087204681159,
+      0.9500000000000001,
+      1.2163662870586411
+    ]
+  },
+  "scale": 1.2163662870586411,
+  "scaleXYZ": [
+    1.2163662870586411,
+    1.2163662870586411,
+    1.2163662870586411
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

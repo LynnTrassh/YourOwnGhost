@@ -8,7 +8,7 @@ export const ROOM_LOOKS = {
   bedroom: { wall: 'wallpaper-sage-floral', floor: 'floor-walnut-planks', color: 0xc1b6a0, light: 0xffc183, art: 'art-misaligned-portrait' },
   parlor: { wall: 'wallpaper-ochre-geometric', floor: 'floor-chevron-stone', color: 0x74635c, light: 0xffb777, art: 'art-misaligned-portrait' },
   nursery: { wall: 'wallpaper-dustyrose-floral', floor: 'floor-walnut-planks', color: 0xc5b6a4, light: 0xffc28b, art: 'art-child-room' },
-  clinic: { wall: 'wall-clinic-tiles', floor: 'floor-chevron-stone', color: 0x739387, light: 0xc2e1c5, art: 'art-endless-corridor' },
+  clinic: { wall: 'wall-clinic-tiles', floor: 'wall-clinic-tiles', color: 0x739387, light: 0xc2e1c5, art: 'art-endless-corridor' },
   archive: { wall: 'wallpaper-bluegray-stripe', floor: 'floor-walnut-planks', color: 0xa0acb0, light: 0xffd19b, art: 'art-endless-corridor' },
   shrine: { wall: 'wallpaper-ochre-geometric', floor: 'floor-carpet-geometric', color: 0xb49b78, light: 0xffb068, art: 'art-misaligned-portrait' },
 };

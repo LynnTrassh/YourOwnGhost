@@ -1,0 +1,327 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "hotel-01",
+  "models": 9,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "hotel-01-0",
+      "assetId": "furniture-writing-desk",
+      "bounds": {
+        "min": [
+          0.2500000000000002,
+          5.551115123125783e-17,
+          -1.325
+        ],
+        "max": [
+          1.5499999999999998,
+          0.8199999999999994,
+          -0.675
+        ]
+      }
+    },
+    {
+      "id": "hotel-01-1",
+      "assetId": "furniture-multi-drawer-file-cabinet",
+      "bounds": {
+        "min": [
+          0.8500000000000003,
+          0,
+          -2.4050000000000002
+        ],
+        "max": [
+          2.15,
+          2.2499999999999987,
+          -1.7550000000000001
+        ]
+      }
+    },
+    {
+      "id": "hotel-01-2",
+      "assetId": "furniture-display-cabinet",
+      "bounds": {
+        "min": [
+          -2.15,
+          0,
+          -2.4050000000000002
+        ],
+        "max": [
+          -0.8500000000000001,
+          2.249999999999999,
+          -1.7550000000000001
+        ]
+      }
+    },
+    {
+      "id": "hotel-01-3",
+      "assetId": "furniture-armchair-curved",
+      "bounds": {
+        "min": [
+          -2.1500000000000004,
+          0,
+          -0.6000000000000001
+        ],
+        "max": [
+          -1.45,
+          0.9499999999999998,
+          0.10000000000000009
+        ]
+      }
+    },
+    {
+      "id": "hotel-01-4",
+      "assetId": "furniture-armchair-curved",
+      "bounds": {
+        "min": [
+          -2.1500000000000004,
+          0,
+          0.7500000000000001
+        ],
+        "max": [
+          -1.45,
+          0.9499999999999998,
+          1.4500000000000002
+        ]
+      }
+    },
+    {
+      "id": "hotel-01-5",
+      "assetId": "furniture-coffee-table",
+      "bounds": {
+        "min": [
+          -1.0250000000000001,
+          0,
+          -0.1499999999999999
+        ],
+        "max": [
+          -0.37499999999999983,
+          0.47999999999999987,
+          1.15
+        ]
+      }
+    },
+    {
+      "id": "hotel-01-6",
+      "assetId": "lighting-floor-lamp",
+      "bounds": {
+        "min": [
+          1.79,
+          0,
+          1.19
+        ],
+        "max": [
+          2.21,
+          1.6499999999999992,
+          1.6099999999999999
+        ]
+      }
+    },
+    {
+      "id": "hotel-01-7",
+      "assetId": "lighting-chandelier-three-arm",
+      "bounds": {
+        "min": [
+          -1.125,
+          2.48,
+          -1.525
+        ],
+        "max": [
+          -0.47500000000000003,
+          2.98,
+          -0.875
+        ]
+      }
+    },
+    {
+      "id": "hotel-01-8",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "hotel-01",
+    "theme": "hotel",
+    "name": "深夜接待间",
+    "composition": "前台靠后偏右，左侧等候椅引导视线横移。",
+    "reveal": "先见接待台，走近才看见台后没有座位。",
+    "intensity": 2,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "parlor",
+    "focus": [
+      0.9,
+      1,
+      -1
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-writing-desk",
+        "x": 0.9,
+        "z": -1,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hotel-01-0"
+      },
+      {
+        "assetId": "furniture-multi-drawer-file-cabinet",
+        "x": 1.5,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hotel-01-1"
+      },
+      {
+        "assetId": "furniture-display-cabinet",
+        "x": -1.5,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hotel-01-2"
+      },
+      {
+        "assetId": "furniture-armchair-curved",
+        "x": -1.8,
+        "z": -0.25,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hotel-01-3"
+      },
+      {
+        "assetId": "furniture-armchair-curved",
+        "x": -1.8,
+        "z": 1.1,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hotel-01-4"
+      },
+      {
+        "assetId": "furniture-coffee-table",
+        "x": -0.7,
+        "z": 0.5,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hotel-01-5"
+      },
+      {
+        "assetId": "lighting-floor-lamp",
+        "x": 2,
+        "z": 1.4,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hotel-01-6"
+      },
+      {
+        "assetId": "lighting-chandelier-three-arm",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "hotel-01-7"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "hotel-01-8"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 166,
+    "triangles": 253258,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 32
+  }
+}

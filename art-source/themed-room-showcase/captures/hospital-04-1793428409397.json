@@ -1,0 +1,302 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "hospital-04",
+  "models": 8,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "hospital-04-0",
+      "assetId": "furniture-examination-cot",
+      "bounds": {
+        "min": [
+          -1,
+          0,
+          -1.2999999999999998
+        ],
+        "max": [
+          -0.29999999999999993,
+          0.8999999999999997,
+          -1.1102230246251565e-16
+        ]
+      }
+    },
+    {
+      "id": "hospital-04-1",
+      "assetId": "furniture-instrument-trolley",
+      "bounds": {
+        "min": [
+          1.275,
+          -5.551115123125783e-17,
+          -1.2
+        ],
+        "max": [
+          1.9250000000000003,
+          0.8999999999999998,
+          0
+        ]
+      }
+    },
+    {
+      "id": "hospital-04-2",
+      "assetId": "furniture-medicine-cabinet",
+      "bounds": {
+        "min": [
+          -1.8499999999999996,
+          0,
+          -2.4050000000000002
+        ],
+        "max": [
+          -0.55,
+          2.249999999999999,
+          -1.7550000000000001
+        ]
+      }
+    },
+    {
+      "id": "hospital-04-3",
+      "assetId": "furniture-medicine-cabinet",
+      "bounds": {
+        "min": [
+          -0.34999999999999976,
+          0,
+          -2.4050000000000002
+        ],
+        "max": [
+          0.9499999999999998,
+          2.249999999999999,
+          -1.7550000000000001
+        ]
+      }
+    },
+    {
+      "id": "hospital-04-4",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          1.62,
+          0,
+          0.78
+        ],
+        "max": [
+          2.08,
+          0.9599999999999997,
+          1.22
+        ]
+      }
+    },
+    {
+      "id": "hospital-04-5",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          -2.225,
+          0,
+          0.5999999999999998
+        ],
+        "max": [
+          -1.5749999999999997,
+          2.1,
+          1.7000000000000002
+        ]
+      }
+    },
+    {
+      "id": "hospital-04-6",
+      "assetId": "lighting-strip-double",
+      "bounds": {
+        "min": [
+          -1.2999999999999996,
+          2.48,
+          -1.325
+        ],
+        "max": [
+          -0.3000000000000005,
+          2.6599999999999997,
+          -1.075
+        ]
+      }
+    },
+    {
+      "id": "hospital-04-7",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "hospital-04",
+    "theme": "hospital",
+    "name": "检查室",
+    "composition": "偏左检查床与右侧器械工作区，中后景留出轮廓。",
+    "reveal": "手电先扫到金属边缘，再看清床头背后的一组空柜。",
+    "intensity": 2,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "clinic",
+    "focus": [
+      -0.65,
+      0.9,
+      -0.65
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-examination-cot",
+        "x": -0.65,
+        "z": -0.65,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-04-0"
+      },
+      {
+        "assetId": "furniture-instrument-trolley",
+        "x": 1.6,
+        "z": -0.6,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-04-1"
+      },
+      {
+        "assetId": "furniture-medicine-cabinet",
+        "x": -1.2,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-04-2"
+      },
+      {
+        "assetId": "furniture-medicine-cabinet",
+        "x": 0.3,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-04-3"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 1.85,
+        "z": 1,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-04-4"
+      },
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": -1.9,
+        "z": 1.15,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-04-5"
+      },
+      {
+        "assetId": "lighting-strip-double",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "hospital-04-6"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "hospital-04-7"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 162,
+    "triangles": 216656,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 13
+  }
+}

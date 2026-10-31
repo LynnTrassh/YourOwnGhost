@@ -1,0 +1,9 @@
+{
+  "seed": "1844070019",
+  "repeatEqual": true,
+  "planHashes": [
+    "407573c4",
+    "6fc381eb"
+  ],
+  "scope": "current workspace; only determinism, not full gameplay acceptance"
+}

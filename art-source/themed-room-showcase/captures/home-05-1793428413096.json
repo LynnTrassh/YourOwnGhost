@@ -1,0 +1,302 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "home-05",
+  "models": 8,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "home-05-0",
+      "assetId": "bed-low-divan-v01",
+      "bounds": {
+        "min": [
+          -1.9979941291585126,
+          0,
+          -1.5749999999999997
+        ],
+        "max": [
+          -1.0020058708414874,
+          0.5304305283757338,
+          0.3749999999999999
+        ]
+      }
+    },
+    {
+      "id": "home-05-1",
+      "assetId": "vanity-oval-mirror-v01",
+      "bounds": {
+        "min": [
+          0.7688356164383564,
+          0,
+          -2.3076418786692763
+        ],
+        "max": [
+          1.8311643835616436,
+          1.6499999999999995,
+          -1.852358121330724
+        ]
+      }
+    },
+    {
+      "id": "home-05-2",
+      "assetId": "furniture-armchair-curved",
+      "bounds": {
+        "min": [
+          1.2500000000000002,
+          0,
+          -0.2499999999999999
+        ],
+        "max": [
+          1.95,
+          0.9499999999999998,
+          0.4499999999999999
+        ]
+      }
+    },
+    {
+      "id": "home-05-3",
+      "assetId": "furniture-nightstand",
+      "bounds": {
+        "min": [
+          0.3600000000000001,
+          0,
+          0.56
+        ],
+        "max": [
+          1.04,
+          0.7799999999999998,
+          1.04
+        ]
+      }
+    },
+    {
+      "id": "home-05-4",
+      "assetId": "furniture-wardrobe",
+      "bounds": {
+        "min": [
+          -2.1999999999999997,
+          0,
+          1.225
+        ],
+        "max": [
+          -0.9000000000000001,
+          2.249999999999999,
+          1.875
+        ]
+      }
+    },
+    {
+      "id": "home-05-5",
+      "assetId": "fixture-radiator-cast-iron",
+      "bounds": {
+        "min": [
+          2.21,
+          0,
+          1.0500000000000003
+        ],
+        "max": [
+          2.3899999999999997,
+          0.6499999999999995,
+          1.9499999999999997
+        ]
+      }
+    },
+    {
+      "id": "home-05-6",
+      "assetId": "lighting-chandelier-three-arm",
+      "bounds": {
+        "min": [
+          -1.125,
+          2.48,
+          -1.525
+        ],
+        "max": [
+          -0.47500000000000003,
+          2.98,
+          -0.875
+        ]
+      }
+    },
+    {
+      "id": "home-05-7",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "home-05",
+    "theme": "home",
+    "name": "祖母起居室",
+    "composition": "低床、扶手椅与镜台三组各自独立，中央保留迂回动线。",
+    "reveal": "旧镜台在远端，床后衣柜把视线切成两段。",
+    "intensity": 3,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "bedroom",
+    "focus": [
+      1.3,
+      1.3,
+      -2
+    ],
+    "placements": [
+      {
+        "assetId": "bed-low-divan-v01",
+        "x": -1.5,
+        "z": -0.6,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-05-0"
+      },
+      {
+        "assetId": "vanity-oval-mirror-v01",
+        "x": 1.3,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-05-1"
+      },
+      {
+        "assetId": "furniture-armchair-curved",
+        "x": 1.6,
+        "z": 0.1,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "home-05-2"
+      },
+      {
+        "assetId": "furniture-nightstand",
+        "x": 0.7,
+        "z": 0.8,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-05-3"
+      },
+      {
+        "assetId": "furniture-wardrobe",
+        "x": -1.55,
+        "z": 1.55,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "home-05-4"
+      },
+      {
+        "assetId": "fixture-radiator-cast-iron",
+        "x": 2.3,
+        "z": 1.5,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "home-05-5"
+      },
+      {
+        "assetId": "lighting-chandelier-three-arm",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "home-05-6"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "home-05-7"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 160,
+    "triangles": 219008,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 31
+  }
+}

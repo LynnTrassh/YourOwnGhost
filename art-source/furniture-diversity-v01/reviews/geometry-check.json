@@ -1,0 +1,34 @@
+[
+  {
+    "id": "bed-iron-rail-v01",
+    "vertices": 9074,
+    "triangles": 5727,
+    "degenerate": 0,
+    "validIndices": true,
+    "finiteAttributes": true
+  },
+  {
+    "id": "bed-canopy-linen-v01",
+    "vertices": 7165,
+    "triangles": 5612,
+    "degenerate": 0,
+    "validIndices": true,
+    "finiteAttributes": true
+  },
+  {
+    "id": "bed-low-divan-v01",
+    "vertices": 6159,
+    "triangles": 5826,
+    "degenerate": 0,
+    "validIndices": true,
+    "finiteAttributes": true
+  },
+  {
+    "id": "vanity-oval-mirror-v01",
+    "vertices": 7549,
+    "triangles": 5751,
+    "degenerate": 0,
+    "validIndices": true,
+    "finiteAttributes": true
+  }
+]

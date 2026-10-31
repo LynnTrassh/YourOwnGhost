@@ -1,0 +1,43 @@
+{
+  "viewport": [
+    1280,
+    720
+  ],
+  "dpr": 1.5,
+  "flashlight": false,
+  "performance": {
+    "gpuExtension": true,
+    "units": "ms",
+    "sampleCount": 40,
+    "A": {
+      "cpu": {
+        "samples": 40,
+        "median": 0.40000009536743164,
+        "p95": 1.1999998092651367
+      },
+      "gpu": {
+        "samples": 40,
+        "median": 3.396125,
+        "p95": 5.918624
+      }
+    },
+    "D": {
+      "cpu": {
+        "samples": 40,
+        "median": 0.6999998092651367,
+        "p95": 1
+      },
+      "gpu": {
+        "samples": 40,
+        "median": 3.690375,
+        "p95": 8.290334
+      }
+    }
+  },
+  "colorCheck": {
+    "sample": "16\u00d716 off-screen-edge wall patch",
+    "meanByteDifference": 0.0078125,
+    "maxByteDifference": 1,
+    "pass": true
+  }
+}

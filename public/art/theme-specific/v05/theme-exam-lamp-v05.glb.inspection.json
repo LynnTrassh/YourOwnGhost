@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-exam-lamp-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-exam-lamp-v05.glb",
+  "sourceBytes": 7921032,
+  "runtimeBytes": 3693396,
+  "sourceSHA256": "4b7f90f466462d6b5661a45fc58fe09cdf06f7752a8b81900e0d1317fde9fcb0",
+  "runtimeSHA256": "1cf972b574099efdab7fc09688e6ad9d6e048ec9bc5e7875ab2ddb16c4a0fae3",
+  "triangles": 16521,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2802734375,
+      -0.4990234375,
+      -0.3779297173023224
+    ],
+    "max": [
+      0.2802734375,
+      0.4990234375,
+      0.3779296576976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5195205479452055,
+      0,
+      -0.7005381604696674
+    ],
+    "max": [
+      0.5195205479452055,
+      1.85,
+      0.7005381604696674
+    ],
+    "size": [
+      1.039041095890411,
+      1.85,
+      1.4010763209393349
+    ]
+  },
+  "scale": 1.8536203522504893,
+  "scaleXYZ": [
+    1.8536203522504893,
+    1.8536203522504893,
+    1.8536203522504893
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "5562127a7550722346f7c2e09e1643763399979a9bfb392621e24277dd3d505c"
+}

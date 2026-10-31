@@ -1,0 +1,182 @@
+[
+  {
+    "id": "horror-hand-reaching-a-v01",
+    "path": "public/art/horror-models/v01/horror-hand-reaching-a-v01.glb",
+    "bytes": 613944,
+    "sha256": "da425fee04a7667f0d82876fe18664ac858e630453da921309271c69ab760797",
+    "matchesInspection": true,
+    "triangles": 6033,
+    "meshes": 1,
+    "materials": 1,
+    "skins": 0,
+    "animations": 0,
+    "boundsFromMatchingInspection": {
+      "min": [
+        -0.323091976516634,
+        -0.09031311154598826,
+        -0.65
+      ],
+      "max": [
+        0.08013698630136988,
+        0.08140900195694717,
+        0
+      ],
+      "size": [
+        0.4032289628180039,
+        0.17172211350293543,
+        0.65
+      ]
+    },
+    "runtimeIntegratedDeclared": false
+  },
+  {
+    "id": "horror-doll-porcelain-a-v01",
+    "path": "public/art/horror-models/v01/horror-doll-porcelain-a-v01.glb",
+    "bytes": 1466192,
+    "sha256": "922979c1a98ccd49176a5e191425a43f54605984f6d2533ce14d0c6f412d2121",
+    "matchesInspection": true,
+    "triangles": 5725,
+    "meshes": 1,
+    "materials": 1,
+    "skins": 0,
+    "animations": 0,
+    "boundsFromMatchingInspection": {
+      "min": [
+        -0.1084931506849315,
+        0,
+        -0.09064579256360078
+      ],
+      "max": [
+        0.1084931506849315,
+        0.48,
+        0.09064579256360078
+      ],
+      "size": [
+        0.216986301369863,
+        0.48,
+        0.18129158512720156
+      ]
+    },
+    "runtimeIntegratedDeclared": false
+  },
+  {
+    "id": "ceiling-spider-a-v01",
+    "path": "public/art/fear-library/v01/ceiling-spider-a-v01.glb",
+    "bytes": 1562844,
+    "sha256": "c1dea53310768de612685ad6397d555af9ab8db802a35c7b9fb624bb358150e6",
+    "matchesInspection": true,
+    "triangles": 5094,
+    "meshes": 1,
+    "materials": 1,
+    "skins": 0,
+    "animations": 0,
+    "boundsFromMatchingInspection": {
+      "min": [
+        -0.25,
+        0,
+        -0.20205479452054792
+      ],
+      "max": [
+        0.25,
+        0.15166339015774064,
+        0.20205479452054792
+      ],
+      "size": [
+        0.5,
+        0.15166339015774064,
+        0.40410958904109584
+      ]
+    },
+    "runtimeIntegratedDeclared": false
+  },
+  {
+    "id": "coiled-snake-a-v01",
+    "path": "public/art/fear-library/v01/coiled-snake-a-v01.glb",
+    "bytes": 1348812,
+    "sha256": "24473274770b47441b508cb18e65321f11ae3408fe9060411ce4447f19b970de",
+    "matchesInspection": true,
+    "triangles": 5784,
+    "meshes": 1,
+    "materials": 1,
+    "skins": 0,
+    "animations": 0,
+    "boundsFromMatchingInspection": {
+      "min": [
+        -0.325,
+        0,
+        -0.32372798434442274
+      ],
+      "max": [
+        0.325,
+        0.1462817955390348,
+        0.32372798434442274
+      ],
+      "size": [
+        0.65,
+        0.1462817955390348,
+        0.6474559686888455
+      ]
+    },
+    "runtimeIntegratedDeclared": false
+  },
+  {
+    "id": "threshold-toad-a-v01",
+    "path": "public/art/fear-library/v01/threshold-toad-a-v01.glb",
+    "bytes": 1305504,
+    "sha256": "cf71e41221101fa0d7998abbbb7171cfbe662b1536f846a9ede0daca20027ff0",
+    "matchesInspection": true,
+    "triangles": 6066,
+    "meshes": 1,
+    "materials": 1,
+    "skins": 0,
+    "animations": 0,
+    "boundsFromMatchingInspection": {
+      "min": [
+        -0.2044,
+        0,
+        -0.19
+      ],
+      "max": [
+        0.2044,
+        0.2152,
+        0.19
+      ],
+      "size": [
+        0.4088,
+        0.2152,
+        0.38
+      ]
+    },
+    "runtimeIntegratedDeclared": false
+  },
+  {
+    "id": "folded-lintel-figure-a-v01",
+    "path": "public/art/fear-library/v01/folded-lintel-figure-a-v01.glb",
+    "bytes": 1257684,
+    "sha256": "8940e6741f50a3cf78739055c5adea80080266f0c7a244f570fc1d1698436b7b",
+    "matchesInspection": true,
+    "triangles": 5613,
+    "meshes": 1,
+    "materials": 1,
+    "skins": 0,
+    "animations": 0,
+    "boundsFromMatchingInspection": {
+      "min": [
+        -0.5508316457839744,
+        0,
+        -0.5112035072400265
+      ],
+      "max": [
+        0.5508316457839744,
+        1.35,
+        0.5112035072400265
+      ],
+      "size": [
+        1.1016632915679487,
+        1.35,
+        1.022407014480053
+      ]
+    },
+    "runtimeIntegratedDeclared": false
+  }
+]

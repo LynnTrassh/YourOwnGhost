@@ -8,6 +8,10 @@ export function setInteriorLightingQuality(scene, enabled) {
   scene.traverse(node => lightingControllers.get(node)?.setQuality(enabled));
 }
 
+export function setInteriorDepthLighting(scene, enabled) {
+  scene.traverse(node => lightingControllers.get(node)?.setDepth(enabled));
+}
+
 export function inspectInteriorLighting(scene) {
   const result = [];
   scene.traverse(node => {
@@ -33,7 +37,7 @@ export function createInteriorLighting({ root, resources, plan }) {
   const originals = new WeakMap(), gains = new Map();
   const cells = new Map(plan?.cells.map(cell => [`${cell.x},${cell.z}`, cell.roomId]) ?? []);
   const roomAt = (x, z) => plan && cells.get(`${Math.round(x / plan.cellSize)},${Math.round(z / plan.cellSize)}`);
-  let quality = true;
+  let quality = true, depth = true;
   const ambient = new THREE.HemisphereLight(0xb0bfb1, 0x3d382e, .68);
   root.add(ambient);
   function releaseShadow(light) {
@@ -55,6 +59,11 @@ export function createInteriorLighting({ root, resources, plan }) {
         light.angle = ceiling ? Math.max(base.angle, 1.2) : base.angle;
         light.penumbra = ceiling ? .88 : .82;
         light.color.lerp(new THREE.Color(0xfff3df), ceiling ? .42 : .1);
+        if (depth) {
+          // Spread the existing ceiling pool; ease the close tabletop hotspot.
+          if (ceiling) { light.angle=Math.max(light.angle,1.28); light.intensity*=1.08; }
+          else if (!sconce) light.intensity*=.88;
+        }
       }
       const size = quality ? 1024 : 512;
       if (light.shadow.mapSize.x !== size) releaseShadow(light);
@@ -66,6 +75,12 @@ export function createInteriorLighting({ root, resources, plan }) {
       // These unshadowed accents are a weak local bounce, never a room key.
       light.intensity *= asset.includes('window') ? .7 : asset.includes('curtain') ? .25 : .45;
       light.distance *= .9;
+      if (depth) {
+        const window=asset.includes('window'),curtain=asset.includes('curtain');
+        light.intensity=base.intensity*(window ? 1.35 : curtain ? .3 : .9);
+        light.distance=base.distance*(window?1.65:curtain?1.05:1.45);
+        if(window)light.color.lerp(new THREE.Color(0xa8b8c5),.35);
+      }
     }
     light.userData.qualityIntensity = light.intensity;
     light.userData.appliedIntensity = light.intensity;
@@ -81,6 +96,10 @@ export function createInteriorLighting({ root, resources, plan }) {
     ambient.intensity = quality ? .52 : .68;
     for (const light of [...keys, ...accents]) { applyProfile(light); light.visible = false; }
   }
+  function setDepth(enabled) {
+    depth=Boolean(enabled);
+    setQuality(quality);
+  }
   function practical({ parent = root, position, target, color = 0xffc48c, intensity = 9, distance = 6, angle = .95, roomId }) {
     const light = new THREE.SpotLight(color, intensity, distance, angle, .8, 2);
     light.position.set(...position); light.target.position.set(...target);
@@ -90,6 +109,13 @@ export function createInteriorLighting({ root, resources, plan }) {
     light.visible = false; light.userData.roomId = roomId; light.userData.fixtureLight = true;
     parent.add(light, light.target); keys.push(light);
     remember(light);
+    // A weak fixture-owned bounce gives walls/ceiling a readable return. It
+    // shares the existing two-accent budget and is disabled by the A/B switch.
+    if (/pendant|chandelier|strip/.test(parent.userData.assetId ?? '')) {
+      const bounce=accent([position[0],position[1]+.08,position[2]],color,1.15,5.2,parent);
+      bounce.userData.roomId=roomId;
+      bounce.userData.depthBounce=true;
+    }
     resources.add({dispose(){light.dispose();}});
     return light;
   }
@@ -122,12 +148,27 @@ export function createInteriorLighting({ root, resources, plan }) {
         const distance = Math.hypot(worldPosition.x-player.x,worldPosition.z-player.z);
         const lightRoom = light.userData.roomId ?? roomAt(worldPosition.x, worldPosition.z);
         const sameRoom = playerRoom !== undefined && lightRoom === playerRoom;
-        const eligible = distance < light.distance + 2 && (!quality || !light.isPointLight || !playerRoom || sameRoom);
+        const eligible = !(light.userData.depthBounce && (!depth || !quality)) && distance < light.distance + 2 && (!quality || !light.isPointLight || !playerRoom || sameRoom);
         const score = quality ? (sameRoom ? 4 : 1) * (gains.has(light) ? 1.12 : 1) / (1 + distance * .5) : -distance;
-        return {light, distance, score, eligible};
+        return {light, distance, score, eligible, sameRoom, position:worldPosition.clone()};
       }).sort((a,b)=>b.score-a.score);
-      const desired = new Set((quality ? ranked.filter(entry=>entry.eligible) : ranked.slice(0,count).filter(entry=>entry.eligible))
-        .slice(0,count).map(entry=>entry.light));
+      const candidates=quality?ranked.filter(entry=>entry.eligible):ranked.slice(0,count).filter(entry=>entry.eligible);
+      let selected=candidates.slice(0,count);
+      if (quality && depth && lights===keys) {
+        // Reserve a visible same-room ceiling source; the remaining slots favor
+        // spatial coverage instead of collecting three neighboring table lamps.
+        selected=[];
+        const ceiling=candidates.find(e=>e.sameRoom&&/pendant|chandelier|strip/.test(e.light.parent.userData.assetId??''));
+        if(ceiling)selected.push(ceiling);
+        while(selected.length<count) {
+          const remaining=candidates.filter(e=>!selected.includes(e));
+          if(!remaining.length)break;
+          const coverage=e=>selected.length?Math.min(...selected.map(s=>e.position.distanceTo(s.position))):0;
+          remaining.sort((a,b)=>(b.score*(1+Math.min(coverage(b),6)*.12))-(a.score*(1+Math.min(coverage(a),6)*.12)));
+          selected.push(remaining[0]);
+        }
+      }
+      const desired = new Set(selected.map(entry=>entry.light));
       if (!quality || dt <= 0) {
         for (const light of lights) {
           if (desired.has(light)) gains.set(light,1); else gains.delete(light);
@@ -152,7 +193,7 @@ export function createInteriorLighting({ root, resources, plan }) {
     }
   }
   setQuality(true);
-  const controller = {setQuality, inspect:()=>({quality,ambient:ambient.intensity,
+  const controller = {setQuality,setDepth, inspect:()=>({quality,depth,ambient:ambient.intensity,
     activeKeys:keys.filter(light=>light.visible).map(light=>({roomId:light.userData.roomId,fixture:light.parent.userData.assetId,intensity:light.intensity,shadow:light.shadow.mapSize.x})),
     activeAccents:accents.filter(light=>light.visible).length,
     allocatedShadows:keys.filter(light=>light.shadow.map).length})};

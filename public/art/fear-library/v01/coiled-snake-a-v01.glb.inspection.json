@@ -1,0 +1,64 @@
+{
+  "source": "art-source/fear-library-v01/output/coiled-snake-a-v01/model.glb",
+  "destination": "public/art/fear-library/v01/coiled-snake-a-v01.glb",
+  "sourceBytes": 1348416,
+  "runtimeBytes": 1348812,
+  "sourceSHA256": "81e9a840a9b8f273c69891a71be9e8b83c1ddc1079ed79b1899d8c4f693c528a",
+  "runtimeSHA256": "24473274770b47441b508cb18e65321f11ae3408fe9060411ce4447f19b970de",
+  "triangles": 5784,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4970703125,
+      -0.1123046725988388,
+      -0.4990234375
+    ],
+    "max": [
+      0.4970703125,
+      0.1123046949505806,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.325,
+      0,
+      -0.32372798434442274
+    ],
+    "max": [
+      0.325,
+      0.1462817955390348,
+      0.32372798434442274
+    ],
+    "size": [
+      0.65,
+      0.1462817955390348,
+      0.6474559686888455
+    ]
+  },
+  "scale": 0.6512720156555774,
+  "scaleXYZ": [
+    0.6512720156555774,
+    0.6512720156555774,
+    0.6512720156555774
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "visually-reviewed",
+  "pivot": "bottom-centre",
+  "forward": "-Z",
+  "target": {
+    "id": "coiled-snake-a-v01",
+    "yaw": 90,
+    "axis": "horizontalMax",
+    "metres": 0.65
+  },
+  "finiteVerticesChecked": 5493,
+  "degenerateTriangles": 0,
+  "visualNotes": "One head and tapered tail, open coil gaps visible. Actual footprint 0.650 x 0.647 m exceeds planned 0.65 x 0.55 m. Head is turned relative to nominal -Z front. Full stretched body length not measured."
+}

@@ -1,0 +1,265 @@
+{
+  "catalogCount": 82,
+  "prefabCounts": {
+    "prop-pendulum-clock-v01": 1,
+    "prop-clothes-rack-v01": 1,
+    "prop-suitcase-v01": 1,
+    "prop-washstand-v01": 1,
+    "prop-iv-stand-v01": 1,
+    "prop-folding-screen-v01": 1,
+    "prop-cradle-v01": 1,
+    "prop-rocking-horse-v01": 1,
+    "prop-tv-console-v01": 1,
+    "prop-computer-desk-v01": 1,
+    "prop-archive-stack-v01": 1,
+    "prop-tea-cart-v01": 1,
+    "prop-toy-bench-v01": 1,
+    "prop-medical-cart-v01": 1,
+    "prop-candle-altar-v01": 1,
+    "vanity": 1,
+    "bed": 1,
+    "nightstand": 1,
+    "dresser": 1,
+    "wardrobe": 1,
+    "bookcase": 1,
+    "sofa": 1,
+    "low-table": 1,
+    "display-cabinet": 1,
+    "toy-chest": 1,
+    "small-table": 1,
+    "toy-shelf": 1,
+    "exam-cot": 1,
+    "instrument-cart": 1,
+    "medicine-cabinet": 1,
+    "file-cabinet": 1,
+    "writing-desk": 1,
+    "copy-table": 1,
+    "archive-shelf": 1,
+    "filing-cabinet": 1,
+    "offering-table": 1,
+    "kneeler": 1,
+    "reliquary": 1,
+    "armchair": 1,
+    "dining-chair": 1,
+    "floor-lamp": 1
+  },
+  "firstSeed": [
+    {
+      "layer": 1,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "preset": "bedroom",
+          "area": 125.00000000000001,
+          "count": 3,
+          "unique": 3,
+          "coverage": 2.7,
+          "excluded": true
+        },
+        {
+          "id": "room-1",
+          "preset": "shrine",
+          "area": 200.00000000000003,
+          "count": 15,
+          "unique": 8,
+          "coverage": 4.1,
+          "excluded": false
+        },
+        {
+          "id": "room-2",
+          "preset": "bedroom",
+          "area": 175.00000000000003,
+          "count": 12,
+          "unique": 11,
+          "coverage": 4.3,
+          "excluded": false
+        },
+        {
+          "id": "room-3",
+          "preset": "nursery",
+          "area": 125.00000000000001,
+          "count": 11,
+          "unique": 10,
+          "coverage": 5.6,
+          "excluded": false
+        },
+        {
+          "id": "room-4",
+          "preset": "bedroom",
+          "area": 175.00000000000003,
+          "count": 22,
+          "unique": 13,
+          "coverage": 10.4,
+          "excluded": false
+        },
+        {
+          "id": "room-5",
+          "preset": "parlor",
+          "area": 125.00000000000001,
+          "count": 13,
+          "unique": 9,
+          "coverage": 5.2,
+          "excluded": false
+        },
+        {
+          "id": "room-6",
+          "preset": "clinic",
+          "area": 175.00000000000003,
+          "count": 14,
+          "unique": 11,
+          "coverage": 4,
+          "excluded": false
+        },
+        {
+          "id": "room-7",
+          "preset": "parlor",
+          "area": 200.00000000000003,
+          "count": 21,
+          "unique": 7,
+          "coverage": 8.8,
+          "excluded": false
+        },
+        {
+          "id": "room-8",
+          "preset": "nursery",
+          "area": 225.00000000000003,
+          "count": 21,
+          "unique": 10,
+          "coverage": 7.2,
+          "excluded": false
+        },
+        {
+          "id": "room-9",
+          "preset": "nursery",
+          "area": 175.00000000000003,
+          "count": 11,
+          "unique": 10,
+          "coverage": 4,
+          "excluded": false
+        },
+        {
+          "id": "room-10",
+          "preset": "parlor",
+          "area": 200.00000000000003,
+          "count": 13,
+          "unique": 9,
+          "coverage": 3.3,
+          "excluded": false
+        },
+        {
+          "id": "room-11",
+          "preset": "bedroom",
+          "area": 175.00000000000003,
+          "count": 22,
+          "unique": 13,
+          "coverage": 11.2,
+          "excluded": false
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "preset": "bedroom",
+          "area": 125.00000000000001,
+          "count": 3,
+          "unique": 3,
+          "coverage": 2.7,
+          "excluded": true
+        },
+        {
+          "id": "room-1",
+          "preset": "archive",
+          "area": 175.00000000000003,
+          "count": 2,
+          "unique": 2,
+          "coverage": 1.1,
+          "excluded": true
+        },
+        {
+          "id": "room-2",
+          "preset": "clinic",
+          "area": 125.00000000000001,
+          "count": 0,
+          "unique": 0,
+          "coverage": 0,
+          "excluded": true
+        },
+        {
+          "id": "room-3",
+          "preset": "shrine",
+          "area": 125.00000000000001,
+          "count": 8,
+          "unique": 2,
+          "coverage": 5.9,
+          "excluded": true
+        },
+        {
+          "id": "room-4",
+          "preset": "parlor",
+          "area": 150.00000000000003,
+          "count": 7,
+          "unique": 4,
+          "coverage": 4.3,
+          "excluded": true
+        },
+        {
+          "id": "room-5",
+          "preset": "archive",
+          "area": 125.00000000000001,
+          "count": 13,
+          "unique": 9,
+          "coverage": 5.5,
+          "excluded": false
+        },
+        {
+          "id": "room-6",
+          "preset": "nursery",
+          "area": 200.00000000000003,
+          "count": 16,
+          "unique": 2,
+          "coverage": 7.4,
+          "excluded": true
+        },
+        {
+          "id": "room-7",
+          "preset": "clinic",
+          "area": 200.00000000000003,
+          "count": 0,
+          "unique": 0,
+          "coverage": 0,
+          "excluded": true
+        },
+        {
+          "id": "room-8",
+          "preset": "shrine",
+          "area": 175.00000000000003,
+          "count": 18,
+          "unique": 8,
+          "coverage": 6.2,
+          "excluded": false
+        },
+        {
+          "id": "room-9",
+          "preset": "archive",
+          "area": 200.00000000000003,
+          "count": 21,
+          "unique": 6,
+          "coverage": 8.1,
+          "excluded": false
+        },
+        {
+          "id": "room-10",
+          "preset": "shrine",
+          "area": 225.00000000000003,
+          "count": 13,
+          "unique": 7,
+          "coverage": 2.8,
+          "excluded": false
+        }
+      ]
+    }
+  ]
+}

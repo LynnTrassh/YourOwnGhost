@@ -1,0 +1,582 @@
+{
+  "scope": "48间制作布局：真实/预留包围盒与0.6米玩家静态采样；不是模型外观或正式玩法验收",
+  "issues": [],
+  "reports": [
+    {
+      "id": "hospital-01",
+      "items": 8,
+      "reachableSamples": 1168,
+      "nearestPrimary": 0.33,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hospital-02",
+      "items": 8,
+      "reachableSamples": 1176,
+      "nearestPrimary": 0.324,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hospital-03",
+      "items": 14,
+      "reachableSamples": 1616,
+      "nearestPrimary": 0.357,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "hospital-04",
+      "items": 8,
+      "reachableSamples": 1186,
+      "nearestPrimary": 0.309,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hospital-05",
+      "items": 7,
+      "reachableSamples": 1379,
+      "nearestPrimary": 0.346,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hospital-06",
+      "items": 10,
+      "reachableSamples": 936,
+      "nearestPrimary": 0.312,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hospital-07",
+      "items": 13,
+      "reachableSamples": 2924,
+      "nearestPrimary": 0.338,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "hospital-08",
+      "items": 10,
+      "reachableSamples": 961,
+      "nearestPrimary": 0.312,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "park-01",
+      "items": 9,
+      "reachableSamples": 1062,
+      "nearestPrimary": 0.327,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "park-02",
+      "items": 26,
+      "reachableSamples": 5418,
+      "nearestPrimary": 0.319,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        10,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "park-03",
+      "items": 9,
+      "reachableSamples": 3123,
+      "nearestPrimary": 0.353,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "park-04",
+      "items": 11,
+      "reachableSamples": 1067,
+      "nearestPrimary": 0.303,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "park-05",
+      "items": 11,
+      "reachableSamples": 1123,
+      "nearestPrimary": 0.312,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "park-06",
+      "items": 13,
+      "reachableSamples": 2774,
+      "nearestPrimary": 0.323,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "park-07",
+      "items": 10,
+      "reachableSamples": 1018,
+      "nearestPrimary": 0.35,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "park-08",
+      "items": 25,
+      "reachableSamples": 5162,
+      "nearestPrimary": 0.319,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        10,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "office-01",
+      "items": 10,
+      "reachableSamples": 1097,
+      "nearestPrimary": 0.305,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "office-02",
+      "items": 14,
+      "reachableSamples": 2394,
+      "nearestPrimary": 0.314,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "office-03",
+      "items": 9,
+      "reachableSamples": 615,
+      "nearestPrimary": 0.303,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "office-04",
+      "items": 15,
+      "reachableSamples": 2766,
+      "nearestPrimary": 0.338,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "office-05",
+      "items": 10,
+      "reachableSamples": 1001,
+      "nearestPrimary": 0.342,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "office-06",
+      "items": 11,
+      "reachableSamples": 927,
+      "nearestPrimary": 0.324,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "office-07",
+      "items": 12,
+      "reachableSamples": 954,
+      "nearestPrimary": 0.312,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "office-08",
+      "items": 10,
+      "reachableSamples": 935,
+      "nearestPrimary": 0.324,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "home-01",
+      "items": 11,
+      "reachableSamples": 1007,
+      "nearestPrimary": 0.312,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "home-02",
+      "items": 10,
+      "reachableSamples": 973,
+      "nearestPrimary": 0.339,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "home-03",
+      "items": 9,
+      "reachableSamples": 657,
+      "nearestPrimary": 0.308,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "home-04",
+      "items": 11,
+      "reachableSamples": 1096,
+      "nearestPrimary": 0.35,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "home-05",
+      "items": 10,
+      "reachableSamples": 992,
+      "nearestPrimary": 0.304,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "home-06",
+      "items": 10,
+      "reachableSamples": 1021,
+      "nearestPrimary": 0.35,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "home-07",
+      "items": 14,
+      "reachableSamples": 2097,
+      "nearestPrimary": 0.383,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "home-08",
+      "items": 11,
+      "reachableSamples": 430,
+      "nearestPrimary": 0.324,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hotel-01",
+      "items": 10,
+      "reachableSamples": 849,
+      "nearestPrimary": 0.34,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hotel-02",
+      "items": 11,
+      "reachableSamples": 765,
+      "nearestPrimary": 0.357,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hotel-03",
+      "items": 10,
+      "reachableSamples": 680,
+      "nearestPrimary": 0.357,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hotel-04",
+      "items": 12,
+      "reachableSamples": 2494,
+      "nearestPrimary": 0.312,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "hotel-05",
+      "items": 12,
+      "reachableSamples": 634,
+      "nearestPrimary": 0.322,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hotel-06",
+      "items": 11,
+      "reachableSamples": 636,
+      "nearestPrimary": 0.354,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hotel-07",
+      "items": 12,
+      "reachableSamples": 1132,
+      "nearestPrimary": 0.36,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "hotel-08",
+      "items": 10,
+      "reachableSamples": 771,
+      "nearestPrimary": 0.314,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "ritual-01",
+      "items": 12,
+      "reachableSamples": 743,
+      "nearestPrimary": 0.389,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "ritual-02",
+      "items": 11,
+      "reachableSamples": 720,
+      "nearestPrimary": 0.388,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "ritual-03",
+      "items": 15,
+      "reachableSamples": 2330,
+      "nearestPrimary": 0.3,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    },
+    {
+      "id": "ritual-04",
+      "items": 12,
+      "reachableSamples": 491,
+      "nearestPrimary": 0.388,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "ritual-05",
+      "items": 12,
+      "reachableSamples": 1152,
+      "nearestPrimary": 0.388,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "ritual-06",
+      "items": 12,
+      "reachableSamples": 906,
+      "nearestPrimary": 0.35,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "ritual-07",
+      "items": 11,
+      "reachableSamples": 980,
+      "nearestPrimary": 0.389,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "ritual-08",
+      "items": 15,
+      "reachableSamples": 2593,
+      "nearestPrimary": 0.388,
+      "missingCoreBindings": 0,
+      "dimensions": [
+        5,
+        3,
+        10
+      ]
+    }
+  ]
+}

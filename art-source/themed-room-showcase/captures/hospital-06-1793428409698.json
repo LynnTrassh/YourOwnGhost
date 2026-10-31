@@ -1,0 +1,302 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "hospital-06",
+  "models": 8,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "hospital-06-0",
+      "assetId": "furniture-bed-single",
+      "bounds": {
+        "min": [
+          -2.1,
+          0,
+          -1.5499999999999996
+        ],
+        "max": [
+          -1.2999999999999998,
+          1.0499999999999996,
+          0.34999999999999964
+        ]
+      }
+    },
+    {
+      "id": "hospital-06-1",
+      "assetId": "furniture-sofa-two-seat",
+      "bounds": {
+        "min": [
+          0.6000000000000002,
+          -5.551115123125783e-17,
+          -2.25
+        ],
+        "max": [
+          1.9,
+          0.9399999999999995,
+          -1.5499999999999998
+        ]
+      }
+    },
+    {
+      "id": "hospital-06-2",
+      "assetId": "furniture-coffee-table",
+      "bounds": {
+        "min": [
+          0.6000000000000001,
+          0,
+          -1.075
+        ],
+        "max": [
+          1.9,
+          0.47999999999999987,
+          -0.425
+        ]
+      }
+    },
+    {
+      "id": "hospital-06-3",
+      "assetId": "furniture-wardrobe",
+      "bounds": {
+        "min": [
+          -2.25,
+          0,
+          1.225
+        ],
+        "max": [
+          -0.9500000000000002,
+          2.249999999999999,
+          1.875
+        ]
+      }
+    },
+    {
+      "id": "hospital-06-4",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          1.5749999999999997,
+          0,
+          0.5499999999999999
+        ],
+        "max": [
+          2.225,
+          2.1,
+          1.6500000000000004
+        ]
+      }
+    },
+    {
+      "id": "hospital-06-5",
+      "assetId": "lighting-floor-lamp",
+      "bounds": {
+        "min": [
+          0.09000000000000002,
+          0,
+          -2.36
+        ],
+        "max": [
+          0.51,
+          1.6499999999999992,
+          -1.94
+        ]
+      }
+    },
+    {
+      "id": "hospital-06-6",
+      "assetId": "lighting-strip-double",
+      "bounds": {
+        "min": [
+          0.5000000000000004,
+          2.48,
+          -1.325
+        ],
+        "max": [
+          1.4999999999999996,
+          2.6599999999999997,
+          -1.075
+        ]
+      }
+    },
+    {
+      "id": "hospital-06-7",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "hospital-06",
+    "theme": "hospital",
+    "name": "值班休息室",
+    "composition": "侧床、靠墙沙发与低桌构成有人生活过的角落。",
+    "reveal": "入口能��到正常休息区，床尾的柜子却面向墙壁。",
+    "intensity": 2,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "clinic",
+    "focus": [
+      1.2,
+      1,
+      -1.7
+    ],
+    "key": [
+      1,
+      2.45,
+      -1.2
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-bed-single",
+        "x": -1.7,
+        "z": -0.6,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-06-0"
+      },
+      {
+        "assetId": "furniture-sofa-two-seat",
+        "x": 1.25,
+        "z": -1.9,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-06-1"
+      },
+      {
+        "assetId": "furniture-coffee-table",
+        "x": 1.25,
+        "z": -0.75,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-06-2"
+      },
+      {
+        "assetId": "furniture-wardrobe",
+        "x": -1.6,
+        "z": 1.55,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-06-3"
+      },
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": 1.9,
+        "z": 1.1,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-06-4"
+      },
+      {
+        "assetId": "lighting-floor-lamp",
+        "x": 0.3,
+        "z": -2.15,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-06-5"
+      },
+      {
+        "assetId": "lighting-strip-double",
+        "x": 1,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "hospital-06-6"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "hospital-06-7"
+      }
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 162,
+    "triangles": 214570,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 18
+  }
+}

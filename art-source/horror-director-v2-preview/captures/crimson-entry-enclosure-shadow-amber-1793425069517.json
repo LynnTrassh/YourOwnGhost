@@ -1,0 +1,79 @@
+{
+  "seed": "1844070019",
+  "layer": 2,
+  "roomId": "room-8",
+  "planHash": "539ba00d",
+  "variant": "enclosure",
+  "view": "entry",
+  "camera": {
+    "position": [
+      30,
+      1.65,
+      -53.5
+    ],
+    "rotation": [
+      -0.08678164950168599,
+      0.8109310749352608,
+      0,
+      "YXZ"
+    ],
+    "fov": 72
+  },
+  "exposure": 1.1025,
+  "vhs": 0.35,
+  "flashlight": true,
+  "art": {
+    "roomId": "room-8",
+    "variant": "enclosure",
+    "source": [
+      25,
+      1,
+      -57.5
+    ],
+    "radius": 6,
+    "wallSlots": 1,
+    "lights": [
+      {
+        "uuid": "9faf33b8-7963-43d0-837d-bd281a56de9c",
+        "role": "focus"
+      },
+      {
+        "uuid": "afbc32db-3e2a-42d2-8ad4-f4be4b5b2dcd",
+        "role": "exit"
+      },
+      {
+        "uuid": "d2ef748d-486b-4a7e-ab97-cc01860d84d6",
+        "role": "focus"
+      }
+    ],
+    "additionalLights": 0,
+    "additionalGeometry": 0,
+    "disposed": false
+  },
+  "encounter": {
+    "mode": "full",
+    "active": false,
+    "eventId": "inspection-4",
+    "elapsed": 0.14,
+    "opacity": 0,
+    "disposed": false
+  },
+  "picture": "shadow-amber",
+  "inspectFrame": false,
+  "models": {
+    "requested": 135,
+    "loaded": 135,
+    "failed": [],
+    "pending": 0
+  },
+  "unchanged": {
+    "plan": true,
+    "colliders": true,
+    "otherWallSlots": true
+  },
+  "render": {
+    "calls": 308,
+    "triangles": 212624
+  },
+  "scope": "实际 world 静态美术预览；事件未推进；非真人试玩验收"
+}

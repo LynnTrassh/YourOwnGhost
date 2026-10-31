@@ -1,0 +1,327 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "ritual-05",
+  "models": 9,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "ritual-05-0",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -1.48,
+          0,
+          -0.6700000000000002
+        ],
+        "max": [
+          -1.02,
+          0.9599999999999997,
+          -0.22999999999999993
+        ]
+      }
+    },
+    {
+      "id": "ritual-05-1",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          1.02,
+          0,
+          -0.6699999999999999
+        ],
+        "max": [
+          1.48,
+          0.9599999999999997,
+          -0.23000000000000004
+        ]
+      }
+    },
+    {
+      "id": "ritual-05-2",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -0.77,
+          0,
+          -1.73
+        ],
+        "max": [
+          -0.33,
+          0.9599999999999997,
+          -1.27
+        ]
+      }
+    },
+    {
+      "id": "ritual-05-3",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          0.32999999999999996,
+          0,
+          0.3699999999999999
+        ],
+        "max": [
+          0.7700000000000001,
+          0.9599999999999997,
+          0.8300000000000001
+        ]
+      }
+    },
+    {
+      "id": "ritual-05-4",
+      "assetId": "furniture-offering-table",
+      "bounds": {
+        "min": [
+          -0.6499999999999999,
+          -5.551115123125783e-17,
+          -2.4250000000000003
+        ],
+        "max": [
+          0.6499999999999999,
+          0.8599999999999997,
+          -1.7750000000000001
+        ]
+      }
+    },
+    {
+      "id": "ritual-05-5",
+      "assetId": "furniture-shrine-cabinet",
+      "bounds": {
+        "min": [
+          -2.25,
+          0,
+          1.225
+        ],
+        "max": [
+          -0.9500000000000003,
+          2.249999999999999,
+          1.875
+        ]
+      }
+    },
+    {
+      "id": "ritual-05-6",
+      "assetId": "fixture-curtain-oxblood-velvet",
+      "bounds": {
+        "min": [
+          0.8000000000000017,
+          0.09999999999999987,
+          -2.4699999999999998
+        ],
+        "max": [
+          1.9999999999999982,
+          2.6499999999999932,
+          -2.37
+        ]
+      }
+    },
+    {
+      "id": "ritual-05-7",
+      "assetId": "lighting-pendant-bare-bulb",
+      "bounds": {
+        "min": [
+          -0.14,
+          2.48,
+          -0.59
+        ],
+        "max": [
+          0.13999999999999999,
+          2.8299999999999996,
+          -0.31000000000000005
+        ]
+      }
+    },
+    {
+      "id": "ritual-05-8",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "ritual-05",
+    "theme": "ritual",
+    "name": "空座仪式",
+    "composition": "四把椅子围绕空心，供桌退到远端。",
+    "reveal": "光照落在空处，玩家环顾才意识到所有座位都朝内。",
+    "intensity": 4,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "shrine",
+    "focus": [
+      0,
+      0.9,
+      -0.45
+    ],
+    "key": [
+      0,
+      2.45,
+      -0.45
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-dining-chair",
+        "x": -1.25,
+        "z": -0.45,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-05-0"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 1.25,
+        "z": -0.45,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-05-1"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": -0.55,
+        "z": -1.5,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-05-2"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 0.55,
+        "z": 0.6,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-05-3"
+      },
+      {
+        "assetId": "furniture-offering-table",
+        "x": 0,
+        "z": -2.1,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-05-4"
+      },
+      {
+        "assetId": "furniture-shrine-cabinet",
+        "x": -1.6,
+        "z": 1.55,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-05-5"
+      },
+      {
+        "assetId": "fixture-curtain-oxblood-velvet",
+        "x": 1.4,
+        "z": -2.42,
+        "yaw": 0,
+        "y": 0.1,
+        "group": "帷幕",
+        "id": "ritual-05-6"
+      },
+      {
+        "assetId": "lighting-pendant-bare-bulb",
+        "x": 0,
+        "z": -0.45,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "ritual-05-7"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "ritual-05-8"
+      }
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 168,
+    "triangles": 235652,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 37
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-performer-mask-smile-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-performer-mask-smile-v05.glb",
+  "sourceBytes": 8626192,
+  "runtimeBytes": 2881144,
+  "sourceSHA256": "5756a1f89776a3a7a2a75e8c57a9d1811c57339ca0d05047c6391128bffaeecb",
+  "runtimeSHA256": "eea07623854957c2c0b5c8e34d20769fb5558f7f1fcd5c4b567901401f7b160e",
+  "triangles": 17489,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4022776782512665,
+      -0.5,
+      -0.36008119583129883
+    ],
+    "max": [
+      0.4022776782512665,
+      0.5,
+      0.36008119583129883
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.12068330347537994,
+      0,
+      -0.10802435874938965
+    ],
+    "max": [
+      0.12068330347537994,
+      0.3,
+      0.10802435874938965
+    ],
+    "size": [
+      0.24136660695075987,
+      0.3,
+      0.2160487174987793
+    ]
+  },
+  "scale": 0.3,
+  "scaleXYZ": [
+    0.3,
+    0.3,
+    0.3
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "555a245d3f62c93468056f5dbc8376fc6c8da48666341dca24a1ee85b56fa233"
+}

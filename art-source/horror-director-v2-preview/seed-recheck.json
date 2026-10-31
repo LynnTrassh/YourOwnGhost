@@ -1,0 +1,917 @@
+{
+  "date": "2026-10-31",
+  "commit": "40c4afc1f165efc2d0bfafe95028d255c0c88e3a",
+  "note": "Working tree includes parallel room-presets.js additions. No changes to this file by horror task.",
+  "roomPresetSHA256": "7d44aefed1dce8c7aaf872a674107e8be43fc084340840a61436b01186057bac",
+  "options": {
+    "catEnabled": true,
+    "preferences": [
+      "like.cat",
+      "fear.doll"
+    ],
+    "threatBehaviorId": null,
+    "activeEncounters": false
+  },
+  "repeatEqual": true,
+  "results": [
+    {
+      "hash": "b446fd22",
+      "valid": true,
+      "exitReachable": true,
+      "room8": {
+        "id": "room-8",
+        "name": "房间 8",
+        "type": "square",
+        "rotation": 2,
+        "gridCenter": [
+          9,
+          -18
+        ],
+        "center": [
+          9,
+          -18
+        ],
+        "cells": [
+          [
+            11,
+            -16
+          ],
+          [
+            11,
+            -15
+          ],
+          [
+            11,
+            -14
+          ],
+          [
+            12,
+            -16
+          ],
+          [
+            12,
+            -15
+          ],
+          [
+            12,
+            -14
+          ],
+          [
+            13,
+            -16
+          ],
+          [
+            13,
+            -15
+          ],
+          [
+            13,
+            -14
+          ],
+          [
+            8,
+            -16
+          ],
+          [
+            8,
+            -15
+          ],
+          [
+            8,
+            -14
+          ],
+          [
+            9,
+            -16
+          ],
+          [
+            9,
+            -15
+          ],
+          [
+            9,
+            -14
+          ],
+          [
+            10,
+            -16
+          ],
+          [
+            10,
+            -15
+          ],
+          [
+            10,
+            -14
+          ],
+          [
+            5,
+            -16
+          ],
+          [
+            5,
+            -15
+          ],
+          [
+            5,
+            -14
+          ],
+          [
+            6,
+            -16
+          ],
+          [
+            6,
+            -15
+          ],
+          [
+            6,
+            -14
+          ],
+          [
+            7,
+            -16
+          ],
+          [
+            7,
+            -15
+          ],
+          [
+            7,
+            -14
+          ],
+          [
+            11,
+            -19
+          ],
+          [
+            11,
+            -18
+          ],
+          [
+            11,
+            -17
+          ],
+          [
+            12,
+            -19
+          ],
+          [
+            12,
+            -18
+          ],
+          [
+            12,
+            -17
+          ],
+          [
+            13,
+            -19
+          ],
+          [
+            13,
+            -18
+          ],
+          [
+            13,
+            -17
+          ],
+          [
+            8,
+            -19
+          ],
+          [
+            8,
+            -18
+          ],
+          [
+            8,
+            -17
+          ],
+          [
+            9,
+            -19
+          ],
+          [
+            9,
+            -18
+          ],
+          [
+            9,
+            -17
+          ],
+          [
+            10,
+            -19
+          ],
+          [
+            10,
+            -18
+          ],
+          [
+            10,
+            -17
+          ],
+          [
+            5,
+            -19
+          ],
+          [
+            5,
+            -18
+          ],
+          [
+            5,
+            -17
+          ],
+          [
+            6,
+            -19
+          ],
+          [
+            6,
+            -18
+          ],
+          [
+            6,
+            -17
+          ],
+          [
+            7,
+            -19
+          ],
+          [
+            7,
+            -18
+          ],
+          [
+            7,
+            -17
+          ],
+          [
+            11,
+            -22
+          ],
+          [
+            11,
+            -21
+          ],
+          [
+            11,
+            -20
+          ],
+          [
+            12,
+            -22
+          ],
+          [
+            12,
+            -21
+          ],
+          [
+            12,
+            -20
+          ],
+          [
+            13,
+            -22
+          ],
+          [
+            13,
+            -21
+          ],
+          [
+            13,
+            -20
+          ],
+          [
+            8,
+            -22
+          ],
+          [
+            8,
+            -21
+          ],
+          [
+            8,
+            -20
+          ],
+          [
+            9,
+            -22
+          ],
+          [
+            9,
+            -21
+          ],
+          [
+            9,
+            -20
+          ],
+          [
+            10,
+            -22
+          ],
+          [
+            10,
+            -21
+          ],
+          [
+            10,
+            -20
+          ],
+          [
+            5,
+            -22
+          ],
+          [
+            5,
+            -21
+          ],
+          [
+            5,
+            -20
+          ],
+          [
+            6,
+            -22
+          ],
+          [
+            6,
+            -21
+          ],
+          [
+            6,
+            -20
+          ],
+          [
+            7,
+            -22
+          ],
+          [
+            7,
+            -21
+          ],
+          [
+            7,
+            -20
+          ]
+        ],
+        "modules": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1
+          ]
+        ],
+        "tint": 0.7318692761473358,
+        "interior": {
+          "type": "staggered",
+          "rotation": 0,
+          "presetId": "nursery",
+          "obstacleIds": [
+            "room-8-interior-0",
+            "room-8-interior-1",
+            "room-8-interior-2",
+            "room-8-interior-3",
+            "room-8-interior-4",
+            "room-8-interior-5",
+            "room-8-interior-6",
+            "room-8-interior-7",
+            "room-8-interior-8",
+            "room-8-interior-9",
+            "room-8-dressing-0-play-0",
+            "room-8-dressing-0-play-1",
+            "room-8-dressing-0-play-2"
+          ],
+          "completeness": {
+            "preserved": true,
+            "reason": "事件、威胁或关联观察空间保持既有占位"
+          },
+          "finalDressing": {
+            "version": 2,
+            "roomId": "room-8",
+            "before": 10,
+            "target": 11,
+            "placed": 13,
+            "groups": [
+              {
+                "id": "room-8-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-8-dressing-0-play-0",
+                  "room-8-dressing-0-play-1",
+                  "room-8-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": 7.5,
+                  "z": -25,
+                  "nx": -1,
+                  "nz": 0
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "missingFunctionalGroup": false
+          }
+        }
+      },
+      "room8Events": [
+        {
+          "instanceId": "B25-room-8",
+          "definitionId": "B25",
+          "roomId": "room-8",
+          "role": "rest",
+          "roomClass": "quiet",
+          "readiness": "greybox",
+          "focus": {
+            "x": 22.25,
+            "z": -26.666666666666668,
+            "y": 1.05
+          },
+          "observation": {
+            "x": 20.5,
+            "z": -26.666666666666668,
+            "y": 1.65
+          },
+          "entryDoorId": "door-7",
+          "quietVariant": "tea",
+          "quietLabel": "未喝完的茶",
+          "quietNarration": true,
+          "fixture": {
+            "id": "B25-room-8-shelf",
+            "kind": "quiet-shelf",
+            "roomId": "room-8",
+            "height": 0.93,
+            "minX": 22.14,
+            "maxX": 22.36,
+            "minZ": -27.416666666666668,
+            "maxZ": -25.916666666666668
+          },
+          "yaw": -1.5707963267948966
+        }
+      ]
+    },
+    {
+      "hash": "539ba00d",
+      "valid": true,
+      "exitReachable": true,
+      "room8": {
+        "id": "room-8",
+        "name": "房间 8",
+        "type": "u",
+        "rotation": 0,
+        "gridCenter": [
+          18,
+          -36
+        ],
+        "center": [
+          16,
+          -36
+        ],
+        "cells": [
+          [
+            14,
+            -40
+          ],
+          [
+            14,
+            -39
+          ],
+          [
+            14,
+            -38
+          ],
+          [
+            15,
+            -40
+          ],
+          [
+            15,
+            -39
+          ],
+          [
+            15,
+            -38
+          ],
+          [
+            16,
+            -40
+          ],
+          [
+            16,
+            -39
+          ],
+          [
+            16,
+            -38
+          ],
+          [
+            20,
+            -40
+          ],
+          [
+            20,
+            -39
+          ],
+          [
+            20,
+            -38
+          ],
+          [
+            21,
+            -40
+          ],
+          [
+            21,
+            -39
+          ],
+          [
+            21,
+            -38
+          ],
+          [
+            22,
+            -40
+          ],
+          [
+            22,
+            -39
+          ],
+          [
+            22,
+            -38
+          ],
+          [
+            14,
+            -37
+          ],
+          [
+            14,
+            -36
+          ],
+          [
+            14,
+            -35
+          ],
+          [
+            15,
+            -37
+          ],
+          [
+            15,
+            -36
+          ],
+          [
+            15,
+            -35
+          ],
+          [
+            16,
+            -37
+          ],
+          [
+            16,
+            -36
+          ],
+          [
+            16,
+            -35
+          ],
+          [
+            20,
+            -37
+          ],
+          [
+            20,
+            -36
+          ],
+          [
+            20,
+            -35
+          ],
+          [
+            21,
+            -37
+          ],
+          [
+            21,
+            -36
+          ],
+          [
+            21,
+            -35
+          ],
+          [
+            22,
+            -37
+          ],
+          [
+            22,
+            -36
+          ],
+          [
+            22,
+            -35
+          ],
+          [
+            14,
+            -34
+          ],
+          [
+            14,
+            -33
+          ],
+          [
+            14,
+            -32
+          ],
+          [
+            15,
+            -34
+          ],
+          [
+            15,
+            -33
+          ],
+          [
+            15,
+            -32
+          ],
+          [
+            16,
+            -34
+          ],
+          [
+            16,
+            -33
+          ],
+          [
+            16,
+            -32
+          ],
+          [
+            17,
+            -34
+          ],
+          [
+            17,
+            -33
+          ],
+          [
+            17,
+            -32
+          ],
+          [
+            18,
+            -34
+          ],
+          [
+            18,
+            -33
+          ],
+          [
+            18,
+            -32
+          ],
+          [
+            19,
+            -34
+          ],
+          [
+            19,
+            -33
+          ],
+          [
+            19,
+            -32
+          ],
+          [
+            20,
+            -34
+          ],
+          [
+            20,
+            -33
+          ],
+          [
+            20,
+            -32
+          ],
+          [
+            21,
+            -34
+          ],
+          [
+            21,
+            -33
+          ],
+          [
+            21,
+            -32
+          ],
+          [
+            22,
+            -34
+          ],
+          [
+            22,
+            -33
+          ],
+          [
+            22,
+            -32
+          ]
+        ],
+        "modules": [
+          [
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "tint": 0.203585437964648,
+        "interior": {
+          "type": "empty",
+          "rotation": 3,
+          "presetId": "shrine",
+          "obstacleIds": [
+            "room-8-dressing-0-offering-0",
+            "room-8-dressing-0-offering-1",
+            "room-8-dressing-0-offering-2",
+            "room-8-dressing-1-keeping-0",
+            "room-8-dressing-1-keeping-1",
+            "room-8-dressing-2-waiting-0",
+            "room-8-dressing-2-waiting-1",
+            "room-8-dressing-2-waiting-2"
+          ],
+          "completeness": {
+            "preserved": true,
+            "reason": "事件、威胁或关联观察空间保持既有占位"
+          },
+          "finalDressing": {
+            "version": 2,
+            "roomId": "room-8",
+            "before": 0,
+            "target": 8,
+            "placed": 8,
+            "groups": [
+              {
+                "id": "room-8-dressing-0-offering",
+                "recipeId": "offering",
+                "items": [
+                  "room-8-dressing-0-offering-0",
+                  "room-8-dressing-0-offering-1",
+                  "room-8-dressing-0-offering-2"
+                ],
+                "anchor": {
+                  "x": 31.666666666666668,
+                  "z": -57.5,
+                  "nx": 0,
+                  "nz": -1
+                }
+              },
+              {
+                "id": "room-8-dressing-1-keeping",
+                "recipeId": "keeping",
+                "items": [
+                  "room-8-dressing-1-keeping-0",
+                  "room-8-dressing-1-keeping-1"
+                ],
+                "anchor": {
+                  "x": 25,
+                  "z": -67.5,
+                  "nx": 0,
+                  "nz": -1
+                }
+              },
+              {
+                "id": "room-8-dressing-2-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-8-dressing-2-waiting-0",
+                  "room-8-dressing-2-waiting-1",
+                  "room-8-dressing-2-waiting-2"
+                ],
+                "anchor": {
+                  "x": 35,
+                  "z": -67.5,
+                  "nx": 0,
+                  "nz": -1
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "missingFunctionalGroup": false
+          }
+        }
+      },
+      "room8Events": [
+        {
+          "instanceId": "RI02-room-8",
+          "definitionId": "RI02",
+          "roomId": "room-8",
+          "role": "major",
+          "roomClass": "major",
+          "readiness": "greybox",
+          "focus": {
+            "x": 26.666666666666668,
+            "z": -56.66666666666667,
+            "y": 1.25
+          },
+          "observation": {
+            "x": 30,
+            "z": -54,
+            "y": 1.65
+          },
+          "entryDoorId": "door-7",
+          "arrangement": {
+            "forward": {
+              "x": 0,
+              "z": -1
+            },
+            "right": {
+              "x": 1,
+              "z": 0
+            },
+            "places": {
+              "empty": {
+                "x": 26.666666666666668,
+                "z": -55.26666666666667
+              },
+              "far": {
+                "x": 26.666666666666668,
+                "z": -58.06666666666667
+              },
+              "left": {
+                "x": 25.01666666666667,
+                "z": -56.66666666666667
+              },
+              "right": {
+                "x": 28.316666666666666,
+                "z": -56.66666666666667
+              }
+            }
+          },
+          "likedObject": "cat"
+        }
+      ]
+    }
+  ]
+}

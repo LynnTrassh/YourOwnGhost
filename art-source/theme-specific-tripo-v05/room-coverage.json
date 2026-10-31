@@ -1,0 +1,569 @@
+{
+  "source": "src/art/themed-room-library.js; user-confirmed six themes/eight rooms from 设计三间恐怖房间构图",
+  "rooms": [
+    {
+      "id": "hospital-01",
+      "theme": "hospital",
+      "name": "夜间分诊室",
+      "requiredModels": [
+        "theme-hospital-triage-counter-v05",
+        "prop-rotary-phone-v01",
+        "scene-medicine-bottles-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hospital-02",
+      "theme": "hospital",
+      "name": "末班候诊室",
+      "requiredModels": [
+        "theme-waiting-bench-v05",
+        "scene-wheelchair-v03",
+        "scene-calendar-board-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hospital-03",
+      "theme": "hospital",
+      "name": "隔离病房",
+      "requiredModels": [
+        "theme-ecg-cart-v05",
+        "theme-privacy-curtain-v05",
+        "scene-hospital-bed-v03",
+        "prop-iv-stand-v01",
+        "scene-pillow-pair-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hospital-04",
+      "theme": "hospital",
+      "name": "检查室",
+      "requiredModels": [
+        "theme-exam-lamp-v05",
+        "theme-ecg-cart-v05",
+        "scene-stool-metal-v03",
+        "prop-medical-cart-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hospital-05",
+      "theme": "hospital",
+      "name": "夜班药房",
+      "requiredModels": [
+        "theme-pharmacy-drawers-v05",
+        "prop-medicine-tray-v01",
+        "scene-medicine-bottles-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hospital-06",
+      "theme": "hospital",
+      "name": "值班休息室",
+      "requiredModels": [
+        "prop-hanging-coat-v01",
+        "prop-tea-tray-v01",
+        "scene-folded-linen-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hospital-07",
+      "theme": "hospital",
+      "name": "病案封存库",
+      "requiredModels": [
+        "prop-archive-boxes-v01",
+        "prop-paper-wave-v01",
+        "scene-typewriter-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hospital-08",
+      "theme": "hospital",
+      "name": "遗留物保管室",
+      "requiredModels": [
+        "prop-suitcase-v01",
+        "prop-shoes-pair-v01",
+        "scene-clothes-hanging-dress-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "park-01",
+      "theme": "park",
+      "name": "闭园售票室",
+      "requiredModels": [
+        "theme-ticket-counter-v05",
+        "theme-ticket-register-v05",
+        "prop-wall-clock-v01",
+        "prop-rotary-phone-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "park-02",
+      "theme": "park",
+      "name": "无人领奖台",
+      "requiredModels": [
+        "theme-award-podium-v05",
+        "theme-ceremony-lectern-v05",
+        "theme-trophy-cup-v05",
+        "theme-prize-display-v05",
+        "theme-theatre-stage-v05",
+        "scene-red-drapery-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "park-03",
+      "theme": "park",
+      "name": "雨天手工教室",
+      "requiredModels": [
+        "theme-arcade-cabinet-v05",
+        "scene-toy-blocks-v03",
+        "prop-toy-train-v01",
+        "prop-toy-bench-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "park-04",
+      "theme": "park",
+      "name": "走失儿童等候室",
+      "requiredModels": [
+        "scene-teddy-bear-v03",
+        "scene-tricycle-v03",
+        "scene-pram-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "park-05",
+      "theme": "park",
+      "name": "演员化妆间",
+      "requiredModels": [
+        "theme-performer-mask-v05",
+        "prop-clothes-rack-v01",
+        "scene-clothes-hanging-dress-v03",
+        "prop-felt-hat-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "park-06",
+      "theme": "park",
+      "name": "旧奖品仓",
+      "requiredModels": [
+        "theme-trophy-cup-v05",
+        "theme-prize-display-v05",
+        "theme-carousel-horse-v05",
+        "scene-teddy-bear-v03",
+        "prop-rocking-horse-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "park-07",
+      "theme": "park",
+      "name": "闭园员工室",
+      "requiredModels": [
+        "theme-arcade-cabinet-v05",
+        "prop-wood-radio-v01",
+        "scene-electric-fan-v03",
+        "scene-coat-raincoat-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "park-08",
+      "theme": "park",
+      "name": "帷幕后等候厅",
+      "requiredModels": [
+        "theme-ceremony-lectern-v05",
+        "theme-carousel-horse-v05",
+        "theme-theatre-stage-v05",
+        "scene-red-drapery-v03",
+        "prop-hanging-drape-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "office-01",
+      "theme": "office",
+      "name": "无人前台",
+      "requiredModels": [
+        "theme-office-reception-v05",
+        "theme-water-dispenser-v05",
+        "prop-rotary-phone-v01",
+        "scene-key-tray-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "office-02",
+      "theme": "office",
+      "name": "夜班工位",
+      "requiredModels": [
+        "theme-office-chair-v05",
+        "prop-computer-desk-v01",
+        "prop-cable-wall-v01",
+        "prop-cable-ceiling-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "office-03",
+      "theme": "office",
+      "name": "裁撤会议室",
+      "requiredModels": [
+        "theme-conference-table-v05",
+        "prop-tea-tray-v01",
+        "scene-reel-projector-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "office-04",
+      "theme": "office",
+      "name": "封存档案室",
+      "requiredModels": [
+        "theme-photocopier-v05",
+        "prop-archive-stack-v01",
+        "prop-archive-boxes-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "office-05",
+      "theme": "office",
+      "name": "合伙人办公室",
+      "requiredModels": [
+        "theme-office-chair-v05",
+        "scene-writing-bureau-v03",
+        "scene-desk-organizer-v03",
+        "prop-rotary-phone-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "office-06",
+      "theme": "office",
+      "name": "收发登记室",
+      "requiredModels": [
+        "theme-photocopier-v05",
+        "theme-mail-sorting-rack-v05",
+        "scene-typewriter-v03",
+        "prop-paper-wave-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "office-07",
+      "theme": "office",
+      "name": "离职面谈室",
+      "requiredModels": [
+        "theme-office-chair-v05",
+        "theme-water-dispenser-v05",
+        "prop-hanging-coat-v01",
+        "prop-suitcase-v01",
+        "scene-desk-organizer-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "office-08",
+      "theme": "office",
+      "name": "停用阅档室",
+      "requiredModels": [
+        "prop-books-stack-v01",
+        "prop-archive-boxes-v01",
+        "scene-calendar-board-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "home-01",
+      "theme": "home",
+      "name": "独居卧室",
+      "requiredModels": [
+        "prop-clothes-rack-v01",
+        "prop-shoes-pair-v01",
+        "scene-pillow-pair-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "home-02",
+      "theme": "home",
+      "name": "旧客厅",
+      "requiredModels": [
+        "prop-tv-console-v01",
+        "scene-sofa-linen-v03",
+        "scene-record-player-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "home-03",
+      "theme": "home",
+      "name": "双人儿童房",
+      "requiredModels": [
+        "prop-toy-bench-v01",
+        "scene-teddy-bear-v03",
+        "prop-hanging-mobile-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "home-04",
+      "theme": "home",
+      "name": "家中书房",
+      "requiredModels": [
+        "scene-typewriter-v03",
+        "scene-desk-organizer-v03",
+        "prop-books-stack-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "home-05",
+      "theme": "home",
+      "name": "祖母起居室",
+      "requiredModels": [
+        "theme-sewing-basket-v05",
+        "scene-rocking-chair-v03",
+        "scene-sewing-machine-v03",
+        "scene-music-box-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "home-06",
+      "theme": "home",
+      "name": "家庭餐室",
+      "requiredModels": [
+        "theme-dining-table-v05",
+        "theme-china-cabinet-v05",
+        "prop-tea-tray-v01",
+        "scene-sideboard-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "home-07",
+      "theme": "home",
+      "name": "旧物储藏间",
+      "requiredModels": [
+        "prop-cardboard-box-v01",
+        "prop-suitcase-v01",
+        "prop-covered-shape-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "home-08",
+      "theme": "home",
+      "name": "被遮住的婚房",
+      "requiredModels": [
+        "scene-clothes-hanging-dress-v03",
+        "prop-hanging-drape-v01",
+        "scene-pillow-pair-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hotel-01",
+      "theme": "hotel",
+      "name": "深夜接待间",
+      "requiredModels": [
+        "theme-hotel-reception-v05",
+        "theme-hotel-key-rack-v05",
+        "theme-hotel-service-bell-v05",
+        "prop-rotary-phone-v01",
+        "prop-pendulum-clock-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hotel-02",
+      "theme": "hotel",
+      "name": "经济单人间",
+      "requiredModels": [
+        "theme-hotel-luggage-rack-v05",
+        "prop-suitcase-v01",
+        "prop-hanging-coat-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hotel-03",
+      "theme": "hotel",
+      "name": "无人双床间",
+      "requiredModels": [
+        "theme-hotel-luggage-rack-v05",
+        "scene-pillow-pair-v03",
+        "scene-folded-linen-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hotel-04",
+      "theme": "hotel",
+      "name": "蜜月套房",
+      "requiredModels": [
+        "scene-sofa-linen-v03",
+        "prop-tea-tray-v01",
+        "scene-red-drapery-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hotel-05",
+      "theme": "hotel",
+      "name": "换季布草间",
+      "requiredModels": [
+        "theme-linen-cart-v05",
+        "scene-laundry-basket-v03",
+        "scene-folded-linen-v03",
+        "scene-mop-bucket-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hotel-06",
+      "theme": "hotel",
+      "name": "退房行李室",
+      "requiredModels": [
+        "theme-luggage-trolley-v05",
+        "prop-suitcase-v01",
+        "prop-felt-hat-v01",
+        "scene-umbrella-stand-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hotel-07",
+      "theme": "hotel",
+      "name": "楼层休息厅",
+      "requiredModels": [
+        "scene-armchair-wingback-v03",
+        "scene-sideboard-v03",
+        "prop-tea-cart-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "hotel-08",
+      "theme": "hotel",
+      "name": "长住客房",
+      "requiredModels": [
+        "theme-hotel-luggage-rack-v05",
+        "prop-crt-tv-v01",
+        "prop-clothes-rack-v01",
+        "scene-wall-coat-pegs-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "ritual-01",
+      "theme": "ritual",
+      "name": "单人祈祷室",
+      "requiredModels": [
+        "theme-ritual-idol-v05",
+        "theme-offering-bowl-v05",
+        "scene-incense-burner-v03",
+        "prop-candlesticks-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "ritual-02",
+      "theme": "ritual",
+      "name": "双像对视室",
+      "requiredModels": [
+        "theme-ritual-idol-v05",
+        "scene-red-drapery-v03",
+        "scene-ritual-bell-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "ritual-03",
+      "theme": "ritual",
+      "name": "守夜席",
+      "requiredModels": [
+        "theme-ritual-lantern-v05",
+        "theme-prayer-cushion-v05",
+        "scene-candelabrum-v03",
+        "prop-dried-flowers-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "ritual-04",
+      "theme": "ritual",
+      "name": "祭器保管室",
+      "requiredModels": [
+        "theme-offering-bowl-v05",
+        "theme-ritual-vessel-set-v05",
+        "scene-incense-burner-v03",
+        "scene-ritual-bell-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "ritual-05",
+      "theme": "ritual",
+      "name": "空座仪式",
+      "requiredModels": [
+        "theme-prayer-cushion-v05",
+        "scene-chair-spindle-v03",
+        "scene-chair-upholstered-v03",
+        "scene-rag-doll-intact-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "ritual-06",
+      "theme": "ritual",
+      "name": "旧宅神龛",
+      "requiredModels": [
+        "theme-ritual-idol-v05",
+        "prop-candle-altar-v01",
+        "prop-portrait-frame-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "ritual-07",
+      "theme": "ritual",
+      "name": "血色前室",
+      "requiredModels": [
+        "theme-ritual-lantern-v05",
+        "scene-red-drapery-v03",
+        "scene-candelabrum-v03"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    },
+    {
+      "id": "ritual-08",
+      "theme": "ritual",
+      "name": "背向神柜长室",
+      "requiredModels": [
+        "theme-offering-bowl-v05",
+        "prop-dried-flowers-v01",
+        "prop-candlesticks-v01"
+      ],
+      "integrationStatus": "awaiting-model-QA-and-room-owner-integration"
+    }
+  ],
+  "ending": {
+    "intent": "一个人在床上睡觉",
+    "assetId": "theme-sleeping-person-v05",
+    "integrationStatus": "awaiting-model-and-ending-owner"
+  }
+}

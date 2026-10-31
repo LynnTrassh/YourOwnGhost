@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "source": "src/main.js:260 + configureInteriorFlashlight",
+  "angle": 0.4487989505128276,
+  "halfAngleDegrees": 25.714285714285715,
+  "intensity": 24,
+  "distance": 17,
+  "penumbra": 0.22,
+  "decay": 1.65
+}

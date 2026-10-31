@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-31",
+  "intent": "用户纠正：鬼脸与黑影近景，不是房间布局",
+  "briefs": [
+    {
+      "id": "ghost-bone",
+      "prompt": "Use case: stylized-concept. Asset type: fullscreen horror game monster encounter FLASH FRAME, NOT environment concept art. Generate ONE landscape 16:9 opaque image. An extreme closeup of a terrifying ORIGINAL GHOST FACE directly confronting the viewer, enormous face fills 85% of image height and center 65% of width, forehead and chin visible, almost pressed against the lens. Thin deathly bone-white face, irregular dark sunken eyes without glowing pupils, impossibly stretched open black mouth, uneven wet black wisps framing cheeks. Disturbingly human but no recognizable person or existing fictional character. The facial proportions feel wrong. Black empty background with no setting. Dirty ivory and pale desaturated cyan highlights, deep charcoal shadows. Harsh oblique light reveals coarse skin texture and analog photographic grain; strong immediately readable eyes and mouth for a 50ms shock insert. No gore, no exposed wounds. NO room, NO corridor, NO furniture, NO architecture, NO landscape, NO distant figure, NO mirror frame. No text, no logo, no watermark, no border, no collage. Face is the whole image, never a scene layout."
+    },
+    {
+      "id": "shadow-cyan",
+      "prompt": "Use case: stylized-concept. Asset type: fullscreen horror game monster encounter FLASH FRAME, NOT environment art. ONE landscape 16:9 opaque image. An enormous pitch-black head and narrow shoulders looms inches from viewer, near-frontal and slightly tilted, upper torso cut off at bottom. Its head is human-ish but too long, face entirely featureless darkness except two tiny irregular dull pale slits deep inside. Head fills 80% image height. Two long almost-human fingers rise out of black at the extreme sides of the face, close to lens. Black body merges into a charcoal void, very thin sickly cold cyan and faint green rim light separates jagged head/shoulders from background. One strong looming silhouette, instantly readable on a short flash. Grainy disturbing photographic encounter, not polished fantasy concept art. Centered crop-safe face, threatening intimate distance. No blood or wounds. NO room, NO corridor, NO doors, NO furniture, NO buildings, NO scenery, NO floor. No text, logo, watermark, borders, contact sheets, or collage."
+    },
+    {
+      "id": "ghost-magenta",
+      "prompt": "Use case: stylized-concept. Asset type: fullscreen horror game jump apparition insert, ONE landscape 16:9 opaque image, not a room illustration. A huge original GHOST FACE fills the frame at touching distance: wide asymmetrical black eye sockets, pale stretched waxy skin, sharply tilted head, narrow teeth barely visible behind parted mouth. Most of face is deep purple-black, a dirty magenta-red sidelight reveals just cheek, nose bridge and brow, small cold gray light on the opposite eye. Face occupying central 70% width and 90% height, retain forehead and chin for cropping. Slight broken photographic double-exposure contour trails just a few pixels along one edge, otherwise hard readable facial focus, gritty film exposure. Background completely black with nothing in it. The shock is the face, not a location. Original creature, no known franchise character, no recognizable real person. No gore or wounds. Absolutely NO room, corridor, furniture, scenery, landscape, architectural framing, mirror or distant figure. No text, logo, watermark, border, multi-panel image."
+    },
+    {
+      "id": "shadow-amber",
+      "prompt": "Use case: stylized-concept. Asset type: horror game fullscreen MONSTER FLASH INSERT, ONE landscape 16:9 opaque image. Very close head-and-shoulders BLACK SHADOW apparition bent toward the camera. Head grotesquely narrow with jaw opening as a rough black slit edged in dim dirty ochre; one uneven eye socket catches a fleck of pale yellow, the other disappears. Dark long hair or torn shadow fibres break the outer contour. Head is enormous and occupies 80% image height, shoulders extend beyond both bottom corners. Nothing below shoulders is visible. A desaturated amber and dirty olive edge light slices through grain to define this looming black mass. Mostly charcoal black with sparse spectral amber, instantly legible ominous silhouette; raw analog photographic horror, not a fantasy painting. Featureless empty black background. No gore, no blood, no existing IP character. NO environmental scene, NO room, NO floor, NO doors, NO corridor, NO furniture, NO landscape. No text, logo, watermark, border, or collage."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "seed": "1844070019",
+  "layer": 2,
+  "roomId": "room-1",
+  "theme": "archive",
+  "planHash": "fd3a8228",
+  "mode": "1",
+  "mood": {
+    "id": "split",
+    "fixtures": 3,
+    "roles": [
+      "wall",
+      "accent",
+      "ceiling"
+    ],
+    "bulbs": 2
+  },
+  "flashlight": false,
+  "view": "notice",
+  "camera": [
+    -2.220446049250313e-16,
+    1.65,
+    -11.2
+  ],
+  "target": [
+    0,
+    1.1,
+    -13.333333333333334
+  ],
+  "safe": true,
+  "drawCalls": 410,
+  "triangles": 155033,
+  "lights": [
+    {
+      "quality": true,
+      "ambient": 0.52,
+      "activeKeys": [
+        {
+          "roomId": "room-1",
+          "fixture": "lighting-pendant-bare-bulb",
+          "intensity": 23.1,
+          "shadow": 1024
+        }
+      ],
+      "activeAccents": 0,
+      "allocatedShadows": 1
+    }
+  ]
+}

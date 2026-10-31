@@ -1,0 +1,4940 @@
+{
+  "date": "2026-10-31",
+  "note": "Physical furnishing footprint only; excludes wall decor, props on surfaces and event proxies. These ratios are not target density.",
+  "catalogCount": 82,
+  "prefabCounts": {
+    "prop-pendulum-clock-v01": 1,
+    "prop-clothes-rack-v01": 1,
+    "prop-suitcase-v01": 1,
+    "prop-washstand-v01": 1,
+    "prop-iv-stand-v01": 1,
+    "prop-folding-screen-v01": 1,
+    "prop-cradle-v01": 1,
+    "prop-rocking-horse-v01": 1,
+    "prop-tv-console-v01": 1,
+    "prop-computer-desk-v01": 1,
+    "prop-archive-stack-v01": 1,
+    "prop-tea-cart-v01": 1,
+    "prop-toy-bench-v01": 1,
+    "prop-medical-cart-v01": 1,
+    "prop-candle-altar-v01": 1,
+    "vanity": 1,
+    "bed": 1,
+    "nightstand": 1,
+    "dresser": 1,
+    "wardrobe": 1,
+    "bookcase": 1,
+    "sofa": 1,
+    "low-table": 1,
+    "display-cabinet": 1,
+    "toy-chest": 1,
+    "small-table": 1,
+    "toy-shelf": 1,
+    "exam-cot": 1,
+    "instrument-cart": 1,
+    "medicine-cabinet": 1,
+    "file-cabinet": 1,
+    "writing-desk": 1,
+    "copy-table": 1,
+    "archive-shelf": 1,
+    "filing-cabinet": 1,
+    "offering-table": 1,
+    "kneeler": 1,
+    "reliquary": 1,
+    "armchair": 1,
+    "dining-chair": 1,
+    "floor-lamp": 1
+  },
+  "results": [
+    {
+      "seed": "1844070019",
+      "layer": 1,
+      "hash": "cf1c7ab5",
+      "valid": true,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "preset": "bedroom",
+          "area": 125.00000000000001,
+          "furniture": 3,
+          "uniqueModels": 3,
+          "counts": {
+            "furniture-bed-single": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1
+          },
+          "furnitureFootprint": 3.363333333333333,
+          "coverageRatio": 0.02690666666666666,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "bedroom",
+            "before": 2,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 2,
+            "groups": [],
+            "shortfall": 11,
+            "rejected": 0,
+            "reason": "固定出生房保持既有布局",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-1",
+          "preset": "shrine",
+          "area": 200.00000000000003,
+          "furniture": 15,
+          "uniqueModels": 8,
+          "counts": {
+            "furniture-offering-table": 1,
+            "furniture-kneeling-bench": 4,
+            "prop-candle-altar-v01": 1,
+            "furniture-shrine-cabinet": 2,
+            "furniture-bookcase": 1,
+            "furniture-dining-chair": 3,
+            "furniture-coffee-table": 2,
+            "furniture-writing-desk": 1
+          },
+          "furnitureFootprint": 8.15873333333334,
+          "coverageRatio": 0.04079366666666669,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-1",
+            "before": 2,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 15,
+            "groups": [
+              {
+                "id": "room-1-dressing-0-offering",
+                "recipeId": "offering",
+                "items": [
+                  "room-1-dressing-0-offering-0",
+                  "room-1-dressing-0-offering-1",
+                  "room-1-dressing-0-offering-2"
+                ],
+                "anchor": {
+                  "x": -2.5,
+                  "z": -13.333333333333334,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-1-dressing-1-keeping",
+                "recipeId": "keeping",
+                "items": [
+                  "room-1-dressing-1-keeping-0",
+                  "room-1-dressing-1-keeping-1"
+                ],
+                "anchor": {
+                  "x": 7.5,
+                  "z": -20,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-1-dressing-2-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-1-dressing-2-waiting-0",
+                  "room-1-dressing-2-waiting-1",
+                  "room-1-dressing-2-waiting-2"
+                ],
+                "anchor": {
+                  "x": 7.5,
+                  "z": -10,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-1-dressing-3-vigil",
+                "recipeId": "vigil",
+                "items": [
+                  "room-1-dressing-3-vigil-0",
+                  "room-1-dressing-3-vigil-1",
+                  "room-1-dressing-3-vigil-2"
+                ],
+                "anchor": {
+                  "x": -5,
+                  "z": -20.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-1-dressing-4-records",
+                "recipeId": "records",
+                "items": [
+                  "room-1-dressing-4-records-0",
+                  "room-1-dressing-4-records-1"
+                ],
+                "anchor": {
+                  "x": -6.666666666666667,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 6,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-2",
+          "preset": "bedroom",
+          "area": 175.00000000000003,
+          "furniture": 12,
+          "uniqueModels": 11,
+          "counts": {
+            "bed-low-divan-v01": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 2,
+            "furniture-bookcase": 1,
+            "prop-clothes-rack-v01": 1,
+            "prop-suitcase-v01": 1,
+            "vanity-oval-mirror-v01": 1,
+            "prop-washstand-v01": 1,
+            "furniture-armchair-curved": 1
+          },
+          "furnitureFootprint": 7.60349999999999,
+          "coverageRatio": 0.043448571428571364,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-2",
+            "before": 0,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 12,
+            "groups": [
+              {
+                "id": "room-2-dressing-0-sleep",
+                "recipeId": "sleep",
+                "items": [
+                  "room-2-dressing-0-sleep-0",
+                  "room-2-dressing-0-sleep-1",
+                  "room-2-dressing-0-sleep-2"
+                ],
+                "anchor": {
+                  "x": 12.5,
+                  "z": -13.333333333333334,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-1-reading",
+                "recipeId": "reading",
+                "items": [
+                  "room-2-dressing-1-reading-0",
+                  "room-2-dressing-1-reading-1",
+                  "room-2-dressing-1-reading-2"
+                ],
+                "anchor": {
+                  "x": 21.666666666666668,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-2-clothes",
+                "recipeId": "clothes",
+                "items": [
+                  "room-2-dressing-2-clothes-0",
+                  "room-2-dressing-2-clothes-1"
+                ],
+                "anchor": {
+                  "x": 22.5,
+                  "z": -10,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-3-dressing",
+                "recipeId": "dressing",
+                "items": [
+                  "room-2-dressing-3-dressing-0",
+                  "room-2-dressing-3-dressing-1"
+                ],
+                "anchor": {
+                  "x": 10,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-4-wash-and-rest",
+                "recipeId": "wash-and-rest",
+                "items": [
+                  "room-2-dressing-4-wash-and-rest-0",
+                  "room-2-dressing-4-wash-and-rest-1"
+                ],
+                "anchor": {
+                  "x": 8.333333333333334,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 6,
+            "rejected": 1,
+            "bedStyle": "bed-low-divan-v01",
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-3",
+          "preset": "nursery",
+          "area": 125.00000000000001,
+          "furniture": 11,
+          "uniqueModels": 10,
+          "counts": {
+            "prop-toy-bench-v01": 1,
+            "furniture-dining-chair": 1,
+            "furniture-toy-chest": 2,
+            "furniture-toy-shelf": 1,
+            "furniture-wardrobe": 1,
+            "prop-cradle-v01": 1,
+            "furniture-armchair-curved": 1,
+            "prop-rocking-horse-v01": 1,
+            "furniture-child-table": 1,
+            "furniture-bookcase": 1
+          },
+          "furnitureFootprint": 7.010099999999991,
+          "coverageRatio": 0.05608079999999992,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-3",
+            "before": 0,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 11,
+            "groups": [
+              {
+                "id": "room-3-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-3-dressing-0-play-0",
+                  "room-3-dressing-0-play-1",
+                  "room-3-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": -13.333333333333334,
+                  "z": -14.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-3-dressing-1-toys",
+                "recipeId": "toys",
+                "items": [
+                  "room-3-dressing-1-toys-0",
+                  "room-3-dressing-1-toys-1"
+                ],
+                "anchor": {
+                  "x": -10,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-2-cradle-care",
+                "recipeId": "cradle-care",
+                "items": [
+                  "room-3-dressing-2-cradle-care-0",
+                  "room-3-dressing-2-cradle-care-1"
+                ],
+                "anchor": {
+                  "x": -10,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-3-rocking-play",
+                "recipeId": "rocking-play",
+                "items": [
+                  "room-3-dressing-3-rocking-play-0",
+                  "room-3-dressing-3-rocking-play-1"
+                ],
+                "anchor": {
+                  "x": -20.7,
+                  "z": -16.666666666666668,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-3-dressing-4-reading-shelf",
+                "recipeId": "reading-shelf",
+                "items": [
+                  "room-3-dressing-4-reading-shelf-0",
+                  "room-3-dressing-4-reading-shelf-1"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -16.666666666666668,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 2,
+            "rejected": 1,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-4",
+          "preset": "bedroom",
+          "area": 175.00000000000003,
+          "furniture": 22,
+          "uniqueModels": 13,
+          "counts": {
+            "furniture-bed-single": 1,
+            "furniture-nightstand": 3,
+            "furniture-wardrobe": 3,
+            "furniture-bookcase": 3,
+            "furniture-dresser": 3,
+            "bed-iron-rail-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 2,
+            "prop-clothes-rack-v01": 1,
+            "prop-suitcase-v01": 1,
+            "vanity-oval-mirror-v01": 1,
+            "prop-washstand-v01": 1,
+            "furniture-armchair-curved": 1
+          },
+          "furnitureFootprint": 18.153500000000015,
+          "coverageRatio": 0.10373428571428578,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-4",
+            "before": 10,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 22,
+            "groups": [
+              {
+                "id": "room-4-dressing-0-sleep",
+                "recipeId": "sleep",
+                "items": [
+                  "room-4-dressing-0-sleep-0",
+                  "room-4-dressing-0-sleep-1",
+                  "room-4-dressing-0-sleep-2"
+                ],
+                "anchor": {
+                  "x": -27.5,
+                  "z": -18.333333333333336,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-4-dressing-1-reading",
+                "recipeId": "reading",
+                "items": [
+                  "room-4-dressing-1-reading-0",
+                  "room-4-dressing-1-reading-1",
+                  "room-4-dressing-1-reading-2"
+                ],
+                "anchor": {
+                  "x": -31.666666666666668,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-4-dressing-2-clothes",
+                "recipeId": "clothes",
+                "items": [
+                  "room-4-dressing-2-clothes-0",
+                  "room-4-dressing-2-clothes-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -20,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-4-dressing-3-dressing",
+                "recipeId": "dressing",
+                "items": [
+                  "room-4-dressing-3-dressing-0",
+                  "room-4-dressing-3-dressing-1"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -13.333333333333334,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-4-dressing-4-wash-and-rest",
+                "recipeId": "wash-and-rest",
+                "items": [
+                  "room-4-dressing-4-wash-and-rest-0",
+                  "room-4-dressing-4-wash-and-rest-1"
+                ],
+                "anchor": {
+                  "x": -30,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "bedStyle": "bed-iron-rail-v01",
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-5",
+          "preset": "parlor",
+          "area": 125.00000000000001,
+          "furniture": 13,
+          "uniqueModels": 9,
+          "counts": {
+            "furniture-sofa-two-seat": 1,
+            "furniture-coffee-table": 2,
+            "furniture-armchair-curved": 3,
+            "lighting-floor-lamp": 2,
+            "prop-tv-console-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 1,
+            "prop-tea-cart-v01": 1,
+            "prop-pendulum-clock-v01": 1
+          },
+          "furnitureFootprint": 6.560799999999995,
+          "coverageRatio": 0.052486399999999954,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-5",
+            "before": 0,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 13,
+            "groups": [
+              {
+                "id": "room-5-dressing-0-conversation",
+                "recipeId": "conversation",
+                "items": [
+                  "room-5-dressing-0-conversation-0",
+                  "room-5-dressing-0-conversation-1",
+                  "room-5-dressing-0-conversation-2",
+                  "room-5-dressing-0-conversation-3"
+                ],
+                "anchor": {
+                  "x": 24.3,
+                  "z": -15,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-5-dressing-1-television",
+                "recipeId": "television",
+                "items": [
+                  "room-5-dressing-1-television-0",
+                  "room-5-dressing-1-television-1"
+                ],
+                "anchor": {
+                  "x": 37.5,
+                  "z": -8.333333333333334,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-2-writing",
+                "recipeId": "writing",
+                "items": [
+                  "room-5-dressing-2-writing-0",
+                  "room-5-dressing-2-writing-1"
+                ],
+                "anchor": {
+                  "x": 26.666666666666668,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-3-reading-corner",
+                "recipeId": "reading-corner",
+                "items": [
+                  "room-5-dressing-3-reading-corner-0",
+                  "room-5-dressing-3-reading-corner-1",
+                  "room-5-dressing-3-reading-corner-2"
+                ],
+                "anchor": {
+                  "x": 31.666666666666668,
+                  "z": -10.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-5-dressing-4-tea-and-clock",
+                "recipeId": "tea-and-clock",
+                "items": [
+                  "room-5-dressing-4-tea-and-clock-0",
+                  "room-5-dressing-4-tea-and-clock-1"
+                ],
+                "anchor": {
+                  "x": 25,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-6",
+          "preset": "clinic",
+          "area": 175.00000000000003,
+          "furniture": 14,
+          "uniqueModels": 11,
+          "counts": {
+            "furniture-examination-cot": 1,
+            "furniture-instrument-trolley": 1,
+            "furniture-dining-chair": 4,
+            "lighting-floor-lamp": 1,
+            "prop-folding-screen-v01": 1,
+            "prop-medical-cart-v01": 1,
+            "prop-iv-stand-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-coffee-table": 1,
+            "prop-washstand-v01": 1,
+            "furniture-medicine-cabinet": 1
+          },
+          "furnitureFootprint": 6.998800000000007,
+          "coverageRatio": 0.039993142857142894,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-6",
+            "before": 0,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 14,
+            "groups": [
+              {
+                "id": "room-6-dressing-0-examination",
+                "recipeId": "examination",
+                "items": [
+                  "room-6-dressing-0-examination-0",
+                  "room-6-dressing-0-examination-1",
+                  "room-6-dressing-0-examination-2",
+                  "room-6-dressing-0-examination-3"
+                ],
+                "anchor": {
+                  "x": 32.5,
+                  "z": -1.6666666666666667,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-1-treatment-supplies",
+                "recipeId": "treatment-supplies",
+                "items": [
+                  "room-6-dressing-1-treatment-supplies-0",
+                  "room-6-dressing-1-treatment-supplies-1",
+                  "room-6-dressing-1-treatment-supplies-2"
+                ],
+                "anchor": {
+                  "x": 22.5,
+                  "z": 5,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-2-records",
+                "recipeId": "records",
+                "items": [
+                  "room-6-dressing-2-records-0",
+                  "room-6-dressing-2-records-1"
+                ],
+                "anchor": {
+                  "x": 22.5,
+                  "z": -6.666666666666667,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-3-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-6-dressing-3-waiting-0",
+                  "room-6-dressing-3-waiting-1",
+                  "room-6-dressing-3-waiting-2"
+                ],
+                "anchor": {
+                  "x": 35,
+                  "z": 5.7,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-6-dressing-4-wash",
+                "recipeId": "wash",
+                "items": [
+                  "room-6-dressing-4-wash-0",
+                  "room-6-dressing-4-wash-1"
+                ],
+                "anchor": {
+                  "x": 28.333333333333336,
+                  "z": 7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 4,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-7",
+          "preset": "parlor",
+          "area": 200.00000000000003,
+          "furniture": 21,
+          "uniqueModels": 7,
+          "counts": {
+            "furniture-bookcase": 8,
+            "furniture-display-cabinet": 7,
+            "furniture-sofa-two-seat": 1,
+            "furniture-coffee-table": 1,
+            "furniture-armchair-curved": 2,
+            "lighting-floor-lamp": 1,
+            "prop-tv-console-v01": 1
+          },
+          "furnitureFootprint": 17.689600000000013,
+          "coverageRatio": 0.08844800000000005,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-7",
+            "before": 15,
+            "target": 21,
+            "groupTarget": 2,
+            "placed": 21,
+            "groups": [
+              {
+                "id": "room-7-dressing-0-conversation",
+                "recipeId": "conversation",
+                "items": [
+                  "room-7-dressing-0-conversation-0",
+                  "room-7-dressing-0-conversation-1",
+                  "room-7-dressing-0-conversation-2",
+                  "room-7-dressing-0-conversation-3"
+                ],
+                "anchor": {
+                  "x": 0,
+                  "z": -24.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-7-dressing-1-television",
+                "recipeId": "television",
+                "items": [
+                  "room-7-dressing-1-television-0",
+                  "room-7-dressing-1-television-1"
+                ],
+                "anchor": {
+                  "x": 5,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-8",
+          "preset": "nursery",
+          "area": 225.00000000000003,
+          "furniture": 21,
+          "uniqueModels": 10,
+          "counts": {
+            "furniture-toy-chest": 6,
+            "furniture-child-table": 5,
+            "furniture-toy-shelf": 2,
+            "furniture-wardrobe": 2,
+            "prop-toy-bench-v01": 1,
+            "furniture-dining-chair": 1,
+            "prop-cradle-v01": 1,
+            "furniture-armchair-curved": 1,
+            "prop-rocking-horse-v01": 1,
+            "furniture-bookcase": 1
+          },
+          "furnitureFootprint": 16.22676666666669,
+          "coverageRatio": 0.07211896296296307,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-8",
+            "before": 10,
+            "target": 23,
+            "groupTarget": 5,
+            "placed": 21,
+            "groups": [
+              {
+                "id": "room-8-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-8-dressing-0-play-0",
+                  "room-8-dressing-0-play-1",
+                  "room-8-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": 9.3,
+                  "z": -30,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-8-dressing-1-toys",
+                "recipeId": "toys",
+                "items": [
+                  "room-8-dressing-1-toys-0",
+                  "room-8-dressing-1-toys-1"
+                ],
+                "anchor": {
+                  "x": 22.5,
+                  "z": -35,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-2-cradle-care",
+                "recipeId": "cradle-care",
+                "items": [
+                  "room-8-dressing-2-cradle-care-0",
+                  "room-8-dressing-2-cradle-care-1"
+                ],
+                "anchor": {
+                  "x": 20,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-3-rocking-play",
+                "recipeId": "rocking-play",
+                "items": [
+                  "room-8-dressing-3-rocking-play-0",
+                  "room-8-dressing-3-rocking-play-1"
+                ],
+                "anchor": {
+                  "x": 15,
+                  "z": -35.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-8-dressing-4-reading-shelf",
+                "recipeId": "reading-shelf",
+                "items": [
+                  "room-8-dressing-4-reading-shelf-0",
+                  "room-8-dressing-4-reading-shelf-1"
+                ],
+                "anchor": {
+                  "x": 11.666666666666668,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 2,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-9",
+          "preset": "nursery",
+          "area": 175.00000000000003,
+          "furniture": 11,
+          "uniqueModels": 10,
+          "counts": {
+            "prop-toy-bench-v01": 1,
+            "furniture-dining-chair": 1,
+            "furniture-toy-chest": 2,
+            "furniture-toy-shelf": 1,
+            "furniture-wardrobe": 1,
+            "prop-cradle-v01": 1,
+            "furniture-armchair-curved": 1,
+            "prop-rocking-horse-v01": 1,
+            "furniture-child-table": 1,
+            "furniture-bookcase": 1
+          },
+          "furnitureFootprint": 7.010100000000033,
+          "coverageRatio": 0.04005771428571447,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-9",
+            "before": 0,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 11,
+            "groups": [
+              {
+                "id": "room-9-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-9-dressing-0-play-0",
+                  "room-9-dressing-0-play-1",
+                  "room-9-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": 0,
+                  "z": -39.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-9-dressing-1-toys",
+                "recipeId": "toys",
+                "items": [
+                  "room-9-dressing-1-toys-0",
+                  "room-9-dressing-1-toys-1"
+                ],
+                "anchor": {
+                  "x": 5,
+                  "z": -52.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-2-cradle-care",
+                "recipeId": "cradle-care",
+                "items": [
+                  "room-9-dressing-2-cradle-care-0",
+                  "room-9-dressing-2-cradle-care-1"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -50,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-3-rocking-play",
+                "recipeId": "rocking-play",
+                "items": [
+                  "room-9-dressing-3-rocking-play-0",
+                  "room-9-dressing-3-rocking-play-1"
+                ],
+                "anchor": {
+                  "x": 5.7,
+                  "z": -45,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-9-dressing-4-reading-shelf",
+                "recipeId": "reading-shelf",
+                "items": [
+                  "room-9-dressing-4-reading-shelf-0",
+                  "room-9-dressing-4-reading-shelf-1"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -41.66666666666667,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 7,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-10",
+          "preset": "parlor",
+          "area": 200.00000000000003,
+          "furniture": 13,
+          "uniqueModels": 9,
+          "counts": {
+            "furniture-sofa-two-seat": 1,
+            "furniture-coffee-table": 2,
+            "furniture-armchair-curved": 3,
+            "lighting-floor-lamp": 2,
+            "prop-tv-console-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 1,
+            "prop-tea-cart-v01": 1,
+            "prop-pendulum-clock-v01": 1
+          },
+          "furnitureFootprint": 6.560800000000005,
+          "coverageRatio": 0.03280400000000002,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-10",
+            "before": 0,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 13,
+            "groups": [
+              {
+                "id": "room-10-dressing-0-conversation",
+                "recipeId": "conversation",
+                "items": [
+                  "room-10-dressing-0-conversation-0",
+                  "room-10-dressing-0-conversation-1",
+                  "room-10-dressing-0-conversation-2",
+                  "room-10-dressing-0-conversation-3"
+                ],
+                "anchor": {
+                  "x": -9.3,
+                  "z": -30,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-10-dressing-1-television",
+                "recipeId": "television",
+                "items": [
+                  "room-10-dressing-1-television-0",
+                  "room-10-dressing-1-television-1"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -36.66666666666667,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-10-dressing-2-writing",
+                "recipeId": "writing",
+                "items": [
+                  "room-10-dressing-2-writing-0",
+                  "room-10-dressing-2-writing-1"
+                ],
+                "anchor": {
+                  "x": -21.666666666666668,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-10-dressing-3-reading-corner",
+                "recipeId": "reading-corner",
+                "items": [
+                  "room-10-dressing-3-reading-corner-0",
+                  "room-10-dressing-3-reading-corner-1",
+                  "room-10-dressing-3-reading-corner-2"
+                ],
+                "anchor": {
+                  "x": -15,
+                  "z": -35.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-10-dressing-4-tea-and-clock",
+                "recipeId": "tea-and-clock",
+                "items": [
+                  "room-10-dressing-4-tea-and-clock-0",
+                  "room-10-dressing-4-tea-and-clock-1"
+                ],
+                "anchor": {
+                  "x": -13.333333333333334,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 8,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-11",
+          "preset": "bedroom",
+          "area": 175.00000000000003,
+          "furniture": 22,
+          "uniqueModels": 13,
+          "counts": {
+            "furniture-bed-single": 1,
+            "furniture-nightstand": 4,
+            "furniture-wardrobe": 3,
+            "furniture-bookcase": 3,
+            "furniture-dresser": 2,
+            "bed-canopy-linen-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 2,
+            "prop-clothes-rack-v01": 1,
+            "prop-suitcase-v01": 1,
+            "vanity-oval-mirror-v01": 1,
+            "prop-washstand-v01": 1,
+            "furniture-armchair-curved": 1
+          },
+          "furnitureFootprint": 19.53360000000003,
+          "coverageRatio": 0.11162057142857157,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-11",
+            "before": 10,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 22,
+            "groups": [
+              {
+                "id": "room-11-dressing-0-sleep",
+                "recipeId": "sleep",
+                "items": [
+                  "room-11-dressing-0-sleep-0",
+                  "room-11-dressing-0-sleep-1",
+                  "room-11-dressing-0-sleep-2"
+                ],
+                "anchor": {
+                  "x": -43.333333333333336,
+                  "z": -17.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-11-dressing-1-reading",
+                "recipeId": "reading",
+                "items": [
+                  "room-11-dressing-1-reading-0",
+                  "room-11-dressing-1-reading-1",
+                  "room-11-dressing-1-reading-2"
+                ],
+                "anchor": {
+                  "x": -50,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-11-dressing-2-clothes",
+                "recipeId": "clothes",
+                "items": [
+                  "room-11-dressing-2-clothes-0",
+                  "room-11-dressing-2-clothes-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -10,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-11-dressing-3-dressing",
+                "recipeId": "dressing",
+                "items": [
+                  "room-11-dressing-3-dressing-0",
+                  "room-11-dressing-3-dressing-1"
+                ],
+                "anchor": {
+                  "x": -52.5,
+                  "z": -20,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-11-dressing-4-wash-and-rest",
+                "recipeId": "wash-and-rest",
+                "items": [
+                  "room-11-dressing-4-wash-and-rest-0",
+                  "room-11-dressing-4-wash-and-rest-1"
+                ],
+                "anchor": {
+                  "x": -43.333333333333336,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "bedStyle": "bed-canopy-linen-v01",
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        }
+      ]
+    },
+    {
+      "seed": "1844070019",
+      "layer": 2,
+      "hash": "e0465b42",
+      "valid": true,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "preset": "bedroom",
+          "area": 125.00000000000001,
+          "furniture": 3,
+          "uniqueModels": 3,
+          "counts": {
+            "furniture-bed-single": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1
+          },
+          "furnitureFootprint": 3.363333333333333,
+          "coverageRatio": 0.02690666666666666,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "bedroom",
+            "before": 2,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 2,
+            "groups": [],
+            "shortfall": 11,
+            "rejected": 0,
+            "reason": "固定出生房保持既有布局",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-1",
+          "preset": "archive",
+          "area": 175.00000000000003,
+          "furniture": 2,
+          "uniqueModels": 2,
+          "counts": {
+            "furniture-document-table": 1,
+            "furniture-writing-desk": 1
+          },
+          "furnitureFootprint": 1.8433333333333317,
+          "coverageRatio": 0.010533333333333322,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-1",
+            "before": 2,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 2,
+            "groups": [],
+            "shortfall": 16,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-2",
+          "preset": "clinic",
+          "area": 125.00000000000001,
+          "furniture": 0,
+          "uniqueModels": 0,
+          "counts": {},
+          "furnitureFootprint": 0,
+          "coverageRatio": 0,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-2",
+            "before": 0,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 0,
+            "groups": [],
+            "shortfall": 13,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-3",
+          "preset": "shrine",
+          "area": 125.00000000000001,
+          "furniture": 8,
+          "uniqueModels": 2,
+          "counts": {
+            "furniture-shrine-cabinet": 4,
+            "furniture-bookcase": 4
+          },
+          "furnitureFootprint": 7.373333333333358,
+          "coverageRatio": 0.058986666666666854,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-3",
+            "before": 8,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 8,
+            "groups": [],
+            "shortfall": 5,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-4",
+          "preset": "parlor",
+          "area": 150.00000000000003,
+          "furniture": 7,
+          "uniqueModels": 4,
+          "counts": {
+            "furniture-bookcase": 1,
+            "furniture-coffee-table": 3,
+            "furniture-sofa-two-seat": 2,
+            "furniture-display-cabinet": 1
+          },
+          "furnitureFootprint": 6.45166666666671,
+          "coverageRatio": 0.04301111111111139,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-4",
+            "before": 7,
+            "target": 16,
+            "groupTarget": 4,
+            "placed": 7,
+            "groups": [],
+            "shortfall": 9,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-5",
+          "preset": "archive",
+          "area": 125.00000000000001,
+          "furniture": 13,
+          "uniqueModels": 9,
+          "counts": {
+            "prop-computer-desk-v01": 1,
+            "furniture-dining-chair": 4,
+            "furniture-archive-shelf": 1,
+            "furniture-multi-drawer-file-cabinet": 1,
+            "furniture-document-table": 2,
+            "prop-archive-stack-v01": 1,
+            "furniture-armchair-curved": 1,
+            "furniture-coffee-table": 1,
+            "lighting-floor-lamp": 1
+          },
+          "furnitureFootprint": 6.866499999999984,
+          "coverageRatio": 0.05493199999999987,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-5",
+            "before": 0,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 13,
+            "groups": [
+              {
+                "id": "room-5-dressing-0-computer-records",
+                "recipeId": "computer-records",
+                "items": [
+                  "room-5-dressing-0-computer-records-0",
+                  "room-5-dressing-0-computer-records-1"
+                ],
+                "anchor": {
+                  "x": 28.333333333333336,
+                  "z": -17.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-1-stacks",
+                "recipeId": "stacks",
+                "items": [
+                  "room-5-dressing-1-stacks-0",
+                  "room-5-dressing-1-stacks-1"
+                ],
+                "anchor": {
+                  "x": 25,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-2-sorting",
+                "recipeId": "sorting",
+                "items": [
+                  "room-5-dressing-2-sorting-0",
+                  "room-5-dressing-2-sorting-1",
+                  "room-5-dressing-2-sorting-2"
+                ],
+                "anchor": {
+                  "x": 36.66666666666667,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-3-consultation",
+                "recipeId": "consultation",
+                "items": [
+                  "room-5-dressing-3-consultation-0",
+                  "room-5-dressing-3-consultation-1",
+                  "room-5-dressing-3-consultation-2"
+                ],
+                "anchor": {
+                  "x": 23.333333333333336,
+                  "z": -20.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-5-dressing-4-reader-seat",
+                "recipeId": "reader-seat",
+                "items": [
+                  "room-5-dressing-4-reader-seat-0",
+                  "room-5-dressing-4-reader-seat-1",
+                  "room-5-dressing-4-reader-seat-2"
+                ],
+                "anchor": {
+                  "x": 24.3,
+                  "z": -13.333333333333334,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 1,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-6",
+          "preset": "nursery",
+          "area": 200.00000000000003,
+          "furniture": 16,
+          "uniqueModels": 2,
+          "counts": {
+            "furniture-wardrobe": 8,
+            "furniture-toy-shelf": 8
+          },
+          "furnitureFootprint": 14.7466666666667,
+          "coverageRatio": 0.07373333333333348,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-6",
+            "before": 16,
+            "target": 21,
+            "groupTarget": 2,
+            "placed": 16,
+            "groups": [],
+            "shortfall": 5,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-7",
+          "preset": "clinic",
+          "area": 200.00000000000003,
+          "furniture": 0,
+          "uniqueModels": 0,
+          "counts": {},
+          "furnitureFootprint": 0,
+          "coverageRatio": 0,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-7",
+            "before": 0,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 0,
+            "groups": [],
+            "shortfall": 21,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-8",
+          "preset": "shrine",
+          "area": 175.00000000000003,
+          "furniture": 18,
+          "uniqueModels": 8,
+          "counts": {
+            "furniture-offering-table": 2,
+            "furniture-kneeling-bench": 5,
+            "furniture-shrine-cabinet": 3,
+            "prop-candle-altar-v01": 1,
+            "furniture-bookcase": 1,
+            "furniture-dining-chair": 3,
+            "furniture-coffee-table": 2,
+            "furniture-writing-desk": 1
+          },
+          "furnitureFootprint": 10.923733333333384,
+          "coverageRatio": 0.06242133333333361,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-8",
+            "before": 5,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 18,
+            "groups": [
+              {
+                "id": "room-8-dressing-0-offering",
+                "recipeId": "offering",
+                "items": [
+                  "room-8-dressing-0-offering-0",
+                  "room-8-dressing-0-offering-1",
+                  "room-8-dressing-0-offering-2"
+                ],
+                "anchor": {
+                  "x": 30,
+                  "z": -57.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-1-keeping",
+                "recipeId": "keeping",
+                "items": [
+                  "room-8-dressing-1-keeping-0",
+                  "room-8-dressing-1-keeping-1"
+                ],
+                "anchor": {
+                  "x": 25,
+                  "z": -67.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-2-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-8-dressing-2-waiting-0",
+                  "room-8-dressing-2-waiting-1",
+                  "room-8-dressing-2-waiting-2"
+                ],
+                "anchor": {
+                  "x": 37.5,
+                  "z": -65,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-3-vigil",
+                "recipeId": "vigil",
+                "items": [
+                  "room-8-dressing-3-vigil-0",
+                  "room-8-dressing-3-vigil-1",
+                  "room-8-dressing-3-vigil-2"
+                ],
+                "anchor": {
+                  "x": 35.7,
+                  "z": -55,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-8-dressing-4-records",
+                "recipeId": "records",
+                "items": [
+                  "room-8-dressing-4-records-0",
+                  "room-8-dressing-4-records-1"
+                ],
+                "anchor": {
+                  "x": 23.333333333333336,
+                  "z": -52.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-9",
+          "preset": "archive",
+          "area": 200.00000000000003,
+          "furniture": 21,
+          "uniqueModels": 6,
+          "counts": {
+            "furniture-archive-shelf": 7,
+            "furniture-multi-drawer-file-cabinet": 6,
+            "prop-computer-desk-v01": 1,
+            "furniture-dining-chair": 4,
+            "furniture-document-table": 2,
+            "prop-archive-stack-v01": 1
+          },
+          "furnitureFootprint": 16.146766666666686,
+          "coverageRatio": 0.08073383333333342,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-9",
+            "before": 13,
+            "target": 21,
+            "groupTarget": 2,
+            "placed": 21,
+            "groups": [
+              {
+                "id": "room-9-dressing-0-computer-records",
+                "recipeId": "computer-records",
+                "items": [
+                  "room-9-dressing-0-computer-records-0",
+                  "room-9-dressing-0-computer-records-1"
+                ],
+                "anchor": {
+                  "x": 18.333333333333336,
+                  "z": -17.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-2-sorting",
+                "recipeId": "sorting",
+                "items": [
+                  "room-9-dressing-2-sorting-0",
+                  "room-9-dressing-2-sorting-1",
+                  "room-9-dressing-2-sorting-2"
+                ],
+                "anchor": {
+                  "x": 9.3,
+                  "z": -10,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-9-dressing-3-consultation",
+                "recipeId": "consultation",
+                "items": [
+                  "room-9-dressing-3-consultation-0",
+                  "room-9-dressing-3-consultation-1",
+                  "room-9-dressing-3-consultation-2"
+                ],
+                "anchor": {
+                  "x": 20,
+                  "z": -9.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-10",
+          "preset": "shrine",
+          "area": 225.00000000000003,
+          "furniture": 13,
+          "uniqueModels": 7,
+          "counts": {
+            "prop-candle-altar-v01": 1,
+            "furniture-kneeling-bench": 3,
+            "furniture-shrine-cabinet": 2,
+            "furniture-bookcase": 1,
+            "furniture-dining-chair": 3,
+            "furniture-coffee-table": 2,
+            "furniture-writing-desk": 1
+          },
+          "furnitureFootprint": 6.315400000000028,
+          "coverageRatio": 0.028068444444444566,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-10",
+            "before": 0,
+            "target": 23,
+            "groupTarget": 5,
+            "placed": 13,
+            "groups": [
+              {
+                "id": "room-10-dressing-0-offering",
+                "recipeId": "offering",
+                "items": [
+                  "room-10-dressing-0-offering-0",
+                  "room-10-dressing-0-offering-1",
+                  "room-10-dressing-0-offering-2"
+                ],
+                "anchor": {
+                  "x": 10,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-10-dressing-1-keeping",
+                "recipeId": "keeping",
+                "items": [
+                  "room-10-dressing-1-keeping-0",
+                  "room-10-dressing-1-keeping-1"
+                ],
+                "anchor": {
+                  "x": 20,
+                  "z": -52.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-10-dressing-2-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-10-dressing-2-waiting-0",
+                  "room-10-dressing-2-waiting-1",
+                  "room-10-dressing-2-waiting-2"
+                ],
+                "anchor": {
+                  "x": 22.5,
+                  "z": -40,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-10-dressing-3-vigil",
+                "recipeId": "vigil",
+                "items": [
+                  "room-10-dressing-3-vigil-0",
+                  "room-10-dressing-3-vigil-1",
+                  "room-10-dressing-3-vigil-2"
+                ],
+                "anchor": {
+                  "x": 9.3,
+                  "z": -50,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-10-dressing-4-records",
+                "recipeId": "records",
+                "items": [
+                  "room-10-dressing-4-records-0",
+                  "room-10-dressing-4-records-1"
+                ],
+                "anchor": {
+                  "x": 22.5,
+                  "z": -46.66666666666667,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 10,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        }
+      ]
+    },
+    {
+      "seed": "7",
+      "layer": 1,
+      "hash": "15643797",
+      "valid": true,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "preset": "bedroom",
+          "area": 125.00000000000001,
+          "furniture": 3,
+          "uniqueModels": 3,
+          "counts": {
+            "furniture-bed-single": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1
+          },
+          "furnitureFootprint": 3.363333333333333,
+          "coverageRatio": 0.02690666666666666,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "bedroom",
+            "before": 2,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 2,
+            "groups": [],
+            "shortfall": 11,
+            "rejected": 0,
+            "reason": "固定出生房保持既有布局",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-1",
+          "preset": "clinic",
+          "area": 125.00000000000001,
+          "furniture": 14,
+          "uniqueModels": 11,
+          "counts": {
+            "furniture-examination-cot": 1,
+            "furniture-instrument-trolley": 1,
+            "furniture-dining-chair": 4,
+            "lighting-floor-lamp": 1,
+            "prop-folding-screen-v01": 1,
+            "prop-medical-cart-v01": 1,
+            "prop-iv-stand-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-coffee-table": 1,
+            "prop-washstand-v01": 1,
+            "furniture-medicine-cabinet": 1
+          },
+          "furnitureFootprint": 6.998799999999999,
+          "coverageRatio": 0.05599039999999999,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-1",
+            "before": 0,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 14,
+            "groups": [
+              {
+                "id": "room-1-dressing-0-examination",
+                "recipeId": "examination",
+                "items": [
+                  "room-1-dressing-0-examination-0",
+                  "room-1-dressing-0-examination-1",
+                  "room-1-dressing-0-examination-2",
+                  "room-1-dressing-0-examination-3"
+                ],
+                "anchor": {
+                  "x": 5,
+                  "z": -12.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-1-dressing-1-treatment-supplies",
+                "recipeId": "treatment-supplies",
+                "items": [
+                  "room-1-dressing-1-treatment-supplies-0",
+                  "room-1-dressing-1-treatment-supplies-1",
+                  "room-1-dressing-1-treatment-supplies-2"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -20,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-1-dressing-2-records",
+                "recipeId": "records",
+                "items": [
+                  "room-1-dressing-2-records-0",
+                  "room-1-dressing-2-records-1"
+                ],
+                "anchor": {
+                  "x": -6.666666666666667,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-1-dressing-3-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-1-dressing-3-waiting-0",
+                  "room-1-dressing-3-waiting-1",
+                  "room-1-dressing-3-waiting-2"
+                ],
+                "anchor": {
+                  "x": -4.3,
+                  "z": -13.333333333333334,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-1-dressing-4-wash",
+                "recipeId": "wash",
+                "items": [
+                  "room-1-dressing-4-wash-0",
+                  "room-1-dressing-4-wash-1"
+                ],
+                "anchor": {
+                  "x": -2.5,
+                  "z": -18.333333333333336,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 1,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-2",
+          "preset": "shrine",
+          "area": 200.00000000000003,
+          "furniture": 13,
+          "uniqueModels": 7,
+          "counts": {
+            "prop-candle-altar-v01": 1,
+            "furniture-kneeling-bench": 3,
+            "furniture-shrine-cabinet": 2,
+            "furniture-bookcase": 1,
+            "furniture-dining-chair": 3,
+            "furniture-coffee-table": 2,
+            "furniture-writing-desk": 1
+          },
+          "furnitureFootprint": 6.315399999999995,
+          "coverageRatio": 0.03157699999999997,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-2",
+            "before": 0,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 13,
+            "groups": [
+              {
+                "id": "room-2-dressing-0-offering",
+                "recipeId": "offering",
+                "items": [
+                  "room-2-dressing-0-offering-0",
+                  "room-2-dressing-0-offering-1",
+                  "room-2-dressing-0-offering-2"
+                ],
+                "anchor": {
+                  "x": -12.5,
+                  "z": -13.333333333333334,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-1-keeping",
+                "recipeId": "keeping",
+                "items": [
+                  "room-2-dressing-1-keeping-0",
+                  "room-2-dressing-1-keeping-1"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -20,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-2-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-2-dressing-2-waiting-0",
+                  "room-2-dressing-2-waiting-1",
+                  "room-2-dressing-2-waiting-2"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -10,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-3-vigil",
+                "recipeId": "vigil",
+                "items": [
+                  "room-2-dressing-3-vigil-0",
+                  "room-2-dressing-3-vigil-1",
+                  "room-2-dressing-3-vigil-2"
+                ],
+                "anchor": {
+                  "x": -10,
+                  "z": -20.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-2-dressing-4-records",
+                "recipeId": "records",
+                "items": [
+                  "room-2-dressing-4-records-0",
+                  "room-2-dressing-4-records-1"
+                ],
+                "anchor": {
+                  "x": -8.333333333333334,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 8,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-3",
+          "preset": "parlor",
+          "area": 175.00000000000003,
+          "furniture": 23,
+          "uniqueModels": 11,
+          "counts": {
+            "furniture-bookcase": 2,
+            "furniture-display-cabinet": 2,
+            "furniture-sofa-two-seat": 4,
+            "furniture-coffee-table": 5,
+            "furniture-armchair-curved": 3,
+            "lighting-floor-lamp": 2,
+            "prop-tv-console-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 1,
+            "prop-tea-cart-v01": 1,
+            "prop-pendulum-clock-v01": 1
+          },
+          "furnitureFootprint": 15.777466666666717,
+          "coverageRatio": 0.09015695238095266,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-3",
+            "before": 10,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 23,
+            "groups": [
+              {
+                "id": "room-3-dressing-0-conversation",
+                "recipeId": "conversation",
+                "items": [
+                  "room-3-dressing-0-conversation-0",
+                  "room-3-dressing-0-conversation-1",
+                  "room-3-dressing-0-conversation-2",
+                  "room-3-dressing-0-conversation-3"
+                ],
+                "anchor": {
+                  "x": -12.5,
+                  "z": -25,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-1-television",
+                "recipeId": "television",
+                "items": [
+                  "room-3-dressing-1-television-0",
+                  "room-3-dressing-1-television-1"
+                ],
+                "anchor": {
+                  "x": -21.666666666666668,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-2-writing",
+                "recipeId": "writing",
+                "items": [
+                  "room-3-dressing-2-writing-0",
+                  "room-3-dressing-2-writing-1"
+                ],
+                "anchor": {
+                  "x": -8.333333333333334,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-3-reading-corner",
+                "recipeId": "reading-corner",
+                "items": [
+                  "room-3-dressing-3-reading-corner-0",
+                  "room-3-dressing-3-reading-corner-1",
+                  "room-3-dressing-3-reading-corner-2"
+                ],
+                "anchor": {
+                  "x": -20,
+                  "z": -29.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-3-dressing-4-tea-and-clock",
+                "recipeId": "tea-and-clock",
+                "items": [
+                  "room-3-dressing-4-tea-and-clock-0",
+                  "room-3-dressing-4-tea-and-clock-1"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -33.333333333333336,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 3,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-4",
+          "preset": "archive",
+          "area": 200.00000000000003,
+          "furniture": 22,
+          "uniqueModels": 6,
+          "counts": {
+            "furniture-archive-shelf": 9,
+            "furniture-multi-drawer-file-cabinet": 8,
+            "prop-computer-desk-v01": 1,
+            "furniture-dining-chair": 2,
+            "furniture-document-table": 1,
+            "prop-archive-stack-v01": 1
+          },
+          "furnitureFootprint": 18.508433333333354,
+          "coverageRatio": 0.09254216666666676,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-4",
+            "before": 17,
+            "target": 21,
+            "groupTarget": 2,
+            "placed": 22,
+            "groups": [
+              {
+                "id": "room-4-dressing-0-computer-records",
+                "recipeId": "computer-records",
+                "items": [
+                  "room-4-dressing-0-computer-records-0",
+                  "room-4-dressing-0-computer-records-1"
+                ],
+                "anchor": {
+                  "x": -2.5,
+                  "z": -31.666666666666668,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-4-dressing-2-sorting",
+                "recipeId": "sorting",
+                "items": [
+                  "room-4-dressing-2-sorting-0",
+                  "room-4-dressing-2-sorting-1",
+                  "room-4-dressing-2-sorting-2"
+                ],
+                "anchor": {
+                  "x": 5.7,
+                  "z": -25,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 2,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-5",
+          "preset": "clinic",
+          "area": 200.00000000000003,
+          "furniture": 14,
+          "uniqueModels": 11,
+          "counts": {
+            "furniture-examination-cot": 1,
+            "furniture-instrument-trolley": 1,
+            "furniture-dining-chair": 4,
+            "lighting-floor-lamp": 1,
+            "prop-folding-screen-v01": 1,
+            "prop-medical-cart-v01": 1,
+            "prop-iv-stand-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-coffee-table": 1,
+            "prop-washstand-v01": 1,
+            "furniture-medicine-cabinet": 1
+          },
+          "furnitureFootprint": 6.998800000000003,
+          "coverageRatio": 0.03499400000000001,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-5",
+            "before": 0,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 14,
+            "groups": [
+              {
+                "id": "room-5-dressing-0-examination",
+                "recipeId": "examination",
+                "items": [
+                  "room-5-dressing-0-examination-0",
+                  "room-5-dressing-0-examination-1",
+                  "room-5-dressing-0-examination-2",
+                  "room-5-dressing-0-examination-3"
+                ],
+                "anchor": {
+                  "x": -28.333333333333336,
+                  "z": -27.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-1-treatment-supplies",
+                "recipeId": "treatment-supplies",
+                "items": [
+                  "room-5-dressing-1-treatment-supplies-0",
+                  "room-5-dressing-1-treatment-supplies-1",
+                  "room-5-dressing-1-treatment-supplies-2"
+                ],
+                "anchor": {
+                  "x": -35,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-2-records",
+                "recipeId": "records",
+                "items": [
+                  "room-5-dressing-2-records-0",
+                  "room-5-dressing-2-records-1"
+                ],
+                "anchor": {
+                  "x": -23.333333333333336,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-3-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-5-dressing-3-waiting-0",
+                  "room-5-dressing-3-waiting-1",
+                  "room-5-dressing-3-waiting-2"
+                ],
+                "anchor": {
+                  "x": -35.7,
+                  "z": -25,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-5-dressing-4-wash",
+                "recipeId": "wash",
+                "items": [
+                  "room-5-dressing-4-wash-0",
+                  "room-5-dressing-4-wash-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -31.666666666666668,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 7,
+            "rejected": 1,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-6",
+          "preset": "nursery",
+          "area": 75.00000000000001,
+          "furniture": 11,
+          "uniqueModels": 10,
+          "counts": {
+            "prop-toy-bench-v01": 1,
+            "furniture-dining-chair": 1,
+            "furniture-toy-chest": 2,
+            "furniture-toy-shelf": 1,
+            "furniture-wardrobe": 1,
+            "prop-cradle-v01": 1,
+            "furniture-armchair-curved": 1,
+            "prop-rocking-horse-v01": 1,
+            "furniture-child-table": 1,
+            "furniture-bookcase": 1
+          },
+          "furnitureFootprint": 7.010099999999987,
+          "coverageRatio": 0.09346799999999982,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-6",
+            "before": 0,
+            "target": 12,
+            "groupTarget": 3,
+            "placed": 11,
+            "groups": [
+              {
+                "id": "room-6-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-6-dressing-0-play-0",
+                  "room-6-dressing-0-play-1",
+                  "room-6-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": 13.333333333333334,
+                  "z": -30.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-6-dressing-1-toys",
+                "recipeId": "toys",
+                "items": [
+                  "room-6-dressing-1-toys-0",
+                  "room-6-dressing-1-toys-1"
+                ],
+                "anchor": {
+                  "x": 20,
+                  "z": -27.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-2-cradle-care",
+                "recipeId": "cradle-care",
+                "items": [
+                  "room-6-dressing-2-cradle-care-0",
+                  "room-6-dressing-2-cradle-care-1"
+                ],
+                "anchor": {
+                  "x": 18.333333333333336,
+                  "z": -32.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-3-rocking-play",
+                "recipeId": "rocking-play",
+                "items": [
+                  "room-6-dressing-3-rocking-play-0",
+                  "room-6-dressing-3-rocking-play-1"
+                ],
+                "anchor": {
+                  "x": 9.3,
+                  "z": -30,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-6-dressing-4-reading-shelf",
+                "recipeId": "reading-shelf",
+                "items": [
+                  "room-6-dressing-4-reading-shelf-0",
+                  "room-6-dressing-4-reading-shelf-1"
+                ],
+                "anchor": {
+                  "x": 21.666666666666668,
+                  "z": -32.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 1,
+            "rejected": 3,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-7",
+          "preset": "nursery",
+          "area": 175.00000000000003,
+          "furniture": 15,
+          "uniqueModels": 10,
+          "counts": {
+            "furniture-wardrobe": 2,
+            "furniture-toy-chest": 3,
+            "furniture-child-table": 2,
+            "furniture-toy-shelf": 2,
+            "prop-toy-bench-v01": 1,
+            "furniture-dining-chair": 1,
+            "prop-cradle-v01": 1,
+            "furniture-armchair-curved": 1,
+            "prop-rocking-horse-v01": 1,
+            "furniture-bookcase": 1
+          },
+          "furnitureFootprint": 10.696766666666695,
+          "coverageRatio": 0.061124380952381104,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-7",
+            "before": 4,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 15,
+            "groups": [
+              {
+                "id": "room-7-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-7-dressing-0-play-0",
+                  "room-7-dressing-0-play-1",
+                  "room-7-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": -15,
+                  "z": -39.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-7-dressing-1-toys",
+                "recipeId": "toys",
+                "items": [
+                  "room-7-dressing-1-toys-0",
+                  "room-7-dressing-1-toys-1"
+                ],
+                "anchor": {
+                  "x": -10,
+                  "z": -52.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-7-dressing-2-cradle-care",
+                "recipeId": "cradle-care",
+                "items": [
+                  "room-7-dressing-2-cradle-care-0",
+                  "room-7-dressing-2-cradle-care-1"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -50,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-7-dressing-3-rocking-play",
+                "recipeId": "rocking-play",
+                "items": [
+                  "room-7-dressing-3-rocking-play-0",
+                  "room-7-dressing-3-rocking-play-1"
+                ],
+                "anchor": {
+                  "x": -8.333333333333334,
+                  "z": -40.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-7-dressing-4-reading-shelf",
+                "recipeId": "reading-shelf",
+                "items": [
+                  "room-7-dressing-4-reading-shelf-0",
+                  "room-7-dressing-4-reading-shelf-1"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -41.66666666666667,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 3,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-8",
+          "preset": "nursery",
+          "area": 200.00000000000003,
+          "furniture": 11,
+          "uniqueModels": 10,
+          "counts": {
+            "prop-toy-bench-v01": 1,
+            "furniture-dining-chair": 1,
+            "furniture-toy-chest": 2,
+            "furniture-toy-shelf": 1,
+            "furniture-wardrobe": 1,
+            "prop-cradle-v01": 1,
+            "furniture-armchair-curved": 1,
+            "prop-rocking-horse-v01": 1,
+            "furniture-child-table": 1,
+            "furniture-bookcase": 1
+          },
+          "furnitureFootprint": 7.010100000000035,
+          "coverageRatio": 0.03505050000000017,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-8",
+            "before": 0,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 11,
+            "groups": [
+              {
+                "id": "room-8-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-8-dressing-0-play-0",
+                  "room-8-dressing-0-play-1",
+                  "room-8-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": -33.333333333333336,
+                  "z": -39.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-8-dressing-1-toys",
+                "recipeId": "toys",
+                "items": [
+                  "room-8-dressing-1-toys-0",
+                  "room-8-dressing-1-toys-1"
+                ],
+                "anchor": {
+                  "x": -25,
+                  "z": -52.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-2-cradle-care",
+                "recipeId": "cradle-care",
+                "items": [
+                  "room-8-dressing-2-cradle-care-0",
+                  "room-8-dressing-2-cradle-care-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -50,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-3-rocking-play",
+                "recipeId": "rocking-play",
+                "items": [
+                  "room-8-dressing-3-rocking-play-0",
+                  "room-8-dressing-3-rocking-play-1"
+                ],
+                "anchor": {
+                  "x": -24.3,
+                  "z": -41.66666666666667,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-8-dressing-4-reading-shelf",
+                "recipeId": "reading-shelf",
+                "items": [
+                  "room-8-dressing-4-reading-shelf-0",
+                  "room-8-dressing-4-reading-shelf-1"
+                ],
+                "anchor": {
+                  "x": -30,
+                  "z": -47.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 10,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-9",
+          "preset": "bedroom",
+          "area": 125.00000000000001,
+          "furniture": 12,
+          "uniqueModels": 11,
+          "counts": {
+            "bed-iron-rail-v01": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 2,
+            "furniture-bookcase": 1,
+            "prop-clothes-rack-v01": 1,
+            "prop-suitcase-v01": 1,
+            "vanity-oval-mirror-v01": 1,
+            "prop-washstand-v01": 1,
+            "furniture-armchair-curved": 1
+          },
+          "furnitureFootprint": 7.653499999999994,
+          "coverageRatio": 0.06122799999999994,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-9",
+            "before": 0,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 12,
+            "groups": [
+              {
+                "id": "room-9-dressing-0-sleep",
+                "recipeId": "sleep",
+                "items": [
+                  "room-9-dressing-0-sleep-0",
+                  "room-9-dressing-0-sleep-1",
+                  "room-9-dressing-0-sleep-2"
+                ],
+                "anchor": {
+                  "x": -32.5,
+                  "z": -20,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-1-reading",
+                "recipeId": "reading",
+                "items": [
+                  "room-9-dressing-1-reading-0",
+                  "room-9-dressing-1-reading-1",
+                  "room-9-dressing-1-reading-2"
+                ],
+                "anchor": {
+                  "x": -30,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-2-clothes",
+                "recipeId": "clothes",
+                "items": [
+                  "room-9-dressing-2-clothes-0",
+                  "room-9-dressing-2-clothes-1"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -15,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-3-dressing",
+                "recipeId": "dressing",
+                "items": [
+                  "room-9-dressing-3-dressing-0",
+                  "room-9-dressing-3-dressing-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -13.333333333333334,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-4-wash-and-rest",
+                "recipeId": "wash-and-rest",
+                "items": [
+                  "room-9-dressing-4-wash-and-rest-0",
+                  "room-9-dressing-4-wash-and-rest-1"
+                ],
+                "anchor": {
+                  "x": -27.5,
+                  "z": -20,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 1,
+            "rejected": 3,
+            "bedStyle": "bed-iron-rail-v01",
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-10",
+          "preset": "bedroom",
+          "area": 200.00000000000003,
+          "furniture": 12,
+          "uniqueModels": 11,
+          "counts": {
+            "bed-canopy-linen-v01": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 2,
+            "furniture-bookcase": 1,
+            "prop-clothes-rack-v01": 1,
+            "prop-suitcase-v01": 1,
+            "vanity-oval-mirror-v01": 1,
+            "prop-washstand-v01": 1,
+            "furniture-armchair-curved": 1
+          },
+          "furnitureFootprint": 9.033600000000012,
+          "coverageRatio": 0.045168000000000055,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-10",
+            "before": 0,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 12,
+            "groups": [
+              {
+                "id": "room-10-dressing-0-sleep",
+                "recipeId": "sleep",
+                "items": [
+                  "room-10-dressing-0-sleep-0",
+                  "room-10-dressing-0-sleep-1",
+                  "room-10-dressing-0-sleep-2"
+                ],
+                "anchor": {
+                  "x": 26.666666666666668,
+                  "z": -27.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-10-dressing-1-reading",
+                "recipeId": "reading",
+                "items": [
+                  "room-10-dressing-1-reading-0",
+                  "room-10-dressing-1-reading-1",
+                  "room-10-dressing-1-reading-2"
+                ],
+                "anchor": {
+                  "x": 36.66666666666667,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-10-dressing-2-clothes",
+                "recipeId": "clothes",
+                "items": [
+                  "room-10-dressing-2-clothes-0",
+                  "room-10-dressing-2-clothes-1"
+                ],
+                "anchor": {
+                  "x": 37.5,
+                  "z": -25,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-10-dressing-3-dressing",
+                "recipeId": "dressing",
+                "items": [
+                  "room-10-dressing-3-dressing-0",
+                  "room-10-dressing-3-dressing-1"
+                ],
+                "anchor": {
+                  "x": 23.333333333333336,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-10-dressing-4-wash-and-rest",
+                "recipeId": "wash-and-rest",
+                "items": [
+                  "room-10-dressing-4-wash-and-rest-0",
+                  "room-10-dressing-4-wash-and-rest-1"
+                ],
+                "anchor": {
+                  "x": 30,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 9,
+            "rejected": 0,
+            "bedStyle": "bed-canopy-linen-v01",
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        }
+      ]
+    },
+    {
+      "seed": "7",
+      "layer": 2,
+      "hash": "f966bc96",
+      "valid": true,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "preset": "bedroom",
+          "area": 125.00000000000001,
+          "furniture": 3,
+          "uniqueModels": 3,
+          "counts": {
+            "furniture-bed-single": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1
+          },
+          "furnitureFootprint": 3.363333333333333,
+          "coverageRatio": 0.02690666666666666,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "bedroom",
+            "before": 2,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 2,
+            "groups": [],
+            "shortfall": 11,
+            "rejected": 0,
+            "reason": "固定出生房保持既有布局",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-1",
+          "preset": "bedroom",
+          "area": 200.00000000000003,
+          "furniture": 8,
+          "uniqueModels": 4,
+          "counts": {
+            "furniture-bookcase": 2,
+            "furniture-dresser": 3,
+            "furniture-nightstand": 2,
+            "furniture-wardrobe": 1
+          },
+          "furnitureFootprint": 7.373333333333348,
+          "coverageRatio": 0.036866666666666735,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-1",
+            "before": 8,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 8,
+            "groups": [],
+            "shortfall": 13,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-2",
+          "preset": "parlor",
+          "area": 125.00000000000001,
+          "furniture": 0,
+          "uniqueModels": 0,
+          "counts": {},
+          "furnitureFootprint": 0,
+          "coverageRatio": 0,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-2",
+            "before": 0,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 0,
+            "groups": [],
+            "shortfall": 13,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-3",
+          "preset": "archive",
+          "area": 125.00000000000001,
+          "furniture": 0,
+          "uniqueModels": 0,
+          "counts": {},
+          "furnitureFootprint": 0,
+          "coverageRatio": 0,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-3",
+            "before": 0,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 0,
+            "groups": [],
+            "shortfall": 13,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-4",
+          "preset": "parlor",
+          "area": 200.00000000000003,
+          "furniture": 6,
+          "uniqueModels": 4,
+          "counts": {
+            "furniture-display-cabinet": 2,
+            "furniture-bookcase": 2,
+            "furniture-sofa-two-seat": 1,
+            "furniture-coffee-table": 1
+          },
+          "furnitureFootprint": 5.530000000000004,
+          "coverageRatio": 0.027650000000000015,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-4",
+            "before": 6,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 6,
+            "groups": [],
+            "shortfall": 15,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-5",
+          "preset": "parlor",
+          "area": 175.00000000000003,
+          "furniture": 0,
+          "uniqueModels": 0,
+          "counts": {},
+          "furnitureFootprint": 0,
+          "coverageRatio": 0,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-5",
+            "before": 0,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 0,
+            "groups": [],
+            "shortfall": 18,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-6",
+          "preset": "shrine",
+          "area": 200.00000000000003,
+          "furniture": 13,
+          "uniqueModels": 7,
+          "counts": {
+            "prop-candle-altar-v01": 1,
+            "furniture-kneeling-bench": 3,
+            "furniture-shrine-cabinet": 2,
+            "furniture-bookcase": 1,
+            "furniture-dining-chair": 3,
+            "furniture-coffee-table": 2,
+            "furniture-writing-desk": 1
+          },
+          "furnitureFootprint": 6.315400000000005,
+          "coverageRatio": 0.03157700000000002,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-6",
+            "before": 0,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 13,
+            "groups": [
+              {
+                "id": "room-6-dressing-0-offering",
+                "recipeId": "offering",
+                "items": [
+                  "room-6-dressing-0-offering-0",
+                  "room-6-dressing-0-offering-1",
+                  "room-6-dressing-0-offering-2"
+                ],
+                "anchor": {
+                  "x": -16.666666666666668,
+                  "z": -27.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-1-keeping",
+                "recipeId": "keeping",
+                "items": [
+                  "room-6-dressing-1-keeping-0",
+                  "room-6-dressing-1-keeping-1"
+                ],
+                "anchor": {
+                  "x": -10,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-2-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-6-dressing-2-waiting-0",
+                  "room-6-dressing-2-waiting-1",
+                  "room-6-dressing-2-waiting-2"
+                ],
+                "anchor": {
+                  "x": -20,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-3-vigil",
+                "recipeId": "vigil",
+                "items": [
+                  "room-6-dressing-3-vigil-0",
+                  "room-6-dressing-3-vigil-1",
+                  "room-6-dressing-3-vigil-2"
+                ],
+                "anchor": {
+                  "x": -9.3,
+                  "z": -25,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-6-dressing-4-records",
+                "recipeId": "records",
+                "items": [
+                  "room-6-dressing-4-records-0",
+                  "room-6-dressing-4-records-1"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -23.333333333333336,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 8,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-7",
+          "preset": "nursery",
+          "area": 125.00000000000001,
+          "furniture": 11,
+          "uniqueModels": 10,
+          "counts": {
+            "prop-toy-bench-v01": 1,
+            "furniture-dining-chair": 1,
+            "furniture-toy-chest": 2,
+            "furniture-toy-shelf": 1,
+            "furniture-wardrobe": 1,
+            "prop-cradle-v01": 1,
+            "furniture-armchair-curved": 1,
+            "prop-rocking-horse-v01": 1,
+            "furniture-child-table": 1,
+            "furniture-bookcase": 1
+          },
+          "furnitureFootprint": 7.0101,
+          "coverageRatio": 0.0560808,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-7",
+            "before": 0,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 11,
+            "groups": [
+              {
+                "id": "room-7-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-7-dressing-0-play-0",
+                  "room-7-dressing-0-play-1",
+                  "room-7-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": -24.3,
+                  "z": -15,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-7-dressing-1-toys",
+                "recipeId": "toys",
+                "items": [
+                  "room-7-dressing-1-toys-0",
+                  "room-7-dressing-1-toys-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -15,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-7-dressing-2-cradle-care",
+                "recipeId": "cradle-care",
+                "items": [
+                  "room-7-dressing-2-cradle-care-0",
+                  "room-7-dressing-2-cradle-care-1"
+                ],
+                "anchor": {
+                  "x": -30,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-7-dressing-3-rocking-play",
+                "recipeId": "rocking-play",
+                "items": [
+                  "room-7-dressing-3-rocking-play-0",
+                  "room-7-dressing-3-rocking-play-1"
+                ],
+                "anchor": {
+                  "x": -29.3,
+                  "z": -8.333333333333334,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-7-dressing-4-reading-shelf",
+                "recipeId": "reading-shelf",
+                "items": [
+                  "room-7-dressing-4-reading-shelf-0",
+                  "room-7-dressing-4-reading-shelf-1"
+                ],
+                "anchor": {
+                  "x": -33.333333333333336,
+                  "z": -17.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 2,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-8",
+          "preset": "bedroom",
+          "area": 175.00000000000003,
+          "furniture": 12,
+          "uniqueModels": 11,
+          "counts": {
+            "bed-iron-rail-v01": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 2,
+            "furniture-bookcase": 1,
+            "prop-clothes-rack-v01": 1,
+            "prop-suitcase-v01": 1,
+            "vanity-oval-mirror-v01": 1,
+            "prop-washstand-v01": 1,
+            "furniture-armchair-curved": 1
+          },
+          "furnitureFootprint": 7.653499999999991,
+          "coverageRatio": 0.043734285714285656,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-8",
+            "before": 0,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 12,
+            "groups": [
+              {
+                "id": "room-8-dressing-0-sleep",
+                "recipeId": "sleep",
+                "items": [
+                  "room-8-dressing-0-sleep-0",
+                  "room-8-dressing-0-sleep-1",
+                  "room-8-dressing-0-sleep-2"
+                ],
+                "anchor": {
+                  "x": -28.333333333333336,
+                  "z": -32.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-1-reading",
+                "recipeId": "reading",
+                "items": [
+                  "room-8-dressing-1-reading-0",
+                  "room-8-dressing-1-reading-1",
+                  "room-8-dressing-1-reading-2"
+                ],
+                "anchor": {
+                  "x": -36.66666666666667,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-2-clothes",
+                "recipeId": "clothes",
+                "items": [
+                  "room-8-dressing-2-clothes-0",
+                  "room-8-dressing-2-clothes-1"
+                ],
+                "anchor": {
+                  "x": -25,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-3-dressing",
+                "recipeId": "dressing",
+                "items": [
+                  "room-8-dressing-3-dressing-0",
+                  "room-8-dressing-3-dressing-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -36.66666666666667,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-8-dressing-4-wash-and-rest",
+                "recipeId": "wash-and-rest",
+                "items": [
+                  "room-8-dressing-4-wash-and-rest-0",
+                  "room-8-dressing-4-wash-and-rest-1"
+                ],
+                "anchor": {
+                  "x": -23.333333333333336,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 6,
+            "rejected": 0,
+            "bedStyle": "bed-iron-rail-v01",
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-9",
+          "preset": "clinic",
+          "area": 175.00000000000003,
+          "furniture": 17,
+          "uniqueModels": 11,
+          "counts": {
+            "furniture-examination-cot": 3,
+            "furniture-instrument-trolley": 2,
+            "furniture-dining-chair": 4,
+            "lighting-floor-lamp": 1,
+            "prop-folding-screen-v01": 1,
+            "prop-medical-cart-v01": 1,
+            "prop-iv-stand-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-coffee-table": 1,
+            "prop-washstand-v01": 1,
+            "furniture-medicine-cabinet": 1
+          },
+          "furnitureFootprint": 9.76380000000001,
+          "coverageRatio": 0.05579314285714291,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-9",
+            "before": 3,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 17,
+            "groups": [
+              {
+                "id": "room-9-dressing-0-examination",
+                "recipeId": "examination",
+                "items": [
+                  "room-9-dressing-0-examination-0",
+                  "room-9-dressing-0-examination-1",
+                  "room-9-dressing-0-examination-2",
+                  "room-9-dressing-0-examination-3"
+                ],
+                "anchor": {
+                  "x": -26.666666666666668,
+                  "z": 2.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-1-treatment-supplies",
+                "recipeId": "treatment-supplies",
+                "items": [
+                  "room-9-dressing-1-treatment-supplies-0",
+                  "room-9-dressing-1-treatment-supplies-1",
+                  "room-9-dressing-1-treatment-supplies-2"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -5,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-2-records",
+                "recipeId": "records",
+                "items": [
+                  "room-9-dressing-2-records-0",
+                  "room-9-dressing-2-records-1"
+                ],
+                "anchor": {
+                  "x": -23.333333333333336,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-9-dressing-3-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-9-dressing-3-waiting-0",
+                  "room-9-dressing-3-waiting-1",
+                  "room-9-dressing-3-waiting-2"
+                ],
+                "anchor": {
+                  "x": -33.333333333333336,
+                  "z": 0.7,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-9-dressing-4-wash",
+                "recipeId": "wash",
+                "items": [
+                  "room-9-dressing-4-wash-0",
+                  "room-9-dressing-4-wash-1"
+                ],
+                "anchor": {
+                  "x": -30,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 1,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-10",
+          "preset": "parlor",
+          "area": 175.00000000000003,
+          "furniture": 0,
+          "uniqueModels": 0,
+          "counts": {},
+          "furnitureFootprint": 0,
+          "coverageRatio": 0,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-10",
+            "before": 0,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 0,
+            "groups": [],
+            "shortfall": 18,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        }
+      ]
+    },
+    {
+      "seed": "19",
+      "layer": 1,
+      "hash": "55c68835",
+      "valid": true,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "preset": "bedroom",
+          "area": 125.00000000000001,
+          "furniture": 3,
+          "uniqueModels": 3,
+          "counts": {
+            "furniture-bed-single": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1
+          },
+          "furnitureFootprint": 3.363333333333333,
+          "coverageRatio": 0.02690666666666666,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "bedroom",
+            "before": 2,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 2,
+            "groups": [],
+            "shortfall": 11,
+            "rejected": 0,
+            "reason": "固定出生房保持既有布局",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-1",
+          "preset": "shrine",
+          "area": 150.00000000000003,
+          "furniture": 19,
+          "uniqueModels": 8,
+          "counts": {
+            "furniture-offering-table": 2,
+            "furniture-kneeling-bench": 5,
+            "furniture-bookcase": 2,
+            "furniture-shrine-cabinet": 3,
+            "prop-candle-altar-v01": 1,
+            "furniture-dining-chair": 3,
+            "furniture-coffee-table": 2,
+            "furniture-writing-desk": 1
+          },
+          "furnitureFootprint": 13.412066666666677,
+          "coverageRatio": 0.08941377777777783,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-1",
+            "before": 8,
+            "target": 16,
+            "groupTarget": 4,
+            "placed": 19,
+            "groups": [
+              {
+                "id": "room-1-dressing-0-offering",
+                "recipeId": "offering",
+                "items": [
+                  "room-1-dressing-0-offering-0",
+                  "room-1-dressing-0-offering-1",
+                  "room-1-dressing-0-offering-2"
+                ],
+                "anchor": {
+                  "x": -2.5,
+                  "z": -15,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-1-dressing-2-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-1-dressing-2-waiting-0",
+                  "room-1-dressing-2-waiting-1",
+                  "room-1-dressing-2-waiting-2"
+                ],
+                "anchor": {
+                  "x": 7.5,
+                  "z": -10,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-1-dressing-3-vigil",
+                "recipeId": "vigil",
+                "items": [
+                  "room-1-dressing-3-vigil-0",
+                  "room-1-dressing-3-vigil-1",
+                  "room-1-dressing-3-vigil-2"
+                ],
+                "anchor": {
+                  "x": 5.7,
+                  "z": -20,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-1-dressing-4-records",
+                "recipeId": "records",
+                "items": [
+                  "room-1-dressing-4-records-0",
+                  "room-1-dressing-4-records-1"
+                ],
+                "anchor": {
+                  "x": 1.6666666666666667,
+                  "z": -7.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-2",
+          "preset": "clinic",
+          "area": 150.00000000000003,
+          "furniture": 14,
+          "uniqueModels": 11,
+          "counts": {
+            "furniture-examination-cot": 1,
+            "furniture-instrument-trolley": 1,
+            "furniture-dining-chair": 4,
+            "lighting-floor-lamp": 1,
+            "prop-folding-screen-v01": 1,
+            "prop-medical-cart-v01": 1,
+            "prop-iv-stand-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-coffee-table": 1,
+            "prop-washstand-v01": 1,
+            "furniture-medicine-cabinet": 1
+          },
+          "furnitureFootprint": 6.9987999999999895,
+          "coverageRatio": 0.046658666666666584,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-2",
+            "before": 0,
+            "target": 16,
+            "groupTarget": 4,
+            "placed": 14,
+            "groups": [
+              {
+                "id": "room-2-dressing-0-examination",
+                "recipeId": "examination",
+                "items": [
+                  "room-2-dressing-0-examination-0",
+                  "room-2-dressing-0-examination-1",
+                  "room-2-dressing-0-examination-2",
+                  "room-2-dressing-0-examination-3"
+                ],
+                "anchor": {
+                  "x": 2.5,
+                  "z": -28.333333333333336,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-1-treatment-supplies",
+                "recipeId": "treatment-supplies",
+                "items": [
+                  "room-2-dressing-1-treatment-supplies-0",
+                  "room-2-dressing-1-treatment-supplies-1",
+                  "room-2-dressing-1-treatment-supplies-2"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -35,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-2-records",
+                "recipeId": "records",
+                "items": [
+                  "room-2-dressing-2-records-0",
+                  "room-2-dressing-2-records-1"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -23.333333333333336,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-3-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-2-dressing-3-waiting-0",
+                  "room-2-dressing-3-waiting-1",
+                  "room-2-dressing-3-waiting-2"
+                ],
+                "anchor": {
+                  "x": 0,
+                  "z": -35.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-2-dressing-4-wash",
+                "recipeId": "wash",
+                "items": [
+                  "room-2-dressing-4-wash-0",
+                  "room-2-dressing-4-wash-1"
+                ],
+                "anchor": {
+                  "x": -3.3333333333333335,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 2,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-3",
+          "preset": "nursery",
+          "area": 200.00000000000003,
+          "furniture": 19,
+          "uniqueModels": 10,
+          "counts": {
+            "furniture-toy-chest": 5,
+            "furniture-child-table": 3,
+            "furniture-wardrobe": 3,
+            "furniture-toy-shelf": 2,
+            "prop-toy-bench-v01": 1,
+            "furniture-dining-chair": 1,
+            "prop-cradle-v01": 1,
+            "furniture-armchair-curved": 1,
+            "prop-rocking-horse-v01": 1,
+            "furniture-bookcase": 1
+          },
+          "furnitureFootprint": 14.38343333333335,
+          "coverageRatio": 0.07191716666666674,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-3",
+            "before": 8,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 19,
+            "groups": [
+              {
+                "id": "room-3-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-3-dressing-0-play-0",
+                  "room-3-dressing-0-play-1",
+                  "room-3-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": -9.3,
+                  "z": -30,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-3-dressing-1-toys",
+                "recipeId": "toys",
+                "items": [
+                  "room-3-dressing-1-toys-0",
+                  "room-3-dressing-1-toys-1"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -35,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-2-cradle-care",
+                "recipeId": "cradle-care",
+                "items": [
+                  "room-3-dressing-2-cradle-care-0",
+                  "room-3-dressing-2-cradle-care-1"
+                ],
+                "anchor": {
+                  "x": -20,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-3-rocking-play",
+                "recipeId": "rocking-play",
+                "items": [
+                  "room-3-dressing-3-rocking-play-0",
+                  "room-3-dressing-3-rocking-play-1"
+                ],
+                "anchor": {
+                  "x": -15,
+                  "z": -35.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-3-dressing-4-reading-shelf",
+                "recipeId": "reading-shelf",
+                "items": [
+                  "room-3-dressing-4-reading-shelf-0",
+                  "room-3-dressing-4-reading-shelf-1"
+                ],
+                "anchor": {
+                  "x": -11.666666666666668,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 2,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-4",
+          "preset": "clinic",
+          "area": 200.00000000000003,
+          "furniture": 14,
+          "uniqueModels": 11,
+          "counts": {
+            "furniture-examination-cot": 1,
+            "furniture-instrument-trolley": 1,
+            "furniture-dining-chair": 4,
+            "lighting-floor-lamp": 1,
+            "prop-folding-screen-v01": 1,
+            "prop-medical-cart-v01": 1,
+            "prop-iv-stand-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-coffee-table": 1,
+            "prop-washstand-v01": 1,
+            "furniture-medicine-cabinet": 1
+          },
+          "furnitureFootprint": 6.998800000000016,
+          "coverageRatio": 0.034994000000000074,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-4",
+            "before": 0,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 14,
+            "groups": [
+              {
+                "id": "room-4-dressing-0-examination",
+                "recipeId": "examination",
+                "items": [
+                  "room-4-dressing-0-examination-0",
+                  "room-4-dressing-0-examination-1",
+                  "room-4-dressing-0-examination-2",
+                  "room-4-dressing-0-examination-3"
+                ],
+                "anchor": {
+                  "x": -17.5,
+                  "z": -41.66666666666667,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-4-dressing-1-treatment-supplies",
+                "recipeId": "treatment-supplies",
+                "items": [
+                  "room-4-dressing-1-treatment-supplies-0",
+                  "room-4-dressing-1-treatment-supplies-1",
+                  "room-4-dressing-1-treatment-supplies-2"
+                ],
+                "anchor": {
+                  "x": -10,
+                  "z": -52.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-4-dressing-2-records",
+                "recipeId": "records",
+                "items": [
+                  "room-4-dressing-2-records-0",
+                  "room-4-dressing-2-records-1"
+                ],
+                "anchor": {
+                  "x": -21.666666666666668,
+                  "z": -52.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-4-dressing-3-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-4-dressing-3-waiting-0",
+                  "room-4-dressing-3-waiting-1",
+                  "room-4-dressing-3-waiting-2"
+                ],
+                "anchor": {
+                  "x": -9.3,
+                  "z": -40,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-4-dressing-4-wash",
+                "recipeId": "wash",
+                "items": [
+                  "room-4-dressing-4-wash-0",
+                  "room-4-dressing-4-wash-1"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -46.66666666666667,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 7,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-5",
+          "preset": "shrine",
+          "area": 150.00000000000003,
+          "furniture": 18,
+          "uniqueModels": 7,
+          "counts": {
+            "furniture-offering-table": 3,
+            "furniture-kneeling-bench": 5,
+            "furniture-shrine-cabinet": 3,
+            "furniture-bookcase": 2,
+            "prop-candle-altar-v01": 1,
+            "furniture-dining-chair": 2,
+            "furniture-coffee-table": 2
+          },
+          "furnitureFootprint": 11.682066666666723,
+          "coverageRatio": 0.07788044444444481,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-5",
+            "before": 7,
+            "target": 16,
+            "groupTarget": 4,
+            "placed": 18,
+            "groups": [
+              {
+                "id": "room-5-dressing-0-offering",
+                "recipeId": "offering",
+                "items": [
+                  "room-5-dressing-0-offering-0",
+                  "room-5-dressing-0-offering-1",
+                  "room-5-dressing-0-offering-2"
+                ],
+                "anchor": {
+                  "x": -10,
+                  "z": -52.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-1-keeping",
+                "recipeId": "keeping",
+                "items": [
+                  "room-5-dressing-1-keeping-0",
+                  "room-5-dressing-1-keeping-1"
+                ],
+                "anchor": {
+                  "x": -20,
+                  "z": -62.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-2-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-5-dressing-2-waiting-0",
+                  "room-5-dressing-2-waiting-1",
+                  "room-5-dressing-2-waiting-2"
+                ],
+                "anchor": {
+                  "x": -10,
+                  "z": -62.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-5-dressing-3-vigil",
+                "recipeId": "vigil",
+                "items": [
+                  "room-5-dressing-3-vigil-0",
+                  "room-5-dressing-3-vigil-1",
+                  "room-5-dressing-3-vigil-2"
+                ],
+                "anchor": {
+                  "x": -20,
+                  "z": -54.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 3,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-6",
+          "preset": "shrine",
+          "area": 200.00000000000003,
+          "furniture": 23,
+          "uniqueModels": 8,
+          "counts": {
+            "furniture-bookcase": 3,
+            "furniture-shrine-cabinet": 4,
+            "furniture-kneeling-bench": 6,
+            "furniture-offering-table": 3,
+            "prop-candle-altar-v01": 1,
+            "furniture-dining-chair": 3,
+            "furniture-coffee-table": 2,
+            "furniture-writing-desk": 1
+          },
+          "furnitureFootprint": 15.532066666666736,
+          "coverageRatio": 0.07766033333333366,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-6",
+            "before": 10,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 23,
+            "groups": [
+              {
+                "id": "room-6-dressing-0-offering",
+                "recipeId": "offering",
+                "items": [
+                  "room-6-dressing-0-offering-0",
+                  "room-6-dressing-0-offering-1",
+                  "room-6-dressing-0-offering-2"
+                ],
+                "anchor": {
+                  "x": -25,
+                  "z": -32.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-1-keeping",
+                "recipeId": "keeping",
+                "items": [
+                  "room-6-dressing-1-keeping-0",
+                  "room-6-dressing-1-keeping-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -25,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-2-waiting",
+                "recipeId": "waiting",
+                "items": [
+                  "room-6-dressing-2-waiting-0",
+                  "room-6-dressing-2-waiting-1",
+                  "room-6-dressing-2-waiting-2"
+                ],
+                "anchor": {
+                  "x": -35,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-3-vigil",
+                "recipeId": "vigil",
+                "items": [
+                  "room-6-dressing-3-vigil-0",
+                  "room-6-dressing-3-vigil-1",
+                  "room-6-dressing-3-vigil-2"
+                ],
+                "anchor": {
+                  "x": -28.333333333333336,
+                  "z": -24.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-6-dressing-4-records",
+                "recipeId": "records",
+                "items": [
+                  "room-6-dressing-4-records-0",
+                  "room-6-dressing-4-records-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -31.666666666666668,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 0,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false
+          }
+        },
+        {
+          "id": "room-7",
+          "preset": "parlor",
+          "area": 175.00000000000003,
+          "furniture": 13,
+          "uniqueModels": 9,
+          "counts": {
+            "furniture-sofa-two-seat": 1,
+            "furniture-coffee-table": 2,
+            "furniture-armchair-curved": 3,
+            "lighting-floor-lamp": 2,
+            "prop-tv-console-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 1,
+            "prop-tea-cart-v01": 1,
+            "prop-pendulum-clock-v01": 1
+          },
+          "furnitureFootprint": 6.560799999999996,
+          "coverageRatio": 0.037490285714285684,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-7",
+            "before": 0,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 13,
+            "groups": [
+              {
+                "id": "room-7-dressing-0-conversation",
+                "recipeId": "conversation",
+                "items": [
+                  "room-7-dressing-0-conversation-0",
+                  "room-7-dressing-0-conversation-1",
+                  "room-7-dressing-0-conversation-2",
+                  "room-7-dressing-0-conversation-3"
+                ],
+                "anchor": {
+                  "x": -30.7,
+                  "z": -56.66666666666667,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-7-dressing-1-television",
+                "recipeId": "television",
+                "items": [
+                  "room-7-dressing-1-television-0",
+                  "room-7-dressing-1-television-1"
+                ],
+                "anchor": {
+                  "x": -23.333333333333336,
+                  "z": -67.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-7-dressing-2-writing",
+                "recipeId": "writing",
+                "items": [
+                  "room-7-dressing-2-writing-0",
+                  "room-7-dressing-2-writing-1"
+                ],
+                "anchor": {
+                  "x": -36.66666666666667,
+                  "z": -67.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-7-dressing-3-reading-corner",
+                "recipeId": "reading-corner",
+                "items": [
+                  "room-7-dressing-3-reading-corner-0",
+                  "room-7-dressing-3-reading-corner-1",
+                  "room-7-dressing-3-reading-corner-2"
+                ],
+                "anchor": {
+                  "x": -30,
+                  "z": -65.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-7-dressing-4-tea-and-clock",
+                "recipeId": "tea-and-clock",
+                "items": [
+                  "room-7-dressing-4-tea-and-clock-0",
+                  "room-7-dressing-4-tea-and-clock-1"
+                ],
+                "anchor": {
+                  "x": -37.5,
+                  "z": -60,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 5,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        }
+      ]
+    },
+    {
+      "seed": "19",
+      "layer": 2,
+      "hash": "dd3882f1",
+      "valid": true,
+      "rooms": [
+        {
+          "id": "bedroom",
+          "preset": "bedroom",
+          "area": 125.00000000000001,
+          "furniture": 3,
+          "uniqueModels": 3,
+          "counts": {
+            "furniture-bed-single": 1,
+            "furniture-nightstand": 1,
+            "furniture-dresser": 1
+          },
+          "furnitureFootprint": 3.363333333333333,
+          "coverageRatio": 0.02690666666666666,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "bedroom",
+            "before": 2,
+            "target": 13,
+            "groupTarget": 4,
+            "placed": 2,
+            "groups": [],
+            "shortfall": 11,
+            "rejected": 0,
+            "reason": "固定出生房保持既有布局",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-1",
+          "preset": "shrine",
+          "area": 200.00000000000003,
+          "furniture": 11,
+          "uniqueModels": 2,
+          "counts": {
+            "furniture-bookcase": 6,
+            "furniture-shrine-cabinet": 5
+          },
+          "furnitureFootprint": 10.138333333333344,
+          "coverageRatio": 0.05069166666666671,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-1",
+            "before": 11,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 11,
+            "groups": [],
+            "shortfall": 10,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-2",
+          "preset": "bedroom",
+          "area": 175.00000000000003,
+          "furniture": 14,
+          "uniqueModels": 11,
+          "counts": {
+            "furniture-nightstand": 2,
+            "furniture-dresser": 2,
+            "bed-canopy-linen-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 2,
+            "furniture-bookcase": 1,
+            "prop-clothes-rack-v01": 1,
+            "prop-suitcase-v01": 1,
+            "vanity-oval-mirror-v01": 1,
+            "prop-washstand-v01": 1,
+            "furniture-armchair-curved": 1
+          },
+          "furnitureFootprint": 10.876933333333351,
+          "coverageRatio": 0.062153904761904855,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-2",
+            "before": 2,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 14,
+            "groups": [
+              {
+                "id": "room-2-dressing-0-sleep",
+                "recipeId": "sleep",
+                "items": [
+                  "room-2-dressing-0-sleep-0",
+                  "room-2-dressing-0-sleep-1",
+                  "room-2-dressing-0-sleep-2"
+                ],
+                "anchor": {
+                  "x": -2.5,
+                  "z": -25,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-1-reading",
+                "recipeId": "reading",
+                "items": [
+                  "room-2-dressing-1-reading-0",
+                  "room-2-dressing-1-reading-1",
+                  "room-2-dressing-1-reading-2"
+                ],
+                "anchor": {
+                  "x": 6.666666666666667,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-2-clothes",
+                "recipeId": "clothes",
+                "items": [
+                  "room-2-dressing-2-clothes-0",
+                  "room-2-dressing-2-clothes-1"
+                ],
+                "anchor": {
+                  "x": 7.5,
+                  "z": -26.666666666666668,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-3-dressing",
+                "recipeId": "dressing",
+                "items": [
+                  "room-2-dressing-3-dressing-0",
+                  "room-2-dressing-3-dressing-1"
+                ],
+                "anchor": {
+                  "x": -2.5,
+                  "z": -35,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-2-dressing-4-wash-and-rest",
+                "recipeId": "wash-and-rest",
+                "items": [
+                  "room-2-dressing-4-wash-and-rest-0",
+                  "room-2-dressing-4-wash-and-rest-1"
+                ],
+                "anchor": {
+                  "x": 3.3333333333333335,
+                  "z": -22.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 4,
+            "rejected": 1,
+            "bedStyle": "bed-canopy-linen-v01",
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-3",
+          "preset": "parlor",
+          "area": 175.00000000000003,
+          "furniture": 13,
+          "uniqueModels": 9,
+          "counts": {
+            "furniture-sofa-two-seat": 1,
+            "furniture-coffee-table": 2,
+            "furniture-armchair-curved": 3,
+            "lighting-floor-lamp": 2,
+            "prop-tv-console-v01": 1,
+            "furniture-writing-desk": 1,
+            "furniture-dining-chair": 1,
+            "prop-tea-cart-v01": 1,
+            "prop-pendulum-clock-v01": 1
+          },
+          "furnitureFootprint": 6.560800000000003,
+          "coverageRatio": 0.037490285714285726,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-3",
+            "before": 0,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 13,
+            "groups": [
+              {
+                "id": "room-3-dressing-0-conversation",
+                "recipeId": "conversation",
+                "items": [
+                  "room-3-dressing-0-conversation-0",
+                  "room-3-dressing-0-conversation-1",
+                  "room-3-dressing-0-conversation-2",
+                  "room-3-dressing-0-conversation-3"
+                ],
+                "anchor": {
+                  "x": 2.5,
+                  "z": -43.333333333333336,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-1-television",
+                "recipeId": "television",
+                "items": [
+                  "room-3-dressing-1-television-0",
+                  "room-3-dressing-1-television-1"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -51.66666666666667,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-2-writing",
+                "recipeId": "writing",
+                "items": [
+                  "room-3-dressing-2-writing-0",
+                  "room-3-dressing-2-writing-1"
+                ],
+                "anchor": {
+                  "x": -7.5,
+                  "z": -38.333333333333336,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-3-dressing-3-reading-corner",
+                "recipeId": "reading-corner",
+                "items": [
+                  "room-3-dressing-3-reading-corner-0",
+                  "room-3-dressing-3-reading-corner-1",
+                  "room-3-dressing-3-reading-corner-2"
+                ],
+                "anchor": {
+                  "x": 5,
+                  "z": -50.7,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-3-dressing-4-tea-and-clock",
+                "recipeId": "tea-and-clock",
+                "items": [
+                  "room-3-dressing-4-tea-and-clock-0",
+                  "room-3-dressing-4-tea-and-clock-1"
+                ],
+                "anchor": {
+                  "x": 5,
+                  "z": -37.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 5,
+            "rejected": 0,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-4",
+          "preset": "archive",
+          "area": 200.00000000000003,
+          "furniture": 8,
+          "uniqueModels": 4,
+          "counts": {
+            "furniture-multi-drawer-file-cabinet": 2,
+            "furniture-document-table": 3,
+            "furniture-writing-desk": 2,
+            "furniture-archive-shelf": 1
+          },
+          "furnitureFootprint": 7.373333333333361,
+          "coverageRatio": 0.0368666666666668,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-4",
+            "before": 8,
+            "target": 21,
+            "groupTarget": 5,
+            "placed": 8,
+            "groups": [],
+            "shortfall": 13,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-5",
+          "preset": "clinic",
+          "area": 75.00000000000001,
+          "furniture": 8,
+          "uniqueModels": 2,
+          "counts": {
+            "furniture-medical-file-cabinet": 4,
+            "furniture-medicine-cabinet": 4
+          },
+          "furnitureFootprint": 7.373333333333354,
+          "coverageRatio": 0.09831111111111138,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-5",
+            "before": 8,
+            "target": 12,
+            "groupTarget": 3,
+            "placed": 8,
+            "groups": [],
+            "shortfall": 4,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-6",
+          "preset": "nursery",
+          "area": 75.00000000000001,
+          "furniture": 11,
+          "uniqueModels": 10,
+          "counts": {
+            "prop-toy-bench-v01": 1,
+            "furniture-dining-chair": 1,
+            "furniture-toy-chest": 2,
+            "furniture-toy-shelf": 1,
+            "furniture-wardrobe": 1,
+            "prop-cradle-v01": 1,
+            "furniture-armchair-curved": 1,
+            "prop-rocking-horse-v01": 1,
+            "furniture-child-table": 1,
+            "furniture-bookcase": 1
+          },
+          "furnitureFootprint": 7.010099999999978,
+          "coverageRatio": 0.09346799999999969,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-6",
+            "before": 0,
+            "target": 12,
+            "groupTarget": 3,
+            "placed": 11,
+            "groups": [
+              {
+                "id": "room-6-dressing-0-play",
+                "recipeId": "play",
+                "items": [
+                  "room-6-dressing-0-play-0",
+                  "room-6-dressing-0-play-1",
+                  "room-6-dressing-0-play-2"
+                ],
+                "anchor": {
+                  "x": -13.333333333333334,
+                  "z": -29.3,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-6-dressing-1-toys",
+                "recipeId": "toys",
+                "items": [
+                  "room-6-dressing-1-toys-0",
+                  "room-6-dressing-1-toys-1"
+                ],
+                "anchor": {
+                  "x": -22.5,
+                  "z": -30,
+                  "nx": -1,
+                  "nz": 0,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-2-cradle-care",
+                "recipeId": "cradle-care",
+                "items": [
+                  "room-6-dressing-2-cradle-care-0",
+                  "room-6-dressing-2-cradle-care-1"
+                ],
+                "anchor": {
+                  "x": -18.333333333333336,
+                  "z": -32.5,
+                  "nx": 0,
+                  "nz": -1,
+                  "zone": "wall"
+                }
+              },
+              {
+                "id": "room-6-dressing-3-rocking-play",
+                "recipeId": "rocking-play",
+                "items": [
+                  "room-6-dressing-3-rocking-play-0",
+                  "room-6-dressing-3-rocking-play-1"
+                ],
+                "anchor": {
+                  "x": -9.3,
+                  "z": -28.333333333333336,
+                  "nx": 1,
+                  "nz": 0,
+                  "zone": "inner"
+                }
+              },
+              {
+                "id": "room-6-dressing-4-reading-shelf",
+                "recipeId": "reading-shelf",
+                "items": [
+                  "room-6-dressing-4-reading-shelf-0",
+                  "room-6-dressing-4-reading-shelf-1"
+                ],
+                "anchor": {
+                  "x": -18.333333333333336,
+                  "z": -27.5,
+                  "nx": 0,
+                  "nz": 1,
+                  "zone": "wall"
+                }
+              }
+            ],
+            "shortfall": 1,
+            "rejected": 1,
+            "groupShortfall": 0,
+            "missingFunctionalGroup": false,
+            "reason": "安全空间不足，功能组未达目标"
+          }
+        },
+        {
+          "id": "room-7",
+          "preset": "bedroom",
+          "area": 175.00000000000003,
+          "furniture": 10,
+          "uniqueModels": 4,
+          "counts": {
+            "furniture-bookcase": 2,
+            "furniture-wardrobe": 2,
+            "furniture-dresser": 3,
+            "furniture-nightstand": 3
+          },
+          "furnitureFootprint": 9.2166666666667,
+          "coverageRatio": 0.052666666666666855,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-7",
+            "before": 10,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 10,
+            "groups": [],
+            "shortfall": 8,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        },
+        {
+          "id": "room-8",
+          "preset": "clinic",
+          "area": 175.00000000000003,
+          "furniture": 0,
+          "uniqueModels": 0,
+          "counts": {},
+          "furnitureFootprint": 0,
+          "coverageRatio": 0,
+          "finalDressing": {
+            "version": 3,
+            "roomId": "room-8",
+            "before": 0,
+            "target": 18,
+            "groupTarget": 5,
+            "placed": 0,
+            "groups": [],
+            "shortfall": 18,
+            "rejected": 0,
+            "reason": "动态场面保留，需专用陈设适配",
+            "excluded": true
+          }
+        }
+      ]
+    }
+  ]
+}

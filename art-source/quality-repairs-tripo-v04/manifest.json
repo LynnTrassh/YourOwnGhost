@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "source": "Tripo P1 text-to-model",
+  "profile": "horror-models-secondary",
+  "authorization": "User explicitly requires all 42 draft props to be made using Tripo; 2026-10-31",
+  "quality": "Real textured assets only. Per-asset geometry, material, orientation, contact and in-room review before release.",
+  "parameters": {
+    "face_limit": 18000,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed"
+  },
+  "estimatedCredits": {
+    "base": 1680,
+    "conservativeMaximum": 2100,
+    "note": "Official P1 pricing page all-in 40; parameter page generic detailed-texture surcharge conflicts by +10. Verify returned consumption on pilot."
+  },
+  "assets": [
+    {
+      "id": "prop-pendulum-clock-v04",
+      "name": "落地摆钟",
+      "theme": "parlor",
+      "recipes": [
+        "N11"
+      ],
+      "prompt": "A real antique grandfather clock, full length freestanding wooden CLOCK. Large clearly visible circular cream clock dial with twelve black Roman numerals and two black hands at the TOP FRONT. Below the dial, a long brass pendulum disk and two brass hanging weights clearly visible behind an OPEN front glass door. Narrow tall walnut case, carved crown, four small feet. CLOCK FACE AND HANDS MUST BE VISIBLE. Detailed photorealistic abandoned-house horror game prop, aged varnished walnut, tarnished brass gears, restrained realistic materials. Complete single object isolated on plain background, front three-quarter view, no scenery. Not a cupboard, not a wardrobe, not a mirror, not a blank panel.",
+      "targetBounds": [
+        0.4699999988079071,
+        1.799999928474426,
+        0.318000003695488
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false,
+      "replaces": "prop-pendulum-clock-v01"
+    }
+  ],
+  "initialBalance": 23620,
+  "model": "P1-20260311"
+}

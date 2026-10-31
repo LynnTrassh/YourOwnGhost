@@ -1,0 +1,210 @@
+{
+  "seed": "1844070019",
+  "layer": 2,
+  "roomId": "room-8",
+  "planHash": "04f4d8fd",
+  "variant": "baseline",
+  "view": "ceiling-bedroom",
+  "camera": {
+    "position": [
+      3.3333333333333335,
+      1.65,
+      3.3333333333333335
+    ],
+    "rotation": [
+      0.6427616686149639,
+      0.5880026035475675,
+      0,
+      "YXZ"
+    ],
+    "fov": 72
+  },
+  "exposure": 1.1025,
+  "vhs": 0.35,
+  "flashlight": true,
+  "art": {
+    "roomId": "room-8",
+    "variant": "baseline",
+    "source": [
+      25,
+      1,
+      -57.5
+    ],
+    "radius": 6,
+    "wallSlots": 1,
+    "lights": [
+      {
+        "uuid": "61344cc4-891a-4936-88b6-28e19af328f0",
+        "role": "focus"
+      },
+      {
+        "uuid": "4afbe994-6c9e-4296-9b06-e85ebacd008e",
+        "role": "exit"
+      },
+      {
+        "uuid": "305256fe-4715-4e48-af6c-27a3ee273a75",
+        "role": "focus"
+      }
+    ],
+    "additionalLights": 0,
+    "additionalGeometry": 0,
+    "disposed": false
+  },
+  "ceiling": {
+    "enabled": true,
+    "disposed": false,
+    "rooms": [
+      {
+        "roomId": "bedroom",
+        "theme": "bedroom",
+        "cells": 45,
+        "trimInstances": 88,
+        "damp": [
+          -7.166666666666667,
+          2.8333333333333335
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-1",
+        "theme": "archive",
+        "cells": 63,
+        "trimInstances": 132,
+        "damp": [
+          -7.166666666666667,
+          -22.166666666666668
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-2",
+        "theme": "clinic",
+        "cells": 45,
+        "trimInstances": 72,
+        "damp": [
+          -7.166666666666667,
+          -27.166666666666668
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-3",
+        "theme": "shrine",
+        "cells": 45,
+        "trimInstances": 98,
+        "damp": [
+          7.833333333333334,
+          -32.16666666666667
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-4",
+        "theme": "parlor",
+        "cells": 54,
+        "trimInstances": 89,
+        "damp": [
+          22.833333333333336,
+          -37.16666666666667
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-5",
+        "theme": "archive",
+        "cells": 45,
+        "trimInstances": 98,
+        "damp": [
+          22.833333333333336,
+          -22.166666666666668
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-6",
+        "theme": "nursery",
+        "cells": 72,
+        "trimInstances": 120,
+        "damp": [
+          22.833333333333336,
+          -52.16666666666667
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-7",
+        "theme": "clinic",
+        "cells": 72,
+        "trimInstances": 96,
+        "damp": [
+          37.833333333333336,
+          -52.16666666666667
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-8",
+        "theme": "shrine",
+        "cells": 63,
+        "trimInstances": 132,
+        "damp": [
+          22.833333333333336,
+          -67.16666666666667
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-9",
+        "theme": "archive",
+        "cells": 72,
+        "trimInstances": 110,
+        "damp": [
+          7.833333333333334,
+          -22.166666666666668
+        ],
+        "minimumY": 2.94
+      },
+      {
+        "roomId": "room-10",
+        "theme": "shrine",
+        "cells": 81,
+        "trimInstances": 114,
+        "damp": [
+          7.833333333333334,
+          -52.16666666666667
+        ],
+        "minimumY": 2.94
+      }
+    ],
+    "ceilingY": 3,
+    "minimumTrimY": 2.94,
+    "addedLights": 0,
+    "addedColliders": 0
+  },
+  "encounter": {
+    "mode": "reduced",
+    "active": false,
+    "eventId": null,
+    "elapsed": 0,
+    "opacity": 0,
+    "disposed": false
+  },
+  "picture": "ghost-bone",
+  "inspectFrame": false,
+  "models": {
+    "requested": 121,
+    "loaded": 121,
+    "failed": [],
+    "pending": 0
+  },
+  "unchanged": {
+    "plan": true,
+    "colliders": true,
+    "otherWallSlots": true
+  },
+  "render": {
+    "calls": 246,
+    "triangles": 226379
+  },
+  "scope": "实际 world 静态美术预览；事件未推进；非真人试玩验收"
+}

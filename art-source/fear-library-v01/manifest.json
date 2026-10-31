@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "ceiling-spider-a-v01",
+      "name": "天花板长足蛛",
+      "kind": "model-reference",
+      "target": "腿展约 0.50 m；优先 B09 灰盒替换",
+      "prompt": "Use case: stylized-concept. Original production design for the 3D psychological horror game Your Own Ghost, dark old domestic interiors, understated found-footage realism with subtle hand-painted surface variation. This is an isolated model-input image, not a room concept. One complete object only, generous margin, no cropping, no text, no logo, no collage or turnaround sheet, no platform or stand, no baked hard shadow. Soft neutral studio illumination on an even charcoal gray background. Keep all silhouette details readable, realistically tangible forms, muted colours. No specific existing film or game character. Subject: one original anatomically legible long-legged house spider, exactly EIGHT separate articulated walking legs attached to the compact cephalothorax, four legs each side, a separate dark oval abdomen with a muted ash mottled dorsal mark. Low crouched spread pose appropriate for clinging to a ceiling; all eight legs completely visible, naturally bent and well separated, durable moderately thick tapered leg segments rather than hair-thin wires. Two tiny pedipalps clearly shorter than walking legs. Oblique elevated front three-quarter view showing dorsal abdomen and leg attachment structure. Soot brown and grey, faint dry chitin highlights, sparse short hairs suggested in texture not furry plush. Uncanny by the long reaching leg span and stillness; no human face, no skull markings, no glowing eyes, no teeth, no horns, no fantasy claws. Approximate physical leg span 0.50 metre, body 0.14 metre. No spider web in this image.",
+      "input": "concepts/ceiling-spider-a-v01.png",
+      "inputSHA256": "4f2392ee6c379dd3fb0706137b245ea63ae2f74931e4001dbace83a151078080",
+      "status": "exported-technical-review-complete-awaiting-game-integration",
+      "generation": {
+        "model": "tripo-p1",
+        "face_limit": 6000,
+        "texture": true,
+        "pbr": false,
+        "texture_quality": "standard",
+        "candidates": 1
+      },
+      "taskId": "44331dd5-c3ca-45bb-8cf7-29120d3987fe",
+      "runtimeUrl": "/art/fear-library/v01/ceiling-spider-a-v01.glb",
+      "creditsConsumed": 50,
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "coiled-snake-a-v01",
+      "name": "柜底盘蛇",
+      "kind": "model-reference",
+      "target": "盘绕占位约 0.65×0.55 m；身体长度另核验",
+      "prompt": "Use case: stylized-concept. Original production design for the 3D psychological horror game Your Own Ghost, dark old domestic interiors, understated found-footage realism with subtle hand-painted surface variation. This is an isolated model-input image, not a room concept. One complete object only, generous margin, no cropping, no text, no logo, no collage or turnaround sheet, no platform or stand, no baked hard shadow. Soft neutral studio illumination on an even charcoal gray background. Keep all silhouette details readable, realistically tangible forms, muted colours. No specific existing film or game character. Subject: ONE original snake, continuous single legless body, loose low oval coil with two clearly separated turns, distinct head resting slightly above the inner coil and distinct tapering tail tip outside, entire body visible. Body proportions inspired by a believable medium-sized boa, approximately 1.6 metre length coiled into 0.65 metre footprint. Olive grey and tobacco brown fine scales with restrained uneven dark oval blotches, pale muted belly scutes, natural small eyes, closed mouth, no visible fangs or tongue, no human face. Three-quarter view slightly above so the head, body path and spaces between coils read clearly for 3D reconstruction. Thickness remains plausible along the body, no fused loops, no second head, no jewels or decorations, no environment. A quiet still snake which could hide under a wardrobe in an old house.",
+      "input": "concepts/coiled-snake-a-v01.png",
+      "inputSHA256": "80bf03cc1b5360f77f6335fbdd9c1960f43c0fac334b5db1fc1d4bd0c0e10ccd",
+      "status": "exported-technical-review-complete-awaiting-game-integration",
+      "generation": {
+        "model": "tripo-p1",
+        "face_limit": 6000,
+        "texture": true,
+        "pbr": false,
+        "texture_quality": "standard",
+        "candidates": 1
+      },
+      "taskId": "cffeaa82-b97a-4634-8478-2a31b145e057",
+      "runtimeUrl": "/art/fear-library/v01/coiled-snake-a-v01.glb",
+      "creditsConsumed": 50,
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "threshold-toad-a-v01",
+      "name": "门槛灰褐蟾蜍",
+      "kind": "model-reference",
+      "target": "长约 0.38 m；只放侧翼或已有容器内",
+      "prompt": "Use case: stylized-concept. Original production design for the 3D psychological horror game Your Own Ghost, dark old domestic interiors, understated found-footage realism with subtle hand-painted surface variation. This is an isolated model-input image, not a room concept. One complete object only, generous margin, no cropping, no text, no logo, no collage or turnaround sheet, no platform or stand, no baked hard shadow. Soft neutral studio illumination on an even charcoal gray background. Keep all silhouette details readable, realistically tangible forms, muted colours. No specific existing film or game character. Subject: ONE original large but recognizably natural toad crouching low, complete body with FOUR clearly distinct legs, short strong forelimbs, folded sturdy hindlimbs, broad squat torso and blunt snout. Quietly facing slightly toward the viewer. Large but natural gland shapes behind the eyes, muted bronze eyes with horizontal pupils, dry irregular brown-grey bumpy skin with tiny damp highlights only around the eyes, pale ochre throat and belly; no ooze, no sores, no gore. Approximately 0.38 metre snout to rump. Medium-close three-quarter front view with space around all toes. Its disturbing quality is heavy stillness and a broad blank stare, not a cartoon grin. No human teeth, no added limbs, no horns, no mushrooms, no symbols, no crown, no monster mouth. A plausible amphibian enlarged enough to be noticed beside a dark old cabinet.",
+      "input": "concepts/threshold-toad-a-v01.png",
+      "inputSHA256": "fee72c85b86c7c98612cea2c9cec5122878a7dbbd24474abace020c14bb22dbc",
+      "status": "exported-technical-review-complete-awaiting-game-integration",
+      "generation": {
+        "model": "tripo-p1",
+        "face_limit": 6000,
+        "texture": true,
+        "pbr": false,
+        "texture_quality": "standard",
+        "candidates": 1
+      },
+      "taskId": "f0d8db1d-3f04-45c2-a961-6e98e1854b50",
+      "runtimeUrl": "/art/fear-library/v01/threshold-toad-a-v01.glb",
+      "creditsConsumed": 50,
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "folded-lintel-figure-a-v01",
+      "name": "梁下折身者",
+      "kind": "model-reference",
+      "target": "展开约 2.35 m；只作静态侧翼/高处候选",
+      "prompt": "Use case: stylized-concept. Original production design for the 3D psychological horror game Your Own Ghost, dark old domestic interiors, understated found-footage realism with subtle hand-painted surface variation. This is an isolated model-input image, not a room concept. One complete object only, generous margin, no cropping, no text, no logo, no collage or turnaround sheet, no platform or stand, no baked hard shadow. Soft neutral studio illumination on an even charcoal gray background. Keep all silhouette details readable, realistically tangible forms, muted colours. No specific existing film or game character. Subject: ONE complete original adult humanoid creature with disturbingly long thin arms and shins, narrow shoulders, short ribcage, a modest elongated neck and a small bowed feature-poor oval head. Four limbs only, two arms and two legs; five ordinary fingers on each hand, no claws. It wears a faded ash-grey simple long linen sleeping tunic and matching loose thin trousers, visibly stitched real cloth, bare thin hands and feet. No suit, no tie, no hat, no schoolteacher clothes, no bandages, no exposed wounds. Pose: crouched with knees splayed asymmetrically, torso folded forward, one long forearm lifted as if resting against a high door lintel, the other hanging beside the knee. All limbs separated and fully visible with clear negative spaces, feet touching the same implied plane but no visible floor. Hypothetical standing height 2.35 metres, shown compact folded height approximately 1.35 metres. Quiet stillness, face mostly in its own soft shadow with only shallow eye hollows and a small closed mouth, no smile, no eye glow. A long angular silhouette for partly hiding behind a beam in an old domestic interior; not a recognisable film or videogame creature.",
+      "input": "concepts/folded-lintel-figure-a-v01.png",
+      "inputSHA256": "870a28df51e94c98def3564e690d13b035a81490ac2935ef8e37905a72b165c1",
+      "status": "exported-technical-review-complete-awaiting-game-integration",
+      "generation": {
+        "model": "tripo-p1",
+        "face_limit": 6000,
+        "texture": true,
+        "pbr": false,
+        "texture_quality": "standard",
+        "candidates": 1
+      },
+      "taskId": "f086a438-8eb5-4383-816c-3bd7c6a29e64",
+      "runtimeUrl": "/art/fear-library/v01/folded-lintel-figure-a-v01.glb",
+      "creditsConsumed": 50,
+      "runtimeIntegrated": false
+    }
+  ],
+  "generationAuthorization": {
+    "date": "2026-10-31",
+    "userInstruction": "继续",
+    "scope": "Four reviewed model input images, one model each. Continuation after four-model / 200 credit proposal.",
+    "profile": "horror-models-secondary"
+  },
+  "pricing": {
+    "creditsPerModel": 50,
+    "expectedTotal": 200,
+    "source": "https://platform.tripo3d.ai/docs/billing",
+    "balanceBefore": 24100
+  },
+  "creditsConsumed": 200,
+  "balanceAfter": 23900
+}

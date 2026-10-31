@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>空间 / 摄影机 / 信号 · 分层评审</title><style>
+body{margin:0;background:#111;color:#e5e6de;font:14px/1.6 system-ui}canvas{display:block;width:100vw;height:100vh}aside{position:fixed;left:12px;top:12px;max-height:88vh;overflow:auto;width:280px;padding:16px;background:#111e;border:1px solid #555;border-radius:8px}h1{font-size:18px;margin:0}button,select,input{font:inherit}button,select{background:#252925;color:#eee;padding:6px;border:1px solid #666;border-radius:4px;margin:3px}label{display:block;margin-top:9px}small{color:#aaa}#toggle{position:fixed;right:12px;top:12px}pre{white-space:pre-wrap;font-size:10px}#caption{position:fixed;bottom:12px;right:12px;background:#111b;padding:6px 10px;pointer-events:none}#hud{position:fixed;top:24px;left:42%;color:#eee;font-family:monospace}a{color:#bcd}
+</style><canvas id="view"></canvas><button id="toggle">收起面板</button><aside id="panel"><h1>空间 / 摄影机 / 信号</h1><small>房间美术供正式接入；此页用于画质校准。<br>A–D 同机位；E 明亮房间使用同一配置。</small>
+<div><button data-stage="A">A 原图</button><button data-stage="B">B 调色</button><button data-stage="C">C 暗部噪声</button><button data-stage="D">D 完整基础</button><button data-stage="E">E 明亮房间</button></div>
+<label><input id="flashlight" type="checkbox" checked> 原版手电筒</label>
+<label><input id="enabled" type="checkbox" checked> 后处理总开关</label>
+<label>摄影机缺陷<select id="preset"><option value="off">关闭</option><option value="subtle" selected>微弱 · 正常探索</option><option value="reference">参考强度 · 评审</option><option value="degraded">劣化 · 手动评审</option></select></label>
+<label>暗部颗粒<input id="grain" type="range" min="0" max="1" step=".05" value="1"></label>
+<label><input type="checkbox" id="motion" checked> 允许事件局部横向扰动</label>
+<label><input type="checkbox" id="animate"> 播放颗粒变化</label>
+<label><input type="checkbox" id="hud-enabled"> 独立录像 HUD</label>
+<button id="signal">模拟看见侧门异常</button><button id="cancel">取消异常</button><button id="freeze">检视局部故障</button>
+<p><a href="/art-source/horror-director-v2-preview/index.html">返回真实地图房间与手电预览</a></p><p><small>信号故障只在指定侧门区域生效，1.2 秒后结束；没有全屏自动故障。</small></p>
+<button id="capture">保存当前画面</button><button id="benchmark">测量 A/D 渲染开销</button><button id="color-check">核对关闭色彩</button>
+<p id="status">加载材质…</p><details><summary>参数及测量</summary><pre id="data"></pre></details></aside><div id="hud" hidden>● REC &nbsp; 00:00:03</div><div id="caption"></div><script type="module" src="./preview.js"></script></html>

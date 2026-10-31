@@ -1,0 +1,352 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "home-06",
+  "models": 10,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "home-06-0",
+      "assetId": "furniture-document-table",
+      "bounds": {
+        "min": [
+          -1.3499999999999996,
+          0,
+          -0.9750000000000001
+        ],
+        "max": [
+          -0.050000000000000155,
+          0.7999999999999996,
+          -0.325
+        ]
+      }
+    },
+    {
+      "id": "home-06-1",
+      "assetId": "furniture-document-table",
+      "bounds": {
+        "min": [
+          0.050000000000000155,
+          0,
+          -0.9750000000000001
+        ],
+        "max": [
+          1.3499999999999996,
+          0.7999999999999996,
+          -0.325
+        ]
+      }
+    },
+    {
+      "id": "home-06-2",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -1.72,
+          0,
+          0.16999999999999996
+        ],
+        "max": [
+          -1.28,
+          0.9599999999999997,
+          0.6300000000000001
+        ]
+      }
+    },
+    {
+      "id": "home-06-3",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -0.22000000000000006,
+          0,
+          0.16999999999999996
+        ],
+        "max": [
+          0.22000000000000006,
+          0.9599999999999997,
+          0.6300000000000001
+        ]
+      }
+    },
+    {
+      "id": "home-06-4",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          1.28,
+          0,
+          0.16999999999999996
+        ],
+        "max": [
+          1.72,
+          0.9599999999999997,
+          0.6300000000000001
+        ]
+      }
+    },
+    {
+      "id": "home-06-5",
+      "assetId": "furniture-display-cabinet",
+      "bounds": {
+        "min": [
+          -2.15,
+          0,
+          -2.4050000000000002
+        ],
+        "max": [
+          -0.8500000000000001,
+          2.249999999999999,
+          -1.7550000000000001
+        ]
+      }
+    },
+    {
+      "id": "home-06-6",
+      "assetId": "furniture-dresser",
+      "bounds": {
+        "min": [
+          0.75,
+          -5.551115123125783e-17,
+          -2.4050000000000002
+        ],
+        "max": [
+          2.05,
+          0.8799999999999999,
+          -1.7550000000000001
+        ]
+      }
+    },
+    {
+      "id": "home-06-7",
+      "assetId": "fixture-radiator-cast-iron",
+      "bounds": {
+        "min": [
+          -2.39,
+          0,
+          0.9500000000000002
+        ],
+        "max": [
+          -2.2099999999999995,
+          0.6499999999999995,
+          1.8499999999999996
+        ]
+      }
+    },
+    {
+      "id": "home-06-8",
+      "assetId": "lighting-chandelier-three-arm",
+      "bounds": {
+        "min": [
+          -1.125,
+          2.48,
+          -1.525
+        ],
+        "max": [
+          -0.47500000000000003,
+          2.98,
+          -0.875
+        ]
+      }
+    },
+    {
+      "id": "home-06-9",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "home-06",
+    "theme": "home",
+    "name": "家庭餐室",
+    "composition": "两张旧桌拼成横向餐台；只摆三把椅子。",
+    "reveal": "第四个座位留空，后方柜子却像另一位旁观者。",
+    "intensity": 2,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "bedroom",
+    "focus": [
+      0,
+      0.9,
+      -0.65
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-document-table",
+        "x": -0.7,
+        "z": -0.65,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-06-0"
+      },
+      {
+        "assetId": "furniture-document-table",
+        "x": 0.7,
+        "z": -0.65,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-06-1"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": -1.5,
+        "z": 0.4,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "home-06-2"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 0,
+        "z": 0.4,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "home-06-3"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 1.5,
+        "z": 0.4,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "home-06-4"
+      },
+      {
+        "assetId": "furniture-display-cabinet",
+        "x": -1.5,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-06-5"
+      },
+      {
+        "assetId": "furniture-dresser",
+        "x": 1.4,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-06-6"
+      },
+      {
+        "assetId": "fixture-radiator-cast-iron",
+        "x": -2.3,
+        "z": 1.4,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "home-06-7"
+      },
+      {
+        "assetId": "lighting-chandelier-three-arm",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "home-06-8"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "home-06-9"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 170,
+    "triangles": 271100,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 31
+  }
+}

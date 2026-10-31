@@ -1,7 +1,7 @@
 {
   "seed": "1844070019",
   "layer": 1,
-  "planHash": "684497c4",
+  "planHash": "23af6434",
   "rooms": [
     {
       "roomId": "bedroom",
@@ -266,7 +266,9 @@
           }
         }
       ],
-      "events": [],
+      "events": [
+        "B07"
+      ],
       "floorPlan": {
         "preserved": true,
         "reason": "事件、威胁或关联观察空间保持既有占位"
@@ -278,9 +280,9 @@
       "roomId": "room-2",
       "theme": "bedroom",
       "areaM2": 175,
-      "floorFurniture": 10,
-      "desired": 6,
-      "placed": 6,
+      "floorFurniture": 0,
+      "desired": 2,
+      "placed": 2,
       "placements": [
         {
           "kind": "linen",
@@ -321,96 +323,18 @@
             "minZ": -22.166666666666668,
             "maxZ": -20.986666666666668
           }
-        },
-        {
-          "kind": "pegs",
-          "position": [
-            21.666666666666664,
-            1.2,
-            -7.606
-          ],
-          "normal": [
-            0,
-            -1
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minZ": -7.75,
-            "maxZ": -7.601999999999999,
-            "minX": 21.076666666666664,
-            "maxX": 22.256666666666664
-          }
-        },
-        {
-          "kind": "linen",
-          "position": [
-            11.666666666666668,
-            1.2,
-            -22.394000000000002
-          ],
-          "normal": [
-            0,
-            1
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minZ": -22.398,
-            "maxZ": -22.25,
-            "minX": 11.076666666666668,
-            "maxX": 12.256666666666668
-          }
-        },
-        {
-          "kind": "pictures",
-          "position": [
-            22.394000000000002,
-            1.2,
-            -16.576666666666668
-          ],
-          "normal": [
-            -1,
-            0
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minX": 22.25,
-            "maxX": 22.398,
-            "minZ": -17.166666666666668,
-            "maxZ": -15.986666666666668
-          }
-        },
-        {
-          "kind": "pegs",
-          "position": [
-            13.423333333333336,
-            1.2,
-            -7.606
-          ],
-          "normal": [
-            0,
-            -1
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minZ": -7.75,
-            "maxZ": -7.601999999999999,
-            "minX": 12.833333333333336,
-            "maxX": 14.013333333333335
-          }
         }
       ],
-      "events": [],
+      "events": [
+        "TI03"
+      ],
       "floorPlan": {
         "target": 10,
         "placed": 10,
         "missing": []
       },
       "needsFloorPlan": false,
-      "reason": null
+      "reason": "事件专用布景保留观测区域，墙面补足用途信息"
     },
     {
       "roomId": "room-3",
@@ -600,7 +524,9 @@
           }
         }
       ],
-      "events": [],
+      "events": [
+        "B09"
+      ],
       "floorPlan": {
         "target": 10,
         "placed": 10,
@@ -659,11 +585,12 @@
         }
       ],
       "events": [
-        "B08"
+        "B12"
       ],
       "floorPlan": {
-        "preserved": true,
-        "reason": "事件、威胁或关联观察空间保持既有占位"
+        "target": 8,
+        "placed": 8,
+        "missing": []
       },
       "needsFloorPlan": false,
       "reason": "事件专用布景保留观测区域，墙面补足用途信息"
@@ -672,9 +599,9 @@
       "roomId": "room-6",
       "theme": "clinic",
       "areaM2": 175,
-      "floorFurniture": 10,
-      "desired": 6,
-      "placed": 6,
+      "floorFurniture": 0,
+      "desired": 2,
+      "placed": 2,
       "placements": [
         {
           "kind": "instruments",
@@ -715,96 +642,18 @@
             "minZ": 6.076666666666667,
             "maxZ": 7.256666666666667
           }
-        },
-        {
-          "kind": "linen",
-          "position": [
-            37.394,
-            1.2,
-            -4.91
-          ],
-          "normal": [
-            -1,
-            0
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minX": 37.25,
-            "maxX": 37.397999999999996,
-            "minZ": -5.5,
-            "maxZ": -4.32
-          }
-        },
-        {
-          "kind": "instruments",
-          "position": [
-            23.423333333333332,
-            1.2,
-            7.394
-          ],
-          "normal": [
-            0,
-            -1
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minZ": 7.25,
-            "maxZ": 7.398000000000001,
-            "minX": 22.833333333333332,
-            "maxX": 24.013333333333332
-          }
-        },
-        {
-          "kind": "records",
-          "position": [
-            25.09,
-            1.2,
-            -7.394
-          ],
-          "normal": [
-            0,
-            1
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minZ": -7.398000000000001,
-            "maxZ": -7.25,
-            "minX": 24.5,
-            "maxX": 25.68
-          }
-        },
-        {
-          "kind": "linen",
-          "position": [
-            30.09,
-            1.2,
-            7.394
-          ],
-          "normal": [
-            0,
-            -1
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minZ": 7.25,
-            "maxZ": 7.398000000000001,
-            "minX": 29.5,
-            "maxX": 30.68
-          }
         }
       ],
-      "events": [],
+      "events": [
+        "B11"
+      ],
       "floorPlan": {
         "target": 10,
         "placed": 10,
         "missing": []
       },
       "needsFloorPlan": false,
-      "reason": null
+      "reason": "事件专用布景保留观测区域，墙面补足用途信息"
     },
     {
       "roomId": "room-7",
@@ -1174,7 +1023,7 @@
         }
       ],
       "events": [
-        "ME02"
+        "RI01"
       ],
       "floorPlan": {
         "preserved": true,
@@ -1187,9 +1036,9 @@
       "roomId": "room-10",
       "theme": "parlor",
       "areaM2": 200,
-      "floorFurniture": 10,
-      "desired": 7,
-      "placed": 7,
+      "floorFurniture": 0,
+      "desired": 2,
+      "placed": 2,
       "placements": [
         {
           "kind": "pictures",
@@ -1230,116 +1079,17 @@
             "minX": -22.166666666666668,
             "maxX": -20.986666666666668
           }
-        },
-        {
-          "kind": "pictures",
-          "position": [
-            -7.606,
-            1.2,
-            -23.333333333333336
-          ],
-          "normal": [
-            -1,
-            0
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minX": -7.75,
-            "maxX": -7.601999999999999,
-            "minZ": -23.923333333333336,
-            "maxZ": -22.743333333333336
-          }
-        },
-        {
-          "kind": "pictures",
-          "position": [
-            -22.394000000000002,
-            1.2,
-            -34.910000000000004
-          ],
-          "normal": [
-            1,
-            0
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minX": -22.398,
-            "maxX": -22.25,
-            "minZ": -35.50000000000001,
-            "maxZ": -34.32
-          }
-        },
-        {
-          "kind": "textile",
-          "position": [
-            -14.91,
-            1.2,
-            -27.394000000000002
-          ],
-          "normal": [
-            0,
-            1
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minZ": -27.398,
-            "maxZ": -27.25,
-            "minX": -15.5,
-            "maxX": -14.32
-          }
-        },
-        {
-          "kind": "pictures",
-          "position": [
-            -7.606,
-            1.2,
-            -31.576666666666668
-          ],
-          "normal": [
-            -1,
-            0
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minX": -7.75,
-            "maxX": -7.601999999999999,
-            "minZ": -32.16666666666667,
-            "maxZ": -30.986666666666668
-          }
-        },
-        {
-          "kind": "pictures",
-          "position": [
-            -22.394000000000002,
-            1.2,
-            -28.243333333333336
-          ],
-          "normal": [
-            1,
-            0
-          ],
-          "bounds": {
-            "minY": 1.2,
-            "maxY": 2.3200000000000003,
-            "minX": -22.398,
-            "maxX": -22.25,
-            "minZ": -28.833333333333336,
-            "maxZ": -27.653333333333336
-          }
         }
       ],
-      "events": [],
+      "events": [
+        "ME02"
+      ],
       "floorPlan": {
-        "target": 10,
-        "placed": 10,
-        "missing": []
+        "preserved": true,
+        "reason": "事件、威胁或关联观察空间保持既有占位"
       },
       "needsFloorPlan": false,
-      "reason": null
+      "reason": "事件专用布景保留观测区域，墙面补足用途信息"
     },
     {
       "roomId": "room-11",
@@ -1470,7 +1220,9 @@
           }
         }
       ],
-      "events": [],
+      "events": [
+        "ID02"
+      ],
       "floorPlan": {
         "target": 10,
         "placed": 10,
@@ -1480,8 +1232,8 @@
       "reason": null
     }
   ],
-  "clusters": 63,
-  "draws": 80,
-  "triangles": 35298,
+  "clusters": 50,
+  "draws": 78,
+  "triangles": 26798,
   "skipped": []
 }

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-31",
+  "tool": "built-in image_gen",
+  "status": "approved-four-models-submitted",
+  "assets": [
+    {
+      "id": "ceiling-spider-a-v01",
+      "name": "天花板长足蛛",
+      "kind": "model-reference",
+      "target": "腿展约 0.50 m；优先 B09 灰盒替换",
+      "prompt": "Use case: stylized-concept. Original production design for the 3D psychological horror game Your Own Ghost, dark old domestic interiors, understated found-footage realism with subtle hand-painted surface variation. This is an isolated model-input image, not a room concept. One complete object only, generous margin, no cropping, no text, no logo, no collage or turnaround sheet, no platform or stand, no baked hard shadow. Soft neutral studio illumination on an even charcoal gray background. Keep all silhouette details readable, realistically tangible forms, muted colours. No specific existing film or game character. Subject: one original anatomically legible long-legged house spider, exactly EIGHT separate articulated walking legs attached to the compact cephalothorax, four legs each side, a separate dark oval abdomen with a muted ash mottled dorsal mark. Low crouched spread pose appropriate for clinging to a ceiling; all eight legs completely visible, naturally bent and well separated, durable moderately thick tapered leg segments rather than hair-thin wires. Two tiny pedipalps clearly shorter than walking legs. Oblique elevated front three-quarter view showing dorsal abdomen and leg attachment structure. Soot brown and grey, faint dry chitin highlights, sparse short hairs suggested in texture not furry plush. Uncanny by the long reaching leg span and stillness; no human face, no skull markings, no glowing eyes, no teeth, no horns, no fantasy claws. Approximate physical leg span 0.50 metre, body 0.14 metre. No spider web in this image."
+    },
+    {
+      "id": "coiled-snake-a-v01",
+      "name": "柜底盘蛇",
+      "kind": "model-reference",
+      "target": "盘绕占位约 0.65×0.55 m；身体长度另核验",
+      "prompt": "Use case: stylized-concept. Original production design for the 3D psychological horror game Your Own Ghost, dark old domestic interiors, understated found-footage realism with subtle hand-painted surface variation. This is an isolated model-input image, not a room concept. One complete object only, generous margin, no cropping, no text, no logo, no collage or turnaround sheet, no platform or stand, no baked hard shadow. Soft neutral studio illumination on an even charcoal gray background. Keep all silhouette details readable, realistically tangible forms, muted colours. No specific existing film or game character. Subject: ONE original snake, continuous single legless body, loose low oval coil with two clearly separated turns, distinct head resting slightly above the inner coil and distinct tapering tail tip outside, entire body visible. Body proportions inspired by a believable medium-sized boa, approximately 1.6 metre length coiled into 0.65 metre footprint. Olive grey and tobacco brown fine scales with restrained uneven dark oval blotches, pale muted belly scutes, natural small eyes, closed mouth, no visible fangs or tongue, no human face. Three-quarter view slightly above so the head, body path and spaces between coils read clearly for 3D reconstruction. Thickness remains plausible along the body, no fused loops, no second head, no jewels or decorations, no environment. A quiet still snake which could hide under a wardrobe in an old house."
+    },
+    {
+      "id": "threshold-toad-a-v01",
+      "name": "门槛灰褐蟾蜍",
+      "kind": "model-reference",
+      "target": "长约 0.38 m；只放侧翼或已有容器内",
+      "prompt": "Use case: stylized-concept. Original production design for the 3D psychological horror game Your Own Ghost, dark old domestic interiors, understated found-footage realism with subtle hand-painted surface variation. This is an isolated model-input image, not a room concept. One complete object only, generous margin, no cropping, no text, no logo, no collage or turnaround sheet, no platform or stand, no baked hard shadow. Soft neutral studio illumination on an even charcoal gray background. Keep all silhouette details readable, realistically tangible forms, muted colours. No specific existing film or game character. Subject: ONE original large but recognizably natural toad crouching low, complete body with FOUR clearly distinct legs, short strong forelimbs, folded sturdy hindlimbs, broad squat torso and blunt snout. Quietly facing slightly toward the viewer. Large but natural gland shapes behind the eyes, muted bronze eyes with horizontal pupils, dry irregular brown-grey bumpy skin with tiny damp highlights only around the eyes, pale ochre throat and belly; no ooze, no sores, no gore. Approximately 0.38 metre snout to rump. Medium-close three-quarter front view with space around all toes. Its disturbing quality is heavy stillness and a broad blank stare, not a cartoon grin. No human teeth, no added limbs, no horns, no mushrooms, no symbols, no crown, no monster mouth. A plausible amphibian enlarged enough to be noticed beside a dark old cabinet."
+    },
+    {
+      "id": "folded-lintel-figure-a-v01",
+      "name": "梁下折身者",
+      "kind": "model-reference",
+      "target": "展开约 2.35 m；只作静态侧翼/高处候选",
+      "prompt": "Use case: stylized-concept. Original production design for the 3D psychological horror game Your Own Ghost, dark old domestic interiors, understated found-footage realism with subtle hand-painted surface variation. This is an isolated model-input image, not a room concept. One complete object only, generous margin, no cropping, no text, no logo, no collage or turnaround sheet, no platform or stand, no baked hard shadow. Soft neutral studio illumination on an even charcoal gray background. Keep all silhouette details readable, realistically tangible forms, muted colours. No specific existing film or game character. Subject: ONE complete original adult humanoid creature with disturbingly long thin arms and shins, narrow shoulders, short ribcage, a modest elongated neck and a small bowed feature-poor oval head. Four limbs only, two arms and two legs; five ordinary fingers on each hand, no claws. It wears a faded ash-grey simple long linen sleeping tunic and matching loose thin trousers, visibly stitched real cloth, bare thin hands and feet. No suit, no tie, no hat, no schoolteacher clothes, no bandages, no exposed wounds. Pose: crouched with knees splayed asymmetrically, torso folded forward, one long forearm lifted as if resting against a high door lintel, the other hanging beside the knee. All limbs separated and fully visible with clear negative spaces, feet touching the same implied plane but no visible floor. Hypothetical standing height 2.35 metres, shown compact folded height approximately 1.35 metres. Quiet stillness, face mostly in its own soft shadow with only shallow eye hollows and a small closed mouth, no smile, no eye glow. A long angular silhouette for partly hiding behind a beam in an old domestic interior; not a recognisable film or videogame creature."
+    },
+    {
+      "id": "corner-cobweb-a-v01",
+      "name": "墙角乱丝蛛网",
+      "kind": "transparent-texture-candidate",
+      "target": "0.8–1.2 m 墙角薄片；不送 Tripo",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Create one original production-quality isolated cobweb TEXTURE ASSET for a dark old domestic horror game. GENUINE transparent background, including all holes between silk threads. A single irregular triangular corner web patch intended to stretch between a vertical wall edge at left and ceiling edge at top, empty diagonal lower-right edge with ragged tapered stray threads. Fine pale warm-grey silk, a few stronger supporting strands, many thinner irregular cross threads, subtly dusty sparse junctions, three-quarter of area remains open transparent gaps. Natural tangle-web construction, not a perfect circular Halloween orb, not cotton gauze, not cloth, not thick ropes. Flat front-on view, neutral evenly readable silk, no room, no wall, no ceiling geometry, no spiders, no insects, no egg sacs, no background of any colour, no floor, no shadow, no glow, no text or border. Entire silk shape within image with margin; slender detached stray threads taper to transparent. Original asset, not copied from a reference image."
+    }
+  ],
+  "revision_prompts": [
+    {
+      "id": "corner-cobweb-a-v01",
+      "reason": "First candidate resembles a torn membrane and contains colored edge artifacts; rejected.",
+      "prompt": "Edit this cobweb asset into a genuinely sparse spider-silk thread network. Remove ALL continuous fabric, opaque membrane, gray sheets and every red or yellow colored artifact. Keep only individual pale gray thin silk lines, no fill anywhere between threads. Rebuild a triangular wall-corner tangle: roughly 10 long supporting silk strands joined by 60 delicate irregular cross strands. Large clearly empty spaces between every strand; at least 90 percent of image area transparent. Clean gray-white silk only, no texture noise, no debris, no stains, no colors. Front-on isolated flat texture on genuine transparent background, holes fully transparent. Overall triangle left and top anchored, diagonal edge irregular. No circular orb, no wall, no insects, no shadows. Thin readable distinct silk strands, not a torn cloth or lace sheet."
+    },
+    {
+      "id": "corner-cobweb-a-v01",
+      "kind": "fresh-generation",
+      "prompt": "A sparse delicate cobweb in the upper left corner, made entirely of thin silver-white threads, isolated on a transparent background. Individual strands crossing irregularly and gently sagging. Air between strands. Minimal structure, extremely open. No sheet or fabric, no dust, no spider, no shadows. Flat front view. The whole web fits within the square image with margins. A clean game texture, transparent PNG."
+    }
+  ]
+}

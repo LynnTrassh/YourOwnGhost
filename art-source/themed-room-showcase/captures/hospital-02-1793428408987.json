@@ -1,0 +1,377 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "hospital-02",
+  "models": 11,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "hospital-02-0",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -2.08,
+          0,
+          0.3799999999999999
+        ],
+        "max": [
+          -1.62,
+          0.9599999999999997,
+          0.8200000000000001
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-1",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -2.08,
+          0,
+          -0.3700000000000001
+        ],
+        "max": [
+          -1.62,
+          0.9599999999999997,
+          0.07000000000000009
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-2",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -2.08,
+          0,
+          -1.12
+        ],
+        "max": [
+          -1.62,
+          0.9599999999999997,
+          -0.6799999999999999
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-3",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          1.62,
+          0,
+          0.38
+        ],
+        "max": [
+          2.08,
+          0.9599999999999997,
+          0.82
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-4",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          1.62,
+          0,
+          -0.37
+        ],
+        "max": [
+          2.08,
+          0.9599999999999997,
+          0.06999999999999998
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-5",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          1.62,
+          0,
+          -1.12
+        ],
+        "max": [
+          2.08,
+          0.9599999999999997,
+          -0.68
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-6",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -0.22000000000000006,
+          0,
+          -2.18
+        ],
+        "max": [
+          0.22000000000000006,
+          0.9599999999999997,
+          -1.72
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-7",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          -1.8,
+          0,
+          -2.4050000000000002
+        ],
+        "max": [
+          -0.7,
+          2.1,
+          -1.7550000000000003
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-8",
+      "assetId": "fixture-radiator-cast-iron",
+      "bounds": {
+        "min": [
+          2.21,
+          0,
+          1.1500000000000004
+        ],
+        "max": [
+          2.3899999999999997,
+          0.6499999999999995,
+          2.05
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-9",
+      "assetId": "lighting-strip-double",
+      "bounds": {
+        "min": [
+          -1.2999999999999996,
+          2.48,
+          -1.325
+        ],
+        "max": [
+          -0.3000000000000005,
+          2.6599999999999997,
+          -1.075
+        ]
+      }
+    },
+    {
+      "id": "hospital-02-10",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "hospital-02",
+    "theme": "hospital",
+    "name": "末班候诊室",
+    "composition": "两组侧向候诊椅，中间留出纵深；最后一把椅子面墙。",
+    "reveal": "进入时读到秩序，走近尽头才看到反向座位。",
+    "intensity": 2,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "clinic",
+    "focus": [
+      0,
+      0.8,
+      -1.9
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-dining-chair",
+        "x": -1.85,
+        "z": 0.6,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-02-0"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": -1.85,
+        "z": -0.15,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-02-1"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": -1.85,
+        "z": -0.9,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-02-2"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 1.85,
+        "z": 0.6,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-02-3"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 1.85,
+        "z": -0.15,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-02-4"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 1.85,
+        "z": -0.9,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-02-5"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 0,
+        "z": -1.95,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-02-6"
+      },
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": -1.25,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-02-7"
+      },
+      {
+        "assetId": "fixture-radiator-cast-iron",
+        "x": 2.3,
+        "z": 1.6,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-02-8"
+      },
+      {
+        "assetId": "lighting-strip-double",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "hospital-02-9"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "hospital-02-10"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 165,
+    "triangles": 244844,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 7
+  }
+}

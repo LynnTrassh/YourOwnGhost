@@ -1,0 +1,68 @@
+{
+  "source": "art-source/fear-library-v01/output/ceiling-spider-a-v01/model.glb",
+  "destination": "public/art/fear-library/v01/ceiling-spider-a-v01.glb",
+  "sourceBytes": 1562448,
+  "runtimeBytes": 1562844,
+  "sourceSHA256": "8ecae65e0b15b216d4851891bb6780a8f6461e79331ae56d838fdb9127e49310",
+  "runtimeSHA256": "c1dea53310768de612685ad6397d555af9ab8db802a35c7b9fb624bb358150e6",
+  "triangles": 5094,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4033203125,
+      -0.1513671725988388,
+      -0.4990234375
+    ],
+    "max": [
+      0.4033203125,
+      0.1513671725988388,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.25,
+      0,
+      -0.20205479452054792
+    ],
+    "max": [
+      0.25,
+      0.15166339015774064,
+      0.20205479452054792
+    ],
+    "size": [
+      0.5,
+      0.15166339015774064,
+      0.40410958904109584
+    ]
+  },
+  "scale": 0.5009784735812133,
+  "scaleXYZ": [
+    0.5009784735812133,
+    0.5009784735812133,
+    0.5009784735812133
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "visually-reviewed",
+  "pivot": "bottom-centre",
+  "forward": "-Z",
+  "target": {
+    "id": "ceiling-spider-a-v01",
+    "yaw": 90,
+    "axis": "horizontalMax",
+    "metres": 0.5
+  },
+  "finiteVerticesChecked": 8676,
+  "degenerateTriangles": 0,
+  "ceilingMount": {
+    "contactPlane": "local Y=0, feet down in source",
+    "placement": "Parent rotation Z=180deg makes dorsal side face downward, local -Z front unchanged. Put parent origin at ceiling plane. Verify all feet contacts visually; not an animated rig."
+  },
+  "visualNotes": "Top view shows eight separated legs and short palps. Static feet-down source; ceiling mounting requires parent Z rotation 180 degrees and contact review. No crawling rig."
+}

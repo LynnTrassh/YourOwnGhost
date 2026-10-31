@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-office-divider-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-office-divider-v05.glb",
+  "sourceBytes": 14919748,
+  "runtimeBytes": 3678220,
+  "sourceSHA256": "af2c39b80d0b21c708a5a13e2fdd0601195697107aa3c142016481deb6c1e5f6",
+  "runtimeSHA256": "2c022c0eede52e25eb5265cd6ac0701c0135f060cca11a531a7bc538274a9dda",
+  "triangles": 14535,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.39929652214050293,
+      -0.5,
+      -0.3338509500026703
+    ],
+    "max": [
+      0.39929652214050293,
+      0.5,
+      0.3338509500026703
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5190854787826539,
+      0,
+      -0.4340062350034714
+    ],
+    "max": [
+      0.5190854787826539,
+      1.3,
+      0.4340062350034714
+    ],
+    "size": [
+      1.0381709575653078,
+      1.3,
+      0.8680124700069428
+    ]
+  },
+  "scale": 1.3,
+  "scaleXYZ": [
+    1.3,
+    1.3,
+    1.3
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "b57b69b612eed8935de43454963a59d2bfe2bf02d7d611f9db2f0fb198206d13"
+}

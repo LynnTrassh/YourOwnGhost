@@ -1,0 +1,64 @@
+{
+  "source": "art-source/fear-library-v01/output/threshold-toad-a-v01/model.glb",
+  "destination": "public/art/fear-library/v01/threshold-toad-a-v01.glb",
+  "sourceBytes": 1305180,
+  "runtimeBytes": 1305504,
+  "sourceSHA256": "9044db4fcf51665572f1af63ade6ba4620e58272e7af87754a6b244054757ce1",
+  "runtimeSHA256": "cf71e41221101fa0d7998abbbb7171cfbe662b1536f846a9ede0daca20027ff0",
+  "triangles": 6066,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4638671875,
+      -0.2626953125,
+      -0.4990234375
+    ],
+    "max": [
+      0.4638671875,
+      0.2626953125,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.2044,
+      0,
+      -0.19
+    ],
+    "max": [
+      0.2044,
+      0.2152,
+      0.19
+    ],
+    "size": [
+      0.4088,
+      0.2152,
+      0.38
+    ]
+  },
+  "scale": 0.4096,
+  "scaleXYZ": [
+    0.4096,
+    0.4096,
+    0.4096
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "visually-reviewed",
+  "pivot": "bottom-centre",
+  "forward": "-Z",
+  "target": {
+    "id": "threshold-toad-a-v01",
+    "yaw": 90,
+    "axis": "z",
+    "metres": 0.38
+  },
+  "finiteVerticesChecked": 4065,
+  "degenerateTriangles": 0,
+  "visualNotes": "Four limbs and toe silhouettes visible. Back bumps more pronounced than input; back leg surfaces simplified. Actual whole-model depth is 0.380 m including feet, not verified snout-rump length. Triangle count exceeds 6000 request by 66."
+}

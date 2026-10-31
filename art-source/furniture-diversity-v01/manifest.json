@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-31",
+  "assets": [
+    {
+      "id": "bed-iron-rail-v01",
+      "name": "铁栏单人床",
+      "target": "约 1.0 × 2.0 × 1.15 m；细栏杆、床下透空",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One narrow antique iron single bed. Slender dark oxidized iron tube frame, simple arched headboard and lower arched footboard with five sturdy vertical bars each, four metal legs, generous visible empty space below the bed. One thin ivory striped ticking mattress, one flat cream pillow, one folded faded slate-blue wool blanket across the lower half. No wood components, no floral quilt, no canopy. Simple mechanically plausible solid joints, not hair-thin wires. Intended dimensions 1.0m wide, 2.0m long, headboard 1.15m tall. A materially and structurally distinct sleeping bed, not a medical trolley.",
+      "image": "concepts/bed-iron-rail-v01.png",
+      "sourceGeneratedImage": "/Users/ftc_art/.codex/generated_images/01a19035-d0de-7ca0-a5bd-51d86a4ba9d0/exec-5d7e4afc-85d6-4de0-a65d-3d7481e42f6b.png",
+      "sha256": "a27811cccb7f1be9ab825eb8c34b8ccd0c058c8d2aa4189bcef624f060eeb8a2",
+      "bytes": 1965571,
+      "status": "exported-and-integrated",
+      "runtimeIntegrated": true,
+      "input": "concepts/bed-iron-rail-v01.png",
+      "inputSHA256": "a27811cccb7f1be9ab825eb8c34b8ccd0c058c8d2aa4189bcef624f060eeb8a2",
+      "taskId": "d3f56bda-c17f-4665-8b85-071624dd81a8",
+      "creditsConsumed": 50
+    },
+    {
+      "id": "bed-canopy-linen-v01",
+      "name": "半帘四柱床",
+      "target": "约 1.15 × 2.05 × 2.2 m；高柱与局部布帘",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One compact single antique four-poster tester bed, with four square dark oak posts, simple rectangular overhead rails, closed plain plank headboard, low foot rail, thick cream mattress and one muted ochre quilt. Two narrow worn linen curtains tied back to the REAR posts only, front completely open, no fully enclosed canopy cloth roof. Four posts visible and physically connected to the bed frame; airy vertical negative space is crucial. No turnings matching a Victorian spindle bed, no ornate gold carvings, no loose props. Intended 1.15m wide, 2.05m long, 2.2m tall. Make the tall rectangular frame the defining silhouette.",
+      "image": "concepts/bed-canopy-linen-v01.png",
+      "sourceGeneratedImage": "/Users/ftc_art/.codex/generated_images/01a19035-d0de-7ca0-a5bd-51d86a4ba9d0/exec-9554de71-12af-460e-b81a-f36d3c8458da.png",
+      "sha256": "b335c7833f66ddeca0c5c932fe66a2a2536fc5f86644d455abfb2a2425ffd11a",
+      "bytes": 1955705,
+      "status": "exported-and-integrated",
+      "runtimeIntegrated": true,
+      "input": "concepts/bed-canopy-linen-v01.png",
+      "inputSHA256": "b335c7833f66ddeca0c5c932fe66a2a2536fc5f86644d455abfb2a2425ffd11a",
+      "taskId": "56b6fb40-ff4f-4699-86d7-93f61c831ff5",
+      "creditsConsumed": 50
+    },
+    {
+      "id": "bed-low-divan-v01",
+      "name": "低矮旧软榻",
+      "target": "约 0.95 × 1.95 × 0.52 m；无床头、低横向体积",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One old low single sleeping divan with NO headboard, NO footboard, NO posts. A long rectangular faded olive-gray upholstered base on four short dark wooden feet, a thick sagging cream ticking mattress, one small plain flattened pillow at one end, a rumpled taupe wool blanket folded back over the far third. Mattress and upholstery have visible piping, small stitched repairs and compressed edges, restrained age, no tears with stuffing pouring out. Intended 0.95m wide, 1.95m long, total height 0.52m. Extremely low horizontal silhouette, large intact top surface, not a sofa and not a pile of bedding on the floor.",
+      "image": "concepts/bed-low-divan-v01.png",
+      "sourceGeneratedImage": "/Users/ftc_art/.codex/generated_images/01a19035-d0de-7ca0-a5bd-51d86a4ba9d0/exec-2e2d3c53-1b3d-4ce9-85b1-f7e4a67c10eb.png",
+      "sha256": "3d8bafc9453b45fe279b509df943690eb3711397e164ce6c59a1d6179360f426",
+      "bytes": 2382375,
+      "status": "exported-and-integrated",
+      "runtimeIntegrated": true,
+      "input": "concepts/bed-low-divan-v01.png",
+      "inputSHA256": "3d8bafc9453b45fe279b509df943690eb3711397e164ce6c59a1d6179360f426",
+      "taskId": "301b4b67-2380-463e-b297-53be680d1509",
+      "creditsConsumed": 50
+    },
+    {
+      "id": "vanity-oval-mirror-v01",
+      "name": "椭圆镜梳妆台",
+      "target": "约 1.1 × 0.5 × 1.65 m；镜面竖向焦点",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One antique dressing table with an attached tall oval mirror supported by two wooden uprights. Dark walnut frame, three shallow asymmetric drawers, curved slender legs and a knee opening. Narrow compact horizontal tabletop and prominent vertical oval mirror as a distinct recognizable silhouette. The mirror is aged clouded silver, uniform mottled reflection with no room, no face, no figure visible. A simple small carved ridge around the oval, no elaborate rococo decoration. No chair, no bottles, no separate accessories. Intended 1.1m wide, 0.5m deep, total mirror height 1.65m. Physically plausible joints; plain useful old household furniture.",
+      "image": "concepts/vanity-oval-mirror-v01.png",
+      "sourceGeneratedImage": "/Users/ftc_art/.codex/generated_images/01a19035-d0de-7ca0-a5bd-51d86a4ba9d0/exec-691b33f2-4aa6-42c1-8e11-82f849993bc1.png",
+      "sha256": "7bb907366341337a3e59bb9c3daa9af19fdc9e3f372697259bbf6f327f0b34c8",
+      "bytes": 1975137,
+      "status": "exported-and-integrated",
+      "runtimeIntegrated": true,
+      "input": "concepts/vanity-oval-mirror-v01.png",
+      "inputSHA256": "7bb907366341337a3e59bb9c3daa9af19fdc9e3f372697259bbf6f327f0b34c8",
+      "taskId": "4241cdf0-7561-45fa-80f2-d49ba0862418",
+      "creditsConsumed": 50
+    }
+  ],
+  "tripoSubmissions": 4,
+  "generationHold": false,
+  "approval": "User approved all four images and shared planning scope on 2026-10-31",
+  "pricing": {
+    "creditsPerModel": 50,
+    "totalExpected": 200,
+    "source": "https://docs.tripo3d.ai/get-started/pricing.html"
+  },
+  "creditsConsumed": 200
+}

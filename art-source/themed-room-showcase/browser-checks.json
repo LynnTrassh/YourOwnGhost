@@ -1,0 +1,391 @@
+{
+  "scope": "48 canvas captures from running WebGL stage; loaded instance bounds checked against proposed colliders; not formal gameplay acceptance",
+  "loadedRooms": 48,
+  "failedModels": 0,
+  "results": [
+    {
+      "id": "hospital-01",
+      "name": "夜间分诊室",
+      "models": 8,
+      "drawCalls": 159,
+      "triangles": 212191,
+      "file": "hospital-01-1793428408807.png"
+    },
+    {
+      "id": "hospital-02",
+      "name": "末班候诊室",
+      "models": 11,
+      "drawCalls": 165,
+      "triangles": 244844,
+      "file": "hospital-02-1793428408987.png"
+    },
+    {
+      "id": "hospital-03",
+      "name": "隔离病房",
+      "models": 12,
+      "drawCalls": 198,
+      "triangles": 283469,
+      "file": "hospital-03-1793428409270.png"
+    },
+    {
+      "id": "hospital-04",
+      "name": "检查室",
+      "models": 8,
+      "drawCalls": 162,
+      "triangles": 216656,
+      "file": "hospital-04-1793428409397.png"
+    },
+    {
+      "id": "hospital-05",
+      "name": "夜班药房",
+      "models": 9,
+      "drawCalls": 163,
+      "triangles": 246776,
+      "file": "hospital-05-1793428409521.png"
+    },
+    {
+      "id": "hospital-06",
+      "name": "值班休息室",
+      "models": 8,
+      "drawCalls": 162,
+      "triangles": 214570,
+      "file": "hospital-06-1793428409698.png"
+    },
+    {
+      "id": "hospital-07",
+      "name": "病案封存库",
+      "models": 11,
+      "drawCalls": 193,
+      "triangles": 292784,
+      "file": "hospital-07-1793428409845.png"
+    },
+    {
+      "id": "hospital-08",
+      "name": "遗留物保管室",
+      "models": 8,
+      "drawCalls": 167,
+      "triangles": 260354,
+      "file": "hospital-08-1793428409987.png"
+    },
+    {
+      "id": "park-01",
+      "name": "闭园售票室",
+      "models": 8,
+      "drawCalls": 156,
+      "triangles": 198444,
+      "file": "park-01-1793428410192.png"
+    },
+    {
+      "id": "park-02",
+      "name": "无人领奖台",
+      "models": 9,
+      "drawCalls": 165,
+      "triangles": 282489,
+      "file": "park-02-1793428410352.png"
+    },
+    {
+      "id": "park-03",
+      "name": "雨天手工教室",
+      "models": 9,
+      "drawCalls": 163,
+      "triangles": 235125,
+      "file": "park-03-1793428410505.png"
+    },
+    {
+      "id": "park-04",
+      "name": "走失儿童等候室",
+      "models": 9,
+      "drawCalls": 163,
+      "triangles": 236105,
+      "file": "park-04-1793428410645.png"
+    },
+    {
+      "id": "park-05",
+      "name": "演员化妆间",
+      "models": 9,
+      "drawCalls": 164,
+      "triangles": 238602,
+      "file": "park-05-1793428410853.png"
+    },
+    {
+      "id": "park-06",
+      "name": "旧奖品仓",
+      "models": 11,
+      "drawCalls": 187,
+      "triangles": 271495,
+      "file": "park-06-1793428410979.png"
+    },
+    {
+      "id": "park-07",
+      "name": "闭园员工室",
+      "models": 9,
+      "drawCalls": 160,
+      "triangles": 223653,
+      "file": "park-07-1793428411107.png"
+    },
+    {
+      "id": "park-08",
+      "name": "帷幕后等候厅",
+      "models": 10,
+      "drawCalls": 170,
+      "triangles": 293956,
+      "file": "park-08-1793428411243.png"
+    },
+    {
+      "id": "office-01",
+      "name": "无人前台",
+      "models": 9,
+      "drawCalls": 164,
+      "triangles": 225427,
+      "file": "office-01-1793428411378.png"
+    },
+    {
+      "id": "office-02",
+      "name": "夜班工位",
+      "models": 13,
+      "drawCalls": 196,
+      "triangles": 316413,
+      "file": "office-02-1793428411506.png"
+    },
+    {
+      "id": "office-03",
+      "name": "裁撤会议室",
+      "models": 9,
+      "drawCalls": 163,
+      "triangles": 226102,
+      "file": "office-03-1793428411644.png"
+    },
+    {
+      "id": "office-04",
+      "name": "封存档案室",
+      "models": 12,
+      "drawCalls": 199,
+      "triangles": 309560,
+      "file": "office-04-1793428411774.png"
+    },
+    {
+      "id": "office-05",
+      "name": "合伙人办公室",
+      "models": 9,
+      "drawCalls": 163,
+      "triangles": 230975,
+      "file": "office-05-1793428411908.png"
+    },
+    {
+      "id": "office-06",
+      "name": "收发登记室",
+      "models": 9,
+      "drawCalls": 165,
+      "triangles": 242482,
+      "file": "office-06-1793428412053.png"
+    },
+    {
+      "id": "office-07",
+      "name": "离职面谈室",
+      "models": 9,
+      "drawCalls": 165,
+      "triangles": 246837,
+      "file": "office-07-1793428412192.png"
+    },
+    {
+      "id": "office-08",
+      "name": "停用阅档室",
+      "models": 9,
+      "drawCalls": 170,
+      "triangles": 269464,
+      "file": "office-08-1793428412321.png"
+    },
+    {
+      "id": "home-01",
+      "name": "独居卧室",
+      "models": 8,
+      "drawCalls": 159,
+      "triangles": 212235,
+      "file": "home-01-1793428412454.png"
+    },
+    {
+      "id": "home-02",
+      "name": "旧客厅",
+      "models": 8,
+      "drawCalls": 162,
+      "triangles": 227690,
+      "file": "home-02-1793428412600.png"
+    },
+    {
+      "id": "home-03",
+      "name": "双人儿童房",
+      "models": 8,
+      "drawCalls": 161,
+      "triangles": 229322,
+      "file": "home-03-1793428412747.png"
+    },
+    {
+      "id": "home-04",
+      "name": "家中书房",
+      "models": 9,
+      "drawCalls": 170,
+      "triangles": 272137,
+      "file": "home-04-1793428412897.png"
+    },
+    {
+      "id": "home-05",
+      "name": "祖母起居室",
+      "models": 8,
+      "drawCalls": 160,
+      "triangles": 219008,
+      "file": "home-05-1793428413096.png"
+    },
+    {
+      "id": "home-06",
+      "name": "家庭餐室",
+      "models": 10,
+      "drawCalls": 170,
+      "triangles": 271100,
+      "file": "home-06-1793428413241.png"
+    },
+    {
+      "id": "home-07",
+      "name": "旧物储藏间",
+      "models": 11,
+      "drawCalls": 189,
+      "triangles": 275707,
+      "file": "home-07-1793428413365.png"
+    },
+    {
+      "id": "home-08",
+      "name": "被遮住的婚房",
+      "models": 8,
+      "drawCalls": 158,
+      "triangles": 219772,
+      "file": "home-08-1793428413545.png"
+    },
+    {
+      "id": "hotel-01",
+      "name": "深夜接待间",
+      "models": 9,
+      "drawCalls": 166,
+      "triangles": 253258,
+      "file": "hotel-01-1793428413700.png"
+    },
+    {
+      "id": "hotel-02",
+      "name": "经济单人间",
+      "models": 8,
+      "drawCalls": 157,
+      "triangles": 202850,
+      "file": "hotel-02-1793428413855.png"
+    },
+    {
+      "id": "hotel-03",
+      "name": "无人双床间",
+      "models": 8,
+      "drawCalls": 159,
+      "triangles": 210872,
+      "file": "hotel-03-1793428414007.png"
+    },
+    {
+      "id": "hotel-04",
+      "name": "蜜月套房",
+      "models": 10,
+      "drawCalls": 188,
+      "triangles": 271095,
+      "file": "hotel-04-1793428414139.png"
+    },
+    {
+      "id": "hotel-05",
+      "name": "换季布草间",
+      "models": 9,
+      "drawCalls": 165,
+      "triangles": 233925,
+      "file": "hotel-05-1793428414274.png"
+    },
+    {
+      "id": "hotel-06",
+      "name": "退房行李室",
+      "models": 9,
+      "drawCalls": 164,
+      "triangles": 235178,
+      "file": "hotel-06-1793428414419.png"
+    },
+    {
+      "id": "hotel-07",
+      "name": "楼层休息厅",
+      "models": 9,
+      "drawCalls": 165,
+      "triangles": 243964,
+      "file": "hotel-07-1793428414570.png"
+    },
+    {
+      "id": "hotel-08",
+      "name": "长住客房",
+      "models": 9,
+      "drawCalls": 162,
+      "triangles": 230473,
+      "file": "hotel-08-1793428414713.png"
+    },
+    {
+      "id": "ritual-01",
+      "name": "单人祈祷室",
+      "models": 7,
+      "drawCalls": 156,
+      "triangles": 198834,
+      "file": "ritual-01-1793428414893.png"
+    },
+    {
+      "id": "ritual-02",
+      "name": "双像对视室",
+      "models": 8,
+      "drawCalls": 165,
+      "triangles": 249195,
+      "file": "ritual-02-1793428415063.png"
+    },
+    {
+      "id": "ritual-03",
+      "name": "守夜席",
+      "models": 11,
+      "drawCalls": 195,
+      "triangles": 273662,
+      "file": "ritual-03-1793428415191.png"
+    },
+    {
+      "id": "ritual-04",
+      "name": "祭器保管室",
+      "models": 8,
+      "drawCalls": 158,
+      "triangles": 238669,
+      "file": "ritual-04-1793428415330.png"
+    },
+    {
+      "id": "ritual-05",
+      "name": "空座仪式",
+      "models": 9,
+      "drawCalls": 168,
+      "triangles": 235652,
+      "file": "ritual-05-1793428415475.png"
+    },
+    {
+      "id": "ritual-06",
+      "name": "旧宅神龛",
+      "models": 9,
+      "drawCalls": 161,
+      "triangles": 218338,
+      "file": "ritual-06-1793428415620.png"
+    },
+    {
+      "id": "ritual-07",
+      "name": "血色前室",
+      "models": 8,
+      "drawCalls": 162,
+      "triangles": 263368,
+      "file": "ritual-07-1793428415770.png"
+    },
+    {
+      "id": "ritual-08",
+      "name": "背向神柜长室",
+      "models": 11,
+      "drawCalls": 198,
+      "triangles": 262847,
+      "file": "ritual-08-1793428415911.png"
+    }
+  ]
+}

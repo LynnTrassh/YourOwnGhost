@@ -24,3 +24,19 @@
 - 明确现有正式VHS与独立候选后处理不可重复叠加；天花板、房间布局、局部故障和新模型仍需分批正式接入。
 - 新模型正面−Z与布局约定+Z存在差异，接入前逐件校正朝向、实际占地、支撑面和事件绑定。
 - 本次仅文档/JSON：校验计数、房间关联、引用链接及暂存差异；不以历史构建测试声称本次完成玩法验证。
+
+## 48 间完整设计与制作版推进（本轮）
+
+- 用户明确要求将六主题48间草案方案做完；正式随机房间空旷问题保留为接入验收项。
+- 修改范围补充：src/art/themed-room-assets.js、src/art/themed-room-designs.js、art-source/themed-room-showcase/production/。只维护本任务的布局、设计、预览及验证。
+- 开工本地 main，暂存区空。fetch 已成功，远端前进至 e96e623，本地 dc4a79f 落后2提交；存在其他任务未提交修改，未自动覆盖或清理。远端未改本任务布局文件。
+- 实际模型与方案分别验收：完整设计应覆盖48间；缺失核心资产、支撑/朝向不合格不得标为实装完成。保留原草案快照，不把旧图改称新结果。
+- 不接管正在由其他任务修改的 planning/interiors、room-presets、dark-interiors。正式接入继续由程序方处理。
+
+## 制作布局与灯光交接进度
+
+- 本地制作版已覆盖六主题48间的功能、构图、发现过程、天花与具体模型坐标；展示入口默认读取 production/layouts.json。旧草案和历史截图保留，不作为新版验收证据。
+- production/layout-checks.json 当前48间、0项问题；这仅是静态占地与可达检查。npm run build 通过；新模型视觉QA、真实台面支撑和正式游戏回归尚未全部完成。
+- 用户要求灯光同事参与，已向「梳理28种惊吓方式与剧情」发送交接。范围新增本任务说明 docs/art/themed-room-lighting-handoff-v2.md；灯光同事独占新增 themed-room-lighting.js / themed-room-materials.js，本任务负责 stage 接口接入，互不编辑对方文件。
+- 首批六主题候选及正式接入条件见 [交接记录](../art/themed-room-lighting-handoff-v2.md)。可启动分批适配，不能宣称48间已进正式游戏或通过全部验收。
+- 本轮改动未提交、未推送。

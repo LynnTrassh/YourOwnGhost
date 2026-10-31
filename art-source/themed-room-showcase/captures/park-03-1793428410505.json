@@ -1,0 +1,327 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "park-03",
+  "models": 9,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "park-03-0",
+      "assetId": "furniture-child-table",
+      "bounds": {
+        "min": [
+          -1.7499999999999998,
+          0,
+          0.675
+        ],
+        "max": [
+          -0.55,
+          0.5999999999999998,
+          1.325
+        ]
+      }
+    },
+    {
+      "id": "park-03-1",
+      "assetId": "furniture-child-table",
+      "bounds": {
+        "min": [
+          0.55,
+          0,
+          -0.625
+        ],
+        "max": [
+          1.7499999999999998,
+          0.5999999999999998,
+          0.025000000000000022
+        ]
+      }
+    },
+    {
+      "id": "park-03-2",
+      "assetId": "furniture-child-table",
+      "bounds": {
+        "min": [
+          -1.4,
+          0,
+          -1.775
+        ],
+        "max": [
+          -0.20000000000000018,
+          0.5999999999999998,
+          -1.125
+        ]
+      }
+    },
+    {
+      "id": "park-03-3",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -1.3699999999999999,
+          0,
+          -0.18000000000000005
+        ],
+        "max": [
+          -0.9299999999999999,
+          0.9599999999999997,
+          0.28
+        ]
+      }
+    },
+    {
+      "id": "park-03-4",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          0.9299999999999998,
+          0,
+          0.41999999999999993
+        ],
+        "max": [
+          1.3699999999999999,
+          0.9599999999999997,
+          0.8800000000000001
+        ]
+      }
+    },
+    {
+      "id": "park-03-5",
+      "assetId": "furniture-toy-shelf",
+      "bounds": {
+        "min": [
+          1.7550000000000003,
+          1.1102230246251565e-16,
+          -2.0999999999999996
+        ],
+        "max": [
+          2.405,
+          1.5999999999999996,
+          -0.8000000000000002
+        ]
+      }
+    },
+    {
+      "id": "park-03-6",
+      "assetId": "furniture-toy-chest",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          0,
+          -0.95
+        ],
+        "max": [
+          -1.755,
+          0.6799999999999998,
+          0.3499999999999999
+        ]
+      }
+    },
+    {
+      "id": "park-03-7",
+      "assetId": "lighting-chandelier-three-arm",
+      "bounds": {
+        "min": [
+          -1.125,
+          2.48,
+          -1.525
+        ],
+        "max": [
+          -0.47500000000000003,
+          2.98,
+          -0.875
+        ]
+      }
+    },
+    {
+      "id": "park-03-8",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "park-03",
+    "theme": "park",
+    "name": "雨天手工教室",
+    "composition": "三张小桌错落组成斜线，教具集中一侧。",
+    "reveal": "沿桌子逐步靠近教具柜，发现最后一张桌子没有座位。",
+    "intensity": 2,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "nursery",
+    "focus": [
+      -0.8,
+      0.65,
+      -1.45
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-child-table",
+        "x": -1.15,
+        "z": 1,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "park-03-0"
+      },
+      {
+        "assetId": "furniture-child-table",
+        "x": 1.15,
+        "z": -0.3,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "park-03-1"
+      },
+      {
+        "assetId": "furniture-child-table",
+        "x": -0.8,
+        "z": -1.45,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "park-03-2"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": -1.15,
+        "z": 0.05,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "park-03-3"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 1.15,
+        "z": 0.65,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "park-03-4"
+      },
+      {
+        "assetId": "furniture-toy-shelf",
+        "x": 2.08,
+        "z": -1.45,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "park-03-5"
+      },
+      {
+        "assetId": "furniture-toy-chest",
+        "x": -2.08,
+        "z": -0.3,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "park-03-6"
+      },
+      {
+        "assetId": "lighting-chandelier-three-arm",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "park-03-7"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "park-03-8"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 163,
+    "triangles": 235125,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 27
+  }
+}

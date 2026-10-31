@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-water-dispenser-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-water-dispenser-v05.glb",
+  "sourceBytes": 6522676,
+  "runtimeBytes": 2505932,
+  "sourceSHA256": "885140f15192f866f298ae16d379dc14a5e21a71ffb6719616911b49fb505eff",
+  "runtimeSHA256": "daa3fe0e8127b9d9f1517c1f3f242a6455d8ee5956773136b0e2a36100d3e7cf",
+  "triangles": 16990,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.17936480045318604,
+      -0.5,
+      -0.16507014632225037
+    ],
+    "max": [
+      0.17936480045318604,
+      0.5,
+      0.16507014632225037
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.25111072063446044,
+      0,
+      -0.23109820485115048
+    ],
+    "max": [
+      0.25111072063446044,
+      1.4,
+      0.23109820485115048
+    ],
+    "size": [
+      0.5022214412689209,
+      1.4,
+      0.46219640970230097
+    ]
+  },
+  "scale": 1.4,
+  "scaleXYZ": [
+    1.4,
+    1.4,
+    1.4
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "978e2483f890ebee70e25ddfc686358c9fea50a99f4ad9103d4dcf1b64f1d279"
+}

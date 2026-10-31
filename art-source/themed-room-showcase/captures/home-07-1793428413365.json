@@ -1,0 +1,377 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "home-07",
+  "models": 11,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    10
+  ],
+  "instances": [
+    {
+      "id": "home-07-0",
+      "assetId": "furniture-wardrobe",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          0,
+          1.9500000000000002
+        ],
+        "max": [
+          -1.755,
+          2.249999999999999,
+          3.25
+        ]
+      }
+    },
+    {
+      "id": "home-07-1",
+      "assetId": "furniture-bookcase",
+      "bounds": {
+        "min": [
+          1.7550000000000003,
+          0,
+          0.9500000000000004
+        ],
+        "max": [
+          2.405,
+          2.2499999999999987,
+          2.25
+        ]
+      }
+    },
+    {
+      "id": "home-07-2",
+      "assetId": "furniture-dresser",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          -5.551115123125783e-17,
+          0.15000000000000002
+        ],
+        "max": [
+          -1.755,
+          0.8799999999999999,
+          1.4500000000000002
+        ]
+      }
+    },
+    {
+      "id": "home-07-3",
+      "assetId": "furniture-toy-chest",
+      "bounds": {
+        "min": [
+          1,
+          0,
+          -0.7250000000000001
+        ],
+        "max": [
+          2.3,
+          0.6799999999999998,
+          -0.07500000000000001
+        ]
+      }
+    },
+    {
+      "id": "home-07-4",
+      "assetId": "furniture-sofa-two-seat",
+      "bounds": {
+        "min": [
+          -2,
+          -5.551115123125783e-17,
+          -2.55
+        ],
+        "max": [
+          -1.2999999999999998,
+          0.9399999999999995,
+          -1.25
+        ]
+      }
+    },
+    {
+      "id": "home-07-5",
+      "assetId": "furniture-display-cabinet",
+      "bounds": {
+        "min": [
+          0.9500000000000003,
+          0,
+          -3.325
+        ],
+        "max": [
+          2.25,
+          2.249999999999999,
+          -2.675
+        ]
+      }
+    },
+    {
+      "id": "home-07-6",
+      "assetId": "furniture-nightstand",
+      "bounds": {
+        "min": [
+          -0.3399999999999999,
+          0,
+          -4.24
+        ],
+        "max": [
+          0.3399999999999999,
+          0.7799999999999998,
+          -3.76
+        ]
+      }
+    },
+    {
+      "id": "home-07-7",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -1.72,
+          0,
+          -4.430000000000001
+        ],
+        "max": [
+          -1.28,
+          0.9599999999999997,
+          -3.97
+        ]
+      }
+    },
+    {
+      "id": "home-07-8",
+      "assetId": "lighting-floor-lamp",
+      "bounds": {
+        "min": [
+          0.5900000000000001,
+          0,
+          -4.51
+        ],
+        "max": [
+          1.01,
+          1.6499999999999992,
+          -4.09
+        ]
+      }
+    },
+    {
+      "id": "home-07-9",
+      "assetId": "lighting-chandelier-three-arm",
+      "bounds": {
+        "min": [
+          -1.125,
+          2.48,
+          -1.525
+        ],
+        "max": [
+          -0.47500000000000003,
+          2.98,
+          -0.875
+        ]
+      }
+    },
+    {
+      "id": "home-07-10",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          4.859999999999999
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          4.98
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "home-07",
+    "theme": "home",
+    "name": "旧物储藏间",
+    "composition": "高柜封侧墙、旧家具由近密到远疏，尽头只留床头柜。",
+    "reveal": "穿过不同时期的家具，最后看到一件被单独照亮的小家具。",
+    "intensity": 4,
+    "width": 5,
+    "depth": 10,
+    "height": 3,
+    "look": "bedroom",
+    "focus": [
+      0,
+      0.8,
+      -4
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-wardrobe",
+        "x": -2.08,
+        "z": 2.6,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "home-07-0"
+      },
+      {
+        "assetId": "furniture-bookcase",
+        "x": 2.08,
+        "z": 1.6,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "home-07-1"
+      },
+      {
+        "assetId": "furniture-dresser",
+        "x": -2.08,
+        "z": 0.8,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "home-07-2"
+      },
+      {
+        "assetId": "furniture-toy-chest",
+        "x": 1.65,
+        "z": -0.4,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-07-3"
+      },
+      {
+        "assetId": "furniture-sofa-two-seat",
+        "x": -1.65,
+        "z": -1.9,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "home-07-4"
+      },
+      {
+        "assetId": "furniture-display-cabinet",
+        "x": 1.6,
+        "z": -3,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-07-5"
+      },
+      {
+        "assetId": "furniture-nightstand",
+        "x": 0,
+        "z": -4,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-07-6"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": -1.5,
+        "z": -4.2,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "home-07-7"
+      },
+      {
+        "assetId": "lighting-floor-lamp",
+        "x": 0.8,
+        "z": -4.3,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "home-07-8"
+      },
+      {
+        "assetId": "lighting-chandelier-three-arm",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "home-07-9"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 4.92,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "home-07-10"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    4.35
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 189,
+    "triangles": 275707,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 31
+  }
+}

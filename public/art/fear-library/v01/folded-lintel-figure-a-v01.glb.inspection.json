@@ -1,0 +1,64 @@
+{
+  "source": "art-source/fear-library-v01/output/folded-lintel-figure-a-v01/model.glb",
+  "destination": "public/art/fear-library/v01/folded-lintel-figure-a-v01.glb",
+  "sourceBytes": 1257308,
+  "runtimeBytes": 1257684,
+  "sourceSHA256": "bb83eea0be37aba51aac2096516519dc0b48d89d08583ad1f5dc3cf48ce4b0e7",
+  "runtimeSHA256": "8940e6741f50a3cf78739055c5adea80080266f0c7a244f570fc1d1698436b7b",
+  "triangles": 5613,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3779296875,
+      -0.4990234375,
+      -0.4072265326976776
+    ],
+    "max": [
+      0.3779296875,
+      0.4990234673023224,
+      0.4072265326976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5508316457839744,
+      0,
+      -0.5112035072400265
+    ],
+    "max": [
+      0.5508316457839744,
+      1.35,
+      0.5112035072400265
+    ],
+    "size": [
+      1.1016632915679487,
+      1.35,
+      1.022407014480053
+    ]
+  },
+  "scale": 1.3526418382785197,
+  "scaleXYZ": [
+    1.3526418382785197,
+    1.3526418382785197,
+    1.3526418382785197
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "visually-reviewed",
+  "pivot": "bottom-centre",
+  "forward": "-Z",
+  "target": {
+    "id": "folded-lintel-figure-a-v01",
+    "yaw": 90,
+    "axis": "y",
+    "metres": 1.35
+  },
+  "finiteVerticesChecked": 7335,
+  "degenerateTriangles": 0,
+  "visualNotes": "Four limbs and separated knees visible. Linen folds/skin details simplified, back is generated completion. Static folded height includes raised hand; no unfolded skeleton or standing-height claim. Footprint too large for ordinary narrow wardrobe."
+}

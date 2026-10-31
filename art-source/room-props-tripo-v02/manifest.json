@@ -1,0 +1,696 @@
+{
+  "version": 2,
+  "source": "Tripo P1 text-to-model",
+  "profile": "horror-models-secondary",
+  "authorization": "User explicitly requires all 42 draft props to be made using Tripo; 2026-10-31",
+  "quality": "Real textured assets only. Per-asset geometry, material, orientation, contact and in-room review before release.",
+  "parameters": {
+    "face_limit": 18000,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed"
+  },
+  "estimatedCredits": {
+    "base": 1680,
+    "conservativeMaximum": 2100,
+    "note": "Official P1 pricing page all-in 40; parameter page generic detailed-texture surcharge conflicts by +10. Verify returned consumption on pilot."
+  },
+  "assets": [
+    {
+      "id": "prop-crt-tv-v01",
+      "name": "厚壳旋钮电视",
+      "theme": "parlor",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A single 1970s wooden CRT television, thick walnut veneer cabinet, deep curved dark glass screen, two rotary knobs, cloth speaker grille, short feet, worn corners. No antenna. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.6399999856948853,
+        0.7614270374178886,
+        0.4750000089406967
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-crt-computer-v01",
+      "name": "老式电脑与键鼠",
+      "theme": "archive",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A complete 1980s beige desktop computer, CRT monitor sitting on horizontal desktop computer case, detached keyboard and wired mouse neatly in front, vent slots, yellowed plastic, dark green glass screen. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.6076664179563522,
+        0.5000000149011612,
+        0.6449999958276749
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-rotary-phone-v01",
+      "name": "拨盘电话",
+      "theme": "parlor",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A vintage black bakelite rotary dial telephone, substantial handset resting correctly on two cradle hooks, circular metal finger dial, curled cable, worn polish and dust. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.3233948349952698,
+        0.1724938541301526,
+        0.31864268332719803
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-wood-radio-v01",
+      "name": "木壳收音机",
+      "theme": "parlor",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A 1940s walnut radio, woven speaker cloth, fine horizontal tuning scale behind glass, two round bakelite knobs, warm wood grain and aged brass details. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.3400000035762787,
+        0.20000000447034838,
+        0.1510000005364418
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-wall-clock-v01",
+      "name": "圆形挂钟",
+      "theme": "parlor",
+      "recipes": [
+        "N11"
+      ],
+      "prompt": "A round old wooden wall clock, faded ivory dial with twelve dark hour marks, thin black hands, bevelled rim and slightly scratched glass, no readable branding. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.4399999976158142,
+        0.43999999642372134,
+        0.07799999974668026
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-pendulum-clock-v01",
+      "name": "落地摆钟",
+      "theme": "parlor",
+      "recipes": [
+        "N11"
+      ],
+      "prompt": "A tall narrow walnut pendulum clock cabinet, glazed front door, ivory clock dial above a visible aged brass pendulum, moulded wood trim, believable joinery, grounded base. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.4699999988079071,
+        1.799999928474426,
+        0.318000003695488
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-hanging-coat-v01",
+      "name": "悬挂旧外套",
+      "theme": "bedroom",
+      "recipes": [
+        "N14",
+        "N20"
+      ],
+      "prompt": "One empty hanging old wool overcoat on a wooden hanger, believable full sleeves, lapels, seams, buttons, pockets, sagging cloth folds, faded moss grey wool. No person or mannequin. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.8814763426780701,
+        1.2320579122751951,
+        0.12000488862395287
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-empty-hanger-v01",
+      "name": "空衣架",
+      "theme": "bedroom",
+      "recipes": [
+        "N14"
+      ],
+      "prompt": "One old wooden clothes hanger, shaped curved shoulders, slender sturdy metal hook, worn varnish and small wood grain, practical continuous shape. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.3901219815015793,
+        0.24350623413920403,
+        0.01600000075995922
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-felt-hat-v01",
+      "name": "旧毡帽",
+      "theme": "bedroom",
+      "recipes": [
+        "N14"
+      ],
+      "prompt": "One worn dark olive felt fedora hat, creased crown, broad curved brim, fabric ribbon, compressed felt texture and dusty edge, empty inside. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.36000001430511475,
+        0.19000000227242708,
+        0.30000001192092896
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-clothes-rack-v01",
+      "name": "衣架外套帽子组",
+      "theme": "bedroom",
+      "recipes": [
+        "N14"
+      ],
+      "prompt": "A freestanding antique wooden coat rack with one old moss grey wool overcoat hanging from a hook and a felt hat on another hook, distinct garments separated from pole, sturdy four foot base. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        1.2800000309944153,
+        1.9850001148879528,
+        0.5199999809265137
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-shoes-pair-v01",
+      "name": "旧皮鞋",
+      "theme": "bedroom",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A pair of worn brown leather lace-up shoes arranged side by side, creased vamp, stitched welt, worn sole edge, slightly loose laces, empty shoes. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.2800000011920929,
+        0.18000000715255737,
+        0.30000000447034836
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-suitcase-v01",
+      "name": "绑带旅行箱",
+      "theme": "bedroom",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A closed old brown leather suitcase, two dark leather straps and brass buckles, reinforced corners, top carry handle, stitched edges, scuffed leather. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.5799999833106995,
+        0.46060111885890365,
+        0.21649999916553497
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cardboard-box-v01",
+      "name": "贴签纸箱",
+      "theme": "archive",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A single old cardboard storage box, closed folded flaps, faded blank label, paper tape crossing top, crushed corners, realistic corrugated cardboard wear. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.46000000834465027,
+        0.3635000061988829,
+        0.36550000309944153
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-archive-boxes-v01",
+      "name": "成组档案盒",
+      "theme": "archive",
+      "recipes": [
+        "N12"
+      ],
+      "prompt": "A group of five upright archival box files on a low wooden tray, muted grey green and brown linen covers, small blank cream spine labels, worn edges and finger holes. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.4650000035762787,
+        0.319999989271164,
+        0.2770000100135803
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-books-stack-v01",
+      "name": "散叠旧书",
+      "theme": "archive",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A small irregular stack of five antique hardcover books, distinct cloth covers, uneven yellowed paper edges, frayed corners, subtle embossed borders, no legible titles. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.35262399911880493,
+        0.19900000048801303,
+        0.28266918659210205
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-paper-wave-v01",
+      "name": "散页纸堆",
+      "theme": "archive",
+      "recipes": [
+        "N12"
+      ],
+      "prompt": "A shallow mound of old loose paper documents, curled sheets and staggered corners, yellowed fibres, subtle faded non-legible ink lines, broad continuous paper mass, no flying paper. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.7531981468200684,
+        0.14200000069104135,
+        0.5708913505077362
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-tea-tray-v01",
+      "name": "茶具托盘",
+      "theme": "parlor",
+      "recipes": [
+        "N10"
+      ],
+      "prompt": "An antique wooden tea tray holding two small aged porcelain cups on saucers and a modest teapot, brown tea stains, fine ceramic cracks, separated handles and spout, items resting on tray. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.46000000834465027,
+        0.13300000092387199,
+        0.30000001192092896
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-medicine-tray-v01",
+      "name": "药瓶器械盘",
+      "theme": "clinic",
+      "recipes": [
+        "N07"
+      ],
+      "prompt": "A shallow stainless medical tray holding three small brown glass medicine bottles and folded gauze, tarnished metal lip, faded blank paper labels, all items resting on tray. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.41999998688697815,
+        0.19449999270727858,
+        0.2800000011920929
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-washstand-v01",
+      "name": "搪瓷盆洗漱架",
+      "theme": "bedroom",
+      "recipes": [
+        "N13"
+      ],
+      "prompt": "An antique wooden washstand with a white enamel wash basin and separate enamel water pitcher side by side, chipped blue rim, open lower shelf, four slender legs. Basin and pitcher must not overlap. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.7440000176429749,
+        1.051000006198883,
+        0.5400000214576721
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-iv-stand-v01",
+      "name": "输液架",
+      "theme": "clinic",
+      "recipes": [
+        "N07"
+      ],
+      "prompt": "A vintage metal IV drip stand, thin upright steel pole with two curved hooks, single translucent IV bag and a short hanging tube, sturdy four leg wheeled base, tarnished steel. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.6299999952316284,
+        1.850000023841858,
+        0.6100000143051147
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-folding-screen-v01",
+      "name": "三折布屏风",
+      "theme": "clinic",
+      "recipes": [
+        "N05"
+      ],
+      "prompt": "A three-panel hospital privacy screen, aged cream cotton fabric stretched in painted metal frames, hinged panels slightly angled, visible hems, four small feet, cloth stains near bottom. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        1.6013939380645752,
+        1.6960000223480165,
+        0.4937516897916794
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cradle-v01",
+      "name": "木栏摇篮",
+      "theme": "nursery",
+      "recipes": [
+        "N09"
+      ],
+      "prompt": "A vintage wooden baby cradle, curved rocking runners, closely spaced slender rails, softly rumpled faded cream blanket and mattress inside, believable joinery, empty with no baby. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.6439999938011169,
+        0.8866506349295378,
+        1.3694533109664917
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-rocking-horse-v01",
+      "name": "旧木摇马",
+      "theme": "nursery",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "An old wooden rocking horse toy, carved long head with ears, four slender legs mounted on curved runners, faded burgundy saddle, dark mane, chipped painted wood, clear recognizable horse silhouette. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.3400000035762787,
+        0.9573204913176596,
+        0.9120099544525146
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-toy-train-v01",
+      "name": "三节木玩具车",
+      "theme": "nursery",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A small vintage wooden toy train with locomotive and two attached carriages, rounded wooden wheels, worn muted red and green paint, distinct wheels and chimney. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.17800000309944153,
+        0.19500000309199095,
+        0.6299999952316284
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-hanging-mobile-v01",
+      "name": "悬吊环饰",
+      "theme": "nursery",
+      "recipes": [
+        "N05"
+      ],
+      "prompt": "A suspended nursery mobile with two crossed wooden arms and four small faded fabric discs hanging on short cords, central suspension cord, worn linen and wood, no child. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.8240000009536743,
+        0.8220000267028809,
+        0.5899999737739563
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-dried-flowers-v01",
+      "name": "枯花陶瓶",
+      "theme": "shrine",
+      "recipes": [
+        "N16"
+      ],
+      "prompt": "A ceramic vase containing a small bunch of dried flowers, curled brown petals, brittle stems, muted ochre and grey leaves, textured clay vase with mineral stains. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.33741869032382965,
+        0.6570000052452087,
+        0.27646878361701965
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-candlesticks-v01",
+      "name": "旧烛台组",
+      "theme": "shrine",
+      "recipes": [
+        "N03"
+      ],
+      "prompt": "An arrangement of three old brass candlesticks at different heights with partially burned ivory wax candles, melted drips, tarnished bases, no flames. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.4699999988079071,
+        0.63250001630513,
+        0.17000000178813934
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-portrait-frame-v01",
+      "name": "原创剪影像框",
+      "theme": "shrine",
+      "recipes": [
+        "N06",
+        "N15"
+      ],
+      "prompt": "A small antique wooden portrait frame containing an aged sepia indistinct human silhouette portrait, plain cream mat, worn carved frame edges, original fictional portrait, no lettering. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.3499999940395355,
+        0.43999999642372134,
+        0.03950000088661909
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-hanging-drape-v01",
+      "name": "褶皱悬布",
+      "theme": "bedroom",
+      "recipes": [
+        "N05"
+      ],
+      "prompt": "A single long hanging off-white linen curtain on a short wooden rod, heavy irregular vertical folds, frayed bottom hem, natural textile fibres, no wall or window. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.8999999761581421,
+        2.5339999198913574,
+        0.16249999403953552
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-covered-shape-v01",
+      "name": "白布覆盖轮廓",
+      "theme": "bedroom",
+      "recipes": [
+        "N18"
+      ],
+      "prompt": "An ambiguous chair-sized object completely draped in a heavy old white sheet, believable gravity folds, soft creases and dusty cloth hem touching floor, no exposed body or face. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        1.010915756225586,
+        1.350000023841858,
+        1.010915756225586
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cable-coil-v01",
+      "name": "盘地电缆",
+      "theme": "archive",
+      "recipes": [
+        "cable"
+      ],
+      "prompt": "A loosely coiled thick old black rubber electrical cable lying on the floor, four irregular loops, distinct cylindrical insulated strands, subtle grey dust and worn rubber, no base. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.6561691761016846,
+        0.07799422275274992,
+        0.6574229598045349
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cable-wall-v01",
+      "name": "沿墙线束",
+      "theme": "archive",
+      "recipes": [
+        "cable"
+      ],
+      "prompt": "A long horizontal bundle of six thick black electrical cables, gentle irregular bends, occasional aged cloth ties, distinct insulated strands, continuous wall cable section without wall. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        2.3093996047973633,
+        0.6995285451412201,
+        0.07599144987761974
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cable-ceiling-v01",
+      "name": "垂弧顶线",
+      "theme": "archive",
+      "recipes": [
+        "cable"
+      ],
+      "prompt": "A suspended horizontal bundle of five thick black cables with a broad deep hanging arc between two ends, distinct sagging wires, dusty rubber and worn cable ties, no ceiling. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        2.6106367111206055,
+        0.57463607378304,
+        0.20561985671520233
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cable-curtain-v01",
+      "name": "垂落线帘",
+      "theme": "archive",
+      "recipes": [
+        "cable"
+      ],
+      "prompt": "A curtain of eight long black electrical cables hanging from a short overhead metal rail, uneven cable ends and slight curving, distinct separated insulated cables, no wall or floor. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.9719283878803253,
+        2.206660820869729,
+        0.18342694640159607
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-organic-rib-v01",
+      "name": "原创有机褶边",
+      "theme": "clinic",
+      "recipes": [
+        "N22"
+      ],
+      "prompt": "An original non-graphic organic architectural rib strip, vertical dark reddish brown sinewy folds and knotted ridges, aged leathery surface, subtle creases, no gore or blood, no recognizable character. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.3242914527654648,
+        1.7617321442812681,
+        0.20321395248174667
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-tv-console-v01",
+      "name": "电视与矮柜组",
+      "theme": "parlor",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A vintage wooden television console: single walnut CRT television resting on a low dark wooden cabinet with an open shelf holding a small old radio. Detailed curved glass, knobs, wood grain, proper separated contact surfaces. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        1.0499999523162842,
+        1.3024270504713058,
+        0.5600000023841858
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-computer-desk-v01",
+      "name": "旧电脑工作台",
+      "theme": "archive",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A vintage wooden computer workstation: beige 1980s CRT monitor and desktop case resting on a plain old wooden desk, keyboard and mouse on front of desk, black rotary phone on right, believable legs and proper tabletop contact. No chair. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        1.2799999713897705,
+        1.259999986886978,
+        0.8199999928474426
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-archive-stack-v01",
+      "name": "纸箱与档案堆组",
+      "theme": "archive",
+      "recipes": [
+        "N02",
+        "N12"
+      ],
+      "prompt": "A low clustered stack of two old cardboard boxes with five upright archival folders on one and a small stack of hardcover books on the other, faded labels, distinct paper and cloth textures, stable contacts. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.9925229549407959,
+        0.685000009536743,
+        0.42111262679100037
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-tea-cart-v01",
+      "name": "茶具推车",
+      "theme": "parlor",
+      "recipes": [
+        "N10"
+      ],
+      "prompt": "A small antique wooden tea trolley with four small caster wheels, two shelves, a porcelain teapot and two cups on a top tray, old books on lower shelf, worn dark wood and brass, clear open structure. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.8500000238418579,
+        0.8439999911934137,
+        0.5199999809265137
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-toy-bench-v01",
+      "name": "玩具整理矮台",
+      "theme": "nursery",
+      "recipes": [
+        "N02"
+      ],
+      "prompt": "A small low wooden nursery table holding a vintage wooden toy train and a short stack of worn illustrated books, chipped muted paint, separate grounded objects with correct tabletop contact. No chair. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.8999999761581421,
+        0.5795000183582306,
+        0.5
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-medical-cart-v01",
+      "name": "药品器械推架",
+      "theme": "clinic",
+      "recipes": [
+        "N07"
+      ],
+      "prompt": "A vintage medical trolley with two stainless shelves and four wheels, brown medicine bottles and gauze trays on shelves, chipped cream painted frame, tarnished edges, no medical logos. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        0.8500000238418579,
+        1.0449999701976775,
+        0.550000011920929
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-candle-altar-v01",
+      "name": "烛台与遗像供桌",
+      "theme": "shrine",
+      "recipes": [
+        "N03"
+      ],
+      "prompt": "A modest old wooden shrine table with three tarnished brass candlesticks and ivory candles, one small framed sepia silhouette portrait and a ceramic vase of dried flowers, separate correctly resting objects, no flames or text. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "targetBounds": [
+        1.0499999523162842,
+        1.4630000519752504,
+        0.5799999833106995
+      ],
+      "status": "queued",
+      "runtimeIntegrated": false
+    }
+  ],
+  "initialBalance": 23620
+}

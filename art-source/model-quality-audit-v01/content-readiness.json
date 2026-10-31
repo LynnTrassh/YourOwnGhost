@@ -1,0 +1,1005 @@
+[
+  {
+    "definitionId": "B01",
+    "sourcePolicy": "required",
+    "preferenceRequirements": [
+      "like.flower"
+    ],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "quiet",
+    "intensity": 0,
+    "variants": [],
+    "role": "rest",
+    "narrativeUnitId": "B01",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B02",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B02",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B03",
+    "sourcePolicy": "required",
+    "preferenceRequirements": [
+      "like.flower"
+    ],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "B03",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B04",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "B04",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B05",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B05",
+    "dependencies": [],
+    "exclusions": [
+      "ID03",
+      "AB02"
+    ]
+  },
+  {
+    "definitionId": "B06",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B06",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B07",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "quiet",
+    "intensity": 0,
+    "variants": [],
+    "role": "rest",
+    "narrativeUnitId": "B07",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B08",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B08",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B09",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B09",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B10",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "B10",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B11",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B11",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B12",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B12",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B13",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "preview-only",
+    "roomClass": "danger",
+    "intensity": 3,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B13-B16",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B14",
+    "sourcePolicy": "conditional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "preview-only",
+    "roomClass": "danger",
+    "intensity": 3,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B13-B16",
+    "dependencies": [
+      "B13"
+    ],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B15",
+    "sourcePolicy": "conditional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "preview-only",
+    "roomClass": "danger",
+    "intensity": 3,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B13-B16",
+    "dependencies": [
+      "B13"
+    ],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B16",
+    "sourcePolicy": "conditional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "preview-only",
+    "roomClass": "danger",
+    "intensity": 3,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B13-B16",
+    "dependencies": [
+      "B13"
+    ],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B17",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "B17",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B18",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "quiet",
+    "intensity": 0,
+    "variants": [],
+    "role": "rest",
+    "narrativeUnitId": "B18",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B19",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "B19",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B20",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "B20",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B21",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B21",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B22",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B22",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B23",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "B23",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B24",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B24",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B25",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "quiet",
+    "intensity": 0,
+    "variants": [],
+    "role": "rest",
+    "narrativeUnitId": "B25",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B26",
+    "sourcePolicy": "fixed",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "existing-flow",
+    "roomClass": "flow",
+    "intensity": 0,
+    "variants": [],
+    "role": "flow",
+    "narrativeUnitId": "B26",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B27",
+    "sourcePolicy": "conditional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "conditional-greybox",
+    "roomClass": "echo",
+    "intensity": 0,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B27",
+    "dependencies": [
+      "B03"
+    ],
+    "exclusions": []
+  },
+  {
+    "definitionId": "B28",
+    "sourcePolicy": "conditional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "conditional-greybox",
+    "roomClass": "echo",
+    "intensity": 0,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "B28",
+    "dependencies": [
+      "B04"
+    ],
+    "exclusions": []
+  },
+  {
+    "definitionId": "ID01",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "ID01",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "ID02",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "ID02",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "ID03",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "quiet",
+    "intensity": 0,
+    "variants": [],
+    "role": "rest",
+    "narrativeUnitId": "ID03",
+    "dependencies": [],
+    "exclusions": [
+      "B05",
+      "AB02"
+    ]
+  },
+  {
+    "definitionId": "ID04",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "ID04",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "ME01",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "ME01",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "ME02",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "ME02",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "ME03",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "quiet",
+    "intensity": 0,
+    "variants": [],
+    "role": "rest",
+    "narrativeUnitId": "ME03",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "ME04",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "ME04",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "IN01",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "IN01",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "IN02",
+    "sourcePolicy": "required",
+    "preferenceRequirements": [
+      "fear.doll"
+    ],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "IN02",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "IN03",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "IN03",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "IN04",
+    "sourcePolicy": "conditional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "conditional-greybox",
+    "roomClass": "echo",
+    "intensity": 0,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "IN04",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "RI01",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "RI01",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "RI02",
+    "sourcePolicy": "required",
+    "preferenceRequirements": [
+      "like.any"
+    ],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "RI02",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "RI03",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "RI03",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "RI04",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "RI04",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "BO01",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "BO01",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "BO02",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "BO02",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "BO03",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "BO03",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "BO04",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "quiet",
+    "intensity": 0,
+    "variants": [],
+    "role": "rest",
+    "narrativeUnitId": "BO04",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "TI01",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "TI01",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "TI02",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "TI02",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "TI03",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "TI03",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "TI04",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "TI04",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "AB01",
+    "sourcePolicy": "optional",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "AB01",
+    "dependencies": [],
+    "exclusions": [
+      "CAT01"
+    ]
+  },
+  {
+    "definitionId": "AB02",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "AB02",
+    "dependencies": [],
+    "exclusions": [
+      "B05",
+      "ID03"
+    ]
+  },
+  {
+    "definitionId": "AB03",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [],
+    "readiness": "unimplemented",
+    "roomClass": "quiet",
+    "intensity": 0,
+    "variants": [],
+    "role": "rest",
+    "narrativeUnitId": "AB03",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "AB04",
+    "sourcePolicy": "builtin",
+    "preferenceRequirements": [],
+    "capabilities": [
+      "geometry",
+      "subtitle",
+      "proxy"
+    ],
+    "readiness": "greybox",
+    "roomClass": "short",
+    "intensity": 1,
+    "variants": [],
+    "role": "short",
+    "narrativeUnitId": "AB04",
+    "dependencies": [],
+    "exclusions": []
+  },
+  {
+    "definitionId": "CAT01",
+    "sourcePolicy": "required",
+    "preferenceRequirements": [
+      "like.cat"
+    ],
+    "capabilities": [],
+    "readiness": "fixed-test",
+    "roomClass": "major",
+    "intensity": 2,
+    "variants": [],
+    "role": "major",
+    "narrativeUnitId": "CAT01",
+    "dependencies": [],
+    "exclusions": [
+      "AB01"
+    ]
+  }
+]

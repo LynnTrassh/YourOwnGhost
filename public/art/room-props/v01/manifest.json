@@ -1,0 +1,848 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "prop-crt-tv-v01",
+      "name": "厚壳旋钮电视",
+      "theme": "parlor",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-crt-tv-v01.glb",
+      "width": 0.6399999856948853,
+      "height": 0.7614270374178886,
+      "depth": 0.4750000089406967,
+      "triangles": 2444,
+      "meshCount": 6,
+      "bytes": 330460,
+      "sha256": "e0eaf412c2e736e116869a2d9b888b5bc0e3d6e07bf013abdf6faf71768d8eed",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-crt-computer-v01",
+      "name": "老式电脑与键鼠",
+      "theme": "archive",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-crt-computer-v01.glb",
+      "width": 0.6076664179563522,
+      "height": 0.5000000149011612,
+      "depth": 0.6449999958276749,
+      "triangles": 3952,
+      "meshCount": 6,
+      "bytes": 529560,
+      "sha256": "97a389fb2336339dc7fcfa69f4e31f054e874159667480518a7b1de3cb442d6a",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-rotary-phone-v01",
+      "name": "拨盘电话",
+      "theme": "parlor",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-rotary-phone-v01.glb",
+      "width": 0.3233948349952698,
+      "height": 0.1724938541301526,
+      "depth": 0.31864268332719803,
+      "triangles": 2572,
+      "meshCount": 2,
+      "bytes": 342320,
+      "sha256": "69c22ddd18c0b2ab9f0fe10bd0250598e7d7c1df84975b886ba6a1328a59dcc1",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-wood-radio-v01",
+      "name": "木壳收音机",
+      "theme": "parlor",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-wood-radio-v01.glb",
+      "width": 0.3400000035762787,
+      "height": 0.20000000447034838,
+      "depth": 0.1510000005364418,
+      "triangles": 1956,
+      "meshCount": 4,
+      "bytes": 263404,
+      "sha256": "b56fcfdeabf1b2295ef0cfa02be22ff8316ff7d6c5330294ad7b8cade93b4ef3",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-wall-clock-v01",
+      "name": "圆形挂钟",
+      "theme": "parlor",
+      "recipes": [
+        "N11"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-wall-clock-v01.glb",
+      "width": 0.4399999976158142,
+      "height": 0.43999999642372134,
+      "depth": 0.07799999974668026,
+      "triangles": 1680,
+      "meshCount": 3,
+      "bytes": 225748,
+      "sha256": "a5b86fd820d53b260744ce759a06136a6d30adca1fed849d29179b172188f8a3",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-pendulum-clock-v01",
+      "name": "落地摆钟",
+      "theme": "parlor",
+      "recipes": [
+        "N11"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-pendulum-clock-v01.glb",
+      "width": 0.4699999988079071,
+      "height": 1.799999928474426,
+      "depth": 0.318000003695488,
+      "triangles": 2096,
+      "meshCount": 4,
+      "bytes": 281848,
+      "sha256": "eb6895809b6573904cc7cedc07e4f3cc73965db1fb1eec7bfdb97fe8ccc47325",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-hanging-coat-v01",
+      "name": "悬挂旧外套",
+      "theme": "bedroom",
+      "recipes": [
+        "N14",
+        "N20"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-hanging-coat-v01.glb",
+      "width": 0.8814763426780701,
+      "height": 1.2320579122751951,
+      "depth": 0.12000488862395287,
+      "triangles": 1796,
+      "meshCount": 6,
+      "bytes": 245016,
+      "sha256": "82695d3114a94bdedaeaf23b5bc7e2db45a8e820e22239a4c9fcbe9c8c053f8b",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-empty-hanger-v01",
+      "name": "空衣架",
+      "theme": "bedroom",
+      "recipes": [
+        "N14"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-empty-hanger-v01.glb",
+      "width": 0.3901219815015793,
+      "height": 0.24350623413920403,
+      "depth": 0.01600000075995922,
+      "triangles": 336,
+      "meshCount": 2,
+      "bytes": 47260,
+      "sha256": "cd77e21fc667e368405b22b2461476c8fdd3d9920fae784d5cabbf31d742ece9",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-felt-hat-v01",
+      "name": "旧毡帽",
+      "theme": "bedroom",
+      "recipes": [
+        "N14"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-felt-hat-v01.glb",
+      "width": 0.36000001430511475,
+      "height": 0.19000000227242708,
+      "depth": 0.30000001192092896,
+      "triangles": 416,
+      "meshCount": 2,
+      "bytes": 57736,
+      "sha256": "fccc599890c8fb40f3fb296662f1db346a860664acb634f7968bc7d300f3a36a",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-clothes-rack-v01",
+      "name": "衣架外套帽子组",
+      "theme": "bedroom",
+      "recipes": [
+        "N14"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-clothes-rack-v01.glb",
+      "width": 1.2800000309944153,
+      "height": 1.9850001148879528,
+      "depth": 0.5199999809265137,
+      "triangles": 2708,
+      "meshCount": 6,
+      "bytes": 365336,
+      "sha256": "aa0c50489db716e6de4ce017afc15b9022838dd60af8f538ac9cb0c8b96f06d4",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-shoes-pair-v01",
+      "name": "旧皮鞋",
+      "theme": "bedroom",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-shoes-pair-v01.glb",
+      "width": 0.2800000011920929,
+      "height": 0.18000000715255737,
+      "depth": 0.30000000447034836,
+      "triangles": 928,
+      "meshCount": 2,
+      "bytes": 125232,
+      "sha256": "4dfe5ba2b42e31e18e6d01ed30b780d858d3e23ac5eebba9e9a8eeb8d209f41b",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-suitcase-v01",
+      "name": "绑带旅行箱",
+      "theme": "bedroom",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-suitcase-v01.glb",
+      "width": 0.5799999833106995,
+      "height": 0.46060111885890365,
+      "depth": 0.21649999916553497,
+      "triangles": 684,
+      "meshCount": 3,
+      "bytes": 94276,
+      "sha256": "19e822bc099915fe50abd5bc637d0c9175990b8d5f6a50da77c32dbcf0244584",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cardboard-box-v01",
+      "name": "贴签纸箱",
+      "theme": "archive",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-cardboard-box-v01.glb",
+      "width": 0.46000000834465027,
+      "height": 0.3635000061988829,
+      "depth": 0.36550000309944153,
+      "triangles": 372,
+      "meshCount": 3,
+      "bytes": 53084,
+      "sha256": "c79dd3233f3bccd4ec5d7de2cef72d12b28f29039cf67d88d64c01b36a6f4f10",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-archive-boxes-v01",
+      "name": "成组档案盒",
+      "theme": "archive",
+      "recipes": [
+        "N12"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-archive-boxes-v01.glb",
+      "width": 0.4650000035762787,
+      "height": 0.319999989271164,
+      "depth": 0.2770000100135803,
+      "triangles": 1920,
+      "meshCount": 4,
+      "bytes": 258660,
+      "sha256": "d824f98c1c78c2a83f53892cc199a901d3d8974e02b82e0abee60bba9c9bf20b",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-books-stack-v01",
+      "name": "散叠旧书",
+      "theme": "archive",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-books-stack-v01.glb",
+      "width": 0.35262399911880493,
+      "height": 0.19900000048801303,
+      "depth": 0.28266918659210205,
+      "triangles": 660,
+      "meshCount": 3,
+      "bytes": 91172,
+      "sha256": "663ea23454b2c93701b0e75a41eb4114f6fe9fc94e58546f350a50dd75f4d34c",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-paper-wave-v01",
+      "name": "散页纸堆",
+      "theme": "archive",
+      "recipes": [
+        "N12"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-paper-wave-v01.glb",
+      "width": 0.7531981468200684,
+      "height": 0.14200000069104135,
+      "depth": 0.5708913505077362,
+      "triangles": 288,
+      "meshCount": 1,
+      "bytes": 39600,
+      "sha256": "4bc33da999c7a05aae524e38319aa1df362cbd076a5a5b2ee9d715a664fdafb0",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-tea-tray-v01",
+      "name": "茶具托盘",
+      "theme": "parlor",
+      "recipes": [
+        "N10"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-tea-tray-v01.glb",
+      "width": 0.46000000834465027,
+      "height": 0.13300000092387199,
+      "depth": 0.30000001192092896,
+      "triangles": 1300,
+      "meshCount": 2,
+      "bytes": 174360,
+      "sha256": "a6212dc9e0f0e240176005783ff4dfd3bc67af7b81e435717fd946207d0bb176",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-medicine-tray-v01",
+      "name": "药瓶器械盘",
+      "theme": "clinic",
+      "recipes": [
+        "N07"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-medicine-tray-v01.glb",
+      "width": 0.41999998688697815,
+      "height": 0.19449999270727858,
+      "depth": 0.2800000011920929,
+      "triangles": 924,
+      "meshCount": 4,
+      "bytes": 127380,
+      "sha256": "cf42fa982fd3b4e7ffc5382e168a9ef08518705ea8c845511f7093ad8b4e5a96",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-washstand-v01",
+      "name": "搪瓷盆洗漱架",
+      "theme": "bedroom",
+      "recipes": [
+        "N13"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-washstand-v01.glb",
+      "width": 0.7440000176429749,
+      "height": 1.051000006198883,
+      "depth": 0.5400000214576721,
+      "triangles": 1316,
+      "meshCount": 2,
+      "bytes": 176492,
+      "sha256": "5a9d1fb5a92f894c0a16c4264691e256ef3880706b5c81f2a496f67c72145d6a",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-iv-stand-v01",
+      "name": "输液架",
+      "theme": "clinic",
+      "recipes": [
+        "N07"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-iv-stand-v01.glb",
+      "width": 0.6299999952316284,
+      "height": 1.850000023841858,
+      "depth": 0.6100000143051147,
+      "triangles": 1260,
+      "meshCount": 3,
+      "bytes": 170208,
+      "sha256": "c56e323d9f677dd02937d02b9769f16b0e2ac877c796b4f89ef9efc6fde5a550",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-folding-screen-v01",
+      "name": "三折布屏风",
+      "theme": "clinic",
+      "recipes": [
+        "N05"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-folding-screen-v01.glb",
+      "width": 1.6013939380645752,
+      "height": 1.6960000223480165,
+      "depth": 0.4937516897916794,
+      "triangles": 4512,
+      "meshCount": 2,
+      "bytes": 598464,
+      "sha256": "78f881738eed45a9ccd959c4d0e09fd8c28e543ee68d769f4cee53b793d4daba",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cradle-v01",
+      "name": "木栏摇篮",
+      "theme": "nursery",
+      "recipes": [
+        "N09"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-cradle-v01.glb",
+      "width": 0.6439999938011169,
+      "height": 0.8866506349295378,
+      "depth": 1.3694533109664917,
+      "triangles": 1904,
+      "meshCount": 3,
+      "bytes": 255268,
+      "sha256": "21ab6937590f30cdc6e629752ed9ffa8e8fcde757a7f37855b27c89d6f7a1d9c",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-rocking-horse-v01",
+      "name": "旧木摇马",
+      "theme": "nursery",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-rocking-horse-v01.glb",
+      "width": 0.3400000035762787,
+      "height": 0.9573204913176596,
+      "depth": 0.9120099544525146,
+      "triangles": 1680,
+      "meshCount": 3,
+      "bytes": 225744,
+      "sha256": "cdc360d49aefea4e8ddcd767259f552e160438b6c9a0c0e76aa717199bded7ca",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-toy-train-v01",
+      "name": "三节木玩具车",
+      "theme": "nursery",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-toy-train-v01.glb",
+      "width": 0.17800000309944153,
+      "height": 0.19500000309199095,
+      "depth": 0.6299999952316284,
+      "triangles": 1364,
+      "meshCount": 4,
+      "bytes": 185240,
+      "sha256": "dfefcdd4f4a923e775aa04e28bcc2d616f44889cb8acd1d3f0c10555904f8ce2",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-hanging-mobile-v01",
+      "name": "悬吊环饰",
+      "theme": "nursery",
+      "recipes": [
+        "N05"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-hanging-mobile-v01.glb",
+      "width": 0.8240000009536743,
+      "height": 0.8220000267028809,
+      "depth": 0.5899999737739563,
+      "triangles": 1664,
+      "meshCount": 4,
+      "bytes": 224836,
+      "sha256": "34788f062a5b475a5109d611d29286b50de7973918ea47578a20faa51dd297f3",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-dried-flowers-v01",
+      "name": "枯花陶瓶",
+      "theme": "shrine",
+      "recipes": [
+        "N16"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-dried-flowers-v01.glb",
+      "width": 0.33741869032382965,
+      "height": 0.6570000052452087,
+      "depth": 0.27646878361701965,
+      "triangles": 7048,
+      "meshCount": 3,
+      "bytes": 934404,
+      "sha256": "c1e0262857a7485c8be49ad45aebc8cd6f3627399959eed9aa59a6ec3af88b6f",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-candlesticks-v01",
+      "name": "旧烛台组",
+      "theme": "shrine",
+      "recipes": [
+        "N03"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-candlesticks-v01.glb",
+      "width": 0.4699999988079071,
+      "height": 0.63250001630513,
+      "depth": 0.17000000178813934,
+      "triangles": 1056,
+      "meshCount": 3,
+      "bytes": 143436,
+      "sha256": "be8ebf6edcd3b851f1d9f5b16aa0a97e5448cb7ce9c82fa0e1ae3ba3224210ae",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-portrait-frame-v01",
+      "name": "原创剪影像框",
+      "theme": "shrine",
+      "recipes": [
+        "N06",
+        "N15"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-portrait-frame-v01.glb",
+      "width": 0.3499999940395355,
+      "height": 0.43999999642372134,
+      "depth": 0.03950000088661909,
+      "triangles": 660,
+      "meshCount": 3,
+      "bytes": 91084,
+      "sha256": "9615401ff4ee613bb878e1812eb7a865d6c86fa61d38e039c7d4c9bd4f6af811",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-hanging-drape-v01",
+      "name": "褶皱悬布",
+      "theme": "bedroom",
+      "recipes": [
+        "N05"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-hanging-drape-v01.glb",
+      "width": 0.8999999761581421,
+      "height": 2.5339999198913574,
+      "depth": 0.16249999403953552,
+      "triangles": 1376,
+      "meshCount": 2,
+      "bytes": 184380,
+      "sha256": "2939f7c85f91ddd540bf8ead94dc084bb5ff0549c3359a9f32654232c4fb8c85",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-covered-shape-v01",
+      "name": "白布覆盖轮廓",
+      "theme": "bedroom",
+      "recipes": [
+        "N18"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-covered-shape-v01.glb",
+      "width": 1.010915756225586,
+      "height": 1.350000023841858,
+      "depth": 1.010915756225586,
+      "triangles": 1752,
+      "meshCount": 1,
+      "bytes": 232728,
+      "sha256": "19def3b6c9c068d64392a1b23e2cd65ae60ca3fbaed427f0185550a095d7e783",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cable-coil-v01",
+      "name": "盘地电缆",
+      "theme": "archive",
+      "recipes": [
+        "cable"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-cable-coil-v01.glb",
+      "width": 0.6561691761016846,
+      "height": 0.07799422275274992,
+      "depth": 0.6574229598045349,
+      "triangles": 2160,
+      "meshCount": 1,
+      "bytes": 286824,
+      "sha256": "6020232f6764b66b65a97cbe070cdd9bae58141fc6b585783c13a5cf576e299a",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cable-wall-v01",
+      "name": "沿墙线束",
+      "theme": "archive",
+      "recipes": [
+        "cable"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-cable-wall-v01.glb",
+      "width": 2.3093996047973633,
+      "height": 0.6995285451412201,
+      "depth": 0.07599144987761974,
+      "triangles": 3888,
+      "meshCount": 1,
+      "bytes": 514916,
+      "sha256": "1f975d53281a3ea5d1f522e133d5aa6ba7fecb35c8f69011c4d36e5d6c6728b8",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cable-ceiling-v01",
+      "name": "垂弧顶线",
+      "theme": "archive",
+      "recipes": [
+        "cable"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-cable-ceiling-v01.glb",
+      "width": 2.6106367111206055,
+      "height": 0.57463607378304,
+      "depth": 0.20561985671520233,
+      "triangles": 3888,
+      "meshCount": 1,
+      "bytes": 514928,
+      "sha256": "5241be13b260ad6574aaf6ddcabdd7cdfb0cb077a0a017dc93c814713ae935f4",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-cable-curtain-v01",
+      "name": "垂落线帘",
+      "theme": "archive",
+      "recipes": [
+        "cable"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-cable-curtain-v01.glb",
+      "width": 0.9719283878803253,
+      "height": 2.206660820869729,
+      "depth": 0.18342694640159607,
+      "triangles": 3888,
+      "meshCount": 1,
+      "bytes": 514928,
+      "sha256": "075b3feb32be2c1d4a561a686f8a91cba50d63a396a487eabea236846b8e1c33",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-organic-rib-v01",
+      "name": "原创有机褶边",
+      "theme": "clinic",
+      "recipes": [
+        "N22"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-organic-rib-v01.glb",
+      "width": 0.3242914527654648,
+      "height": 1.7617321442812681,
+      "depth": 0.20321395248174667,
+      "triangles": 1824,
+      "meshCount": 2,
+      "bytes": 243780,
+      "sha256": "fef13172d34a5036a0ae5e87ad529805fecc1e830905a524af7b1ee8872d96e0",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-tv-console-v01",
+      "name": "电视与矮柜组",
+      "theme": "parlor",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-tv-console-v01.glb",
+      "width": 1.0499999523162842,
+      "height": 1.3024270504713058,
+      "depth": 0.5600000023841858,
+      "triangles": 5156,
+      "meshCount": 7,
+      "bytes": 689652,
+      "sha256": "259d05cba473c2cbb9c1f2ef6518ef8ae1205ceb0885eaa73acbc9513dc4f861",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-computer-desk-v01",
+      "name": "旧电脑工作台",
+      "theme": "archive",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-computer-desk-v01.glb",
+      "width": 1.2799999713897705,
+      "height": 1.259999986886978,
+      "depth": 0.8199999928474426,
+      "triangles": 9332,
+      "meshCount": 7,
+      "bytes": 1240928,
+      "sha256": "680c9b89b2c7a6ddec63055dccac9f684502b4dd2eee3b986d8f42c38e453416",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-archive-stack-v01",
+      "name": "纸箱与档案堆组",
+      "theme": "archive",
+      "recipes": [
+        "N02",
+        "N12"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-archive-stack-v01.glb",
+      "width": 0.9925229549407959,
+      "height": 0.685000009536743,
+      "depth": 0.42111262679100037,
+      "triangles": 3324,
+      "meshCount": 5,
+      "bytes": 445296,
+      "sha256": "9ba3dff2a8629636c7413488ff83986892e2b849147c369d5ede529ab52da3ed",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-tea-cart-v01",
+      "name": "茶具推车",
+      "theme": "parlor",
+      "recipes": [
+        "N10"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-tea-cart-v01.glb",
+      "width": 0.8500000238418579,
+      "height": 0.8439999911934137,
+      "depth": 0.5199999809265137,
+      "triangles": 3388,
+      "meshCount": 6,
+      "bytes": 454900,
+      "sha256": "a9d0fbd50866fb360ac599fa88d63cb68fd015fdf5d01817aa2f2d2b43079b5e",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-toy-bench-v01",
+      "name": "玩具整理矮台",
+      "theme": "nursery",
+      "recipes": [
+        "N02"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-toy-bench-v01.glb",
+      "width": 0.8999999761581421,
+      "height": 0.5795000183582306,
+      "depth": 0.5,
+      "triangles": 2672,
+      "meshCount": 5,
+      "bytes": 359080,
+      "sha256": "53bb1916de946034d4d1cdb6ce7e465e763eb8f8b09155a45c7ecd2ada3be723",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-medical-cart-v01",
+      "name": "药品器械推架",
+      "theme": "clinic",
+      "recipes": [
+        "N07"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-medical-cart-v01.glb",
+      "width": 0.8500000238418579,
+      "height": 1.0449999701976775,
+      "depth": 0.550000011920929,
+      "triangles": 2604,
+      "meshCount": 5,
+      "bytes": 350380,
+      "sha256": "399b5feced43c757baf71ded089159f4a80c217674932708010c37a9a83ce6ed",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "prop-candle-altar-v01",
+      "name": "烛台与遗像供桌",
+      "theme": "shrine",
+      "recipes": [
+        "N03"
+      ],
+      "runtimeUrl": "/art/room-props/v01/prop-candle-altar-v01.glb",
+      "width": 1.0499999523162842,
+      "height": 1.4630000519752504,
+      "depth": 0.5799999833106995,
+      "triangles": 9412,
+      "meshCount": 7,
+      "bytes": 1251308,
+      "sha256": "226c10502d69d7c848b44b5f93e8a098d3aeb312c43b7aecc3233ff31271c939",
+      "source": "Original authored local mesh; build.mjs",
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "runtimeIntegrated": false
+    }
+  ]
+}

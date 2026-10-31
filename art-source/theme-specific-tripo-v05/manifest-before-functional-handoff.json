@@ -1,0 +1,444 @@
+{
+  "version": 5,
+  "model": "tripo-p1",
+  "profile": "horror-models-secondary",
+  "authorization": "User explicitly asks to generate models matching other conversation theme rooms: hospital, park, office, home, hotel, ritual, eight rooms each. 2026-10-31.",
+  "parameters": {
+    "face_limit": 18000,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed"
+  },
+  "estimatedCredits": 1850,
+  "assets": [
+    {
+      "id": "theme-award-podium-v05",
+      "name": "三级领奖台",
+      "theme": "park",
+      "targetHeight": 0.65,
+      "roomIds": [
+        "park-02"
+      ],
+      "prompt": "A three-level sports award winners podium, three adjacent sturdy wooden platforms, tallest centre, medium left and low right, worn burgundy front panels, dusty brass trim, readable stepped silhouette, freestanding platform only, no people, no trophies. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-sleeping-person-v05",
+      "name": "终点床上熟睡的人",
+      "theme": "ending",
+      "targetHeight": 0.3,
+      "roomIds": [
+        "ending-bedroom"
+      ],
+      "prompt": "One adult human sleeping peacefully lying HORIZONTALLY on their back, full body from head to toes, eyes fully CLOSED, head resting on a small off-white pillow. Worn cream linen sheet covers the body from chest to feet, with natural folds over knees and shoulders; both hands resting on the sheet over abdomen. Realistic adult proportions. Entire long low lying body and pillow isolated together, NO BED FRAME, NO MATTRESS, no floor, no room, no standing figure, no seated pose. View from above and slightly from the side, head at one short end and feet at the other. Original realistic abandoned-house game prop, tactile linen and natural skin, detailed PBR, muted colours, no cartoon, no injuries, no blood.",
+      "runtimeIntegrated": false,
+      "placement": "Lie along the existing bed mattress. Normalize longest horizontal dimension to 1.78m, bottom of sheet/body on measured mattress support. Head aligns with pillow end; no skeleton required for static ending."
+    },
+    {
+      "id": "theme-ceremony-lectern-v05",
+      "name": "颁奖典礼讲台",
+      "theme": "park",
+      "targetHeight": 1.2,
+      "roomIds": [
+        "park-02",
+        "park-08"
+      ],
+      "prompt": "A full size old wooden ceremony lectern, sloped reading top, carved rectangular front panel, small gooseneck microphone mounted on top, broad stable foot, dark walnut, rubbed brass corners. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-trophy-cup-v05",
+      "name": "双耳奖杯",
+      "theme": "park",
+      "targetHeight": 0.42,
+      "roomIds": [
+        "park-02",
+        "park-06"
+      ],
+      "prompt": "An old large brass trophy cup with two curled side handles, slender stem and square dark wood plinth, tarnished engraved metal, empty inscription plaque, complete trophy. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-ticket-counter-v05",
+      "name": "售票柜台",
+      "theme": "park",
+      "targetHeight": 1.25,
+      "roomIds": [
+        "park-01"
+      ],
+      "prompt": "An abandoned indoor amusement park ticket counter, waist high teal wood cabinet with a tall curved front sill, brass cash slot and small counter ledge, worn faded striped paint, empty staff space behind, no room walls. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-ticket-register-v05",
+      "name": "机械售票机",
+      "theme": "park",
+      "targetHeight": 0.42,
+      "roomIds": [
+        "park-01"
+      ],
+      "prompt": "An antique mechanical admission ticket dispenser and cash register, small brass numbered keys, crank handle, visible narrow roll of perforated paper tickets, faded red cast metal casing, single tabletop object. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-prize-display-v05",
+      "name": "游园奖品陈列架",
+      "theme": "park",
+      "targetHeight": 1.75,
+      "roomIds": [
+        "park-02",
+        "park-06"
+      ],
+      "prompt": "A wooden carnival prize display rack with three open shelves, stuffed animal prizes, small boxed toys and hanging paper rosettes arranged in distinct rows, faded cream and dull red paint, old dusty plush and cloth, no brand logos. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-arcade-cabinet-v05",
+      "name": "旧街机柜",
+      "theme": "park",
+      "targetHeight": 1.8,
+      "roomIds": [
+        "park-03",
+        "park-07"
+      ],
+      "prompt": "A vintage upright arcade game cabinet with sloping control console, two joysticks and round buttons, dark curved CRT screen, faded geometric burgundy side artwork, worn black vinyl trim, no recognizable game branding. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-carousel-horse-v05",
+      "name": "旋转木马单体",
+      "theme": "park",
+      "targetHeight": 1.8,
+      "roomIds": [
+        "park-06",
+        "park-08"
+      ],
+      "prompt": "A single antique carousel horse mounted on a vertical brass pole and a compact circular base, carved wooden horse in galloping pose, chipped cream paint, faded red saddle, restrained haunted amusement park prop, fully visible pole and stable base. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-theatre-stage-v05",
+      "name": "室内小舞台台座",
+      "theme": "park",
+      "targetHeight": 0.5,
+      "roomIds": [
+        "park-02",
+        "park-08"
+      ],
+      "prompt": "A freestanding low rectangular theatre stage platform, dark worn wooden floor boards, burgundy pleated fabric skirting on three sides and two shallow front access steps, 3 metre wide platform, no room walls and no roof, no scenery. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-performer-mask-v05",
+      "name": "后台表演面具",
+      "theme": "park",
+      "targetHeight": 0.32,
+      "roomIds": [
+        "park-05"
+      ],
+      "prompt": "A single old theatrical comedy mask made from painted ivory papier mache, understated smiling mouth, dark hollow eye cutouts, cracks and worn cloth ties, original generic theatre prop, no recognizable character. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-hospital-triage-counter-v05",
+      "name": "医院分诊柜台",
+      "theme": "hospital",
+      "targetHeight": 1.1,
+      "roomIds": [
+        "hospital-01"
+      ],
+      "prompt": "A compact vintage hospital reception counter, pale mint enamel steel front, cream laminate worktop, small recessed desk working area behind, drawer unit and empty label holder, practical institutional design with worn edges. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-waiting-bench-v05",
+      "name": "三联候诊椅",
+      "theme": "hospital",
+      "targetHeight": 0.85,
+      "roomIds": [
+        "hospital-02"
+      ],
+      "prompt": "A row of three connected vintage hospital waiting seats on one steel beam, dark olive vinyl curved backrests and seat cushions, two shared steel floor feet, worn upholstery and aged chrome, clearly three seats. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-exam-lamp-v05",
+      "name": "医用检查灯",
+      "theme": "hospital",
+      "targetHeight": 1.75,
+      "roomIds": [
+        "hospital-04"
+      ],
+      "prompt": "A freestanding vintage medical examination lamp with articulated metal arm, circular shallow enamel reflector head, adjustable vertical column and heavy five wheel base, aged off-white enamel with tarnished steel joints. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-ecg-cart-v05",
+      "name": "心电监护设备车",
+      "theme": "hospital",
+      "targetHeight": 1.2,
+      "roomIds": [
+        "hospital-04",
+        "hospital-03"
+      ],
+      "prompt": "A vintage hospital ECG monitor on a metal trolley, small dark green CRT display, rows of controls, coiled lead wires and paper recorder, two shelves and four wheels, yellowed ivory plastic and worn green enamel. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-pharmacy-drawers-v05",
+      "name": "药房小抽屉柜",
+      "theme": "hospital",
+      "targetHeight": 1.7,
+      "roomIds": [
+        "hospital-05"
+      ],
+      "prompt": "A tall vintage pharmacy cabinet with a precise grid of twenty small labelled drawers and a lower double cabinet, cream painted steel, worn mint drawer fronts, tiny brass label slots, clearly medicinal storage furniture. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-privacy-curtain-v05",
+      "name": "病床隔帘架",
+      "theme": "hospital",
+      "targetHeight": 2.0,
+      "roomIds": [
+        "hospital-03"
+      ],
+      "prompt": "A freestanding mobile hospital privacy curtain on a U shaped metal frame, pale green fabric with heavy realistic folds, curtain partly gathered, four small wheels and stable feet, complete isolated divider. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-office-reception-v05",
+      "name": "公司接待柜台",
+      "theme": "office",
+      "targetHeight": 1.1,
+      "roomIds": [
+        "office-01"
+      ],
+      "prompt": "A compact L shaped office reception counter with a raised visitor ledge and a lower staff work surface, dark walnut veneer and dull beige laminate, cable grommet and drawers, worn 1980s institutional furniture. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-conference-table-v05",
+      "name": "公司长会议桌",
+      "theme": "office",
+      "targetHeight": 0.76,
+      "roomIds": [
+        "office-03"
+      ],
+      "prompt": "A long rectangular boardroom conference table with softly rounded corners, dark walnut veneer top, two broad pedestal supports, simple brass cable access cover, empty clear tabletop, realistic old office furniture. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-office-chair-v05",
+      "name": "旧办公转椅",
+      "theme": "office",
+      "targetHeight": 1.05,
+      "roomIds": [
+        "office-02",
+        "office-05",
+        "office-07"
+      ],
+      "prompt": "An old swivel office chair with brown worn vinyl padded seat and back, metal armrests, five spoke wheeled base, adjustable central stem, practical early office design. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-photocopier-v05",
+      "name": "旧复印机",
+      "theme": "office",
+      "targetHeight": 1.1,
+      "roomIds": [
+        "office-06",
+        "office-04"
+      ],
+      "prompt": "A large old beige office photocopier, hinged glass scanner lid closed, angled control panel with small display and physical buttons, paper output tray, two lower drawers and caster wheels, yellowed plastic and dusty seams. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-water-dispenser-v05",
+      "name": "桶装饮水机",
+      "theme": "office",
+      "targetHeight": 1.4,
+      "roomIds": [
+        "office-01",
+        "office-07"
+      ],
+      "prompt": "A vintage freestanding office water dispenser with a translucent smoky blue water bottle inverted on top, two taps, shallow drip tray and cream rectangular base, worn plastic, believable complete appliance. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-mail-sorting-rack-v05",
+      "name": "公司信件分拣架",
+      "theme": "office",
+      "targetHeight": 1.65,
+      "roomIds": [
+        "office-06"
+      ],
+      "prompt": "A freestanding office mail sorting cabinet with twenty open square pigeonholes containing uneven paper envelopes and document packets, lower drawers, worn dark wood and brass label holders. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-dining-table-v05",
+      "name": "家庭餐桌",
+      "theme": "home",
+      "targetHeight": 0.76,
+      "roomIds": [
+        "home-06"
+      ],
+      "prompt": "An old domestic rectangular dining table for four people, honey brown solid oak, four turned wooden legs, worn clear empty tabletop, visible wood grain and rounded edges. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-china-cabinet-v05",
+      "name": "家庭餐具柜",
+      "theme": "home",
+      "targetHeight": 1.85,
+      "roomIds": [
+        "home-06"
+      ],
+      "prompt": "An old wooden kitchen china dresser, upper open shelves containing ceramic plates and cups, lower doors and drawers, faded cream paint with dark wood exposed at edges, practical domestic storage. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-sewing-basket-v05",
+      "name": "祖母针线篮",
+      "theme": "home",
+      "targetHeight": 0.28,
+      "roomIds": [
+        "home-05"
+      ],
+      "prompt": "An old oval wicker sewing basket with hinged padded lid partly open, folded fabric, thread spools and a pin cushion neatly inside, worn muted cloth, small domestic tabletop prop. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-hotel-reception-v05",
+      "name": "旅馆接待总台",
+      "theme": "hotel",
+      "targetHeight": 1.1,
+      "roomIds": [
+        "hotel-01"
+      ],
+      "prompt": "A narrow vintage hotel reception desk, polished dark walnut counter, curved visitor front with recessed panels, brass edge rail and working desk recess behind, faded luxurious old inn furniture. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-hotel-key-rack-v05",
+      "name": "旅馆钥匙柜",
+      "theme": "hotel",
+      "targetHeight": 0.9,
+      "roomIds": [
+        "hotel-01"
+      ],
+      "prompt": "A wall mounted old hotel key rack cabinet with twenty small cubbies, numbered brass tags and several dangling metal keys, dark wood frame, shallow cabinet, no background wall, detailed individual hooks. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-hotel-service-bell-v05",
+      "name": "旅馆柜台服务铃",
+      "theme": "hotel",
+      "targetHeight": 0.12,
+      "roomIds": [
+        "hotel-01"
+      ],
+      "prompt": "A small antique hotel reception service bell, tarnished brass dome, black round base and a push button on top, realistic compact desk bell, isolated single object. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-luggage-trolley-v05",
+      "name": "旅馆行李车",
+      "theme": "hotel",
+      "targetHeight": 1.85,
+      "roomIds": [
+        "hotel-06"
+      ],
+      "prompt": "A vintage hotel luggage trolley, brass arched tubular frame and hanging rail, burgundy carpeted platform on four wheels, two worn brown leather suitcases resting on the base, complete freestanding trolley. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-linen-cart-v05",
+      "name": "旅馆布草车",
+      "theme": "hotel",
+      "targetHeight": 1.1,
+      "roomIds": [
+        "hotel-05"
+      ],
+      "prompt": "A vintage housekeeping linen cart, rectangular chrome frame on wheels, open shelves stacked with folded off-white towels and sheets, brown canvas laundry bag at one end, realistic worn service equipment. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-hotel-luggage-rack-v05",
+      "name": "客房行李架",
+      "theme": "hotel",
+      "targetHeight": 0.56,
+      "roomIds": [
+        "hotel-02",
+        "hotel-03",
+        "hotel-08"
+      ],
+      "prompt": "A folding hotel luggage rack with dark wooden X legs and four wide worn brown fabric support straps stretched across the top, empty stable freestanding rack, realistic joints. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-ritual-idol-v05",
+      "name": "原创祭祀坐像",
+      "theme": "ritual",
+      "targetHeight": 0.9,
+      "roomIds": [
+        "ritual-01",
+        "ritual-02",
+        "ritual-06"
+      ],
+      "prompt": "An original anonymous seated ritual effigy carved from dark weathered wood, simple human silhouette in layered ceremonial robes, unreadable worn face, hands resting together, small integrated plinth, no identifiable deity or famous character. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-offering-bowl-v05",
+      "name": "祭祀供果碗",
+      "theme": "ritual",
+      "targetHeight": 0.2,
+      "roomIds": [
+        "ritual-01",
+        "ritual-04",
+        "ritual-08"
+      ],
+      "prompt": "An aged bronze offering bowl containing three dusty pomegranates and a folded dark red cloth, wide shallow footed basin, realistic tarnished metal, single compact ritual tabletop cluster. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-ritual-lantern-v05",
+      "name": "旧祭祀灯笼",
+      "theme": "ritual",
+      "targetHeight": 0.6,
+      "roomIds": [
+        "ritual-03",
+        "ritual-07"
+      ],
+      "prompt": "An old freestanding ceremonial lantern, octagonal dark wood frame, faded red paper panels with no writing, small brass handle, short feet, weathered tactile materials, no visible flame. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-prayer-cushion-v05",
+      "name": "跪拜蒲团",
+      "theme": "ritual",
+      "targetHeight": 0.16,
+      "roomIds": [
+        "ritual-03",
+        "ritual-05"
+      ],
+      "prompt": "A single round woven straw prayer cushion with a faded burgundy cloth top insert, thick bound rim, compressed worn centre, visible woven fibres, realistic old floor cushion. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-ritual-vessel-set-v05",
+      "name": "成组祭器",
+      "theme": "ritual",
+      "targetHeight": 0.35,
+      "roomIds": [
+        "ritual-04"
+      ],
+      "prompt": "A compact group of three antique ceremonial vessels on a dark wooden tray: a bronze cup, a small lidded incense pot and a slender bell, muted tarnished metal, clear separated silhouettes, original ritual props. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    }
+  ],
+  "generationHold": true,
+  "holdReason": "Reconcile newly supplied NEXT_CHAT.md functional specifications; finish currently submitted tasks, prevent duplicate unsubmitted requests."
+}

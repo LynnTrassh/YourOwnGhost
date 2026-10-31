@@ -1,0 +1,261 @@
+{
+  "groups": [
+    {
+      "specificationId": "theme-stage-deck-v01",
+      "assetIds": [
+        "theme-theatre-stage-v05"
+      ],
+      "status": "queued",
+      "notes": "直段台体一件；端封板可独立；相同模块可拼成5米或7.5米宽。"
+    },
+    {
+      "specificationId": "theme-stage-stairs-v01",
+      "assetIds": [
+        "theme-stage-stairs-v05"
+      ],
+      "status": "queued",
+      "notes": "三级阶梯一件，每级高.15米、深.30米；左右侧共用。"
+    },
+    {
+      "specificationId": "theme-lectern-v01",
+      "assetIds": [
+        "theme-ceremony-lectern-v05"
+      ],
+      "status": "existing-task-needs-spec-review",
+      "notes": "斜面台板、支柱/柜身、底座；独立麦克风插座。"
+    },
+    {
+      "specificationId": "theme-winners-rostrum-v01",
+      "assetIds": [
+        "theme-award-podium-v05"
+      ],
+      "status": "existing-task-needs-spec-review",
+      "notes": "三件独立墩：每件宽.9深.85；高度.4/.6/.3，中央最高；组合宽2.7。"
+    },
+    {
+      "specificationId": "theme-trophy-v01",
+      "assetIds": [
+        "theme-trophy-cup-v05"
+      ],
+      "status": "existing-task-needs-spec-review",
+      "notes": "一件主奖杯；可选低矮杯型后续扩展。"
+    },
+    {
+      "specificationId": "theme-turnstile-v01",
+      "assetIds": [
+        "theme-turnstile-v05"
+      ],
+      "status": "queued",
+      "notes": "箱体与转杆分节点，保留轴心；先交静态模型。"
+    },
+    {
+      "specificationId": "theme-service-counter-v01",
+      "assetIds": [
+        "theme-ticket-counter-v05"
+      ],
+      "status": "existing-task-needs-spec-review",
+      "notes": "直段柜台一件；内侧低工作台；可拼接。"
+    },
+    {
+      "specificationId": "theme-ticket-window-v01",
+      "assetIds": [
+        "theme-ticket-window-v05"
+      ],
+      "status": "queued",
+      "notes": "窗口框、玻璃、下方递票口独立材质/节点。"
+    },
+    {
+      "specificationId": "theme-ticket-dispenser-v01",
+      "assetIds": [
+        "theme-ticket-register-v05"
+      ],
+      "status": "queued",
+      "notes": "单件；票卷、出票口可见。"
+    },
+    {
+      "specificationId": "theme-waiting-bench-v01",
+      "assetIds": [
+        "theme-waiting-bench-v05"
+      ],
+      "status": "queued",
+      "notes": "三联椅一件，座面、横梁、椅脚完整。"
+    },
+    {
+      "specificationId": "theme-exam-lamp-v01",
+      "assetIds": [
+        "theme-exam-lamp-v05"
+      ],
+      "status": "queued",
+      "notes": "底座、立杆、关节臂、灯头分节点；交一份收拢姿态。"
+    },
+    {
+      "specificationId": "theme-xray-viewer-v01",
+      "assetIds": [
+        "theme-xray-viewer-v05"
+      ],
+      "status": "queued",
+      "notes": "灯箱一件，胶片面独立材质。"
+    },
+    {
+      "specificationId": "theme-mail-sorter-v01",
+      "assetIds": [
+        "theme-mail-sorting-rack-v05"
+      ],
+      "status": "queued",
+      "notes": "格柜本体；少量信封/包裹可分离。"
+    },
+    {
+      "specificationId": "theme-conference-table-v01",
+      "assetIds": [
+        "theme-conference-table-v05"
+      ],
+      "status": "queued",
+      "notes": "独立长桌；桌面干净，勿自带书纸。"
+    },
+    {
+      "specificationId": "theme-office-chair-v01",
+      "assetIds": [
+        "theme-office-chair-v05"
+      ],
+      "status": "queued",
+      "notes": "带可辨认升降/旋转底座的旧办公椅。"
+    },
+    {
+      "specificationId": "theme-office-divider-v01",
+      "assetIds": [
+        "theme-office-divider-v05"
+      ],
+      "status": "queued",
+      "notes": "直隔断与落地脚；同一模型重复组合。"
+    },
+    {
+      "specificationId": "theme-hotel-key-rack-v01",
+      "assetIds": [
+        "theme-hotel-key-rack-v05"
+      ],
+      "status": "queued",
+      "notes": "壁挂格架一件；少量钥匙可选独立节点。"
+    },
+    {
+      "specificationId": "theme-luggage-trolley-v01",
+      "assetIds": [
+        "theme-luggage-trolley-v05"
+      ],
+      "status": "queued",
+      "notes": "空车一件；上杆、平台、轮子完整；行李箱复用在制模型。"
+    },
+    {
+      "specificationId": "theme-linen-trolley-v01",
+      "assetIds": [
+        "theme-linen-cart-v05"
+      ],
+      "status": "queued",
+      "notes": "车架及布袋/分层架；床单独立复用在制模型。"
+    },
+    {
+      "specificationId": "theme-place-setting-v01",
+      "assetIds": [
+        "theme-place-setting-v05"
+      ],
+      "status": "queued",
+      "notes": "盘碗杯与餐具可分拆；组合一份一人位。"
+    },
+    {
+      "specificationId": "theme-offering-vessels-v01",
+      "assetIds": [
+        "theme-offering-bowl-v05"
+      ],
+      "status": "queued",
+      "notes": "浅盘、供碗、少量原创供品独立件。"
+    },
+    {
+      "specificationId": "theme-ritual-tablet-v01",
+      "assetIds": [
+        "theme-ritual-tablet-v05"
+      ],
+      "status": "queued",
+      "notes": "有独立底座的牌板一件；正反面明显。"
+    },
+    {
+      "specificationId": "theme-prize-pegboard-v01",
+      "assetIds": [
+        "theme-prize-display-v05"
+      ],
+      "status": "queued",
+      "notes": "挂板与挂钩一件；奖品单独挂载。"
+    },
+    {
+      "specificationId": "theme-microphone-stand-v01",
+      "assetIds": [
+        "theme-microphone-stand-v05"
+      ],
+      "status": "queued",
+      "notes": "麦克风、立杆与底座，可分拆。"
+    },
+    {
+      "specificationId": "theme-stage-masks-v01",
+      "assetIds": [
+        "theme-performer-mask-v05",
+        "theme-performer-mask-smile-v05"
+      ],
+      "status": "queued",
+      "notes": "两至三件原创面具各自导出；可挂可置台。"
+    },
+    {
+      "specificationId": "theme-meeting-board-v01",
+      "assetIds": [
+        "theme-meeting-board-v05"
+      ],
+      "status": "queued",
+      "notes": "壁挂软木/白板一件；空白可替换板面。"
+    },
+    {
+      "specificationId": "theme-desk-bell-v01",
+      "assetIds": [
+        "theme-hotel-service-bell-v05"
+      ],
+      "status": "queued",
+      "notes": "按铃单件，按钮独立可选。"
+    },
+    {
+      "specificationId": "theme-stage-proscenium-v01",
+      "assetIds": [
+        "theme-stage-pillar-v05",
+        "theme-stage-lintel-v05"
+      ],
+      "status": "queued",
+      "notes": "两侧复用立柱，独立上楣；组合高度与净宽需验收"
+    },
+    {
+      "specificationId": "theme-craft-tools-v01",
+      "assetIds": [
+        "theme-craft-paper-v05",
+        "theme-craft-pencil-cup-v05",
+        "theme-craft-paint-box-v05"
+      ],
+      "status": "queued",
+      "notes": "彩纸、笔筒、颜料盒分别生成，不带桌"
+    }
+  ],
+  "reusedInsteadOfGeneration": {
+    "theme-dining-table-v05": [
+      "scene-table-round-v03"
+    ],
+    "theme-privacy-curtain-v05": [
+      "prop-folding-screen-v01"
+    ],
+    "theme-ritual-vessel-set-v05": [
+      "scene-incense-burner-v03",
+      "scene-ritual-bell-v03",
+      "scene-candelabrum-v03",
+      "theme-offering-bowl-v05"
+    ]
+  },
+  "pendingSpecReview": [
+    "theme-award-podium-v05",
+    "theme-ceremony-lectern-v05",
+    "theme-trophy-cup-v05",
+    "theme-ticket-counter-v05"
+  ],
+  "optionalAmusementBatch": "not-added"
+}

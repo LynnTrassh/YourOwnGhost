@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "generatedWith": "built-in image_gen",
+  "runtimeIntegrated": false,
+  "assets": [
+    {
+      "id": "ghost-bone",
+      "name": "骨白 · 鬼脸",
+      "theme": "ghost-face",
+      "url": "/art/encounter-flashes/v02/ghost-bone.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2244358,
+      "sha256": "897fe330508fbc3db73b0b60e63b97e4911fa530dc6c18b518896336d9362a9b",
+      "source": "/Users/ftc_art/.codex/generated_images/01a19055-97c2-75e0-a42a-7344c7e6ebaf/exec-b70e42fa-338c-4086-9266-8fda38f15cf0.png"
+    },
+    {
+      "id": "shadow-cyan",
+      "name": "冷青 · 黑影",
+      "theme": "shadow",
+      "url": "/art/encounter-flashes/v02/shadow-cyan.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1798362,
+      "sha256": "e6c1f20f2b3272d37d7e59f8fc1772e3df5d0cfe5a8f97c6f20f3fa5e597e838",
+      "source": "/Users/ftc_art/.codex/generated_images/01a19055-97c2-75e0-a42a-7344c7e6ebaf/exec-aae0f950-0409-4c6e-aebc-e4e8a8e83858.png"
+    },
+    {
+      "id": "ghost-magenta",
+      "name": "紫红 · 歪脸",
+      "theme": "ghost-face",
+      "url": "/art/encounter-flashes/v02/ghost-magenta.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1545789,
+      "sha256": "c2d15fa9b63bbda1c523bd2a93b378abb39ea5facbadf0059b753dc307a526be",
+      "source": "/Users/ftc_art/.codex/generated_images/01a19055-97c2-75e0-a42a-7344c7e6ebaf/exec-69bcb0b8-ec06-4321-b9fa-eacd99bd0e5d.png"
+    },
+    {
+      "id": "shadow-amber",
+      "name": "枯黄 · 瘦影",
+      "theme": "shadow",
+      "url": "/art/encounter-flashes/v02/shadow-amber.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2318548,
+      "sha256": "2410cfc891e8e7fec06961a2ae3fe87f0db5281f79ee7bfb073554b978dac944",
+      "source": "/Users/ftc_art/.codex/generated_images/01a19055-97c2-75e0-a42a-7344c7e6ebaf/exec-a9803ba7-26e2-4db4-92d7-20177b9a569b.png"
+    }
+  ]
+}

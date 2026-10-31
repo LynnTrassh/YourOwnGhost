@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-hotel-luggage-rack-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-hotel-luggage-rack-v05.glb",
+  "sourceBytes": 9653872,
+  "runtimeBytes": 3488264,
+  "sourceSHA256": "6f3b78b8c160d336dfc3cd044141f48e58648f44a86ab7c9a1be5e24f64c6a66",
+  "runtimeSHA256": "b5e7dab4e3d3f1dcd3984e93fb5f9a7c85b45b8c966ff2c09a3d95728b9985cd",
+  "triangles": 16670,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2987098693847656,
+      -0.5,
+      -0.4610157907009125
+    ],
+    "max": [
+      0.2987098693847656,
+      0.5,
+      0.4610157907009125
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.16727752685546876,
+      0,
+      -0.258168842792511
+    ],
+    "max": [
+      0.16727752685546876,
+      0.56,
+      0.258168842792511
+    ],
+    "size": [
+      0.3345550537109375,
+      0.56,
+      0.516337685585022
+    ]
+  },
+  "scale": 0.56,
+  "scaleXYZ": [
+    0.56,
+    0.56,
+    0.56
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "a6f55bfc1d77e96110b894deffa951a21c2f6bbf0e0079d71e6b0bb8200c1340"
+}

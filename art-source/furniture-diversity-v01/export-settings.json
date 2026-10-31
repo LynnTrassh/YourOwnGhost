@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bed-iron-rail-v01",
+    "yaw": 90,
+    "axis": "z",
+    "metres": 2
+  },
+  {
+    "id": "bed-canopy-linen-v01",
+    "yaw": 0,
+    "axis": "y",
+    "metres": 2.2
+  },
+  {
+    "id": "bed-low-divan-v01",
+    "yaw": 0,
+    "axis": "z",
+    "metres": 1.95
+  },
+  {
+    "id": "vanity-oval-mirror-v01",
+    "yaw": 90,
+    "axis": "y",
+    "metres": 1.65
+  }
+]

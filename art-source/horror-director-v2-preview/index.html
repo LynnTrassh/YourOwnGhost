@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>恐怖导演 · 血色房与遭遇闪帧</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#111;color:#eee;font:14px/1.6 system-ui,sans-serif}canvas{display:block;width:100vw;height:100vh}aside{position:fixed;left:18px;top:18px;width:310px;padding:20px;background:#111c;border:1px solid #6666;border-radius:12px;max-height:94vh;overflow:auto;backdrop-filter:blur(12px)}h1{font-size:19px;margin:0 0 8px}p{color:#bcc1bd;margin:8px 0}label{display:block;margin-top:12px}button,select{font:inherit;color:#eee;background:#282929;border:1px solid #666;border-radius:5px;padding:7px 10px;cursor:pointer;margin:3px 0}select{width:100%}button:disabled{opacity:.4}button[aria-pressed=true]{border-color:#ea949a;background:#49292d}.views{display:flex;gap:5px;flex-wrap:wrap}small{color:#aaa}summary{cursor:pointer}pre{font-size:10px;white-space:pre-wrap}#caption{position:fixed;bottom:20px;right:24px;text-align:right;pointer-events:none;background:#111b;padding:12px 18px;border-radius:8px}#status{font-size:12px}a{color:#e1b7b7}
+</style></head><body>
+<canvas id="view" tabindex="0" aria-label="实际地图血色房预览；拖动观察，WASD 移动"></canvas>
+<button id="panel-toggle" style="position:fixed;right:14px;top:12px;z-index:5">收起面板</button>
+<aside id="controls"><h1>血色空间 / 遭遇闪帧</h1><p>同一房间、同一机位切换比较。<br>种子 1844070019 · 二层 room-8</p>
+<label>房间表现<select id="variant" disabled><option value="baseline">原房间</option><option value="enclosure">A · 红色围住空位</option><option value="rising">B · 向上返潮</option></select></label>
+<div class="views"><button disabled data-view="entry">入口</button><button disabled data-view="notice">发现</button><button disabled data-view="recheck">确认</button><button disabled data-view="return">回望</button><button disabled data-view="ceiling">抬头</button></div>
+<label><input type="checkbox" id="finish" checked disabled> 本轮材质与光照优化</label>
+<label><input type="checkbox" id="ceiling" checked disabled> 天花板细节</label>
+<label><input type="checkbox" id="flashlight" checked> 手电筒</label>
+<label>其他房间顶面<select id="ceiling-room" disabled><option value="">当前血色房</option></select></label>
+<label><input type="checkbox" id="camera-enabled" checked> 摄影机与信号总开关</label>
+<label>摄影机缺陷<select id="camera-preset"><option value="off">关闭</option><option value="subtle" selected>微弱 · 正常探索</option><option value="reference">参考强度</option><option value="degraded">劣化 · 手动评审</option></select></label>
+<label>颗粒强度<input id="camera-grain" type="range" min="0" max="1" step=".05" value="1"></label>
+<label><input type="checkbox" id="vhs-motion"> 颗粒动态预览</label>
+<label><input type="checkbox" id="signal-motion" checked> 允许事件局部横向扰动</label>
+<button id="signal-preview" disabled>预览焦点局部失真</button><button id="signal-cancel">取消信号故障</button>
+<p><small>空间美术、摄影机缺陷、叙事信号分开。局部故障仅点击触发，1.2 秒结束。</small> <a href="/art-source/camera-quality-v2/index.html">A–E 画质对照</a></p>
+<label>遭遇底图<select id="picture" disabled><option value="doll">骨白 · 现有瓷偶</option></select></label>
+<label>遭遇画面<select id="mode"><option value="reduced">柔和显现</option><option value="full">短促双插帧</option><option value="off">关闭</option></select></label>
+<button id="trigger" disabled>播放怪物遭遇画面</button><button id="cancel">停止</button><button id="frame" disabled>检视插帧构图</button>
+<p><small>4 张原创底图 + 现有瓷偶。仅点击触发；短促版 0.38 秒，柔和版 0.65 秒。策划决定怪物与触发时机。</small></p>
+<button id="export" disabled>保存当前画面与记录</button>
+<div id="exports" hidden><a id="image-download">下载画面 PNG</a> · <a id="record-download">下载记录 JSON</a></div>
+<p id="status">加载中…</p><small>拖动画面转头 · WASD 移动<br>实际 world 静态预览，事件未推进。首批验证材质与灯光，布条等新增几何尚未实现。</small>
+<details><summary>验证记录</summary><pre id="diagnostics"></pre></details></aside>
+<div id="caption"></div><script type="module" src="./preview.js"></script></body></html>

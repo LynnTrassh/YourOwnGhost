@@ -1,0 +1,35 @@
+{
+  "reviewed": {
+    "scene-wardrobe-panelled-v03": {
+      "result": "model-pass",
+      "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+    },
+    "scene-wardrobe-mirrored-v03": {
+      "result": "model-pass",
+      "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+    },
+    "scene-sofa-linen-v03": {
+      "result": "model-pass",
+      "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+    },
+    "scene-armchair-wingback-v03": {
+      "result": "model-pass",
+      "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+    },
+    "scene-armchair-wicker-v03": {
+      "result": "model-pass",
+      "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+    },
+    "scene-chair-spindle-v03": {
+      "result": "model-pass",
+      "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+    },
+    "scene-chair-upholstered-v03": {
+      "result": "model-pass",
+      "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+    }
+  },
+  "rejected": {
+    "scene-sofa-leather-v03": "生成了上下悬浮的两个沙发，禁止接入，需修复或重做"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-31",
+  "tool": "image_gen",
+  "assets": [
+    {
+      "id": "bed-iron-rail-v01",
+      "name": "铁栏单人床",
+      "target": "约 1.0 × 2.0 × 1.15 m；细栏杆、床下透空",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One narrow antique iron single bed. Slender dark oxidized iron tube frame, simple arched headboard and lower arched footboard with five sturdy vertical bars each, four metal legs, generous visible empty space below the bed. One thin ivory striped ticking mattress, one flat cream pillow, one folded faded slate-blue wool blanket across the lower half. No wood components, no floral quilt, no canopy. Simple mechanically plausible solid joints, not hair-thin wires. Intended dimensions 1.0m wide, 2.0m long, headboard 1.15m tall. A materially and structurally distinct sleeping bed, not a medical trolley."
+    },
+    {
+      "id": "bed-canopy-linen-v01",
+      "name": "半帘四柱床",
+      "target": "约 1.15 × 2.05 × 2.2 m；高柱与局部布帘",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One compact single antique four-poster tester bed, with four square dark oak posts, simple rectangular overhead rails, closed plain plank headboard, low foot rail, thick cream mattress and one muted ochre quilt. Two narrow worn linen curtains tied back to the REAR posts only, front completely open, no fully enclosed canopy cloth roof. Four posts visible and physically connected to the bed frame; airy vertical negative space is crucial. No turnings matching a Victorian spindle bed, no ornate gold carvings, no loose props. Intended 1.15m wide, 2.05m long, 2.2m tall. Make the tall rectangular frame the defining silhouette."
+    },
+    {
+      "id": "bed-low-divan-v01",
+      "name": "低矮旧软榻",
+      "target": "约 0.95 × 1.95 × 0.52 m；无床头、低横向体积",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One old low single sleeping divan with NO headboard, NO footboard, NO posts. A long rectangular faded olive-gray upholstered base on four short dark wooden feet, a thick sagging cream ticking mattress, one small plain flattened pillow at one end, a rumpled taupe wool blanket folded back over the far third. Mattress and upholstery have visible piping, small stitched repairs and compressed edges, restrained age, no tears with stuffing pouring out. Intended 0.95m wide, 1.95m long, total height 0.52m. Extremely low horizontal silhouette, large intact top surface, not a sofa and not a pile of bedding on the floor."
+    },
+    {
+      "id": "vanity-oval-mirror-v01",
+      "name": "椭圆镜梳妆台",
+      "target": "约 1.1 × 0.5 × 1.65 m；镜面竖向焦点",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One antique dressing table with an attached tall oval mirror supported by two wooden uprights. Dark walnut frame, three shallow asymmetric drawers, curved slender legs and a knee opening. Narrow compact horizontal tabletop and prominent vertical oval mirror as a distinct recognizable silhouette. The mirror is aged clouded silver, uniform mottled reflection with no room, no face, no figure visible. A simple small carved ridge around the oval, no elaborate rococo decoration. No chair, no bottles, no separate accessories. Intended 1.1m wide, 0.5m deep, total mirror height 1.65m. Physically plausible joints; plain useful old household furniture."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "authorization": {
+    "date": "2026-10-31",
+    "userInstruction": "继续",
+    "scope": "Four reviewed model input images, one model each. Continuation after four-model / 200 credit proposal.",
+    "profile": "horror-models-secondary"
+  },
+  "images": [
+    {
+      "id": "ceiling-spider-a-v01",
+      "sha256": "4f2392ee6c379dd3fb0706137b245ea63ae2f74931e4001dbace83a151078080"
+    },
+    {
+      "id": "coiled-snake-a-v01",
+      "sha256": "80bf03cc1b5360f77f6335fbdd9c1960f43c0fac334b5db1fc1d4bd0c0e10ccd"
+    },
+    {
+      "id": "threshold-toad-a-v01",
+      "sha256": "fee72c85b86c7c98612cea2c9cec5122878a7dbbd24474abace020c14bb22dbc"
+    },
+    {
+      "id": "folded-lintel-figure-a-v01",
+      "sha256": "870a28df51e94c98def3564e690d13b035a81490ac2935ef8e37905a72b165c1"
+    }
+  ]
+}

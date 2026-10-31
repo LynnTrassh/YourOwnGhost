@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ceiling-spider-a-v01",
+    "vertices": 8676,
+    "triangles": 5094,
+    "degenerate": 0,
+    "validIndices": true,
+    "finiteAttributes": true
+  },
+  {
+    "id": "coiled-snake-a-v01",
+    "vertices": 5493,
+    "triangles": 5784,
+    "degenerate": 0,
+    "validIndices": true,
+    "finiteAttributes": true
+  },
+  {
+    "id": "threshold-toad-a-v01",
+    "vertices": 4065,
+    "triangles": 6066,
+    "degenerate": 0,
+    "validIndices": true,
+    "finiteAttributes": true
+  },
+  {
+    "id": "folded-lintel-figure-a-v01",
+    "vertices": 7335,
+    "triangles": 5613,
+    "degenerate": 0,
+    "validIndices": true,
+    "finiteAttributes": true
+  }
+]

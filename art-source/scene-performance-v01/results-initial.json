@@ -1,0 +1,407 @@
+{
+  "seed": "1844070019",
+  "planHash": "993256ff",
+  "generationMs": 6238,
+  "viewport": [
+    960,
+    540
+  ],
+  "pixelRatio": 1.5,
+  "route": {
+    "door": "bedroom",
+    "x": 0,
+    "z": -7.5,
+    "dx": 0,
+    "dz": 1,
+    "half": 3
+  },
+  "models": {
+    "requested": 122,
+    "loaded": 122,
+    "failed": [],
+    "pending": 0
+  },
+  "scope": "同源场景渲染；固定逐帧跨门轨迹；不含完整剧情/威胁/输入循环；帧间隔含后台争用；CPU提交不等于GPU时间",
+  "results": [
+    {
+      "mode": "baseline",
+      "frames": 180,
+      "frameMsP50": 16.7,
+      "frameMsP95": 34.3,
+      "frameMsMax": 966.7000000000044,
+      "over50ms": 6,
+      "updateMsP95": 1.7,
+      "renderSubmitMsP50": 12.4,
+      "renderSubmitMsP95": 35.8,
+      "callsP50": 279,
+      "trianglesP50": 152781,
+      "programRange": [
+        9,
+        19
+      ],
+      "textureCreates": 7,
+      "textureDeletes": 2,
+      "worstFrames": [
+        {
+          "frame": 91,
+          "delta": 17.299999999995634,
+          "update": 0.2999997138977051,
+          "render": 978.5999999046326,
+          "calls": 315,
+          "triangles": 193094,
+          "programs": 19,
+          "created": 2,
+          "deleted": 0
+        },
+        {
+          "frame": 27,
+          "delta": 16.69999999999709,
+          "update": 2.700000286102295,
+          "render": 398.59999990463257,
+          "calls": 263,
+          "triangles": 138177,
+          "programs": 14,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 113,
+          "delta": 16.69999999999709,
+          "update": 1.4000000953674316,
+          "render": 84.30000019073486,
+          "calls": 296,
+          "triangles": 172772,
+          "programs": 19,
+          "created": 0,
+          "deleted": 2
+        },
+        {
+          "frame": 114,
+          "delta": 83.30000000000291,
+          "update": 0.19999980926513672,
+          "render": 67.80000019073486,
+          "calls": 296,
+          "triangles": 172772,
+          "programs": 19,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 101,
+          "delta": 32.599999999998545,
+          "update": 0.5,
+          "render": 57.200000286102295,
+          "calls": 321,
+          "triangles": 193166,
+          "programs": 19,
+          "created": 0,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "mode": "frozen-light-selection",
+      "frames": 180,
+      "frameMsP50": 16.7,
+      "frameMsP95": 17.6,
+      "frameMsMax": 34.299999999995634,
+      "over50ms": 0,
+      "updateMsP95": 0.2,
+      "renderSubmitMsP50": 12.8,
+      "renderSubmitMsP95": 23,
+      "callsP50": 279,
+      "trianglesP50": 152781,
+      "programRange": [
+        19,
+        19
+      ],
+      "textureCreates": 0,
+      "textureDeletes": 0,
+      "worstFrames": [
+        {
+          "frame": 18,
+          "delta": 17.5,
+          "update": 0,
+          "render": 33.299999713897705,
+          "calls": 265,
+          "triangles": 138201,
+          "programs": 19,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 104,
+          "delta": 16.099999999998545,
+          "update": 0.09999990463256836,
+          "render": 28.40000009536743,
+          "calls": 285,
+          "triangles": 152853,
+          "programs": 19,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 81,
+          "delta": 16.299999999995634,
+          "update": 0,
+          "render": 27.09999990463257,
+          "calls": 278,
+          "triangles": 146711,
+          "programs": 19,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 66,
+          "delta": 15.900000000001455,
+          "update": 0.09999990463256836,
+          "render": 25.199999809265137,
+          "calls": 263,
+          "triangles": 138177,
+          "programs": 19,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 83,
+          "delta": 15.60000000000582,
+          "update": 0,
+          "render": 24.90000009536743,
+          "calls": 279,
+          "triangles": 152781,
+          "programs": 19,
+          "created": 0,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "mode": "no-shadows",
+      "frames": 180,
+      "frameMsP50": 16.7,
+      "frameMsP95": 32.4,
+      "frameMsMax": 5382.4000000000015,
+      "over50ms": 6,
+      "updateMsP95": 1.5,
+      "renderSubmitMsP50": 5.7,
+      "renderSubmitMsP95": 14.1,
+      "callsP50": 161,
+      "trianglesP50": 67931,
+      "programRange": [
+        19,
+        34
+      ],
+      "textureCreates": 0,
+      "textureDeletes": 2,
+      "worstFrames": [
+        {
+          "frame": 27,
+          "delta": 16.599999999998545,
+          "update": 1.3000001907348633,
+          "render": 5382.799999713898,
+          "calls": 147,
+          "triangles": 64703,
+          "programs": 24,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 79,
+          "delta": 17.69999999999709,
+          "update": 0.19999980926513672,
+          "render": 2696.800000190735,
+          "calls": 157,
+          "triangles": 67883,
+          "programs": 29,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 91,
+          "delta": 16.90000000000873,
+          "update": 0.09999990463256836,
+          "render": 2432.800000190735,
+          "calls": 161,
+          "triangles": 67931,
+          "programs": 34,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 21,
+          "delta": 17.60000000000582,
+          "update": 0.09999990463256836,
+          "render": 44.69999980926514,
+          "calls": 149,
+          "triangles": 64727,
+          "programs": 19,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 28,
+          "delta": 5382.4000000000015,
+          "update": 1.5,
+          "render": 22.300000190734863,
+          "calls": 147,
+          "triangles": 64703,
+          "programs": 24,
+          "created": 0,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "mode": "no-vhs",
+      "frames": 180,
+      "frameMsP50": 16.7,
+      "frameMsP95": 32.4,
+      "frameMsMax": 3850.699999999997,
+      "over50ms": 4,
+      "updateMsP95": 0.5,
+      "renderSubmitMsP50": 7.8,
+      "renderSubmitMsP95": 18.7,
+      "callsP50": 278,
+      "trianglesP50": 152780,
+      "programRange": [
+        41,
+        51
+      ],
+      "textureCreates": 4,
+      "textureDeletes": 2,
+      "worstFrames": [
+        {
+          "frame": 91,
+          "delta": 15.80000000000291,
+          "update": 0.10000038146972656,
+          "render": 3853.3999996185303,
+          "calls": 314,
+          "triangles": 193093,
+          "programs": 51,
+          "created": 2,
+          "deleted": 0
+        },
+        {
+          "frame": 27,
+          "delta": 15.69999999999709,
+          "update": 0.3000001907348633,
+          "render": 2156.699999809265,
+          "calls": 262,
+          "triangles": 138176,
+          "programs": 46,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 70,
+          "delta": 15.700000000011642,
+          "update": 0.19999980926513672,
+          "render": 39.59999990463257,
+          "calls": 264,
+          "triangles": 138200,
+          "programs": 46,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 76,
+          "delta": 33.30000000000291,
+          "update": 0.20000028610229492,
+          "render": 30.399999618530273,
+          "calls": 270,
+          "triangles": 146626,
+          "programs": 46,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 92,
+          "delta": 3850.699999999997,
+          "update": 0.8999996185302734,
+          "render": 25,
+          "calls": 314,
+          "triangles": 193093,
+          "programs": 51,
+          "created": 0,
+          "deleted": 0
+        }
+      ]
+    },
+    {
+      "mode": "baseline-repeat",
+      "frames": 180,
+      "frameMsP50": 16.7,
+      "frameMsP95": 17.6,
+      "frameMsMax": 17.69999999999709,
+      "over50ms": 0,
+      "updateMsP95": 0.5,
+      "renderSubmitMsP50": 10,
+      "renderSubmitMsP95": 13.8,
+      "callsP50": 279,
+      "trianglesP50": 152781,
+      "programRange": [
+        51,
+        51
+      ],
+      "textureCreates": 4,
+      "textureDeletes": 2,
+      "worstFrames": [
+        {
+          "frame": 130,
+          "delta": 17.69999999999709,
+          "update": 0.3000001907348633,
+          "render": 16.799999713897705,
+          "calls": 305,
+          "triangles": 176074,
+          "programs": 51,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 111,
+          "delta": 16.60000000000582,
+          "update": 0.20000028610229492,
+          "render": 15.799999713897705,
+          "calls": 330,
+          "triangles": 193334,
+          "programs": 51,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 131,
+          "delta": 16.59999999999127,
+          "update": 0.3000001907348633,
+          "render": 15.099999904632568,
+          "calls": 305,
+          "triangles": 176074,
+          "programs": 51,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 141,
+          "delta": 15.80000000000291,
+          "update": 0.20000028610229492,
+          "render": 14.099999904632568,
+          "calls": 305,
+          "triangles": 176074,
+          "programs": 51,
+          "created": 0,
+          "deleted": 0
+        },
+        {
+          "frame": 128,
+          "delta": 15.69999999999709,
+          "update": 0.3000001907348633,
+          "render": 14,
+          "calls": 305,
+          "triangles": 176074,
+          "programs": 51,
+          "created": 0,
+          "deleted": 0
+        }
+      ]
+    }
+  ]
+}

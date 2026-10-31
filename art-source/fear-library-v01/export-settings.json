@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ceiling-spider-a-v01",
+    "yaw": 90,
+    "axis": "horizontalMax",
+    "metres": 0.5
+  },
+  {
+    "id": "coiled-snake-a-v01",
+    "yaw": 90,
+    "axis": "horizontalMax",
+    "metres": 0.65
+  },
+  {
+    "id": "threshold-toad-a-v01",
+    "yaw": 90,
+    "axis": "z",
+    "metres": 0.38
+  },
+  {
+    "id": "folded-lintel-figure-a-v01",
+    "yaw": 90,
+    "axis": "y",
+    "metres": 1.35
+  }
+]

@@ -1,8 +1,8 @@
 {
   "seeds": 20,
   "rooms": 198,
-  "ordinary": 20,
-  "preserved": 178,
+  "ordinary": 38,
+  "preserved": 160,
   "minFurniture": 6,
   "maxFurniture": 10,
   "shortfalls": []

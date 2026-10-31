@@ -1,0 +1,67 @@
+{
+  "source": "art-source/horror-models-v01/output/horror-hand-reaching-a-v01/model.glb",
+  "destination": "public/art/horror-models/v01/horror-hand-reaching-a-v01.glb",
+  "sourceBytes": 613516,
+  "runtimeBytes": 613944,
+  "sourceSHA256": "2a4944c0d1cb817cd74697df5cca635de2771d6c3d260f36036f3fdf137f1841",
+  "runtimeSHA256": "da425fee04a7667f0d82876fe18664ac858e630453da921309271c69ab760797",
+  "triangles": 6033,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3095703125,
+      -0.1318359375,
+      -0.4990234375
+    ],
+    "max": [
+      0.3095703125,
+      0.1318359375,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.323091976516634,
+      -0.09031311154598826,
+      -0.65
+    ],
+    "max": [
+      0.08013698630136988,
+      0.08140900195694717,
+      0
+    ],
+    "size": [
+      0.4032289628180039,
+      0.17172211350293543,
+      0.65
+    ]
+  },
+  "scale": 0.6512720156555774,
+  "scaleXYZ": [
+    0.6512720156555774,
+    0.6512720156555774,
+    0.6512720156555774
+  ],
+  "footprint": null,
+  "yawDegrees": 180,
+  "materialMode": "matte",
+  "orientationStatus": "front-side-back-observed",
+  "mounting": {
+    "anchor": [
+      0,
+      0,
+      0
+    ],
+    "forward": "-Z",
+    "capCenterMethod": "bbox centre of rearmost 10 mm, z at rear extreme",
+    "hideCapInsideWallMetres": 0.02,
+    "requiresPlacementReview": true
+  },
+  "pivot": "rear-cap-centre",
+  "forward": "-Z",
+  "finiteVerticesChecked": 3914
+}

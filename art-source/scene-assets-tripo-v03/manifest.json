@@ -1,0 +1,610 @@
+{
+  "version": 3,
+  "model": "tripo-v3.1",
+  "profile": "horror-models-secondary",
+  "authorization": "User requested all existing greyboxes replaced and all missing props made, not limited to 42; latest urgency requests bulk generation.",
+  "parameters": {
+    "face_limit": 18000,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed"
+  },
+  "assets": [
+    {
+      "id": "scene-wardrobe-panelled-v03",
+      "name": "双门旧衣柜",
+      "theme": "bedroom",
+      "targetHeight": 2.1,
+      "prompt": "A tall antique walnut wardrobe, two panelled closed doors, brass keyholes, shallow carved cornice, worn feet, distinct wood grain. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-wardrobe-mirrored-v03",
+      "name": "镜门衣橱",
+      "theme": "bedroom",
+      "targetHeight": 2.1,
+      "prompt": "A narrow antique wardrobe with one tall tarnished mirror door and a side panel door, dark oak, worn brass pulls, dusty old mirror. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-sofa-leather-v03",
+      "name": "旧皮沙发",
+      "theme": "parlor",
+      "targetHeight": 0.95,
+      "prompt": "A vintage three seat tufted brown leather sofa, rolled arms, deep buttoned upholstery, cracked leather, sagging cushions, dark wooden feet. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-sofa-linen-v03",
+      "name": "褪色布沙发",
+      "theme": "parlor",
+      "targetHeight": 0.9,
+      "prompt": "A two seat sofa in faded grey olive woven fabric, loose cushions, broad low arms, worn wooden feet, visible seams and depressed seats. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-armchair-wingback-v03",
+      "name": "高背扶手椅",
+      "theme": "parlor",
+      "targetHeight": 1.15,
+      "prompt": "An antique wingback armchair with tall shaped back, faded burgundy floral upholstery, carved walnut legs, worn armrests, empty seat. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-armchair-wicker-v03",
+      "name": "旧藤椅",
+      "theme": "parlor",
+      "targetHeight": 0.95,
+      "prompt": "A wicker armchair with curved wooden frame, tightly woven rattan seat and back, loose faded linen cushion, frayed weave at edges. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-chair-spindle-v03",
+      "name": "木条背餐椅",
+      "theme": "parlor",
+      "targetHeight": 0.95,
+      "prompt": "An old wooden dining chair with six turned vertical back spindles, shaped seat and four legs with stretchers, worn dark varnish. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-chair-upholstered-v03",
+      "name": "软垫餐椅",
+      "theme": "parlor",
+      "targetHeight": 0.95,
+      "prompt": "An antique straight back dining chair with faded muted green upholstery on seat and back, walnut frame, brass nailhead trim, empty seat. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-rocking-chair-v03",
+      "name": "木摇椅",
+      "theme": "nursery",
+      "targetHeight": 1.1,
+      "prompt": "An antique wooden rocking chair, tall spindle back, broad seat, curved rocking runners, armrests, worn polished wood, empty. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-writing-bureau-v03",
+      "name": "翻板写字柜",
+      "theme": "archive",
+      "targetHeight": 1.15,
+      "prompt": "An antique drop front writing bureau with opened slanted writing panel, small pigeonholes above three drawers, walnut wood, old brass handles, no loose objects. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-round-table-v03",
+      "name": "圆形餐桌",
+      "theme": "parlor",
+      "targetHeight": 0.76,
+      "prompt": "A small round antique wooden dining table with thick circular top, turned central pedestal and four splayed feet, scratched polished walnut. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-sideboard-v03",
+      "name": "旧餐边柜",
+      "theme": "parlor",
+      "targetHeight": 1.05,
+      "prompt": "A low broad antique oak sideboard, two drawers above two closed cupboard doors, turned knobs, worn panel edges and feet. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-bench-wood-v03",
+      "name": "旧长木凳",
+      "theme": "shrine",
+      "targetHeight": 0.46,
+      "prompt": "A long narrow weathered wooden bench, solid plank seat and two sturdy trestle legs, rubbed edges and old wood grain, no backrest. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-hospital-bed-v03",
+      "name": "铁架诊疗床",
+      "theme": "clinic",
+      "targetHeight": 0.9,
+      "prompt": "A vintage narrow metal hospital bed with simple curved head and foot rails, faded cream mattress and pillow, chipped green paint, rusty joints, no patient. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-wheelchair-v03",
+      "name": "旧轮椅",
+      "theme": "clinic",
+      "targetHeight": 1.0,
+      "prompt": "A vintage folding manual wheelchair with two large spoked rear wheels and small front casters, cracked black leather seat and back, tarnished steel frame, empty. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-stool-metal-v03",
+      "name": "医用圆凳",
+      "theme": "clinic",
+      "targetHeight": 0.55,
+      "prompt": "A vintage medical swivel stool, round cracked dark green leather padded seat, adjustable central metal stem and four short wheeled legs. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-sink-wall-v03",
+      "name": "搪瓷壁挂洗手池",
+      "theme": "clinic",
+      "targetHeight": 0.65,
+      "prompt": "A wall mounted old porcelain sink with twin tarnished taps and exposed curved drain pipe, chipped enamel, lime stains, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-bathtub-v03",
+      "name": "旧浴缸",
+      "theme": "clinic",
+      "targetHeight": 0.65,
+      "prompt": "A freestanding old enamel bathtub on four claw feet, tarnished taps at one end, cream exterior, blue grey interior stains, empty and dry. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-toilet-v03",
+      "name": "旧瓷马桶",
+      "theme": "clinic",
+      "targetHeight": 0.8,
+      "prompt": "An old porcelain toilet with high rectangular ceramic cistern, closed wooden seat, worn enamel and mineral deposits, visible drain base, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-mop-bucket-v03",
+      "name": "拖把与铁桶",
+      "theme": "clinic",
+      "targetHeight": 1.35,
+      "prompt": "A battered galvanized bucket with an old wooden handled cotton mop leaning inside, dirty twisted cloth fibres, dull metal, stable grouped object. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-laundry-basket-v03",
+      "name": "旧洗衣篮",
+      "theme": "bedroom",
+      "targetHeight": 0.55,
+      "prompt": "A woven wicker laundry basket with a few folded and loosely draped faded linen garments, frayed fibres, rounded rim, believable cloth folds. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-umbrella-stand-v03",
+      "name": "伞桶与旧雨伞",
+      "theme": "parlor",
+      "targetHeight": 0.9,
+      "prompt": "A narrow ceramic umbrella stand with two folded black umbrellas and curved wooden handles, worn fabric and glazed ceramic, no open umbrella. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-wall-coat-pegs-v03",
+      "name": "挂钩与围巾组",
+      "theme": "bedroom",
+      "targetHeight": 0.8,
+      "prompt": "An antique horizontal wooden wall peg rail with three brass hooks, a faded wool scarf and a small cloth shoulder bag hanging separately, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-folded-linen-v03",
+      "name": "折叠床单组",
+      "theme": "bedroom",
+      "targetHeight": 0.18,
+      "prompt": "A short stack of three folded off-white linen sheets and one faded grey towel, thick layered cloth edges, stitches and wrinkles, subtle stains. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-pillow-pair-v03",
+      "name": "旧枕头组",
+      "theme": "bedroom",
+      "targetHeight": 0.24,
+      "prompt": "Two loosely overlapped old pillows with cream cotton pillowcases, soft gravity folds, visible seam piping and faint age stains, no bed. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-sewing-machine-v03",
+      "name": "老式缝纫机",
+      "theme": "bedroom",
+      "targetHeight": 0.35,
+      "prompt": "An antique black cast iron hand sewing machine on a small wooden base, large side wheel, needle arm, faded gold decorative pinstripes, spool of dark thread. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-typewriter-v03",
+      "name": "旧打字机",
+      "theme": "archive",
+      "targetHeight": 0.28,
+      "prompt": "An old black mechanical typewriter, round cream keys, exposed metal type bars, carriage roller and one blank yellowed paper sheet, worn enamel and dust. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-reel-projector-v03",
+      "name": "胶片放映机",
+      "theme": "archive",
+      "targetHeight": 0.6,
+      "prompt": "A vintage metal film projector with two circular reels, lens barrel, vents and switches, dull dark grey housing, worn edges, short stable feet. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-record-player-v03",
+      "name": "木箱唱机",
+      "theme": "parlor",
+      "targetHeight": 0.34,
+      "prompt": "An old portable record player in an open wooden case, black vinyl record, tonearm and dull brass hinges, faded cloth speaker front, worn edges. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-electric-fan-v03",
+      "name": "老电风扇",
+      "theme": "parlor",
+      "targetHeight": 0.5,
+      "prompt": "A vintage desktop fan with circular metal wire cage, three broad blades, rounded motor housing and weighted base, chipped muted green paint, no motion blur. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-wall-fan-v03",
+      "name": "旧排风扇",
+      "theme": "clinic",
+      "targetHeight": 0.5,
+      "prompt": "An old square wall exhaust fan with protective slats and four broad blades, chipped off-white painted metal frame, dust in corners, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-key-tray-v03",
+      "name": "钥匙与小托盘",
+      "theme": "parlor",
+      "targetHeight": 0.05,
+      "prompt": "A shallow worn brass tray with three separate old metal keys on a key ring, detailed key teeth, dark tarnish and scratches, no writing. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-medicine-bottles-v03",
+      "name": "旧药瓶组",
+      "theme": "clinic",
+      "targetHeight": 0.2,
+      "prompt": "Four old amber glass medicine bottles of varying heights with dark screw caps, faded blank paper labels, dusty glass, spaced slightly apart on one low tray. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-calendar-board-v03",
+      "name": "旧日历板",
+      "theme": "archive",
+      "targetHeight": 0.65,
+      "prompt": "An old wall calendar mounted on a narrow wooden board, curled yellowed paper sheets, faint grid and indistinct markings, small rusty top clip, no readable wording. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-desk-organizer-v03",
+      "name": "旧文具整理架",
+      "theme": "archive",
+      "targetHeight": 0.22,
+      "prompt": "A small dark wooden desk organizer with two open trays, yellowed index cards, three pencils in a cup and a metal paper clip, worn edges, separated objects. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-clothes-hanging-dress-v03",
+      "name": "悬挂旧长裙",
+      "theme": "bedroom",
+      "targetHeight": 1.3,
+      "prompt": "One empty hanging long muted grey blue cotton dress on a wooden hanger, long sleeves, waist seam, button collar, natural heavy drape, frayed hem, no mannequin. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-coat-raincoat-v03",
+      "name": "悬挂旧雨衣",
+      "theme": "bedroom",
+      "targetHeight": 1.25,
+      "prompt": "One empty old dark yellow rubberized raincoat hanging on a stout hook, hood collapsed, heavy wrinkled fabric, aged buttons and pockets, no body. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-pram-v03",
+      "name": "旧婴儿车",
+      "theme": "nursery",
+      "targetHeight": 1.0,
+      "prompt": "A vintage baby pram with curved wicker bassinet, folded dark cloth hood, four large spoked wheels and a curved pushing handle, aged cream blanket inside, no child. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-tricycle-v03",
+      "name": "旧三轮车",
+      "theme": "nursery",
+      "targetHeight": 0.55,
+      "prompt": "A small vintage child tricycle, large front wheel and two rear wheels, curved handlebar, worn saddle, chipped muted red paint, rubber tyres. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-teddy-bear-v03",
+      "name": "旧泰迪熊",
+      "theme": "nursery",
+      "targetHeight": 0.5,
+      "prompt": "A seated worn teddy bear with brown matted fabric fur, stitched seams, two dull glass eyes, loose cloth bow, old stuffing shape, no blood. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-toy-blocks-v03",
+      "name": "旧积木组",
+      "theme": "nursery",
+      "targetHeight": 0.2,
+      "prompt": "A small stable pile of twelve wooden toy blocks, cubes and arches, faded muted primary paint, chipped corners and wood grain, no letters. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-music-box-v03",
+      "name": "旧八音盒",
+      "theme": "nursery",
+      "targetHeight": 0.24,
+      "prompt": "A small open wooden music box with a delicate generic dancing figurine on a circular turntable, brass hinge and faded velvet lining, worn varnish. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-incense-burner-v03",
+      "name": "旧香炉",
+      "theme": "shrine",
+      "targetHeight": 0.28,
+      "prompt": "A small antique bronze incense burner with rounded body, three short feet and two small handles, dark patina, dry ash inside, three unlit incense sticks. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-ritual-bell-v03",
+      "name": "铜铃",
+      "theme": "shrine",
+      "targetHeight": 0.25,
+      "prompt": "A small old bronze hand bell with turned wooden handle, dark patina and worn bright edges, simple unmarked body. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-candelabrum-v03",
+      "name": "五臂烛台",
+      "theme": "shrine",
+      "targetHeight": 0.65,
+      "prompt": "An antique five arm brass candelabrum, curving arms, uneven short ivory wax candles with drips, tarnished metal, no flames. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-red-drapery-v03",
+      "name": "旧红绒布幔",
+      "theme": "shrine",
+      "targetHeight": 2.4,
+      "prompt": "One long hanging deep oxblood velvet drape on a short dark rod, heavy gathered folds, worn pile and dusty hem, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-cat-seated-v03",
+      "name": "坐姿猫",
+      "theme": "story",
+      "targetHeight": 0.5,
+      "prompt": "A realistic seated grey tabby cat, compact body, clearly defined paws, tail curved around feet, detailed short fur and natural glassy eyes, neutral still pose. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-cat-reclining-v03",
+      "name": "侧卧猫",
+      "theme": "story",
+      "targetHeight": 0.25,
+      "prompt": "A realistic grey tabby cat lying peacefully on its side, full body, folded legs and curved tail, closed eyes, detailed short fur, no injury or blood. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-flower-pot-live-v03",
+      "name": "盛花盆栽",
+      "theme": "story",
+      "targetHeight": 0.7,
+      "prompt": "A full potted flowering plant in a worn terracotta pot, several detailed muted pink flowers and green leaves, believable stems and soil, natural irregular silhouette. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-flower-pot-dead-v03",
+      "name": "枯黑盆栽",
+      "theme": "story",
+      "targetHeight": 0.65,
+      "prompt": "A dried dead flowering plant in an old terracotta pot, curled dark brown leaves, drooping blackened flower heads, brittle stems and dry soil, no gore. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-rag-doll-intact-v03",
+      "name": "完整布偶",
+      "theme": "story",
+      "targetHeight": 0.65,
+      "prompt": "An old cloth rag doll sitting with long fabric arms and legs, faded burgundy dress, stitched cotton face, small button eyes, yarn hair, visibly worn seams. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-rag-doll-torn-v03",
+      "name": "破损布偶",
+      "theme": "story",
+      "targetHeight": 0.65,
+      "prompt": "An old cloth rag doll sitting with long arms and legs, faded burgundy dress torn at the torso seam with pale cotton stuffing visible, stitched face and yarn hair, no blood. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-mannequin-head-v03",
+      "name": "陈旧人偶头",
+      "theme": "story",
+      "targetHeight": 0.38,
+      "prompt": "An original lifelike antique mannequin head and short neck, pale weathered painted plaster, subtle asymmetry, hollow dark eyes, cracked patina, no gore, no pedestal. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-seated-body-v03",
+      "name": "坐姿旧衣人偶躯干",
+      "theme": "story",
+      "targetHeight": 1.1,
+      "prompt": "A seated headless tailor mannequin body in an old dark grey wool jacket and trousers, hands resting on thighs, knees bent at right angles, shoes on floor, open neck collar for separate head, no chair, no gore. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-standing-body-v03",
+      "name": "站姿旧衣人偶躯干",
+      "theme": "story",
+      "targetHeight": 1.5,
+      "prompt": "A standing headless tailor mannequin body wearing an old dark grey wool coat, trousers and leather shoes, arms relaxed at sides, open neck collar for separate head, no base, no gore. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-statue-human-v03",
+      "name": "旧石膏人形雕像",
+      "theme": "story",
+      "targetHeight": 1.8,
+      "prompt": "An original life-sized eerie standing human statue in weathered pale plaster, long plain robe, hands at sides, subtle face with dark eyes, realistic sculpted folds, no pedestal. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-threat-doll-v03",
+      "name": "旧瓷偶威胁形体",
+      "theme": "story",
+      "targetHeight": 1.8,
+      "prompt": "An original eerie tall antique porcelain jointed doll standing upright, faded dusty rose dress, cracked painted face, dark glass eyes, lanky limbs and old leather shoes, no base, no gore. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-threat-clown-v03",
+      "name": "陈旧小丑人偶",
+      "theme": "story",
+      "targetHeight": 1.8,
+      "prompt": "An original unsettling old carnival clown mannequin standing upright, faded muted blue cloth suit, worn cream ruff, small dull red nose, weathered pale face, dark eyes, no weapons, no base. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-long-body-segment-v03",
+      "name": "修长身体连接段",
+      "theme": "story",
+      "targetHeight": 0.65,
+      "prompt": "A single elongated flexible torso segment wrapped in worn dark green wool coat fabric, rounded cylindrical form with visible seam folds and dark leather joint collars on both ends, non-graphic surreal mannequin component. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-shoe-single-v03",
+      "name": "门缝旧皮鞋",
+      "theme": "story",
+      "targetHeight": 0.15,
+      "prompt": "One worn dark brown leather lace-up shoe, creased toe, stitched welt, battered sole, empty, no leg. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-chair-seat-back-v03",
+      "name": "关节椅上半部",
+      "theme": "story",
+      "targetHeight": 0.85,
+      "prompt": "The upper assembly of an antique wooden chair: carved backrest, seat and four short leg stubs ending below the seat, dark worn wood, no full legs, isolated functional furniture component. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-chair-leg-joint-v03",
+      "name": "关节椅腿",
+      "theme": "story",
+      "targetHeight": 0.45,
+      "prompt": "One carved antique wooden chair leg with a rounded wooden ball joint at its top, dark worn wood grain, slender tapered foot, isolated furniture part. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-fuse-switchboard-v03",
+      "name": "旧电路控制箱",
+      "theme": "story",
+      "targetHeight": 0.8,
+      "prompt": "An old wall mounted electrical control box, chipped grey painted steel, three round indicator windows and a central slot for a lever, visible screws and worn labels without readable text, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-lever-handle-v03",
+      "name": "旧控制拉杆",
+      "theme": "story",
+      "targetHeight": 0.35,
+      "prompt": "A single old industrial lever with a worn black bakelite grip and a brass shaft seated in a small metal pivot bracket, isolated lever component. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-fuse-cartridge-v03",
+      "name": "旧保险丝",
+      "theme": "story",
+      "targetHeight": 0.12,
+      "prompt": "A single old cylindrical glass cartridge fuse with tarnished brass caps and a visible thin wire inside, dusty glass, no lettering. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "scene-frame-empty-v03",
+      "name": "旧空相框",
+      "theme": "story",
+      "targetHeight": 0.8,
+      "prompt": "An antique rectangular wooden picture frame with an empty opening, worn carved walnut moulding and dull brass corner details, no glass, no picture, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "status": "queued",
+      "runtimeIntegrated": false
+    }
+  ],
+  "estimatedCredits": 1980,
+  "purpose": "Expanded furniture variants, missing everyday objects, story and threat proxy replacements. Preserve event bindings."
+}

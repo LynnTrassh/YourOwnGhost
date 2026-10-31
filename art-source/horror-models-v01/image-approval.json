@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-31",
+  "approval": "两张都确认，继续生成",
+  "assets": [
+    {
+      "id": "horror-hand-reaching-a-v01",
+      "sha256": "f0a8b4806d60701832bcee1396cc23b88b82af774a4bff00a3ecf18bf11a5609"
+    },
+    {
+      "id": "horror-doll-porcelain-a-v01",
+      "sha256": "1ced5d9bdbbc92570cc99b20905c00e68b9783e771823b41c3a76202af487db3"
+    }
+  ]
+}

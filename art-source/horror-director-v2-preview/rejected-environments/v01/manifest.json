@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "generatedWith": "built-in image_gen",
+  "runtimeIntegrated": false,
+  "assets": [
+    {
+      "id": "hands-cold",
+      "name": "冷青 · 手墙空位",
+      "theme": "hands",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2776435,
+      "sha256": "4d99c88f55af3dc89f11e0ebed19f0f3f32787495559e3e85f1323d143c1f49d",
+      "source": "/Users/ftc_art/.codex/generated_images/01a19055-97c2-75e0-a42a-7344c7e6ebaf/exec-0f198c83-e5f4-421b-b247-e3b763fafff0.png"
+    },
+    {
+      "id": "archive-amber",
+      "name": "琥珀 · 纸堆人形",
+      "theme": "archive",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2277520,
+      "sha256": "ddb2da4450cfcd3fa50c44a87686a06450b1f0ffc44959e2921451bc6dab8ba9",
+      "source": "/Users/ftc_art/.codex/generated_images/01a19055-97c2-75e0-a42a-7344c7e6ebaf/exec-dac1ff5f-1267-4ffd-8640-94caed5e81ab.png"
+    },
+    {
+      "id": "crimson-veil",
+      "name": "酒红 · 覆布轮廓",
+      "theme": "crimson",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2162988,
+      "sha256": "e9cd25e6f92178981557f9b763922d0b979ea8eddecb675ca0fb327c2a62d421",
+      "source": "/Users/ftc_art/.codex/generated_images/01a19055-97c2-75e0-a42a-7344c7e6ebaf/exec-d3e8e05d-e3a3-4e46-a6e2-a667d29f320f.png"
+    },
+    {
+      "id": "portrait-violet",
+      "name": "紫黑 · 镜中脸",
+      "theme": "mirror",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2422890,
+      "sha256": "4a9720e3283d4609179b7cdd62b23e60a713345a5ba86c9e6466c3c79c32e947",
+      "source": "/Users/ftc_art/.codex/generated_images/01a19055-97c2-75e0-a42a-7344c7e6ebaf/exec-23f923ce-6bf0-4c91-b019-34af17fd1fc7.png"
+    }
+  ],
+  "status": "environment-concepts-rejected-as-encounter-flashes"
+}

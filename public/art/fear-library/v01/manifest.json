@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "ceiling-spider-a-v01",
+      "name": "天花板长足蛛",
+      "runtimeUrl": "/art/fear-library/v01/ceiling-spider-a-v01.glb",
+      "taskId": "44331dd5-c3ca-45bb-8cf7-29120d3987fe",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/fear-library-v01/output/ceiling-spider-a-v01/model.glb",
+        "destination": "public/art/fear-library/v01/ceiling-spider-a-v01.glb",
+        "sourceBytes": 1562448,
+        "runtimeBytes": 1562844,
+        "sourceSHA256": "8ecae65e0b15b216d4851891bb6780a8f6461e79331ae56d838fdb9127e49310",
+        "runtimeSHA256": "c1dea53310768de612685ad6397d555af9ab8db802a35c7b9fb624bb358150e6",
+        "triangles": 5094,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4033203125,
+            -0.1513671725988388,
+            -0.4990234375
+          ],
+          "max": [
+            0.4033203125,
+            0.1513671725988388,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.25,
+            0,
+            -0.20205479452054792
+          ],
+          "max": [
+            0.25,
+            0.15166339015774064,
+            0.20205479452054792
+          ],
+          "size": [
+            0.5,
+            0.15166339015774064,
+            0.40410958904109584
+          ]
+        },
+        "scale": 0.5009784735812133,
+        "scaleXYZ": [
+          0.5009784735812133,
+          0.5009784735812133,
+          0.5009784735812133
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "matte",
+        "orientationStatus": "visually-reviewed",
+        "pivot": "bottom-centre",
+        "forward": "-Z",
+        "target": {
+          "id": "ceiling-spider-a-v01",
+          "yaw": 90,
+          "axis": "horizontalMax",
+          "metres": 0.5
+        },
+        "finiteVerticesChecked": 8676,
+        "degenerateTriangles": 0,
+        "ceilingMount": {
+          "contactPlane": "local Y=0, feet down in source",
+          "placement": "Parent rotation Z=180deg makes dorsal side face downward, local -Z front unchanged. Put parent origin at ceiling plane. Verify all feet contacts visually; not an animated rig."
+        },
+        "visualNotes": "Top view shows eight separated legs and short palps. Static feet-down source; ceiling mounting requires parent Z rotation 180 degrees and contact review. No crawling rig."
+      },
+      "status": "exported-technical-review-complete-awaiting-game-integration",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "coiled-snake-a-v01",
+      "name": "柜底盘蛇",
+      "runtimeUrl": "/art/fear-library/v01/coiled-snake-a-v01.glb",
+      "taskId": "cffeaa82-b97a-4634-8478-2a31b145e057",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/fear-library-v01/output/coiled-snake-a-v01/model.glb",
+        "destination": "public/art/fear-library/v01/coiled-snake-a-v01.glb",
+        "sourceBytes": 1348416,
+        "runtimeBytes": 1348812,
+        "sourceSHA256": "81e9a840a9b8f273c69891a71be9e8b83c1ddc1079ed79b1899d8c4f693c528a",
+        "runtimeSHA256": "24473274770b47441b508cb18e65321f11ae3408fe9060411ce4447f19b970de",
+        "triangles": 5784,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4970703125,
+            -0.1123046725988388,
+            -0.4990234375
+          ],
+          "max": [
+            0.4970703125,
+            0.1123046949505806,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.325,
+            0,
+            -0.32372798434442274
+          ],
+          "max": [
+            0.325,
+            0.1462817955390348,
+            0.32372798434442274
+          ],
+          "size": [
+            0.65,
+            0.1462817955390348,
+            0.6474559686888455
+          ]
+        },
+        "scale": 0.6512720156555774,
+        "scaleXYZ": [
+          0.6512720156555774,
+          0.6512720156555774,
+          0.6512720156555774
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "matte",
+        "orientationStatus": "visually-reviewed",
+        "pivot": "bottom-centre",
+        "forward": "-Z",
+        "target": {
+          "id": "coiled-snake-a-v01",
+          "yaw": 90,
+          "axis": "horizontalMax",
+          "metres": 0.65
+        },
+        "finiteVerticesChecked": 5493,
+        "degenerateTriangles": 0,
+        "visualNotes": "One head and tapered tail, open coil gaps visible. Actual footprint 0.650 x 0.647 m exceeds planned 0.65 x 0.55 m. Head is turned relative to nominal -Z front. Full stretched body length not measured."
+      },
+      "status": "exported-technical-review-complete-awaiting-game-integration",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "threshold-toad-a-v01",
+      "name": "门槛灰褐蟾蜍",
+      "runtimeUrl": "/art/fear-library/v01/threshold-toad-a-v01.glb",
+      "taskId": "f0d8db1d-3f04-45c2-a961-6e98e1854b50",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/fear-library-v01/output/threshold-toad-a-v01/model.glb",
+        "destination": "public/art/fear-library/v01/threshold-toad-a-v01.glb",
+        "sourceBytes": 1305180,
+        "runtimeBytes": 1305504,
+        "sourceSHA256": "9044db4fcf51665572f1af63ade6ba4620e58272e7af87754a6b244054757ce1",
+        "runtimeSHA256": "cf71e41221101fa0d7998abbbb7171cfbe662b1536f846a9ede0daca20027ff0",
+        "triangles": 6066,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4638671875,
+            -0.2626953125,
+            -0.4990234375
+          ],
+          "max": [
+            0.4638671875,
+            0.2626953125,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.2044,
+            0,
+            -0.19
+          ],
+          "max": [
+            0.2044,
+            0.2152,
+            0.19
+          ],
+          "size": [
+            0.4088,
+            0.2152,
+            0.38
+          ]
+        },
+        "scale": 0.4096,
+        "scaleXYZ": [
+          0.4096,
+          0.4096,
+          0.4096
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "matte",
+        "orientationStatus": "visually-reviewed",
+        "pivot": "bottom-centre",
+        "forward": "-Z",
+        "target": {
+          "id": "threshold-toad-a-v01",
+          "yaw": 90,
+          "axis": "z",
+          "metres": 0.38
+        },
+        "finiteVerticesChecked": 4065,
+        "degenerateTriangles": 0,
+        "visualNotes": "Four limbs and toe silhouettes visible. Back bumps more pronounced than input; back leg surfaces simplified. Actual whole-model depth is 0.380 m including feet, not verified snout-rump length. Triangle count exceeds 6000 request by 66."
+      },
+      "status": "exported-technical-review-complete-awaiting-game-integration",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "folded-lintel-figure-a-v01",
+      "name": "梁下折身者",
+      "runtimeUrl": "/art/fear-library/v01/folded-lintel-figure-a-v01.glb",
+      "taskId": "f086a438-8eb5-4383-816c-3bd7c6a29e64",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/fear-library-v01/output/folded-lintel-figure-a-v01/model.glb",
+        "destination": "public/art/fear-library/v01/folded-lintel-figure-a-v01.glb",
+        "sourceBytes": 1257308,
+        "runtimeBytes": 1257684,
+        "sourceSHA256": "bb83eea0be37aba51aac2096516519dc0b48d89d08583ad1f5dc3cf48ce4b0e7",
+        "runtimeSHA256": "8940e6741f50a3cf78739055c5adea80080266f0c7a244f570fc1d1698436b7b",
+        "triangles": 5613,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3779296875,
+            -0.4990234375,
+            -0.4072265326976776
+          ],
+          "max": [
+            0.3779296875,
+            0.4990234673023224,
+            0.4072265326976776
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.5508316457839744,
+            0,
+            -0.5112035072400265
+          ],
+          "max": [
+            0.5508316457839744,
+            1.35,
+            0.5112035072400265
+          ],
+          "size": [
+            1.1016632915679487,
+            1.35,
+            1.022407014480053
+          ]
+        },
+        "scale": 1.3526418382785197,
+        "scaleXYZ": [
+          1.3526418382785197,
+          1.3526418382785197,
+          1.3526418382785197
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "matte",
+        "orientationStatus": "visually-reviewed",
+        "pivot": "bottom-centre",
+        "forward": "-Z",
+        "target": {
+          "id": "folded-lintel-figure-a-v01",
+          "yaw": 90,
+          "axis": "y",
+          "metres": 1.35
+        },
+        "finiteVerticesChecked": 7335,
+        "degenerateTriangles": 0,
+        "visualNotes": "Four limbs and separated knees visible. Linen folds/skin details simplified, back is generated completion. Static folded height includes raised hand; no unfolded skeleton or standing-height claim. Footprint too large for ordinary narrow wardrobe."
+      },
+      "status": "exported-technical-review-complete-awaiting-game-integration",
+      "runtimeIntegrated": false
+    }
+  ],
+  "textures": [
+    {
+      "id": "corner-cobweb-a-v01",
+      "runtimeUrl": "/art/fear-library/v01/corner-cobweb-a-v01.png",
+      "bytes": 474674,
+      "sha256": "e97ba699aaaae14f39260a6026b8f883cc7741299bd7781db57bfe764244b53c",
+      "colorSpace": "sRGB",
+      "alpha": "straight RGBA; holes transparent",
+      "placementSizeMetres": [
+        0.8,
+        1.2
+      ],
+      "status": "exported-awaiting-in-engine-material-review",
+      "runtimeIntegrated": false
+    }
+  ],
+  "creditsConsumed": 200,
+  "balanceAfter": 23900,
+  "frozenAfter": 0
+}

@@ -1,0 +1,94 @@
+{
+  "scope": "独立摄影机验证场景，不是游戏地图或真人验收",
+  "stage": "C",
+  "camera": [
+    0,
+    1.65,
+    8.1
+  ],
+  "fov": 65,
+  "exposure": 1.05,
+  "effect": {
+    "enabled": true,
+    "preset": "reference",
+    "stage": "noise",
+    "settings": {
+      "overallStrength": 0.55,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.25,
+      "chromaNoise": 0.1,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.12,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "viewport": [
+    1280,
+    720
+  ],
+  "dpr": 1.5,
+  "models": 3,
+  "performance": {
+    "gpuExtension": true,
+    "units": "ms",
+    "sampleCount": 40,
+    "A": {
+      "cpu": {
+        "samples": 40,
+        "median": 0.40000009536743164,
+        "p95": 1.1999998092651367
+      },
+      "gpu": {
+        "samples": 40,
+        "median": 3.396125,
+        "p95": 5.918624
+      }
+    },
+    "D": {
+      "cpu": {
+        "samples": 40,
+        "median": 0.6999998092651367,
+        "p95": 1
+      },
+      "gpu": {
+        "samples": 40,
+        "median": 3.690375,
+        "p95": 8.290334
+      }
+    }
+  },
+  "colorCheck": {
+    "sample": "16×16 off-screen-edge wall patch",
+    "meanByteDifference": 0.0078125,
+    "maxByteDifference": 1,
+    "pass": true
+  },
+  "time": 1.25
+}

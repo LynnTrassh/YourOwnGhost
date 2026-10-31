@@ -1,0 +1,58 @@
+[
+  {
+    "id": "horror-hand-reaching-a-v01",
+    "validGLBHeader": true,
+    "finitePositionsAndUVs": true,
+    "validTriangleIndices": true,
+    "triangles": 6033,
+    "degenerateTriangles": 0,
+    "bounds": {
+      "min": [
+        -0.323091976516634,
+        -0.09031311154598826,
+        -0.65
+      ],
+      "max": [
+        0.08013698630136988,
+        0.08140900195694717,
+        0
+      ]
+    },
+    "size": [
+      0.4032289628180039,
+      0.17172211350293543,
+      0.65
+    ],
+    "images": 1,
+    "skins": 0,
+    "animations": 0
+  },
+  {
+    "id": "horror-doll-porcelain-a-v01",
+    "validGLBHeader": true,
+    "finitePositionsAndUVs": true,
+    "validTriangleIndices": true,
+    "triangles": 5725,
+    "degenerateTriangles": 0,
+    "bounds": {
+      "min": [
+        -0.1084931506849315,
+        0,
+        -0.09064579256360078
+      ],
+      "max": [
+        0.1084931506849315,
+        0.48,
+        0.09064579256360078
+      ]
+    },
+    "size": [
+      0.216986301369863,
+      0.48,
+      0.18129158512720156
+    ],
+    "images": 1,
+    "skins": 0,
+    "animations": 0
+  }
+]

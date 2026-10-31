@@ -1,0 +1,327 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "ritual-06",
+  "models": 9,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "ritual-06-0",
+      "assetId": "furniture-sofa-two-seat",
+      "bounds": {
+        "min": [
+          -2.2,
+          -5.551115123125783e-17,
+          -0.7499999999999998
+        ],
+        "max": [
+          -1.5,
+          0.9399999999999995,
+          0.5499999999999998
+        ]
+      }
+    },
+    {
+      "id": "ritual-06-1",
+      "assetId": "furniture-coffee-table",
+      "bounds": {
+        "min": [
+          -0.9750000000000001,
+          0,
+          -0.7499999999999999
+        ],
+        "max": [
+          -0.3249999999999999,
+          0.47999999999999987,
+          0.5499999999999999
+        ]
+      }
+    },
+    {
+      "id": "ritual-06-2",
+      "assetId": "furniture-shrine-cabinet",
+      "bounds": {
+        "min": [
+          0.8000000000000002,
+          0,
+          -2.4050000000000002
+        ],
+        "max": [
+          2.1,
+          2.249999999999999,
+          -1.7550000000000001
+        ]
+      }
+    },
+    {
+      "id": "ritual-06-3",
+      "assetId": "furniture-kneeling-bench",
+      "bounds": {
+        "min": [
+          0.8500000000000001,
+          -2.7755575615628914e-17,
+          -0.925
+        ],
+        "max": [
+          2.05,
+          0.47999999999999987,
+          -0.2749999999999999
+        ]
+      }
+    },
+    {
+      "id": "ritual-06-4",
+      "assetId": "furniture-dresser",
+      "bounds": {
+        "min": [
+          -2.0999999999999996,
+          -5.551115123125783e-17,
+          -2.4050000000000002
+        ],
+        "max": [
+          -0.7999999999999998,
+          0.8799999999999999,
+          -1.7550000000000001
+        ]
+      }
+    },
+    {
+      "id": "ritual-06-5",
+      "assetId": "furniture-wardrobe",
+      "bounds": {
+        "min": [
+          0.9000000000000002,
+          0,
+          1.225
+        ],
+        "max": [
+          2.2,
+          2.249999999999999,
+          1.875
+        ]
+      }
+    },
+    {
+      "id": "ritual-06-6",
+      "assetId": "lighting-floor-lamp",
+      "bounds": {
+        "min": [
+          -2.31,
+          0,
+          1.49
+        ],
+        "max": [
+          -1.8900000000000001,
+          1.6499999999999992,
+          1.91
+        ]
+      }
+    },
+    {
+      "id": "ritual-06-7",
+      "assetId": "lighting-pendant-bare-bulb",
+      "bounds": {
+        "min": [
+          -0.94,
+          2.48,
+          -1.3399999999999999
+        ],
+        "max": [
+          -0.66,
+          2.8299999999999996,
+          -1.06
+        ]
+      }
+    },
+    {
+      "id": "ritual-06-8",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "ritual-06",
+    "theme": "ritual",
+    "name": "旧宅神龛",
+    "composition": "生活家具与祭器分开成两组，空走道划出边界。",
+    "reveal": "先看见一间普通起居室，再发现柜子对着独立矮凳。",
+    "intensity": 3,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "shrine",
+    "focus": [
+      1.45,
+      1.6,
+      -2
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-sofa-two-seat",
+        "x": -1.85,
+        "z": -0.1,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-06-0"
+      },
+      {
+        "assetId": "furniture-coffee-table",
+        "x": -0.65,
+        "z": -0.1,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-06-1"
+      },
+      {
+        "assetId": "furniture-shrine-cabinet",
+        "x": 1.45,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-06-2"
+      },
+      {
+        "assetId": "furniture-kneeling-bench",
+        "x": 1.45,
+        "z": -0.6,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-06-3"
+      },
+      {
+        "assetId": "furniture-dresser",
+        "x": -1.45,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-06-4"
+      },
+      {
+        "assetId": "furniture-wardrobe",
+        "x": 1.55,
+        "z": 1.55,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-06-5"
+      },
+      {
+        "assetId": "lighting-floor-lamp",
+        "x": -2.1,
+        "z": 1.7,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "ritual-06-6"
+      },
+      {
+        "assetId": "lighting-pendant-bare-bulb",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "ritual-06-7"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "ritual-06-8"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 161,
+    "triangles": 218338,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 37
+  }
+}

@@ -2,6 +2,7 @@ import { Box3, Group, Vector3 } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { INTERIOR_ASSETS } from './interior-catalog.js';
 import { bindCrtMonitor } from './crt-screen-playback.js';
+import { prepareInteriorMaterialResponse } from './interior-material-response.js';
 
 // A world owns one cached resource set; instances share meshes and textures.
 export function createInteriorModelLoader(resources) {
@@ -33,6 +34,7 @@ export function createInteriorModelLoader(resources) {
     while (!disposed && active < 3 && queue.length) {
       const { id, resolve, reject } = queue.shift(); active++;
       loader.loadAsync(INTERIOR_ASSETS[id].url).then(gltf => {
+        prepareInteriorMaterialResponse(gltf.scene, id, INTERIOR_ASSETS[id].url);
         collect(gltf.scene);
         if (disposed) { release(); reject(new Error('World disposed')); return; }
         resolve(gltf.scene);

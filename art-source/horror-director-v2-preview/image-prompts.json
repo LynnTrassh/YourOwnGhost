@@ -1,0 +1,22 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-31",
+  "briefs": [
+    {
+      "id": "hands-cold",
+      "prompt": "Use case: stylized-concept. Asset type: original horror game monster encounter flash insert, single landscape 16:9 image, no text. A dark old corridor seen head-on: dense pale HUMAN HANDS embedded in its wallpaper, grouped in three deliberate waves pointing inward toward one empty human-shaped black gap at center. Hands belong to the wall, no cut flesh or wounds. Several fingers close to lens frame the center but do not obscure the gap. Strong readable silhouette in a 70 millisecond glance. Desaturated cold cyan and bone white against near black, damp old plaster, tactile aged film photograph, restrained film grain, deep uneven shadows. Center 60 percent contains the key subject for cropping. Original supernatural environment, not a copy of any movie/game scene. No typography, no logo, no watermark, no collage, no border. No pure white blown highlights. Full opaque background."
+    },
+    {
+      "id": "archive-amber",
+      "prompt": "Use case: stylized-concept. Asset type: original horror game monster encounter flash insert, single landscape 16:9 image, no text. In a cramped old archive, towers of tied newspapers and worn books form one unnervingly tall seated HUMAN OUTLINE. A small empty chair lower in frame gives scale. Its head is an oval dark recess among papers with just a hint of two dim eye-like creases, not a detailed monster face. Coherent groupings of paper, books and binding twine, one clean wedge of floor leads to the silhouette. Burnt amber, dirty ochre and dusty olive green with black shadows; harsh narrow practical sidelight. Tactile unsettling old photograph, clear central figure silhouette instantly legible, sophisticated environmental horror not a fantasy monster illustration. Subject in center 60 percent. No unrelated scary props, no gore, no text, no logo, no watermark, no collage, no border, no blown white highlights. Opaque full image."
+    },
+    {
+      "id": "crimson-veil",
+      "prompt": "Use case: stylized-concept. Asset type: original horror game monster encounter flash insert, single landscape 16:9 image, no text. A faceless standing silhouette is suggested behind a single sheet of deep burgundy wet fabric in an abandoned ceremonial room. The cloth looks pulled upward against gravity from one dark source at the base; its folds all obey that upward direction. A pair of long shallow hand impressions press outward near the face, like someone almost touching the cloth, not exposed flesh. Central dark oval face impression is the visual focal point. Strong unified large silhouette, few background objects. Crimson and wine black with a faint cool gray rim, tactile fibers, inky shadows, analog photographic texture. Must read in 70 milliseconds; subject centered with crop-safe margins. Entirely original surreal horror. No visible wounds, no typography, no logo, no watermark, no collage, no border, no purewhite flash. Opaque background."
+    },
+    {
+      "id": "portrait-violet",
+      "prompt": "Use case: stylized-concept. Asset type: original horror game monster encounter flash insert, single landscape 16:9 image, no text. Extreme close view of an old tarnished rectangular mirror in a dark domestic room. In the mirror a single elongated face seems pressed into the silver backing: chalk pale skin-like tarnish, asymmetrical hollow eye shapes, mouth only an erased patch. Fine vertical cracks interrupt the face without shattering into pieces. Mirror lower edge fades into darkness. No recognizable person, no branded horror character. Face occupies central 50 percent, fully visible with head margins, reads instantly; sparse composition. Violet-black and faded lavender with subtle sickly green edge light, pallid bone highlights, physically textured corroded glass, photographic environmental horror, fine analog grain. No cartoon, no gore, no typography, no logo, no watermark, no collage, no border, no bright white field. Full opaque background."
+    }
+  ]
+}

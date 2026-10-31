@@ -1,0 +1,14 @@
+{
+  "base": "camera-v2-d-reference-base-1793427125650.json",
+  "event": "camera-v2-d-reference-signal-1793427159568.json",
+  "outsideMaxByteDifference": 0,
+  "insideMaxByteDifference": 153,
+  "changedPixels": 149271,
+  "eventRegion": [
+    0.4372131724071586,
+    0.4799879478854659,
+    0.12,
+    0.28
+  ],
+  "allChangesContained": true
+}

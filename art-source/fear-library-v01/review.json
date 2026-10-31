@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-31",
+  "images": [
+    {
+      "id": "ceiling-spider-a-v01",
+      "path": "art-source/fear-library-v01/concepts/ceiling-spider-a-v01.png",
+      "bytes": 1862316,
+      "sha256": "4f2392ee6c379dd3fb0706137b245ea63ae2f74931e4001dbace83a151078080",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "status": "approved-for-generation"
+    },
+    {
+      "id": "coiled-snake-a-v01",
+      "path": "art-source/fear-library-v01/concepts/coiled-snake-a-v01.png",
+      "bytes": 2411966,
+      "sha256": "80bf03cc1b5360f77f6335fbdd9c1960f43c0fac334b5db1fc1d4bd0c0e10ccd",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "status": "approved-for-generation"
+    },
+    {
+      "id": "threshold-toad-a-v01",
+      "path": "art-source/fear-library-v01/concepts/threshold-toad-a-v01.png",
+      "bytes": 2260962,
+      "sha256": "fee72c85b86c7c98612cea2c9cec5122878a7dbbd24474abace020c14bb22dbc",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "status": "approved-for-generation"
+    },
+    {
+      "id": "folded-lintel-figure-a-v01",
+      "path": "art-source/fear-library-v01/concepts/folded-lintel-figure-a-v01.png",
+      "bytes": 1906197,
+      "sha256": "870a28df51e94c98def3564e690d13b035a81490ac2935ef8e37905a72b165c1",
+      "size": [
+        1157,
+        1359
+      ],
+      "mode": "RGB",
+      "status": "approved-for-generation"
+    },
+    {
+      "id": "corner-cobweb-a-v01",
+      "path": "art-source/fear-library-v01/concepts/corner-cobweb-a-v01.png",
+      "bytes": 474674,
+      "sha256": "e97ba699aaaae14f39260a6026b8f883cc7741299bd7781db57bfe764244b53c",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "status": "approved-texture-awaiting-in-engine-material-review",
+      "alpha_zero_fraction": 0.8911693108369009,
+      "alpha_full_fraction": 4.8966115448109906e-05
+    }
+  ],
+  "new_tripo_submissions": 4,
+  "validation": {
+    "browser": "All five images loaded. Four model silhouettes inspected; web composited on checker background, sparse strands and transparent holes visible.",
+    "web": "RGBA, 89.1169% fully transparent; previous dense designs retained as rejected.",
+    "runtime": "No game integration or runtime materials modified.",
+    "build": "Static source gallery only; previous hand/doll batch build passed. No additional gameplay tests run.",
+    "approval": "User replied 继续 after four-model 200-credit proposal on 2026-10-31; approved images locked by SHA256.",
+    "browser_console_errors": []
+  },
+  "source_batch_bytes_before_final_records": 14481931,
+  "modelReview": {
+    "models": {
+      "ceiling-spider-a-v01": "Top view shows eight separated legs and short palps. Static feet-down source; ceiling mounting requires parent Z rotation 180 degrees and contact review. No crawling rig.",
+      "coiled-snake-a-v01": "One head and tapered tail, open coil gaps visible. Actual footprint 0.650 x 0.647 m exceeds planned 0.65 x 0.55 m. Head is turned relative to nominal -Z front. Full stretched body length not measured.",
+      "threshold-toad-a-v01": "Four limbs and toe silhouettes visible. Back bumps more pronounced than input; back leg surfaces simplified. Actual whole-model depth is 0.380 m including feet, not verified snout-rump length. Triangle count exceeds 6000 request by 66.",
+      "folded-lintel-figure-a-v01": "Four limbs and separated knees visible. Linen folds/skin details simplified, back is generated completion. Static folded height includes raised hand; no unfolded skeleton or standing-height claim. Footprint too large for ordinary narrow wardrobe."
+    },
+    "geometry": "All 4 valid indices and finite attributes; zero degenerate triangles.",
+    "sourceGLBBytes": 5473352,
+    "runtimeGLBBytes": 5474844,
+    "creditsConsumed": 200,
+    "balanceAfter": 23900,
+    "runtimeIntegrated": false,
+    "browserConsoleErrors": [],
+    "build": "npm run build passed; existing >500k chunk warning",
+    "scriptSyntax": "passed"
+  }
+}

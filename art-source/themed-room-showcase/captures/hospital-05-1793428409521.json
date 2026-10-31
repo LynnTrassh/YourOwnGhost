@@ -1,0 +1,327 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "hospital-05",
+  "models": 9,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    5
+  ],
+  "instances": [
+    {
+      "id": "hospital-05-0",
+      "assetId": "furniture-medicine-cabinet",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          0,
+          -0.19999999999999984
+        ],
+        "max": [
+          -1.755,
+          2.249999999999999,
+          1.0999999999999996
+        ]
+      }
+    },
+    {
+      "id": "hospital-05-1",
+      "assetId": "furniture-medicine-cabinet",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          0,
+          -1.7
+        ],
+        "max": [
+          -1.755,
+          2.249999999999999,
+          -0.40000000000000036
+        ]
+      }
+    },
+    {
+      "id": "hospital-05-2",
+      "assetId": "furniture-medicine-cabinet",
+      "bounds": {
+        "min": [
+          1.7550000000000003,
+          0,
+          -0.19999999999999962
+        ],
+        "max": [
+          2.405,
+          2.249999999999999,
+          1.0999999999999996
+        ]
+      }
+    },
+    {
+      "id": "hospital-05-3",
+      "assetId": "furniture-medicine-cabinet",
+      "bounds": {
+        "min": [
+          1.7550000000000003,
+          0,
+          -1.6999999999999997
+        ],
+        "max": [
+          2.405,
+          2.249999999999999,
+          -0.40000000000000024
+        ]
+      }
+    },
+    {
+      "id": "hospital-05-4",
+      "assetId": "furniture-instrument-trolley",
+      "bounds": {
+        "min": [
+          -0.6,
+          -5.551115123125783e-17,
+          -2.075
+        ],
+        "max": [
+          0.6,
+          0.8999999999999998,
+          -1.425
+        ]
+      }
+    },
+    {
+      "id": "hospital-05-5",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          -2.05,
+          0,
+          -2.4050000000000002
+        ],
+        "max": [
+          -0.95,
+          2.1,
+          -1.7550000000000003
+        ]
+      }
+    },
+    {
+      "id": "hospital-05-6",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          0.95,
+          0,
+          -2.4050000000000002
+        ],
+        "max": [
+          2.05,
+          2.1,
+          -1.7550000000000003
+        ]
+      }
+    },
+    {
+      "id": "hospital-05-7",
+      "assetId": "lighting-strip-double",
+      "bounds": {
+        "min": [
+          -0.49999999999999956,
+          2.48,
+          -1.825
+        ],
+        "max": [
+          0.49999999999999956,
+          2.6599999999999997,
+          -1.575
+        ]
+      }
+    },
+    {
+      "id": "hospital-05-8",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          2.36
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          2.48
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "hospital-05",
+    "theme": "hospital",
+    "name": "夜班药房",
+    "composition": "两侧药柜形成窄巷，终点是孤立的配药台。",
+    "reveal": "柜子连续遮挡，最后才露出亮着的空工作台。",
+    "intensity": 3,
+    "width": 5,
+    "depth": 5,
+    "height": 3,
+    "look": "clinic",
+    "focus": [
+      0,
+      0.9,
+      -1.75
+    ],
+    "key": [
+      0,
+      2.45,
+      -1.7
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-medicine-cabinet",
+        "x": -2.08,
+        "z": 0.45,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-05-0"
+      },
+      {
+        "assetId": "furniture-medicine-cabinet",
+        "x": -2.08,
+        "z": -1.05,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-05-1"
+      },
+      {
+        "assetId": "furniture-medicine-cabinet",
+        "x": 2.08,
+        "z": 0.45,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-05-2"
+      },
+      {
+        "assetId": "furniture-medicine-cabinet",
+        "x": 2.08,
+        "z": -1.05,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-05-3"
+      },
+      {
+        "assetId": "furniture-instrument-trolley",
+        "x": 0,
+        "z": -1.75,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-05-4"
+      },
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": -1.5,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-05-5"
+      },
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": 1.5,
+        "z": -2.08,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-05-6"
+      },
+      {
+        "assetId": "lighting-strip-double",
+        "x": 0,
+        "z": -1.7,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "hospital-05-7"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 2.42,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "hospital-05-8"
+      }
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    1.85
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 163,
+    "triangles": 246776,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 13
+  }
+}

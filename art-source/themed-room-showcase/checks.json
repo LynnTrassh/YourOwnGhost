@@ -1,0 +1,463 @@
+{
+  "scope": "48 authored art proposals, static AABB + 0.1 m navigation sampling, not formal gameplay validation",
+  "rooms": 48,
+  "themes": 6,
+  "approvedModels": 69,
+  "assets": [
+    "furniture-writing-desk",
+    "furniture-dining-chair",
+    "furniture-medical-file-cabinet",
+    "furniture-armchair-curved",
+    "fixture-radiator-cast-iron",
+    "lighting-strip-double",
+    "architecture-door-panelled",
+    "prop-rotary-phone-v01",
+    "scene-wheelchair-v03",
+    "bed-iron-rail-v01",
+    "furniture-examination-cot",
+    "furniture-nightstand",
+    "furniture-medicine-cabinet",
+    "furniture-instrument-trolley",
+    "fixture-curtain-oxblood-velvet",
+    "prop-iv-stand-v01",
+    "prop-medicine-tray-v01",
+    "scene-medicine-bottles-v03",
+    "furniture-bed-single",
+    "furniture-sofa-two-seat",
+    "furniture-coffee-table",
+    "furniture-wardrobe",
+    "lighting-floor-lamp",
+    "prop-wood-radio-v01",
+    "furniture-document-table",
+    "furniture-archive-shelf",
+    "prop-archive-stack-v01",
+    "prop-cardboard-box-v01",
+    "prop-archive-boxes-v01",
+    "furniture-display-cabinet",
+    "prop-clothes-rack-v01",
+    "furniture-toy-chest",
+    "prop-suitcase-v01",
+    "prop-shoes-pair-v01",
+    "furniture-multi-drawer-file-cabinet",
+    "furniture-toy-shelf",
+    "architecture-window-four-pane",
+    "lighting-chandelier-three-arm",
+    "theme-stage-deck-v06",
+    "theme-stage-stairs-v06",
+    "theme-award-podium-v05",
+    "theme-ceremony-lectern-v05",
+    "furniture-dresser",
+    "theme-trophy-cup-v05",
+    "furniture-child-table",
+    "scene-toy-blocks-v03",
+    "prop-toy-train-v01",
+    "vanity-oval-mirror-v01",
+    "prop-felt-hat-v01",
+    "scene-teddy-bear-v03",
+    "scene-round-table-v03",
+    "prop-tea-tray-v01",
+    "scene-desk-organizer-v03",
+    "furniture-bookcase",
+    "scene-typewriter-v03",
+    "prop-books-stack-v01",
+    "bed-low-divan-v01",
+    "bed-canopy-linen-v01",
+    "scene-folded-linen-v03",
+    "fixture-mirror-aged",
+    "scene-pillow-pair-v03",
+    "scene-laundry-basket-v03",
+    "furniture-offering-table",
+    "furniture-kneeling-bench",
+    "furniture-shrine-cabinet",
+    "lighting-pendant-bare-bulb",
+    "scene-incense-burner-v03",
+    "scene-ritual-bell-v03",
+    "scene-candelabrum-v03"
+  ],
+  "results": [
+    {
+      "id": "hospital-01",
+      "models": 9,
+      "reachableSamples": 1417,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hospital-02",
+      "models": 12,
+      "reachableSamples": 1246,
+      "nearestFocusMetres": 0.5,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hospital-03",
+      "models": 13,
+      "reachableSamples": 1968,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hospital-04",
+      "models": 9,
+      "reachableSamples": 1173,
+      "nearestFocusMetres": 0.652,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hospital-05",
+      "models": 10,
+      "reachableSamples": 1236,
+      "nearestFocusMetres": 0.65,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hospital-06",
+      "models": 9,
+      "reachableSamples": 1056,
+      "nearestFocusMetres": 0.9,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hospital-07",
+      "models": 13,
+      "reachableSamples": 3166,
+      "nearestFocusMetres": 0.3,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hospital-08",
+      "models": 10,
+      "reachableSamples": 1108,
+      "nearestFocusMetres": 0.5,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "park-01",
+      "models": 9,
+      "reachableSamples": 1132,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "park-02",
+      "models": 26,
+      "reachableSamples": 5869,
+      "nearestFocusMetres": 1.4,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "park-03",
+      "models": 10,
+      "reachableSamples": 1079,
+      "nearestFocusMetres": 0.65,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "park-04",
+      "models": 10,
+      "reachableSamples": 1212,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "park-05",
+      "models": 10,
+      "reachableSamples": 1299,
+      "nearestFocusMetres": 0.5,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "park-06",
+      "models": 13,
+      "reachableSamples": 2869,
+      "nearestFocusMetres": 0.65,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "park-07",
+      "models": 10,
+      "reachableSamples": 1184,
+      "nearestFocusMetres": 0.5,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "park-08",
+      "models": 11,
+      "reachableSamples": 1364,
+      "nearestFocusMetres": 0.2,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "office-01",
+      "models": 10,
+      "reachableSamples": 1306,
+      "nearestFocusMetres": 0.65,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "office-02",
+      "models": 14,
+      "reachableSamples": 2743,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "office-03",
+      "models": 10,
+      "reachableSamples": 1118,
+      "nearestFocusMetres": 0.608,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "office-04",
+      "models": 13,
+      "reachableSamples": 3118,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "office-05",
+      "models": 10,
+      "reachableSamples": 1203,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "office-06",
+      "models": 10,
+      "reachableSamples": 1141,
+      "nearestFocusMetres": 0,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "office-07",
+      "models": 10,
+      "reachableSamples": 1260,
+      "nearestFocusMetres": 0.781,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "office-08",
+      "models": 10,
+      "reachableSamples": 1145,
+      "nearestFocusMetres": 0.2,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "home-01",
+      "models": 10,
+      "reachableSamples": 1130,
+      "nearestFocusMetres": 0.403,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "home-02",
+      "models": 9,
+      "reachableSamples": 1244,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "home-03",
+      "models": 10,
+      "reachableSamples": 923,
+      "nearestFocusMetres": 0.5,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "home-04",
+      "models": 10,
+      "reachableSamples": 1293,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "home-05",
+      "models": 9,
+      "reachableSamples": 1154,
+      "nearestFocusMetres": 0.4,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "home-06",
+      "models": 10,
+      "reachableSamples": 1329,
+      "nearestFocusMetres": 0.802,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "home-07",
+      "models": 14,
+      "reachableSamples": 2962,
+      "nearestFocusMetres": 0.5,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "home-08",
+      "models": 9,
+      "reachableSamples": 1060,
+      "nearestFocusMetres": 1.101,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hotel-01",
+      "models": 10,
+      "reachableSamples": 1177,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hotel-02",
+      "models": 9,
+      "reachableSamples": 1097,
+      "nearestFocusMetres": 0.8,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hotel-03",
+      "models": 9,
+      "reachableSamples": 933,
+      "nearestFocusMetres": 0.1,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hotel-04",
+      "models": 12,
+      "reachableSamples": 2849,
+      "nearestFocusMetres": 1.1,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hotel-05",
+      "models": 11,
+      "reachableSamples": 1238,
+      "nearestFocusMetres": 0.5,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hotel-06",
+      "models": 11,
+      "reachableSamples": 956,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hotel-07",
+      "models": 10,
+      "reachableSamples": 1310,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "hotel-08",
+      "models": 10,
+      "reachableSamples": 856,
+      "nearestFocusMetres": 0.4,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "ritual-01",
+      "models": 8,
+      "reachableSamples": 1436,
+      "nearestFocusMetres": 0.65,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "ritual-02",
+      "models": 9,
+      "reachableSamples": 1169,
+      "nearestFocusMetres": 0,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "ritual-03",
+      "models": 12,
+      "reachableSamples": 2829,
+      "nearestFocusMetres": 0.65,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "ritual-04",
+      "models": 9,
+      "reachableSamples": 1193,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "ritual-05",
+      "models": 10,
+      "reachableSamples": 1378,
+      "nearestFocusMetres": 0.05,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "ritual-06",
+      "models": 10,
+      "reachableSamples": 1045,
+      "nearestFocusMetres": 0.502,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "ritual-07",
+      "models": 9,
+      "reachableSamples": 1272,
+      "nearestFocusMetres": 0.65,
+      "overlaps": 0,
+      "outOfBounds": 0
+    },
+    {
+      "id": "ritual-08",
+      "models": 12,
+      "reachableSamples": 2983,
+      "nearestFocusMetres": 0.6,
+      "overlaps": 0,
+      "outOfBounds": 0
+    }
+  ]
+}

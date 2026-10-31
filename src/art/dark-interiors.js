@@ -5,6 +5,7 @@ import { createInteriorSurfaces } from './interior-surfaces.js';
 import { createInteriorLighting } from './interior-lighting.js';
 import { createRoomDetailDressing, findTableSupport } from './room-detail-dressing.js';
 import { createRoomCompleteness } from './room-completeness.js';
+import { createRoomComposition } from './room-composition.js';
 import { createModelSurfaceRepair } from './model-surface-repair.js';
 
 export function createDarkInteriors({ plan, root, resources }) {
@@ -15,7 +16,7 @@ export function createDarkInteriors({ plan, root, resources }) {
   const details = createRoomDetailDressing({ plan, root, resources });
   const completeness = createRoomCompleteness({ plan, root, resources, surfaces });
   const furnished = [], pending = [];
-  let disposed = false;
+  let disposed = false, composition = null;
   resources.add({dispose(){disposed=true;}});
   function place(id, options) { const ready = models.attach(id,options); pending.push(ready); return ready; }
   function illuminate(group, {emitter, target, color, intensity, distance, angle, roomId, glow = true, fill = false}) {
@@ -123,5 +124,9 @@ export function createDarkInteriors({ plan, root, resources }) {
     completeness.dress();
     lighting.update(0,plan.spawn);
   }
-  return { ...surfaces, furnish, dress, update:lighting.update, stats:models.stats, ready:()=>Promise.all(pending), lights:lighting, models, detailStats:details.stats };
+  return { ...surfaces, furnish, dress, update:lighting.update, stats:models.stats, ready:async()=>{
+    const loaded=await Promise.all(pending);
+    if(!disposed&&!composition){composition=createRoomComposition({plan,root,resources,surfaces});root.userData.roomComposition=composition;}
+    return loaded;
+  }, lights:lighting, models, detailStats:details.stats };
 }

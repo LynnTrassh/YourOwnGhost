@@ -1,0 +1,377 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "hospital-07",
+  "models": 11,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    10
+  ],
+  "instances": [
+    {
+      "id": "hospital-07-0",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          0,
+          2.15
+        ],
+        "max": [
+          -1.7550000000000001,
+          2.1,
+          3.2500000000000004
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-1",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          0,
+          0.7499999999999999
+        ],
+        "max": [
+          -1.7550000000000001,
+          2.1,
+          1.85
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-2",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          0,
+          -0.6500000000000001
+        ],
+        "max": [
+          -1.7550000000000001,
+          2.1,
+          0.4500000000000002
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-3",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          1.7550000000000001,
+          0,
+          1.25
+        ],
+        "max": [
+          2.4050000000000002,
+          2.1,
+          2.35
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-4",
+      "assetId": "furniture-medical-file-cabinet",
+      "bounds": {
+        "min": [
+          1.7550000000000001,
+          0,
+          -0.15000000000000013
+        ],
+        "max": [
+          2.4050000000000002,
+          2.1,
+          0.9500000000000002
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-5",
+      "assetId": "furniture-document-table",
+      "bounds": {
+        "min": [
+          0.8000000000000002,
+          0,
+          -2.325
+        ],
+        "max": [
+          2.0999999999999996,
+          0.7999999999999996,
+          -1.675
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-6",
+      "assetId": "furniture-examination-cot",
+      "bounds": {
+        "min": [
+          -1.25,
+          0,
+          -4.25
+        ],
+        "max": [
+          0.04999999999999993,
+          0.8999999999999997,
+          -3.55
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-7",
+      "assetId": "furniture-archive-shelf",
+      "bounds": {
+        "min": [
+          0.9500000000000002,
+          0,
+          -4.875
+        ],
+        "max": [
+          2.25,
+          2.249999999999999,
+          -4.225
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-8",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          1.23,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.67,
+          0.9599999999999997,
+          -0.7199999999999999
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-9",
+      "assetId": "lighting-strip-double",
+      "bounds": {
+        "min": [
+          -1.2999999999999996,
+          2.48,
+          -1.325
+        ],
+        "max": [
+          -0.3000000000000005,
+          2.6599999999999997,
+          -1.075
+        ]
+      }
+    },
+    {
+      "id": "hospital-07-10",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          4.859999999999999
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          4.98
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "hospital-07",
+    "theme": "hospital",
+    "name": "病案封存库",
+    "composition": "双列病案柜与断开的工作岛；一条阅读路径。",
+    "reveal": "先看文件堆积，再发现尽头唯一反向的病床。",
+    "intensity": 3,
+    "width": 5,
+    "depth": 10,
+    "height": 3,
+    "look": "clinic",
+    "focus": [
+      -0.6,
+      0.9,
+      -3.9
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": -2.08,
+        "z": 2.7,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-07-0"
+      },
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": -2.08,
+        "z": 1.3,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-07-1"
+      },
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": -2.08,
+        "z": -0.1,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-07-2"
+      },
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": 2.08,
+        "z": 1.8,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-07-3"
+      },
+      {
+        "assetId": "furniture-medical-file-cabinet",
+        "x": 2.08,
+        "z": 0.4,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-07-4"
+      },
+      {
+        "assetId": "furniture-document-table",
+        "x": 1.45,
+        "z": -2,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-07-5"
+      },
+      {
+        "assetId": "furniture-examination-cot",
+        "x": -0.6,
+        "z": -3.9,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-07-6"
+      },
+      {
+        "assetId": "furniture-archive-shelf",
+        "x": 1.6,
+        "z": -4.55,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-07-7"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": 1.45,
+        "z": -0.95,
+        "yaw": 180,
+        "y": 0,
+        "group": "主体",
+        "id": "hospital-07-8"
+      },
+      {
+        "assetId": "lighting-strip-double",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "hospital-07-9"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 4.92,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "hospital-07-10"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    4.35
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 193,
+    "triangles": 292784,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 20
+  }
+}

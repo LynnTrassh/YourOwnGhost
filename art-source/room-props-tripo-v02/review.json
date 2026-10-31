@@ -1,0 +1,68 @@
+{
+  "reviewed": {
+    "prop-crt-tv-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-crt-computer-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-rotary-phone-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-wood-radio-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-wall-clock-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-hanging-coat-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-empty-hanger-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-felt-hat-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-clothes-rack-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-shoes-pair-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-suitcase-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-cardboard-box-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-archive-boxes-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-books-stack-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    },
+    "prop-washstand-v01": {
+      "result": "model-pass",
+      "notes": "已检查真实GLB正面/侧面/立体；待场景接触验收"
+    }
+  },
+  "rejected": {
+    "prop-pendulum-clock-v01": "生成结果没有钟面或钟摆，只有柜体；禁止接入，需重做",
+    "prop-medical-cart-v01": "实际GLB缺少竖向车架，两层托盘悬浮，禁止主游戏接入。"
+  }
+}

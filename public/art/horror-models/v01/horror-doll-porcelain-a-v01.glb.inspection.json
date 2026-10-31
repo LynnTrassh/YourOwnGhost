@@ -1,0 +1,70 @@
+{
+  "source": "art-source/horror-models-v01/output/horror-doll-porcelain-a-v01/model.glb",
+  "destination": "public/art/horror-models/v01/horror-doll-porcelain-a-v01.glb",
+  "sourceBytes": 1465796,
+  "runtimeBytes": 1466192,
+  "sourceSHA256": "c845d215ffaf987d4fae1579d327bec7e8d18aeb880c5680d527ff99f5409e99",
+  "runtimeSHA256": "922979c1a98ccd49176a5e191425a43f54605984f6d2533ce14d0c6f412d2121",
+  "triangles": 5725,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1884765625,
+      -0.4990234375,
+      -0.2255859375
+    ],
+    "max": [
+      0.1884765625,
+      0.4990234375,
+      0.2255859375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.1084931506849315,
+      0,
+      -0.09064579256360078
+    ],
+    "max": [
+      0.1084931506849315,
+      0.48,
+      0.09064579256360078
+    ],
+    "size": [
+      0.216986301369863,
+      0.48,
+      0.18129158512720156
+    ]
+  },
+  "scale": 0.48093933463796473,
+  "scaleXYZ": [
+    0.48093933463796473,
+    0.48093933463796473,
+    0.48093933463796473
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "front-side-back-observed",
+  "pivot": "bottom-centre",
+  "forward": "-Z",
+  "suspension": {
+    "method": "nearest surface vertex to shoulder estimates; static attachment suggestions, not bones",
+    "left": [
+      0.06340509522917685,
+      0.33534246575342463,
+      0.0023483365949119412
+    ],
+    "right": [
+      -0.0652837501719973,
+      0.3334637964774951,
+      0.0023483365949119334
+    ],
+    "requiresPlacementReview": true
+  },
+  "finiteVerticesChecked": 7826
+}

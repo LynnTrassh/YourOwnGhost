@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>暗室纵深 / 材质层次</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#111;color:#ddd;font:13px/1.6 system-ui}canvas{display:block;width:100vw;height:100vh;touch-action:none}aside{position:fixed;left:12px;top:54px;width:min(310px,calc(100vw - 24px));max-height:78vh;overflow:auto;padding:16px;background:#101515ed;border:1px solid #52605a;border-radius:8px}h1{font-size:18px;margin:0}p{color:#adbab2}label{display:block;margin:12px 0}select,input[type=range]{width:100%}button,select{background:#27332e;color:#eee;border:1px solid #687b70;padding:7px;border-radius:4px;font:inherit}button{cursor:pointer;margin:3px}#toggle{position:fixed;right:12px;top:10px}#badge{position:fixed;bottom:12px;left:12px;background:#101515d9;padding:6px 10px;pointer-events:none}pre{font-size:10px;white-space:pre-wrap}a{color:#b8d6c8}</style></head><body>
+<canvas id="view" tabindex="0" aria-label="实际房间灯光与材质对照，拖动转头"></canvas><button id="toggle">收起面板</button>
+<aside id="controls"><h1>暗室纵深 / 材质层次</h1><p>同一地图、模型、机位与后期。对比本轮灯光分配、局部补光和旧家具粗糙度。</p>
+<label>对照模式<select id="mode"><option value="off">A · 本轮修改前</option><option value="lighting">B · 仅灯光</option><option value="material">C · 仅材质</option><option value="combined" selected>D · 灯光＋材质</option></select></label>
+<label>房间<select id="room" disabled></select></label><button id="entry" disabled>房间入口</button><button id="furniture" disabled>家具近景</button>
+<label><input id="motion" type="checkbox"> 动态颗粒</label><label><input id="flash" type="checkbox" checked> 手电筒</label>
+<p>暗调、曝光、手电和后期强度固定。入口与家具近景可切换，动态颗粒默认冻结便于对比。</p><p id="status">正在加载实际地图…</p><details><summary>记录</summary><pre id="report"></pre></details>
+<a href="/art-source/horror-director-v2-preview/index.html">返回导演预览</a></aside><div id="badge">加载中</div><script type="module" src="./preview.js"></script></body></html>

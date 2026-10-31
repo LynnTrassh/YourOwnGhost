@@ -1,0 +1,159 @@
+{
+  "archive": "YOUR_OWN_GHOST_HORROR_ART_DIRECTION_v2_FULL (3).zip",
+  "archiveSHA256": "4b15110889157c006e789c39e15ce1fed1b39499f3dd7eefbc0a2e0fcd422361",
+  "note": "附件为研究依据；非本轮实施授权。依仓库记录约定省略非产品背景行，原附件不改。legacy 仅归档，未作为 v2 阅读清单或实施指令。",
+  "files": [
+    {
+      "path": "docs/horror-art-direction/CODEX_HORROR_ROOM_DIRECTOR_v2.md",
+      "bytes": 30454,
+      "sourceSHA256": "430982dd8049851f534a57294bc416890823fe1f775bea8f1dfa8b510fb80dd5",
+      "localSHA256": "649a50c62dfbeddca82d3b3d841a5ec84c85516a278bdda8259031cf658cf1a2",
+      "omittedNonProductContextLines": [
+        30
+      ]
+    },
+    {
+      "path": "docs/horror-art-direction/README.md",
+      "bytes": 3490,
+      "sourceSHA256": "9996de2b67aa038dad911bd106030c681633375248b2b5c904e058731ca4ae35",
+      "localSHA256": "9996de2b67aa038dad911bd106030c681633375248b2b5c904e058731ca4ae35",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/RESEARCH_LINKS_v2.md",
+      "bytes": 12446,
+      "sourceSHA256": "5f7c3d92fc800aa5a7f948a6efab4c6200fb85738b80445d4d40addded4be655",
+      "localSHA256": "5f7c3d92fc800aa5a7f948a6efab4c6200fb85738b80445d4d40addded4be655",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/ROOM_QA_v2.md",
+      "bytes": 8753,
+      "sourceSHA256": "cf641f1991c8f1536208a81bd9f295aac8c83adfa048f44093e20c37eb420b4f",
+      "localSHA256": "cf641f1991c8f1536208a81bd9f295aac8c83adfa048f44093e20c37eb420b4f",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/ROOM_RECIPES_v2.md",
+      "bytes": 16717,
+      "sourceSHA256": "9482a4563588f2f1f7e596aa06d73d0d12b6e950b6448ad1070655634813f429",
+      "localSHA256": "9482a4563588f2f1f7e596aa06d73d0d12b6e950b6448ad1070655634813f429",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/START_CODEX_v2.txt",
+      "bytes": 1089,
+      "sourceSHA256": "9af2c42d3c0d16832a65f133b297f346b9aa25cb8a71df2345aa6f5be7511b8b",
+      "localSHA256": "9af2c42d3c0d16832a65f133b297f346b9aa25cb8a71df2345aa6f5be7511b8b",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/data/room_recipe_candidates_v2.json",
+      "bytes": 43932,
+      "sourceSHA256": "14bced22caad1e6c780dde36d16d79a9c2086a9292b69247818460040e4ab2c4",
+      "localSHA256": "14bced22caad1e6c780dde36d16d79a9c2086a9292b69247818460040e4ab2c4",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/legacy/codex_horror_room_research_v1_1.md",
+      "bytes": 37709,
+      "sourceSHA256": "fbe31b7117c40a73fffef48e89a2d080225e77f3f28452749399950cf16be500",
+      "localSHA256": "a46901b02589e1f30db1a037174c6a75ff1854300181320fcfe21d8e602c70b2",
+      "omittedNonProductContextLines": [
+        12,
+        305
+      ]
+    },
+    {
+      "path": "docs/horror-art-direction/legacy/horror_room_visual_QA_v1_1.md",
+      "bytes": 11362,
+      "sourceSHA256": "fc72eea43f379f2400a78b403f58c9511677dd1ca80a497d4f78fd357182edbb",
+      "localSHA256": "fc72eea43f379f2400a78b403f58c9511677dd1ca80a497d4f78fd357182edbb",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/U01_high_balcony_gaze.png",
+      "bytes": 702202,
+      "sourceSHA256": "695bfcf5e3258b01a3cf698c1b1c2ffb5b68fe53475b845a98ec7ceee829ae8f",
+      "localSHA256": "695bfcf5e3258b01a3cf698c1b1c2ffb5b68fe53475b845a98ec7ceee829ae8f",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/U02_narrow_corridor_anatomy.png",
+      "bytes": 2909627,
+      "sourceSHA256": "83ea3c51044a051cc3f0409cf1ab5ede65a18d74db874fca321f2fbe41ae841e",
+      "localSHA256": "83ea3c51044a051cc3f0409cf1ab5ede65a18d74db874fca321f2fbe41ae841e",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/U03_hallway_lighting_variations.png",
+      "bytes": 650354,
+      "sourceSHA256": "f06f0ccec5e11fed2fa784f6bbff34de38c56af9c2f4bd870c88505de0e7f13d",
+      "localSHA256": "f06f0ccec5e11fed2fa784f6bbff34de38c56af9c2f4bd870c88505de0e7f13d",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/U04_partial_reveal_quadrants.png",
+      "bytes": 610739,
+      "sourceSHA256": "13dbe9677f0caf27f4eff59172a3384636fd074ba3f6c0477567f51d16152173",
+      "localSHA256": "13dbe9677f0caf27f4eff59172a3384636fd074ba3f6c0477567f51d16152173",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/U05_ceiling_shadow.png",
+      "bytes": 509341,
+      "sourceSHA256": "a25319285bae16d3564ca7e0d61dba5e98c575388ab74d4607a4012a1bc71f13",
+      "localSHA256": "a25319285bae16d3564ca7e0d61dba5e98c575388ab74d4607a4012a1bc71f13",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/U06_windowframe_occlusion.png",
+      "bytes": 866937,
+      "sourceSHA256": "292d8c312c9248505c4bf79c3959bf889a02c6164f369cd8e99be403482bf4cd",
+      "localSHA256": "292d8c312c9248505c4bf79c3959bf889a02c6164f369cd8e99be403482bf4cd",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/preview/U01_high_balcony_gaze.jpg",
+      "bytes": 59796,
+      "sourceSHA256": "ae9a0e5b5e5580a2b89cad6f92df77857f3822fe3af1f6171d8500525b2bccb8",
+      "localSHA256": "ae9a0e5b5e5580a2b89cad6f92df77857f3822fe3af1f6171d8500525b2bccb8",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/preview/U02_narrow_corridor_anatomy.jpg",
+      "bytes": 31347,
+      "sourceSHA256": "57906ac1b0789731bdf955f9fd741aa71ebdef42fb8f19317827aaa78673854f",
+      "localSHA256": "57906ac1b0789731bdf955f9fd741aa71ebdef42fb8f19317827aaa78673854f",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/preview/U03_hallway_lighting_variations.jpg",
+      "bytes": 39623,
+      "sourceSHA256": "169f32c1aede852e79f6cc66e61029677d3f83e7f3666939b9eb999d0d6974a4",
+      "localSHA256": "169f32c1aede852e79f6cc66e61029677d3f83e7f3666939b9eb999d0d6974a4",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/preview/U04_partial_reveal_quadrants.jpg",
+      "bytes": 31859,
+      "sourceSHA256": "0acd3ab938a02eb9cc40c80ab256fe1fc91f92ba839818950fa36fc9d414c9be",
+      "localSHA256": "0acd3ab938a02eb9cc40c80ab256fe1fc91f92ba839818950fa36fc9d414c9be",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/preview/U05_ceiling_shadow.jpg",
+      "bytes": 15232,
+      "sourceSHA256": "b135a8358187f2a7efbcfc8a2521792498c4f0af3b6e343fc47e09d9e0ad0285",
+      "localSHA256": "b135a8358187f2a7efbcfc8a2521792498c4f0af3b6e343fc47e09d9e0ad0285",
+      "omittedNonProductContextLines": []
+    },
+    {
+      "path": "docs/horror-art-direction/references/user-images/preview/U06_windowframe_occlusion.jpg",
+      "bytes": 24510,
+      "sourceSHA256": "aeb57d127e533573935b9961b50aa6227fb14d6c9e886062ae68fd87919b4c9d",
+      "localSHA256": "aeb57d127e533573935b9961b50aa6227fb14d6c9e886062ae68fd87919b4c9d",
+      "omittedNonProductContextLines": []
+    }
+  ]
+}

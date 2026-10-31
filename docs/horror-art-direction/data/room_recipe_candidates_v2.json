@@ -1,0 +1,1471 @@
+{
+  "notice": "This is a project-agnostic art-direction candidate catalog. Not the current game runtime schema or executable configuration.",
+  "schemaVersion": "2.0-design-only",
+  "createdAt": "2026-10-31",
+  "intensityScale": {
+    "0": "normal",
+    "1": "uncanny",
+    "2": "watched",
+    "3": "corrupted",
+    "4": "nightmare",
+    "5": "peak"
+  },
+  "userReferences": [
+    "U01",
+    "U02",
+    "U03",
+    "U04",
+    "U05",
+    "U06"
+  ],
+  "proceduralRules": {
+    "chooseBy": "real_room_role_then_required_anchors_then_narrative_mood_then_cooldown_then_seeded_weight",
+    "seedDerivation": "stableHash(worldSeed,stableRoomId,visualProfileVersion)",
+    "applyMode": "visual_overlay_not_map_topology",
+    "validationBeforeUse": [
+      "nav_clear",
+      "door_clear",
+      "interactions_visible",
+      "event_compatibility",
+      "seed_repeatability",
+      "render_performance",
+      "original_asset_rights"
+    ],
+    "failureFallback": "return_existing_visuals_unchanged"
+  },
+  "recipes": [
+    {
+      "id": "N01_HANDS_CORRIDOR",
+      "title": "手之走廊 / Hall of Hands",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "corridor",
+        "clinic"
+      ],
+      "roleEligibility": [
+        "major_scene",
+        "special_corridor"
+      ],
+      "coreRule": "anatomical_repetition",
+      "fearQuestion": "为什么这个空间正在遵循「anatomical_repetition」这一不正常的规律？",
+      "primaryGrammar": "anatomical_repetition",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "converging_hand_arch",
+        "propClusters": [
+          "hand_cluster",
+          "arm_imprint",
+          "wall_crack",
+          "shadow_decal"
+        ],
+        "densityProfile": "sparse_to_peak_to_exit",
+        "palette": "cold_wall_ash_skin_rust",
+        "lightRecipe": "dim_institutional_with_flashlight",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "lookback_reveals_secondary_wall_pattern",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "hand_cluster",
+          "arm_imprint"
+        ],
+        "lowCostFallback": "wall_hand_shadows_only",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "G05",
+        "G06",
+        "A02",
+        "U02"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N02_HOARDER_CHAMBER",
+      "title": "堆积之屋 / Hoarder Chamber",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "archive",
+        "parlor",
+        "bedroom"
+      ],
+      "roleEligibility": [
+        "major_scene",
+        "short_scene"
+      ],
+      "coreRule": "semantic_accumulation",
+      "fearQuestion": "为什么这个空间正在遵循「semantic_accumulation」这一不正常的规律？",
+      "primaryGrammar": "semantic_accumulation",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "one_high_pile_one_low_pile",
+        "propClusters": [
+          "furniture_large",
+          "boxes",
+          "books",
+          "cloth",
+          "memory_props"
+        ],
+        "densityProfile": "uneven_clumps_with_s_path",
+        "palette": "dust_umber_ashen_green",
+        "lightRecipe": "single_practical_slit_lamp",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "clean_empty_chair_behind_pile",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "furniture_large",
+          "boxes"
+        ],
+        "lowCostFallback": "reuse_boxes_books_and_two_furniture_models",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "G07",
+        "F05",
+        "F07",
+        "F08"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N03_CRIMSON_ROOM",
+      "title": "血色房间 / Red Takeover",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "shrine",
+        "parlor",
+        "corridor"
+      ],
+      "roleEligibility": [
+        "major_scene",
+        "short_scene"
+      ],
+      "coreRule": "red_color_invasion",
+      "fearQuestion": "为什么这个空间正在遵循「red_color_invasion」这一不正常的规律？",
+      "primaryGrammar": "red_color_invasion",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "red_threshold_and_ceremonial_empty_seat",
+        "propClusters": [
+          "red_fabric",
+          "rust_decals",
+          "simple_furniture",
+          "red_light_surface"
+        ],
+        "densityProfile": "color_radial_or_threshold_gradient",
+        "palette": "wine_red_rust_black_cool_edge",
+        "lightRecipe": "bounded_red_practical_with_cold_exit",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "red_spread_origin_or_one_uncontaminated_object",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "red_fabric",
+          "rust_decals"
+        ],
+        "lowCostFallback": "single_red_practical_plus_original_furniture",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F04",
+        "F03",
+        "U03"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N04_CHAIR_CHAPEL",
+      "title": "椅子礼拜堂",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "shrine",
+        "parlor"
+      ],
+      "roleEligibility": [
+        "major_scene"
+      ],
+      "coreRule": "ritual_repetition",
+      "fearQuestion": "为什么这个空间正在遵循「ritual_repetition」这一不正常的规律？",
+      "primaryGrammar": "ritual_repetition",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "three_chair_rings",
+        "propClusters": [
+          "chair",
+          "empty_wall_focus",
+          "rug"
+        ],
+        "densityProfile": "center_clear_ring_density",
+        "palette": "walnut_ash_dark_red",
+        "lightRecipe": "single_upper_bounce",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_chair_faces_exit",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "chair",
+          "empty_wall_focus"
+        ],
+        "lowCostFallback": "reused_chair_instances",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F03",
+        "F02"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N05_FABRIC_CEILING",
+      "title": "天花板布幔森林",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "nursery",
+        "bedroom"
+      ],
+      "roleEligibility": [
+        "major_scene",
+        "short_scene"
+      ],
+      "coreRule": "vertical_curtain_multiplication",
+      "fearQuestion": "为什么这个空间正在遵循「vertical_curtain_multiplication」这一不正常的规律？",
+      "primaryGrammar": "vertical_curtain_multiplication",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "curtain_forest",
+        "propClusters": [
+          "cloth_strip",
+          "hanging_toy",
+          "ceiling_fixture"
+        ],
+        "densityProfile": "light_to_dense_with_safe_gaps",
+        "palette": "pale_pink_brown_black",
+        "lightRecipe": "scattered_ceiling_ambient",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_inhuman_silhouette_behind_cloth",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "cloth_strip",
+          "hanging_toy"
+        ],
+        "lowCostFallback": "simple_static_fabric_planes",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F06",
+        "U05"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N06_PHOTO_OVERGROWTH",
+      "title": "照片覆盖的家",
+      "intensity": 3,
+      "baseRoomTypes": [
+        "bedroom",
+        "archive"
+      ],
+      "roleEligibility": [
+        "major_scene",
+        "short_scene"
+      ],
+      "coreRule": "repeating_ancestry",
+      "fearQuestion": "为什么这个空间正在遵循「repeating_ancestry」这一不正常的规律？",
+      "primaryGrammar": "repeating_ancestry",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "photograph_wall",
+        "propClusters": [
+          "original_generated_photo",
+          "frame",
+          "desk"
+        ],
+        "densityProfile": "far_wall_growth",
+        "palette": "sepia_cream_gray",
+        "lightRecipe": "warm_practical_falloff",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_frame_displays_players_entry_position",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "original_generated_photo",
+          "frame"
+        ],
+        "lowCostFallback": "empty_photo_frames_with_abstract_faces",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F05",
+        "G03"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N07_CLINIC_BED_HALL",
+      "title": "病床陈列间",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "clinic"
+      ],
+      "roleEligibility": [
+        "major_scene"
+      ],
+      "coreRule": "medical_repetition",
+      "fearQuestion": "为什么这个空间正在遵循「medical_repetition」这一不正常的规律？",
+      "primaryGrammar": "medical_repetition",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "many_examination_beds",
+        "propClusters": [
+          "medical_bed",
+          "privacy_screen",
+          "hospital_light"
+        ],
+        "densityProfile": "axial_progression",
+        "palette": "cold_mint_steel_ash",
+        "lightRecipe": "institutional_fluorescent",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_bed_faces_backward",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "medical_bed",
+          "privacy_screen"
+        ],
+        "lowCostFallback": "cheap_empty_bed_shapes",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "G05",
+        "G04"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N08_DOOR_FOREST",
+      "title": "门的森林",
+      "intensity": 3,
+      "baseRoomTypes": [
+        "corridor",
+        "parlor"
+      ],
+      "roleEligibility": [
+        "major_scene",
+        "connector"
+      ],
+      "coreRule": "useless_threshold_repetition",
+      "fearQuestion": "为什么这个空间正在遵循「useless_threshold_repetition」这一不正常的规律？",
+      "primaryGrammar": "useless_threshold_repetition",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "repeated_decorative_doors",
+        "propClusters": [
+          "door_frame_visual_only",
+          "wall_panel",
+          "old_lamp"
+        ],
+        "densityProfile": "rhythmic_repeat",
+        "palette": "tobacco_yellow_gray",
+        "lightRecipe": "light_pool_per_third_door",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_door_leads_to_blank_wall",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "door_frame_visual_only",
+          "wall_panel"
+        ],
+        "lowCostFallback": "door_frame_decals",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "G01",
+        "F09"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N09_CRIB_CONFERENCE",
+      "title": "摇篮会议厅",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "nursery"
+      ],
+      "roleEligibility": [
+        "major_scene"
+      ],
+      "coreRule": "wrong_function_repetition",
+      "fearQuestion": "为什么这个空间正在遵循「wrong_function_repetition」这一不正常的规律？",
+      "primaryGrammar": "wrong_function_repetition",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "crib_meeting_rows",
+        "propClusters": [
+          "crib",
+          "child_blanket",
+          "wall_doll"
+        ],
+        "densityProfile": "regular_rows_one_gap",
+        "palette": "faded_rose_pale_gray",
+        "lightRecipe": "single_clinical_overhead",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_crib_faces_wall",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "crib",
+          "child_blanket"
+        ],
+        "lowCostFallback": "simple_crate_as_crib_placeholder",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F06",
+        "G03"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N10_RITUAL_DINING",
+      "title": "反常整洁的餐桌",
+      "intensity": 2,
+      "baseRoomTypes": [
+        "parlor",
+        "shrine"
+      ],
+      "roleEligibility": [
+        "connector",
+        "short_scene"
+      ],
+      "coreRule": "excessive_domestic_order",
+      "fearQuestion": "为什么这个空间正在遵循「excessive_domestic_order」这一不正常的规律？",
+      "primaryGrammar": "excessive_domestic_order",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "perfect_table_axis",
+        "propClusters": [
+          "table",
+          "cup",
+          "plate",
+          "chair"
+        ],
+        "densityProfile": "sparse_symmetric_grid",
+        "palette": "amber_brown_black",
+        "lightRecipe": "single_warm_practical",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_cup_inverted",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "table",
+          "cup"
+        ],
+        "lowCostFallback": "table_cups_only",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F05",
+        "F02"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N11_CLOCKROOM",
+      "title": "过时钟表房",
+      "intensity": 3,
+      "baseRoomTypes": [
+        "archive",
+        "parlor"
+      ],
+      "roleEligibility": [
+        "major_scene",
+        "short_scene"
+      ],
+      "coreRule": "time_convergence",
+      "fearQuestion": "为什么这个空间正在遵循「time_convergence」这一不正常的规律？",
+      "primaryGrammar": "time_convergence",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "wall_of_clocks",
+        "propClusters": [
+          "clock",
+          "shelf",
+          "one_empty_frame"
+        ],
+        "densityProfile": "ordered_dense_on_one_wall",
+        "palette": "aged_brown_green",
+        "lightRecipe": "gentle_east_wall_pool",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_clock_has_no_hands",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "clock",
+          "shelf"
+        ],
+        "lowCostFallback": "clock_face_decals",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "G03",
+        "F03"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N12_ARCHIVE_FLOOD",
+      "title": "纸浪档案室",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "archive"
+      ],
+      "roleEligibility": [
+        "major_scene"
+      ],
+      "coreRule": "paper_overflow",
+      "fearQuestion": "为什么这个空间正在遵循「paper_overflow」这一不正常的规律？",
+      "primaryGrammar": "paper_overflow",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "paperfall_on_one_wall",
+        "propClusters": [
+          "paper_stack",
+          "archive_box",
+          "bookshelf",
+          "paper_surface"
+        ],
+        "densityProfile": "one_side_to_ceiling_spread",
+        "palette": "aged_cream_umber",
+        "lightRecipe": "single_dusty_light_strip",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "clean_empty_slot_in_paper_wall",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "paper_stack",
+          "archive_box"
+        ],
+        "lowCostFallback": "box_instances_and_flat_paper_planes",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "G03",
+        "F08"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N13_WET_BATHROOM",
+      "title": "无水源潮湿浴室",
+      "intensity": 3,
+      "baseRoomTypes": [
+        "clinic",
+        "bedroom"
+      ],
+      "roleEligibility": [
+        "short_scene",
+        "major_scene"
+      ],
+      "coreRule": "wrong_moisture_logic",
+      "fearQuestion": "为什么这个空间正在遵循「wrong_moisture_logic」这一不正常的规律？",
+      "primaryGrammar": "wrong_moisture_logic",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "upward_wet_streaks",
+        "propClusters": [
+          "wet_decals",
+          "sink",
+          "tile",
+          "mirror_frame"
+        ],
+        "densityProfile": "gravity_inversion_on_one_wall",
+        "palette": "dark_teal_wet_gray",
+        "lightRecipe": "dim_cold_practical",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_drop_trail_goes_upward",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "wet_decals",
+          "sink"
+        ],
+        "lowCostFallback": "wet_roughness_material_only",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "G08",
+        "G04"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N14_WARDROBE_HOTEL",
+      "title": "衣柜旅馆",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "bedroom",
+        "corridor"
+      ],
+      "roleEligibility": [
+        "major_scene"
+      ],
+      "coreRule": "closet_as_threshold",
+      "fearQuestion": "为什么这个空间正在遵循「closet_as_threshold」这一不正常的规律？",
+      "primaryGrammar": "closet_as_threshold",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "two_closet_aisles",
+        "propClusters": [
+          "wardrobe",
+          "hanging_clothes",
+          "empty_hanger"
+        ],
+        "densityProfile": "one_tight_one_open_column",
+        "palette": "brown_black_cream",
+        "lightRecipe": "weak_warm_bulb",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_wardrobe_contains_person_shaped_emptiness",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "wardrobe",
+          "hanging_clothes"
+        ],
+        "lowCostFallback": "static_closet_silhouettes",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F06",
+        "G01"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N15_EYE_PORTRAITS",
+      "title": "满墙凝视画像",
+      "intensity": 3,
+      "baseRoomTypes": [
+        "parlor",
+        "shrine"
+      ],
+      "roleEligibility": [
+        "major_scene",
+        "short_scene"
+      ],
+      "coreRule": "gaze_convergence",
+      "fearQuestion": "为什么这个空间正在遵循「gaze_convergence」这一不正常的规律？",
+      "primaryGrammar": "gaze_convergence",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "portrait_wall",
+        "propClusters": [
+          "original_portrait",
+          "frame",
+          "chair"
+        ],
+        "densityProfile": "frame_size_pyramid",
+        "palette": "maroon_gray_cream",
+        "lightRecipe": "picture_focused_bounce",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_frame_faces_away",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "original_portrait",
+          "frame"
+        ],
+        "lowCostFallback": "blank_frames_and_single_dot_eye",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "A02",
+        "F01"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N16_DRY_FLOWER_ROOM",
+      "title": "干枯花房",
+      "intensity": 3,
+      "baseRoomTypes": [
+        "parlor",
+        "bedroom"
+      ],
+      "roleEligibility": [
+        "short_scene",
+        "major_scene"
+      ],
+      "coreRule": "single_material_multiplication",
+      "fearQuestion": "为什么这个空间正在遵循「single_material_multiplication」这一不正常的规律？",
+      "primaryGrammar": "single_material_multiplication",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "dead_flower_wall",
+        "propClusters": [
+          "dried_flower",
+          "vase",
+          "plant_pot"
+        ],
+        "densityProfile": "one_wall_to_ceiling",
+        "palette": "dust_green_black_rose",
+        "lightRecipe": "window_falloff",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_live_flower_points_to_ceiling",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "dried_flower",
+          "vase"
+        ],
+        "lowCostFallback": "flat_leaf_planes_plus_pots",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F06",
+        "G09"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N17_WRONG_CARPET",
+      "title": "失衡地毯客厅",
+      "intensity": 2,
+      "baseRoomTypes": [
+        "parlor"
+      ],
+      "roleEligibility": [
+        "connector",
+        "short_scene"
+      ],
+      "coreRule": "floor_pattern_disorientation",
+      "fearQuestion": "为什么这个空间正在遵循「floor_pattern_disorientation」这一不正常的规律？",
+      "primaryGrammar": "floor_pattern_disorientation",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "original_floor_pattern_axis",
+        "propClusters": [
+          "original_geometric_rug",
+          "sofa",
+          "door_edge"
+        ],
+        "densityProfile": "pattern_scaling_only",
+        "palette": "cream_aged_red_brown",
+        "lightRecipe": "normal_warm_practical",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "wall_corner_breaks_parallel_expectation",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "original_geometric_rug",
+          "sofa"
+        ],
+        "lowCostFallback": "original_floor_decal",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F02"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N18_COVERED_FURNITURE",
+      "title": "白布家具人形房",
+      "intensity": 3,
+      "baseRoomTypes": [
+        "bedroom",
+        "parlor"
+      ],
+      "roleEligibility": [
+        "major_scene",
+        "short_scene"
+      ],
+      "coreRule": "concealed_object_shapes",
+      "fearQuestion": "为什么这个空间正在遵循「concealed_object_shapes」这一不正常的规律？",
+      "primaryGrammar": "concealed_object_shapes",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "covered_furniture_increasing",
+        "propClusters": [
+          "cloth_cover",
+          "chair",
+          "bed",
+          "cabinet"
+        ],
+        "densityProfile": "small_medium_large_silhouette",
+        "palette": "gray_white_black",
+        "lightRecipe": "low_warm_practical",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_covered_object_does_not_match_furniture",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "cloth_cover",
+          "chair"
+        ],
+        "lowCostFallback": "simple_draped_silhouette_mesh",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F06",
+        "A02"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N19_FLUORESCENT_SERVICE",
+      "title": "荧光灯后勤通道",
+      "intensity": 2,
+      "baseRoomTypes": [
+        "corridor",
+        "clinic"
+      ],
+      "roleEligibility": [
+        "connector",
+        "short_scene"
+      ],
+      "coreRule": "repetitive_institutional_light",
+      "fearQuestion": "为什么这个空间正在遵循「repetitive_institutional_light」这一不正常的规律？",
+      "primaryGrammar": "repetitive_institutional_light",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "long_rect_light_axis",
+        "propClusters": [
+          "fluorescent_fixture",
+          "tile_wall",
+          "door_plate"
+        ],
+        "densityProfile": "regular_spaced_missing_one",
+        "palette": "sickly_yellow_green",
+        "lightRecipe": "cool_fluorescent_repeating",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "one_shadow_cannot_be_mapped_to_lamp",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "fluorescent_fixture",
+          "tile_wall"
+        ],
+        "lowCostFallback": "rect_emissive_panels",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F09",
+        "G02"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N20_FOUND_FOOTAGE_CORNER",
+      "title": "伪摄像机捕获角落",
+      "intensity": 2,
+      "baseRoomTypes": [
+        "archive",
+        "corridor"
+      ],
+      "roleEligibility": [
+        "connector",
+        "short_scene"
+      ],
+      "coreRule": "incidental_background_presence",
+      "fearQuestion": "为什么这个空间正在遵循「incidental_background_presence」这一不正常的规律？",
+      "primaryGrammar": "incidental_background_presence",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "window_occluded_shape",
+        "propClusters": [
+          "window_grid",
+          "coat",
+          "deep_shadow"
+        ],
+        "densityProfile": "sparse_edge_weighted",
+        "palette": "gray_green_dark",
+        "lightRecipe": "subtle_flashlight",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "side_step_reveals_partial_figure",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "window_grid",
+          "coat"
+        ],
+        "lowCostFallback": "coats_making_a_human_silhouette",
+        "budgetClass": "low",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "A02",
+        "U06"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N21_FURNITURE_WELL",
+      "title": "家具天井",
+      "intensity": 4,
+      "baseRoomTypes": [
+        "parlor"
+      ],
+      "roleEligibility": [
+        "major_scene"
+      ],
+      "coreRule": "furniture_architecture",
+      "fearQuestion": "为什么这个空间正在遵循「furniture_architecture」这一不正常的规律？",
+      "primaryGrammar": "furniture_architecture",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "furniture_archway",
+        "propClusters": [
+          "sofa",
+          "cabinet",
+          "chair",
+          "shelf"
+        ],
+        "densityProfile": "high_side_walls_open_middle",
+        "palette": "walnut_dust_green",
+        "lightRecipe": "single_sidelight",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "archway_has_normal_wall_behind",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "sofa",
+          "cabinet"
+        ],
+        "lowCostFallback": "non_colliding_furniture_facades",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "F08",
+        "F05"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "N22_FLESH_THRESHOLD",
+      "title": "肉质门框过道",
+      "intensity": 5,
+      "baseRoomTypes": [
+        "corridor",
+        "clinic"
+      ],
+      "roleEligibility": [
+        "major_scene"
+      ],
+      "coreRule": "organic_architecture",
+      "fearQuestion": "为什么这个空间正在遵循「organic_architecture」这一不正常的规律？",
+      "primaryGrammar": "organic_architecture",
+      "supportingGrammars": [
+        "foreground_occlusion",
+        "controlled_negative_space"
+      ],
+      "visualPlan": {
+        "primaryMass": "repeating_ribbed_thresholds",
+        "propClusters": [
+          "original_organic_trim",
+          "door_frame",
+          "wet_material"
+        ],
+        "densityProfile": "growth_toward_far_end",
+        "palette": "ash_rust_offwhite",
+        "lightRecipe": "wet_falloff_red_accent",
+        "cameraBeats": {
+          "entry": "establish_original_room_use_and_path",
+          "forward": "show_the_governing_rule_more_strongly",
+          "reveal": "last_door_remains_normal_wood",
+          "lookback": "preserve_room_orientation_and_rule_continuity"
+        }
+      },
+      "technical": {
+        "protectedZones": [
+          "existing_entry",
+          "existing_exit",
+          "required_interaction",
+          "event_triggers",
+          "player_navigation"
+        ],
+        "nonBlockingDefault": true,
+        "requiredAssetTags": [
+          "original_organic_trim",
+          "door_frame"
+        ],
+        "lowCostFallback": "static_organic_trim_over_existing_door",
+        "budgetClass": "medium_instanced",
+        "mustNotModify": [
+          "room_graph",
+          "event_assignment",
+          "player_collision",
+          "camera_controls"
+        ]
+      },
+      "referenceIds": [
+        "G06",
+        "G04"
+      ],
+      "rights": "research_only_use_original_or_licensed_assets",
+      "status": "DESIGN_CANDIDATE_NOT_IMPLEMENTED"
+    }
+  ]
+}

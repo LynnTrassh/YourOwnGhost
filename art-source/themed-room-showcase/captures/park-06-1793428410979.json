@@ -1,0 +1,377 @@
+{
+  "scope": "六主题艺术布局预览；非正式地图接入或真人验收",
+  "id": "park-06",
+  "models": 11,
+  "failed": 0,
+  "ceiling": 3,
+  "dimensions": [
+    5,
+    3,
+    10
+  ],
+  "instances": [
+    {
+      "id": "park-06-0",
+      "assetId": "furniture-toy-shelf",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          1.1102230246251565e-16,
+          1.85
+        ],
+        "max": [
+          -1.755,
+          1.5999999999999996,
+          3.15
+        ]
+      }
+    },
+    {
+      "id": "park-06-1",
+      "assetId": "furniture-toy-chest",
+      "bounds": {
+        "min": [
+          1.7550000000000003,
+          0,
+          1.85
+        ],
+        "max": [
+          2.405,
+          0.6799999999999998,
+          3.15
+        ]
+      }
+    },
+    {
+      "id": "park-06-2",
+      "assetId": "furniture-display-cabinet",
+      "bounds": {
+        "min": [
+          1.7550000000000003,
+          0,
+          0.15000000000000024
+        ],
+        "max": [
+          2.405,
+          2.249999999999999,
+          1.4499999999999997
+        ]
+      }
+    },
+    {
+      "id": "park-06-3",
+      "assetId": "furniture-toy-shelf",
+      "bounds": {
+        "min": [
+          -2.4050000000000002,
+          1.1102230246251565e-16,
+          -0.2499999999999999
+        ],
+        "max": [
+          -1.755,
+          1.5999999999999996,
+          1.0499999999999998
+        ]
+      }
+    },
+    {
+      "id": "park-06-4",
+      "assetId": "furniture-wardrobe",
+      "bounds": {
+        "min": [
+          -2.2,
+          0,
+          -4.875
+        ],
+        "max": [
+          -0.9000000000000002,
+          2.249999999999999,
+          -4.225
+        ]
+      }
+    },
+    {
+      "id": "park-06-5",
+      "assetId": "furniture-display-cabinet",
+      "bounds": {
+        "min": [
+          0.9000000000000002,
+          0,
+          -4.875
+        ],
+        "max": [
+          2.2,
+          2.249999999999999,
+          -4.225
+        ]
+      }
+    },
+    {
+      "id": "park-06-6",
+      "assetId": "furniture-child-table",
+      "bounds": {
+        "min": [
+          -0.5999999999999999,
+          0,
+          -3.975
+        ],
+        "max": [
+          0.5999999999999999,
+          0.5999999999999998,
+          -3.3249999999999997
+        ]
+      }
+    },
+    {
+      "id": "park-06-7",
+      "assetId": "furniture-toy-chest",
+      "bounds": {
+        "min": [
+          1,
+          0,
+          -2.5250000000000004
+        ],
+        "max": [
+          2.3,
+          0.6799999999999998,
+          -1.8750000000000002
+        ]
+      }
+    },
+    {
+      "id": "park-06-8",
+      "assetId": "furniture-dining-chair",
+      "bounds": {
+        "min": [
+          -1.83,
+          0,
+          -1.77
+        ],
+        "max": [
+          -1.37,
+          0.9599999999999997,
+          -1.33
+        ]
+      }
+    },
+    {
+      "id": "park-06-9",
+      "assetId": "lighting-chandelier-three-arm",
+      "bounds": {
+        "min": [
+          -1.125,
+          2.48,
+          -1.525
+        ],
+        "max": [
+          -0.47500000000000003,
+          2.98,
+          -0.875
+        ]
+      }
+    },
+    {
+      "id": "park-06-10",
+      "assetId": "architecture-door-panelled",
+      "bounds": {
+        "min": [
+          -0.7749999999999956,
+          0,
+          4.859999999999999
+        ],
+        "max": [
+          0.7749999999999956,
+          2.399999999999986,
+          4.98
+        ]
+      }
+    }
+  ],
+  "recipe": {
+    "id": "park-06",
+    "theme": "park",
+    "name": "旧奖品仓",
+    "composition": "两侧高低储物错位，尽头儿童桌被大柜夹住。",
+    "reveal": "穿过大尺度储物后，低矮的儿童家具才进入视野。",
+    "intensity": 4,
+    "width": 5,
+    "depth": 10,
+    "height": 3,
+    "look": "nursery",
+    "focus": [
+      0,
+      0.65,
+      -3.65
+    ],
+    "placements": [
+      {
+        "assetId": "furniture-toy-shelf",
+        "x": -2.08,
+        "z": 2.5,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "park-06-0"
+      },
+      {
+        "assetId": "furniture-toy-chest",
+        "x": 2.08,
+        "z": 2.5,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "park-06-1"
+      },
+      {
+        "assetId": "furniture-display-cabinet",
+        "x": 2.08,
+        "z": 0.8,
+        "yaw": -90,
+        "y": 0,
+        "group": "主体",
+        "id": "park-06-2"
+      },
+      {
+        "assetId": "furniture-toy-shelf",
+        "x": -2.08,
+        "z": 0.4,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "park-06-3"
+      },
+      {
+        "assetId": "furniture-wardrobe",
+        "x": -1.55,
+        "z": -4.55,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "park-06-4"
+      },
+      {
+        "assetId": "furniture-display-cabinet",
+        "x": 1.55,
+        "z": -4.55,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "park-06-5"
+      },
+      {
+        "assetId": "furniture-child-table",
+        "x": 0,
+        "z": -3.65,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "park-06-6"
+      },
+      {
+        "assetId": "furniture-toy-chest",
+        "x": 1.65,
+        "z": -2.2,
+        "yaw": 0,
+        "y": 0,
+        "group": "主体",
+        "id": "park-06-7"
+      },
+      {
+        "assetId": "furniture-dining-chair",
+        "x": -1.6,
+        "z": -1.55,
+        "yaw": 90,
+        "y": 0,
+        "group": "主体",
+        "id": "park-06-8"
+      },
+      {
+        "assetId": "lighting-chandelier-three-arm",
+        "x": -0.8,
+        "z": -1.2,
+        "yaw": 0,
+        "y": 2.48,
+        "group": "照明",
+        "id": "park-06-9"
+      },
+      {
+        "assetId": "architecture-door-panelled",
+        "x": 0,
+        "z": 4.92,
+        "yaw": 180,
+        "y": 0,
+        "group": "入口",
+        "id": "park-06-10"
+      }
+    ],
+    "key": [
+      -0.8,
+      2.45,
+      -1.2
+    ]
+  },
+  "camera": [
+    0,
+    1.65,
+    4.35
+  ],
+  "flashlight": {
+    "angle": 0.4487989505128276,
+    "intensity": 24,
+    "penumbra": 0.22,
+    "enabled": true
+  },
+  "effect": {
+    "enabled": true,
+    "preset": "subtle",
+    "stage": "full",
+    "settings": {
+      "overallStrength": 0.28,
+      "saturationReduction": 0.22,
+      "greenShadowBias": 0.12,
+      "warmHighlightBias": 0.05,
+      "liftedBlack": 0.035,
+      "lumaNoise": 0.16,
+      "chromaNoise": 0.06,
+      "noiseTemporalSpeed": 0.35,
+      "chromaBleed": 0.12,
+      "horizontalJitter": 0.025,
+      "scanlineVisibility": 0.015,
+      "softness": 0.07,
+      "highlightBloom": 0.08,
+      "vignette": 0.1,
+      "glitchFrequency": 0
+    },
+    "grain": 1,
+    "signal": {
+      "active": false,
+      "id": null,
+      "elapsed": 0,
+      "duration": 1,
+      "strength": 0,
+      "region": [
+        0.5,
+        0.5,
+        0.2,
+        0.2
+      ],
+      "motion": true,
+      "disposed": false
+    },
+    "fullScreenPasses": 2,
+    "automaticGlitches": false,
+    "disposed": false
+  },
+  "renderer": {
+    "drawCalls": 187,
+    "triangles": 271495,
+    "viewport": [
+      1280,
+      720
+    ],
+    "pixelRatio": 1.5
+  },
+  "cache": {
+    "cachedModels": 29
+  }
+}
