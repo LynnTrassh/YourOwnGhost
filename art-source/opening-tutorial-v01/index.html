@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>离魂 · 开局教学预览</title>
+<style>
+  *{box-sizing:border-box} body{margin:0;background:#08110e;color:#e8e5d8;font:14px/1.6 system-ui,sans-serif} iframe{position:fixed;inset:0;width:100%;height:100%;border:0}
+  .tools{position:fixed;bottom:12px;left:12px;right:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:10px 14px;background:#0c1815ed;border:1px solid #cfbd9555;z-index:10}
+  button,select{font:inherit;color:inherit;background:#1a2d24;border:1px solid #cfbd9577;padding:8px 12px;min-height:44px}button{cursor:pointer}.label{color:#afbbaf;font-size:12px}output{font-size:12px}
+</style>
+<iframe src="/?playtest=1" title="真实游戏预览（教学暂未接入正式入口）" allow="fullscreen"></iframe>
+<div class="tools"><span class="label">教学独立预览</span><select aria-label="操作方式"><option value="keyboard">键盘鼠标 · WASD</option><option value="touch">触屏 · 双摇杆</option><option value="swipe">触屏 · 滑动环顾</option></select><button id="show">查看开局教学</button><output>背景为真实游戏入口；教学由预览页单独调用。</output></div>
+<script type="module">
+  import { createOpeningTutorial } from '/src/art/opening-tutorial.js';
+  const tutorial = createOpeningTutorial({ mode: 'keyboard' });
+  const picker = document.querySelector('select');
+  async function show() {
+    const result = await tutorial.show({ mode: picker.value === 'keyboard' ? 'keyboard' : 'touch', look: picker.value === 'swipe' ? 'swipe' : 'stick' });
+    document.querySelector('output').textContent = `教学已关闭：${result.reason}。可切换操作方式后重新查看。`;
+  }
+  document.querySelector('#show').addEventListener('click', show);
+  show();
+  window.addEventListener('pagehide', () => tutorial.dispose(), { once: true });
+</script>
+</html>
