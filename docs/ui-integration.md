@@ -1,10 +1,10 @@
 # UI 接入说明（2026-10-31）
 
-状态：独立 UI／输入实现，正式 main.js 接入由玩法任务负责。入口 [ui-preview.html](../ui-preview.html)；开发服务器地址 http://127.0.0.1:4190/ui-preview.html 。独立预览的房间用于测试输入，不是正式地图或生成结果。
+状态：新 UI 已接入正式 main.js；默认 `/` 使用新首页、设置与局内操作。`/?playtest=1` 是明确标记的真实地图测试入口，`?preview=...`／`?debug=1` 保留旧调试 UI。生产生成 provider 尚未连接。入口 [ui-preview.html](../ui-preview.html)；开发服务器地址 http://127.0.0.1:4190/ui-preview.html 。独立预览的房间用于测试输入，不是正式地图或生成结果。
 
 ## 所有权
 
-本任务只改 `src/ui/`、`src/input/`、`ui-preview.html`、`tests/ui/` 与独立文档。共享 `main.js`、`index.html`、`world.js` 和 PCG 由“整理并提交游戏设计文档”任务接入，已收到该任务确认，不在两边并行编辑。
+玩法任务已明确交回 `main.js`、`index.html`，本轮由 UI 任务完成入口接线；未修改 world.js 或 PCG。Git 提交与同步仍交协调任务统一处理。
 
 UI 遵循最新要求：喜欢／害怕为任意原文，不做主题白名单，不要求玩家从猫／花、人偶／小丑中选。每栏 1200 UTF-16 code units 是输入负载上限，不是语义类别限制。暂不加入图片上传。
 
@@ -29,7 +29,7 @@ const ui = createGameUI({
 });
 ```
 
-`mount` 默认 document.body；可传专用容器。`storage` 默认 localStorage，异常回退会话设置。`demo` 默认 false：只有独立 UI 预览启用 `previewPlay()`；正式产品不能借预览绕过生成入口。
+`mount` 默认 document.body；可传专用容器。`storage` 默认 localStorage，异常回退会话设置。`demo` 默认 false：独立 UI 预览及明确标记的 `?playtest=1` 启用 `previewPlay()`；默认正式入口不绕过生成。
 
 CSS 由 shell.js 导入，作用域 `.yog-ui`。请移除旧菜单／HUD的显示与事件绑定，不把新旧 UI 同时放到游戏上。暂不依赖旧 index.html 中的任何 ID。原全局 style.css 存在 header、button 等规则，正式接入时建议将旧样式作用域缩到开发工具，或替换为仅 canvas/body 基础样式，避免影响新控件。
 
@@ -143,4 +143,12 @@ start pending 期间 UI 取消契约：dispose／leave 使 entrySequence 失效�
 - `/ui-preview.html?confirmationDemo=ambiguous`：明确标记的歧义夹具，接受按钮禁用。
 - `src/ui/confirmation-preview.js` 只被独立 preview.js 引用，正式 shell 不引入测试 provider。
 
-本轮专项命令 `node --test tests/ui/*.test.js` 共 20/20 通过；浏览器确认正常接受、返回原文、歧义不可接受。未跑全量测试，未改共享构建。生产 provider／服务账本／真实生成与正式玩法接入仍由对应任务负责。
+本轮专项命令 `node --test tests/ui/*.test.js` 共 20/20 通过；浏览器确认正常接受、返回原文、歧义不可接受。未跑全量测试，未改共享构建。生产 provider／服务账本／真实生成仍由对应任务负责；正式 UI 玩法接入已完成。
+
+## 正式入口接线结果
+
+新输入每帧驱动真实玩家，起身／门交互／手电复用原玩法检查。暂停、死亡和转场清空输入；设置实际应用 DPR、VHS 和镜头微动。旧全局输入仅在旧调试模式绑定，避免双触发。异步重开使用 revision 丢弃离开后的迟到场景。UI 提供 `clearInput()` 与 `reportError(message)` 给运行时使用。
+
+正常自由输入会明确显示服务未连接。未来接 provider 时，还须将 main.js 的测试专用 `adapter.start` 改为提交真实 session 世界；当前不会把玩家原文映射为通用预设。
+
+本轮正式接入验收：全量 `npm test` 172/172 通过，`npm run build` 通过（保留大包体积警告），`git diff --check` 通过。未做手机真机与完整自然路径通关。

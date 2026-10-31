@@ -63,5 +63,10 @@ export function drawMap(canvas, plan, player) {
   }
   ctx.font = '11px sans-serif'; ctx.textAlign = 'center'; ctx.fillStyle = '#f2f1df';
   for (const r of plan.rooms) ctx.fillText(r.id === plan.story?.cat?.roomId ? '猫群回访' : r.id === plan.reserved.cat?.roomId ? '回访候选' : r.name, (r.center[0] - minX) * scale, (r.center[1] - minZ) * scale + 4);
+  ctx.fillStyle='#ffd58e';ctx.font='bold 12px sans-serif';
+  const mark=(point,text)=>ctx.fillText(text,(point.x/CELL_SIZE-minX)*scale,(point.z/CELL_SIZE-minZ)*scale-14);
+  if(plan.activeEncounters?.puzzle){mark(plan.activeEncounters.puzzle.control,'摇杆');mark(plan.activeEncounters.puzzle.clue,'配对灯 / 栅门');}
+  if(plan.activeEncounters?.scare)mark(plan.activeEncounters.scare.trigger,'连续走廊');
+  ctx.fillStyle='#a2ffd3';mark(plan.exit,'出口 · E');
   ctx.beginPath(); ctx.arc((player.x / CELL_SIZE - minX) * scale, (player.z / CELL_SIZE - minZ) * scale, 5, 0, Math.PI * 2); ctx.fillStyle = '#fff'; ctx.fill();
 }

@@ -15,11 +15,11 @@ test('B19 tilts walls and furniture within a safe visual envelope while camera a
     const room=plan.rooms.find(item=>item.id===instance.roomId);
     assert.ok(room.interior.obstacleIds.length>0);
     const outside=plan.rooms.filter(item=>item.id!==room.id).map(item=>item.id);
-    const route=pathThroughTiles(plan,instance.entryObservation,instance.observation,outside);
-    assert.ok(route);
     const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(),world=createWorld(scene,plan),
       state=createStoryState(),group=scene.getObjectByName(`story-${instance.instanceId}-visual-group`),
       boxes=JSON.stringify(world.getColliders());
+    const route=pathThroughTiles(world.getTopology(),instance.entryObservation,instance.observation,outside);
+    assert.ok(route);
     assert.ok(group);assert.ok(group.children.length>2);
     assert.equal(group.children[0].visible,false);
     assert.ok(1.6-2*3*Math.tan(instance.tiltRadians)>.95);

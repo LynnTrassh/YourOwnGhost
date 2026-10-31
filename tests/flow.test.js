@@ -28,7 +28,7 @@ test('collision routes lead through one false awakening to a terminal second exi
   for(const p of plans) {
     const world=createWorld(scene,p);
     s.player.standing=true;s.doors.bedroom.open=true;world.update(2,s);
-    const route=pathThroughTiles(p,s.player,p.exit);
+    const route=pathThroughTiles(world.getTopology(),s.player,p.exit);
     assert.ok(route);
     for(const target of route) movePlayer(s.player,target.x-s.player.x,target.z-s.player.z,world.getColliders());
     assert.ok(Math.hypot(s.player.x-p.exit.x,s.player.z-p.exit.z)<.001);

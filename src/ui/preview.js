@@ -5,7 +5,7 @@ import { createVhsEffect } from '../art/vhs-effect.js';
 
 const canvas=document.querySelector('#ui-scene');
 const confirmationDemo=new URLSearchParams(location.search).get('confirmationDemo');
-if(confirmationDemo)document.querySelector('.preview-dock span').textContent='解释确认测试 · 固定假解释，非 AI 理解';
+if(confirmationDemo)document.querySelector('.preview-dock span').textContent='测试解释 · 非 AI';
 let renderer;
 try{renderer=new THREE.WebGLRenderer({canvas,antialias:true});}
 catch{document.querySelector('.preview-dock span').textContent='当前设备无法显示 3D 背景，仍可预览 UI。';}
@@ -55,14 +55,14 @@ const ui=createGameUI({surface:canvas,demo:true,adapter:{
   action(name){if(!active)return;if(name==='flashlight')flashlight=!flashlight;if(name==='interact'){if(!standing)standing=true;else if(camera.position.distanceTo(new THREE.Vector3(1.7,1.65,-4.5))<2.5)doorOpen=!doorOpen;}},
   settings(next){settings=next;if(renderer){renderer.setPixelRatio({low:1,medium:1.5,high:Math.min(devicePixelRatio,2)}[next.quality]);renderer.setSize(innerWidth,innerHeight);effect.setIntensity(next.vhs);effect.resize(innerWidth,innerHeight);}}
 }});
-document.querySelector('#preview-play').addEventListener('click',()=>ui.previewPlay());
+document.querySelector('#preview-play').addEventListener('click',()=>{document.querySelector('.preview-dock').open=false;ui.previewPlay();});
 document.querySelector('#preview-home').addEventListener('click',()=>location.reload());
 window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer?.setSize(innerWidth,innerHeight);effect?.resize(innerWidth,innerHeight);});
 let previous=performance.now();
 function frame(now){const dt=Math.min((now-previous)/1000,.05);previous=now;
  if(active){elapsed+=dt;const input=ui.sample(dt);yaw+=input.yaw;pitch=THREE.MathUtils.clamp(pitch+input.pitch,-1.35,1.35);if(standing){camera.position.x+=(-Math.sin(yaw)*input.forward+Math.cos(yaw)*input.right)*2.4*dt;camera.position.z+=(-Math.cos(yaw)*input.forward-Math.sin(yaw)*input.right)*2.4*dt;camera.position.x=THREE.MathUtils.clamp(camera.position.x,-3.6,3.6);camera.position.z=THREE.MathUtils.clamp(camera.position.z,-4.3,4.4);}camera.position.y=standing?1.65:1.08;if(settings.motion)camera.position.y+=Math.sin(elapsed*1.3)*.006;camera.rotation.set(pitch,yaw,0);}
  const near=camera.position.distanceTo(new THREE.Vector3(1.7,1.65,-4.5))<2.5;
- ui.update({interaction:!standing?'起身':near?(doorOpen?'关门':'开门'):'',subtitle:active&&elapsed<7?'这里是操作预览。试着环顾，然后起身。':'',flashlight});
+ ui.update({interaction:!standing?'起身':near?(doorOpen?'关门':'开门'):'',subtitle:'',flashlight});
  hinge.rotation.y=THREE.MathUtils.damp(hinge.rotation.y,doorOpen?-1.3:-.18,8,dt);light.visible=flashlight;effect?.setFlashlight(flashlight);
  const playing=ui.getSnapshot().page==='playing';document.querySelector('.preview-dock').dataset.playing=String(playing);
  if(effect)effect.render(now/1000);requestAnimationFrame(frame);

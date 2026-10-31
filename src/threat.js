@@ -177,7 +177,7 @@ export function stepHearingThreat(plan,state,dt,
     if(!state.story.facts.includes('hearing.escaped'))state.story.facts.push('hearing.escaped');
     return false;
   }
-  const before={x:t.x,z:t.z},closedDoorIds=state.doors.bedroom.open?[]:['bedroom'];
+  const before={x:t.x,z:t.z},closedDoorIds=Object.entries(state.doors).filter(([,door])=>!door.open).map(([id])=>id);
   stepHearingInvestigator(plan,t,noiseEvents,dt,{boxes,closedDoorIds,
     speed:t.demoComplete?1.65:.8});
   t.demoMoved+=Math.hypot(t.x-before.x,t.z-before.z);

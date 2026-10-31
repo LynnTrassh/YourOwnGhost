@@ -1,0 +1,89 @@
+# Tripo API 与静态模型适配（2026-10-31）
+
+本轮将 Tripo v3 接入本地后端，并完成独立静态模型加载适配。**不等于玩家自由输入到生成世界的完整链路已经完成。** 当前没有语义 provider、图像确认产品流程、通用静物 PCG 绑定／manifest 安装；正式入口继续保留用户选择“直接进入”预设的流程。
+
+## 实现与调用
+
+- `npm run api:tripo`：Node 24 系统证书信任，明确复用现有 Tripo CLI 当前账号，仅在服务器内存读取凭证，不复制到项目、不下发浏览器。
+- `npm run tripo:check`：真实 API 余额检查；可加 `-- <task-id>` 查询旧任务。仅输出安全摘要，不输出密钥或签名下载 URL。
+- 环境配置模式：`TRIPO_API_KEY` + `TRIPO_REGION=ov|cn`，然后 `npm run api`。密钥不能加 VITE_ 前缀。CLI 复用与环境变量同时存在时环境密钥优先；站点必须与密钥一致。
+- 默认没有收费许可。`DREAM_TRIPO_POLICY` 指向项目外或已忽略 `.local/` 下的本地操作员策略文件。未配置策略时不能新建模型任务。
+- 开发 `/api` 同源代理仍在 vite.config.js，后端监听 127.0.0.1:4192。既有4190进程若早于代理配置启动，需要由其所有者重启；不为检查停止其他任务服务。
+
+API provider 已实现：余额、指定任务查询、PNG/JPEG 上传、P1-20260311 图生模型提交。生成参数固定为标准贴图、texture=true、pbr=false，面数由审核配方明确指定；不隐式升级模型。不调用 CLI 的自动重试生成；HTTP POST 一旦响应未知即记录 submissionUnknown，禁止自动再提交。
+
+任务查询区分 queued/running/success/failed/cancelled 和未知状态。只读失败可恢复原 taskId；供应商成功、GLB格式校验、浏览器解码、场面可安装是独立阶段。当前只有静态加载能力，没有接绑定／动画／重定向端点。
+
+## 模型任务 HTTP 接口
+
+所有接口使用现有 HttpOnly/SameSite 会话 cookie；模型资源按所属任务授权，不开放任意文件路径或公共缓存列表。
+
+| 接口 | 含义 |
+|---|---|
+| POST /api/model-jobs | `{inputRevision,confirmationId,recipeId}`；必须是当前已确认语义，recipeId 必须引用服务端已批准图像配方 |
+| GET /api/model-jobs/:id | 返回真实阶段、taskId、预留积分、实际积分、交付取消状态和资产元数据；始终不宣称 worldReady |
+| POST /api/model-jobs/:id/resume | 恢复已有查询或下载；未知提交不重发 POST |
+| POST /api/model-jobs/:id/cancel | 撤销本局交付；未提交不再提交，已提交继续记录真实终态与费用；不宣称供应商已取消 |
+| GET /api/model-jobs/:id/asset | 仅向当前有效所属会话交付已校验 GLB，旧 revision／取消后拒绝 |
+
+`/api/dream-jobs` 的整局入口仍因世界适配缺失而不可用。独立 `/api/model-jobs` 已通过真实本地 HTTP 测试；不要用 truthy 模型响应放行入梦。
+
+## 审核策略（不是可直接运行的授权）
+
+策略结构：`budgetId`（本轮授权的稳定ID）、`maxCredits`（总授权额度）、`downloadHosts`（已核实的下载CDN精确主机名数组）、`approvals`（recipeId到审核配方的映射）。每个审核配方必须有：
+
+- `approvedAt`：人工批准记录；不是模型自报。
+- `semanticHash`：当前已确认解释的 hash；换主题即失效。
+- `imagePath`、`imageSha256`：批准图像的本机路径和实际 SHA256；上传前重新核对，不能替换文件偷换外观。
+- `creditCeiling`：经实际定价核对的单任务保守费用预留；不能把未知报价当0。
+- `faceLimit`：P1 的50–20000范围内目标面数，默认6000；下载后仍检查实际面数。
+
+预算预留与作业唯一键在 SQLite 事务内完成，费用按 `max(预留,实际)` 保守累计；包括提交未知和失败任务的预留，避免误释放后重复支出。实际费用高于额度时停止后续新提交。**Tripo 请求没有供应商侧的 max_credits 参数，这不是对外部计费的硬上限保证**，必须先核实所用模型/贴图选项的定价。本轮没有写入任何付费策略。
+
+同一确认、配方和供应商版本的重复请求复用同一任务。重启时 submitting→submissionUnknown；已有taskId可恢复查询。此为单服务实例账本，不支持多个进程同时运行同一账本，也不保证外部供应商 exactly-once。
+
+## 文件与资源适配
+
+- `AssetStore` 只接受配置中精确的 HTTPS 下载主机，拒绝重定向，不向下载CDN发送供应商密钥；32MB下载上限。新任务返回未知CDN时须核实再配置，不自动放宽主机规则。
+- GLB校验检查版本、长度、分块、内嵌资源、访问器范围、节点循环、三角面与贴图预算。拒绝外链资源和未配置压缩扩展；默认30000三角面、贴图单边4096、总像素32M。接受格式不等于美术质量或玩法能力合格。
+- 资产保存到 `.local/dream-api/assets/<sha256>.glb`（被Git忽略），元数据不含签名URL。不会覆写 `public/art/generated/` 或他人资产。
+- `loadGeneratedModel({url,sha256,targetHeight,yaw,maxSize,signal})`：同源加载、内容hash检查、真实几何归一化至底部中心、有限旋转、哑光材质、槽位尺寸检查。返回 `{root,dispose,bounds,verifiedCapabilities:['static-display'],sha256}`。
+- 动态骨骼／动画模型目前明确拒绝，必须另接动作／感知／碰撞包络。无模型朝向语义推断；yaw由经过确认的资产元数据提供，不能把默认朝向当正确朝向证据。
+- 取消／超时立即停止当前等待；不能中断的GLTF解码返回后检查旧状态并释放。dispose幂等释放几何、材质、贴图和ImageBitmap。
+- `createModelJobClient().prepare(confirmation,{targetHeight,yaw,maxSize,signal,onProgress})`：创建/查询模型任务→实际加载；返回 worldReady:false。`resume(jobId)`只恢复原任务。整局使用者仍须先完成空间与事件适配，再持有root/dispose并提交世界。
+
+## 实际验收
+
+- 2026-10-31：CLI doctor 与新适配器实际 `GET /v3/account/balance` 均成功；国际站余额24200、冻结0。未新建收费任务。
+- 历史猫形模型 task `9dfda88f-5811-4213-bb1b-895cc8b7d5d2` 在当前授权查询返回 HTTP404。未猜测原因、未重新生成；不能声称远端恢复成功。
+- 本地现存 `public/art/generated/watcher-cat-v2.glb`：1387476字节、5912三角面、2048×2048 JPEG内嵌贴图、无骨骼／动画，真实格式检查通过。它是已有资产，不是本轮生成，也不代表其美术已获最终批准。
+- 浏览器 `/tripo-validation.html` 实际解码并渲染上述文件，height=1.98，bounds约0.81×1.98×1.03米；GPU计数加载1geometry/2textures，释放0geometry/1texture（渲染器内置基线保留）。没有把它挂到正式地图或追逐体。
+- 测试中的外部Tripo提交、成功下载与故障模拟都明确使用夹具；不能作为真实付费生成成功证据。
+- 最终 API + Tripo + UI 专项 42/42 通过；覆盖真实本地HTTP归属、重复提交、预算预留、未知提交、恢复原任务、迟到取消和加载释放。
+- 正式入口构建和独立验证页构建均通过，保留现有大包体积警告。全量玩法回归由持有main/world的协调任务统一跑，不并行运行其进行中改动。
+
+## 尚缺与交接
+
+1. 首次新任务的具体图像确认与积分上限；然后实测上传→生成→查询→真实CDN下载，记录实际费用/耗时/文件质量。
+2. 当前语义provider仍缺；生成图片预览/审批尚无产品UI。配置策略是本地开发接入机制，不是面向玩家的最终审批体验。
+3. PCG通用静物槽、邻房主题排除、区域边界、已校验manifest、世界原子安装和session所有权；相邻配对、远距离配对、连续房组仍须走现有合法适配。
+4. 动画、危险能力和手机性能验证。
+5. 明确取消本局只撤销交付，远端可能继续并扣费；退出或选择预设后不把迟到结果替换到当前世界。
+
+共享入口由协调任务持有，本轮没有修改main/world/planning或美术资产。无提交、推送或部署。
+
+官方协议依据（本轮已核对）：[图生模型 P 系列](https://developers.tripo3d.ai/en/docs/generation-image-to-model/p)、[文件上传](https://developers.tripo3d.ai/en/docs/files)、[任务查询](https://developers.tripo3d.ai/en/docs/task-query)、[任务生命周期](https://developers.tripo3d.ai/en/docs/task-lifecycle)。
+
+## 后续接线：静态主题整局（2026-10-31）
+
+新增明确的文生模型路线，保留原有已批准图片路线。`ModelJobs` 从服务端已确认语义选取 entityId 构建 P1 文本配方，浏览器不能提交 prompt、费用或批准字段。仅本地操作员策略 `allowText:true` 配合正数 `maxCredits` 才能调用；默认仍关闭。本次尚未开启或消费 Tripo 新任务。单模型预留 `textCreditCeiling` 默认50积分，属于保守预算预留，非供应商报价或硬上限。
+
+`POST /api/dream-jobs` 现在可登记最多4个具象主题的静态模型任务：全组额度预检→持久单模型作业→私有资源查询。抽象/环境/声音或实体关系需要更丰富适配，明确返回错误；不会替换成猫花。确认UI明确标注本轮只生成静态外观。该路线不含图片先审，原图生路线仍保留图像审批要求。
+
+客户端先生成两层布局并预检最大模型占地，再发收费作业；完成GLB实际加载后缩放至0.6×0.8×0.6米以内，按真实尺寸重验。静态位置排除出生卧室、邻房、危险及主动事件编排房间，远离门扇和剧情焦点；实际AABB加入碰撞，完整validatePlan通过后才返回本地私有品牌会话。main消费该会话并用两层已验证plan安装模型；死亡/换层/重玩复用资源，退出或准备取消释放。模型仅有静态陈列能力，不代表恐惧行为/动画已生成。
+
+空输入两项直接进入显式defaultPreset，默认generic/cat内容资格；单项空保留原文并在理解中标默认，默认项不产生新模型任务。服务异常显式presetFallback也使用完整默认预设。cat资格并不保证CAT01每种地图都有，具体由空间适配决定。
+
+验证：50项API/UI专项通过，构建通过；种子42两层主动玩法计划分别放置2个最大尺寸主题，保留通行校验。新增模型任务仍使用具名fixture测试，未声称真实付费生成下载及游戏内模型视觉验收完成。全量由协调任务运行，避免重复并发。
+
+最终追加：收费前布局预检与取消后迟到资源释放用例通过，API/UI专项更新为52/52。

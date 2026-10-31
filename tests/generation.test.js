@@ -174,7 +174,7 @@ test('furniture forces a traversable detour and is rendered with matching collis
     const x=(b.minX+b.maxX)/2, z=(b.minZ+b.maxZ)/2;
     const dx=b.maxX-b.minX < b.maxZ-b.minZ ? p.cellSize : 0, dz=dx ? 0 : p.cellSize;
     const from={x:x-dx,z:z-dz}, to={x:x+dx,z:z+dz};
-    const route=pathThroughTiles(p,from,to);
+    const route=pathThroughTiles(world.getTopology(),from,to);
     if (!route) continue;
     assert.ok(route.length > 3, 'direct route through furniture must be unavailable');
     const player={...from}; follow(player,route,world.getColliders());

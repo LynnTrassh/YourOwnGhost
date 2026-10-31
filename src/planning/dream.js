@@ -5,25 +5,26 @@ import { fitBedroomTrace, fitTraceFollow } from './trace-fit.js';
 import { validatePlan } from './validate.js';
 import { completeRoomContent } from './room-rhythm.js';
 import { completeFinalRoomInteriors } from './interiors.js';
+import { fitActiveEncounters } from './active-fit.js';
 
 export function generateDream(seed,options={}) {
   const attempts=[];
-  for(let attempt=0;attempt<4;attempt++) {
+  for(let attempt=0;attempt<8;attempt++) {
     const compositionSeed=attempt?`${seed}:rhythm:${attempt}`:String(seed);
     try {
       const plans=composeDream(compositionSeed,options);
       plans.composition.rhythmGeneration={requestedSeed:String(seed),compositionSeed,attempt,rejections:attempts};
       return plans;
     } catch(error) {
-      if(!/内容编排校验失败|安静房缺少真实可见构图/.test(error.message))throw error;
+      if(!/内容编排校验失败|安静房缺少真实可见构图|追逐空间未能|主动玩法未能/.test(error.message))throw error;
       attempts.push({compositionSeed,reason:error.message});
     }
   }
   throw new Error(`无法生成完整内容与合格节奏：${attempts.map(a=>a.reason).join('；')}`);
 }
 
-function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null}={}) {
-  const first=generatePlan(seed,{catEnabled,preferences,rhythmEnabled:true});
+function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null,activeEncounters=false}={}) {
+  const first=generatePlan(seed,{catEnabled,preferences,threatEnabled:activeEncounters,rhythmEnabled:true});
   const conditionalSlots=['B03','B04'].flatMap(definitionId=>{
     const source=first.content.instances.find(instance=>instance.definitionId===definitionId);
     if(!source)return [];
@@ -33,12 +34,12 @@ function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null
   });
   const geometry=p=>JSON.stringify([p.cells,p.doors]);
   for(let attempt=0;attempt<8;attempt++) {
-    const second=generatePlan(`${seed}:dream:2:${attempt}`,{catEnabled:false,threatEnabled:true,
+    const second=generatePlan(`${seed}:dream:2:${attempt}`,{catEnabled:false,threatEnabled:!activeEncounters||Boolean(threatBehaviorId),chaseEnabled:activeEncounters&&!threatBehaviorId,
       threatBehaviorId,conditionalSlots,preferences,rhythmEnabled:true});
     if(geometry(first)!==geometry(second)) {
       const selection=chooseLayerContent([first,second],seed);
-      const fitted=[generatePlan(seed,{catEnabled,contentIds:selection.selectedIds[0],preferences,rhythmEnabled:true}),
-        generatePlan(`${seed}:dream:2:${attempt}`,{catEnabled:false,threatEnabled:true,
+      const fitted=[generatePlan(seed,{catEnabled,contentIds:selection.selectedIds[0],preferences,threatEnabled:activeEncounters,rhythmEnabled:true}),
+        generatePlan(`${seed}:dream:2:${attempt}`,{catEnabled:false,threatEnabled:!activeEncounters||Boolean(threatBehaviorId),chaseEnabled:activeEncounters&&!threatBehaviorId,
           threatBehaviorId,contentIds:selection.selectedIds[1],conditionalSlots,preferences,rhythmEnabled:true})];
       const plans=[first,second].map((raw,index)=>{
         if(geometry(raw)!==geometry(fitted[index])) {
@@ -85,8 +86,16 @@ function composeDream(seed,{catEnabled=true,preferences=[],threatBehaviorId=null
           return [{id,definitionId:id,sourceInstanceId:source.instanceId,roomId:'bedroom',focus:{x:-.45,y:.65,z:1.2}}];
         }),
       ];
+      // Fit interactive encounters against the final furniture footprint, so
+      // late dressing cannot cover the fuse, control, or corridor sightline.
+      for(const plan of plans)completeFinalRoomInteriors(plan);
+      if(activeEncounters) {
+        plans[0].activeEncounters=fitActiveEncounters(plans[0]);
+        if(!plans[0].threat||!plans[0].activeEncounters.puzzle||!plans[0].activeEncounters.scare)
+          throw new Error('主动玩法未能完整落位');
+      }
       for(const plan of plans) {
-        completeFinalRoomInteriors(plan);
+        plan.coverage=analyzeCoverage(plan);
         const validation=validatePlan(plan);
         if(!validation.valid)throw new Error(`内容编排校验失败：${validation.errors.join('、')}`);
         const {planHash,...withoutHash}=plan;

@@ -5,3 +5,11 @@ export function targetsBedroomDoor(ray, world, state) {
   const hit = ray.intersectObjects([...world.solids, world.door], false)[0];
   return hit?.object === world.door;
 }
+
+// Query the persistent proxy of every real leaf, including an opened leaf.
+export function targetsDoor(ray,world,state) {
+  if(!state.player.standing)return null;
+  const doors=world.getDoorTargets();
+  const hit=ray.intersectObjects([...world.solids,...doors],false)[0];
+  return hit&&doors.includes(hit.object)?hit.object.userData.doorId:null;
+}

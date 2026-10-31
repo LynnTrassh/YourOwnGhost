@@ -11,12 +11,12 @@ export function validateInterpretation(value) {
 
 // Local request identity is not a substitute for the provider's revision/confirmation ledger.
 export function createGeneration({ prepare, onChange, confirm }) {
-  let sequence = 0, controller;
+  let sequence = 0, controller, ownedSession;
   return {
-    cancel() { sequence++; controller?.abort(); controller = null; },
-    handoff() { sequence++; controller = null; },
+    cancel() { ownedSession?.dispose?.();ownedSession=null;sequence++; controller?.abort(); controller = null; },
+    handoff() { ownedSession=null;sequence++; controller = null; },
     async run(input) {
-      controller?.abort(); const id = ++sequence; controller = new AbortController();
+      ownedSession?.dispose?.();ownedSession=null;controller?.abort(); const id = ++sequence; controller = new AbortController();
       const signal = controller.signal;
       let settled = false, accepted = false, pending = null, acceptedKey = null;
       const current = () => id === sequence && !signal.aborted;
@@ -59,10 +59,10 @@ export function createGeneration({ prepare, onChange, confirm }) {
             }
           }
         });
-        if(!current())return;
+        if(!current()){session?.dispose?.();return;}
         if(!accepted || pending)throw failure('CONFIRMATION_REQUIRED','生成服务未完成解释确认，不能进入梦境。请重试。');
         if (!session) throw failure('SESSION_REQUIRED','梦境未准备完成，请重试。');
-        settled = true;
+        ownedSession=session;settled = true;
         onChange({ status: 'ready', stage: 'ready', session });
       } catch (error) {
         settled = true;

@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "api": "node server/start.js",
+    "api:tripo": "node --use-system-ca server/start.js --tripo-cli",
+    "tripo:check": "node --use-system-ca server/tripo-check.js --tripo-cli",
     "dev": "vite --host 127.0.0.1 --port 4190 --strictPort",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 4191 --strictPort",

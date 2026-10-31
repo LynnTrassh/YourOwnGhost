@@ -30,7 +30,7 @@ test('continuous seed 12 route: cat revisit, false awakening, demonstration, rea
     const f=sound.step(p,s,view(),dt,{boxes:world.getColliders()});cues.push(...f.events.map(e=>e.kind));
   }
   function walk(target,{watchStatue=false}={}) {
-    const route=pathThroughTiles(p,s.player,target);assert.ok(route,'route must use existing walkable cells');
+    const route=pathThroughTiles(world.getTopology(),s.player,target);assert.ok(route,'route must use existing walkable cells');
     for(const point of [...route,target]) {
       for(let frame=0;Math.hypot(point.x-s.player.x,point.z-s.player.z)>.005;frame++) {
         assert.ok(frame<100,'collision route must make progress');assert.ok(canExplore(s),'unexpected death on escape route');
