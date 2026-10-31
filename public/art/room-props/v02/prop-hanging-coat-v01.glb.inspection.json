@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-hanging-coat-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-hanging-coat-v01.glb",
+  "sourceBytes": 13272308,
+  "runtimeBytes": 4272968,
+  "sourceSHA256": "e0a7c6414c093ac21ebe4a9411652bbca5ea6b4dda45e563961645e22c9b9ad7",
+  "runtimeSHA256": "a3c0cdbd37a087ecb499621a740179ad04b01bb7875901bc2c5fedad9deac111",
+  "triangles": 16250,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1884765625,
+      -0.4853515625,
+      -0.4990234375
+    ],
+    "max": [
+      0.1884765625,
+      0.4853515625,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6169014084507042,
+      0,
+      -0.2329979879275654
+    ],
+    "max": [
+      0.6169014084507042,
+      1.2,
+      0.2329979879275654
+    ],
+    "size": [
+      1.2338028169014084,
+      1.2,
+      0.4659959758551308
+    ]
+  },
+  "scale": 1.2362173038229376,
+  "scaleXYZ": [
+    1.2362173038229376,
+    1.2362173038229376,
+    1.2362173038229376
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "54e7cc723f4a491c1858275a34924f8821c4cb6436505037fee9df502019f55e"
+}

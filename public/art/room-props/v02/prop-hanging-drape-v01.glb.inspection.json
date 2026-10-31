@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-hanging-drape-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-hanging-drape-v01.glb",
+  "sourceBytes": 11007612,
+  "runtimeBytes": 4060796,
+  "sourceSHA256": "ab0cc26a62bf63f674c0b8004c1245fbe66916cb1494f646816f81547418e392",
+  "runtimeSHA256": "6c0eeb16755aff5d87d274130d3a64340c142aa98b80d98ab56c0a0835ea6e5c",
+  "triangles": 17197,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2470703125,
+      -0.4990234375,
+      -0.3134765326976776
+    ],
+    "max": [
+      0.2470703125,
+      0.4990234375,
+      0.3134765923023224
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6273013500318135,
+      0,
+      -0.7959040844277161
+    ],
+    "max": [
+      0.6273013500318135,
+      2.5339999198913574,
+      0.7959040844277161
+    ],
+    "size": [
+      1.254602700063627,
+      2.5339999198913574,
+      1.5918081688554322
+    ]
+  },
+  "scale": 2.5389588238441783,
+  "scaleXYZ": [
+    2.5389588238441783,
+    2.5389588238441783,
+    2.5389588238441783
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "f88d0ae8317e2763fe0fa6a9aa6d85859fc6c09c7ec7fc218a6d8918dddc843c"
+}

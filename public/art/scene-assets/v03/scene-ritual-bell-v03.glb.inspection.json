@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-ritual-bell-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-ritual-bell-v03.glb",
+  "sourceBytes": 9175120,
+  "runtimeBytes": 3111060,
+  "sourceSHA256": "4660b36efb123789a6ee0231e8af0a9432044acb9690192b801e2321f5595731",
+  "runtimeSHA256": "b6305d945ebd444334ec58336103a979234cdc57d2c4531801d42d58b5e4d2d8",
+  "triangles": 17148,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3691811263561249,
+      -0.5,
+      -0.3788962662220001
+    ],
+    "max": [
+      0.3691811263561249,
+      0.5,
+      0.3788962662220001
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.09229528158903122,
+      0,
+      -0.09472406655550003
+    ],
+    "max": [
+      0.09229528158903122,
+      0.25,
+      0.09472406655550003
+    ],
+    "size": [
+      0.18459056317806244,
+      0.25,
+      0.18944813311100006
+    ]
+  },
+  "scale": 0.25,
+  "scaleXYZ": [
+    0.25,
+    0.25,
+    0.25
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "ce018495ed9f689e9658a3e69d1ee2f731057d078c8962d1e7a41f5a0ab079fc"
+}

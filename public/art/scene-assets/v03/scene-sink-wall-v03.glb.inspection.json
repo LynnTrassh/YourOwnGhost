@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-sink-wall-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-sink-wall-v03.glb",
+  "sourceBytes": 10034740,
+  "runtimeBytes": 3166804,
+  "sourceSHA256": "69c7604ebbdec197e59839a1ac42133377c6efdd252cdc74ccb7ea0352655786",
+  "runtimeSHA256": "1a626481e6fdec29c2f2c01be4e21897e30aedf139a7016facc38b7a7467ef98",
+  "triangles": 17904,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3614998459815979,
+      -0.5,
+      -0.4035188555717468
+    ],
+    "max": [
+      0.3614998459815979,
+      0.5,
+      0.4035188555717468
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.23497489988803863,
+      0,
+      -0.26228725612163545
+    ],
+    "max": [
+      0.23497489988803863,
+      0.65,
+      0.26228725612163545
+    ],
+    "size": [
+      0.46994979977607726,
+      0.65,
+      0.5245745122432709
+    ]
+  },
+  "scale": 0.65,
+  "scaleXYZ": [
+    0.65,
+    0.65,
+    0.65
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "dddf00ff55538dfb796eced59a03017310b83fabe537f1c387fbb6f3c23f5237"
+}

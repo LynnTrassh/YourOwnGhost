@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-medicine-bottles-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-medicine-bottles-v03.glb",
+  "sourceBytes": 8268512,
+  "runtimeBytes": 3055676,
+  "sourceSHA256": "7f727b411b1da8817a478617fbf9b5f55ae2c6c45c7c58471726cea6d92cc554",
+  "runtimeSHA256": "5f16475070d96aa73b87ad804a17ef37d5563781684a66567db615af60196fbf",
+  "triangles": 17653,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.30104169249534607,
+      -0.4334399104118347,
+      -0.5
+    ],
+    "max": [
+      0.30104169249534607,
+      0.4334399104118347,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.06945407777731176,
+      0,
+      -0.11535624385048505
+    ],
+    "max": [
+      0.06945407777731176,
+      0.2,
+      0.11535624385048505
+    ],
+    "size": [
+      0.13890815555462352,
+      0.2,
+      0.2307124877009701
+    ]
+  },
+  "scale": 0.2307124877009701,
+  "scaleXYZ": [
+    0.2307124877009701,
+    0.2307124877009701,
+    0.2307124877009701
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "2b8f2d17857e6055e9e491c1647be69dd07123dfcfe250e471013d2d71329791"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-trophy-cup-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-trophy-cup-v05.glb",
+  "sourceBytes": 12488704,
+  "runtimeBytes": 4602636,
+  "sourceSHA256": "b5abc31e02a6f6d63bf22dfb00256195a3b20eccb2cd448f6eddd2e54c3b5a85",
+  "runtimeSHA256": "7d0a10f75e5416ce2231dddeeef7eb54659d2727e63e5a403ad111fd976646fe",
+  "triangles": 16228,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2001953125,
+      -0.4990234375,
+      -0.2900390326976776
+    ],
+    "max": [
+      0.2001953125,
+      0.4990234375,
+      0.2900390923023224
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.08424657534246575,
+      0,
+      -0.12205479452054793
+    ],
+    "max": [
+      0.08424657534246575,
+      0.42,
+      0.12205479452054793
+    ],
+    "size": [
+      0.1684931506849315,
+      0.42,
+      0.24410958904109586
+    ]
+  },
+  "scale": 0.42082191780821915,
+  "scaleXYZ": [
+    0.42082191780821915,
+    0.42082191780821915,
+    0.42082191780821915
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "bcbc6cf0c81551d9171d172a328565518d1e75e4edd2442f86d10f1eb44847ee"
+}

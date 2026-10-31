@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-sleeping-person-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-sleeping-person-v05.glb",
+  "sourceBytes": 8656808,
+  "runtimeBytes": 3576120,
+  "sourceSHA256": "0558d03288bd42ea6b329b53ddb7197b52578edde98f9549c310f804504f9876",
+  "runtimeSHA256": "26dc7fe1a2408d6d1b07e8a4457b165175598136a44572089826b301204cfbfa",
+  "triangles": 16797,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.1591796875,
+      -0.3310546875
+    ],
+    "max": [
+      0.4990234375,
+      0.1591796875,
+      0.3310546875
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5904305283757338,
+      0,
+      -0.89
+    ],
+    "max": [
+      0.5904305283757338,
+      0.5677886497064579,
+      0.89
+    ],
+    "size": [
+      1.1808610567514677,
+      0.5677886497064579,
+      1.78
+    ]
+  },
+  "scale": 1.7834833659491194,
+  "scaleXYZ": [
+    1.7834833659491194,
+    1.7834833659491194,
+    1.7834833659491194
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "9701bfebdc70a51f53582b231e5d1820ac2126e40322779501bae3beb92dbf31"
+}

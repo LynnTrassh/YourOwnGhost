@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-crt-tv-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-crt-tv-v01.glb",
+  "sourceBytes": 13478260,
+  "runtimeBytes": 3777972,
+  "sourceSHA256": "1e221f82548540b111a698b08f1bbb30af7f6d790fa550ccd430f0783c56f9e7",
+  "runtimeSHA256": "d164bbda6834ca81669f88e2d88017ec704229b94db9646f2fdfed3a420bd686",
+  "triangles": 16008,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4482421875,
+      -0.4697265923023224,
+      -0.4990234673023224
+    ],
+    "max": [
+      0.4482421875,
+      0.4697265923023224,
+      0.4990234673023224
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.29746361635561896,
+      0,
+      -0.2671933302409702
+    ],
+    "max": [
+      0.29746361635561896,
+      0.56,
+      0.2671933302409702
+    ],
+    "size": [
+      0.5949272327112379,
+      0.56,
+      0.5343866604819404
+    ]
+  },
+  "scale": 0.5960914382717941,
+  "scaleXYZ": [
+    0.5960914382717941,
+    0.5960914382717941,
+    0.5960914382717941
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "d22716d78b5b48dbdc2b915a412ca1d0b149137ef4713a2f3989b2093aaa6e7d"
+}

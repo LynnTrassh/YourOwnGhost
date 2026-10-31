@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-umbrella-stand-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-umbrella-stand-v03.glb",
+  "sourceBytes": 7065284,
+  "runtimeBytes": 2768040,
+  "sourceSHA256": "a5c1a8b2215236cde28242cda0f6482d3691f5ae4e644d5a3e6a7c58ea7520cd",
+  "runtimeSHA256": "df5c7cf75e9fa19854fc83613521b42f27d96dcaa339b284ce8b43d44d19b86a",
+  "triangles": 17572,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.13645760715007782,
+      -0.5,
+      -0.22115713357925415
+    ],
+    "max": [
+      0.13645760715007782,
+      0.5,
+      0.22115713357925415
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.12281184643507004,
+      0,
+      -0.19904142022132873
+    ],
+    "max": [
+      0.12281184643507004,
+      0.9,
+      0.19904142022132873
+    ],
+    "size": [
+      0.24562369287014008,
+      0.9,
+      0.39808284044265746
+    ]
+  },
+  "scale": 0.9,
+  "scaleXYZ": [
+    0.9,
+    0.9,
+    0.9
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "aa96933f84856167669bcceb8e7457a12e7da510ccfbb4165a9c9bf3247294b4"
+}

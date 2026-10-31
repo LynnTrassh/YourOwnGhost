@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-wall-coat-pegs-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-wall-coat-pegs-v03.glb",
+  "sourceBytes": 12476944,
+  "runtimeBytes": 3961728,
+  "sourceSHA256": "5aaf3b5f172c0db008f96d30dd7ffcb849033a441b14cd5f0d206186055b2bcc",
+  "runtimeSHA256": "36dd81bcaa6715e2409087b874d9026ff0a4a94f14e23fb22495fc8465e3e383",
+  "triangles": 17644,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.10729436576366425,
+      -0.5,
+      -0.426451176404953
+    ],
+    "max": [
+      0.10729436576366425,
+      0.5,
+      0.426451176404953
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.0858354926109314,
+      0,
+      -0.34116094112396245
+    ],
+    "max": [
+      0.0858354926109314,
+      0.8,
+      0.34116094112396245
+    ],
+    "size": [
+      0.1716709852218628,
+      0.8,
+      0.6823218822479249
+    ]
+  },
+  "scale": 0.8,
+  "scaleXYZ": [
+    0.8,
+    0.8,
+    0.8
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "101a93689a4759e2c25026f0e9f6fca4eb5ba674c491f45ebba5b0d0e5ef0f98"
+}

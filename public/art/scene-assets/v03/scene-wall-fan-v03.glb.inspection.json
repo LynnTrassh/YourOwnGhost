@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-wall-fan-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-wall-fan-v03.glb",
+  "sourceBytes": 10076944,
+  "runtimeBytes": 3591264,
+  "sourceSHA256": "78165a18291bed03146a983113341e41a79880a4401197d7be9bdc6e9c94a3e0",
+  "runtimeSHA256": "fd586202ac587029f8dd83d928b3625a240eef3f6f20335e24184c692f65cb42",
+  "triangles": 16333,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.21423488855361938,
+      -0.5,
+      -0.4817977249622345
+    ],
+    "max": [
+      0.21423488855361938,
+      0.5,
+      0.4817977249622345
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.10711744427680969,
+      0,
+      -0.24089886248111725
+    ],
+    "max": [
+      0.10711744427680969,
+      0.5,
+      0.24089886248111725
+    ],
+    "size": [
+      0.21423488855361938,
+      0.5,
+      0.4817977249622345
+    ]
+  },
+  "scale": 0.5,
+  "scaleXYZ": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "1e7bb3ea6b5754f7cecf6e97d9da1d170223784ea09407d166cd698d50bdfee9"
+}

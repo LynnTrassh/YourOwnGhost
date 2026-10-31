@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-bench-wood-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-bench-wood-v03.glb",
+  "sourceBytes": 12642796,
+  "runtimeBytes": 3872168,
+  "sourceSHA256": "c158b7a3adad6039211543951a7a0b97ef87ef6b4bde6eba8eedc0f54d419339",
+  "runtimeSHA256": "dd35835dba010fca75f89d9780103ea4474da1bf79268e8915714d9fd2cccb84",
+  "triangles": 16982,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.17316050827503204,
+      -0.17060750722885132,
+      -0.5
+    ],
+    "max": [
+      0.17316050827503204,
+      0.17060750722885132,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.23344176085893992,
+      0,
+      -0.674061779976306
+    ],
+    "max": [
+      0.23344176085893992,
+      0.4600000000000001,
+      0.674061779976306
+    ],
+    "size": [
+      0.46688352171787983,
+      0.4600000000000001,
+      1.348123559952612
+    ]
+  },
+  "scale": 1.348123559952612,
+  "scaleXYZ": [
+    1.348123559952612,
+    1.348123559952612,
+    1.348123559952612
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "be6b5b093e00cdd79dbfc593156b7ccc146b68f66c2d6778d9015694296d9940"
+}

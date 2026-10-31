@@ -1,0 +1,64 @@
+{
+  "source": "art-source/furniture-diversity-v01/output/bed-low-divan-v01/model.glb",
+  "destination": "public/art/furniture-diversity/v01/bed-low-divan-v01.glb",
+  "sourceBytes": 1171816,
+  "runtimeBytes": 1172168,
+  "sourceSHA256": "c3d9afa015c86c55c4759ef1e21e23ef445e7192bfd18ade864c1daaf0b2cc9b",
+  "runtimeSHA256": "1e744cac092c59e19c77b7d4c84d486a5e844a473f6223f3976d686f1caadcb3",
+  "triangles": 5826,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2548828125,
+      -0.1357422024011612,
+      -0.4990234375
+    ],
+    "max": [
+      0.2548828125,
+      0.1357421725988388,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.49799412915851266,
+      0,
+      -0.9749999999999999
+    ],
+    "max": [
+      0.49799412915851266,
+      0.5304305283757338,
+      0.9749999999999999
+    ],
+    "size": [
+      0.9959882583170253,
+      0.5304305283757338,
+      1.9499999999999997
+    ]
+  },
+  "scale": 1.9538160469667316,
+  "scaleXYZ": [
+    1.9538160469667316,
+    1.9538160469667316,
+    1.9538160469667316
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "matte",
+  "orientationStatus": "three-quarter-reviewed; front -Z confirmed",
+  "pivot": "bottom-centre",
+  "forward": "-Z",
+  "target": {
+    "id": "bed-low-divan-v01",
+    "yaw": 0,
+    "axis": "z",
+    "metres": 1.95
+  },
+  "finiteVerticesChecked": 6159,
+  "degenerateTriangles": 0,
+  "preOptimizationSHA256": "1e744cac092c59e19c77b7d4c84d486a5e844a473f6223f3976d686f1caadcb3"
+}

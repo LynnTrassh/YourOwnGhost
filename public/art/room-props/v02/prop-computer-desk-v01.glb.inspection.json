@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-computer-desk-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-computer-desk-v01.glb",
+  "sourceBytes": 11317876,
+  "runtimeBytes": 3960316,
+  "sourceSHA256": "471df532ebb5fe76b994524543ef2a0836da8cd291653f3799717d3992a30fb4",
+  "runtimeSHA256": "3e8bf8b3bc09efd6d559e784c71309fd13dbb451b2e12e0704c40bf7f5041a0f",
+  "triangles": 15178,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3349609375,
+      -0.4580078423023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.3349609375,
+      0.4580078125,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.46074624887140064,
+      0,
+      -0.6864178809716786
+    ],
+    "max": [
+      0.46074624887140064,
+      1.259999986886978,
+      0.6864178809716786
+    ],
+    "size": [
+      0.9214924977428013,
+      1.259999986886978,
+      1.372835761943357
+    ]
+  },
+  "scale": 1.3755223289921699,
+  "scaleXYZ": [
+    1.3755223289921699,
+    1.3755223289921699,
+    1.3755223289921699
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "39dbaeb9ab590302722c4f09e4e6d0a55c8b539a1f70fcb716dde4d3d803cb50"
+}

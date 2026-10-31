@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-candlesticks-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-candlesticks-v01.glb",
+  "sourceBytes": 13469144,
+  "runtimeBytes": 4697856,
+  "sourceSHA256": "226a0be28162107d4ec6e9919b865d465d1c1ca389218dae0c1a18cfe97e6baa",
+  "runtimeSHA256": "0bbdbbe13b4c518d1ebe3487f6c1bbd872643a216f24ffb773617b7d210121cd",
+  "triangles": 16792,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3935546875,
+      -0.4990234375,
+      -0.4072265923023224
+    ],
+    "max": [
+      0.3935546875,
+      0.4990234375,
+      0.4072265326976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.24941047609683697,
+      0,
+      -0.25807485988183876
+    ],
+    "max": [
+      0.24941047609683697,
+      0.63250001630513,
+      0.25807485988183876
+    ],
+    "size": [
+      0.49882095219367395,
+      0.63250001630513,
+      0.5161497197636775
+    ]
+  },
+  "scale": 0.6337377854172731,
+  "scaleXYZ": [
+    0.6337377854172731,
+    0.6337377854172731,
+    0.6337377854172731
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "909ee8f412007e48de00045f39e9e7b2c7b0c89edb6029536c79a8d5204d3a63"
+}

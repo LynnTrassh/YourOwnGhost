@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-rocking-chair-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-rocking-chair-v03.glb",
+  "sourceBytes": 11574100,
+  "runtimeBytes": 3827032,
+  "sourceSHA256": "ece20b373c00b7fe1fe83b721e60357f5c2f41c47f69d5f8a75b13ed1f318532",
+  "runtimeSHA256": "677fc187208180298e732afb549c7240e065a29fc1df6b64ef5cdb46b4011b34",
+  "triangles": 17158,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3599236011505127,
+      -0.5,
+      -0.329018771648407
+    ],
+    "max": [
+      0.3599236011505127,
+      0.5,
+      0.329018771648407
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.395915961265564,
+      0,
+      -0.3619206488132477
+    ],
+    "max": [
+      0.395915961265564,
+      1.1,
+      0.3619206488132477
+    ],
+    "size": [
+      0.791831922531128,
+      1.1,
+      0.7238412976264954
+    ]
+  },
+  "scale": 1.1,
+  "scaleXYZ": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "7a740a05fd89dd9d101045ec960fbcfb7e753104e6ddaca84585af025c64b42b"
+}

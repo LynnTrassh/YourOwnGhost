@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-clothes-rack-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-clothes-rack-v01.glb",
+  "sourceBytes": 12132808,
+  "runtimeBytes": 4349560,
+  "sourceSHA256": "328830f2b9e91ce30e7afeb24946b700579e30b3541b35904cdc66432cc33a4d",
+  "runtimeSHA256": "443d37b4bae1b8525b6b0563b646a41ad4761beffd571387c9eb32089ed0d453",
+  "triangles": 17398,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2451171875,
+      -0.4990234375,
+      -0.1669922024011612
+    ],
+    "max": [
+      0.2451171875,
+      0.4990234375,
+      0.1669921725988388
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.48750981295193363,
+      0,
+      -0.33212819926207426
+    ],
+    "max": [
+      0.48750981295193363,
+      1.9850001148879528,
+      0.33212819926207426
+    ],
+    "size": [
+      0.9750196259038673,
+      1.9850001148879528,
+      0.6642563985241485
+    ]
+  },
+  "scale": 1.9888846552301993,
+  "scaleXYZ": [
+    1.9888846552301993,
+    1.9888846552301993,
+    1.9888846552301993
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "35034d866f247c0e6db8d469026a09b892a3d383755f7bd49552aae98436f60a"
+}

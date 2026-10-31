@@ -1,0 +1,1217 @@
+{
+  "models": [
+    {
+      "id": "bed-iron-rail-v01",
+      "taskId": "d3f56bda-c17f-4665-8b85-071624dd81a8",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/furniture-diversity-v01/output/bed-iron-rail-v01/model.glb",
+      "sourceSHA256": "3082b658cd1ae7275edcfffc5d6c2ab2b873b2216d740511a4b979a659f7315d",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One narrow antique iron single bed. Slender dark oxidized iron tube frame, simple arched headboard and lower arched footboard with five sturdy vertical bars each, four metal legs, generous visible empty space below the bed. One thin ivory striped ticking mattress, one flat cream pillow, one folded faded slate-blue wool blanket across the lower half. No wood components, no floral quilt, no canopy. Simple mechanically plausible solid joints, not hair-thin wires. Intended dimensions 1.0m wide, 2.0m long, headboard 1.15m tall. A materially and structurally distinct sleeping bed, not a medical trolley.",
+      "requestedBounds": null,
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "bed-canopy-linen-v01",
+      "taskId": "56b6fb40-ff4f-4699-86d7-93f61c831ff5",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/furniture-diversity-v01/output/bed-canopy-linen-v01/model.glb",
+      "sourceSHA256": "f2fd3db5ed6076e4d35f716e83509b326c6a5beb4258b9fa71e20022104b0ccf",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One compact single antique four-poster tester bed, with four square dark oak posts, simple rectangular overhead rails, closed plain plank headboard, low foot rail, thick cream mattress and one muted ochre quilt. Two narrow worn linen curtains tied back to the REAR posts only, front completely open, no fully enclosed canopy cloth roof. Four posts visible and physically connected to the bed frame; airy vertical negative space is crucial. No turnings matching a Victorian spindle bed, no ornate gold carvings, no loose props. Intended 1.15m wide, 2.05m long, 2.2m tall. Make the tall rectangular frame the defining silhouette.",
+      "requestedBounds": null,
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "bed-low-divan-v01",
+      "taskId": "301b4b67-2380-463e-b297-53be680d1509",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/furniture-diversity-v01/output/bed-low-divan-v01/model.glb",
+      "sourceSHA256": "c3d9afa015c86c55c4759ef1e21e23ef445e7192bfd18ade864c1daaf0b2cc9b",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One old low single sleeping divan with NO headboard, NO footboard, NO posts. A long rectangular faded olive-gray upholstered base on four short dark wooden feet, a thick sagging cream ticking mattress, one small plain flattened pillow at one end, a rumpled taupe wool blanket folded back over the far third. Mattress and upholstery have visible piping, small stitched repairs and compressed edges, restrained age, no tears with stuffing pouring out. Intended 0.95m wide, 1.95m long, total height 0.52m. Extremely low horizontal silhouette, large intact top surface, not a sofa and not a pile of bedding on the floor.",
+      "requestedBounds": null,
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "vanity-oval-mirror-v01",
+      "taskId": "4241cdf0-7561-45fa-80f2-d49ba0862418",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/furniture-diversity-v01/output/vanity-oval-mirror-v01/model.glb",
+      "sourceSHA256": "81926cf438015a030da87376fb26f5b6ebf711b8a54d7d258ce8bbffea1263a0",
+      "prompt": "Use case: stylized-concept. Original game asset input for Your Own Ghost, a grounded psychological horror game set in a faded old domestic interior. One complete isolated piece of furniture, no room, no people, no extra separate props, no text, no logo, no border. Full object visible with generous margins. Clear elevated three-quarter view, soft neutral studio lighting, plain medium charcoal gray background. Believable old materials, restrained hand-painted variation, muted colors, readable volume, no exaggerated fantasy carvings, no blood, no spooky faces. The structural silhouette must be clear even in dim light. One antique dressing table with an attached tall oval mirror supported by two wooden uprights. Dark walnut frame, three shallow asymmetric drawers, curved slender legs and a knee opening. Narrow compact horizontal tabletop and prominent vertical oval mirror as a distinct recognizable silhouette. The mirror is aged clouded silver, uniform mottled reflection with no room, no face, no figure visible. A simple small carved ridge around the oval, no elaborate rococo decoration. No chair, no bottles, no separate accessories. Intended 1.1m wide, 0.5m deep, total mirror height 1.65m. Physically plausible joints; plain useful old household furniture.",
+      "requestedBounds": null,
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-crt-tv-v01",
+      "taskId": "0c7a9b8a-e534-48e4-a199-65a655f25609",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-crt-tv-v01/model.glb",
+      "sourceSHA256": "1e221f82548540b111a698b08f1bbb30af7f6d790fa550ccd430f0783c56f9e7",
+      "prompt": "A single 1970s wooden CRT television, thick walnut veneer cabinet, deep curved dark glass screen, two rotary knobs, cloth speaker grille, short feet, worn corners. No antenna. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.6399999856948853,
+        0.7614270374178886,
+        0.4750000089406967
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-crt-computer-v01",
+      "taskId": "d5a8933a-fc5b-44ec-b9cd-59b9ec1d3ac7",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-crt-computer-v01/model.glb",
+      "sourceSHA256": "a0a0898b3833de672588c866a18c0ad991e704c7f237de338cb7a34c104eb14a",
+      "prompt": "A complete 1980s beige desktop computer, CRT monitor sitting on horizontal desktop computer case, detached keyboard and wired mouse neatly in front, vent slots, yellowed plastic, dark green glass screen. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.6076664179563522,
+        0.5000000149011612,
+        0.6449999958276749
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-rotary-phone-v01",
+      "taskId": "a41694e0-5689-4a22-a33b-cbfe5ded49d2",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-rotary-phone-v01/model.glb",
+      "sourceSHA256": "95f8f3bd0d3f3ccb4a9480fac3dd86c1b774ca69f1802751273610ff1732aa4c",
+      "prompt": "A vintage black bakelite rotary dial telephone, substantial handset resting correctly on two cradle hooks, circular metal finger dial, curled cable, worn polish and dust. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.3233948349952698,
+        0.1724938541301526,
+        0.31864268332719803
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-wood-radio-v01",
+      "taskId": "92ca9029-8c63-4a71-9abd-1e68ccbaf9bc",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-wood-radio-v01/model.glb",
+      "sourceSHA256": "11be8d9f5d2bcb3c9ceb97807862b0981dc725c4f4f8df7a9b2cc757685fe273",
+      "prompt": "A 1940s walnut radio, woven speaker cloth, fine horizontal tuning scale behind glass, two round bakelite knobs, warm wood grain and aged brass details. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.3400000035762787,
+        0.20000000447034838,
+        0.1510000005364418
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-wall-clock-v01",
+      "taskId": "4b5361da-58d1-4310-adb3-2693b5d60e1f",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-wall-clock-v01/model.glb",
+      "sourceSHA256": "f5846b7f758f481112aa54b2ae76e67b3e9e856ffbfab6998fc69b4f5515bbb1",
+      "prompt": "A round old wooden wall clock, faded ivory dial with twelve dark hour marks, thin black hands, bevelled rim and slightly scratched glass, no readable branding. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.4399999976158142,
+        0.43999999642372134,
+        0.07799999974668026
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-hanging-coat-v01",
+      "taskId": "65c3ee34-64b6-40a6-b481-48d273e208cb",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-hanging-coat-v01/model.glb",
+      "sourceSHA256": "e0a7c6414c093ac21ebe4a9411652bbca5ea6b4dda45e563961645e22c9b9ad7",
+      "prompt": "One empty hanging old wool overcoat on a wooden hanger, believable full sleeves, lapels, seams, buttons, pockets, sagging cloth folds, faded moss grey wool. No person or mannequin. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.8814763426780701,
+        1.2320579122751951,
+        0.12000488862395287
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-empty-hanger-v01",
+      "taskId": "8b124dd8-a110-4b30-98b9-909a554d1805",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-empty-hanger-v01/model.glb",
+      "sourceSHA256": "540489844d5063b323a430d12ffbc2f0f4efd80e0085b1e11da412d9a69e0be8",
+      "prompt": "One old wooden clothes hanger, shaped curved shoulders, slender sturdy metal hook, worn varnish and small wood grain, practical continuous shape. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.3901219815015793,
+        0.24350623413920403,
+        0.01600000075995922
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-felt-hat-v01",
+      "taskId": "f98db4c1-9fa1-4c50-8e67-95d36a996d80",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-felt-hat-v01/model.glb",
+      "sourceSHA256": "0aa06bd0f4cf2e1f66e71c274bf3d925a9546a84618cc39426a7ba3fc70c5062",
+      "prompt": "One worn dark olive felt fedora hat, creased crown, broad curved brim, fabric ribbon, compressed felt texture and dusty edge, empty inside. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.36000001430511475,
+        0.19000000227242708,
+        0.30000001192092896
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-clothes-rack-v01",
+      "taskId": "f73afde0-45ab-4c77-92fa-56761bf7780c",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-clothes-rack-v01/model.glb",
+      "sourceSHA256": "328830f2b9e91ce30e7afeb24946b700579e30b3541b35904cdc66432cc33a4d",
+      "prompt": "A freestanding antique wooden coat rack with one old moss grey wool overcoat hanging from a hook and a felt hat on another hook, distinct garments separated from pole, sturdy four foot base. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        1.2800000309944153,
+        1.9850001148879528,
+        0.5199999809265137
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-shoes-pair-v01",
+      "taskId": "d52c2fd8-01f0-4437-bb6a-b45f01675b68",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-shoes-pair-v01/model.glb",
+      "sourceSHA256": "c3e7332fdd7a641fcbc477699c6c39357944e189252f1f7b92dda2c316c303ee",
+      "prompt": "A pair of worn brown leather lace-up shoes arranged side by side, creased vamp, stitched welt, worn sole edge, slightly loose laces, empty shoes. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.2800000011920929,
+        0.18000000715255737,
+        0.30000000447034836
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-suitcase-v01",
+      "taskId": "db92e5ee-a56c-42fe-9675-cfb13a835ddd",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-suitcase-v01/model.glb",
+      "sourceSHA256": "5f9d73acdecd2fa9cb67fcb3eb3a383903daeb8ea6b5db160093a84c9fd0e668",
+      "prompt": "A closed old brown leather suitcase, two dark leather straps and brass buckles, reinforced corners, top carry handle, stitched edges, scuffed leather. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.5799999833106995,
+        0.46060111885890365,
+        0.21649999916553497
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-cardboard-box-v01",
+      "taskId": "b5af638e-0a11-4701-8d8f-33a08a2d25c9",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-cardboard-box-v01/model.glb",
+      "sourceSHA256": "92df690f4aeef8b9f5e0de4132b2f27ecccfb1a99e8bca5e0fc8b27d0384de77",
+      "prompt": "A single old cardboard storage box, closed folded flaps, faded blank label, paper tape crossing top, crushed corners, realistic corrugated cardboard wear. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.46000000834465027,
+        0.3635000061988829,
+        0.36550000309944153
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-archive-boxes-v01",
+      "taskId": "add75ed9-a308-489d-82f8-f0d243166c99",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-archive-boxes-v01/model.glb",
+      "sourceSHA256": "8011a2bb9bbf843b853a9506e5f45e9d454512501249f78c40c64f099de8e329",
+      "prompt": "A group of five upright archival box files on a low wooden tray, muted grey green and brown linen covers, small blank cream spine labels, worn edges and finger holes. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.4650000035762787,
+        0.319999989271164,
+        0.2770000100135803
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-books-stack-v01",
+      "taskId": "ba57d47b-3864-4b5c-a891-13edbbaaa70e",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-books-stack-v01/model.glb",
+      "sourceSHA256": "f2c72420c25e5ef642f8c41d94242cf3ff00293efb3172214fdc46739903c78a",
+      "prompt": "A small irregular stack of five antique hardcover books, distinct cloth covers, uneven yellowed paper edges, frayed corners, subtle embossed borders, no legible titles. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.35262399911880493,
+        0.19900000048801303,
+        0.28266918659210205
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-paper-wave-v01",
+      "taskId": "c6f9e751-fbdb-47df-adfd-26e5e247d4d4",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-paper-wave-v01/model.glb",
+      "sourceSHA256": "84f7025c582dbbdbdd97c4761413f9843fa1076f86215d779702cdb370ccad4e",
+      "prompt": "A shallow mound of old loose paper documents, curled sheets and staggered corners, yellowed fibres, subtle faded non-legible ink lines, broad continuous paper mass, no flying paper. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.7531981468200684,
+        0.14200000069104135,
+        0.5708913505077362
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-tea-tray-v01",
+      "taskId": "45c1cf64-7a41-4d91-b1a1-f17bc7882008",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-tea-tray-v01/model.glb",
+      "sourceSHA256": "6be73b049d5540e8ba40c2e1510093065e39ea64bb29c43c089fda81777b1beb",
+      "prompt": "An antique wooden tea tray holding two small aged porcelain cups on saucers and a modest teapot, brown tea stains, fine ceramic cracks, separated handles and spout, items resting on tray. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.46000000834465027,
+        0.13300000092387199,
+        0.30000001192092896
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-medicine-tray-v01",
+      "taskId": "a09ca7cb-161b-4694-86eb-97a1b4c70cb1",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-medicine-tray-v01/model.glb",
+      "sourceSHA256": "4f292088c679e652a0807637896ce91c476536234303552ea24f65eb58d61378",
+      "prompt": "A shallow stainless medical tray holding three small brown glass medicine bottles and folded gauze, tarnished metal lip, faded blank paper labels, all items resting on tray. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.41999998688697815,
+        0.19449999270727858,
+        0.2800000011920929
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-washstand-v01",
+      "taskId": "e1d7810f-7684-4edf-b15d-7b6859b28ee3",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-washstand-v01/model.glb",
+      "sourceSHA256": "e28bfa98c9a738e014bb779ca7530e98d29ab9413c41cda5edd1107d8da413ac",
+      "prompt": "An antique wooden washstand with a white enamel wash basin and separate enamel water pitcher side by side, chipped blue rim, open lower shelf, four slender legs. Basin and pitcher must not overlap. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.7440000176429749,
+        1.051000006198883,
+        0.5400000214576721
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-iv-stand-v01",
+      "taskId": "572fba43-d7e0-44ab-810e-83aac7281a9f",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-iv-stand-v01/model.glb",
+      "sourceSHA256": "c8d9f62041598f25d3340ed91dfad4204e42359426b9a7b1ba306dad7f5021c4",
+      "prompt": "A vintage metal IV drip stand, thin upright steel pole with two curved hooks, single translucent IV bag and a short hanging tube, sturdy four leg wheeled base, tarnished steel. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.6299999952316284,
+        1.850000023841858,
+        0.6100000143051147
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-folding-screen-v01",
+      "taskId": "599c27ac-981b-4eeb-bf31-286a616c84a9",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-folding-screen-v01/model.glb",
+      "sourceSHA256": "5b5c5902e17a4aaedd32d82d7d6a64bed5b97c4b4fbd33c7dd5e16c1863162a3",
+      "prompt": "A three-panel hospital privacy screen, aged cream cotton fabric stretched in painted metal frames, hinged panels slightly angled, visible hems, four small feet, cloth stains near bottom. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        1.6013939380645752,
+        1.6960000223480165,
+        0.4937516897916794
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-cradle-v01",
+      "taskId": "24fa8a4e-e5c3-4eb4-a3a9-042966f50686",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-cradle-v01/model.glb",
+      "sourceSHA256": "497a8224cb7dc2fb4eb41b180b499e3c646261445f5e27d569edbb35548e8be8",
+      "prompt": "A vintage wooden baby cradle, curved rocking runners, closely spaced slender rails, softly rumpled faded cream blanket and mattress inside, believable joinery, empty with no baby. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.6439999938011169,
+        0.8866506349295378,
+        1.3694533109664917
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-rocking-horse-v01",
+      "taskId": "f285ed7c-22c7-4e29-adc9-f0470da0e9d8",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-rocking-horse-v01/model.glb",
+      "sourceSHA256": "e463248a06b403049e79b941fb9417afb058fce4ff7a819bb572db1b69d1828c",
+      "prompt": "An old wooden rocking horse toy, carved long head with ears, four slender legs mounted on curved runners, faded burgundy saddle, dark mane, chipped painted wood, clear recognizable horse silhouette. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.3400000035762787,
+        0.9573204913176596,
+        0.9120099544525146
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-toy-train-v01",
+      "taskId": "21185d55-f304-4324-8410-beef4a41c4cb",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-toy-train-v01/model.glb",
+      "sourceSHA256": "160f50e1528f42f136044b0ad9a564b8886557153f11818b2b7191a85c1faea8",
+      "prompt": "A small vintage wooden toy train with locomotive and two attached carriages, rounded wooden wheels, worn muted red and green paint, distinct wheels and chimney. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.17800000309944153,
+        0.19500000309199095,
+        0.6299999952316284
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-hanging-mobile-v01",
+      "taskId": "38de422d-06d2-47b5-9354-fc17e33b7680",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-hanging-mobile-v01/model.glb",
+      "sourceSHA256": "350d3b71d041e4404dc7449af4e3d28135d929f3dd8d5475afc6145bc8bb4a6d",
+      "prompt": "A suspended nursery mobile with two crossed wooden arms and four small faded fabric discs hanging on short cords, central suspension cord, worn linen and wood, no child. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.8240000009536743,
+        0.8220000267028809,
+        0.5899999737739563
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-dried-flowers-v01",
+      "taskId": "e6f6a049-c367-47e5-a6da-b45be4a38459",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-dried-flowers-v01/model.glb",
+      "sourceSHA256": "98e48718dc7d442072909c912beb8d0d6795fbfa79304d430f6cfa025632f0dd",
+      "prompt": "A ceramic vase containing a small bunch of dried flowers, curled brown petals, brittle stems, muted ochre and grey leaves, textured clay vase with mineral stains. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.33741869032382965,
+        0.6570000052452087,
+        0.27646878361701965
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-candlesticks-v01",
+      "taskId": "8bc8361b-6938-4bd5-bc36-3b9e96133150",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-candlesticks-v01/model.glb",
+      "sourceSHA256": "226a0be28162107d4ec6e9919b865d465d1c1ca389218dae0c1a18cfe97e6baa",
+      "prompt": "An arrangement of three old brass candlesticks at different heights with partially burned ivory wax candles, melted drips, tarnished bases, no flames. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.4699999988079071,
+        0.63250001630513,
+        0.17000000178813934
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-portrait-frame-v01",
+      "taskId": "f13d466e-39aa-4247-b0ff-5d21da86790f",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-portrait-frame-v01/model.glb",
+      "sourceSHA256": "185505d8d343384df8b34f320da7071615be64881db28c62beac8e09b00c0da1",
+      "prompt": "A small antique wooden portrait frame containing an aged sepia indistinct human silhouette portrait, plain cream mat, worn carved frame edges, original fictional portrait, no lettering. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.3499999940395355,
+        0.43999999642372134,
+        0.03950000088661909
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-hanging-drape-v01",
+      "taskId": "8da21c23-9814-42c2-abb2-fb1914c2e417",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-hanging-drape-v01/model.glb",
+      "sourceSHA256": "ab0cc26a62bf63f674c0b8004c1245fbe66916cb1494f646816f81547418e392",
+      "prompt": "A single long hanging off-white linen curtain on a short wooden rod, heavy irregular vertical folds, frayed bottom hem, natural textile fibres, no wall or window. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.8999999761581421,
+        2.5339999198913574,
+        0.16249999403953552
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-covered-shape-v01",
+      "taskId": "64086dd1-6d60-425f-a27b-7ba84321569f",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-covered-shape-v01/model.glb",
+      "sourceSHA256": "816007253365924218d507ab7eea0ab62bb50e09b0bf2396d674872ec250bcbb",
+      "prompt": "An ambiguous chair-sized object completely draped in a heavy old white sheet, believable gravity folds, soft creases and dusty cloth hem touching floor, no exposed body or face. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        1.010915756225586,
+        1.350000023841858,
+        1.010915756225586
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-cable-coil-v01",
+      "taskId": "460e8c10-70b9-4f0f-831a-b60864f28b20",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-cable-coil-v01/model.glb",
+      "sourceSHA256": "22d445c5913bcb19a81346352906700c6f249f2b7e4591eeb1d882460dbb3783",
+      "prompt": "A loosely coiled thick old black rubber electrical cable lying on the floor, four irregular loops, distinct cylindrical insulated strands, subtle grey dust and worn rubber, no base. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.6561691761016846,
+        0.07799422275274992,
+        0.6574229598045349
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-cable-wall-v01",
+      "taskId": "ba405852-0b66-4e7b-a9d5-71372cbd5cee",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-cable-wall-v01/model.glb",
+      "sourceSHA256": "7d80760773961fd4ccfd5c8aa15afc4ff0a1171873a5c30552db5ba8f4a73c9f",
+      "prompt": "A long horizontal bundle of six thick black electrical cables, gentle irregular bends, occasional aged cloth ties, distinct insulated strands, continuous wall cable section without wall. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        2.3093996047973633,
+        0.6995285451412201,
+        0.07599144987761974
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-cable-ceiling-v01",
+      "taskId": "208bcbc5-a326-4cda-9142-5f1ee72dea13",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-cable-ceiling-v01/model.glb",
+      "sourceSHA256": "71fb30b2109d670e51071244396501994039945d0688a81a00f796ae5567ac20",
+      "prompt": "A suspended horizontal bundle of five thick black cables with a broad deep hanging arc between two ends, distinct sagging wires, dusty rubber and worn cable ties, no ceiling. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        2.6106367111206055,
+        0.57463607378304,
+        0.20561985671520233
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-cable-curtain-v01",
+      "taskId": "60192140-ee0e-4e19-8a8a-01856234e3e1",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-cable-curtain-v01/model.glb",
+      "sourceSHA256": "d8c5ba5cd42fffe901fe4718201b7c26c654e13baac2b08567e4fddb2be90ede",
+      "prompt": "A curtain of eight long black electrical cables hanging from a short overhead metal rail, uneven cable ends and slight curving, distinct separated insulated cables, no wall or floor. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.9719283878803253,
+        2.206660820869729,
+        0.18342694640159607
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-organic-rib-v01",
+      "taskId": "657bc1ef-a848-4c38-ad88-9c0806bc583a",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-organic-rib-v01/model.glb",
+      "sourceSHA256": "4a679bd5d788df5b04a3c9b797073ce9b70205259b5c4f14b23b8e5189272926",
+      "prompt": "An original non-graphic organic architectural rib strip, vertical dark reddish brown sinewy folds and knotted ridges, aged leathery surface, subtle creases, no gore or blood, no recognizable character. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.3242914527654648,
+        1.7617321442812681,
+        0.20321395248174667
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-tv-console-v01",
+      "taskId": "2a2c740b-e0e5-4987-90a4-f9d3980b73a1",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-tv-console-v01/model.glb",
+      "sourceSHA256": "9189526fd67494d15e86e22550bc8aa55656d8783bdd37ffaeed9c331a19dd9b",
+      "prompt": "A vintage wooden television console: single walnut CRT television resting on a low dark wooden cabinet with an open shelf holding a small old radio. Detailed curved glass, knobs, wood grain, proper separated contact surfaces. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        1.0499999523162842,
+        1.3024270504713058,
+        0.5600000023841858
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-computer-desk-v01",
+      "taskId": "25925581-e46e-4009-be5a-aa4bf8ffc540",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-computer-desk-v01/model.glb",
+      "sourceSHA256": "471df532ebb5fe76b994524543ef2a0836da8cd291653f3799717d3992a30fb4",
+      "prompt": "A vintage wooden computer workstation: beige 1980s CRT monitor and desktop case resting on a plain old wooden desk, keyboard and mouse on front of desk, black rotary phone on right, believable legs and proper tabletop contact. No chair. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        1.2799999713897705,
+        1.259999986886978,
+        0.8199999928474426
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-archive-stack-v01",
+      "taskId": "1f1df2ae-323c-4c34-91a3-87428ceb6c71",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-archive-stack-v01/model.glb",
+      "sourceSHA256": "d9f3d0cc0ff1d10b50a2b90bb6c7385e545fcc17afd86622df138926f7df9094",
+      "prompt": "A low clustered stack of two old cardboard boxes with five upright archival folders on one and a small stack of hardcover books on the other, faded labels, distinct paper and cloth textures, stable contacts. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.9925229549407959,
+        0.685000009536743,
+        0.42111262679100037
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-tea-cart-v01",
+      "taskId": "6488159e-99cc-46d5-a949-6d8d801ff641",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-tea-cart-v01/model.glb",
+      "sourceSHA256": "2ce8d0394f08e5c207c84644786fcce9524795173e897212979dcab6ef4820c9",
+      "prompt": "A small antique wooden tea trolley with four small caster wheels, two shelves, a porcelain teapot and two cups on a top tray, old books on lower shelf, worn dark wood and brass, clear open structure. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.8500000238418579,
+        0.8439999911934137,
+        0.5199999809265137
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-toy-bench-v01",
+      "taskId": "9c5e4a0a-2ca8-4dac-ba72-d12e95313422",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-toy-bench-v01/model.glb",
+      "sourceSHA256": "c23b4cc0809b67c5a9b23f2d51c1fc41b623eaad74baf1a3cd9c93773103273b",
+      "prompt": "A small low wooden nursery table holding a vintage wooden toy train and a short stack of worn illustrated books, chipped muted paint, separate grounded objects with correct tabletop contact. No chair. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.8999999761581421,
+        0.5795000183582306,
+        0.5
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-medical-cart-v01",
+      "taskId": "9a01e656-d1d4-4dfc-9c6e-9209bab8e5ee",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-medical-cart-v01/model.glb",
+      "sourceSHA256": "9aaf6d7094db3efd186ced3dca94f6d9cb504a17b5c422ed092011b7e625d732",
+      "prompt": "A vintage medical trolley with two stainless shelves and four wheels, brown medicine bottles and gauze trays on shelves, chipped cream painted frame, tarnished edges, no medical logos. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        0.8500000238418579,
+        1.0449999701976775,
+        0.550000011920929
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-candle-altar-v01",
+      "taskId": "ea108200-14c9-4f6f-801b-d479a234a13e",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/room-props-tripo-v02/output/prop-candle-altar-v01/model.glb",
+      "sourceSHA256": "69bc3dbb05e4eb231cc6725e7567ca5aebbdb856a72721a8f1ce0ed356244fce",
+      "prompt": "A modest old wooden shrine table with three tarnished brass candlesticks and ivory candles, one small framed sepia silhouette portrait and a ceramic vase of dried flowers, separate correctly resting objects, no flames or text. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+      "requestedBounds": [
+        1.0499999523162842,
+        1.4630000519752504,
+        0.5799999833106995
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-wardrobe-panelled-v03",
+      "taskId": "fe57b2bc-d874-46ed-838d-e280ca26dbc8",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-wardrobe-panelled-v03/model.glb",
+      "sourceSHA256": "76585ead70114681110863513c3540bcd860f844f2fc4b3b85f9b0ac7f312711",
+      "prompt": "A tall antique walnut wardrobe, two panelled closed doors, brass keyholes, shallow carved cornice, worn feet, distinct wood grain. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 2.1,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-wardrobe-mirrored-v03",
+      "taskId": "bc4ae101-55be-4422-af8a-5e9411e8a78b",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-wardrobe-mirrored-v03/model.glb",
+      "sourceSHA256": "1b9cf913d0165a59f07251a02b23825e1dc535aeda51ead4e363eeb8d3de38ef",
+      "prompt": "A narrow antique wardrobe with one tall tarnished mirror door and a side panel door, dark oak, worn brass pulls, dusty old mirror. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 2.1,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-sofa-linen-v03",
+      "taskId": "0a74d061-bff9-4420-a344-217515b7d62a",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-sofa-linen-v03/model.glb",
+      "sourceSHA256": "4b510bee2e45154d8cf959d220726c09a87bd86fffb7bbf1ceaaf4294f7e8acd",
+      "prompt": "A two seat sofa in faded grey olive woven fabric, loose cushions, broad low arms, worn wooden feet, visible seams and depressed seats. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.9,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-armchair-wingback-v03",
+      "taskId": "567fd9de-11fd-4148-b9e8-447566af8b63",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-armchair-wingback-v03/model.glb",
+      "sourceSHA256": "2b8841e693f80bdbc78cc512e7a8cacd650caa7cb8aa092e21d66c7cc2cbeb10",
+      "prompt": "An antique wingback armchair with tall shaped back, faded burgundy floral upholstery, carved walnut legs, worn armrests, empty seat. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.15,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-armchair-wicker-v03",
+      "taskId": "f391067a-6b85-4ce8-8682-7407dd306cb1",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-armchair-wicker-v03/model.glb",
+      "sourceSHA256": "b5fbd958cabfd26b1ec7703d18fcb9325e2bdf2eb13ac3d315081bdde5d0d1fe",
+      "prompt": "A wicker armchair with curved wooden frame, tightly woven rattan seat and back, loose faded linen cushion, frayed weave at edges. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.95,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-chair-spindle-v03",
+      "taskId": "50c14f26-3565-405c-9de7-9d29aa2250e9",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-chair-spindle-v03/model.glb",
+      "sourceSHA256": "1045936ded6fb917d2dd2503aa4af7bc2ef831e0fa03fe72103559975d2a8bf7",
+      "prompt": "An old wooden dining chair with six turned vertical back spindles, shaped seat and four legs with stretchers, worn dark varnish. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.95,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-chair-upholstered-v03",
+      "taskId": "e6d0478a-2428-4c4a-8f4b-60b71b791ec5",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-chair-upholstered-v03/model.glb",
+      "sourceSHA256": "90fa5b359b9aa8f0beff861394f9243dd3dcab92070952b321f5cc5e6e63132a",
+      "prompt": "An antique straight back dining chair with faded muted green upholstery on seat and back, walnut frame, brass nailhead trim, empty seat. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.95,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-rocking-chair-v03",
+      "taskId": "0798a144-d9a7-4eb8-af54-a58d7780d1f1",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-rocking-chair-v03/model.glb",
+      "sourceSHA256": "ece20b373c00b7fe1fe83b721e60357f5c2f41c47f69d5f8a75b13ed1f318532",
+      "prompt": "An antique wooden rocking chair, tall spindle back, broad seat, curved rocking runners, armrests, worn polished wood, empty. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.1,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-writing-bureau-v03",
+      "taskId": "36d9a80b-2b2f-4d2a-b347-0b3b947140c2",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-writing-bureau-v03/model.glb",
+      "sourceSHA256": "30bd12d010763645269b34f441e18df6534664bc7101352e1b16f70d4b88e1aa",
+      "prompt": "An antique drop front writing bureau with opened slanted writing panel, small pigeonholes above three drawers, walnut wood, old brass handles, no loose objects. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.15,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-round-table-v03",
+      "taskId": "3db8e100-cb50-43e6-9036-c9d4adcaad28",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-round-table-v03/model.glb",
+      "sourceSHA256": "31901baeb53bbac4e771a3439950e51787e3723ab6c060d9a32b020b606013c2",
+      "prompt": "A small round antique wooden dining table with thick circular top, turned central pedestal and four splayed feet, scratched polished walnut. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.76,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-sideboard-v03",
+      "taskId": "62ef6194-ff6a-4321-a0aa-4d849ae5fabf",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-sideboard-v03/model.glb",
+      "sourceSHA256": "aaf28c52c9f043af840b01945d3fece616087b288f5db2ae49b2643adc4ca24f",
+      "prompt": "A low broad antique oak sideboard, two drawers above two closed cupboard doors, turned knobs, worn panel edges and feet. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.05,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-bench-wood-v03",
+      "taskId": "5dd7a74f-bc41-410a-b943-29c6a5b99564",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-bench-wood-v03/model.glb",
+      "sourceSHA256": "c158b7a3adad6039211543951a7a0b97ef87ef6b4bde6eba8eedc0f54d419339",
+      "prompt": "A long narrow weathered wooden bench, solid plank seat and two sturdy trestle legs, rubbed edges and old wood grain, no backrest. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.46,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-hospital-bed-v03",
+      "taskId": "160fb648-5d0a-49d9-9b5f-4866f1adc346",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-hospital-bed-v03/model.glb",
+      "sourceSHA256": "709e85dfe1ad8cd729645108bc29090b1baa51027da980c026732081ae0d46d2",
+      "prompt": "A vintage narrow metal hospital bed with simple curved head and foot rails, faded cream mattress and pillow, chipped green paint, rusty joints, no patient. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.9,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-wheelchair-v03",
+      "taskId": "0f28b35d-8f37-4540-abae-e5837dc83527",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-wheelchair-v03/model.glb",
+      "sourceSHA256": "a7fc83e66f0893fb8819515eddd3d12d20236b243690f6905d5bdcdc177b2b10",
+      "prompt": "A vintage folding manual wheelchair with two large spoked rear wheels and small front casters, cracked black leather seat and back, tarnished steel frame, empty. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.0,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-stool-metal-v03",
+      "taskId": "45c2413c-7137-4c4f-bc92-2fec349a4e40",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-stool-metal-v03/model.glb",
+      "sourceSHA256": "5cf336adf4c01ee2c0197b59c0510616f42ac682035c9409c333854087925456",
+      "prompt": "A vintage medical swivel stool, round cracked dark green leather padded seat, adjustable central metal stem and four short wheeled legs. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.55,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-sink-wall-v03",
+      "taskId": "135f5a1e-897c-47a3-990c-d613b820cefa",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-sink-wall-v03/model.glb",
+      "sourceSHA256": "69c7604ebbdec197e59839a1ac42133377c6efdd252cdc74ccb7ea0352655786",
+      "prompt": "A wall mounted old porcelain sink with twin tarnished taps and exposed curved drain pipe, chipped enamel, lime stains, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.65,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-bathtub-v03",
+      "taskId": "079b2b72-a174-485c-9b4c-66660f044b61",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-bathtub-v03/model.glb",
+      "sourceSHA256": "c1a9d6cd018fdb9f54ece6a16db15ea411f4dbce2fee4a201282795c8f1fb05e",
+      "prompt": "A freestanding old enamel bathtub on four claw feet, tarnished taps at one end, cream exterior, blue grey interior stains, empty and dry. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.65,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-toilet-v03",
+      "taskId": "97e80379-2140-4e90-bb40-dd26d79dcc42",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-toilet-v03/model.glb",
+      "sourceSHA256": "20bafeacf54104a46bf646770608755cb4eafdcd1794eaee0dd9260b6dc034a0",
+      "prompt": "An old porcelain toilet with high rectangular ceramic cistern, closed wooden seat, worn enamel and mineral deposits, visible drain base, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.8,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-mop-bucket-v03",
+      "taskId": "707e78ba-46e6-4dbd-9999-49123ccefc6b",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-mop-bucket-v03/model.glb",
+      "sourceSHA256": "64305c0348311df0c12e79d004dd7d1980fd29030a98e012d361e677c82693d1",
+      "prompt": "A battered galvanized bucket with an old wooden handled cotton mop leaning inside, dirty twisted cloth fibres, dull metal, stable grouped object. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.35,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-laundry-basket-v03",
+      "taskId": "058e0b96-cb2e-48d9-b217-c3d3b5e7e047",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-laundry-basket-v03/model.glb",
+      "sourceSHA256": "d15a67e11a38c9b37dc7e738c9f11dc21568214a758c379f638e42879034e498",
+      "prompt": "A woven wicker laundry basket with a few folded and loosely draped faded linen garments, frayed fibres, rounded rim, believable cloth folds. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.55,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-umbrella-stand-v03",
+      "taskId": "5c8e4900-67c1-47e5-b3a3-cbfdad4a5a1c",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-umbrella-stand-v03/model.glb",
+      "sourceSHA256": "a5c1a8b2215236cde28242cda0f6482d3691f5ae4e644d5a3e6a7c58ea7520cd",
+      "prompt": "A narrow ceramic umbrella stand with two folded black umbrellas and curved wooden handles, worn fabric and glazed ceramic, no open umbrella. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.9,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-wall-coat-pegs-v03",
+      "taskId": "a8cd04a4-3ce9-4426-a860-183d94913b5e",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-wall-coat-pegs-v03/model.glb",
+      "sourceSHA256": "5aaf3b5f172c0db008f96d30dd7ffcb849033a441b14cd5f0d206186055b2bcc",
+      "prompt": "An antique horizontal wooden wall peg rail with three brass hooks, a faded wool scarf and a small cloth shoulder bag hanging separately, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.8,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-folded-linen-v03",
+      "taskId": "ff0e9697-dbb4-45ca-bf11-514b9773ed69",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-folded-linen-v03/model.glb",
+      "sourceSHA256": "8495a16dac59aae976cfbb54944314bce59d69643f7132d6bacb62c579021561",
+      "prompt": "A short stack of three folded off-white linen sheets and one faded grey towel, thick layered cloth edges, stitches and wrinkles, subtle stains. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.18,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-pillow-pair-v03",
+      "taskId": "c54aaedb-fa05-4c44-b2b6-99c6598407a8",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-pillow-pair-v03/model.glb",
+      "sourceSHA256": "444b9e1d9847f5aa203d4ad86372685f1660dfa91611d691b04c0375eb877fa5",
+      "prompt": "Two loosely overlapped old pillows with cream cotton pillowcases, soft gravity folds, visible seam piping and faint age stains, no bed. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.24,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-sewing-machine-v03",
+      "taskId": "cfc57ba3-061a-4ea9-98b1-65e5be22dbd4",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-sewing-machine-v03/model.glb",
+      "sourceSHA256": "1f8b32ded68c826bfd75ad2ed618685a393fb601b49beb9709b2b6d8520a8224",
+      "prompt": "An antique black cast iron hand sewing machine on a small wooden base, large side wheel, needle arm, faded gold decorative pinstripes, spool of dark thread. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.35,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-typewriter-v03",
+      "taskId": "df39a4f7-6255-46ee-ae34-5fcf5fc410c6",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-typewriter-v03/model.glb",
+      "sourceSHA256": "292653e844359952b96a8e858c018775067c08a3762575aeb765864865915f1d",
+      "prompt": "An old black mechanical typewriter, round cream keys, exposed metal type bars, carriage roller and one blank yellowed paper sheet, worn enamel and dust. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.28,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-reel-projector-v03",
+      "taskId": "71629c23-90c3-463b-8724-502066277080",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-reel-projector-v03/model.glb",
+      "sourceSHA256": "e7faee3305cf0dd79b6e394d31ebca3590a29267981fcb6925ed75b353bd7448",
+      "prompt": "A vintage metal film projector with two circular reels, lens barrel, vents and switches, dull dark grey housing, worn edges, short stable feet. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.6,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-record-player-v03",
+      "taskId": "c149d93d-ad48-4624-bfdf-370fc31d89c1",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-record-player-v03/model.glb",
+      "sourceSHA256": "8248305daea675277e5e5e76dc8d86bbe4c709d247a753a393a5592928d9a4e3",
+      "prompt": "An old portable record player in an open wooden case, black vinyl record, tonearm and dull brass hinges, faded cloth speaker front, worn edges. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.34,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-electric-fan-v03",
+      "taskId": "e1c31df7-27ed-4e3a-9c18-feae60e5ba87",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-electric-fan-v03/model.glb",
+      "sourceSHA256": "0c26335b23ead669432c7df13dbc35c50393fbcd4a3cf99076f00f4974df5b57",
+      "prompt": "A vintage desktop fan with circular metal wire cage, three broad blades, rounded motor housing and weighted base, chipped muted green paint, no motion blur. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.5,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-wall-fan-v03",
+      "taskId": "6e45bc5e-733b-4e86-b78c-5035552df9a6",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-wall-fan-v03/model.glb",
+      "sourceSHA256": "78165a18291bed03146a983113341e41a79880a4401197d7be9bdc6e9c94a3e0",
+      "prompt": "An old square wall exhaust fan with protective slats and four broad blades, chipped off-white painted metal frame, dust in corners, no wall. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.5,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-key-tray-v03",
+      "taskId": "9a353f25-c9bb-4a0d-b051-f05c63a468d2",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-key-tray-v03/model.glb",
+      "sourceSHA256": "09def3adb8c22a502eaae7c0268486649ea72e7448e4a4627a76dfa6ec027532",
+      "prompt": "A shallow worn brass tray with three separate old metal keys on a key ring, detailed key teeth, dark tarnish and scratches, no writing. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.05,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-medicine-bottles-v03",
+      "taskId": "ed72b7fb-73e2-4897-a1a8-692e72912431",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-medicine-bottles-v03/model.glb",
+      "sourceSHA256": "7f727b411b1da8817a478617fbf9b5f55ae2c6c45c7c58471726cea6d92cc554",
+      "prompt": "Four old amber glass medicine bottles of varying heights with dark screw caps, faded blank paper labels, dusty glass, spaced slightly apart on one low tray. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.2,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-calendar-board-v03",
+      "taskId": "e47e7ef3-eeec-4479-946e-18506c0bc43a",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-calendar-board-v03/model.glb",
+      "sourceSHA256": "0aa116a43556bde729727e23aa22fabc31fa493c04fabab289ec8673e50c8435",
+      "prompt": "An old wall calendar mounted on a narrow wooden board, curled yellowed paper sheets, faint grid and indistinct markings, small rusty top clip, no readable wording. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.65,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-desk-organizer-v03",
+      "taskId": "d4730816-e01d-43d7-aa29-abe83826ee77",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-desk-organizer-v03/model.glb",
+      "sourceSHA256": "2fbd1066e7254ad9ab6af2bebf15b1a7747f317498003f5f358e17722fab97a9",
+      "prompt": "A small dark wooden desk organizer with two open trays, yellowed index cards, three pencils in a cup and a metal paper clip, worn edges, separated objects. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.22,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-clothes-hanging-dress-v03",
+      "taskId": "dbc4f87b-5c83-4f67-8516-d61ae0ca98f5",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-clothes-hanging-dress-v03/model.glb",
+      "sourceSHA256": "4c2d182e5760d6ae5ebd3b1d22fe9bde58cea541b52d815b89573a4695cda547",
+      "prompt": "One empty hanging long muted grey blue cotton dress on a wooden hanger, long sleeves, waist seam, button collar, natural heavy drape, frayed hem, no mannequin. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.3,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-coat-raincoat-v03",
+      "taskId": "bc3d7e21-a105-46a8-a127-d9cf63c884d7",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-coat-raincoat-v03/model.glb",
+      "sourceSHA256": "27814307ab65968d83eb604d77f020c422b1fcc23c1851114314e8eddbf0d44b",
+      "prompt": "One empty old dark yellow rubberized raincoat hanging on a stout hook, hood collapsed, heavy wrinkled fabric, aged buttons and pockets, no body. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.25,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-pram-v03",
+      "taskId": "c5d19451-41a9-4b23-b186-a4c00d1f60ef",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-pram-v03/model.glb",
+      "sourceSHA256": "7d3ce41930174158080d3eb9eae01227d356b36edb55836c5088931a665915db",
+      "prompt": "A vintage baby pram with curved wicker bassinet, folded dark cloth hood, four large spoked wheels and a curved pushing handle, aged cream blanket inside, no child. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.0,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-tricycle-v03",
+      "taskId": "faf61e3c-99f9-4e43-9944-808208b5e176",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-tricycle-v03/model.glb",
+      "sourceSHA256": "f0142440bc5e90b29f0fee91b6b25fa4000f3920089faf164b60c4a1cfb8c62e",
+      "prompt": "A small vintage child tricycle, large front wheel and two rear wheels, curved handlebar, worn saddle, chipped muted red paint, rubber tyres. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.55,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-teddy-bear-v03",
+      "taskId": "cdf0dd04-b9de-4a40-8833-074e489804d2",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-teddy-bear-v03/model.glb",
+      "sourceSHA256": "ae8dd560faf38e42407009bcab749c1c7ae8355ebe9ddbd29e9d411178f384b0",
+      "prompt": "A seated worn teddy bear with brown matted fabric fur, stitched seams, two dull glass eyes, loose cloth bow, old stuffing shape, no blood. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.5,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-toy-blocks-v03",
+      "taskId": "1445df58-c618-4bb8-b896-fc0f5d626e8e",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-toy-blocks-v03/model.glb",
+      "sourceSHA256": "fd79fd773f9ec29494a73ff00005760c09c2bd04de65751a3407e89e12e1ccb3",
+      "prompt": "A small stable pile of twelve wooden toy blocks, cubes and arches, faded muted primary paint, chipped corners and wood grain, no letters. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.2,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-music-box-v03",
+      "taskId": "8c12e756-5f2e-4ac9-8831-fde634a0728f",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-music-box-v03/model.glb",
+      "sourceSHA256": "3cdc9c1426f47eee1e80b0660f5a20a0cd7829fe30c26f0cabe67f0a807e1dae",
+      "prompt": "A small open wooden music box with a delicate generic dancing figurine on a circular turntable, brass hinge and faded velvet lining, worn varnish. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.24,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-incense-burner-v03",
+      "taskId": "b7e8745a-b1c7-4c28-a4f7-9e1aaa144038",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-incense-burner-v03/model.glb",
+      "sourceSHA256": "4a7456bcd07902fe6f4c2ed753c11287f65340e47b328280224c2b3a946cb384",
+      "prompt": "A small antique bronze incense burner with rounded body, three short feet and two small handles, dark patina, dry ash inside, three unlit incense sticks. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.28,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-ritual-bell-v03",
+      "taskId": "449b3985-b538-4091-8070-9c80937a207f",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-ritual-bell-v03/model.glb",
+      "sourceSHA256": "4660b36efb123789a6ee0231e8af0a9432044acb9690192b801e2321f5595731",
+      "prompt": "A small old bronze hand bell with turned wooden handle, dark patina and worn bright edges, simple unmarked body. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.25,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "scene-candelabrum-v03",
+      "taskId": "916b7bbf-6246-4616-b333-efe436fd49b9",
+      "creditsConsumed": 30,
+      "sourceGLBLocal": "art-source/scene-assets-tripo-v03/output/scene-candelabrum-v03/model.glb",
+      "sourceSHA256": "b6a3d664f7109bfec39ba3a6f0428287461a3e6b77907e63078902b8837afd97",
+      "prompt": "An antique five arm brass candelabrum, curving arms, uneven short ivory wax candles with drips, tarnished metal, no flames. Original realistic abandoned-house horror game asset, detailed tactile worn materials, restrained colours, physically plausible construction, complete isolated object. No background scene, no cartoon, no untextured clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.65,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "prop-pendulum-clock-v04",
+      "taskId": "18b31918-a38e-468f-ba00-792f60087f5d",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/quality-repairs-tripo-v04/output/prop-pendulum-clock-v04/model.glb",
+      "sourceSHA256": "e5c0e9b8d634eb186324c1607596e024ce19495db55695d1123182dbbddbd7a4",
+      "prompt": "A real antique grandfather clock, full length freestanding wooden CLOCK. Large clearly visible circular cream clock dial with twelve black Roman numerals and two black hands at the TOP FRONT. Below the dial, a long brass pendulum disk and two brass hanging weights clearly visible behind an OPEN front glass door. Narrow tall walnut case, carved crown, four small feet. CLOCK FACE AND HANDS MUST BE VISIBLE. Detailed photorealistic abandoned-house horror game prop, aged varnished walnut, tarnished brass gears, restrained realistic materials. Complete single object isolated on plain background, front three-quarter view, no scenery. Not a cupboard, not a wardrobe, not a mirror, not a blank panel.",
+      "requestedBounds": [
+        0.4699999988079071,
+        1.799999928474426,
+        0.318000003695488
+      ],
+      "requestedHeight": null,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "theme-award-podium-v05",
+      "taskId": "88f41632-4cbd-41dc-8f7c-91218af857c5",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/theme-specific-tripo-v05/output/theme-award-podium-v05/model.glb",
+      "sourceSHA256": "a6ceed63edcf639312b8b1c38c77cf8b7298965746a0fd055ba90b724c1742ac",
+      "prompt": "A three-level sports award winners podium, three adjacent sturdy wooden platforms, tallest centre, medium left and low right, worn burgundy front panels, dusty brass trim, readable stepped silhouette, freestanding platform only, no people, no trophies. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.65,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "theme-sleeping-person-v05",
+      "taskId": "1e249b78-7998-4bcc-ba0d-ce0c1e7ca519",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/theme-specific-tripo-v05/output/theme-sleeping-person-v05/model.glb",
+      "sourceSHA256": "0558d03288bd42ea6b329b53ddb7197b52578edde98f9549c310f804504f9876",
+      "prompt": "One adult human sleeping peacefully lying HORIZONTALLY on their back, full body from head to toes, eyes fully CLOSED, head resting on a small off-white pillow. Worn cream linen sheet covers the body from chest to feet, with natural folds over knees and shoulders; both hands resting on the sheet over abdomen. Realistic adult proportions. Entire long low lying body and pillow isolated together, NO BED FRAME, NO MATTRESS, no floor, no room, no standing figure, no seated pose. View from above and slightly from the side, head at one short end and feet at the other. Original realistic abandoned-house game prop, tactile linen and natural skin, detailed PBR, muted colours, no cartoon, no injuries, no blood.",
+      "requestedBounds": null,
+      "requestedHeight": 0.3,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "theme-ceremony-lectern-v05",
+      "taskId": "67d92269-1dd2-477a-8536-133382833da2",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/theme-specific-tripo-v05/output/theme-ceremony-lectern-v05/model.glb",
+      "sourceSHA256": "223fce5821c9006cb031f455255c1553f33e5a10cfe48cf1aa962cac2a9ffb1e",
+      "prompt": "A full size old wooden ceremony lectern, sloped reading top, carved rectangular front panel, small gooseneck microphone mounted on top, broad stable foot, dark walnut, rubbed brass corners. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.2,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "theme-trophy-cup-v05",
+      "taskId": "432cfa29-2ac8-4b99-aad0-6e8ffd4e0939",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/theme-specific-tripo-v05/output/theme-trophy-cup-v05/model.glb",
+      "sourceSHA256": "b5abc31e02a6f6d63bf22dfb00256195a3b20eccb2cd448f6eddd2e54c3b5a85",
+      "prompt": "An old large brass trophy cup with two curled side handles, slender stem and square dark wood plinth, tarnished engraved metal, empty inscription plaque, complete trophy. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 0.42,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    },
+    {
+      "id": "theme-ticket-counter-v05",
+      "taskId": "0c8d09be-95e3-4f80-a98c-1f1247b17ff9",
+      "creditsConsumed": 50,
+      "sourceGLBLocal": "art-source/theme-specific-tripo-v05/output/theme-ticket-counter-v05/model.glb",
+      "sourceSHA256": "8ae5728ed09a1c743515c38d45f9c992c5c8977c33a877f94c741cbc0d7cdca9",
+      "prompt": "An abandoned indoor amusement park ticket counter, waist high teal wood cabinet with a tall curved front sill, brass cash slot and small counter ledge, worn faded striped paint, empty staff space behind, no room walls. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "requestedBounds": null,
+      "requestedHeight": 1.25,
+      "notes": "高分辨率源 GLB 本机保留；本提交交付带嵌入贴图的运行 GLB。"
+    }
+  ]
+}

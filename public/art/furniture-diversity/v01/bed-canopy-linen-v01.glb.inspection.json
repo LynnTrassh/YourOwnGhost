@@ -1,0 +1,64 @@
+{
+  "source": "art-source/furniture-diversity-v01/output/bed-canopy-linen-v01/model.glb",
+  "destination": "public/art/furniture-diversity/v01/bed-canopy-linen-v01.glb",
+  "sourceBytes": 1111196,
+  "runtimeBytes": 1111532,
+  "sourceSHA256": "f2fd3db5ed6076e4d35f716e83509b326c6a5beb4258b9fa71e20022104b0ccf",
+  "runtimeSHA256": "cdc944d676526d94a7318d88a451c1374e268de470b9a5f9bb240ab95d558fb7",
+  "triangles": 5612,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3759765625,
+      -0.4990234673023224,
+      -0.4580078423023224
+    ],
+    "max": [
+      0.3759765625,
+      0.4990234673023224,
+      0.4580078125
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.8287670737926344,
+      0,
+      -1.0095890136486427
+    ],
+    "max": [
+      0.8287670737926344,
+      2.2,
+      1.0095890136486427
+    ],
+    "size": [
+      1.6575341475852687,
+      2.2,
+      2.0191780272972855
+    ]
+  },
+  "scale": 2.2043051521133963,
+  "scaleXYZ": [
+    2.2043051521133963,
+    2.2043051521133963,
+    2.2043051521133963
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "matte",
+  "orientationStatus": "three-quarter-reviewed; front -Z confirmed",
+  "pivot": "bottom-centre",
+  "forward": "-Z",
+  "target": {
+    "id": "bed-canopy-linen-v01",
+    "yaw": 0,
+    "axis": "y",
+    "metres": 2.2
+  },
+  "finiteVerticesChecked": 7165,
+  "degenerateTriangles": 0,
+  "preOptimizationSHA256": "cdc944d676526d94a7318d88a451c1374e268de470b9a5f9bb240ab95d558fb7"
+}

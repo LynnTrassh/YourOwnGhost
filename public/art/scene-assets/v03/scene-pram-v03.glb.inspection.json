@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-pram-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-pram-v03.glb",
+  "sourceBytes": 13438000,
+  "runtimeBytes": 4360748,
+  "sourceSHA256": "7d3ce41930174158080d3eb9eae01227d356b36edb55836c5088931a665915db",
+  "runtimeSHA256": "90dae89c4f1fd9097ee495488acadb16a366fc1e8782c16f26242e40a0d98068",
+  "triangles": 17186,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2965646982192993,
+      -0.5,
+      -0.432200163602829
+    ],
+    "max": [
+      0.2965646982192993,
+      0.5,
+      0.432200163602829
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.2965646982192993,
+      0,
+      -0.432200163602829
+    ],
+    "max": [
+      0.2965646982192993,
+      1,
+      0.432200163602829
+    ],
+    "size": [
+      0.5931293964385986,
+      1,
+      0.864400327205658
+    ]
+  },
+  "scale": 1,
+  "scaleXYZ": [
+    1,
+    1,
+    1
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "06efa07306597f55bc1aa464d4a24eacca48b49346948d16dfe4133b0c457662"
+}

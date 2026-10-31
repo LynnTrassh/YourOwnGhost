@@ -1,0 +1,167 @@
+{
+  "version": 4,
+  "models": [
+    {
+      "id": "prop-pendulum-clock-v04",
+      "name": "落地摆钟（重做）",
+      "runtimeUrl": "/art/quality-repairs/v04/prop-pendulum-clock-v04.glb",
+      "width": 0.3275929549902153,
+      "height": 1.8,
+      "depth": 0.48258317025440317,
+      "inspection": {
+        "source": "art-source/quality-repairs-tripo-v04/output/prop-pendulum-clock-v04/model.glb",
+        "destination": "public/art/quality-repairs/v04/prop-pendulum-clock-v04.glb",
+        "sourceBytes": 10427480,
+        "runtimeBytes": 3990148,
+        "sourceSHA256": "e5c0e9b8d634eb186324c1607596e024ce19495db55695d1123182dbbddbd7a4",
+        "runtimeSHA256": "9c848d7ed07c7403c6862a48711df48cbd6f4b526103e275abc9fbc59bab44de",
+        "triangles": 15307,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.0908203125,
+            -0.4990234375,
+            -0.1337890475988388
+          ],
+          "max": [
+            0.0908203125,
+            0.4990234375,
+            0.1337890774011612
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.16379647749510765,
+            0,
+            -0.24129158512720159
+          ],
+          "max": [
+            0.16379647749510765,
+            1.8,
+            0.24129158512720159
+          ],
+          "size": [
+            0.3275929549902153,
+            1.8,
+            0.48258317025440317
+          ]
+        },
+        "scale": 1.803522504892368,
+        "scaleXYZ": [
+          1.803522504892368,
+          1.803522504892368,
+          1.803522504892368
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "2fe595f0158e47962c86f75e6d21a10356070cdf941b6bb003f966e114decec9"
+      },
+      "optimization": {
+        "beforeBytes": 10427816,
+        "runtimeBytes": 3990148,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "bytes": 3990148,
+      "sha256": "9c848d7ed07c7403c6862a48711df48cbd6f4b526103e275abc9fbc59bab44de",
+      "taskId": "18b31918-a38e-468f-ba00-792f60087f5d",
+      "creditsConsumed": 50,
+      "source": "Tripo P1 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "replaces": "prop-pendulum-clock-v01",
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_18b31918-a38e-468f-ba00-792f60087f5d",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": true
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1388195
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1174715
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 635974
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_18b31918-a38e-468f-ba00-792f60087f5d",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "deliveryNote": "仅模型资源；未提交对应游戏接入代码。逐件检查状态见 visualReview。"
+}

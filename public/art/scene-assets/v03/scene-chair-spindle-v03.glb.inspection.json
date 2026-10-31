@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-chair-spindle-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-chair-spindle-v03.glb",
+  "sourceBytes": 9942452,
+  "runtimeBytes": 3503488,
+  "sourceSHA256": "1045936ded6fb917d2dd2503aa4af7bc2ef831e0fa03fe72103559975d2a8bf7",
+  "runtimeSHA256": "de91f52afb1bc9c08a481522ce393a93a1576f4ce30371be540548d0714a96a4",
+  "triangles": 17630,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2759144902229309,
+      -0.5,
+      -0.2724946439266205
+    ],
+    "max": [
+      0.2759144902229309,
+      0.5,
+      0.2724946439266205
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.25886991173028945,
+      0,
+      -0.26211876571178433
+    ],
+    "max": [
+      0.25886991173028945,
+      0.95,
+      0.26211876571178433
+    ],
+    "size": [
+      0.5177398234605789,
+      0.95,
+      0.5242375314235687
+    ]
+  },
+  "scale": 0.95,
+  "scaleXYZ": [
+    0.95,
+    0.95,
+    0.95
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "a965562cda4b8ed8f0c0f2bb325fefcd8d4484fc215762044bd93610f4d4f15a"
+}

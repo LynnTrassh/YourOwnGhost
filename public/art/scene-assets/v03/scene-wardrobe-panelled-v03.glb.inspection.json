@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-wardrobe-panelled-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-wardrobe-panelled-v03.glb",
+  "sourceBytes": 14036056,
+  "runtimeBytes": 4020812,
+  "sourceSHA256": "76585ead70114681110863513c3540bcd860f844f2fc4b3b85f9b0ac7f312711",
+  "runtimeSHA256": "31aee3b10cc31fc07c4b530539b9fd5327365c0d5026125ac7582f426d08899c",
+  "triangles": 16039,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.22375795245170593,
+      -0.5,
+      -0.32354936003685
+    ],
+    "max": [
+      0.22375795245170593,
+      0.5,
+      0.32354936003685
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.679453656077385,
+      0,
+      -0.46989170014858256
+    ],
+    "max": [
+      0.679453656077385,
+      2.1,
+      0.46989170014858256
+    ],
+    "size": [
+      1.35890731215477,
+      2.1,
+      0.9397834002971651
+    ]
+  },
+  "scale": 2.1,
+  "scaleXYZ": [
+    2.1,
+    2.1,
+    2.1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "8b599bbdbbf922be95f6b106c8315f07f1225eff2bc8fc46e508789a9621ef6e"
+}

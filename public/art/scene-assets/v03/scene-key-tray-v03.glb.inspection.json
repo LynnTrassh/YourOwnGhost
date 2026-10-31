@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-key-tray-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-key-tray-v03.glb",
+  "sourceBytes": 9669356,
+  "runtimeBytes": 3397424,
+  "sourceSHA256": "09def3adb8c22a502eaae7c0268486649ea72e7448e4a4627a76dfa6ec027532",
+  "runtimeSHA256": "06d3bbe9a1edcf3be0923506a6861cbf5ec46c7a653112c70c31e14b3c4ab3e3",
+  "triangles": 17336,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4975760877132416,
+      -0.1627342700958252,
+      -0.5
+    ],
+    "max": [
+      0.4975760877132416,
+      0.1627342700958252,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.07643996673537888,
+      0,
+      -0.07681233948227036
+    ],
+    "max": [
+      0.07643996673537888,
+      0.05000000000000001,
+      0.07681233948227036
+    ],
+    "size": [
+      0.15287993347075776,
+      0.05000000000000001,
+      0.1536246789645407
+    ]
+  },
+  "scale": 0.1536246789645407,
+  "scaleXYZ": [
+    0.1536246789645407,
+    0.1536246789645407,
+    0.1536246789645407
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "38094e5d58a21db9f680f1f03cc72c18d066066bdc277b9298c79a66ad318d7a"
+}

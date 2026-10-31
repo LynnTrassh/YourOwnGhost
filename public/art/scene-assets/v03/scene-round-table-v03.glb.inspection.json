@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-round-table-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-round-table-v03.glb",
+  "sourceBytes": 14131172,
+  "runtimeBytes": 3828536,
+  "sourceSHA256": "31901baeb53bbac4e771a3439950e51787e3723ab6c060d9a32b020b606013c2",
+  "runtimeSHA256": "2daa3442b5e267a7f33ff143fede6b2d5487feb8de34ed444c246179ecf0ea9a",
+  "triangles": 17333,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990415871143341,
+      -0.3713008165359497,
+      -0.5
+    ],
+    "max": [
+      0.4990415871143341,
+      0.3713008165359497,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5107336010533288,
+      0,
+      -0.5117144685341785
+    ],
+    "max": [
+      0.5107336010533288,
+      0.76,
+      0.5117144685341785
+    ],
+    "size": [
+      1.0214672021066575,
+      0.76,
+      1.023428937068357
+    ]
+  },
+  "scale": 1.023428937068357,
+  "scaleXYZ": [
+    1.023428937068357,
+    1.023428937068357,
+    1.023428937068357
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "7fc90522e58bcb9d382565765d09f36598af4295b42162663517e17084d99618"
+}

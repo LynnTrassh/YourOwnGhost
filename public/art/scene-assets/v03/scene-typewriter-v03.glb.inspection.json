@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-typewriter-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-typewriter-v03.glb",
+  "sourceBytes": 7941760,
+  "runtimeBytes": 3363168,
+  "sourceSHA256": "292653e844359952b96a8e858c018775067c08a3762575aeb765864865915f1d",
+  "runtimeSHA256": "1ac5288185c9e18dddf5bc55c3ef8df53c172340576b0dbfefc1484fdd9a491f",
+  "triangles": 16911,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.5,
+      -0.32988500595092773,
+      -0.4423322379589081
+    ],
+    "max": [
+      0.5,
+      0.32988500595092773,
+      0.4423322379589081
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.2121951550911438,
+      0,
+      -0.18772151567100645
+    ],
+    "max": [
+      0.2121951550911438,
+      0.28,
+      0.18772151567100645
+    ],
+    "size": [
+      0.4243903101822876,
+      0.28,
+      0.3754430313420129
+    ]
+  },
+  "scale": 0.4243903101822876,
+  "scaleXYZ": [
+    0.4243903101822876,
+    0.4243903101822876,
+    0.4243903101822876
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "64b7a2c949b050065b6d0d79cd56d0279b00dcf4ca0e2670e0c88069f9ceeac9"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-calendar-board-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-calendar-board-v03.glb",
+  "sourceBytes": 9955156,
+  "runtimeBytes": 3298912,
+  "sourceSHA256": "0aa116a43556bde729727e23aa22fabc31fa493c04fabab289ec8673e50c8435",
+  "runtimeSHA256": "206609e820f87e8412e86cfa83d7b31453147c71a8df8234efe7fa0d366cfe86",
+  "triangles": 16676,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.16789628565311432,
+      -0.5,
+      -0.33087003231048584
+    ],
+    "max": [
+      0.16789628565311432,
+      0.5,
+      0.33087003231048584
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.10913258567452432,
+      0,
+      -0.2150655210018158
+    ],
+    "max": [
+      0.10913258567452432,
+      0.65,
+      0.2150655210018158
+    ],
+    "size": [
+      0.21826517134904863,
+      0.65,
+      0.4301310420036316
+    ]
+  },
+  "scale": 0.65,
+  "scaleXYZ": [
+    0.65,
+    0.65,
+    0.65
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "465c89029facc6a5344966c5b2211709b5c1800b91ed663801dabb5e8b920dc9"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-laundry-basket-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-laundry-basket-v03.glb",
+  "sourceBytes": 13474432,
+  "runtimeBytes": 4019588,
+  "sourceSHA256": "d15a67e11a38c9b37dc7e738c9f11dc21568214a758c379f638e42879034e498",
+  "runtimeSHA256": "78ebaf95f5c9e2ced734c20f811abc0c0c92f38500fde0df364d33b9ce1c50a2",
+  "triangles": 17564,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.48512542247772217,
+      -0.4297994077205658,
+      -0.5
+    ],
+    "max": [
+      0.48512542247772217,
+      0.4297994077205658,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.3103994300245984,
+      0,
+      -0.3199166809680568
+    ],
+    "max": [
+      0.3103994300245984,
+      0.55,
+      0.3199166809680568
+    ],
+    "size": [
+      0.6207988600491968,
+      0.55,
+      0.6398333619361136
+    ]
+  },
+  "scale": 0.6398333619361136,
+  "scaleXYZ": [
+    0.6398333619361136,
+    0.6398333619361136,
+    0.6398333619361136
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "73e0ab1a6bb1c58558a247b0b0065280ad03aec29daf980fe7793006e17df7a6"
+}

@@ -1,0 +1,519 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "bed-iron-rail-v01",
+      "name": "铁栏单人床",
+      "runtimeUrl": "/art/furniture-diversity/v01/bed-iron-rail-v01.glb",
+      "taskId": "d3f56bda-c17f-4665-8b85-071624dd81a8",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/furniture-diversity-v01/output/bed-iron-rail-v01/model.glb",
+        "destination": "public/art/furniture-diversity/v01/bed-iron-rail-v01.glb",
+        "sourceBytes": 1050952,
+        "runtimeBytes": 1051344,
+        "sourceSHA256": "3082b658cd1ae7275edcfffc5d6c2ab2b873b2216d740511a4b979a659f7315d",
+        "runtimeSHA256": "2afc160b0fbc6458a30a87fafe6ef56f23e4cf95dae803a0d02ce176ad53a5db",
+        "triangles": 5727,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4990234375,
+            -0.2529296875,
+            -0.2490234375
+          ],
+          "max": [
+            0.4990234375,
+            0.2529296875,
+            0.2490234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.49902152641878667,
+            0,
+            -1
+          ],
+          "max": [
+            0.4990215264187867,
+            1.0136986301369864,
+            1
+          ],
+          "size": [
+            0.9980430528375734,
+            1.0136986301369864,
+            2
+          ]
+        },
+        "scale": 2.003913894324853,
+        "scaleXYZ": [
+          2.003913894324853,
+          2.003913894324853,
+          2.003913894324853
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "matte",
+        "orientationStatus": "three-quarter-reviewed; front -Z confirmed",
+        "pivot": "bottom-centre",
+        "forward": "-Z",
+        "target": {
+          "id": "bed-iron-rail-v01",
+          "yaw": 90,
+          "axis": "z",
+          "metres": 2
+        },
+        "finiteVerticesChecked": 9074,
+        "degenerateTriangles": 0,
+        "preOptimizationSHA256": "2afc160b0fbc6458a30a87fafe6ef56f23e4cf95dae803a0d02ce176ad53a5db"
+      },
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "bytes": 1051344,
+      "sha256": "2afc160b0fbc6458a30a87fafe6ef56f23e4cf95dae803a0d02ce176ad53a5db",
+      "pivot": "bottom-centre",
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "此前已完成模型预览和本地房间检查；本次仅提交资源，共享接入代码另行提交"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "forward": "-Z",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_d3f56bda-c17f-4665-8b85-071624dd81a8",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 0,
+            "roughnessFactor": 1
+          },
+          "normalTexture": null,
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": true
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 724739
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_d3f56bda-c17f-4665-8b85-071624dd81a8",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bed-canopy-linen-v01",
+      "name": "半帘四柱床",
+      "runtimeUrl": "/art/furniture-diversity/v01/bed-canopy-linen-v01.glb",
+      "taskId": "56b6fb40-ff4f-4699-86d7-93f61c831ff5",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/furniture-diversity-v01/output/bed-canopy-linen-v01/model.glb",
+        "destination": "public/art/furniture-diversity/v01/bed-canopy-linen-v01.glb",
+        "sourceBytes": 1111196,
+        "runtimeBytes": 1111532,
+        "sourceSHA256": "f2fd3db5ed6076e4d35f716e83509b326c6a5beb4258b9fa71e20022104b0ccf",
+        "runtimeSHA256": "cdc944d676526d94a7318d88a451c1374e268de470b9a5f9bb240ab95d558fb7",
+        "triangles": 5612,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3759765625,
+            -0.4990234673023224,
+            -0.4580078423023224
+          ],
+          "max": [
+            0.3759765625,
+            0.4990234673023224,
+            0.4580078125
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.8287670737926344,
+            0,
+            -1.0095890136486427
+          ],
+          "max": [
+            0.8287670737926344,
+            2.2,
+            1.0095890136486427
+          ],
+          "size": [
+            1.6575341475852687,
+            2.2,
+            2.0191780272972855
+          ]
+        },
+        "scale": 2.2043051521133963,
+        "scaleXYZ": [
+          2.2043051521133963,
+          2.2043051521133963,
+          2.2043051521133963
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "matte",
+        "orientationStatus": "three-quarter-reviewed; front -Z confirmed",
+        "pivot": "bottom-centre",
+        "forward": "-Z",
+        "target": {
+          "id": "bed-canopy-linen-v01",
+          "yaw": 0,
+          "axis": "y",
+          "metres": 2.2
+        },
+        "finiteVerticesChecked": 7165,
+        "degenerateTriangles": 0,
+        "preOptimizationSHA256": "cdc944d676526d94a7318d88a451c1374e268de470b9a5f9bb240ab95d558fb7"
+      },
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "bytes": 1111532,
+      "sha256": "cdc944d676526d94a7318d88a451c1374e268de470b9a5f9bb240ab95d558fb7",
+      "pivot": "bottom-centre",
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "此前已完成模型预览和本地房间检查；本次仅提交资源，共享接入代码另行提交"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "forward": "-Z",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_56b6fb40-ff4f-4699-86d7-93f61c831ff5",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 0,
+            "roughnessFactor": 1
+          },
+          "normalTexture": null,
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": true
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 846746
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_56b6fb40-ff4f-4699-86d7-93f61c831ff5",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bed-low-divan-v01",
+      "name": "低矮旧软榻",
+      "runtimeUrl": "/art/furniture-diversity/v01/bed-low-divan-v01.glb",
+      "taskId": "301b4b67-2380-463e-b297-53be680d1509",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/furniture-diversity-v01/output/bed-low-divan-v01/model.glb",
+        "destination": "public/art/furniture-diversity/v01/bed-low-divan-v01.glb",
+        "sourceBytes": 1171816,
+        "runtimeBytes": 1172168,
+        "sourceSHA256": "c3d9afa015c86c55c4759ef1e21e23ef445e7192bfd18ade864c1daaf0b2cc9b",
+        "runtimeSHA256": "1e744cac092c59e19c77b7d4c84d486a5e844a473f6223f3976d686f1caadcb3",
+        "triangles": 5826,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2548828125,
+            -0.1357422024011612,
+            -0.4990234375
+          ],
+          "max": [
+            0.2548828125,
+            0.1357421725988388,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.49799412915851266,
+            0,
+            -0.9749999999999999
+          ],
+          "max": [
+            0.49799412915851266,
+            0.5304305283757338,
+            0.9749999999999999
+          ],
+          "size": [
+            0.9959882583170253,
+            0.5304305283757338,
+            1.9499999999999997
+          ]
+        },
+        "scale": 1.9538160469667316,
+        "scaleXYZ": [
+          1.9538160469667316,
+          1.9538160469667316,
+          1.9538160469667316
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "matte",
+        "orientationStatus": "three-quarter-reviewed; front -Z confirmed",
+        "pivot": "bottom-centre",
+        "forward": "-Z",
+        "target": {
+          "id": "bed-low-divan-v01",
+          "yaw": 0,
+          "axis": "z",
+          "metres": 1.95
+        },
+        "finiteVerticesChecked": 6159,
+        "degenerateTriangles": 0,
+        "preOptimizationSHA256": "1e744cac092c59e19c77b7d4c84d486a5e844a473f6223f3976d686f1caadcb3"
+      },
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "bytes": 1172168,
+      "sha256": "1e744cac092c59e19c77b7d4c84d486a5e844a473f6223f3976d686f1caadcb3",
+      "pivot": "bottom-centre",
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "此前已完成模型预览和本地房间检查；本次仅提交资源，共享接入代码另行提交"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "forward": "-Z",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_301b4b67-2380-463e-b297-53be680d1509",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 0,
+            "roughnessFactor": 1
+          },
+          "normalTexture": null,
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": true
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 938281
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_301b4b67-2380-463e-b297-53be680d1509",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vanity-oval-mirror-v01",
+      "name": "椭圆镜梳妆台",
+      "runtimeUrl": "/art/furniture-diversity/v01/vanity-oval-mirror-v01.glb",
+      "taskId": "4241cdf0-7561-45fa-80f2-d49ba0862418",
+      "creditsConsumed": 50,
+      "inspection": {
+        "source": "art-source/furniture-diversity-v01/output/vanity-oval-mirror-v01/model.glb",
+        "destination": "public/art/furniture-diversity/v01/vanity-oval-mirror-v01.glb",
+        "sourceBytes": 905736,
+        "runtimeBytes": 906100,
+        "sourceSHA256": "81926cf438015a030da87376fb26f5b6ebf711b8a54d7d258ce8bbffea1263a0",
+        "runtimeSHA256": "671b173769fca52f96742b7c468196df8059c34ba4e08b077f9d6fe96235d877",
+        "triangles": 5751,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 1,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.1376953125,
+            -0.4990234375,
+            -0.3212890625
+          ],
+          "max": [
+            0.1376953125,
+            0.4990234375,
+            0.3212890625
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.5311643835616439,
+            0,
+            -0.22764187866927596
+          ],
+          "max": [
+            0.5311643835616439,
+            1.65,
+            0.22764187866927596
+          ],
+          "size": [
+            1.0623287671232877,
+            1.65,
+            0.4552837573385519
+          ]
+        },
+        "scale": 1.653228962818004,
+        "scaleXYZ": [
+          1.653228962818004,
+          1.653228962818004,
+          1.653228962818004
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "matte",
+        "orientationStatus": "three-quarter-reviewed; front -Z confirmed",
+        "pivot": "bottom-centre",
+        "forward": "-Z",
+        "target": {
+          "id": "vanity-oval-mirror-v01",
+          "yaw": 90,
+          "axis": "y",
+          "metres": 1.65
+        },
+        "finiteVerticesChecked": 7549,
+        "degenerateTriangles": 0,
+        "preOptimizationSHA256": "671b173769fca52f96742b7c468196df8059c34ba4e08b077f9d6fe96235d877"
+      },
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "bytes": 906100,
+      "sha256": "671b173769fca52f96742b7c468196df8059c34ba4e08b077f9d6fe96235d877",
+      "pivot": "bottom-centre",
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "此前已完成模型预览和本地房间检查；本次仅提交资源，共享接入代码另行提交"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "forward": "-Z",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_4241cdf0-7561-45fa-80f2-d49ba0862418",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 0,
+            "roughnessFactor": 1
+          },
+          "normalTexture": null,
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": true
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 628181
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_4241cdf0-7561-45fa-80f2-d49ba0862418",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "creditsConsumed": 200,
+  "deliveryNote": "仅模型资源；未提交对应游戏接入代码。逐件检查状态见 visualReview。"
+}

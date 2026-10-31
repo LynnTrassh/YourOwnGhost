@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-hospital-bed-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-hospital-bed-v03.glb",
+  "sourceBytes": 11074936,
+  "runtimeBytes": 3916640,
+  "sourceSHA256": "709e85dfe1ad8cd729645108bc29090b1baa51027da980c026732081ae0d46d2",
+  "runtimeSHA256": "784163ed781e2d47a8d9e997d8d7560e59107c1396610a88ff4b5da95f691e33",
+  "triangles": 16792,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.5,
+      -0.2668413519859314,
+      -0.26128193736076355
+    ],
+    "max": [
+      0.5,
+      0.2668413519859314,
+      0.26128193736076355
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.8431976465621513,
+      0,
+      -0.44062462934359053
+    ],
+    "max": [
+      0.8431976465621513,
+      0.9,
+      0.44062462934359053
+    ],
+    "size": [
+      1.6863952931243027,
+      0.9,
+      0.8812492586871811
+    ]
+  },
+  "scale": 1.6863952931243027,
+  "scaleXYZ": [
+    1.6863952931243027,
+    1.6863952931243027,
+    1.6863952931243027
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "d9d3346d8b972303d06f4b5a821dbb49b8b228c637fe8b3897471e680c6c9c5a"
+}

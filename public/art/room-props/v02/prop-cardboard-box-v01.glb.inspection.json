@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-cardboard-box-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-cardboard-box-v01.glb",
+  "sourceBytes": 10839404,
+  "runtimeBytes": 3404384,
+  "sourceSHA256": "92df690f4aeef8b9f5e0de4132b2f27ecccfb1a99e8bca5e0fc8b27d0384de77",
+  "runtimeSHA256": "a623214891e2464f5acf5d970769c8b97f92d64d5af4e5d9a11f39b04e5828c8",
+  "triangles": 16661,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.4482422173023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.4990234375,
+      0.4482422173023224,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.20234040394090522,
+      0,
+      -0.20234040394090522
+    ],
+    "max": [
+      0.20234040394090522,
+      0.3635000061988829,
+      0.20234040394090522
+    ],
+    "size": [
+      0.40468080788181043,
+      0.3635000061988829,
+      0.40468080788181043
+    ]
+  },
+  "scale": 0.40547274684048323,
+  "scaleXYZ": [
+    0.40547274684048323,
+    0.40547274684048323,
+    0.40547274684048323
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "0ac0c1d5f6099b02dd221cf34e965a82f5a40e78c650799c16f64a7b23defe02"
+}

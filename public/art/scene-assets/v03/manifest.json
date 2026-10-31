@@ -1,0 +1,7134 @@
+{
+  "version": 3,
+  "models": [
+    {
+      "id": "scene-wardrobe-panelled-v03",
+      "name": "双门旧衣柜",
+      "theme": "bedroom",
+      "runtimeUrl": "/art/scene-assets/v03/scene-wardrobe-panelled-v03.glb",
+      "width": 1.35890731215477,
+      "height": 2.1,
+      "depth": 0.9397834002971651,
+      "taskId": "fe57b2bc-d874-46ed-838d-e280ca26dbc8",
+      "creditsConsumed": 30,
+      "triangles": 16039,
+      "bytes": 4020812,
+      "sha256": "31aee3b10cc31fc07c4b530539b9fd5327365c0d5026125ac7582f426d08899c",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-wardrobe-panelled-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-wardrobe-panelled-v03.glb",
+        "sourceBytes": 14036056,
+        "runtimeBytes": 4020812,
+        "sourceSHA256": "76585ead70114681110863513c3540bcd860f844f2fc4b3b85f9b0ac7f312711",
+        "runtimeSHA256": "31aee3b10cc31fc07c4b530539b9fd5327365c0d5026125ac7582f426d08899c",
+        "triangles": 16039,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.22375795245170593,
+            -0.5,
+            -0.32354936003685
+          ],
+          "max": [
+            0.22375795245170593,
+            0.5,
+            0.32354936003685
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.679453656077385,
+            0,
+            -0.46989170014858256
+          ],
+          "max": [
+            0.679453656077385,
+            2.1,
+            0.46989170014858256
+          ],
+          "size": [
+            1.35890731215477,
+            2.1,
+            0.9397834002971651
+          ]
+        },
+        "scale": 2.1,
+        "scaleXYZ": [
+          2.1,
+          2.1,
+          2.1
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "8b599bbdbbf922be95f6b106c8315f07f1225eff2bc8fc46e508789a9621ef6e"
+      },
+      "optimization": {
+        "beforeBytes": 14036356,
+        "runtimeBytes": 4020812,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_fe57b2bc-d874-46ed-838d-e280ca26dbc8",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1489963
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1069509
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 940129
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_fe57b2bc-d874-46ed-838d-e280ca26dbc8",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-wardrobe-mirrored-v03",
+      "name": "镜门衣橱",
+      "theme": "bedroom",
+      "runtimeUrl": "/art/scene-assets/v03/scene-wardrobe-mirrored-v03.glb",
+      "width": 1.3410977840423584,
+      "height": 2.1,
+      "depth": 0.8610060006380083,
+      "taskId": "bc4ae101-55be-4422-af8a-5e9411e8a78b",
+      "creditsConsumed": 30,
+      "triangles": 13700,
+      "bytes": 2904004,
+      "sha256": "f06255b20ed0ee9aaed2202bedda646d5b27f5330d0bcb8be49bbaffcb1765f8",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-wardrobe-mirrored-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-wardrobe-mirrored-v03.glb",
+        "sourceBytes": 8579916,
+        "runtimeBytes": 2904004,
+        "sourceSHA256": "1b9cf913d0165a59f07251a02b23825e1dc535aeda51ead4e363eeb8d3de38ef",
+        "runtimeSHA256": "f06255b20ed0ee9aaed2202bedda646d5b27f5330d0bcb8be49bbaffcb1765f8",
+        "triangles": 13700,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.20500142872333527,
+            -0.5,
+            -0.3193089962005615
+          ],
+          "max": [
+            0.20500142872333527,
+            0.5,
+            0.3193089962005615
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.6705488920211792,
+            0,
+            -0.4305030003190041
+          ],
+          "max": [
+            0.6705488920211792,
+            2.1,
+            0.4305030003190041
+          ],
+          "size": [
+            1.3410977840423584,
+            2.1,
+            0.8610060006380083
+          ]
+        },
+        "scale": 2.1,
+        "scaleXYZ": [
+          2.1,
+          2.1,
+          2.1
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "ed529e2da6a76fd91e51a838eb8888fd2a848db5bf0becf4dcd3704efacfd0bf"
+      },
+      "optimization": {
+        "beforeBytes": 8580208,
+        "runtimeBytes": 2904004,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_bc4ae101-55be-4422-af8a-5e9411e8a78b",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 864611
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 930416
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 660359
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_bc4ae101-55be-4422-af8a-5e9411e8a78b",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-sofa-linen-v03",
+      "name": "褪色布沙发",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-sofa-linen-v03.glb",
+      "width": 1.7498082563121522,
+      "height": 0.9,
+      "depth": 0.8927408454151404,
+      "taskId": "0a74d061-bff9-4420-a344-217515b7d62a",
+      "creditsConsumed": 30,
+      "triangles": 17232,
+      "bytes": 3918360,
+      "sha256": "5aa45560575be687945259baf63a29e18c70a85e619b11b6ccd42f9fe7c68eef",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-sofa-linen-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-sofa-linen-v03.glb",
+        "sourceBytes": 15301420,
+        "runtimeBytes": 3918360,
+        "sourceSHA256": "4b510bee2e45154d8cf959d220726c09a87bd86fffb7bbf1ceaaf4294f7e8acd",
+        "runtimeSHA256": "5aa45560575be687945259baf63a29e18c70a85e619b11b6ccd42f9fe7c68eef",
+        "triangles": 17232,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.25509676337242126,
+            -0.25717103481292725,
+            -0.5
+          ],
+          "max": [
+            0.25509676337242126,
+            0.25717103481292725,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.8749041281560761,
+            0,
+            -0.4463704227075702
+          ],
+          "max": [
+            0.8749041281560761,
+            0.9,
+            0.4463704227075702
+          ],
+          "size": [
+            1.7498082563121522,
+            0.9,
+            0.8927408454151404
+          ]
+        },
+        "scale": 1.7498082563121522,
+        "scaleXYZ": [
+          1.7498082563121522,
+          1.7498082563121522,
+          1.7498082563121522
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "e175043dc885ad5b349bc4075813ae51d5492e234b3ed1d75e73cb9263dd826e"
+      },
+      "optimization": {
+        "beforeBytes": 15301772,
+        "runtimeBytes": 3918360,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_0a74d061-bff9-4420-a344-217515b7d62a",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1338435
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 946175
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 1074349
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_0a74d061-bff9-4420-a344-217515b7d62a",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-armchair-wingback-v03",
+      "name": "高背扶手椅",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-armchair-wingback-v03.glb",
+      "width": 0.7169421851634978,
+      "height": 1.15,
+      "depth": 0.6176899701356887,
+      "taskId": "567fd9de-11fd-4148-b9e8-447566af8b63",
+      "creditsConsumed": 30,
+      "triangles": 17278,
+      "bytes": 4695440,
+      "sha256": "5ed2376aa216c5881aac83f46f1f54316ef0fb3fd5b935355ed8dcc2ca68d005",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-armchair-wingback-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-armchair-wingback-v03.glb",
+        "sourceBytes": 16255848,
+        "runtimeBytes": 4695440,
+        "sourceSHA256": "2b8841e693f80bdbc78cc512e7a8cacd650caa7cb8aa092e21d66c7cc2cbeb10",
+        "runtimeSHA256": "5ed2376aa216c5881aac83f46f1f54316ef0fb3fd5b935355ed8dcc2ca68d005",
+        "triangles": 17278,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.26856085658073425,
+            -0.5,
+            -0.3117139935493469
+          ],
+          "max": [
+            0.26856085658073425,
+            0.5,
+            0.3117139935493469
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.3584710925817489,
+            0,
+            -0.30884498506784436
+          ],
+          "max": [
+            0.3584710925817489,
+            1.15,
+            0.30884498506784436
+          ],
+          "size": [
+            0.7169421851634978,
+            1.15,
+            0.6176899701356887
+          ]
+        },
+        "scale": 1.15,
+        "scaleXYZ": [
+          1.15,
+          1.15,
+          1.15
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "f5b98908f0b193855453fbd7b5a7458aa56d4ef3537646b21a11469e90bbbcad"
+      },
+      "optimization": {
+        "beforeBytes": 16256156,
+        "runtimeBytes": 4695440,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_567fd9de-11fd-4148-b9e8-447566af8b63",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1616827
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1457137
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 1067149
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_567fd9de-11fd-4148-b9e8-447566af8b63",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-armchair-wicker-v03",
+      "name": "旧藤椅",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-armchair-wicker-v03.glb",
+      "width": 0.8284422785043716,
+      "height": 0.95,
+      "depth": 0.7823561787605285,
+      "taskId": "f391067a-6b85-4ce8-8682-7407dd306cb1",
+      "creditsConsumed": 30,
+      "triangles": 17654,
+      "bytes": 4321304,
+      "sha256": "b19da91870b42fed2a23ed4580e240df02181c606db42c9cd3e5156ae7cd26a1",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-armchair-wicker-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-armchair-wicker-v03.glb",
+        "sourceBytes": 12684880,
+        "runtimeBytes": 4321304,
+        "sourceSHA256": "b5fbd958cabfd26b1ec7703d18fcb9325e2bdf2eb13ac3d315081bdde5d0d1fe",
+        "runtimeSHA256": "b19da91870b42fed2a23ed4580e240df02181c606db42c9cd3e5156ae7cd26a1",
+        "triangles": 17654,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4117664098739624,
+            -0.5,
+            -0.43602225184440613
+          ],
+          "max": [
+            0.4117664098739624,
+            0.5,
+            0.43602225184440613
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.4142211392521858,
+            0,
+            -0.39117808938026427
+          ],
+          "max": [
+            0.4142211392521858,
+            0.95,
+            0.39117808938026427
+          ],
+          "size": [
+            0.8284422785043716,
+            0.95,
+            0.7823561787605285
+          ]
+        },
+        "scale": 0.95,
+        "scaleXYZ": [
+          0.95,
+          0.95,
+          0.95
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "5bc73965a4e56520c027d1e4cb5ffb55d27f5ed44a3e18ced7a9b6c36a9c6402"
+      },
+      "optimization": {
+        "beforeBytes": 12685188,
+        "runtimeBytes": 4321304,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_f391067a-6b85-4ce8-8682-7407dd306cb1",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1600361
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1118144
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 790102
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_f391067a-6b85-4ce8-8682-7407dd306cb1",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-chair-spindle-v03",
+      "name": "木条背餐椅",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-chair-spindle-v03.glb",
+      "width": 0.5177398234605789,
+      "height": 0.95,
+      "depth": 0.5242375314235687,
+      "taskId": "50c14f26-3565-405c-9de7-9d29aa2250e9",
+      "creditsConsumed": 30,
+      "triangles": 17630,
+      "bytes": 3503488,
+      "sha256": "de91f52afb1bc9c08a481522ce393a93a1576f4ce30371be540548d0714a96a4",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-chair-spindle-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-chair-spindle-v03.glb",
+        "sourceBytes": 9942452,
+        "runtimeBytes": 3503488,
+        "sourceSHA256": "1045936ded6fb917d2dd2503aa4af7bc2ef831e0fa03fe72103559975d2a8bf7",
+        "runtimeSHA256": "de91f52afb1bc9c08a481522ce393a93a1576f4ce30371be540548d0714a96a4",
+        "triangles": 17630,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2759144902229309,
+            -0.5,
+            -0.2724946439266205
+          ],
+          "max": [
+            0.2759144902229309,
+            0.5,
+            0.2724946439266205
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.25886991173028945,
+            0,
+            -0.26211876571178433
+          ],
+          "max": [
+            0.25886991173028945,
+            0.95,
+            0.26211876571178433
+          ],
+          "size": [
+            0.5177398234605789,
+            0.95,
+            0.5242375314235687
+          ]
+        },
+        "scale": 0.95,
+        "scaleXYZ": [
+          0.95,
+          0.95,
+          0.95
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "a965562cda4b8ed8f0c0f2bb325fefcd8d4484fc215762044bd93610f4d4f15a"
+      },
+      "optimization": {
+        "beforeBytes": 9942760,
+        "runtimeBytes": 3503488,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_50c14f26-3565-405c-9de7-9d29aa2250e9",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1243737
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1064840
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 621002
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_50c14f26-3565-405c-9de7-9d29aa2250e9",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-chair-upholstered-v03",
+      "name": "软垫餐椅",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-chair-upholstered-v03.glb",
+      "width": 0.5015579253435135,
+      "height": 0.95,
+      "depth": 0.5947163522243499,
+      "taskId": "e6d0478a-2428-4c4a-8f4b-60b71b791ec5",
+      "creditsConsumed": 30,
+      "triangles": 17224,
+      "bytes": 4234284,
+      "sha256": "4bdd24437abdf9f1c32a56157dd809a82ba610738bfcdb83fbad99bcfa9692cc",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "model-reviewed-pending-integration",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-chair-upholstered-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-chair-upholstered-v03.glb",
+        "sourceBytes": 14690616,
+        "runtimeBytes": 4234284,
+        "sourceSHA256": "90fa5b359b9aa8f0beff861394f9243dd3dcab92070952b321f5cc5e6e63132a",
+        "runtimeSHA256": "4bdd24437abdf9f1c32a56157dd809a82ba610738bfcdb83fbad99bcfa9692cc",
+        "triangles": 17224,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3130086064338684,
+            -0.5,
+            -0.26397785544395447
+          ],
+          "max": [
+            0.3130086064338684,
+            0.5,
+            0.26397785544395447
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.25077896267175676,
+            0,
+            -0.29735817611217497
+          ],
+          "max": [
+            0.25077896267175676,
+            0.95,
+            0.29735817611217497
+          ],
+          "size": [
+            0.5015579253435135,
+            0.95,
+            0.5947163522243499
+          ]
+        },
+        "scale": 0.95,
+        "scaleXYZ": [
+          0.95,
+          0.95,
+          0.95
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "e4f60818814c877787d8e8e396ce01657e47245fd912542cf22eb62b597b8cd5"
+      },
+      "optimization": {
+        "beforeBytes": 14690924,
+        "runtimeBytes": 4234284,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "model-pass",
+        "notes": "真实GLB正面与侧面结构、贴图检查完成；待场景验收"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_e6d0478a-2428-4c4a-8f4b-60b71b791ec5",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1415319
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1291970
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 984933
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_e6d0478a-2428-4c4a-8f4b-60b71b791ec5",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-rocking-chair-v03",
+      "name": "木摇椅",
+      "theme": "nursery",
+      "runtimeUrl": "/art/scene-assets/v03/scene-rocking-chair-v03.glb",
+      "width": 0.791831922531128,
+      "height": 1.1,
+      "depth": 0.7238412976264954,
+      "taskId": "0798a144-d9a7-4eb8-af54-a58d7780d1f1",
+      "creditsConsumed": 30,
+      "triangles": 17158,
+      "bytes": 3827032,
+      "sha256": "677fc187208180298e732afb549c7240e065a29fc1df6b64ef5cdb46b4011b34",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-rocking-chair-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-rocking-chair-v03.glb",
+        "sourceBytes": 11574100,
+        "runtimeBytes": 3827032,
+        "sourceSHA256": "ece20b373c00b7fe1fe83b721e60357f5c2f41c47f69d5f8a75b13ed1f318532",
+        "runtimeSHA256": "677fc187208180298e732afb549c7240e065a29fc1df6b64ef5cdb46b4011b34",
+        "triangles": 17158,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3599236011505127,
+            -0.5,
+            -0.329018771648407
+          ],
+          "max": [
+            0.3599236011505127,
+            0.5,
+            0.329018771648407
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.395915961265564,
+            0,
+            -0.3619206488132477
+          ],
+          "max": [
+            0.395915961265564,
+            1.1,
+            0.3619206488132477
+          ],
+          "size": [
+            0.791831922531128,
+            1.1,
+            0.7238412976264954
+          ]
+        },
+        "scale": 1.1,
+        "scaleXYZ": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "7a740a05fd89dd9d101045ec960fbcfb7e753104e6ddaca84585af025c64b42b"
+      },
+      "optimization": {
+        "beforeBytes": 11574360,
+        "runtimeBytes": 3827032,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_0798a144-d9a7-4eb8-af54-a58d7780d1f1",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1224145
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1219901
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 819875
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_0798a144-d9a7-4eb8-af54-a58d7780d1f1",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-writing-bureau-v03",
+      "name": "翻板写字柜",
+      "theme": "archive",
+      "runtimeUrl": "/art/scene-assets/v03/scene-writing-bureau-v03.glb",
+      "width": 0.7213406026363373,
+      "height": 1.15,
+      "depth": 0.7993410885334015,
+      "taskId": "36d9a80b-2b2f-4d2a-b347-0b3b947140c2",
+      "creditsConsumed": 30,
+      "triangles": 14956,
+      "bytes": 3565740,
+      "sha256": "bcdcae8f3f92ef54719141bef1011291df0e07f4599e79ebd5b45c19a50865be",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-writing-bureau-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-writing-bureau-v03.glb",
+        "sourceBytes": 12144036,
+        "runtimeBytes": 3565740,
+        "sourceSHA256": "30bd12d010763645269b34f441e18df6534664bc7101352e1b16f70d4b88e1aa",
+        "runtimeSHA256": "bcdcae8f3f92ef54719141bef1011291df0e07f4599e79ebd5b45c19a50865be",
+        "triangles": 14956,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.31362634897232056,
+            -0.5,
+            -0.34753960371017456
+          ],
+          "max": [
+            0.31362634897232056,
+            0.5,
+            0.34753960371017456
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.36067030131816863,
+            0,
+            -0.39967054426670073
+          ],
+          "max": [
+            0.36067030131816863,
+            1.15,
+            0.39967054426670073
+          ],
+          "size": [
+            0.7213406026363373,
+            1.15,
+            0.7993410885334015
+          ]
+        },
+        "scale": 1.15,
+        "scaleXYZ": [
+          1.15,
+          1.15,
+          1.15
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "ea4bc23f8e8a76918a0b7b347368ee7de6ec6cd197a5323e2b3a02d7c2a4d89d"
+      },
+      "optimization": {
+        "beforeBytes": 12144304,
+        "runtimeBytes": 3565740,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_36d9a80b-2b2f-4d2a-b347-0b3b947140c2",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1290846
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 978903
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 787970
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_36d9a80b-2b2f-4d2a-b347-0b3b947140c2",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-round-table-v03",
+      "name": "圆形餐桌",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-round-table-v03.glb",
+      "width": 1.0214672021066575,
+      "height": 0.76,
+      "depth": 1.023428937068357,
+      "taskId": "3db8e100-cb50-43e6-9036-c9d4adcaad28",
+      "creditsConsumed": 30,
+      "triangles": 17333,
+      "bytes": 3828536,
+      "sha256": "2daa3442b5e267a7f33ff143fede6b2d5487feb8de34ed444c246179ecf0ea9a",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-round-table-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-round-table-v03.glb",
+        "sourceBytes": 14131172,
+        "runtimeBytes": 3828536,
+        "sourceSHA256": "31901baeb53bbac4e771a3439950e51787e3723ab6c060d9a32b020b606013c2",
+        "runtimeSHA256": "2daa3442b5e267a7f33ff143fede6b2d5487feb8de34ed444c246179ecf0ea9a",
+        "triangles": 17333,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4990415871143341,
+            -0.3713008165359497,
+            -0.5
+          ],
+          "max": [
+            0.4990415871143341,
+            0.3713008165359497,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.5107336010533288,
+            0,
+            -0.5117144685341785
+          ],
+          "max": [
+            0.5107336010533288,
+            0.76,
+            0.5117144685341785
+          ],
+          "size": [
+            1.0214672021066575,
+            0.76,
+            1.023428937068357
+          ]
+        },
+        "scale": 1.023428937068357,
+        "scaleXYZ": [
+          1.023428937068357,
+          1.023428937068357,
+          1.023428937068357
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "7fc90522e58bcb9d382565765d09f36598af4295b42162663517e17084d99618"
+      },
+      "optimization": {
+        "beforeBytes": 14131476,
+        "runtimeBytes": 3828536,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_3db8e100-cb50-43e6-9036-c9d4adcaad28",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1322163
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 929646
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 1030006
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_3db8e100-cb50-43e6-9036-c9d4adcaad28",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-sideboard-v03",
+      "name": "旧餐边柜",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-sideboard-v03.glb",
+      "width": 0.6237534008136711,
+      "height": 1.05,
+      "depth": 1.0740709930028385,
+      "taskId": "62ef6194-ff6a-4321-a0aa-4d849ae5fabf",
+      "creditsConsumed": 30,
+      "triangles": 15995,
+      "bytes": 3594888,
+      "sha256": "244160a2b0f5185b1dd7a34fb45f5f733c7b94e15ffb77e3cb133d82de9607c4",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-sideboard-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-sideboard-v03.glb",
+        "sourceBytes": 12836636,
+        "runtimeBytes": 3594888,
+        "sourceSHA256": "aaf28c52c9f043af840b01945d3fece616087b288f5db2ae49b2643adc4ca24f",
+        "runtimeSHA256": "244160a2b0f5185b1dd7a34fb45f5f733c7b94e15ffb77e3cb133d82de9607c4",
+        "triangles": 15995,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.29036879539489746,
+            -0.4887945055961609,
+            -0.5
+          ],
+          "max": [
+            0.29036879539489746,
+            0.4887945055961609,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.31187670040683557,
+            0,
+            -0.5370354965014192
+          ],
+          "max": [
+            0.31187670040683557,
+            1.05,
+            0.5370354965014192
+          ],
+          "size": [
+            0.6237534008136711,
+            1.05,
+            1.0740709930028385
+          ]
+        },
+        "scale": 1.0740709930028385,
+        "scaleXYZ": [
+          1.0740709930028385,
+          1.0740709930028385,
+          1.0740709930028385
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "e85a733e3bd7b7421b7cad67e838d9a5d4f3fe054bcec6226ded1fb348cdb349"
+      },
+      "optimization": {
+        "beforeBytes": 12836944,
+        "runtimeBytes": 3594888,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_62ef6194-ff6a-4321-a0aa-4d849ae5fabf",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1197906
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 925623
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 926415
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_62ef6194-ff6a-4321-a0aa-4d849ae5fabf",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-bench-wood-v03",
+      "name": "旧长木凳",
+      "theme": "shrine",
+      "runtimeUrl": "/art/scene-assets/v03/scene-bench-wood-v03.glb",
+      "width": 0.46688352171787983,
+      "height": 0.4600000000000001,
+      "depth": 1.348123559952612,
+      "taskId": "5dd7a74f-bc41-410a-b943-29c6a5b99564",
+      "creditsConsumed": 30,
+      "triangles": 16982,
+      "bytes": 3872168,
+      "sha256": "dd35835dba010fca75f89d9780103ea4474da1bf79268e8915714d9fd2cccb84",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-bench-wood-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-bench-wood-v03.glb",
+        "sourceBytes": 12642796,
+        "runtimeBytes": 3872168,
+        "sourceSHA256": "c158b7a3adad6039211543951a7a0b97ef87ef6b4bde6eba8eedc0f54d419339",
+        "runtimeSHA256": "dd35835dba010fca75f89d9780103ea4474da1bf79268e8915714d9fd2cccb84",
+        "triangles": 16982,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.17316050827503204,
+            -0.17060750722885132,
+            -0.5
+          ],
+          "max": [
+            0.17316050827503204,
+            0.17060750722885132,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.23344176085893992,
+            0,
+            -0.674061779976306
+          ],
+          "max": [
+            0.23344176085893992,
+            0.4600000000000001,
+            0.674061779976306
+          ],
+          "size": [
+            0.46688352171787983,
+            0.4600000000000001,
+            1.348123559952612
+          ]
+        },
+        "scale": 1.348123559952612,
+        "scaleXYZ": [
+          1.348123559952612,
+          1.348123559952612,
+          1.348123559952612
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "be6b5b093e00cdd79dbfc593156b7ccc146b68f66c2d6778d9015694296d9940"
+      },
+      "optimization": {
+        "beforeBytes": 12643112,
+        "runtimeBytes": 3872168,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_5dd7a74f-bc41-410a-b943-29c6a5b99564",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1373247
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1007562
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 949393
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_5dd7a74f-bc41-410a-b943-29c6a5b99564",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-hospital-bed-v03",
+      "name": "铁架诊疗床",
+      "theme": "clinic",
+      "runtimeUrl": "/art/scene-assets/v03/scene-hospital-bed-v03.glb",
+      "width": 1.6863952931243027,
+      "height": 0.9,
+      "depth": 0.8812492586871811,
+      "taskId": "160fb648-5d0a-49d9-9b5f-4866f1adc346",
+      "creditsConsumed": 30,
+      "triangles": 16792,
+      "bytes": 3916640,
+      "sha256": "784163ed781e2d47a8d9e997d8d7560e59107c1396610a88ff4b5da95f691e33",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-hospital-bed-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-hospital-bed-v03.glb",
+        "sourceBytes": 11074936,
+        "runtimeBytes": 3916640,
+        "sourceSHA256": "709e85dfe1ad8cd729645108bc29090b1baa51027da980c026732081ae0d46d2",
+        "runtimeSHA256": "784163ed781e2d47a8d9e997d8d7560e59107c1396610a88ff4b5da95f691e33",
+        "triangles": 16792,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.5,
+            -0.2668413519859314,
+            -0.26128193736076355
+          ],
+          "max": [
+            0.5,
+            0.2668413519859314,
+            0.26128193736076355
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.8431976465621513,
+            0,
+            -0.44062462934359053
+          ],
+          "max": [
+            0.8431976465621513,
+            0.9,
+            0.44062462934359053
+          ],
+          "size": [
+            1.6863952931243027,
+            0.9,
+            0.8812492586871811
+          ]
+        },
+        "scale": 1.6863952931243027,
+        "scaleXYZ": [
+          1.6863952931243027,
+          1.6863952931243027,
+          1.6863952931243027
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "d9d3346d8b972303d06f4b5a821dbb49b8b228c637fe8b3897471e680c6c9c5a"
+      },
+      "optimization": {
+        "beforeBytes": 11075244,
+        "runtimeBytes": 3916640,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_160fb648-5d0a-49d9-9b5f-4866f1adc346",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1106786
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1509189
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 706571
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_160fb648-5d0a-49d9-9b5f-4866f1adc346",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-wheelchair-v03",
+      "name": "旧轮椅",
+      "theme": "clinic",
+      "runtimeUrl": "/art/scene-assets/v03/scene-wheelchair-v03.glb",
+      "width": 1.0754338858656076,
+      "height": 0.9999999999999999,
+      "depth": 0.6860267700553626,
+      "taskId": "0f28b35d-8f37-4540-abae-e5837dc83527",
+      "creditsConsumed": 30,
+      "triangles": 16880,
+      "bytes": 3777896,
+      "sha256": "fdfd647e663f2be7675f23c4bd2c639d0728b272f2dba6a3b209a40ae8c20c9f",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-wheelchair-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-wheelchair-v03.glb",
+        "sourceBytes": 9885600,
+        "runtimeBytes": 3777896,
+        "sourceSHA256": "a7fc83e66f0893fb8819515eddd3d12d20236b243690f6905d5bdcdc177b2b10",
+        "runtimeSHA256": "fdfd647e663f2be7675f23c4bd2c639d0728b272f2dba6a3b209a40ae8c20c9f",
+        "triangles": 16880,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.5,
+            -0.46492862701416016,
+            -0.3189534842967987
+          ],
+          "max": [
+            0.5,
+            0.46492862701416016,
+            0.3189534842967987
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.5377169429328038,
+            0,
+            -0.3430133850276813
+          ],
+          "max": [
+            0.5377169429328038,
+            0.9999999999999999,
+            0.3430133850276813
+          ],
+          "size": [
+            1.0754338858656076,
+            0.9999999999999999,
+            0.6860267700553626
+          ]
+        },
+        "scale": 1.0754338858656076,
+        "scaleXYZ": [
+          1.0754338858656076,
+          1.0754338858656076,
+          1.0754338858656076
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "c48b62fafe49c8476a34f61b7d8f769896d678440a0a1966d152301383281e6c"
+      },
+      "optimization": {
+        "beforeBytes": 9885920,
+        "runtimeBytes": 3777896,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_0f28b35d-8f37-4540-abae-e5837dc83527",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1097635
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1498665
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 494371
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_0f28b35d-8f37-4540-abae-e5837dc83527",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-stool-metal-v03",
+      "name": "医用圆凳",
+      "theme": "clinic",
+      "runtimeUrl": "/art/scene-assets/v03/scene-stool-metal-v03.glb",
+      "width": 0.44009484648704533,
+      "height": 0.55,
+      "depth": 0.4547171443700791,
+      "taskId": "45c2413c-7137-4c4f-bc92-2fec349a4e40",
+      "creditsConsumed": 30,
+      "triangles": 17461,
+      "bytes": 4132424,
+      "sha256": "a5e54b82ecc3c2098c5291781e88b1c12f5bcdac5781f720ee4076ffe77d227c",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-stool-metal-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-stool-metal-v03.glb",
+        "sourceBytes": 13612412,
+        "runtimeBytes": 4132424,
+        "sourceSHA256": "5cf336adf4c01ee2c0197b59c0510616f42ac682035c9409c333854087925456",
+        "runtimeSHA256": "a5e54b82ecc3c2098c5291781e88b1c12f5bcdac5781f720ee4076ffe77d227c",
+        "triangles": 17461,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4000862240791321,
+            -0.5,
+            -0.4133792221546173
+          ],
+          "max": [
+            0.4000862240791321,
+            0.5,
+            0.4133792221546173
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.22004742324352267,
+            0,
+            -0.22735857218503955
+          ],
+          "max": [
+            0.22004742324352267,
+            0.55,
+            0.22735857218503955
+          ],
+          "size": [
+            0.44009484648704533,
+            0.55,
+            0.4547171443700791
+          ]
+        },
+        "scale": 0.55,
+        "scaleXYZ": [
+          0.55,
+          0.55,
+          0.55
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "e76818252ca59750b4e8c2332690ba2bbc5eef9067de2fcd165b8730f2c9589c"
+      },
+      "optimization": {
+        "beforeBytes": 13612676,
+        "runtimeBytes": 4132424,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_45c2413c-7137-4c4f-bc92-2fec349a4e40",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1203716
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1385865
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 937869
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_45c2413c-7137-4c4f-bc92-2fec349a4e40",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-sink-wall-v03",
+      "name": "搪瓷壁挂洗手池",
+      "theme": "clinic",
+      "runtimeUrl": "/art/scene-assets/v03/scene-sink-wall-v03.glb",
+      "width": 0.46994979977607726,
+      "height": 0.65,
+      "depth": 0.5245745122432709,
+      "taskId": "135f5a1e-897c-47a3-990c-d613b820cefa",
+      "creditsConsumed": 30,
+      "triangles": 17904,
+      "bytes": 3166804,
+      "sha256": "1a626481e6fdec29c2f2c01be4e21897e30aedf139a7016facc38b7a7467ef98",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-sink-wall-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-sink-wall-v03.glb",
+        "sourceBytes": 10034740,
+        "runtimeBytes": 3166804,
+        "sourceSHA256": "69c7604ebbdec197e59839a1ac42133377c6efdd252cdc74ccb7ea0352655786",
+        "runtimeSHA256": "1a626481e6fdec29c2f2c01be4e21897e30aedf139a7016facc38b7a7467ef98",
+        "triangles": 17904,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3614998459815979,
+            -0.5,
+            -0.4035188555717468
+          ],
+          "max": [
+            0.3614998459815979,
+            0.5,
+            0.4035188555717468
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.23497489988803863,
+            0,
+            -0.26228725612163545
+          ],
+          "max": [
+            0.23497489988803863,
+            0.65,
+            0.26228725612163545
+          ],
+          "size": [
+            0.46994979977607726,
+            0.65,
+            0.5245745122432709
+          ]
+        },
+        "scale": 0.65,
+        "scaleXYZ": [
+          0.65,
+          0.65,
+          0.65
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "dddf00ff55538dfb796eced59a03017310b83fabe537f1c387fbb6f3c23f5237"
+      },
+      "optimization": {
+        "beforeBytes": 10035008,
+        "runtimeBytes": 3166804,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_135f5a1e-897c-47a3-990c-d613b820cefa",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 821638
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1002461
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 774158
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_135f5a1e-897c-47a3-990c-d613b820cefa",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-bathtub-v03",
+      "name": "旧浴缸",
+      "theme": "clinic",
+      "runtimeUrl": "/art/scene-assets/v03/scene-bathtub-v03.glb",
+      "width": 0.8223520880322112,
+      "height": 0.65,
+      "depth": 1.264392917065273,
+      "taskId": "079b2b72-a174-485c-9b4c-66660f044b61",
+      "creditsConsumed": 30,
+      "triangles": 17706,
+      "bytes": 3609080,
+      "sha256": "5107a84f967cd9afd7adb9e920e44cc9ea77d6e01482bd89a4eed3cc350f12e7",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-bathtub-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-bathtub-v03.glb",
+        "sourceBytes": 12991184,
+        "runtimeBytes": 3609080,
+        "sourceSHA256": "c1a9d6cd018fdb9f54ece6a16db15ea411f4dbce2fee4a201282795c8f1fb05e",
+        "runtimeSHA256": "5107a84f967cd9afd7adb9e920e44cc9ea77d6e01482bd89a4eed3cc350f12e7",
+        "triangles": 17706,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.32519641518592834,
+            -0.2570403516292572,
+            -0.5
+          ],
+          "max": [
+            0.32519641518592834,
+            0.2570403516292572,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.4111760440161056,
+            0,
+            -0.6321964585326365
+          ],
+          "max": [
+            0.4111760440161056,
+            0.65,
+            0.6321964585326365
+          ],
+          "size": [
+            0.8223520880322112,
+            0.65,
+            1.264392917065273
+          ]
+        },
+        "scale": 1.264392917065273,
+        "scaleXYZ": [
+          1.264392917065273,
+          1.264392917065273,
+          1.264392917065273
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "555fbfc82dc5c1b42f7ed3c7e1cf9ccef409f55c219d1e1b6f89b421aed6124c"
+      },
+      "optimization": {
+        "beforeBytes": 12991488,
+        "runtimeBytes": 3609080,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_079b2b72-a174-485c-9b4c-66660f044b61",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1148265
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 882808
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 1016856
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_079b2b72-a174-485c-9b4c-66660f044b61",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-toilet-v03",
+      "name": "旧瓷马桶",
+      "theme": "clinic",
+      "runtimeUrl": "/art/scene-assets/v03/scene-toilet-v03.glb",
+      "width": 0.44185757637023926,
+      "height": 0.8,
+      "depth": 0.7148447036743164,
+      "taskId": "97e80379-2140-4e90-bb40-dd26d79dcc42",
+      "creditsConsumed": 30,
+      "triangles": 17400,
+      "bytes": 3371828,
+      "sha256": "26af377a78e0eb34c85707ebdff91c02e4a1655fc205d162f51e11c464de6f29",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-toilet-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-toilet-v03.glb",
+        "sourceBytes": 10087248,
+        "runtimeBytes": 3371828,
+        "sourceSHA256": "20bafeacf54104a46bf646770608755cb4eafdcd1794eaee0dd9260b6dc034a0",
+        "runtimeSHA256": "26af377a78e0eb34c85707ebdff91c02e4a1655fc205d162f51e11c464de6f29",
+        "triangles": 17400,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.27616098523139954,
+            -0.5,
+            -0.44677793979644775
+          ],
+          "max": [
+            0.27616098523139954,
+            0.5,
+            0.44677793979644775
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.22092878818511963,
+            0,
+            -0.3574223518371582
+          ],
+          "max": [
+            0.22092878818511963,
+            0.8,
+            0.3574223518371582
+          ],
+          "size": [
+            0.44185757637023926,
+            0.8,
+            0.7148447036743164
+          ]
+        },
+        "scale": 0.8,
+        "scaleXYZ": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "7711666bf9f4bfaa1f64c43391ca67ecbd170b54c3a11313e4e7494f93fd705f"
+      },
+      "optimization": {
+        "beforeBytes": 10087508,
+        "runtimeBytes": 3371828,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_97e80379-2140-4e90-bb40-dd26d79dcc42",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 772290
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1315248
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 751253
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_97e80379-2140-4e90-bb40-dd26d79dcc42",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-mop-bucket-v03",
+      "name": "拖把与铁桶",
+      "theme": "clinic",
+      "runtimeUrl": "/art/scene-assets/v03/scene-mop-bucket-v03.glb",
+      "width": 0.6692450121045113,
+      "height": 1.35,
+      "depth": 0.9832746505737305,
+      "taskId": "707e78ba-46e6-4dbd-9999-49123ccefc6b",
+      "creditsConsumed": 30,
+      "triangles": 17894,
+      "bytes": 3956072,
+      "sha256": "2091dbe955fb008c3b883406206ad5e19a0f5d9da0240a5ae89bc44d2eeaa230",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-mop-bucket-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-mop-bucket-v03.glb",
+        "sourceBytes": 10820936,
+        "runtimeBytes": 3956072,
+        "sourceSHA256": "64305c0348311df0c12e79d004dd7d1980fd29030a98e012d361e677c82693d1",
+        "runtimeSHA256": "2091dbe955fb008c3b883406206ad5e19a0f5d9da0240a5ae89bc44d2eeaa230",
+        "triangles": 17894,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.24786852300167084,
+            -0.5,
+            -0.36417579650878906
+          ],
+          "max": [
+            0.24786852300167084,
+            0.5,
+            0.36417579650878906
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.33462250605225563,
+            0,
+            -0.49163732528686527
+          ],
+          "max": [
+            0.33462250605225563,
+            1.35,
+            0.49163732528686527
+          ],
+          "size": [
+            0.6692450121045113,
+            1.35,
+            0.9832746505737305
+          ]
+        },
+        "scale": 1.35,
+        "scaleXYZ": [
+          1.35,
+          1.35,
+          1.35
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "3e587b34a981f8565e9a15ef70e8b0ead79de9b81b2f421a6eb6f8f47218bb6f"
+      },
+      "optimization": {
+        "beforeBytes": 10821200,
+        "runtimeBytes": 3956072,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_707e78ba-46e6-4dbd-9999-49123ccefc6b",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1187852
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1443522
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 663657
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_707e78ba-46e6-4dbd-9999-49123ccefc6b",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-laundry-basket-v03",
+      "name": "旧洗衣篮",
+      "theme": "bedroom",
+      "runtimeUrl": "/art/scene-assets/v03/scene-laundry-basket-v03.glb",
+      "width": 0.6207988600491968,
+      "height": 0.55,
+      "depth": 0.6398333619361136,
+      "taskId": "058e0b96-cb2e-48d9-b217-c3d3b5e7e047",
+      "creditsConsumed": 30,
+      "triangles": 17564,
+      "bytes": 4019588,
+      "sha256": "78ebaf95f5c9e2ced734c20f811abc0c0c92f38500fde0df364d33b9ce1c50a2",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-laundry-basket-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-laundry-basket-v03.glb",
+        "sourceBytes": 13474432,
+        "runtimeBytes": 4019588,
+        "sourceSHA256": "d15a67e11a38c9b37dc7e738c9f11dc21568214a758c379f638e42879034e498",
+        "runtimeSHA256": "78ebaf95f5c9e2ced734c20f811abc0c0c92f38500fde0df364d33b9ce1c50a2",
+        "triangles": 17564,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.48512542247772217,
+            -0.4297994077205658,
+            -0.5
+          ],
+          "max": [
+            0.48512542247772217,
+            0.4297994077205658,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.3103994300245984,
+            0,
+            -0.3199166809680568
+          ],
+          "max": [
+            0.3103994300245984,
+            0.55,
+            0.3199166809680568
+          ],
+          "size": [
+            0.6207988600491968,
+            0.55,
+            0.6398333619361136
+          ]
+        },
+        "scale": 0.6398333619361136,
+        "scaleXYZ": [
+          0.6398333619361136,
+          0.6398333619361136,
+          0.6398333619361136
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "73e0ab1a6bb1c58558a247b0b0065280ad03aec29daf980fe7793006e17df7a6"
+      },
+      "optimization": {
+        "beforeBytes": 13474740,
+        "runtimeBytes": 4019588,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_058e0b96-cb2e-48d9-b217-c3d3b5e7e047",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1412332
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1033413
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 907336
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_058e0b96-cb2e-48d9-b217-c3d3b5e7e047",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-umbrella-stand-v03",
+      "name": "伞桶与旧雨伞",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-umbrella-stand-v03.glb",
+      "width": 0.24562369287014008,
+      "height": 0.9,
+      "depth": 0.39808284044265746,
+      "taskId": "5c8e4900-67c1-47e5-b3a3-cbfdad4a5a1c",
+      "creditsConsumed": 30,
+      "triangles": 17572,
+      "bytes": 2768040,
+      "sha256": "df5c7cf75e9fa19854fc83613521b42f27d96dcaa339b284ce8b43d44d19b86a",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-umbrella-stand-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-umbrella-stand-v03.glb",
+        "sourceBytes": 7065284,
+        "runtimeBytes": 2768040,
+        "sourceSHA256": "a5c1a8b2215236cde28242cda0f6482d3691f5ae4e644d5a3e6a7c58ea7520cd",
+        "runtimeSHA256": "df5c7cf75e9fa19854fc83613521b42f27d96dcaa339b284ce8b43d44d19b86a",
+        "triangles": 17572,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.13645760715007782,
+            -0.5,
+            -0.22115713357925415
+          ],
+          "max": [
+            0.13645760715007782,
+            0.5,
+            0.22115713357925415
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.12281184643507004,
+            0,
+            -0.19904142022132873
+          ],
+          "max": [
+            0.12281184643507004,
+            0.9,
+            0.19904142022132873
+          ],
+          "size": [
+            0.24562369287014008,
+            0.9,
+            0.39808284044265746
+          ]
+        },
+        "scale": 0.9,
+        "scaleXYZ": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "aa96933f84856167669bcceb8e7457a12e7da510ccfbb4165a9c9bf3247294b4"
+      },
+      "optimization": {
+        "beforeBytes": 7065548,
+        "runtimeBytes": 2768040,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_5c8e4900-67c1-47e5-b3a3-cbfdad4a5a1c",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 799990
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 852021
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 533612
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_5c8e4900-67c1-47e5-b3a3-cbfdad4a5a1c",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-wall-coat-pegs-v03",
+      "name": "挂钩与围巾组",
+      "theme": "bedroom",
+      "runtimeUrl": "/art/scene-assets/v03/scene-wall-coat-pegs-v03.glb",
+      "width": 0.1716709852218628,
+      "height": 0.8,
+      "depth": 0.6823218822479249,
+      "taskId": "a8cd04a4-3ce9-4426-a860-183d94913b5e",
+      "creditsConsumed": 30,
+      "triangles": 17644,
+      "bytes": 3961728,
+      "sha256": "36dd81bcaa6715e2409087b874d9026ff0a4a94f14e23fb22495fc8465e3e383",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-wall-coat-pegs-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-wall-coat-pegs-v03.glb",
+        "sourceBytes": 12476944,
+        "runtimeBytes": 3961728,
+        "sourceSHA256": "5aaf3b5f172c0db008f96d30dd7ffcb849033a441b14cd5f0d206186055b2bcc",
+        "runtimeSHA256": "36dd81bcaa6715e2409087b874d9026ff0a4a94f14e23fb22495fc8465e3e383",
+        "triangles": 17644,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.10729436576366425,
+            -0.5,
+            -0.426451176404953
+          ],
+          "max": [
+            0.10729436576366425,
+            0.5,
+            0.426451176404953
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.0858354926109314,
+            0,
+            -0.34116094112396245
+          ],
+          "max": [
+            0.0858354926109314,
+            0.8,
+            0.34116094112396245
+          ],
+          "size": [
+            0.1716709852218628,
+            0.8,
+            0.6823218822479249
+          ]
+        },
+        "scale": 0.8,
+        "scaleXYZ": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "101a93689a4759e2c25026f0e9f6fca4eb5ba674c491f45ebba5b0d0e5ef0f98"
+      },
+      "optimization": {
+        "beforeBytes": 12477208,
+        "runtimeBytes": 3961728,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_a8cd04a4-3ce9-4426-a860-183d94913b5e",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1358288
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1183964
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 849995
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_a8cd04a4-3ce9-4426-a860-183d94913b5e",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-folded-linen-v03",
+      "name": "折叠床单组",
+      "theme": "bedroom",
+      "runtimeUrl": "/art/scene-assets/v03/scene-folded-linen-v03.glb",
+      "width": 0.2796587252274979,
+      "height": 0.18000000000000002,
+      "depth": 0.3183525064563418,
+      "taskId": "ff0e9697-dbb4-45ca-bf11-514b9773ed69",
+      "creditsConsumed": 30,
+      "triangles": 16502,
+      "bytes": 4557900,
+      "sha256": "5db7d0a4f91d73b33b7f81f1c96c2cbc32b45025ab6bc642c038e3998eb4bb8d",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-folded-linen-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-folded-linen-v03.glb",
+        "sourceBytes": 16346912,
+        "runtimeBytes": 4557900,
+        "sourceSHA256": "8495a16dac59aae976cfbb54944314bce59d69643f7132d6bacb62c579021561",
+        "runtimeSHA256": "5db7d0a4f91d73b33b7f81f1c96c2cbc32b45025ab6bc642c038e3998eb4bb8d",
+        "triangles": 16502,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4392280876636505,
+            -0.28270548582077026,
+            -0.5
+          ],
+          "max": [
+            0.4392280876636505,
+            0.28270548582077026,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.13982936261374895,
+            0,
+            -0.1591762532281709
+          ],
+          "max": [
+            0.13982936261374895,
+            0.18000000000000002,
+            0.1591762532281709
+          ],
+          "size": [
+            0.2796587252274979,
+            0.18000000000000002,
+            0.3183525064563418
+          ]
+        },
+        "scale": 0.3183525064563418,
+        "scaleXYZ": [
+          0.3183525064563418,
+          0.3183525064563418,
+          0.3183525064563418
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "fb094972f592caaf98c12bdc9ff46bd5ba6bbd4b8f8f203f1ccc7cc265e19165"
+      },
+      "optimization": {
+        "beforeBytes": 16347236,
+        "runtimeBytes": 4557900,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_ff0e9697-dbb4-45ca-bf11-514b9773ed69",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1676968
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1250989
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 1061364
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_ff0e9697-dbb4-45ca-bf11-514b9773ed69",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-pillow-pair-v03",
+      "name": "旧枕头组",
+      "theme": "bedroom",
+      "runtimeUrl": "/art/scene-assets/v03/scene-pillow-pair-v03.glb",
+      "width": 0.34650580392124614,
+      "height": 0.24,
+      "depth": 0.4474763036137996,
+      "taskId": "c54aaedb-fa05-4c44-b2b6-99c6598407a8",
+      "creditsConsumed": 30,
+      "triangles": 17682,
+      "bytes": 3478236,
+      "sha256": "65cd0e16f2ef6e9f249f5493a6c861a0dc7ddffe5394286ca7e023b409b115e8",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-pillow-pair-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-pillow-pair-v03.glb",
+        "sourceBytes": 12365172,
+        "runtimeBytes": 3478236,
+        "sourceSHA256": "444b9e1d9847f5aa203d4ad86372685f1660dfa91611d691b04c0375eb877fa5",
+        "runtimeSHA256": "65cd0e16f2ef6e9f249f5493a6c861a0dc7ddffe5394286ca7e023b409b115e8",
+        "triangles": 17682,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.38717782497406006,
+            -0.26817062497138977,
+            -0.5
+          ],
+          "max": [
+            0.38717782497406006,
+            0.26817062497138977,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.17325290196062307,
+            0,
+            -0.2237381518068998
+          ],
+          "max": [
+            0.17325290196062307,
+            0.24,
+            0.2237381518068998
+          ],
+          "size": [
+            0.34650580392124614,
+            0.24,
+            0.4474763036137996
+          ]
+        },
+        "scale": 0.4474763036137996,
+        "scaleXYZ": [
+          0.4474763036137996,
+          0.4474763036137996,
+          0.4474763036137996
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "a70078be364623f04c9845d1b9f098d604cf27dc9f0b574eaffe1dc10d9285f7"
+      },
+      "optimization": {
+        "beforeBytes": 12365480,
+        "runtimeBytes": 3478236,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_c54aaedb-fa05-4c44-b2b6-99c6598407a8",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1120987
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 953852
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 846082
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_c54aaedb-fa05-4c44-b2b6-99c6598407a8",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-sewing-machine-v03",
+      "name": "老式缝纫机",
+      "theme": "bedroom",
+      "runtimeUrl": "/art/scene-assets/v03/scene-sewing-machine-v03.glb",
+      "width": 0.25959836698823224,
+      "height": 0.35,
+      "depth": 0.4956317661100934,
+      "taskId": "cfc57ba3-061a-4ea9-98b1-65e5be22dbd4",
+      "creditsConsumed": 30,
+      "triangles": 17512,
+      "bytes": 3875888,
+      "sha256": "d4c0d41c99654c710f3c5b1e022c57446c35986d6a03b3b6a8f4ed5e674a0edd",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-sewing-machine-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-sewing-machine-v03.glb",
+        "sourceBytes": 12588140,
+        "runtimeBytes": 3875888,
+        "sourceSHA256": "1f8b32ded68c826bfd75ad2ed618685a393fb601b49beb9709b2b6d8520a8224",
+        "runtimeSHA256": "d4c0d41c99654c710f3c5b1e022c57446c35986d6a03b3b6a8f4ed5e674a0edd",
+        "triangles": 17512,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.261886328458786,
+            -0.3530847132205963,
+            -0.5
+          ],
+          "max": [
+            0.261886328458786,
+            0.3530847132205963,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.12979918349411612,
+            0,
+            -0.2478158830550467
+          ],
+          "max": [
+            0.12979918349411612,
+            0.35,
+            0.2478158830550467
+          ],
+          "size": [
+            0.25959836698823224,
+            0.35,
+            0.4956317661100934
+          ]
+        },
+        "scale": 0.4956317661100934,
+        "scaleXYZ": [
+          0.4956317661100934,
+          0.4956317661100934,
+          0.4956317661100934
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "dec8c6aa47f546893cb61b4b6bdfe7040521e802af7f5b7cd20d6e8b340bac59"
+      },
+      "optimization": {
+        "beforeBytes": 12588448,
+        "runtimeBytes": 3875888,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_cfc57ba3-061a-4ea9-98b1-65e5be22dbd4",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1134973
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1268133
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 907074
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_cfc57ba3-061a-4ea9-98b1-65e5be22dbd4",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-typewriter-v03",
+      "name": "旧打字机",
+      "theme": "archive",
+      "runtimeUrl": "/art/scene-assets/v03/scene-typewriter-v03.glb",
+      "width": 0.4243903101822876,
+      "height": 0.28,
+      "depth": 0.3754430313420129,
+      "taskId": "df39a4f7-6255-46ee-ae34-5fcf5fc410c6",
+      "creditsConsumed": 30,
+      "triangles": 16911,
+      "bytes": 3363168,
+      "sha256": "1ac5288185c9e18dddf5bc55c3ef8df53c172340576b0dbfefc1484fdd9a491f",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-typewriter-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-typewriter-v03.glb",
+        "sourceBytes": 7941760,
+        "runtimeBytes": 3363168,
+        "sourceSHA256": "292653e844359952b96a8e858c018775067c08a3762575aeb765864865915f1d",
+        "runtimeSHA256": "1ac5288185c9e18dddf5bc55c3ef8df53c172340576b0dbfefc1484fdd9a491f",
+        "triangles": 16911,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.5,
+            -0.32988500595092773,
+            -0.4423322379589081
+          ],
+          "max": [
+            0.5,
+            0.32988500595092773,
+            0.4423322379589081
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.2121951550911438,
+            0,
+            -0.18772151567100645
+          ],
+          "max": [
+            0.2121951550911438,
+            0.28,
+            0.18772151567100645
+          ],
+          "size": [
+            0.4243903101822876,
+            0.28,
+            0.3754430313420129
+          ]
+        },
+        "scale": 0.4243903101822876,
+        "scaleXYZ": [
+          0.4243903101822876,
+          0.4243903101822876,
+          0.4243903101822876
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "64b7a2c949b050065b6d0d79cd56d0279b00dcf4ca0e2670e0c88069f9ceeac9"
+      },
+      "optimization": {
+        "beforeBytes": 7942064,
+        "runtimeBytes": 3363168,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_df39a4f7-6255-46ee-ae34-5fcf5fc410c6",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 928008
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1410769
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 366614
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_df39a4f7-6255-46ee-ae34-5fcf5fc410c6",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-reel-projector-v03",
+      "name": "胶片放映机",
+      "theme": "archive",
+      "runtimeUrl": "/art/scene-assets/v03/scene-reel-projector-v03.glb",
+      "width": 0.6271845507060797,
+      "height": 0.6,
+      "depth": 0.29584275491606615,
+      "taskId": "71629c23-90c3-463b-8724-502066277080",
+      "creditsConsumed": 30,
+      "triangles": 16766,
+      "bytes": 3898936,
+      "sha256": "35a617fe9ae2d0fb48330ee681004283d19cb33e0d76152b8f7bbb02e9c07479",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-reel-projector-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-reel-projector-v03.glb",
+        "sourceBytes": 12004240,
+        "runtimeBytes": 3898936,
+        "sourceSHA256": "e7faee3305cf0dd79b6e394d31ebca3590a29267981fcb6925ed75b353bd7448",
+        "runtimeSHA256": "35a617fe9ae2d0fb48330ee681004283d19cb33e0d76152b8f7bbb02e9c07479",
+        "triangles": 16766,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.5,
+            -0.4783281087875366,
+            -0.23584984242916107
+          ],
+          "max": [
+            0.5,
+            0.4783281087875366,
+            0.23584984242916107
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.31359227535303985,
+            0,
+            -0.14792137745803308
+          ],
+          "max": [
+            0.31359227535303985,
+            0.6,
+            0.14792137745803308
+          ],
+          "size": [
+            0.6271845507060797,
+            0.6,
+            0.29584275491606615
+          ]
+        },
+        "scale": 0.6271845507060797,
+        "scaleXYZ": [
+          0.6271845507060797,
+          0.6271845507060797,
+          0.6271845507060797
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "a5dadddd9286b5417f1643f973722190c29a22fda3b04d97bd4ebdeb0d832c58"
+      },
+      "optimization": {
+        "beforeBytes": 12004544,
+        "runtimeBytes": 3898936,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_71629c23-90c3-463b-8724-502066277080",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1186256
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1274669
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 840552
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_71629c23-90c3-463b-8724-502066277080",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-record-player-v03",
+      "name": "木箱唱机",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-record-player-v03.glb",
+      "width": 0.2793289141791615,
+      "height": 0.34,
+      "depth": 0.34696559043784886,
+      "taskId": "c149d93d-ad48-4624-bfdf-370fc31d89c1",
+      "creditsConsumed": 30,
+      "triangles": 17229,
+      "bytes": 3812408,
+      "sha256": "23a51ae587f07b44d887e58b44f2bd5390a65488122c9242939ddbc7891f0ff6",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-record-player-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-record-player-v03.glb",
+        "sourceBytes": 12813200,
+        "runtimeBytes": 3812408,
+        "sourceSHA256": "8248305daea675277e5e5e76dc8d86bbe4c709d247a753a393a5592928d9a4e3",
+        "runtimeSHA256": "23a51ae587f07b44d887e58b44f2bd5390a65488122c9242939ddbc7891f0ff6",
+        "triangles": 17229,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.40253114700317383,
+            -0.4899621307849884,
+            -0.5
+          ],
+          "max": [
+            0.40253114700317383,
+            0.4899621307849884,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.13966445708958075,
+            0,
+            -0.17348279521892443
+          ],
+          "max": [
+            0.13966445708958075,
+            0.34,
+            0.17348279521892443
+          ],
+          "size": [
+            0.2793289141791615,
+            0.34,
+            0.34696559043784886
+          ]
+        },
+        "scale": 0.34696559043784886,
+        "scaleXYZ": [
+          0.34696559043784886,
+          0.34696559043784886,
+          0.34696559043784886
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "d128950b1947d1573ae0ef039b3bc87f71e8456398137a2da7b0ce659925d109"
+      },
+      "optimization": {
+        "beforeBytes": 12813508,
+        "runtimeBytes": 3812408,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_c149d93d-ad48-4624-bfdf-370fc31d89c1",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1268750
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1203759
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 780494
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_c149d93d-ad48-4624-bfdf-370fc31d89c1",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-electric-fan-v03",
+      "name": "老电风扇",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-electric-fan-v03.glb",
+      "width": 0.4233015775680542,
+      "height": 0.5,
+      "depth": 0.4292755722999573,
+      "taskId": "e1c31df7-27ed-4e3a-9c18-feae60e5ba87",
+      "creditsConsumed": 30,
+      "triangles": 16611,
+      "bytes": 3444996,
+      "sha256": "33a6b3497aac8854fd8fc82cff6a24b6f137526dceed2989c8db07afec97953a",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-electric-fan-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-electric-fan-v03.glb",
+        "sourceBytes": 8721784,
+        "runtimeBytes": 3444996,
+        "sourceSHA256": "0c26335b23ead669432c7df13dbc35c50393fbcd4a3cf99076f00f4974df5b57",
+        "runtimeSHA256": "33a6b3497aac8854fd8fc82cff6a24b6f137526dceed2989c8db07afec97953a",
+        "triangles": 16611,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4233015775680542,
+            -0.5,
+            -0.4292755722999573
+          ],
+          "max": [
+            0.4233015775680542,
+            0.5,
+            0.4292755722999573
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.2116507887840271,
+            0,
+            -0.21463778614997864
+          ],
+          "max": [
+            0.2116507887840271,
+            0.5,
+            0.21463778614997864
+          ],
+          "size": [
+            0.4233015775680542,
+            0.5,
+            0.4292755722999573
+          ]
+        },
+        "scale": 0.5,
+        "scaleXYZ": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "c7a812ee6f05d894b1f5699516b4219e836d4c6f8a9814ab22d5ba214faa99a7"
+      },
+      "optimization": {
+        "beforeBytes": 8722044,
+        "runtimeBytes": 3444996,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_e1c31df7-27ed-4e3a-9c18-feae60e5ba87",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1107996
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1273820
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 426048
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_e1c31df7-27ed-4e3a-9c18-feae60e5ba87",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-wall-fan-v03",
+      "name": "旧排风扇",
+      "theme": "clinic",
+      "runtimeUrl": "/art/scene-assets/v03/scene-wall-fan-v03.glb",
+      "width": 0.21423488855361938,
+      "height": 0.5,
+      "depth": 0.4817977249622345,
+      "taskId": "6e45bc5e-733b-4e86-b78c-5035552df9a6",
+      "creditsConsumed": 30,
+      "triangles": 16333,
+      "bytes": 3591264,
+      "sha256": "fd586202ac587029f8dd83d928b3625a240eef3f6f20335e24184c692f65cb42",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-wall-fan-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-wall-fan-v03.glb",
+        "sourceBytes": 10076944,
+        "runtimeBytes": 3591264,
+        "sourceSHA256": "78165a18291bed03146a983113341e41a79880a4401197d7be9bdc6e9c94a3e0",
+        "runtimeSHA256": "fd586202ac587029f8dd83d928b3625a240eef3f6f20335e24184c692f65cb42",
+        "triangles": 16333,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.21423488855361938,
+            -0.5,
+            -0.4817977249622345
+          ],
+          "max": [
+            0.21423488855361938,
+            0.5,
+            0.4817977249622345
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.10711744427680969,
+            0,
+            -0.24089886248111725
+          ],
+          "max": [
+            0.10711744427680969,
+            0.5,
+            0.24089886248111725
+          ],
+          "size": [
+            0.21423488855361938,
+            0.5,
+            0.4817977249622345
+          ]
+        },
+        "scale": 0.5,
+        "scaleXYZ": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "1e7bb3ea6b5754f7cecf6e97d9da1d170223784ea09407d166cd698d50bdfee9"
+      },
+      "optimization": {
+        "beforeBytes": 10077208,
+        "runtimeBytes": 3591264,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_6e45bc5e-733b-4e86-b78c-5035552df9a6",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1073545
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1398661
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 500081
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_6e45bc5e-733b-4e86-b78c-5035552df9a6",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-key-tray-v03",
+      "name": "钥匙与小托盘",
+      "theme": "parlor",
+      "runtimeUrl": "/art/scene-assets/v03/scene-key-tray-v03.glb",
+      "width": 0.15287993347075776,
+      "height": 0.05000000000000001,
+      "depth": 0.1536246789645407,
+      "taskId": "9a353f25-c9bb-4a0d-b051-f05c63a468d2",
+      "creditsConsumed": 30,
+      "triangles": 17336,
+      "bytes": 3397424,
+      "sha256": "06d3bbe9a1edcf3be0923506a6861cbf5ec46c7a653112c70c31e14b3c4ab3e3",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-key-tray-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-key-tray-v03.glb",
+        "sourceBytes": 9669356,
+        "runtimeBytes": 3397424,
+        "sourceSHA256": "09def3adb8c22a502eaae7c0268486649ea72e7448e4a4627a76dfa6ec027532",
+        "runtimeSHA256": "06d3bbe9a1edcf3be0923506a6861cbf5ec46c7a653112c70c31e14b3c4ab3e3",
+        "triangles": 17336,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4975760877132416,
+            -0.1627342700958252,
+            -0.5
+          ],
+          "max": [
+            0.4975760877132416,
+            0.1627342700958252,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.07643996673537888,
+            0,
+            -0.07681233948227036
+          ],
+          "max": [
+            0.07643996673537888,
+            0.05000000000000001,
+            0.07681233948227036
+          ],
+          "size": [
+            0.15287993347075776,
+            0.05000000000000001,
+            0.1536246789645407
+          ]
+        },
+        "scale": 0.1536246789645407,
+        "scaleXYZ": [
+          0.1536246789645407,
+          0.1536246789645407,
+          0.1536246789645407
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "38094e5d58a21db9f680f1f03cc72c18d066066bdc277b9298c79a66ad318d7a"
+      },
+      "optimization": {
+        "beforeBytes": 9669680,
+        "runtimeBytes": 3397424,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_9a353f25-c9bb-4a0d-b051-f05c63a468d2",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 852232
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1386420
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 598175
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_9a353f25-c9bb-4a0d-b051-f05c63a468d2",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-medicine-bottles-v03",
+      "name": "旧药瓶组",
+      "theme": "clinic",
+      "runtimeUrl": "/art/scene-assets/v03/scene-medicine-bottles-v03.glb",
+      "width": 0.13890815555462352,
+      "height": 0.2,
+      "depth": 0.2307124877009701,
+      "taskId": "ed72b7fb-73e2-4897-a1a8-692e72912431",
+      "creditsConsumed": 30,
+      "triangles": 17653,
+      "bytes": 3055676,
+      "sha256": "5f16475070d96aa73b87ad804a17ef37d5563781684a66567db615af60196fbf",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-medicine-bottles-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-medicine-bottles-v03.glb",
+        "sourceBytes": 8268512,
+        "runtimeBytes": 3055676,
+        "sourceSHA256": "7f727b411b1da8817a478617fbf9b5f55ae2c6c45c7c58471726cea6d92cc554",
+        "runtimeSHA256": "5f16475070d96aa73b87ad804a17ef37d5563781684a66567db615af60196fbf",
+        "triangles": 17653,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.30104169249534607,
+            -0.4334399104118347,
+            -0.5
+          ],
+          "max": [
+            0.30104169249534607,
+            0.4334399104118347,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.06945407777731176,
+            0,
+            -0.11535624385048505
+          ],
+          "max": [
+            0.06945407777731176,
+            0.2,
+            0.11535624385048505
+          ],
+          "size": [
+            0.13890815555462352,
+            0.2,
+            0.2307124877009701
+          ]
+        },
+        "scale": 0.2307124877009701,
+        "scaleXYZ": [
+          0.2307124877009701,
+          0.2307124877009701,
+          0.2307124877009701
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "2b8f2d17857e6055e9e491c1647be69dd07123dfcfe250e471013d2d71329791"
+      },
+      "optimization": {
+        "beforeBytes": 8268816,
+        "runtimeBytes": 3055676,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_ed72b7fb-73e2-4897-a1a8-692e72912431",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 800908
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1199057
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 488812
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_ed72b7fb-73e2-4897-a1a8-692e72912431",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-calendar-board-v03",
+      "name": "旧日历板",
+      "theme": "archive",
+      "runtimeUrl": "/art/scene-assets/v03/scene-calendar-board-v03.glb",
+      "width": 0.21826517134904863,
+      "height": 0.65,
+      "depth": 0.4301310420036316,
+      "taskId": "e47e7ef3-eeec-4479-946e-18506c0bc43a",
+      "creditsConsumed": 30,
+      "triangles": 16676,
+      "bytes": 3298912,
+      "sha256": "206609e820f87e8412e86cfa83d7b31453147c71a8df8234efe7fa0d366cfe86",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-calendar-board-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-calendar-board-v03.glb",
+        "sourceBytes": 9955156,
+        "runtimeBytes": 3298912,
+        "sourceSHA256": "0aa116a43556bde729727e23aa22fabc31fa493c04fabab289ec8673e50c8435",
+        "runtimeSHA256": "206609e820f87e8412e86cfa83d7b31453147c71a8df8234efe7fa0d366cfe86",
+        "triangles": 16676,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.16789628565311432,
+            -0.5,
+            -0.33087003231048584
+          ],
+          "max": [
+            0.16789628565311432,
+            0.5,
+            0.33087003231048584
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.10913258567452432,
+            0,
+            -0.2150655210018158
+          ],
+          "max": [
+            0.10913258567452432,
+            0.65,
+            0.2150655210018158
+          ],
+          "size": [
+            0.21826517134904863,
+            0.65,
+            0.4301310420036316
+          ]
+        },
+        "scale": 0.65,
+        "scaleXYZ": [
+          0.65,
+          0.65,
+          0.65
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "465c89029facc6a5344966c5b2211709b5c1800b91ed663801dabb5e8b920dc9"
+      },
+      "optimization": {
+        "beforeBytes": 9955416,
+        "runtimeBytes": 3298912,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_e47e7ef3-eeec-4479-946e-18506c0bc43a",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1076952
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 970076
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 716089
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_e47e7ef3-eeec-4479-946e-18506c0bc43a",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-desk-organizer-v03",
+      "name": "旧文具整理架",
+      "theme": "archive",
+      "runtimeUrl": "/art/scene-assets/v03/scene-desk-organizer-v03.glb",
+      "width": 0.17871028865970945,
+      "height": 0.22,
+      "depth": 0.25172220032271836,
+      "taskId": "d4730816-e01d-43d7-aa29-abe83826ee77",
+      "creditsConsumed": 30,
+      "triangles": 16954,
+      "bytes": 2587944,
+      "sha256": "e1febd82488ea81424627528ef7956bdbeca810aee3ed27789f4204e20b08bf6",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-desk-organizer-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-desk-organizer-v03.glb",
+        "sourceBytes": 6619300,
+        "runtimeBytes": 2587944,
+        "sourceSHA256": "2fbd1066e7254ad9ab6af2bebf15b1a7747f317498003f5f358e17722fab97a9",
+        "runtimeSHA256": "e1febd82488ea81424627528ef7956bdbeca810aee3ed27789f4204e20b08bf6",
+        "triangles": 16954,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.35497522354125977,
+            -0.4369896650314331,
+            -0.5
+          ],
+          "max": [
+            0.35497522354125977,
+            0.4369896650314331,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.08935514432985472,
+            0,
+            -0.12586110016135918
+          ],
+          "max": [
+            0.08935514432985472,
+            0.22,
+            0.12586110016135918
+          ],
+          "size": [
+            0.17871028865970945,
+            0.22,
+            0.25172220032271836
+          ]
+        },
+        "scale": 0.25172220032271836,
+        "scaleXYZ": [
+          0.25172220032271836,
+          0.25172220032271836,
+          0.25172220032271836
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "b4d1aa96903eb90ab204f37baa24229981460e3d61661eb89b90676917c001d3"
+      },
+      "optimization": {
+        "beforeBytes": 6619608,
+        "runtimeBytes": 2587944,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_d4730816-e01d-43d7-aa29-abe83826ee77",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 695619
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 930663
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 400713
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_d4730816-e01d-43d7-aa29-abe83826ee77",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-clothes-hanging-dress-v03",
+      "name": "悬挂旧长裙",
+      "theme": "bedroom",
+      "runtimeUrl": "/art/scene-assets/v03/scene-clothes-hanging-dress-v03.glb",
+      "width": 0.3000909894704819,
+      "height": 1.3,
+      "depth": 0.5814568966627122,
+      "taskId": "dbc4f87b-5c83-4f67-8516-d61ae0ca98f5",
+      "creditsConsumed": 30,
+      "triangles": 17044,
+      "bytes": 3807344,
+      "sha256": "5987d0e0b079a04437f929de7b1a23bbaa3a371af6566c812ee704f4d0d9d044",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-clothes-hanging-dress-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-clothes-hanging-dress-v03.glb",
+        "sourceBytes": 11880388,
+        "runtimeBytes": 3807344,
+        "sourceSHA256": "4c2d182e5760d6ae5ebd3b1d22fe9bde58cea541b52d815b89573a4695cda547",
+        "runtimeSHA256": "5987d0e0b079a04437f929de7b1a23bbaa3a371af6566c812ee704f4d0d9d044",
+        "triangles": 17044,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.11541961133480072,
+            -0.5,
+            -0.22363726794719696
+          ],
+          "max": [
+            0.11541961133480072,
+            0.5,
+            0.22363726794719696
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.15004549473524095,
+            0,
+            -0.2907284483313561
+          ],
+          "max": [
+            0.15004549473524095,
+            1.3,
+            0.2907284483313561
+          ],
+          "size": [
+            0.3000909894704819,
+            1.3,
+            0.5814568966627122
+          ]
+        },
+        "scale": 1.3,
+        "scaleXYZ": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "9ec1e0faca54b28723c1c16ca63be765b4a179eb4d334b2e576079274d37be1e"
+      },
+      "optimization": {
+        "beforeBytes": 11880652,
+        "runtimeBytes": 3807344,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_dbc4f87b-5c83-4f67-8516-d61ae0ca98f5",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1204498
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1195444
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 845436
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_dbc4f87b-5c83-4f67-8516-d61ae0ca98f5",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-coat-raincoat-v03",
+      "name": "悬挂旧雨衣",
+      "theme": "bedroom",
+      "runtimeUrl": "/art/scene-assets/v03/scene-coat-raincoat-v03.glb",
+      "width": 0.3437776118516922,
+      "height": 1.25,
+      "depth": 0.6598364561796188,
+      "taskId": "bc3d7e21-a105-46a8-a127-d9cf63c884d7",
+      "creditsConsumed": 30,
+      "triangles": 17300,
+      "bytes": 3861156,
+      "sha256": "1cb397fd2423139f73a233f64cd2267417a844b0faeb1c2c121671d59c4e1dba",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-coat-raincoat-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-coat-raincoat-v03.glb",
+        "sourceBytes": 11909308,
+        "runtimeBytes": 3861156,
+        "sourceSHA256": "27814307ab65968d83eb604d77f020c422b1fcc23c1851114314e8eddbf0d44b",
+        "runtimeSHA256": "1cb397fd2423139f73a233f64cd2267417a844b0faeb1c2c121671d59c4e1dba",
+        "triangles": 17300,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.13751104474067688,
+            -0.5,
+            -0.26393458247184753
+          ],
+          "max": [
+            0.13751104474067688,
+            0.5,
+            0.26393458247184753
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.1718888059258461,
+            0,
+            -0.3299182280898094
+          ],
+          "max": [
+            0.1718888059258461,
+            1.25,
+            0.3299182280898094
+          ],
+          "size": [
+            0.3437776118516922,
+            1.25,
+            0.6598364561796188
+          ]
+        },
+        "scale": 1.25,
+        "scaleXYZ": [
+          1.25,
+          1.25,
+          1.25
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "8b9fca9692c82cf1d71feaf86d957cf23362748dc3618c6ec31eb9a5f78e7007"
+      },
+      "optimization": {
+        "beforeBytes": 11909576,
+        "runtimeBytes": 3861156,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_bc3d7e21-a105-46a8-a127-d9cf63c884d7",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1270407
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1239600
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 798203
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_bc3d7e21-a105-46a8-a127-d9cf63c884d7",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-pram-v03",
+      "name": "旧婴儿车",
+      "theme": "nursery",
+      "runtimeUrl": "/art/scene-assets/v03/scene-pram-v03.glb",
+      "width": 0.5931293964385986,
+      "height": 1,
+      "depth": 0.864400327205658,
+      "taskId": "c5d19451-41a9-4b23-b186-a4c00d1f60ef",
+      "creditsConsumed": 30,
+      "triangles": 17186,
+      "bytes": 4360748,
+      "sha256": "90dae89c4f1fd9097ee495488acadb16a366fc1e8782c16f26242e40a0d98068",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-pram-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-pram-v03.glb",
+        "sourceBytes": 13438000,
+        "runtimeBytes": 4360748,
+        "sourceSHA256": "7d3ce41930174158080d3eb9eae01227d356b36edb55836c5088931a665915db",
+        "runtimeSHA256": "90dae89c4f1fd9097ee495488acadb16a366fc1e8782c16f26242e40a0d98068",
+        "triangles": 17186,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.2965646982192993,
+            -0.5,
+            -0.432200163602829
+          ],
+          "max": [
+            0.2965646982192993,
+            0.5,
+            0.432200163602829
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.2965646982192993,
+            0,
+            -0.432200163602829
+          ],
+          "max": [
+            0.2965646982192993,
+            1,
+            0.432200163602829
+          ],
+          "size": [
+            0.5931293964385986,
+            1,
+            0.864400327205658
+          ]
+        },
+        "scale": 1,
+        "scaleXYZ": [
+          1,
+          1,
+          1
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "06efa07306597f55bc1aa464d4a24eacca48b49346948d16dfe4133b0c457662"
+      },
+      "optimization": {
+        "beforeBytes": 13438252,
+        "runtimeBytes": 4360748,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_c5d19451-41a9-4b23-b186-a4c00d1f60ef",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1465299
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1439425
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 803056
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_c5d19451-41a9-4b23-b186-a4c00d1f60ef",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-tricycle-v03",
+      "name": "旧三轮车",
+      "theme": "nursery",
+      "runtimeUrl": "/art/scene-assets/v03/scene-tricycle-v03.glb",
+      "width": 0.6842862067975899,
+      "height": 0.55,
+      "depth": 0.35805543853086835,
+      "taskId": "faf61e3c-99f9-4e43-9944-808208b5e176",
+      "creditsConsumed": 30,
+      "triangles": 17488,
+      "bytes": 3599352,
+      "sha256": "397d516b21d4bd0ca79cf6f0e555a5828e7978cef77e75bd46bc6447d355e4ac",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-tricycle-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-tricycle-v03.glb",
+        "sourceBytes": 10286148,
+        "runtimeBytes": 3599352,
+        "sourceSHA256": "f0142440bc5e90b29f0fee91b6b25fa4000f3920089faf164b60c4a1cfb8c62e",
+        "runtimeSHA256": "397d516b21d4bd0ca79cf6f0e555a5828e7978cef77e75bd46bc6447d355e4ac",
+        "triangles": 17488,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.5,
+            -0.40187862515449524,
+            -0.2616269588470459
+          ],
+          "max": [
+            0.5,
+            0.40187862515449524,
+            0.2616269588470459
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.34214310339879495,
+            0,
+            -0.17902771926543418
+          ],
+          "max": [
+            0.34214310339879495,
+            0.55,
+            0.17902771926543418
+          ],
+          "size": [
+            0.6842862067975899,
+            0.55,
+            0.35805543853086835
+          ]
+        },
+        "scale": 0.6842862067975899,
+        "scaleXYZ": [
+          0.6842862067975899,
+          0.6842862067975899,
+          0.6842862067975899
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "f0a2fe8e3954741e9bc6643577beab6ba75a49bd717bb46af53d022478379c83"
+      },
+      "optimization": {
+        "beforeBytes": 10286456,
+        "runtimeBytes": 3599352,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_faf61e3c-99f9-4e43-9944-808208b5e176",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 987443
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1367448
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 673794
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_faf61e3c-99f9-4e43-9944-808208b5e176",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-teddy-bear-v03",
+      "name": "旧泰迪熊",
+      "theme": "nursery",
+      "runtimeUrl": "/art/scene-assets/v03/scene-teddy-bear-v03.glb",
+      "width": 0.38977500796318054,
+      "height": 0.5,
+      "depth": 0.48902615904808044,
+      "taskId": "cdf0dd04-b9de-4a40-8833-074e489804d2",
+      "creditsConsumed": 30,
+      "triangles": 17348,
+      "bytes": 4435524,
+      "sha256": "2ab0bfc887d11c5a8485fe861a3d382f1c151ccaff402e049c7958136b118f38",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-teddy-bear-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-teddy-bear-v03.glb",
+        "sourceBytes": 14646180,
+        "runtimeBytes": 4435524,
+        "sourceSHA256": "ae8dd560faf38e42407009bcab749c1c7ae8355ebe9ddbd29e9d411178f384b0",
+        "runtimeSHA256": "2ab0bfc887d11c5a8485fe861a3d382f1c151ccaff402e049c7958136b118f38",
+        "triangles": 17348,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.38977500796318054,
+            -0.5,
+            -0.48902615904808044
+          ],
+          "max": [
+            0.38977500796318054,
+            0.5,
+            0.48902615904808044
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.19488750398159027,
+            0,
+            -0.24451307952404022
+          ],
+          "max": [
+            0.19488750398159027,
+            0.5,
+            0.24451307952404022
+          ],
+          "size": [
+            0.38977500796318054,
+            0.5,
+            0.48902615904808044
+          ]
+        },
+        "scale": 0.5,
+        "scaleXYZ": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "34c27923e42359638f96a042afc6249ae8f1ee7f8b59b945788b5707d1a41c8f"
+      },
+      "optimization": {
+        "beforeBytes": 14646444,
+        "runtimeBytes": 4435524,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_cdf0dd04-b9de-4a40-8833-074e489804d2",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1466373
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1263912
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 998247
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_cdf0dd04-b9de-4a40-8833-074e489804d2",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-toy-blocks-v03",
+      "name": "旧积木组",
+      "theme": "nursery",
+      "runtimeUrl": "/art/scene-assets/v03/scene-toy-blocks-v03.glb",
+      "width": 0.2155751833702146,
+      "height": 0.2,
+      "depth": 0.22834760844789528,
+      "taskId": "1445df58-c618-4bb8-b896-fc0f5d626e8e",
+      "creditsConsumed": 30,
+      "triangles": 17421,
+      "bytes": 3659308,
+      "sha256": "9c17742762f2e6f3e266a654bcafb77b40421cd84654330a68718ed6f6eb78b1",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-toy-blocks-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-toy-blocks-v03.glb",
+        "sourceBytes": 11924648,
+        "runtimeBytes": 3659308,
+        "sourceSHA256": "fd79fd773f9ec29494a73ff00005760c09c2bd04de65751a3407e89e12e1ccb3",
+        "runtimeSHA256": "9c17742762f2e6f3e266a654bcafb77b40421cd84654330a68718ed6f6eb78b1",
+        "triangles": 17421,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.47203293442726135,
+            -0.43792882561683655,
+            -0.5
+          ],
+          "max": [
+            0.47203293442726135,
+            0.43792882561683655,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.1077875916851073,
+            0,
+            -0.11417380422394764
+          ],
+          "max": [
+            0.1077875916851073,
+            0.2,
+            0.11417380422394764
+          ],
+          "size": [
+            0.2155751833702146,
+            0.2,
+            0.22834760844789528
+          ]
+        },
+        "scale": 0.22834760844789528,
+        "scaleXYZ": [
+          0.22834760844789528,
+          0.22834760844789528,
+          0.22834760844789528
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "c8b2c713761c5e84d112b034a85a21cc00f1b248ac4259c824db55652e23eede"
+      },
+      "optimization": {
+        "beforeBytes": 11924956,
+        "runtimeBytes": 3659308,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_1445df58-c618-4bb8-b896-fc0f5d626e8e",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1149007
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1234989
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 713122
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_1445df58-c618-4bb8-b896-fc0f5d626e8e",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-music-box-v03",
+      "name": "旧八音盒",
+      "theme": "nursery",
+      "runtimeUrl": "/art/scene-assets/v03/scene-music-box-v03.glb",
+      "width": 0.20859975814819334,
+      "height": 0.24,
+      "depth": 0.18871955394744871,
+      "taskId": "8c12e756-5f2e-4ac9-8831-fde634a0728f",
+      "creditsConsumed": 30,
+      "triangles": 16959,
+      "bytes": 3207492,
+      "sha256": "1dcde7b8c82bcb80d5d4487c52e55da49da3fd1026eb3624ba57475a3ca79748",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-music-box-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-music-box-v03.glb",
+        "sourceBytes": 9373940,
+        "runtimeBytes": 3207492,
+        "sourceSHA256": "3cdc9c1426f47eee1e80b0660f5a20a0cd7829fe30c26f0cabe67f0a807e1dae",
+        "runtimeSHA256": "1dcde7b8c82bcb80d5d4487c52e55da49da3fd1026eb3624ba57475a3ca79748",
+        "triangles": 16959,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.43458282947540283,
+            -0.5,
+            -0.3931657373905182
+          ],
+          "max": [
+            0.43458282947540283,
+            0.5,
+            0.3931657373905182
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.10429987907409667,
+            0,
+            -0.09435977697372436
+          ],
+          "max": [
+            0.10429987907409667,
+            0.24,
+            0.09435977697372436
+          ],
+          "size": [
+            0.20859975814819334,
+            0.24,
+            0.18871955394744871
+          ]
+        },
+        "scale": 0.24,
+        "scaleXYZ": [
+          0.24,
+          0.24,
+          0.24
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "8086ad7f0166530356333705a864fc7dabc695b7f5935ccf6d221c46991c3378"
+      },
+      "optimization": {
+        "beforeBytes": 9374204,
+        "runtimeBytes": 3207492,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_8c12e756-5f2e-4ac9-8831-fde634a0728f",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 931111
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1079877
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 631761
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_8c12e756-5f2e-4ac9-8831-fde634a0728f",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-incense-burner-v03",
+      "name": "旧香炉",
+      "theme": "shrine",
+      "runtimeUrl": "/art/scene-assets/v03/scene-incense-burner-v03.glb",
+      "width": 0.2816716902512391,
+      "height": 0.28,
+      "depth": 0.32696770031747946,
+      "taskId": "b7e8745a-b1c7-4c28-a4f7-9e1aaa144038",
+      "creditsConsumed": 30,
+      "triangles": 16837,
+      "bytes": 3304880,
+      "sha256": "0dbf6c4138c179b7a0dae7f6dd244a7709a3e90e3bf4157f1cea56dc193e47ac",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-incense-burner-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-incense-burner-v03.glb",
+        "sourceBytes": 9908688,
+        "runtimeBytes": 3304880,
+        "sourceSHA256": "4a7456bcd07902fe6f4c2ed753c11287f65340e47b328280224c2b3a946cb384",
+        "runtimeSHA256": "0dbf6c4138c179b7a0dae7f6dd244a7709a3e90e3bf4157f1cea56dc193e47ac",
+        "triangles": 16837,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.43073320388793945,
+            -0.4281768500804901,
+            -0.5
+          ],
+          "max": [
+            0.43073320388793945,
+            0.4281768500804901,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.14083584512561956,
+            0,
+            -0.16348385015873973
+          ],
+          "max": [
+            0.14083584512561956,
+            0.28,
+            0.16348385015873973
+          ],
+          "size": [
+            0.2816716902512391,
+            0.28,
+            0.32696770031747946
+          ]
+        },
+        "scale": 0.32696770031747946,
+        "scaleXYZ": [
+          0.32696770031747946,
+          0.32696770031747946,
+          0.32696770031747946
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "42c29c1663663131236f37b3bf4f38a87abe0cae5b93665c91cb38ef276f09f5"
+      },
+      "optimization": {
+        "beforeBytes": 9908996,
+        "runtimeBytes": 3304880,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_b7e8745a-b1c7-4c28-a4f7-9e1aaa144038",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 993379
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1117639
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 644059
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_b7e8745a-b1c7-4c28-a4f7-9e1aaa144038",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-ritual-bell-v03",
+      "name": "铜铃",
+      "theme": "shrine",
+      "runtimeUrl": "/art/scene-assets/v03/scene-ritual-bell-v03.glb",
+      "width": 0.18459056317806244,
+      "height": 0.25,
+      "depth": 0.18944813311100006,
+      "taskId": "449b3985-b538-4091-8070-9c80937a207f",
+      "creditsConsumed": 30,
+      "triangles": 17148,
+      "bytes": 3111060,
+      "sha256": "b6305d945ebd444334ec58336103a979234cdc57d2c4531801d42d58b5e4d2d8",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-ritual-bell-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-ritual-bell-v03.glb",
+        "sourceBytes": 9175120,
+        "runtimeBytes": 3111060,
+        "sourceSHA256": "4660b36efb123789a6ee0231e8af0a9432044acb9690192b801e2321f5595731",
+        "runtimeSHA256": "b6305d945ebd444334ec58336103a979234cdc57d2c4531801d42d58b5e4d2d8",
+        "triangles": 17148,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3691811263561249,
+            -0.5,
+            -0.3788962662220001
+          ],
+          "max": [
+            0.3691811263561249,
+            0.5,
+            0.3788962662220001
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.09229528158903122,
+            0,
+            -0.09472406655550003
+          ],
+          "max": [
+            0.09229528158903122,
+            0.25,
+            0.09472406655550003
+          ],
+          "size": [
+            0.18459056317806244,
+            0.25,
+            0.18944813311100006
+          ]
+        },
+        "scale": 0.25,
+        "scaleXYZ": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "ce018495ed9f689e9658a3e69d1ee2f731057d078c8962d1e7a41f5a0ab079fc"
+      },
+      "optimization": {
+        "beforeBytes": 9175388,
+        "runtimeBytes": 3111060,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_449b3985-b538-4091-8070-9c80937a207f",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 680796
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1157860
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 736358
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_449b3985-b538-4091-8070-9c80937a207f",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-candelabrum-v03",
+      "name": "五臂烛台",
+      "theme": "shrine",
+      "runtimeUrl": "/art/scene-assets/v03/scene-candelabrum-v03.glb",
+      "width": 0.27006019055843355,
+      "height": 0.65,
+      "depth": 0.3297549307346344,
+      "taskId": "916b7bbf-6246-4616-b333-efe436fd49b9",
+      "creditsConsumed": 30,
+      "triangles": 17080,
+      "bytes": 3578020,
+      "sha256": "f307edd8797f034fd221a3bf5c15263baa3984105084078e253da291db04b870",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "pending-review",
+      "status": "exported-pending-visual-QA",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/scene-assets-tripo-v03/output/scene-candelabrum-v03/model.glb",
+        "destination": "public/art/scene-assets/v03/scene-candelabrum-v03.glb",
+        "sourceBytes": 10110596,
+        "runtimeBytes": 3578020,
+        "sourceSHA256": "b6a3d664f7109bfec39ba3a6f0428287461a3e6b77907e63078902b8837afd97",
+        "runtimeSHA256": "f307edd8797f034fd221a3bf5c15263baa3984105084078e253da291db04b870",
+        "triangles": 17080,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.20773860812187195,
+            -0.5,
+            -0.25365763902664185
+          ],
+          "max": [
+            0.20773860812187195,
+            0.5,
+            0.25365763902664185
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.13503009527921678,
+            0,
+            -0.1648774653673172
+          ],
+          "max": [
+            0.13503009527921678,
+            0.65,
+            0.1648774653673172
+          ],
+          "size": [
+            0.27006019055843355,
+            0.65,
+            0.3297549307346344
+          ]
+        },
+        "scale": 0.65,
+        "scaleXYZ": [
+          0.65,
+          0.65,
+          0.65
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "8ff6180843cd62f7e29b0184df3ce984ea31abd19d30d5f2100f62528de741f9"
+      },
+      "optimization": {
+        "beforeBytes": 10110860,
+        "runtimeBytes": 3578020,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pending",
+        "notes": "未完成本轮逐件视觉验收，不自动注册到游戏"
+      },
+      "deliveryBatch": "20261031-models-v01",
+      "materialManifest": [
+        {
+          "index": 0,
+          "name": "tripo_material_916b7bbf-6246-4616-b333-efe436fd49b9",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 1,
+            "roughnessFactor": 1,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "scale": 1
+          },
+          "occlusionTexture": null,
+          "emissiveTexture": null,
+          "doubleSided": false
+        }
+      ],
+      "embeddedTextures": [
+        {
+          "index": 0,
+          "mimeType": "image/jpeg",
+          "bytes": 1061252
+        },
+        {
+          "index": 1,
+          "mimeType": "image/png",
+          "bytes": 1268961
+        },
+        {
+          "index": 2,
+          "mimeType": "image/png",
+          "bytes": 696078
+        }
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "name": "tripo_node_916b7bbf-6246-4616-b333-efe436fd49b9",
+          "mesh": 0,
+          "children": []
+        },
+        {
+          "index": 1,
+          "name": "YourOwnGhost_MetreRoot",
+          "mesh": null,
+          "children": [
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "deliveryNote": "仅模型资源；未提交对应游戏接入代码。逐件检查状态见 visualReview。"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-bathtub-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-bathtub-v03.glb",
+  "sourceBytes": 12991184,
+  "runtimeBytes": 3609080,
+  "sourceSHA256": "c1a9d6cd018fdb9f54ece6a16db15ea411f4dbce2fee4a201282795c8f1fb05e",
+  "runtimeSHA256": "5107a84f967cd9afd7adb9e920e44cc9ea77d6e01482bd89a4eed3cc350f12e7",
+  "triangles": 17706,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.32519641518592834,
+      -0.2570403516292572,
+      -0.5
+    ],
+    "max": [
+      0.32519641518592834,
+      0.2570403516292572,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.4111760440161056,
+      0,
+      -0.6321964585326365
+    ],
+    "max": [
+      0.4111760440161056,
+      0.65,
+      0.6321964585326365
+    ],
+    "size": [
+      0.8223520880322112,
+      0.65,
+      1.264392917065273
+    ]
+  },
+  "scale": 1.264392917065273,
+  "scaleXYZ": [
+    1.264392917065273,
+    1.264392917065273,
+    1.264392917065273
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "555fbfc82dc5c1b42f7ed3c7e1cf9ccef409f55c219d1e1b6f89b421aed6124c"
+}

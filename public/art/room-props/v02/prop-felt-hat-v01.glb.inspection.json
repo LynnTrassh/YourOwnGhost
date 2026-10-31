@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-felt-hat-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-felt-hat-v01.glb",
+  "sourceBytes": 14351092,
+  "runtimeBytes": 4213728,
+  "sourceSHA256": "0aa06bd0f4cf2e1f66e71c274bf3d925a9546a84618cc39426a7ba3fc70c5062",
+  "runtimeSHA256": "7838dcbaece0075c7c7ecea0998a67d8dbef5cb46545defdd1e8a6165c3d8f80",
+  "triangles": 16539,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.2197265774011612,
+      -0.4970703125
+    ],
+    "max": [
+      0.4990234375,
+      0.2197265625,
+      0.4970703125
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.21575555082009287,
+      0,
+      -0.21491110639418254
+    ],
+    "max": [
+      0.21575555082009287,
+      0.19000000227242708,
+      0.21491110639418254
+    ],
+    "size": [
+      0.43151110164018575,
+      0.19000000227242708,
+      0.4298222127883651
+    ]
+  },
+  "scale": 0.4323555460660961,
+  "scaleXYZ": [
+    0.4323555460660961,
+    0.4323555460660961,
+    0.4323555460660961
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "5f8be2f9e7eafbca275986aac0382dcaad3523873142c7ea3d793873da170602"
+}

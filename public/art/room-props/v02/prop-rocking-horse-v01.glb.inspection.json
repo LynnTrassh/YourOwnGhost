@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-rocking-horse-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-rocking-horse-v01.glb",
+  "sourceBytes": 12227360,
+  "runtimeBytes": 4168016,
+  "sourceSHA256": "e463248a06b403049e79b941fb9417afb058fce4ff7a819bb572db1b69d1828c",
+  "runtimeSHA256": "be8161584a0936c6baac0b3c895967909617cdc45f2dfb9b91247980fe302551",
+  "triangles": 16676,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2275390625,
+      -0.4990234375,
+      -0.4873047173023224
+    ],
+    "max": [
+      0.2275390625,
+      0.4990234673023224,
+      0.4873046875
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.21825407809826694,
+      0,
+      -0.4674196922803783
+    ],
+    "max": [
+      0.21825407809826694,
+      0.9573204913176596,
+      0.4674196922803783
+    ],
+    "size": [
+      0.4365081561965339,
+      0.9573204913176596,
+      0.9348393845607565
+    ]
+  },
+  "scale": 0.9591938882945293,
+  "scaleXYZ": [
+    0.9591938882945293,
+    0.9591938882945293,
+    0.9591938882945293
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "c3e715ab4bedab0fa00829893d3242aaa27dd46dedb57e09cee6835552367bc8"
+}

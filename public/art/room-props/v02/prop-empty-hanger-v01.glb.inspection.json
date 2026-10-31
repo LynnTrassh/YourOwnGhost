@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-empty-hanger-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-empty-hanger-v01.glb",
+  "sourceBytes": 13683744,
+  "runtimeBytes": 4616548,
+  "sourceSHA256": "540489844d5063b323a430d12ffbc2f0f4efd80e0085b1e11da412d9a69e0be8",
+  "runtimeSHA256": "ab31c55d05604cf89ca2f622ff3c3321bea73c9ce1d19d8ada2f999cc496ed07",
+  "triangles": 16213,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.0849609375,
+      -0.2900390923023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.0849609375,
+      0.2900390625,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.2094809415021587,
+      0,
+      -0.035665052662794156
+    ],
+    "max": [
+      0.2094809415021587,
+      0.24350623413920403,
+      0.035665052662794156
+    ],
+    "size": [
+      0.4189618830043174,
+      0.24350623413920403,
+      0.07133010532558831
+    ]
+  },
+  "scale": 0.4197817692724276,
+  "scaleXYZ": [
+    0.4197817692724276,
+    0.4197817692724276,
+    0.4197817692724276
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "32af9472acf87dcb0b19d71074e1d7537ac3727ddca38efaf3fb1de2595692b9"
+}

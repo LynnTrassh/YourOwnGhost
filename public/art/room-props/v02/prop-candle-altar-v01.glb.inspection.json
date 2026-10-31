@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-candle-altar-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-candle-altar-v01.glb",
+  "sourceBytes": 9927068,
+  "runtimeBytes": 3899864,
+  "sourceSHA256": "69bc3dbb05e4eb231cc6725e7567ca5aebbdb856a72721a8f1ce0ed356244fce",
+  "runtimeSHA256": "38455480c9420ca9973d98c4295fcf24524b97a07ca05f7ce73b3dbbff19d4c4",
+  "triangles": 16533,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2353515625,
+      -0.4990234673023224,
+      -0.4814453125
+    ],
+    "max": [
+      0.2353515625,
+      0.4990234375,
+      0.4814453125
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.3449931526396085,
+      0,
+      -0.7057328807109003
+    ],
+    "max": [
+      0.3449931526396085,
+      1.4630000519752504,
+      0.7057328807109003
+    ],
+    "size": [
+      0.689986305279217,
+      1.4630000519752504,
+      1.4114657614218007
+    ]
+  },
+  "scale": 1.4658630220039797,
+  "scaleXYZ": [
+    1.4658630220039797,
+    1.4658630220039797,
+    1.4658630220039797
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "65def6445eab2e737bb88407c8addeff255354e4ed669626699f096b7d1b6495"
+}

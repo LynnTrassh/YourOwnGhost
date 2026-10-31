@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-armchair-wicker-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-armchair-wicker-v03.glb",
+  "sourceBytes": 12684880,
+  "runtimeBytes": 4321304,
+  "sourceSHA256": "b5fbd958cabfd26b1ec7703d18fcb9325e2bdf2eb13ac3d315081bdde5d0d1fe",
+  "runtimeSHA256": "b19da91870b42fed2a23ed4580e240df02181c606db42c9cd3e5156ae7cd26a1",
+  "triangles": 17654,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4117664098739624,
+      -0.5,
+      -0.43602225184440613
+    ],
+    "max": [
+      0.4117664098739624,
+      0.5,
+      0.43602225184440613
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.4142211392521858,
+      0,
+      -0.39117808938026427
+    ],
+    "max": [
+      0.4142211392521858,
+      0.95,
+      0.39117808938026427
+    ],
+    "size": [
+      0.8284422785043716,
+      0.95,
+      0.7823561787605285
+    ]
+  },
+  "scale": 0.95,
+  "scaleXYZ": [
+    0.95,
+    0.95,
+    0.95
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "5bc73965a4e56520c027d1e4cb5ffb55d27f5ed44a3e18ced7a9b6c36a9c6402"
+}

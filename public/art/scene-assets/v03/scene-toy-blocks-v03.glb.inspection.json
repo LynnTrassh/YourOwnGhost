@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-toy-blocks-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-toy-blocks-v03.glb",
+  "sourceBytes": 11924648,
+  "runtimeBytes": 3659308,
+  "sourceSHA256": "fd79fd773f9ec29494a73ff00005760c09c2bd04de65751a3407e89e12e1ccb3",
+  "runtimeSHA256": "9c17742762f2e6f3e266a654bcafb77b40421cd84654330a68718ed6f6eb78b1",
+  "triangles": 17421,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.47203293442726135,
+      -0.43792882561683655,
+      -0.5
+    ],
+    "max": [
+      0.47203293442726135,
+      0.43792882561683655,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.1077875916851073,
+      0,
+      -0.11417380422394764
+    ],
+    "max": [
+      0.1077875916851073,
+      0.2,
+      0.11417380422394764
+    ],
+    "size": [
+      0.2155751833702146,
+      0.2,
+      0.22834760844789528
+    ]
+  },
+  "scale": 0.22834760844789528,
+  "scaleXYZ": [
+    0.22834760844789528,
+    0.22834760844789528,
+    0.22834760844789528
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "c8b2c713761c5e84d112b034a85a21cc00f1b248ac4259c824db55652e23eede"
+}

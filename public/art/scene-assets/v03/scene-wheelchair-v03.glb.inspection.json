@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-wheelchair-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-wheelchair-v03.glb",
+  "sourceBytes": 9885600,
+  "runtimeBytes": 3777896,
+  "sourceSHA256": "a7fc83e66f0893fb8819515eddd3d12d20236b243690f6905d5bdcdc177b2b10",
+  "runtimeSHA256": "fdfd647e663f2be7675f23c4bd2c639d0728b272f2dba6a3b209a40ae8c20c9f",
+  "triangles": 16880,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.5,
+      -0.46492862701416016,
+      -0.3189534842967987
+    ],
+    "max": [
+      0.5,
+      0.46492862701416016,
+      0.3189534842967987
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5377169429328038,
+      0,
+      -0.3430133850276813
+    ],
+    "max": [
+      0.5377169429328038,
+      0.9999999999999999,
+      0.3430133850276813
+    ],
+    "size": [
+      1.0754338858656076,
+      0.9999999999999999,
+      0.6860267700553626
+    ]
+  },
+  "scale": 1.0754338858656076,
+  "scaleXYZ": [
+    1.0754338858656076,
+    1.0754338858656076,
+    1.0754338858656076
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "c48b62fafe49c8476a34f61b7d8f769896d678440a0a1966d152301383281e6c"
+}

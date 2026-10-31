@@ -1,0 +1,862 @@
+{
+  "models": 95,
+  "bytes": 354622760,
+  "validation": "GLB structure, buffer bounds, finite attributes, indices, embedded textures, hashes, metadata; not visual acceptance",
+  "results": [
+    {
+      "id": "bed-iron-rail-v01",
+      "result": "pass",
+      "triangles": 5727,
+      "vertices": 9074,
+      "embeddedImages": 1,
+      "bytes": 1051344,
+      "sha256": "2afc160b0fbc6458a30a87fafe6ef56f23e4cf95dae803a0d02ce176ad53a5db"
+    },
+    {
+      "id": "bed-canopy-linen-v01",
+      "result": "pass",
+      "triangles": 5612,
+      "vertices": 7165,
+      "embeddedImages": 1,
+      "bytes": 1111532,
+      "sha256": "cdc944d676526d94a7318d88a451c1374e268de470b9a5f9bb240ab95d558fb7"
+    },
+    {
+      "id": "bed-low-divan-v01",
+      "result": "pass",
+      "triangles": 5826,
+      "vertices": 6159,
+      "embeddedImages": 1,
+      "bytes": 1172168,
+      "sha256": "1e744cac092c59e19c77b7d4c84d486a5e844a473f6223f3976d686f1caadcb3"
+    },
+    {
+      "id": "vanity-oval-mirror-v01",
+      "result": "pass",
+      "triangles": 5751,
+      "vertices": 7549,
+      "embeddedImages": 1,
+      "bytes": 906100,
+      "sha256": "671b173769fca52f96742b7c468196df8059c34ba4e08b077f9d6fe96235d877"
+    },
+    {
+      "id": "prop-crt-tv-v01",
+      "result": "pass",
+      "triangles": 16008,
+      "vertices": 18283,
+      "embeddedImages": 3,
+      "bytes": 3777972,
+      "sha256": "d164bbda6834ca81669f88e2d88017ec704229b94db9646f2fdfed3a420bd686"
+    },
+    {
+      "id": "prop-crt-computer-v01",
+      "result": "pass",
+      "triangles": 16457,
+      "vertices": 22349,
+      "embeddedImages": 3,
+      "bytes": 3552260,
+      "sha256": "42d342bc3564b68e2065ab3625e505220933376030af059c7c40e11175c0a7a9"
+    },
+    {
+      "id": "prop-rotary-phone-v01",
+      "result": "pass",
+      "triangles": 16453,
+      "vertices": 19748,
+      "embeddedImages": 3,
+      "bytes": 3435524,
+      "sha256": "043d3852c4e2b325221834573f743522ba6e03658de39ccf5c7aed3b804fd1b9"
+    },
+    {
+      "id": "prop-wood-radio-v01",
+      "result": "pass",
+      "triangles": 16644,
+      "vertices": 19947,
+      "embeddedImages": 3,
+      "bytes": 4002264,
+      "sha256": "31c081dcdd0037cf2e21050cc44ca10429f15848d6ff32a6faa8435036560da2"
+    },
+    {
+      "id": "prop-wall-clock-v01",
+      "result": "pass",
+      "triangles": 16188,
+      "vertices": 26865,
+      "embeddedImages": 3,
+      "bytes": 4115380,
+      "sha256": "d18715c8e4453ff82ac0446736f22702823c671e5991fbec0e6b812c977f8e44"
+    },
+    {
+      "id": "prop-hanging-coat-v01",
+      "result": "pass",
+      "triangles": 16250,
+      "vertices": 20215,
+      "embeddedImages": 3,
+      "bytes": 4272968,
+      "sha256": "a3c0cdbd37a087ecb499621a740179ad04b01bb7875901bc2c5fedad9deac111"
+    },
+    {
+      "id": "prop-empty-hanger-v01",
+      "result": "pass",
+      "triangles": 16213,
+      "vertices": 21508,
+      "embeddedImages": 3,
+      "bytes": 4616548,
+      "sha256": "ab31c55d05604cf89ca2f622ff3c3321bea73c9ce1d19d8ada2f999cc496ed07"
+    },
+    {
+      "id": "prop-felt-hat-v01",
+      "result": "pass",
+      "triangles": 16539,
+      "vertices": 15581,
+      "embeddedImages": 3,
+      "bytes": 4213728,
+      "sha256": "7838dcbaece0075c7c7ecea0998a67d8dbef5cb46545defdd1e8a6165c3d8f80"
+    },
+    {
+      "id": "prop-clothes-rack-v01",
+      "result": "pass",
+      "triangles": 17398,
+      "vertices": 21935,
+      "embeddedImages": 3,
+      "bytes": 4349560,
+      "sha256": "443d37b4bae1b8525b6b0563b646a41ad4761beffd571387c9eb32089ed0d453"
+    },
+    {
+      "id": "prop-shoes-pair-v01",
+      "result": "pass",
+      "triangles": 16790,
+      "vertices": 27704,
+      "embeddedImages": 3,
+      "bytes": 4518736,
+      "sha256": "32c0e1e4bbf07a784e5d51b5e77648773f6e766d7948295d4f9c5ed89593d804"
+    },
+    {
+      "id": "prop-suitcase-v01",
+      "result": "pass",
+      "triangles": 16588,
+      "vertices": 23077,
+      "embeddedImages": 3,
+      "bytes": 4405700,
+      "sha256": "333141e4f4dde93162ab61df6c0badc3c9617e11c9d884dfad61a67258087a6c"
+    },
+    {
+      "id": "prop-cardboard-box-v01",
+      "result": "pass",
+      "triangles": 16661,
+      "vertices": 18315,
+      "embeddedImages": 3,
+      "bytes": 3404384,
+      "sha256": "a623214891e2464f5acf5d970769c8b97f92d64d5af4e5d9a11f39b04e5828c8"
+    },
+    {
+      "id": "prop-archive-boxes-v01",
+      "result": "pass",
+      "triangles": 16608,
+      "vertices": 25178,
+      "embeddedImages": 3,
+      "bytes": 4207320,
+      "sha256": "84584b30ef97a37bb6328f69c6cb7b4abe331f6ba2490ae88fba31a33422d6b4"
+    },
+    {
+      "id": "prop-books-stack-v01",
+      "result": "pass",
+      "triangles": 16174,
+      "vertices": 24632,
+      "embeddedImages": 3,
+      "bytes": 4473280,
+      "sha256": "1702b1d4930a7d11586eb4d7e2d13fd15cb5f9eec3abac697f03d6b3d2bba5bf"
+    },
+    {
+      "id": "prop-paper-wave-v01",
+      "result": "pass",
+      "triangles": 11533,
+      "vertices": 16416,
+      "embeddedImages": 3,
+      "bytes": 3703284,
+      "sha256": "5b3ffc06c724ecacb52c8b3088e16b091b7058cab08a3fb32d4c8dc694f488e6"
+    },
+    {
+      "id": "prop-tea-tray-v01",
+      "result": "pass",
+      "triangles": 17051,
+      "vertices": 16469,
+      "embeddedImages": 3,
+      "bytes": 3258452,
+      "sha256": "87c57eeee2c757d7ccda5148387d2c3ed1a261ebe198af09c80c9d28cbd21a30"
+    },
+    {
+      "id": "prop-medicine-tray-v01",
+      "result": "pass",
+      "triangles": 17578,
+      "vertices": 18482,
+      "embeddedImages": 3,
+      "bytes": 3377020,
+      "sha256": "d77c062ac6364a681af27301480216dc10cd1e43e7a0f15d6a950ddf6fd8bf2e"
+    },
+    {
+      "id": "prop-washstand-v01",
+      "result": "pass",
+      "triangles": 16408,
+      "vertices": 15392,
+      "embeddedImages": 3,
+      "bytes": 3118376,
+      "sha256": "e6de990eaa1d651afa34bb1354bc72b96c11496d8aa67c5aeb4563b3d344f233"
+    },
+    {
+      "id": "prop-iv-stand-v01",
+      "result": "pass",
+      "triangles": 16632,
+      "vertices": 24522,
+      "embeddedImages": 3,
+      "bytes": 4710216,
+      "sha256": "31bde58da0f29ab9482b654eebe219f5aec405d4695ac3b8865184b65ed4d68a"
+    },
+    {
+      "id": "prop-folding-screen-v01",
+      "result": "pass",
+      "triangles": 15194,
+      "vertices": 26584,
+      "embeddedImages": 3,
+      "bytes": 4083300,
+      "sha256": "4cfa304cc11fc0518b78a2f1eb70bb2056812600c0e629fa9e2ce13f9fa49ce8"
+    },
+    {
+      "id": "prop-cradle-v01",
+      "result": "pass",
+      "triangles": 16769,
+      "vertices": 24741,
+      "embeddedImages": 3,
+      "bytes": 4257500,
+      "sha256": "5b1191ccb87d4266270680be905879018312d14d09cd079084cce0e1a170f322"
+    },
+    {
+      "id": "prop-rocking-horse-v01",
+      "result": "pass",
+      "triangles": 16676,
+      "vertices": 21594,
+      "embeddedImages": 3,
+      "bytes": 4168016,
+      "sha256": "be8161584a0936c6baac0b3c895967909617cdc45f2dfb9b91247980fe302551"
+    },
+    {
+      "id": "prop-toy-train-v01",
+      "result": "pass",
+      "triangles": 16254,
+      "vertices": 24543,
+      "embeddedImages": 3,
+      "bytes": 4315344,
+      "sha256": "ffb7edb149ef2b44acdc2be6191b5317d718f3586d9039841a60f02dcc9df64d"
+    },
+    {
+      "id": "prop-hanging-mobile-v01",
+      "result": "pass",
+      "triangles": 17100,
+      "vertices": 26258,
+      "embeddedImages": 3,
+      "bytes": 4721544,
+      "sha256": "42b533201a384e3365ac14565865b3ffcbe8451a2e6c3f1075e05b8e6cf159e7"
+    },
+    {
+      "id": "prop-dried-flowers-v01",
+      "result": "pass",
+      "triangles": 16650,
+      "vertices": 28754,
+      "embeddedImages": 3,
+      "bytes": 4394252,
+      "sha256": "9bf3263eaae5ed57c163e36ba00d40e627ecce0a7eea712177968a718e80dd14"
+    },
+    {
+      "id": "prop-candlesticks-v01",
+      "result": "pass",
+      "triangles": 16792,
+      "vertices": 21291,
+      "embeddedImages": 3,
+      "bytes": 4697856,
+      "sha256": "0bbdbbe13b4c518d1ebe3487f6c1bbd872643a216f24ffb773617b7d210121cd"
+    },
+    {
+      "id": "prop-portrait-frame-v01",
+      "result": "pass",
+      "triangles": 16191,
+      "vertices": 24513,
+      "embeddedImages": 3,
+      "bytes": 3683868,
+      "sha256": "3f0da9f71036c0dda2ca84c5d5c5d1e924662aa6450a4a11fddacc660ed06089"
+    },
+    {
+      "id": "prop-hanging-drape-v01",
+      "result": "pass",
+      "triangles": 17197,
+      "vertices": 23160,
+      "embeddedImages": 3,
+      "bytes": 4060796,
+      "sha256": "6c0eeb16755aff5d87d274130d3a64340c142aa98b80d98ab56c0a0835ea6e5c"
+    },
+    {
+      "id": "prop-covered-shape-v01",
+      "result": "pass",
+      "triangles": 16338,
+      "vertices": 20413,
+      "embeddedImages": 3,
+      "bytes": 3673076,
+      "sha256": "f01a68388df98dcc3929d0467d1f0dcc92592508021ca011be3c3e5904dfb0d5"
+    },
+    {
+      "id": "prop-cable-coil-v01",
+      "result": "pass",
+      "triangles": 16410,
+      "vertices": 21777,
+      "embeddedImages": 3,
+      "bytes": 4442864,
+      "sha256": "7e352ab8e9469e6a762edb4b92a03272b2e2ee4c528d03cd6eea8f2e9a502743"
+    },
+    {
+      "id": "prop-cable-wall-v01",
+      "result": "pass",
+      "triangles": 16352,
+      "vertices": 20154,
+      "embeddedImages": 3,
+      "bytes": 3504088,
+      "sha256": "7949ef7cc6959877c00ad6e82e733d613d896717cfb51d247511e99c6ba4e86e"
+    },
+    {
+      "id": "prop-cable-ceiling-v01",
+      "result": "pass",
+      "triangles": 17237,
+      "vertices": 24030,
+      "embeddedImages": 3,
+      "bytes": 4042840,
+      "sha256": "5fc7d5ff6e17e31aa1044627448381c9a6219146d34a1501c3996fa85cc793a7"
+    },
+    {
+      "id": "prop-cable-curtain-v01",
+      "result": "pass",
+      "triangles": 16721,
+      "vertices": 23468,
+      "embeddedImages": 3,
+      "bytes": 3762676,
+      "sha256": "c1e75471ee912ece6b6c493d6ac4e686faebf925dc047be4c191f0fbf8b65c3b"
+    },
+    {
+      "id": "prop-organic-rib-v01",
+      "result": "pass",
+      "triangles": 17661,
+      "vertices": 10336,
+      "embeddedImages": 3,
+      "bytes": 4454828,
+      "sha256": "01f1051c638ade65c3b3d9bc619677987575d02154a676acfd1282a7f3330a71"
+    },
+    {
+      "id": "prop-tv-console-v01",
+      "result": "pass",
+      "triangles": 15688,
+      "vertices": 20040,
+      "embeddedImages": 3,
+      "bytes": 3555404,
+      "sha256": "9a8e2e44a0d8f43b8b6df75cba65920a4f12c3055c2e9a2872380a770e80021f"
+    },
+    {
+      "id": "prop-computer-desk-v01",
+      "result": "pass",
+      "triangles": 15178,
+      "vertices": 22635,
+      "embeddedImages": 3,
+      "bytes": 3960316,
+      "sha256": "3e8bf8b3bc09efd6d559e784c71309fd13dbb451b2e12e0704c40bf7f5041a0f"
+    },
+    {
+      "id": "prop-archive-stack-v01",
+      "result": "pass",
+      "triangles": 16605,
+      "vertices": 27209,
+      "embeddedImages": 3,
+      "bytes": 4089904,
+      "sha256": "456447e592a0e1eaade3cfd5aa312134c23a6a55321ce65ce89aba9c132baac7"
+    },
+    {
+      "id": "prop-tea-cart-v01",
+      "result": "pass",
+      "triangles": 16860,
+      "vertices": 21753,
+      "embeddedImages": 3,
+      "bytes": 4042612,
+      "sha256": "aa483e852004d70376d0ab8939cae5b5601b902540f89de020909273a41cdaee"
+    },
+    {
+      "id": "prop-toy-bench-v01",
+      "result": "pass",
+      "triangles": 16665,
+      "vertices": 23827,
+      "embeddedImages": 3,
+      "bytes": 3930344,
+      "sha256": "3f480df376f277f7f9d1bd3865b7dc9819ba6f14d3244ce6de02b5e79a438732"
+    },
+    {
+      "id": "prop-medical-cart-v01",
+      "result": "pass",
+      "triangles": 17063,
+      "vertices": 24737,
+      "embeddedImages": 3,
+      "bytes": 4062168,
+      "sha256": "7ad851b8fb04c5c1b34875de76e212092bd6022b3078628b6cfbaf2fcb91979f"
+    },
+    {
+      "id": "prop-candle-altar-v01",
+      "result": "pass",
+      "triangles": 16533,
+      "vertices": 24181,
+      "embeddedImages": 3,
+      "bytes": 3899864,
+      "sha256": "38455480c9420ca9973d98c4295fcf24524b97a07ca05f7ce73b3dbbff19d4c4"
+    },
+    {
+      "id": "scene-wardrobe-panelled-v03",
+      "result": "pass",
+      "triangles": 16039,
+      "vertices": 10198,
+      "embeddedImages": 3,
+      "bytes": 4020812,
+      "sha256": "31aee3b10cc31fc07c4b530539b9fd5327365c0d5026125ac7582f426d08899c"
+    },
+    {
+      "id": "scene-wardrobe-mirrored-v03",
+      "result": "pass",
+      "triangles": 13700,
+      "vertices": 8809,
+      "embeddedImages": 3,
+      "bytes": 2904004,
+      "sha256": "f06255b20ed0ee9aaed2202bedda646d5b27f5330d0bcb8be49bbaffcb1765f8"
+    },
+    {
+      "id": "scene-sofa-linen-v03",
+      "result": "pass",
+      "triangles": 17232,
+      "vertices": 10942,
+      "embeddedImages": 3,
+      "bytes": 3918360,
+      "sha256": "5aa45560575be687945259baf63a29e18c70a85e619b11b6ccd42f9fe7c68eef"
+    },
+    {
+      "id": "scene-armchair-wingback-v03",
+      "result": "pass",
+      "triangles": 17278,
+      "vertices": 10767,
+      "embeddedImages": 3,
+      "bytes": 4695440,
+      "sha256": "5ed2376aa216c5881aac83f46f1f54316ef0fb3fd5b935355ed8dcc2ca68d005"
+    },
+    {
+      "id": "scene-armchair-wicker-v03",
+      "result": "pass",
+      "triangles": 17654,
+      "vertices": 18700,
+      "embeddedImages": 3,
+      "bytes": 4321304,
+      "sha256": "b19da91870b42fed2a23ed4580e240df02181c606db42c9cd3e5156ae7cd26a1"
+    },
+    {
+      "id": "scene-chair-spindle-v03",
+      "result": "pass",
+      "triangles": 17630,
+      "vertices": 11247,
+      "embeddedImages": 3,
+      "bytes": 3503488,
+      "sha256": "de91f52afb1bc9c08a481522ce393a93a1576f4ce30371be540548d0714a96a4"
+    },
+    {
+      "id": "scene-chair-upholstered-v03",
+      "result": "pass",
+      "triangles": 17224,
+      "vertices": 10404,
+      "embeddedImages": 3,
+      "bytes": 4234284,
+      "sha256": "4bdd24437abdf9f1c32a56157dd809a82ba610738bfcdb83fbad99bcfa9692cc"
+    },
+    {
+      "id": "scene-rocking-chair-v03",
+      "result": "pass",
+      "triangles": 17158,
+      "vertices": 11088,
+      "embeddedImages": 3,
+      "bytes": 3827032,
+      "sha256": "677fc187208180298e732afb549c7240e065a29fc1df6b64ef5cdb46b4011b34"
+    },
+    {
+      "id": "scene-writing-bureau-v03",
+      "result": "pass",
+      "triangles": 14956,
+      "vertices": 10192,
+      "embeddedImages": 3,
+      "bytes": 3565740,
+      "sha256": "bcdcae8f3f92ef54719141bef1011291df0e07f4599e79ebd5b45c19a50865be"
+    },
+    {
+      "id": "scene-round-table-v03",
+      "result": "pass",
+      "triangles": 17333,
+      "vertices": 10509,
+      "embeddedImages": 3,
+      "bytes": 3828536,
+      "sha256": "2daa3442b5e267a7f33ff143fede6b2d5487feb8de34ed444c246179ecf0ea9a"
+    },
+    {
+      "id": "scene-sideboard-v03",
+      "result": "pass",
+      "triangles": 15995,
+      "vertices": 10955,
+      "embeddedImages": 3,
+      "bytes": 3594888,
+      "sha256": "244160a2b0f5185b1dd7a34fb45f5f733c7b94e15ffb77e3cb133d82de9607c4"
+    },
+    {
+      "id": "scene-bench-wood-v03",
+      "result": "pass",
+      "triangles": 16982,
+      "vertices": 10492,
+      "embeddedImages": 3,
+      "bytes": 3872168,
+      "sha256": "dd35835dba010fca75f89d9780103ea4474da1bf79268e8915714d9fd2cccb84"
+    },
+    {
+      "id": "scene-hospital-bed-v03",
+      "result": "pass",
+      "triangles": 16792,
+      "vertices": 12192,
+      "embeddedImages": 3,
+      "bytes": 3916640,
+      "sha256": "784163ed781e2d47a8d9e997d8d7560e59107c1396610a88ff4b5da95f691e33"
+    },
+    {
+      "id": "scene-wheelchair-v03",
+      "result": "pass",
+      "triangles": 16880,
+      "vertices": 15069,
+      "embeddedImages": 3,
+      "bytes": 3777896,
+      "sha256": "fdfd647e663f2be7675f23c4bd2c639d0728b272f2dba6a3b209a40ae8c20c9f"
+    },
+    {
+      "id": "scene-stool-metal-v03",
+      "result": "pass",
+      "triangles": 17461,
+      "vertices": 12283,
+      "embeddedImages": 3,
+      "bytes": 4132424,
+      "sha256": "a5e54b82ecc3c2098c5291781e88b1c12f5bcdac5781f720ee4076ffe77d227c"
+    },
+    {
+      "id": "scene-sink-wall-v03",
+      "result": "pass",
+      "triangles": 17904,
+      "vertices": 10978,
+      "embeddedImages": 3,
+      "bytes": 3166804,
+      "sha256": "1a626481e6fdec29c2f2c01be4e21897e30aedf139a7016facc38b7a7467ef98"
+    },
+    {
+      "id": "scene-bathtub-v03",
+      "result": "pass",
+      "triangles": 17706,
+      "vertices": 10820,
+      "embeddedImages": 3,
+      "bytes": 3609080,
+      "sha256": "5107a84f967cd9afd7adb9e920e44cc9ea77d6e01482bd89a4eed3cc350f12e7"
+    },
+    {
+      "id": "scene-toilet-v03",
+      "result": "pass",
+      "triangles": 17400,
+      "vertices": 10058,
+      "embeddedImages": 3,
+      "bytes": 3371828,
+      "sha256": "26af377a78e0eb34c85707ebdff91c02e4a1655fc205d162f51e11c464de6f29"
+    },
+    {
+      "id": "scene-mop-bucket-v03",
+      "result": "pass",
+      "triangles": 17894,
+      "vertices": 13872,
+      "embeddedImages": 3,
+      "bytes": 3956072,
+      "sha256": "2091dbe955fb008c3b883406206ad5e19a0f5d9da0240a5ae89bc44d2eeaa230"
+    },
+    {
+      "id": "scene-laundry-basket-v03",
+      "result": "pass",
+      "triangles": 17564,
+      "vertices": 14166,
+      "embeddedImages": 3,
+      "bytes": 4019588,
+      "sha256": "78ebaf95f5c9e2ced734c20f811abc0c0c92f38500fde0df364d33b9ce1c50a2"
+    },
+    {
+      "id": "scene-umbrella-stand-v03",
+      "result": "pass",
+      "triangles": 17572,
+      "vertices": 11536,
+      "embeddedImages": 3,
+      "bytes": 2768040,
+      "sha256": "df5c7cf75e9fa19854fc83613521b42f27d96dcaa339b284ce8b43d44d19b86a"
+    },
+    {
+      "id": "scene-wall-coat-pegs-v03",
+      "result": "pass",
+      "triangles": 17644,
+      "vertices": 11105,
+      "embeddedImages": 3,
+      "bytes": 3961728,
+      "sha256": "36dd81bcaa6715e2409087b874d9026ff0a4a94f14e23fb22495fc8465e3e383"
+    },
+    {
+      "id": "scene-folded-linen-v03",
+      "result": "pass",
+      "triangles": 16502,
+      "vertices": 11503,
+      "embeddedImages": 3,
+      "bytes": 4557900,
+      "sha256": "5db7d0a4f91d73b33b7f81f1c96c2cbc32b45025ab6bc642c038e3998eb4bb8d"
+    },
+    {
+      "id": "scene-pillow-pair-v03",
+      "result": "pass",
+      "triangles": 17682,
+      "vertices": 10709,
+      "embeddedImages": 3,
+      "bytes": 3478236,
+      "sha256": "65cd0e16f2ef6e9f249f5493a6c861a0dc7ddffe5394286ca7e023b409b115e8"
+    },
+    {
+      "id": "scene-sewing-machine-v03",
+      "result": "pass",
+      "triangles": 17512,
+      "vertices": 11035,
+      "embeddedImages": 3,
+      "bytes": 3875888,
+      "sha256": "d4c0d41c99654c710f3c5b1e022c57446c35986d6a03b3b6a8f4ed5e674a0edd"
+    },
+    {
+      "id": "scene-typewriter-v03",
+      "result": "pass",
+      "triangles": 16911,
+      "vertices": 14138,
+      "embeddedImages": 3,
+      "bytes": 3363168,
+      "sha256": "1ac5288185c9e18dddf5bc55c3ef8df53c172340576b0dbfefc1484fdd9a491f"
+    },
+    {
+      "id": "scene-reel-projector-v03",
+      "result": "pass",
+      "triangles": 16766,
+      "vertices": 12307,
+      "embeddedImages": 3,
+      "bytes": 3898936,
+      "sha256": "35a617fe9ae2d0fb48330ee681004283d19cb33e0d76152b8f7bbb02e9c07479"
+    },
+    {
+      "id": "scene-record-player-v03",
+      "result": "pass",
+      "triangles": 17229,
+      "vertices": 10944,
+      "embeddedImages": 3,
+      "bytes": 3812408,
+      "sha256": "23a51ae587f07b44d887e58b44f2bd5390a65488122c9242939ddbc7891f0ff6"
+    },
+    {
+      "id": "scene-electric-fan-v03",
+      "result": "pass",
+      "triangles": 16611,
+      "vertices": 13607,
+      "embeddedImages": 3,
+      "bytes": 3444996,
+      "sha256": "33a6b3497aac8854fd8fc82cff6a24b6f137526dceed2989c8db07afec97953a"
+    },
+    {
+      "id": "scene-wall-fan-v03",
+      "result": "pass",
+      "triangles": 16333,
+      "vertices": 13143,
+      "embeddedImages": 3,
+      "bytes": 3591264,
+      "sha256": "fd586202ac587029f8dd83d928b3625a240eef3f6f20335e24184c692f65cb42"
+    },
+    {
+      "id": "scene-key-tray-v03",
+      "result": "pass",
+      "triangles": 17336,
+      "vertices": 10941,
+      "embeddedImages": 3,
+      "bytes": 3397424,
+      "sha256": "06d3bbe9a1edcf3be0923506a6861cbf5ec46c7a653112c70c31e14b3c4ab3e3"
+    },
+    {
+      "id": "scene-medicine-bottles-v03",
+      "result": "pass",
+      "triangles": 17653,
+      "vertices": 11020,
+      "embeddedImages": 3,
+      "bytes": 3055676,
+      "sha256": "5f16475070d96aa73b87ad804a17ef37d5563781684a66567db615af60196fbf"
+    },
+    {
+      "id": "scene-calendar-board-v03",
+      "result": "pass",
+      "triangles": 16676,
+      "vertices": 10416,
+      "embeddedImages": 3,
+      "bytes": 3298912,
+      "sha256": "206609e820f87e8412e86cfa83d7b31453147c71a8df8234efe7fa0d366cfe86"
+    },
+    {
+      "id": "scene-desk-organizer-v03",
+      "result": "pass",
+      "triangles": 16954,
+      "vertices": 11097,
+      "embeddedImages": 3,
+      "bytes": 2587944,
+      "sha256": "e1febd82488ea81424627528ef7956bdbeca810aee3ed27789f4204e20b08bf6"
+    },
+    {
+      "id": "scene-clothes-hanging-dress-v03",
+      "result": "pass",
+      "triangles": 17044,
+      "vertices": 11095,
+      "embeddedImages": 3,
+      "bytes": 3807344,
+      "sha256": "5987d0e0b079a04437f929de7b1a23bbaa3a371af6566c812ee704f4d0d9d044"
+    },
+    {
+      "id": "scene-coat-raincoat-v03",
+      "result": "pass",
+      "triangles": 17300,
+      "vertices": 10717,
+      "embeddedImages": 3,
+      "bytes": 3861156,
+      "sha256": "1cb397fd2423139f73a233f64cd2267417a844b0faeb1c2c121671d59c4e1dba"
+    },
+    {
+      "id": "scene-pram-v03",
+      "result": "pass",
+      "triangles": 17186,
+      "vertices": 13886,
+      "embeddedImages": 3,
+      "bytes": 4360748,
+      "sha256": "90dae89c4f1fd9097ee495488acadb16a366fc1e8782c16f26242e40a0d98068"
+    },
+    {
+      "id": "scene-tricycle-v03",
+      "result": "pass",
+      "triangles": 17488,
+      "vertices": 11199,
+      "embeddedImages": 3,
+      "bytes": 3599352,
+      "sha256": "397d516b21d4bd0ca79cf6f0e555a5828e7978cef77e75bd46bc6447d355e4ac"
+    },
+    {
+      "id": "scene-teddy-bear-v03",
+      "result": "pass",
+      "triangles": 17348,
+      "vertices": 15513,
+      "embeddedImages": 3,
+      "bytes": 4435524,
+      "sha256": "2ab0bfc887d11c5a8485fe861a3d382f1c151ccaff402e049c7958136b118f38"
+    },
+    {
+      "id": "scene-toy-blocks-v03",
+      "result": "pass",
+      "triangles": 17421,
+      "vertices": 10959,
+      "embeddedImages": 3,
+      "bytes": 3659308,
+      "sha256": "9c17742762f2e6f3e266a654bcafb77b40421cd84654330a68718ed6f6eb78b1"
+    },
+    {
+      "id": "scene-music-box-v03",
+      "result": "pass",
+      "triangles": 16959,
+      "vertices": 11214,
+      "embeddedImages": 3,
+      "bytes": 3207492,
+      "sha256": "1dcde7b8c82bcb80d5d4487c52e55da49da3fd1026eb3624ba57475a3ca79748"
+    },
+    {
+      "id": "scene-incense-burner-v03",
+      "result": "pass",
+      "triangles": 16837,
+      "vertices": 10791,
+      "embeddedImages": 3,
+      "bytes": 3304880,
+      "sha256": "0dbf6c4138c179b7a0dae7f6dd244a7709a3e90e3bf4157f1cea56dc193e47ac"
+    },
+    {
+      "id": "scene-ritual-bell-v03",
+      "result": "pass",
+      "triangles": 17148,
+      "vertices": 10246,
+      "embeddedImages": 3,
+      "bytes": 3111060,
+      "sha256": "b6305d945ebd444334ec58336103a979234cdc57d2c4531801d42d58b5e4d2d8"
+    },
+    {
+      "id": "scene-candelabrum-v03",
+      "result": "pass",
+      "triangles": 17080,
+      "vertices": 10762,
+      "embeddedImages": 3,
+      "bytes": 3578020,
+      "sha256": "f307edd8797f034fd221a3bf5c15263baa3984105084078e253da291db04b870"
+    },
+    {
+      "id": "prop-pendulum-clock-v04",
+      "result": "pass",
+      "triangles": 15307,
+      "vertices": 21787,
+      "embeddedImages": 3,
+      "bytes": 3990148,
+      "sha256": "9c848d7ed07c7403c6862a48711df48cbd6f4b526103e275abc9fbc59bab44de"
+    },
+    {
+      "id": "theme-award-podium-v05",
+      "result": "pass",
+      "triangles": 15023,
+      "vertices": 24069,
+      "embeddedImages": 3,
+      "bytes": 3930008,
+      "sha256": "3ed58991a0bbbcd4e6b77c0a20c3250ba8d560750bda9c38219ddf7e23696989"
+    },
+    {
+      "id": "theme-sleeping-person-v05",
+      "result": "pass",
+      "triangles": 16797,
+      "vertices": 21982,
+      "embeddedImages": 3,
+      "bytes": 3576120,
+      "sha256": "26dc7fe1a2408d6d1b07e8a4457b165175598136a44572089826b301204cfbfa"
+    },
+    {
+      "id": "theme-ceremony-lectern-v05",
+      "result": "pass",
+      "triangles": 14068,
+      "vertices": 20191,
+      "embeddedImages": 3,
+      "bytes": 3408164,
+      "sha256": "b5a64ec9a677751b45028a111b6081539b873aaa08f3e19558de32c94c1b793c"
+    },
+    {
+      "id": "theme-trophy-cup-v05",
+      "result": "pass",
+      "triangles": 16228,
+      "vertices": 23978,
+      "embeddedImages": 3,
+      "bytes": 4602636,
+      "sha256": "7d0a10f75e5416ce2231dddeeef7eb54659d2727e63e5a403ad111fd976646fe"
+    },
+    {
+      "id": "theme-ticket-counter-v05",
+      "result": "pass",
+      "triangles": 14279,
+      "vertices": 20624,
+      "embeddedImages": 3,
+      "bytes": 3304316,
+      "sha256": "16d7e9ae3c03c08479cb855f19253566568f204d7740aee1be99d63129dd886d"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-writing-bureau-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-writing-bureau-v03.glb",
+  "sourceBytes": 12144036,
+  "runtimeBytes": 3565740,
+  "sourceSHA256": "30bd12d010763645269b34f441e18df6534664bc7101352e1b16f70d4b88e1aa",
+  "runtimeSHA256": "bcdcae8f3f92ef54719141bef1011291df0e07f4599e79ebd5b45c19a50865be",
+  "triangles": 14956,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.31362634897232056,
+      -0.5,
+      -0.34753960371017456
+    ],
+    "max": [
+      0.31362634897232056,
+      0.5,
+      0.34753960371017456
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.36067030131816863,
+      0,
+      -0.39967054426670073
+    ],
+    "max": [
+      0.36067030131816863,
+      1.15,
+      0.39967054426670073
+    ],
+    "size": [
+      0.7213406026363373,
+      1.15,
+      0.7993410885334015
+    ]
+  },
+  "scale": 1.15,
+  "scaleXYZ": [
+    1.15,
+    1.15,
+    1.15
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "ea4bc23f8e8a76918a0b7b347368ee7de6ec6cd197a5323e2b3a02d7c2a4d89d"
+}

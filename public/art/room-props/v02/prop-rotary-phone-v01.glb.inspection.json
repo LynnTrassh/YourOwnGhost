@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-rotary-phone-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-rotary-phone-v01.glb",
+  "sourceBytes": 8517864,
+  "runtimeBytes": 3435524,
+  "sourceSHA256": "95f8f3bd0d3f3ccb4a9480fac3dd86c1b774ca69f1802751273610ff1732aa4c",
+  "runtimeSHA256": "043d3852c4e2b325221834573f743522ba6e03658de39ccf5c7aed3b804fd1b9",
+  "triangles": 16453,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.3037109375,
+      -0.4619140625
+    ],
+    "max": [
+      0.4990234375,
+      0.3037109375,
+      0.4619140625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.13117297910540546,
+      0,
+      -0.14171118884326045
+    ],
+    "max": [
+      0.13117297910540546,
+      0.17249385413015264,
+      0.14171118884326045
+    ],
+    "size": [
+      0.2623459582108109,
+      0.17249385413015264,
+      0.2834223776865209
+    ]
+  },
+  "scale": 0.2839770203043027,
+  "scaleXYZ": [
+    0.2839770203043027,
+    0.2839770203043027,
+    0.2839770203043027
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "b51bbe4968668d723680ede7b56e0115599a172f627f88ec674d6ee8579ee1ad"
+}

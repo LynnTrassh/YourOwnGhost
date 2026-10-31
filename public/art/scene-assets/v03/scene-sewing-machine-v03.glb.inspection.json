@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-sewing-machine-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-sewing-machine-v03.glb",
+  "sourceBytes": 12588140,
+  "runtimeBytes": 3875888,
+  "sourceSHA256": "1f8b32ded68c826bfd75ad2ed618685a393fb601b49beb9709b2b6d8520a8224",
+  "runtimeSHA256": "d4c0d41c99654c710f3c5b1e022c57446c35986d6a03b3b6a8f4ed5e674a0edd",
+  "triangles": 17512,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.261886328458786,
+      -0.3530847132205963,
+      -0.5
+    ],
+    "max": [
+      0.261886328458786,
+      0.3530847132205963,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.12979918349411612,
+      0,
+      -0.2478158830550467
+    ],
+    "max": [
+      0.12979918349411612,
+      0.35,
+      0.2478158830550467
+    ],
+    "size": [
+      0.25959836698823224,
+      0.35,
+      0.4956317661100934
+    ]
+  },
+  "scale": 0.4956317661100934,
+  "scaleXYZ": [
+    0.4956317661100934,
+    0.4956317661100934,
+    0.4956317661100934
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "dec8c6aa47f546893cb61b4b6bdfe7040521e802af7f5b7cd20d6e8b340bac59"
+}

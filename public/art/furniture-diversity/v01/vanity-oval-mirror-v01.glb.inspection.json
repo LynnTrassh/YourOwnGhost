@@ -1,0 +1,64 @@
+{
+  "source": "art-source/furniture-diversity-v01/output/vanity-oval-mirror-v01/model.glb",
+  "destination": "public/art/furniture-diversity/v01/vanity-oval-mirror-v01.glb",
+  "sourceBytes": 905736,
+  "runtimeBytes": 906100,
+  "sourceSHA256": "81926cf438015a030da87376fb26f5b6ebf711b8a54d7d258ce8bbffea1263a0",
+  "runtimeSHA256": "671b173769fca52f96742b7c468196df8059c34ba4e08b077f9d6fe96235d877",
+  "triangles": 5751,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1376953125,
+      -0.4990234375,
+      -0.3212890625
+    ],
+    "max": [
+      0.1376953125,
+      0.4990234375,
+      0.3212890625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5311643835616439,
+      0,
+      -0.22764187866927596
+    ],
+    "max": [
+      0.5311643835616439,
+      1.65,
+      0.22764187866927596
+    ],
+    "size": [
+      1.0623287671232877,
+      1.65,
+      0.4552837573385519
+    ]
+  },
+  "scale": 1.653228962818004,
+  "scaleXYZ": [
+    1.653228962818004,
+    1.653228962818004,
+    1.653228962818004
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "three-quarter-reviewed; front -Z confirmed",
+  "pivot": "bottom-centre",
+  "forward": "-Z",
+  "target": {
+    "id": "vanity-oval-mirror-v01",
+    "yaw": 90,
+    "axis": "y",
+    "metres": 1.65
+  },
+  "finiteVerticesChecked": 7549,
+  "degenerateTriangles": 0,
+  "preOptimizationSHA256": "671b173769fca52f96742b7c468196df8059c34ba4e08b077f9d6fe96235d877"
+}

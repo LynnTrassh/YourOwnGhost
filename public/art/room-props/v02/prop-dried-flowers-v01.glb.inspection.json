@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-dried-flowers-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-dried-flowers-v01.glb",
+  "sourceBytes": 10824056,
+  "runtimeBytes": 4394252,
+  "sourceSHA256": "98e48718dc7d442072909c912beb8d0d6795fbfa79304d430f6cfa025632f0dd",
+  "runtimeSHA256": "9bf3263eaae5ed57c163e36ba00d40e627ecce0a7eea712177968a718e80dd14",
+  "triangles": 16650,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3310546875,
+      -0.4990234375,
+      -0.3212890625
+    ],
+    "max": [
+      0.3310546875,
+      0.4990234375,
+      0.3212890625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.21792857316842051,
+      0,
+      -0.21150000168852612
+    ],
+    "max": [
+      0.21792857316842051,
+      0.6570000052452087,
+      0.21150000168852612
+    ],
+    "size": [
+      0.43585714633684103,
+      0.6570000052452087,
+      0.42300000337705224
+    ]
+  },
+  "scale": 0.6582857195411876,
+  "scaleXYZ": [
+    0.6582857195411876,
+    0.6582857195411876,
+    0.6582857195411876
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "019bef8bc79632982f141bbee12fd1dacd740be29136b249b742f18439d15303"
+}

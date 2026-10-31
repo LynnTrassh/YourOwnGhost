@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-tea-tray-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-tea-tray-v01.glb",
+  "sourceBytes": 9453024,
+  "runtimeBytes": 3258452,
+  "sourceSHA256": "6be73b049d5540e8ba40c2e1510093065e39ea64bb29c43c089fda81777b1beb",
+  "runtimeSHA256": "87c57eeee2c757d7ccda5148387d2c3ed1a261ebe198af09c80c9d28cbd21a30",
+  "triangles": 17051,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3955078125,
+      -0.2724609673023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.3955078125,
+      0.2724609375,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.09653225345562289,
+      0,
+      -0.12179748522425504
+    ],
+    "max": [
+      0.09653225345562289,
+      0.13300000092387199,
+      0.12179748522425504
+    ],
+    "size": [
+      0.19306450691124577,
+      0.13300000092387199,
+      0.24359497044851008
+    ]
+  },
+  "scale": 0.2440716729347107,
+  "scaleXYZ": [
+    0.2440716729347107,
+    0.2440716729347107,
+    0.2440716729347107
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "cf627f4a731831d0712ebe697843bf2321caaa978a497f9042239dc859741779"
+}

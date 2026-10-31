@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-tricycle-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-tricycle-v03.glb",
+  "sourceBytes": 10286148,
+  "runtimeBytes": 3599352,
+  "sourceSHA256": "f0142440bc5e90b29f0fee91b6b25fa4000f3920089faf164b60c4a1cfb8c62e",
+  "runtimeSHA256": "397d516b21d4bd0ca79cf6f0e555a5828e7978cef77e75bd46bc6447d355e4ac",
+  "triangles": 17488,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.5,
+      -0.40187862515449524,
+      -0.2616269588470459
+    ],
+    "max": [
+      0.5,
+      0.40187862515449524,
+      0.2616269588470459
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.34214310339879495,
+      0,
+      -0.17902771926543418
+    ],
+    "max": [
+      0.34214310339879495,
+      0.55,
+      0.17902771926543418
+    ],
+    "size": [
+      0.6842862067975899,
+      0.55,
+      0.35805543853086835
+    ]
+  },
+  "scale": 0.6842862067975899,
+  "scaleXYZ": [
+    0.6842862067975899,
+    0.6842862067975899,
+    0.6842862067975899
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "f0a2fe8e3954741e9bc6643577beab6ba75a49bd717bb46af53d022478379c83"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-cable-ceiling-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-cable-ceiling-v01.glb",
+  "sourceBytes": 9237944,
+  "runtimeBytes": 4042840,
+  "sourceSHA256": "71fb30b2109d670e51071244396501994039945d0688a81a00f796ae5567ac20",
+  "runtimeSHA256": "5fc7d5ff6e17e31aa1044627448381c9a6219146d34a1501c3996fa85cc793a7",
+  "triangles": 17237,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2041015625,
+      -0.4775390326976776,
+      -0.4990234375
+    ],
+    "max": [
+      0.2041015625,
+      0.4775390923023224,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.12280055155486234,
+      0,
+      -0.3002444107394003
+    ],
+    "max": [
+      0.12280055155486234,
+      0.57463607378304,
+      0.3002444107394003
+    ],
+    "size": [
+      0.2456011031097247,
+      0.57463607378304,
+      0.6004888214788006
+    ]
+  },
+  "scale": 0.6016639463740624,
+  "scaleXYZ": [
+    0.6016639463740624,
+    0.6016639463740624,
+    0.6016639463740624
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "37f72162cf71c55d0bfff2110a41a87f49e2e8fe5cfa6f4e19e4aa770835b8d8"
+}

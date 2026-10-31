@@ -1,0 +1,54 @@
+{
+  "source": "art-source/quality-repairs-tripo-v04/output/prop-pendulum-clock-v04/model.glb",
+  "destination": "public/art/quality-repairs/v04/prop-pendulum-clock-v04.glb",
+  "sourceBytes": 10427480,
+  "runtimeBytes": 3990148,
+  "sourceSHA256": "e5c0e9b8d634eb186324c1607596e024ce19495db55695d1123182dbbddbd7a4",
+  "runtimeSHA256": "9c848d7ed07c7403c6862a48711df48cbd6f4b526103e275abc9fbc59bab44de",
+  "triangles": 15307,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.0908203125,
+      -0.4990234375,
+      -0.1337890475988388
+    ],
+    "max": [
+      0.0908203125,
+      0.4990234375,
+      0.1337890774011612
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.16379647749510765,
+      0,
+      -0.24129158512720159
+    ],
+    "max": [
+      0.16379647749510765,
+      1.8,
+      0.24129158512720159
+    ],
+    "size": [
+      0.3275929549902153,
+      1.8,
+      0.48258317025440317
+    ]
+  },
+  "scale": 1.803522504892368,
+  "scaleXYZ": [
+    1.803522504892368,
+    1.803522504892368,
+    1.803522504892368
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "2fe595f0158e47962c86f75e6d21a10356070cdf941b6bb003f966e114decec9"
+}

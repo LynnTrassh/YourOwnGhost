@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-medical-cart-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-medical-cart-v01.glb",
+  "sourceBytes": 9711696,
+  "runtimeBytes": 4062168,
+  "sourceSHA256": "9aaf6d7094db3efd186ced3dca94f6d9cb504a17b5c422ed092011b7e625d732",
+  "runtimeSHA256": "7ad851b8fb04c5c1b34875de76e212092bd6022b3078628b6cfbaf2fcb91979f",
+  "triangles": 17063,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2724609375,
+      -0.4990234673023224,
+      -0.4755859076976776
+    ],
+    "max": [
+      0.2724609375,
+      0.4990234375,
+      0.4755859076976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.28527884831617656,
+      0,
+      -0.4979598223080948
+    ],
+    "max": [
+      0.28527884831617656,
+      1.0449999701976775,
+      0.4979598223080948
+    ],
+    "size": [
+      0.5705576966323531,
+      1.0449999701976775,
+      0.9959196446161896
+    ]
+  },
+  "scale": 1.0470449486586553,
+  "scaleXYZ": [
+    1.0470449486586553,
+    1.0470449486586553,
+    1.0470449486586553
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "30195abdcfb4b2b7195d6cf4b1bdb00bce4fd649751af138a70a82304d312b21"
+}

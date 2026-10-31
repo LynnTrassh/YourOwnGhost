@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-record-player-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-record-player-v03.glb",
+  "sourceBytes": 12813200,
+  "runtimeBytes": 3812408,
+  "sourceSHA256": "8248305daea675277e5e5e76dc8d86bbe4c709d247a753a393a5592928d9a4e3",
+  "runtimeSHA256": "23a51ae587f07b44d887e58b44f2bd5390a65488122c9242939ddbc7891f0ff6",
+  "triangles": 17229,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.40253114700317383,
+      -0.4899621307849884,
+      -0.5
+    ],
+    "max": [
+      0.40253114700317383,
+      0.4899621307849884,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.13966445708958075,
+      0,
+      -0.17348279521892443
+    ],
+    "max": [
+      0.13966445708958075,
+      0.34,
+      0.17348279521892443
+    ],
+    "size": [
+      0.2793289141791615,
+      0.34,
+      0.34696559043784886
+    ]
+  },
+  "scale": 0.34696559043784886,
+  "scaleXYZ": [
+    0.34696559043784886,
+    0.34696559043784886,
+    0.34696559043784886
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "d128950b1947d1573ae0ef039b3bc87f71e8456398137a2da7b0ce659925d109"
+}

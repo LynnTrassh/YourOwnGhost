@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-medicine-tray-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-medicine-tray-v01.glb",
+  "sourceBytes": 8361552,
+  "runtimeBytes": 3377020,
+  "sourceSHA256": "4f292088c679e652a0807637896ce91c476536234303552ea24f65eb58d61378",
+  "runtimeSHA256": "d77c062ac6364a681af27301480216dc10cd1e43e7a0f15d6a950ddf6fd8bf2e",
+  "triangles": 17578,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4072265625,
+      -0.2919921875,
+      -0.4990234375
+    ],
+    "max": [
+      0.4072265625,
+      0.2919921875,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.13562959357681467,
+      0,
+      -0.16620317102578488
+    ],
+    "max": [
+      0.13562959357681467,
+      0.19449999270727858,
+      0.16620317102578488
+    ],
+    "size": [
+      0.27125918715362934,
+      0.19449999270727858,
+      0.33240634205156977
+    ]
+  },
+  "scale": 0.3330568436994202,
+  "scaleXYZ": [
+    0.3330568436994202,
+    0.3330568436994202,
+    0.3330568436994202
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "f74791a33f208b87b47ca2a82f7c85c2240a1e673022f29561bb579c9f5b151b"
+}

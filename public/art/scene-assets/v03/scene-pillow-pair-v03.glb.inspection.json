@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-pillow-pair-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-pillow-pair-v03.glb",
+  "sourceBytes": 12365172,
+  "runtimeBytes": 3478236,
+  "sourceSHA256": "444b9e1d9847f5aa203d4ad86372685f1660dfa91611d691b04c0375eb877fa5",
+  "runtimeSHA256": "65cd0e16f2ef6e9f249f5493a6c861a0dc7ddffe5394286ca7e023b409b115e8",
+  "triangles": 17682,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.38717782497406006,
+      -0.26817062497138977,
+      -0.5
+    ],
+    "max": [
+      0.38717782497406006,
+      0.26817062497138977,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.17325290196062307,
+      0,
+      -0.2237381518068998
+    ],
+    "max": [
+      0.17325290196062307,
+      0.24,
+      0.2237381518068998
+    ],
+    "size": [
+      0.34650580392124614,
+      0.24,
+      0.4474763036137996
+    ]
+  },
+  "scale": 0.4474763036137996,
+  "scaleXYZ": [
+    0.4474763036137996,
+    0.4474763036137996,
+    0.4474763036137996
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "a70078be364623f04c9845d1b9f098d604cf27dc9f0b574eaffe1dc10d9285f7"
+}

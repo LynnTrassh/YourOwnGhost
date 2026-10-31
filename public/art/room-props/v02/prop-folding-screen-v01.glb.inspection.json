@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-folding-screen-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-folding-screen-v01.glb",
+  "sourceBytes": 9834064,
+  "runtimeBytes": 4083300,
+  "sourceSHA256": "5b5c5902e17a4aaedd32d82d7d6a64bed5b97c4b4fbd33c7dd5e16c1863162a3",
+  "runtimeSHA256": "4cfa304cc11fc0518b78a2f1eb70bb2056812600c0e629fa9e2ce13f9fa49ce8",
+  "triangles": 15194,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3916015625,
+      -0.4990234375,
+      -0.4013672173023224
+    ],
+    "max": [
+      0.3916015625,
+      0.4990234673023224,
+      0.4013671875
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6654559575865464,
+      0,
+      -0.6820508945688845
+    ],
+    "max": [
+      0.6654559575865464,
+      1.6960000223480165,
+      0.6820508945688845
+    ],
+    "size": [
+      1.3309119151730928,
+      1.6960000223480165,
+      1.364101789137769
+    ]
+  },
+  "scale": 1.6993189540364677,
+  "scaleXYZ": [
+    1.6993189540364677,
+    1.6993189540364677,
+    1.6993189540364677
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "5bb50356b534758ecb0a0f2bc782c708d9edb83247d36394a5449bd6c77582fc"
+}

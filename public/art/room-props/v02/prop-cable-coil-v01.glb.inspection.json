@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-cable-coil-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-cable-coil-v01.glb",
+  "sourceBytes": 13123928,
+  "runtimeBytes": 4442864,
+  "sourceSHA256": "22d445c5913bcb19a81346352906700c6f249f2b7e4591eeb1d882460dbb3783",
+  "runtimeSHA256": "7e352ab8e9469e6a762edb4b92a03272b2e2ee4c528d03cd6eea8f2e9a502743",
+  "triangles": 16410,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.3369140625,
+      -0.4462890625
+    ],
+    "max": [
+      0.4990234375,
+      0.3369140625,
+      0.4462890625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.05776093887921045,
+      0,
+      -0.051657043185516976
+    ],
+    "max": [
+      0.05776093887921045,
+      0.07799422275274992,
+      0.051657043185516976
+    ],
+    "size": [
+      0.1155218777584209,
+      0.07799422275274992,
+      0.10331408637103395
+    ]
+  },
+  "scale": 0.11574794796929844,
+  "scaleXYZ": [
+    0.11574794796929844,
+    0.11574794796929844,
+    0.11574794796929844
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "f2770cc1f8bef84cc0be9e20a5d00aa78fde36ba6e66067abb5b6c0c1c03aee3"
+}

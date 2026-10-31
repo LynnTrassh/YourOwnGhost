@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-wall-clock-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-wall-clock-v01.glb",
+  "sourceBytes": 12929432,
+  "runtimeBytes": 4115380,
+  "sourceSHA256": "f5846b7f758f481112aa54b2ae76e67b3e9e856ffbfab6998fc69b4f5515bbb1",
+  "runtimeSHA256": "d18715c8e4453ff82ac0446736f22702823c671e5991fbec0e6b812c977f8e44",
+  "triangles": 16188,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1865234375,
+      -0.4990234375,
+      -0.4990234375
+    ],
+    "max": [
+      0.1865234375,
+      0.4990234375,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.21999999821186067,
+      0,
+      -0.08223091909680116
+    ],
+    "max": [
+      0.21999999821186067,
+      0.43999999642372134,
+      0.08223091909680116
+    ],
+    "size": [
+      0.43999999642372134,
+      0.43999999642372134,
+      0.16446183819360233
+    ]
+  },
+  "scale": 0.44086105316819046,
+  "scaleXYZ": [
+    0.44086105316819046,
+    0.44086105316819046,
+    0.44086105316819046
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "0ce5c989f62c44c213d0eadb499ccc9118c7da7744a4af0b54ab3df40b3ad773"
+}

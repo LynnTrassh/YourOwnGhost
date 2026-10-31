@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-coat-raincoat-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-coat-raincoat-v03.glb",
+  "sourceBytes": 11909308,
+  "runtimeBytes": 3861156,
+  "sourceSHA256": "27814307ab65968d83eb604d77f020c422b1fcc23c1851114314e8eddbf0d44b",
+  "runtimeSHA256": "1cb397fd2423139f73a233f64cd2267417a844b0faeb1c2c121671d59c4e1dba",
+  "triangles": 17300,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.13751104474067688,
+      -0.5,
+      -0.26393458247184753
+    ],
+    "max": [
+      0.13751104474067688,
+      0.5,
+      0.26393458247184753
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.1718888059258461,
+      0,
+      -0.3299182280898094
+    ],
+    "max": [
+      0.1718888059258461,
+      1.25,
+      0.3299182280898094
+    ],
+    "size": [
+      0.3437776118516922,
+      1.25,
+      0.6598364561796188
+    ]
+  },
+  "scale": 1.25,
+  "scaleXYZ": [
+    1.25,
+    1.25,
+    1.25
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "8b9fca9692c82cf1d71feaf86d957cf23362748dc3618c6ec31eb9a5f78e7007"
+}

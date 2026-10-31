@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-tv-console-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-tv-console-v01.glb",
+  "sourceBytes": 10286692,
+  "runtimeBytes": 3555404,
+  "sourceSHA256": "9189526fd67494d15e86e22550bc8aa55656d8783bdd37ffaeed9c331a19dd9b",
+  "runtimeSHA256": "9a8e2e44a0d8f43b8b6df75cba65920a4f12c3055c2e9a2872380a770e80021f",
+  "triangles": 15688,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2119140625,
+      -0.4443359076976776,
+      -0.4990234375
+    ],
+    "max": [
+      0.2119140625,
+      0.4443359375,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.31057876860481887,
+      0,
+      -0.7313629067145735
+    ],
+    "max": [
+      0.31057876860481887,
+      1.3024270504713056,
+      0.7313629067145735
+    ],
+    "size": [
+      0.6211575372096377,
+      1.3024270504713056,
+      1.462725813429147
+    ]
+  },
+  "scale": 1.4655882905591453,
+  "scaleXYZ": [
+    1.4655882905591453,
+    1.4655882905591453,
+    1.4655882905591453
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "8eb4bea6d93274d91211fb64d7191357848c03ad4e240091574c091905931af0"
+}

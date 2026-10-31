@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-award-podium-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-award-podium-v05.glb",
+  "sourceBytes": 10285040,
+  "runtimeBytes": 3930008,
+  "sourceSHA256": "a6ceed63edcf639312b8b1c38c77cf8b7298965746a0fd055ba90b724c1742ac",
+  "runtimeSHA256": "3ed58991a0bbbcd4e6b77c0a20c3250ba8d560750bda9c38219ddf7e23696989",
+  "triangles": 15023,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2080078125,
+      -0.2646484375,
+      -0.4990234375
+    ],
+    "max": [
+      0.2080078125,
+      0.2646484375,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.2554428044280443,
+      0,
+      -0.6128228782287823
+    ],
+    "max": [
+      0.2554428044280443,
+      0.65,
+      0.6128228782287823
+    ],
+    "size": [
+      0.5108856088560886,
+      0.65,
+      1.2256457564575647
+    ]
+  },
+  "scale": 1.2280442804428044,
+  "scaleXYZ": [
+    1.2280442804428044,
+    1.2280442804428044,
+    1.2280442804428044
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "0faa44c4d98618256d8fdbc18c75524de10e0c0121f67c6dec437c0f5c58a637"
+}

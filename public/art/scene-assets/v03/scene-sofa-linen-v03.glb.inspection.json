@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-sofa-linen-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-sofa-linen-v03.glb",
+  "sourceBytes": 15301420,
+  "runtimeBytes": 3918360,
+  "sourceSHA256": "4b510bee2e45154d8cf959d220726c09a87bd86fffb7bbf1ceaaf4294f7e8acd",
+  "runtimeSHA256": "5aa45560575be687945259baf63a29e18c70a85e619b11b6ccd42f9fe7c68eef",
+  "triangles": 17232,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.25509676337242126,
+      -0.25717103481292725,
+      -0.5
+    ],
+    "max": [
+      0.25509676337242126,
+      0.25717103481292725,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.8749041281560761,
+      0,
+      -0.4463704227075702
+    ],
+    "max": [
+      0.8749041281560761,
+      0.9,
+      0.4463704227075702
+    ],
+    "size": [
+      1.7498082563121522,
+      0.9,
+      0.8927408454151404
+    ]
+  },
+  "scale": 1.7498082563121522,
+  "scaleXYZ": [
+    1.7498082563121522,
+    1.7498082563121522,
+    1.7498082563121522
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "e175043dc885ad5b349bc4075813ae51d5492e234b3ed1d75e73cb9263dd826e"
+}

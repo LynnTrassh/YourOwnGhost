@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-mop-bucket-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-mop-bucket-v03.glb",
+  "sourceBytes": 10820936,
+  "runtimeBytes": 3956072,
+  "sourceSHA256": "64305c0348311df0c12e79d004dd7d1980fd29030a98e012d361e677c82693d1",
+  "runtimeSHA256": "2091dbe955fb008c3b883406206ad5e19a0f5d9da0240a5ae89bc44d2eeaa230",
+  "triangles": 17894,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.24786852300167084,
+      -0.5,
+      -0.36417579650878906
+    ],
+    "max": [
+      0.24786852300167084,
+      0.5,
+      0.36417579650878906
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.33462250605225563,
+      0,
+      -0.49163732528686527
+    ],
+    "max": [
+      0.33462250605225563,
+      1.35,
+      0.49163732528686527
+    ],
+    "size": [
+      0.6692450121045113,
+      1.35,
+      0.9832746505737305
+    ]
+  },
+  "scale": 1.35,
+  "scaleXYZ": [
+    1.35,
+    1.35,
+    1.35
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "3e587b34a981f8565e9a15ef70e8b0ead79de9b81b2f421a6eb6f8f47218bb6f"
+}

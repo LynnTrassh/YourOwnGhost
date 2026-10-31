@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-electric-fan-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-electric-fan-v03.glb",
+  "sourceBytes": 8721784,
+  "runtimeBytes": 3444996,
+  "sourceSHA256": "0c26335b23ead669432c7df13dbc35c50393fbcd4a3cf99076f00f4974df5b57",
+  "runtimeSHA256": "33a6b3497aac8854fd8fc82cff6a24b6f137526dceed2989c8db07afec97953a",
+  "triangles": 16611,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4233015775680542,
+      -0.5,
+      -0.4292755722999573
+    ],
+    "max": [
+      0.4233015775680542,
+      0.5,
+      0.4292755722999573
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.2116507887840271,
+      0,
+      -0.21463778614997864
+    ],
+    "max": [
+      0.2116507887840271,
+      0.5,
+      0.21463778614997864
+    ],
+    "size": [
+      0.4233015775680542,
+      0.5,
+      0.4292755722999573
+    ]
+  },
+  "scale": 0.5,
+  "scaleXYZ": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "c7a812ee6f05d894b1f5699516b4219e836d4c6f8a9814ab22d5ba214faa99a7"
+}

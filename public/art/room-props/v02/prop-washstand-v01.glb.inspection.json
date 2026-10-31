@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-washstand-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-washstand-v01.glb",
+  "sourceBytes": 8279116,
+  "runtimeBytes": 3118376,
+  "sourceSHA256": "e28bfa98c9a738e014bb779ca7530e98d29ab9413c41cda5edd1107d8da413ac",
+  "runtimeSHA256": "e6de990eaa1d651afa34bb1354bc72b96c11496d8aa67c5aeb4563b3d344f233",
+  "triangles": 16408,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2333984375,
+      -0.4443359673023224,
+      -0.4990234076976776
+    ],
+    "max": [
+      0.2333984375,
+      0.4443359375,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5901768891427169,
+      0,
+      -0.2760318605029771
+    ],
+    "max": [
+      0.5901768891427169,
+      1.051000006198883,
+      0.2760318605029771
+    ],
+    "size": [
+      1.1803537782854339,
+      1.051000006198883,
+      0.5520637210059542
+    ]
+  },
+  "scale": 1.1826637035776089,
+  "scaleXYZ": [
+    1.1826637035776089,
+    1.1826637035776089,
+    1.1826637035776089
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "f81aa3493d88ea2c6b935c4d221e7261ca045212bc23769d70fbe60fbb068f10"
+}

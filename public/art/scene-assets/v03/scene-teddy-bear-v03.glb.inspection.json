@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-teddy-bear-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-teddy-bear-v03.glb",
+  "sourceBytes": 14646180,
+  "runtimeBytes": 4435524,
+  "sourceSHA256": "ae8dd560faf38e42407009bcab749c1c7ae8355ebe9ddbd29e9d411178f384b0",
+  "runtimeSHA256": "2ab0bfc887d11c5a8485fe861a3d382f1c151ccaff402e049c7958136b118f38",
+  "triangles": 17348,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.38977500796318054,
+      -0.5,
+      -0.48902615904808044
+    ],
+    "max": [
+      0.38977500796318054,
+      0.5,
+      0.48902615904808044
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.19488750398159027,
+      0,
+      -0.24451307952404022
+    ],
+    "max": [
+      0.19488750398159027,
+      0.5,
+      0.24451307952404022
+    ],
+    "size": [
+      0.38977500796318054,
+      0.5,
+      0.48902615904808044
+    ]
+  },
+  "scale": 0.5,
+  "scaleXYZ": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "34c27923e42359638f96a042afc6249ae8f1ee7f8b59b945788b5707d1a41c8f"
+}

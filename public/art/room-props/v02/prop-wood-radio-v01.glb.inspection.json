@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-wood-radio-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-wood-radio-v01.glb",
+  "sourceBytes": 14281032,
+  "runtimeBytes": 4002264,
+  "sourceSHA256": "11be8d9f5d2bcb3c9ceb97807862b0981dc725c4f4f8df7a9b2cc757685fe273",
+  "runtimeSHA256": "31c081dcdd0037cf2e21050cc44ca10429f15848d6ff32a6faa8435036560da2",
+  "triangles": 16644,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2705078125,
+      -0.3798828423023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.2705078125,
+      0.3798828125,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.13136246564972198,
+      0,
+      -0.07120822501951662
+    ],
+    "max": [
+      0.13136246564972198,
+      0.20000000447034838,
+      0.07120822501951662
+    ],
+    "size": [
+      0.26272493129944396,
+      0.20000000447034838,
+      0.14241645003903325
+    ]
+  },
+  "scale": 0.26323907010824915,
+  "scaleXYZ": [
+    0.26323907010824915,
+    0.26323907010824915,
+    0.26323907010824915
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "bdb3b18ff80ea93e702c25143b8b9e49399a150d149ec149c9c1b76754cd6fab"
+}

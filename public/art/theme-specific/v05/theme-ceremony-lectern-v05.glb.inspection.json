@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-ceremony-lectern-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-ceremony-lectern-v05.glb",
+  "sourceBytes": 8485900,
+  "runtimeBytes": 3408164,
+  "sourceSHA256": "223fce5821c9006cb031f455255c1553f33e5a10cfe48cf1aa962cac2a9ffb1e",
+  "runtimeSHA256": "b5a64ec9a677751b45028a111b6081539b873aaa08f3e19558de32c94c1b793c",
+  "triangles": 14068,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2001953125,
+      -0.4990234375,
+      -0.1923828274011612
+    ],
+    "max": [
+      0.2001953125,
+      0.4990234375,
+      0.1923827975988388
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.24070450097847357,
+      0,
+      -0.23131115459882584
+    ],
+    "max": [
+      0.24070450097847357,
+      1.2,
+      0.23131115459882584
+    ],
+    "size": [
+      0.48140900195694714,
+      1.2,
+      0.4626223091976517
+    ]
+  },
+  "scale": 1.202348336594912,
+  "scaleXYZ": [
+    1.202348336594912,
+    1.202348336594912,
+    1.202348336594912
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "df8bf66ef4d594afa1b11fef792912c2c3b6ad1d12ee9c8a491f5924f594d273"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-armchair-wingback-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-armchair-wingback-v03.glb",
+  "sourceBytes": 16255848,
+  "runtimeBytes": 4695440,
+  "sourceSHA256": "2b8841e693f80bdbc78cc512e7a8cacd650caa7cb8aa092e21d66c7cc2cbeb10",
+  "runtimeSHA256": "5ed2376aa216c5881aac83f46f1f54316ef0fb3fd5b935355ed8dcc2ca68d005",
+  "triangles": 17278,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.26856085658073425,
+      -0.5,
+      -0.3117139935493469
+    ],
+    "max": [
+      0.26856085658073425,
+      0.5,
+      0.3117139935493469
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.3584710925817489,
+      0,
+      -0.30884498506784436
+    ],
+    "max": [
+      0.3584710925817489,
+      1.15,
+      0.30884498506784436
+    ],
+    "size": [
+      0.7169421851634978,
+      1.15,
+      0.6176899701356887
+    ]
+  },
+  "scale": 1.15,
+  "scaleXYZ": [
+    1.15,
+    1.15,
+    1.15
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "f5b98908f0b193855453fbd7b5a7458aa56d4ef3537646b21a11469e90bbbcad"
+}

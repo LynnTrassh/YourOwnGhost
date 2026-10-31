@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-folded-linen-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-folded-linen-v03.glb",
+  "sourceBytes": 16346912,
+  "runtimeBytes": 4557900,
+  "sourceSHA256": "8495a16dac59aae976cfbb54944314bce59d69643f7132d6bacb62c579021561",
+  "runtimeSHA256": "5db7d0a4f91d73b33b7f81f1c96c2cbc32b45025ab6bc642c038e3998eb4bb8d",
+  "triangles": 16502,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4392280876636505,
+      -0.28270548582077026,
+      -0.5
+    ],
+    "max": [
+      0.4392280876636505,
+      0.28270548582077026,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.13982936261374895,
+      0,
+      -0.1591762532281709
+    ],
+    "max": [
+      0.13982936261374895,
+      0.18000000000000002,
+      0.1591762532281709
+    ],
+    "size": [
+      0.2796587252274979,
+      0.18000000000000002,
+      0.3183525064563418
+    ]
+  },
+  "scale": 0.3183525064563418,
+  "scaleXYZ": [
+    0.3183525064563418,
+    0.3183525064563418,
+    0.3183525064563418
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "fb094972f592caaf98c12bdc9ff46bd5ba6bbd4b8f8f203f1ccc7cc265e19165"
+}

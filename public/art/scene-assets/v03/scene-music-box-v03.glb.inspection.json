@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-music-box-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-music-box-v03.glb",
+  "sourceBytes": 9373940,
+  "runtimeBytes": 3207492,
+  "sourceSHA256": "3cdc9c1426f47eee1e80b0660f5a20a0cd7829fe30c26f0cabe67f0a807e1dae",
+  "runtimeSHA256": "1dcde7b8c82bcb80d5d4487c52e55da49da3fd1026eb3624ba57475a3ca79748",
+  "triangles": 16959,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.43458282947540283,
+      -0.5,
+      -0.3931657373905182
+    ],
+    "max": [
+      0.43458282947540283,
+      0.5,
+      0.3931657373905182
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.10429987907409667,
+      0,
+      -0.09435977697372436
+    ],
+    "max": [
+      0.10429987907409667,
+      0.24,
+      0.09435977697372436
+    ],
+    "size": [
+      0.20859975814819334,
+      0.24,
+      0.18871955394744871
+    ]
+  },
+  "scale": 0.24,
+  "scaleXYZ": [
+    0.24,
+    0.24,
+    0.24
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "8086ad7f0166530356333705a864fc7dabc695b7f5935ccf6d221c46991c3378"
+}

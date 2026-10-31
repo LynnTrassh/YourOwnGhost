@@ -1,0 +1,54 @@
+{
+  "source": "art-source/room-props-tripo-v02/output/prop-organic-rib-v01/model.glb",
+  "destination": "public/art/room-props/v02/prop-organic-rib-v01.glb",
+  "sourceBytes": 15305324,
+  "runtimeBytes": 4454828,
+  "sourceSHA256": "4a679bd5d788df5b04a3c9b797073ce9b70205259b5c4f14b23b8e5189272926",
+  "runtimeSHA256": "01f1051c638ade65c3b3d9bc619677987575d02154a676acfd1282a7f3330a71",
+  "triangles": 17661,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1376953125,
+      -0.4482421875,
+      -0.4990234375
+    ],
+    "max": [
+      0.1376953125,
+      0.4482421875,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.27059284569026015,
+      0,
+      -0.9806591783526449
+    ],
+    "max": [
+      0.27059284569026015,
+      1.7617321442812681,
+      0.9806591783526449
+    ],
+    "size": [
+      0.5411856913805203,
+      1.7617321442812681,
+      1.9613183567052899
+    ]
+  },
+  "scale": 1.9651565530980595,
+  "scaleXYZ": [
+    1.9651565530980595,
+    1.9651565530980595,
+    1.9651565530980595
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "16c84e2d680a869a3c10fd2816923f0648ed76c25231760220110d939c8917e2"
+}

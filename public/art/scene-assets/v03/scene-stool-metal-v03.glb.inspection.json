@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-stool-metal-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-stool-metal-v03.glb",
+  "sourceBytes": 13612412,
+  "runtimeBytes": 4132424,
+  "sourceSHA256": "5cf336adf4c01ee2c0197b59c0510616f42ac682035c9409c333854087925456",
+  "runtimeSHA256": "a5e54b82ecc3c2098c5291781e88b1c12f5bcdac5781f720ee4076ffe77d227c",
+  "triangles": 17461,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4000862240791321,
+      -0.5,
+      -0.4133792221546173
+    ],
+    "max": [
+      0.4000862240791321,
+      0.5,
+      0.4133792221546173
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.22004742324352267,
+      0,
+      -0.22735857218503955
+    ],
+    "max": [
+      0.22004742324352267,
+      0.55,
+      0.22735857218503955
+    ],
+    "size": [
+      0.44009484648704533,
+      0.55,
+      0.4547171443700791
+    ]
+  },
+  "scale": 0.55,
+  "scaleXYZ": [
+    0.55,
+    0.55,
+    0.55
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "e76818252ca59750b4e8c2332690ba2bbc5eef9067de2fcd165b8730f2c9589c"
+}

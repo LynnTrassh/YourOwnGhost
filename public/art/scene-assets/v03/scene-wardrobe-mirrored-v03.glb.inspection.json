@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-wardrobe-mirrored-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-wardrobe-mirrored-v03.glb",
+  "sourceBytes": 8579916,
+  "runtimeBytes": 2904004,
+  "sourceSHA256": "1b9cf913d0165a59f07251a02b23825e1dc535aeda51ead4e363eeb8d3de38ef",
+  "runtimeSHA256": "f06255b20ed0ee9aaed2202bedda646d5b27f5330d0bcb8be49bbaffcb1765f8",
+  "triangles": 13700,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.20500142872333527,
+      -0.5,
+      -0.3193089962005615
+    ],
+    "max": [
+      0.20500142872333527,
+      0.5,
+      0.3193089962005615
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6705488920211792,
+      0,
+      -0.4305030003190041
+    ],
+    "max": [
+      0.6705488920211792,
+      2.1,
+      0.4305030003190041
+    ],
+    "size": [
+      1.3410977840423584,
+      2.1,
+      0.8610060006380083
+    ]
+  },
+  "scale": 2.1,
+  "scaleXYZ": [
+    2.1,
+    2.1,
+    2.1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "ed529e2da6a76fd91e51a838eb8888fd2a848db5bf0becf4dcd3704efacfd0bf"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-chair-upholstered-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-chair-upholstered-v03.glb",
+  "sourceBytes": 14690616,
+  "runtimeBytes": 4234284,
+  "sourceSHA256": "90fa5b359b9aa8f0beff861394f9243dd3dcab92070952b321f5cc5e6e63132a",
+  "runtimeSHA256": "4bdd24437abdf9f1c32a56157dd809a82ba610738bfcdb83fbad99bcfa9692cc",
+  "triangles": 17224,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3130086064338684,
+      -0.5,
+      -0.26397785544395447
+    ],
+    "max": [
+      0.3130086064338684,
+      0.5,
+      0.26397785544395447
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.25077896267175676,
+      0,
+      -0.29735817611217497
+    ],
+    "max": [
+      0.25077896267175676,
+      0.95,
+      0.29735817611217497
+    ],
+    "size": [
+      0.5015579253435135,
+      0.95,
+      0.5947163522243499
+    ]
+  },
+  "scale": 0.95,
+  "scaleXYZ": [
+    0.95,
+    0.95,
+    0.95
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "e4f60818814c877787d8e8e396ce01657e47245fd912542cf22eb62b597b8cd5"
+}

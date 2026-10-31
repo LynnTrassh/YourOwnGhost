@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-incense-burner-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-incense-burner-v03.glb",
+  "sourceBytes": 9908688,
+  "runtimeBytes": 3304880,
+  "sourceSHA256": "4a7456bcd07902fe6f4c2ed753c11287f65340e47b328280224c2b3a946cb384",
+  "runtimeSHA256": "0dbf6c4138c179b7a0dae7f6dd244a7709a3e90e3bf4157f1cea56dc193e47ac",
+  "triangles": 16837,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.43073320388793945,
+      -0.4281768500804901,
+      -0.5
+    ],
+    "max": [
+      0.43073320388793945,
+      0.4281768500804901,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.14083584512561956,
+      0,
+      -0.16348385015873973
+    ],
+    "max": [
+      0.14083584512561956,
+      0.28,
+      0.16348385015873973
+    ],
+    "size": [
+      0.2816716902512391,
+      0.28,
+      0.32696770031747946
+    ]
+  },
+  "scale": 0.32696770031747946,
+  "scaleXYZ": [
+    0.32696770031747946,
+    0.32696770031747946,
+    0.32696770031747946
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "42c29c1663663131236f37b3bf4f38a87abe0cae5b93665c91cb38ef276f09f5"
+}

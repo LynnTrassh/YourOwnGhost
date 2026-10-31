@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-candelabrum-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-candelabrum-v03.glb",
+  "sourceBytes": 10110596,
+  "runtimeBytes": 3578020,
+  "sourceSHA256": "b6a3d664f7109bfec39ba3a6f0428287461a3e6b77907e63078902b8837afd97",
+  "runtimeSHA256": "f307edd8797f034fd221a3bf5c15263baa3984105084078e253da291db04b870",
+  "triangles": 17080,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.20773860812187195,
+      -0.5,
+      -0.25365763902664185
+    ],
+    "max": [
+      0.20773860812187195,
+      0.5,
+      0.25365763902664185
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.13503009527921678,
+      0,
+      -0.1648774653673172
+    ],
+    "max": [
+      0.13503009527921678,
+      0.65,
+      0.1648774653673172
+    ],
+    "size": [
+      0.27006019055843355,
+      0.65,
+      0.3297549307346344
+    ]
+  },
+  "scale": 0.65,
+  "scaleXYZ": [
+    0.65,
+    0.65,
+    0.65
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "8ff6180843cd62f7e29b0184df3ce984ea31abd19d30d5f2100f62528de741f9"
+}

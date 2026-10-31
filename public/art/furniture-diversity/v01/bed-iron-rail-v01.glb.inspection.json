@@ -1,0 +1,64 @@
+{
+  "source": "art-source/furniture-diversity-v01/output/bed-iron-rail-v01/model.glb",
+  "destination": "public/art/furniture-diversity/v01/bed-iron-rail-v01.glb",
+  "sourceBytes": 1050952,
+  "runtimeBytes": 1051344,
+  "sourceSHA256": "3082b658cd1ae7275edcfffc5d6c2ab2b873b2216d740511a4b979a659f7315d",
+  "runtimeSHA256": "2afc160b0fbc6458a30a87fafe6ef56f23e4cf95dae803a0d02ce176ad53a5db",
+  "triangles": 5727,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 1,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.2529296875,
+      -0.2490234375
+    ],
+    "max": [
+      0.4990234375,
+      0.2529296875,
+      0.2490234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.49902152641878667,
+      0,
+      -1
+    ],
+    "max": [
+      0.4990215264187867,
+      1.0136986301369864,
+      1
+    ],
+    "size": [
+      0.9980430528375734,
+      1.0136986301369864,
+      2
+    ]
+  },
+  "scale": 2.003913894324853,
+  "scaleXYZ": [
+    2.003913894324853,
+    2.003913894324853,
+    2.003913894324853
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "matte",
+  "orientationStatus": "three-quarter-reviewed; front -Z confirmed",
+  "pivot": "bottom-centre",
+  "forward": "-Z",
+  "target": {
+    "id": "bed-iron-rail-v01",
+    "yaw": 90,
+    "axis": "z",
+    "metres": 2
+  },
+  "finiteVerticesChecked": 9074,
+  "degenerateTriangles": 0,
+  "preOptimizationSHA256": "2afc160b0fbc6458a30a87fafe6ef56f23e4cf95dae803a0d02ce176ad53a5db"
+}

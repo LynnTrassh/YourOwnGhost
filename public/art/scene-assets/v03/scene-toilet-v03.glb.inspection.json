@@ -1,0 +1,54 @@
+{
+  "source": "art-source/scene-assets-tripo-v03/output/scene-toilet-v03/model.glb",
+  "destination": "public/art/scene-assets/v03/scene-toilet-v03.glb",
+  "sourceBytes": 10087248,
+  "runtimeBytes": 3371828,
+  "sourceSHA256": "20bafeacf54104a46bf646770608755cb4eafdcd1794eaee0dd9260b6dc034a0",
+  "runtimeSHA256": "26af377a78e0eb34c85707ebdff91c02e4a1655fc205d162f51e11c464de6f29",
+  "triangles": 17400,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.27616098523139954,
+      -0.5,
+      -0.44677793979644775
+    ],
+    "max": [
+      0.27616098523139954,
+      0.5,
+      0.44677793979644775
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.22092878818511963,
+      0,
+      -0.3574223518371582
+    ],
+    "max": [
+      0.22092878818511963,
+      0.8,
+      0.3574223518371582
+    ],
+    "size": [
+      0.44185757637023926,
+      0.8,
+      0.7148447036743164
+    ]
+  },
+  "scale": 0.8,
+  "scaleXYZ": [
+    0.8,
+    0.8,
+    0.8
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "7711666bf9f4bfaa1f64c43391ca67ecbd170b54c3a11313e4e7494f93fd705f"
+}
