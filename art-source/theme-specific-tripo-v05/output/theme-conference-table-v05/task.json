@@ -1,0 +1,29 @@
+{
+  "task_id": "7f2deb86-ee65-4ee2-8d6e-47a65da41e77",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One long rectangular old conference table, 3.2m wide, 1.15m deep, 0.76m high. Broad clean walnut tabletop, bevelled edge, two inset trestle supports with ample knee clearance on both long sides. Realistic polished wear. Empty tabletop, no papers, books, chairs or equipment. Entire table including underside. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:16:17.680700Z",
+  "completed_at": "2026-10-31T07:17:39.779132Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

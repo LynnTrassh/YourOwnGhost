@@ -1,0 +1,30 @@
+{
+  "task_id": "7f1ffeff-e863-45bf-958f-8038bce4c2fe",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "ONE original wearable theatre mask, subtle unsettling small closed-mouth smile, hollow eye holes, thin faded terra-cotta painted papier-mache shell, fabric tying straps. Complete hollow concave back, not a solid head. No bust, stand, second mask or character costume. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "v3.1-20260211",
+    "texture_quality": "detailed",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 30,
+  "created_at": "2026-10-31T07:39:21.305655Z",
+  "completed_at": "2026-10-31T07:41:58.189063Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

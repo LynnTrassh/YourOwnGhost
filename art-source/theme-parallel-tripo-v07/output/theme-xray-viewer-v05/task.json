@@ -1,0 +1,30 @@
+{
+  "task_id": "cc7d3d71-df45-4946-8268-71b02e7bf233",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One shallow vintage wall-mounted medical X-ray viewing lightbox, 0.85m wide, 0.65m high, 0.12m deep. Off-white worn enamel frame, separate milky rectangular diffuser panel with one monochrome chest-film silhouette held by top clips, simple switch at lower edge. No patient details, writing, surrounding wall or floor. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "v3.1-20260211",
+    "texture_quality": "detailed",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 30,
+  "created_at": "2026-10-31T07:38:44.385843Z",
+  "completed_at": "2026-10-31T07:41:06.194893Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

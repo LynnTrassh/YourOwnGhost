@@ -1,0 +1,30 @@
+{
+  "task_id": "1e909719-2bd9-422e-91e8-ba75b0e30f6d",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "An old swivel office chair with brown worn vinyl padded seat and back, metal armrests, five spoke wheeled base, adjustable central stem, practical early office design. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "v3.1-20260211",
+    "texture_quality": "detailed",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 30,
+  "created_at": "2026-10-31T07:26:08.236422Z",
+  "completed_at": "2026-10-31T07:29:21.187365Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

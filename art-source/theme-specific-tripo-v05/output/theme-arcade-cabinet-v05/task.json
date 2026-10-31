@@ -1,0 +1,29 @@
+{
+  "task_id": "f742c462-a035-403c-ab39-1b5511c52a06",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A vintage upright arcade game cabinet with sloping control console, two joysticks and round buttons, dark curved CRT screen, faded geometric burgundy side artwork, worn black vinyl trim, no recognizable game branding. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:18:44.798382Z",
+  "completed_at": "2026-10-31T07:20:11.225550Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

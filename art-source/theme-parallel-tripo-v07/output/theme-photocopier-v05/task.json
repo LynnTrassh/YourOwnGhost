@@ -1,0 +1,30 @@
+{
+  "task_id": "afca9d55-35a6-4469-b256-7dfe7baf8afc",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A large old beige office photocopier, hinged glass scanner lid closed, angled control panel with small display and physical buttons, paper output tray, two lower drawers and caster wheels, yellowed plastic and dusty seams. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "v3.1-20260211",
+    "texture_quality": "detailed",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 30,
+  "created_at": "2026-10-31T07:26:13.629751Z",
+  "completed_at": "2026-10-31T07:30:27.374876Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}
