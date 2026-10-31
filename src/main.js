@@ -198,7 +198,8 @@ function init() {
     $('like-input').value=state.like.id==='none'?'':state.like.label;updateFearForm();});
   $('cancel-fear').addEventListener('click',()=>{editingFear=false;draftFear=null;draftLike=null;updateFearForm();});
   readFear();readLike();
-  const flashlight = new THREE.SpotLight(0xffe6b8, 24, 15, Math.PI / 7, .82, 1.5);
+  // Keep a broad illuminated core and a shorter soft edge, including up close.
+  const flashlight = new THREE.SpotLight(0xffe6b8, 46, 20, Math.PI / 7, .5, 1.25);
   flashlight.position.set(.14, -.15, -.12);
   flashlight.target.position.set(0, -.08, -6);
   flashlight.castShadow = true;
