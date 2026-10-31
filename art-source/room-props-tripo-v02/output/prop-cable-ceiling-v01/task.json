@@ -1,0 +1,29 @@
+{
+  "task_id": "208bcbc5-a326-4cda-9142-5f1ee72dea13",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A suspended horizontal bundle of five thick black cables with a broad deep hanging arc between two ends, distinct sagging wires, dusty rubber and worn cable ties, no ceiling. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T06:42:53.191925Z",
+  "completed_at": "2026-10-31T06:44:25.652081Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

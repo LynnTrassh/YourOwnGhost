@@ -1,0 +1,29 @@
+{
+  "task_id": "a09ca7cb-161b-4694-86eb-97a1b4c70cb1",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A shallow stainless medical tray holding three small brown glass medicine bottles and folded gauze, tarnished metal lip, faded blank paper labels, all items resting on tray. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T06:29:33.584167Z",
+  "completed_at": "2026-10-31T06:31:55.675287Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

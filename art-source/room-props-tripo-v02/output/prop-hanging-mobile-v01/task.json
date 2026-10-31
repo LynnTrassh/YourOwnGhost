@@ -1,0 +1,29 @@
+{
+  "task_id": "38de422d-06d2-47b5-9354-fc17e33b7680",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A suspended nursery mobile with two crossed wooden arms and four small faded fabric discs hanging on short cords, central suspension cord, worn linen and wood, no child. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T06:36:25.744760Z",
+  "completed_at": "2026-10-31T06:38:19.568309Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

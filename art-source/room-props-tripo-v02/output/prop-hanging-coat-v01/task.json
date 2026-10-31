@@ -1,0 +1,29 @@
+{
+  "task_id": "65c3ee34-64b6-40a6-b481-48d273e208cb",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One empty hanging old wool overcoat on a wooden hanger, believable full sleeves, lapels, seams, buttons, pockets, sagging cloth folds, faded moss grey wool. No person or mannequin. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T06:11:29.264980Z",
+  "completed_at": "2026-10-31T06:13:02.965384Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

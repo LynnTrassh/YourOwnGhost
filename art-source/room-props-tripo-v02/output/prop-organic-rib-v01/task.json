@@ -1,0 +1,29 @@
+{
+  "task_id": "657bc1ef-a848-4c38-ad88-9c0806bc583a",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "An original non-graphic organic architectural rib strip, vertical dark reddish brown sinewy folds and knotted ridges, aged leathery surface, subtle creases, no gore or blood, no recognizable character. Original realistic abandoned-house horror game prop, restrained desaturated materials, tactile surface wear and fine details, physically plausible construction. Complete isolated asset, no room, no pedestal, no people, no cartoon, no clay render, no plain white untextured surfaces.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T06:43:03.931346Z",
+  "completed_at": "2026-10-31T06:44:46.217530Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}
