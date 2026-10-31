@@ -1,7 +1,7 @@
 {
   "date": "2026-10-31",
   "baseCommit": "c810bee4bc5552bcdfa7c2925ef2d5478d54db96",
-  "note": "明确路径快照；源文件随后分批推送。并行在途正式随机池适配不纳入首批。清单不包括自身。",
+  "note": "历史交付快照：files 记录首批功能快照及5批源资源的盘点哈希，不代表后续灯光、正式随机池和交接文档更新后的当前文件哈希；清单不包括自身。全部已推送，后续提交见 publishedCommits。",
   "files": [
     {
       "path": "art-source/atmosphere-depth-v01/captures/bedroom-combined.jpg",
@@ -12219,5 +12219,51 @@
       "path": "art-source/theme-structure-repairs-v06/theme-stage-stairs-v06.watch.stderr.log",
       "reason": "生成队列临时状态或服务响应"
     }
-  ]
+  ],
+  "publishedCommits": [
+    {
+      "commit": "c810bee4bc5552bcdfa7c2925ef2d5478d54db96",
+      "subject": "交付34件主题专用Tripo模型并隔离问题资产"
+    },
+    {
+      "commit": "f06208b7900141478a9abb6921457d568b1db7ff",
+      "subject": "统一交付灯光闪帧画质房间美术与本地制作资料"
+    },
+    {
+      "commit": "f45acf387eb0d57f2664f0d7fc75aac7a370a889",
+      "subject": "保存模型原始源文件与生成参考第一批"
+    },
+    {
+      "commit": "c290c3ca29276fbc07ba340f59f563d4bc94c2e0",
+      "subject": "保存模型原始源文件与生成参考第2批"
+    },
+    {
+      "commit": "f3c54471da64872c8225d472de46e581eec8f218",
+      "subject": "保存模型原始源文件与生成参考第3批"
+    },
+    {
+      "commit": "cb7fa25f80a685d0d1965ec800b5bfe0f83dfeb6",
+      "subject": "完善逐房灯光并保存48间画面检查记录"
+    },
+    {
+      "commit": "c393d744fbed9666abd8326a8c9e470aefa9b233",
+      "subject": "保存模型原始源文件与生成参考第4批"
+    },
+    {
+      "commit": "116a72adecd042a096e45afe35678dcbd2c808e7",
+      "subject": "保存模型原始源文件与生成参考第5批"
+    },
+    {
+      "commit": "b7190e9dc22cfd0bb2f26c3d18c3a1332288cf52",
+      "subject": "接入六主题48布局正式随机房间池并补充策划交接"
+    }
+  ],
+  "finalVerification": {
+    "verifiedRemoteCodeCommit": "b7190e9dc22cfd0bb2f26c3d18c3a1332288cf52",
+    "testsPassed": 258,
+    "build": "passed; existing large-chunk warning",
+    "browser": "seed42: 30 themed + 102 base models, 0 failures, 0 support skips",
+    "humanPlaytest": false,
+    "remainingLocal": "Generator logs, locks, transient service responses and local context remain uncommitted."
+  }
 }
