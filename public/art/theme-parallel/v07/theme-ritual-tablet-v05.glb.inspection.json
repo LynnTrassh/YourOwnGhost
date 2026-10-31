@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-ritual-tablet-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-ritual-tablet-v05.glb",
+  "sourceBytes": 10745284,
+  "runtimeBytes": 3535512,
+  "sourceSHA256": "1eb66faceccea9de467b5be6abbd4f9a01238095e2f5dfd56d489593d9fb1930",
+  "runtimeSHA256": "7e04148e3f3660d4accdfb12979e6e2ef1b13212eb372b4f67ef52b984615e28",
+  "triangles": 17067,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.21708309650421143,
+      -0.5,
+      -0.3215991258621216
+    ],
+    "max": [
+      0.21708309650421143,
+      0.5,
+      0.3215991258621216
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.14110401272773745,
+      0,
+      -0.20903943181037907
+    ],
+    "max": [
+      0.14110401272773745,
+      0.65,
+      0.20903943181037907
+    ],
+    "size": [
+      0.2822080254554749,
+      0.65,
+      0.41807886362075813
+    ]
+  },
+  "scale": 0.65,
+  "scaleXYZ": [
+    0.65,
+    0.65,
+    0.65
+  ],
+  "footprint": null,
+  "yawDegrees": 180,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "0bbdee2c739bbb553af16d1cdeba1211feff105773f674bf8fae1f01f4e98737"
+}

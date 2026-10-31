@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-microphone-stand-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-microphone-stand-v05.glb",
+  "sourceBytes": 11331120,
+  "runtimeBytes": 4593304,
+  "sourceSHA256": "ecb5ae63554fd767d86b1169a650ff7c04a0d45952e763ed6e79e07409f8b479",
+  "runtimeSHA256": "4b16bde3950ceeee3bf44a460a5e3500581995e8662775b50a9ed328123519ec",
+  "triangles": 16028,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1708984375,
+      -0.4990234375,
+      -0.1474609524011612
+    ],
+    "max": [
+      0.1708984375,
+      0.4990234375,
+      0.1474609225988388
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.22162426614481412,
+      0,
+      -0.2568493150684931
+    ],
+    "max": [
+      0.22162426614481412,
+      1.5,
+      0.2568493150684931
+    ],
+    "size": [
+      0.44324853228962824,
+      1.5,
+      0.5136986301369862
+    ]
+  },
+  "scale": 1.5029354207436398,
+  "scaleXYZ": [
+    1.5029354207436398,
+    1.5029354207436398,
+    1.5029354207436398
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "36805ddf678ee13ca1ee93fdf23059a6cb64f84c094343233e94ad77e364c030"
+}

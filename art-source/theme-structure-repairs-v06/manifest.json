@@ -1,0 +1,56 @@
+{
+  "version": 6,
+  "model": "tripo-p1",
+  "profile": "horror-models-secondary",
+  "parameters": {
+    "face_limit": 18000,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed"
+  },
+  "authorization": "User requests continued high quality Tripo models; redo rejected stage deck and stairs using explicit generated references.",
+  "estimatedCredits": 120,
+  "assets": [
+    {
+      "id": "theme-stage-deck-v06",
+      "name": "完整台面主席台（图生重做）",
+      "targetHeight": 0.45,
+      "requestedBoundsWHD": [
+        2.5,
+        0.45,
+        2.0
+      ],
+      "prompt": "Use the approved reference: closed complete flat wooden stage deck.",
+      "sourceImage": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/theme-structure-repairs-v06/stage-deck-reference.png",
+      "sourceImageSHA256": "3df7da57d02d9850eb4af86f6ad0dcb5e100e5de7abccd23b3ef591745e995cb",
+      "replaces": "theme-theatre-stage-v05",
+      "roomIds": [
+        "park-02",
+        "park-08"
+      ],
+      "imageMethod": "built-in imagegen",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-stage-stairs-v06",
+      "name": "独立三级侧阶（图生重做）",
+      "targetHeight": 0.45,
+      "requestedBoundsWHD": [
+        1.2,
+        0.45,
+        0.9
+      ],
+      "prompt": "Use the approved reference: exactly three broad low wooden steps.",
+      "sourceImage": "/Users/ftc_art/Work/vibe/YourOwnGhost/art-source/theme-structure-repairs-v06/stage-stairs-reference.png",
+      "sourceImageSHA256": "5707a5bb73b32274ca23b8ce9268660d554fea4fe8667eac435c8a3be188f4d1",
+      "replaces": "theme-stage-stairs-v05",
+      "roomIds": [
+        "park-02",
+        "park-08"
+      ],
+      "imageMethod": "built-in imagegen",
+      "runtimeIntegrated": false
+    }
+  ],
+  "costNote": "Image-to-model stage deck actual consumption 60; stairs budget 60 pending receipt."
+}

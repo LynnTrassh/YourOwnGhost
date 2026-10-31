@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-sewing-basket-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-sewing-basket-v05.glb",
+  "sourceBytes": 11059112,
+  "runtimeBytes": 3982452,
+  "sourceSHA256": "54e161449c816091fde811d4cd25c46a5b4793feeeed34540915bc022467f8ca",
+  "runtimeSHA256": "52d73291ca123af2a629c7448dede707661355b386399f4d2afe7528bfa0703c",
+  "triangles": 17712,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.45263275504112244,
+      -0.39886215329170227,
+      -0.5
+    ],
+    "max": [
+      0.45263275504112244,
+      0.39886215329170227,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.1754992280473562,
+      0,
+      -0.15887339819733012
+    ],
+    "max": [
+      0.1754992280473562,
+      0.28,
+      0.15887339819733012
+    ],
+    "size": [
+      0.3509984560947124,
+      0.28,
+      0.31774679639466025
+    ]
+  },
+  "scale": 0.3509984560947124,
+  "scaleXYZ": [
+    0.3509984560947124,
+    0.3509984560947124,
+    0.3509984560947124
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "0f3d3b003842664f6767afb024d89e7776a189f6ed3e9e122d7f87ee9484ad23"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-hospital-triage-counter-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-hospital-triage-counter-v05.glb",
+  "sourceBytes": 8071508,
+  "runtimeBytes": 3275848,
+  "sourceSHA256": "80456fdd082fb062958a7fe3bdec71fddd4fa424324df6eaa0bb5254ff4448e8",
+  "runtimeSHA256": "882ae18dcb426e4f97096a464d63fb1e242830dd5bd1d7840fab3e02ed14a243",
+  "triangles": 15758,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.3564453423023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.4990234375,
+      0.3564453125,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.7699999678102273,
+      0,
+      -0.7699999678102273
+    ],
+    "max": [
+      0.7699999678102273,
+      1.1,
+      0.7699999678102273
+    ],
+    "size": [
+      1.5399999356204546,
+      1.1,
+      1.5399999356204546
+    ]
+  },
+  "scale": 1.5430136341246041,
+  "scaleXYZ": [
+    1.5430136341246041,
+    1.5430136341246041,
+    1.5430136341246041
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "850fe25057d8f1878acbedaa2dbfa8ef72d673f765feabce7a988e1f61d517f5"
+}

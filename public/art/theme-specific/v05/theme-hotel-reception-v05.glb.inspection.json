@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-hotel-reception-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-hotel-reception-v05.glb",
+  "sourceBytes": 10435216,
+  "runtimeBytes": 3666688,
+  "sourceSHA256": "a92af5be8308900fbdd1e278da3dd22386e2bf970ee7fb8ff9b780a25a83a546",
+  "runtimeSHA256": "c83e865e42c0a22710c0946fa13700024e121dbb2fbc72a5e1dae6876989bda4",
+  "triangles": 14796,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4052734375,
+      -0.4970702826976776,
+      -0.4990234076976776
+    ],
+    "max": [
+      0.3896484375,
+      0.4970703423023224,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.8282416255628664,
+      0,
+      -0.6596758349705304
+    ],
+    "max": [
+      0.8282416255628664,
+      1.65,
+      0.6596758349705304
+    ],
+    "size": [
+      1.6564832511257328,
+      1.65,
+      1.3193516699410608
+    ]
+  },
+  "scale": 1.6597249508840863,
+  "scaleXYZ": [
+    1.6597249508840863,
+    1.6597249508840863,
+    1.6597249508840863
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "a9943d6e6d33442411e6e87d16761ffc4b475e3aa20c04a0e042d465a87c5878"
+}

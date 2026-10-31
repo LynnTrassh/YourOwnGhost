@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-china-cabinet-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-china-cabinet-v05.glb",
+  "sourceBytes": 9806376,
+  "runtimeBytes": 3379220,
+  "sourceSHA256": "f1f9a649c19260d3c8a481bc3f0264d2c46c1e3dce87a28539ccdf02520d4927",
+  "runtimeSHA256": "44d2b16f6514fc86fd36a0c59a82eb96ef7e90949aa60a80e1be51e12b3b5904",
+  "triangles": 16336,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.23572595417499542,
+      -0.5,
+      -0.4185839891433716
+    ],
+    "max": [
+      0.23572595417499542,
+      0.5,
+      0.4185839891433716
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.7743803799152374,
+      0,
+      -0.4360930152237416
+    ],
+    "max": [
+      0.7743803799152374,
+      1.85,
+      0.4360930152237416
+    ],
+    "size": [
+      1.548760759830475,
+      1.85,
+      0.8721860304474832
+    ]
+  },
+  "scale": 1.85,
+  "scaleXYZ": [
+    1.85,
+    1.85,
+    1.85
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "a21235e804878dd9faa962f0d4c0f4c510f89c811efc03f69f03b68cd65b6afe"
+}

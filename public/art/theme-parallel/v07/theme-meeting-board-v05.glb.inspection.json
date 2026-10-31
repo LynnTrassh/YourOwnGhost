@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-meeting-board-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-meeting-board-v05.glb",
+  "sourceBytes": 9129188,
+  "runtimeBytes": 2968336,
+  "sourceSHA256": "2eeb2444e4c2afeaeafff5aae4a1fa7042b69c967bb6876ef6782eb44dbb4b4d",
+  "runtimeSHA256": "20b8a719451fc02907d7c579f64c3dd5785b51b57552c3503a15986039aebb0f",
+  "triangles": 15676,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.08119040727615356,
+      -0.3088412582874298,
+      -0.5
+    ],
+    "max": [
+      0.08119040727615356,
+      0.3088412582874298,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.8904250731424793,
+      0,
+      -0.1445879486746735
+    ],
+    "max": [
+      0.8904250731424793,
+      1.1,
+      0.1445879486746735
+    ],
+    "size": [
+      1.7808501462849586,
+      1.1,
+      0.289175897349347
+    ]
+  },
+  "scale": 1.7808501462849586,
+  "scaleXYZ": [
+    1.7808501462849586,
+    1.7808501462849586,
+    1.7808501462849586
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "22882b84550ee4b9b1c3cbb2f43c6a36c64acceaf569b401ea6ee79bee6f44c5"
+}

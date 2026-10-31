@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-linen-cart-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-linen-cart-v05.glb",
+  "sourceBytes": 12443696,
+  "runtimeBytes": 4418972,
+  "sourceSHA256": "1240277df19f905241a9c5ecc328056787720672785416e46727f62f2f2a1d7f",
+  "runtimeSHA256": "3bc4397b7869fdbb7c246f7143354d8f8a3fb49615365ecf1ca63ec158b6b408",
+  "triangles": 16460,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2646484375,
+      -0.3369140625,
+      -0.4990234375
+    ],
+    "max": [
+      0.2646484375,
+      0.3369140923023224,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.7776086612598072,
+      0,
+      -0.41239128610843007
+    ],
+    "max": [
+      0.7776086612598072,
+      1.05,
+      0.41239128610843007
+    ],
+    "size": [
+      1.5552173225196144,
+      1.05,
+      0.8247825722168601
+    ]
+  },
+  "scale": 1.5582608006458758,
+  "scaleXYZ": [
+    1.5582608006458758,
+    1.5582608006458758,
+    1.5582608006458758
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "b83ba04cfad343f99262b78c12438d7c835dbf60e33075ded49b64d2b8915a8d"
+}

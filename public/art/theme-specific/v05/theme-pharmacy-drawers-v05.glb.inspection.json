@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-pharmacy-drawers-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-pharmacy-drawers-v05.glb",
+  "sourceBytes": 9436764,
+  "runtimeBytes": 3717980,
+  "sourceSHA256": "b95cc5f054f68c683320602acb3d43fbb52f6e9ac176048059c5f6ef2195553e",
+  "runtimeSHA256": "5271728c971fb4c0aa6afa7f5821a433a03ac2102fff21b7a67c003d4eee0608",
+  "triangles": 13664,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1416015625,
+      -0.4990234375,
+      -0.2080077975988388
+    ],
+    "max": [
+      0.1416015625,
+      0.4990234375,
+      0.2080078274011612
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.35430528375733855,
+      0,
+      -0.24119373776908026
+    ],
+    "max": [
+      0.35430528375733855,
+      1.7,
+      0.24119373776908026
+    ],
+    "size": [
+      0.7086105675146771,
+      1.7,
+      0.4823874755381605
+    ]
+  },
+  "scale": 1.7033268101761252,
+  "scaleXYZ": [
+    1.7033268101761252,
+    1.7033268101761252,
+    1.7033268101761252
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "1788ffa65983eb501f8d23c5221e524556e298af51c9f187abf62a1ff5e4759a"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-craft-paper-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-craft-paper-v05.glb",
+  "sourceBytes": 12793300,
+  "runtimeBytes": 3987212,
+  "sourceSHA256": "da32519e65c22f783c113eec9a836e83447d7a86c8cc70642f122863d79c0d2e",
+  "runtimeSHA256": "e0641d86850407a4afe8e93e6fe3ab8b2ee2c083ef4b714245881842de4e6684",
+  "triangles": 14271,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4937727749347687,
+      -0.3234865665435791,
+      -0.5
+    ],
+    "max": [
+      0.4937727749347687,
+      0.3234865665435791,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.09158453413580915,
+      0,
+      -0.09273955428983321
+    ],
+    "max": [
+      0.09158453413580915,
+      0.12,
+      0.09273955428983321
+    ],
+    "size": [
+      0.1831690682716183,
+      0.12,
+      0.18547910857966643
+    ]
+  },
+  "scale": 0.18547910857966643,
+  "scaleXYZ": [
+    0.18547910857966643,
+    0.18547910857966643,
+    0.18547910857966643
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "d0e5f04d417199bdbd9d12d4826bebed2d0a60b57547b56dc142dbc8b6042a73"
+}

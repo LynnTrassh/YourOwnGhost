@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-photocopier-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-photocopier-v05.glb",
+  "sourceBytes": 9008796,
+  "runtimeBytes": 3296072,
+  "sourceSHA256": "8233f7c11222c5a0a955972fb81075f78513c6b8acf93aca39215acf25894c2e",
+  "runtimeSHA256": "6560c64730b3cac279d4b7fa3c2ce6ed6544400d9848889fe9643fa64589cf0d",
+  "triangles": 15203,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3415902554988861,
+      -0.5,
+      -0.32943642139434814
+    ],
+    "max": [
+      0.3415902554988861,
+      0.5,
+      0.32943642139434814
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.362380063533783,
+      0,
+      -0.37574928104877475
+    ],
+    "max": [
+      0.362380063533783,
+      1.1,
+      0.37574928104877475
+    ],
+    "size": [
+      0.724760127067566,
+      1.1,
+      0.7514985620975495
+    ]
+  },
+  "scale": 1.1,
+  "scaleXYZ": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "b222522a5fe975c7a2d78a98193f41912dc48c7e7351eedfb00cc169a56a1607"
+}

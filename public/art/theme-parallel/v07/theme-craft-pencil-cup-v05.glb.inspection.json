@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-craft-pencil-cup-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-craft-pencil-cup-v05.glb",
+  "sourceBytes": 8367124,
+  "runtimeBytes": 3112320,
+  "sourceSHA256": "47938ce63efbf02e2ecbd0714fb515b490ab4b10b8af462600ee6bc86516d1e3",
+  "runtimeSHA256": "ac788598ac2e10079aa8334285a21b67c3cbfca6000d733ca78a4a6df554fc66",
+  "triangles": 16742,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.21317125856876373,
+      -0.5,
+      -0.2201322764158249
+    ],
+    "max": [
+      0.21317125856876373,
+      0.5,
+      0.2201322764158249
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.03962380975484848,
+      0,
+      -0.03837082654237747
+    ],
+    "max": [
+      0.03962380975484848,
+      0.18,
+      0.03837082654237747
+    ],
+    "size": [
+      0.07924761950969696,
+      0.18,
+      0.07674165308475495
+    ]
+  },
+  "scale": 0.18,
+  "scaleXYZ": [
+    0.18,
+    0.18,
+    0.18
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "69d20a788aeec98bf4faaf677763f8bd9c2918a0d45611ef02774b419e4c12b6"
+}

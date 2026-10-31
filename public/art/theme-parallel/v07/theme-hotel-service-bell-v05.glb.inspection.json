@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-hotel-service-bell-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-hotel-service-bell-v05.glb",
+  "sourceBytes": 5784872,
+  "runtimeBytes": 2438656,
+  "sourceSHA256": "9c21fc0cbeaa5b56c62a01aa170c5ecca1aff93dba75f3f3435618e7955311ee",
+  "runtimeSHA256": "984d4062176420dd28f490348191896feb7b6cdd8dc3ef9be93b7b6616dc4b89",
+  "triangles": 17849,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4992271065711975,
+      -0.39919349551200867,
+      -0.5
+    ],
+    "max": [
+      0.4992271065711975,
+      0.39919349551200867,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.06252946405487957,
+      0,
+      -0.0626262709214107
+    ],
+    "max": [
+      0.06252946405487957,
+      0.09999999999999999,
+      0.0626262709214107
+    ],
+    "size": [
+      0.12505892810975913,
+      0.09999999999999999,
+      0.1252525418428214
+    ]
+  },
+  "scale": 0.1252525418428214,
+  "scaleXYZ": [
+    0.1252525418428214,
+    0.1252525418428214,
+    0.1252525418428214
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "d7e3be370a68e2b1136c094bb233d1736fadf0e051f73de207e09c58ba856cd4"
+}

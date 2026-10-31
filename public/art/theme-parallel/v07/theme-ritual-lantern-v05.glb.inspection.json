@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-ritual-lantern-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-ritual-lantern-v05.glb",
+  "sourceBytes": 11485164,
+  "runtimeBytes": 3818088,
+  "sourceSHA256": "e11bbb00287c4846f70f9be3f6368a9892a69e2ebe13355b7a073646edd549eb",
+  "runtimeSHA256": "83ef811624cd35ad523b891a78b3674488ea504244c542bc8ea9785d22ca2a78",
+  "triangles": 15941,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.23615817725658417,
+      -0.5,
+      -0.2646012306213379
+    ],
+    "max": [
+      0.23615817725658417,
+      0.5,
+      0.2646012306213379
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.15876073837280272,
+      0,
+      -0.1416949063539505
+    ],
+    "max": [
+      0.15876073837280272,
+      0.6,
+      0.1416949063539505
+    ],
+    "size": [
+      0.31752147674560544,
+      0.6,
+      0.283389812707901
+    ]
+  },
+  "scale": 0.6,
+  "scaleXYZ": [
+    0.6,
+    0.6,
+    0.6
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "d742c89dfc4814864e282f9aefcfa3a7873d4e3198d2a6459125027d21f20123"
+}

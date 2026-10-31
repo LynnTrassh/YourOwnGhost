@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-xray-viewer-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-xray-viewer-v05.glb",
+  "sourceBytes": 8373064,
+  "runtimeBytes": 2779540,
+  "sourceSHA256": "27e58d06b8b3662ad490109b5c51abfe721470164690b64f645cbf176951738a",
+  "runtimeSHA256": "f9d076349446b07c07795f32cf64a6cb1dca8675ce59c86f0e2d5aa9c1cc6cbf",
+  "triangles": 16311,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.13778285682201385,
+      -0.5,
+      -0.4308047592639923
+    ],
+    "max": [
+      0.13778285682201385,
+      0.5,
+      0.4308047592639923
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.280023093521595,
+      0,
+      -0.08955885693430903
+    ],
+    "max": [
+      0.280023093521595,
+      0.65,
+      0.08955885693430903
+    ],
+    "size": [
+      0.56004618704319,
+      0.65,
+      0.17911771386861805
+    ]
+  },
+  "scale": 0.65,
+  "scaleXYZ": [
+    0.65,
+    0.65,
+    0.65
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "b6fdb604b16b80ad2b456cbf106f95373e9dab10c0a2a26bdebc36dcd1284118"
+}

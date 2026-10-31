@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-structure-repairs-v06/output/theme-stage-stairs-v06/model.glb",
+  "destination": "public/art/theme-structure-repairs/v06/theme-stage-stairs-v06.glb",
+  "sourceBytes": 13756972,
+  "runtimeBytes": 3402188,
+  "sourceSHA256": "9fa108970b034ef6543c75846c1bb55ab7bbb6522a66456183d81235765c33ec",
+  "runtimeSHA256": "b59aba81f3ccdd22a30f86f185b27ec007afb7d86c7d9004e4f5cf2189ef2cfb",
+  "triangles": 16040,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4091796875,
+      -0.1904297024011612,
+      -0.4990234375
+    ],
+    "max": [
+      0.4091796875,
+      0.1904297024011612,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.5896153384778663,
+      0,
+      -0.4834615006305793
+    ],
+    "max": [
+      0.5896153384778663,
+      0.45000000000000007,
+      0.4834615006305793
+    ],
+    "size": [
+      1.1792306769557326,
+      0.45000000000000007,
+      0.9669230012611586
+    ]
+  },
+  "scale": 1.1815383690828476,
+  "scaleXYZ": [
+    1.1815383690828476,
+    1.1815383690828476,
+    1.1815383690828476
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "6fe7881952b751ff9dd3e5d65d56459ddb29ddd807faea3d486817fc51bd4421"
+}

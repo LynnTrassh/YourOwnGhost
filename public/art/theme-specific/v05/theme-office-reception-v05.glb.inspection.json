@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-office-reception-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-office-reception-v05.glb",
+  "sourceBytes": 11108232,
+  "runtimeBytes": 3770744,
+  "sourceSHA256": "86b6f25f3e69472c4261bb046834df196872a9e04896e130e589241813111ea3",
+  "runtimeSHA256": "9d4dd083299ff338a7868415ef8a19207dad4ed270c9f60a12d38ca517f18017",
+  "triangles": 14718,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3134765625,
+      -0.3486328423023224,
+      -0.4990234375
+    ],
+    "max": [
+      0.3134765625,
+      0.3486328423023224,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.7872548346635548,
+      0,
+      -0.49453777285127426
+    ],
+    "max": [
+      0.7872548346635548,
+      1.1,
+      0.49453777285127426
+    ],
+    "size": [
+      1.5745096693271097,
+      1.1,
+      0.9890755457025485
+    ]
+  },
+  "scale": 1.5775909015567127,
+  "scaleXYZ": [
+    1.5775909015567127,
+    1.5775909015567127,
+    1.5775909015567127
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "ef2b0faf7eacdb59e1183be42688a68e9ce04130e0da752cd3e2960bf53b9160"
+}

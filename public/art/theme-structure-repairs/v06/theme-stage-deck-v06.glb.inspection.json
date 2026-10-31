@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-structure-repairs-v06/output/theme-stage-deck-v06/model.glb",
+  "destination": "public/art/theme-structure-repairs/v06/theme-stage-deck-v06.glb",
+  "sourceBytes": 12465456,
+  "runtimeBytes": 3624508,
+  "sourceSHA256": "7fa675f57c4ec943df96e7037c5e3bb4e63a7829f7a83e2439c4b9cee8fc68bd",
+  "runtimeSHA256": "bf21928313a4faa8ab1745094a0c4b7cfe0b88c065304c2313ce2a6c515bb178",
+  "triangles": 14216,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4306640625,
+      -0.06542970985174179,
+      -0.4990234375
+    ],
+    "max": [
+      0.4306640625,
+      0.0654297024011612,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -1.4809697276528977,
+      0,
+      -1.7160442875978021
+    ],
+    "max": [
+      1.4809697276528977,
+      0.45,
+      1.7160442875978021
+    ],
+    "size": [
+      2.9619394553057954,
+      0.45,
+      3.4320885751956043
+    ]
+  },
+  "scale": 3.43880499119403,
+  "scaleXYZ": [
+    3.43880499119403,
+    3.43880499119403,
+    3.43880499119403
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "808cadc0f73a86ee94ed1122ff1f4faf7ef97c2dbe591b16483ac36324361857"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-ritual-idol-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-ritual-idol-v05.glb",
+  "sourceBytes": 13788784,
+  "runtimeBytes": 4074812,
+  "sourceSHA256": "5f935c32ba3695b6da44e087b1fa0adf854305c947bf92b4c513953d40854fb4",
+  "runtimeSHA256": "dacf8e12efce7b1ec70f35c7df4ca50d4f5d866113e5581d97c91844f8ae5b5b",
+  "triangles": 17764,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.36833518743515015,
+      -0.5,
+      -0.44907480478286743
+    ],
+    "max": [
+      0.36833518743515015,
+      0.5,
+      0.44907480478286743
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.4041673243045807,
+      0,
+      -0.33150166869163517
+    ],
+    "max": [
+      0.4041673243045807,
+      0.9,
+      0.33150166869163517
+    ],
+    "size": [
+      0.8083346486091614,
+      0.9,
+      0.6630033373832703
+    ]
+  },
+  "scale": 0.9,
+  "scaleXYZ": [
+    0.9,
+    0.9,
+    0.9
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "0a15906ca7c2b5d1ee504ccf87d83aa80c1b6b02affe555f4734b3117d5af42c"
+}

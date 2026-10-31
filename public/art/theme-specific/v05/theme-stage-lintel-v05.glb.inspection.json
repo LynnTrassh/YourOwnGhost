@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-stage-lintel-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-stage-lintel-v05.glb",
+  "sourceBytes": 12338804,
+  "runtimeBytes": 4607528,
+  "sourceSHA256": "ff09501cf7a54ebcd3544db3f442e7767d299071a8d60b79ec985317747310c0",
+  "runtimeSHA256": "11770fb12c8d36bfb16675b4b6ce694161fbc72b5c65b24488c50324ebf958dd",
+  "triangles": 16768,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.0791015625,
+      -0.12011720985174179,
+      -0.4990234375
+    ],
+    "max": [
+      0.0791015625,
+      0.12011720985174179,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.7270323850369861,
+      0,
+      -0.11524388099412113
+    ],
+    "max": [
+      0.7270323850369861,
+      0.35,
+      0.11524388099412113
+    ],
+    "size": [
+      1.4540647700739722,
+      0.35,
+      0.23048776198824225
+    ]
+  },
+  "scale": 1.456910297999753,
+  "scaleXYZ": [
+    1.456910297999753,
+    1.456910297999753,
+    1.456910297999753
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "a69c6dfb0d52f3a0dcd2acd87b8a4222153c38e4ecd28adbd6f1d695f9fc5ce4"
+}

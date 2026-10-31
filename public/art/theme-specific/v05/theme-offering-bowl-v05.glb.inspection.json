@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-offering-bowl-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-offering-bowl-v05.glb",
+  "sourceBytes": 10643040,
+  "runtimeBytes": 3977992,
+  "sourceSHA256": "b5949a5e4a315df3827b88eda7c2f15692589cbe38b66ff4eab6aa92ae32cae3",
+  "runtimeSHA256": "dc504e8eae0cbbcb176b01de09e047d4328288d314327ebd8a467cfa579084ca",
+  "triangles": 16957,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.4990234375,
+      -0.1591797024011612,
+      -0.4990234375
+    ],
+    "max": [
+      0.4990234375,
+      0.1591797024011612,
+      0.4990234375
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.4702453547523026,
+      0,
+      -0.4702453547523026
+    ],
+    "max": [
+      0.4702453547523026,
+      0.3,
+      0.4702453547523026
+    ],
+    "size": [
+      0.9404907095046052,
+      0.3,
+      0.9404907095046052
+    ]
+  },
+  "scale": 0.9423312001298588,
+  "scaleXYZ": [
+    0.9423312001298588,
+    0.9423312001298588,
+    0.9423312001298588
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "e08412da794357d26bcaad47cdc700b8ce7a7c7ab4cd4aabb079a571b8322885"
+}

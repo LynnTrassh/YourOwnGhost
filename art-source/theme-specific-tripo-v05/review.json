@@ -1,0 +1,19 @@
+{
+  "reviewed": {},
+  "rejected": {
+    "theme-theatre-stage-v05": "供应商预览显示顶部敞开木框，缺少完整可站立台面；禁止交付为主席台，改用明确单体参考图重做。",
+    "theme-stage-stairs-v05": "供应商预览显示多于三级踏步并带侧向箱体，不能满足独立三级侧阶；隔离并用图生模型重做。",
+    "theme-exam-lamp-v05": "灯架旁有脱离主体的黑色碎片，需清理后复验。",
+    "theme-turnstile-v05": "三脚架结构，不是可用的三杆旋转闸机。",
+    "theme-ticket-window-v05": "生成完整封闭售票亭，非约定的窗口框/开口隔断，不能按原功能接入。",
+    "theme-place-setting-v05": "盘、刀叉竖直悬空，不是可放在桌面的餐具组合。",
+    "theme-water-dispenser-v05": "桶口与机身连接仍需近景确认，暂不纳入可用交付。",
+    "theme-hotel-luggage-rack-v05": "承重带垂直垂落，不能承托行李。",
+    "theme-office-divider-v05": "闭合四面盒体，缺少可进入的工位开口。",
+    "theme-performer-mask-smile-v05": "面具后方有不合理凸块，需清理或重做。"
+  },
+  "previewChecks": {
+    "theme-waiting-bench-v05": "供应商预览可识别三联连椅；尚需实际GLB正背侧、接触和尺寸检查。",
+    "theme-exam-lamp-v05": "已看到供应商预览，灯头与关节臂结构仍需进一步验收；不标记通过。"
+  }
+}

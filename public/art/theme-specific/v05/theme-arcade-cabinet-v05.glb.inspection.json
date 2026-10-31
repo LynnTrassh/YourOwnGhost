@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-arcade-cabinet-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-arcade-cabinet-v05.glb",
+  "sourceBytes": 8543672,
+  "runtimeBytes": 3402556,
+  "sourceSHA256": "fab4160fab4c200d37a62d51249a74225fcb56b2be2dfeb2f110d265730ed0b2",
+  "runtimeSHA256": "96a51b80a7cbdb3c30f98562178a4c125abd9e59da5cbfc300687d810d2bced4",
+  "triangles": 15074,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1923828125,
+      -0.4990234375,
+      -0.2509765923023224
+    ],
+    "max": [
+      0.1923828125,
+      0.4990234375,
+      0.2509765625
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.3469667318982388,
+      0,
+      -0.4526419055438555
+    ],
+    "max": [
+      0.3469667318982388,
+      1.8,
+      0.4526419055438555
+    ],
+    "size": [
+      0.6939334637964776,
+      1.8,
+      0.905283811087711
+    ]
+  },
+  "scale": 1.803522504892368,
+  "scaleXYZ": [
+    1.803522504892368,
+    1.803522504892368,
+    1.803522504892368
+  ],
+  "footprint": null,
+  "yawDegrees": 0,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "276ed3528313bb1842ffd903d1669d520488fd0cd2558dca82978b2eddff112f"
+}

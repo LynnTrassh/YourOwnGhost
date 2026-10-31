@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-office-chair-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-office-chair-v05.glb",
+  "sourceBytes": 10987852,
+  "runtimeBytes": 3640600,
+  "sourceSHA256": "9bcf50eecda987d80cafbeec31d1aaaa06e480b4b32ed52f8ae589689000d08f",
+  "runtimeSHA256": "eb100e8780e20ebde827e1d4b138425bc7587fcb9420e8505b2c34c5a987c60d",
+  "triangles": 16272,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.30815666913986206,
+      -0.5,
+      -0.32282087206840515
+    ],
+    "max": [
+      0.30815666913986206,
+      0.5,
+      0.32282087206840515
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.32927728950977325,
+      0,
+      -0.3143198025226593
+    ],
+    "max": [
+      0.32927728950977325,
+      1.02,
+      0.3143198025226593
+    ],
+    "size": [
+      0.6585545790195465,
+      1.02,
+      0.6286396050453186
+    ]
+  },
+  "scale": 1.02,
+  "scaleXYZ": [
+    1.02,
+    1.02,
+    1.02
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "19ce7d937d950ba6165fe426b7168c8c4f5e2e67b327747b92ec12ff9f596b3f"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-specific-tripo-v05/output/theme-luggage-trolley-v05/model.glb",
+  "destination": "public/art/theme-specific/v05/theme-luggage-trolley-v05.glb",
+  "sourceBytes": 10501096,
+  "runtimeBytes": 4292120,
+  "sourceSHA256": "04e0095250be96154f6a98dda479a0f47358a665065f93c8a1da6dd63b47183d",
+  "runtimeSHA256": "9e9ea8ff842ee011ca434f9d44caccc64a40affbc9a7f568d27a3bd1c2c68a2c",
+  "triangles": 16545,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.1904296875,
+      -0.4990234375,
+      -0.3681640923023224
+    ],
+    "max": [
+      0.1904296875,
+      0.4990234375,
+      0.3681640326976776
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6455479452054793,
+      0,
+      -0.33390410958904115
+    ],
+    "max": [
+      0.6455479452054793,
+      1.75,
+      0.33390410958904115
+    ],
+    "size": [
+      1.2910958904109586,
+      1.75,
+      0.6678082191780823
+    ]
+  },
+  "scale": 1.7534246575342465,
+  "scaleXYZ": [
+    1.7534246575342465,
+    1.7534246575342465,
+    1.7534246575342465
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "df1a1d9df5ca4e7d91d68c87a78a1fdba6ab78d1bab3a35bac4a08ae42f74784"
+}

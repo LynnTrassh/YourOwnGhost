@@ -1,0 +1,54 @@
+{
+  "source": "art-source/theme-parallel-tripo-v07/output/theme-craft-paint-box-v05/model.glb",
+  "destination": "public/art/theme-parallel/v07/theme-craft-paint-box-v05.glb",
+  "sourceBytes": 12747752,
+  "runtimeBytes": 3930324,
+  "sourceSHA256": "c490ca7e6f06e76a68c4c8b768ff233c3716e38ea9abc136011cafdc54673f48",
+  "runtimeSHA256": "11e12888620966473e223b96dabef694ed9ed18988833321ef80b572396cf5ae",
+  "triangles": 16598,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.46888986229896545,
+      -0.3705684542655945,
+      -0.5
+    ],
+    "max": [
+      0.46888986229896545,
+      0.3705684542655945,
+      0.5
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.13492783701486882,
+      0,
+      -0.1265325898363982
+    ],
+    "max": [
+      0.13492783701486882,
+      0.2,
+      0.1265325898363982
+    ],
+    "size": [
+      0.26985567402973765,
+      0.2,
+      0.2530651796727964
+    ]
+  },
+  "scale": 0.26985567402973765,
+  "scaleXYZ": [
+    0.26985567402973765,
+    0.26985567402973765,
+    0.26985567402973765
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation",
+  "preOptimizationSHA256": "d742ce16f73fa6e712b8fd2b62a687d34c38b6facc2a4bf1925891f816c3e448"
+}

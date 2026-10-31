@@ -1,0 +1,1305 @@
+{
+  "version": 7,
+  "models": [
+    {
+      "id": "theme-office-chair-v05",
+      "name": "旧办公转椅",
+      "theme": "office",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-office-chair-v05.glb",
+      "width": 0.6585545790195465,
+      "height": 1.02,
+      "depth": 0.6286396050453186,
+      "taskId": "1e909719-2bd9-422e-91e8-ba75b0e30f6d",
+      "creditsConsumed": 30,
+      "triangles": 16272,
+      "bytes": 3640600,
+      "sha256": "eb100e8780e20ebde827e1d4b138425bc7587fcb9420e8505b2c34c5a987c60d",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-office-chair-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-office-chair-v05.glb",
+        "sourceBytes": 10987852,
+        "runtimeBytes": 3640600,
+        "sourceSHA256": "9bcf50eecda987d80cafbeec31d1aaaa06e480b4b32ed52f8ae589689000d08f",
+        "runtimeSHA256": "eb100e8780e20ebde827e1d4b138425bc7587fcb9420e8505b2c34c5a987c60d",
+        "triangles": 16272,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.30815666913986206,
+            -0.5,
+            -0.32282087206840515
+          ],
+          "max": [
+            0.30815666913986206,
+            0.5,
+            0.32282087206840515
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.32927728950977325,
+            0,
+            -0.3143198025226593
+          ],
+          "max": [
+            0.32927728950977325,
+            1.02,
+            0.3143198025226593
+          ],
+          "size": [
+            0.6585545790195465,
+            1.02,
+            0.6286396050453186
+          ]
+        },
+        "scale": 1.02,
+        "scaleXYZ": [
+          1.02,
+          1.02,
+          1.02
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "19ce7d937d950ba6165fe426b7168c8c4f5e2e67b327747b92ec12ff9f596b3f"
+      },
+      "optimization": {
+        "beforeBytes": 10988160,
+        "runtimeBytes": 3640600,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-photocopier-v05",
+      "name": "旧复印机",
+      "theme": "office",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-photocopier-v05.glb",
+      "width": 0.724760127067566,
+      "height": 1.1,
+      "depth": 0.7514985620975495,
+      "taskId": "afca9d55-35a6-4469-b256-7dfe7baf8afc",
+      "creditsConsumed": 30,
+      "triangles": 15203,
+      "bytes": 3296072,
+      "sha256": "6560c64730b3cac279d4b7fa3c2ce6ed6544400d9848889fe9643fa64589cf0d",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-photocopier-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-photocopier-v05.glb",
+        "sourceBytes": 9008796,
+        "runtimeBytes": 3296072,
+        "sourceSHA256": "8233f7c11222c5a0a955972fb81075f78513c6b8acf93aca39215acf25894c2e",
+        "runtimeSHA256": "6560c64730b3cac279d4b7fa3c2ce6ed6544400d9848889fe9643fa64589cf0d",
+        "triangles": 15203,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.3415902554988861,
+            -0.5,
+            -0.32943642139434814
+          ],
+          "max": [
+            0.3415902554988861,
+            0.5,
+            0.32943642139434814
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.362380063533783,
+            0,
+            -0.37574928104877475
+          ],
+          "max": [
+            0.362380063533783,
+            1.1,
+            0.37574928104877475
+          ],
+          "size": [
+            0.724760127067566,
+            1.1,
+            0.7514985620975495
+          ]
+        },
+        "scale": 1.1,
+        "scaleXYZ": [
+          1.1,
+          1.1,
+          1.1
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "b222522a5fe975c7a2d78a98193f41912dc48c7e7351eedfb00cc169a56a1607"
+      },
+      "optimization": {
+        "beforeBytes": 9009092,
+        "runtimeBytes": 3296072,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-china-cabinet-v05",
+      "name": "家庭餐具柜",
+      "theme": "home",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-china-cabinet-v05.glb",
+      "width": 1.548760759830475,
+      "height": 1.85,
+      "depth": 0.8721860304474832,
+      "taskId": "fc611b68-413d-4454-b340-d4860d80550a",
+      "creditsConsumed": 30,
+      "triangles": 16336,
+      "bytes": 3379220,
+      "sha256": "44d2b16f6514fc86fd36a0c59a82eb96ef7e90949aa60a80e1be51e12b3b5904",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-china-cabinet-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-china-cabinet-v05.glb",
+        "sourceBytes": 9806376,
+        "runtimeBytes": 3379220,
+        "sourceSHA256": "f1f9a649c19260d3c8a481bc3f0264d2c46c1e3dce87a28539ccdf02520d4927",
+        "runtimeSHA256": "44d2b16f6514fc86fd36a0c59a82eb96ef7e90949aa60a80e1be51e12b3b5904",
+        "triangles": 16336,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.23572595417499542,
+            -0.5,
+            -0.4185839891433716
+          ],
+          "max": [
+            0.23572595417499542,
+            0.5,
+            0.4185839891433716
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.7743803799152374,
+            0,
+            -0.4360930152237416
+          ],
+          "max": [
+            0.7743803799152374,
+            1.85,
+            0.4360930152237416
+          ],
+          "size": [
+            1.548760759830475,
+            1.85,
+            0.8721860304474832
+          ]
+        },
+        "scale": 1.85,
+        "scaleXYZ": [
+          1.85,
+          1.85,
+          1.85
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "a21235e804878dd9faa962f0d4c0f4c510f89c811efc03f69f03b68cd65b6afe"
+      },
+      "optimization": {
+        "beforeBytes": 9806688,
+        "runtimeBytes": 3379220,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-sewing-basket-v05",
+      "name": "祖母针线篮",
+      "theme": "home",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-sewing-basket-v05.glb",
+      "width": 0.3509984560947124,
+      "height": 0.28,
+      "depth": 0.31774679639466025,
+      "taskId": "116657db-1fdc-4037-a762-ca1a1e7fc86f",
+      "creditsConsumed": 30,
+      "triangles": 17712,
+      "bytes": 3982452,
+      "sha256": "52d73291ca123af2a629c7448dede707661355b386399f4d2afe7528bfa0703c",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-sewing-basket-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-sewing-basket-v05.glb",
+        "sourceBytes": 11059112,
+        "runtimeBytes": 3982452,
+        "sourceSHA256": "54e161449c816091fde811d4cd25c46a5b4793feeeed34540915bc022467f8ca",
+        "runtimeSHA256": "52d73291ca123af2a629c7448dede707661355b386399f4d2afe7528bfa0703c",
+        "triangles": 17712,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.45263275504112244,
+            -0.39886215329170227,
+            -0.5
+          ],
+          "max": [
+            0.45263275504112244,
+            0.39886215329170227,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.1754992280473562,
+            0,
+            -0.15887339819733012
+          ],
+          "max": [
+            0.1754992280473562,
+            0.28,
+            0.15887339819733012
+          ],
+          "size": [
+            0.3509984560947124,
+            0.28,
+            0.31774679639466025
+          ]
+        },
+        "scale": 0.3509984560947124,
+        "scaleXYZ": [
+          0.3509984560947124,
+          0.3509984560947124,
+          0.3509984560947124
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "0f3d3b003842664f6767afb024d89e7776a189f6ed3e9e122d7f87ee9484ad23"
+      },
+      "optimization": {
+        "beforeBytes": 11059464,
+        "runtimeBytes": 3982452,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-hotel-service-bell-v05",
+      "name": "旅馆柜台服务铃",
+      "theme": "hotel",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-hotel-service-bell-v05.glb",
+      "width": 0.12505892810975913,
+      "height": 0.09999999999999999,
+      "depth": 0.1252525418428214,
+      "taskId": "c21f9747-e69c-4ebc-a4f1-8a4576f5660d",
+      "creditsConsumed": 30,
+      "triangles": 17849,
+      "bytes": 2438656,
+      "sha256": "984d4062176420dd28f490348191896feb7b6cdd8dc3ef9be93b7b6616dc4b89",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-hotel-service-bell-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-hotel-service-bell-v05.glb",
+        "sourceBytes": 5784872,
+        "runtimeBytes": 2438656,
+        "sourceSHA256": "9c21fc0cbeaa5b56c62a01aa170c5ecca1aff93dba75f3f3435618e7955311ee",
+        "runtimeSHA256": "984d4062176420dd28f490348191896feb7b6cdd8dc3ef9be93b7b6616dc4b89",
+        "triangles": 17849,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4992271065711975,
+            -0.39919349551200867,
+            -0.5
+          ],
+          "max": [
+            0.4992271065711975,
+            0.39919349551200867,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.06252946405487957,
+            0,
+            -0.0626262709214107
+          ],
+          "max": [
+            0.06252946405487957,
+            0.09999999999999999,
+            0.0626262709214107
+          ],
+          "size": [
+            0.12505892810975913,
+            0.09999999999999999,
+            0.1252525418428214
+          ]
+        },
+        "scale": 0.1252525418428214,
+        "scaleXYZ": [
+          0.1252525418428214,
+          0.1252525418428214,
+          0.1252525418428214
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "d7e3be370a68e2b1136c094bb233d1736fadf0e051f73de207e09c58ba856cd4"
+      },
+      "optimization": {
+        "beforeBytes": 5785192,
+        "runtimeBytes": 2438656,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-ritual-idol-v05",
+      "name": "原创祭祀坐像",
+      "theme": "ritual",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-ritual-idol-v05.glb",
+      "width": 0.8083346486091614,
+      "height": 0.9,
+      "depth": 0.6630033373832703,
+      "taskId": "335beb33-23fd-44e4-becf-c3af2592bccf",
+      "creditsConsumed": 30,
+      "triangles": 17764,
+      "bytes": 4074812,
+      "sha256": "dacf8e12efce7b1ec70f35c7df4ca50d4f5d866113e5581d97c91844f8ae5b5b",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-ritual-idol-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-ritual-idol-v05.glb",
+        "sourceBytes": 13788784,
+        "runtimeBytes": 4074812,
+        "sourceSHA256": "5f935c32ba3695b6da44e087b1fa0adf854305c947bf92b4c513953d40854fb4",
+        "runtimeSHA256": "dacf8e12efce7b1ec70f35c7df4ca50d4f5d866113e5581d97c91844f8ae5b5b",
+        "triangles": 17764,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.36833518743515015,
+            -0.5,
+            -0.44907480478286743
+          ],
+          "max": [
+            0.36833518743515015,
+            0.5,
+            0.44907480478286743
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.4041673243045807,
+            0,
+            -0.33150166869163517
+          ],
+          "max": [
+            0.4041673243045807,
+            0.9,
+            0.33150166869163517
+          ],
+          "size": [
+            0.8083346486091614,
+            0.9,
+            0.6630033373832703
+          ]
+        },
+        "scale": 0.9,
+        "scaleXYZ": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "0a15906ca7c2b5d1ee504ccf87d83aa80c1b6b02affe555f4734b3117d5af42c"
+      },
+      "optimization": {
+        "beforeBytes": 13789088,
+        "runtimeBytes": 4074812,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-ritual-lantern-v05",
+      "name": "旧祭祀灯笼",
+      "theme": "ritual",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-ritual-lantern-v05.glb",
+      "width": 0.31752147674560544,
+      "height": 0.6,
+      "depth": 0.283389812707901,
+      "taskId": "048f154c-d9f5-4fe5-8ee1-b2a906c31394",
+      "creditsConsumed": 30,
+      "triangles": 15941,
+      "bytes": 3818088,
+      "sha256": "83ef811624cd35ad523b891a78b3674488ea504244c542bc8ea9785d22ca2a78",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-ritual-lantern-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-ritual-lantern-v05.glb",
+        "sourceBytes": 11485164,
+        "runtimeBytes": 3818088,
+        "sourceSHA256": "e11bbb00287c4846f70f9be3f6368a9892a69e2ebe13355b7a073646edd549eb",
+        "runtimeSHA256": "83ef811624cd35ad523b891a78b3674488ea504244c542bc8ea9785d22ca2a78",
+        "triangles": 15941,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.23615817725658417,
+            -0.5,
+            -0.2646012306213379
+          ],
+          "max": [
+            0.23615817725658417,
+            0.5,
+            0.2646012306213379
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.15876073837280272,
+            0,
+            -0.1416949063539505
+          ],
+          "max": [
+            0.15876073837280272,
+            0.6,
+            0.1416949063539505
+          ],
+          "size": [
+            0.31752147674560544,
+            0.6,
+            0.283389812707901
+          ]
+        },
+        "scale": 0.6,
+        "scaleXYZ": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "d742c89dfc4814864e282f9aefcfa3a7873d4e3198d2a6459125027d21f20123"
+      },
+      "optimization": {
+        "beforeBytes": 11485464,
+        "runtimeBytes": 3818088,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-xray-viewer-v05",
+      "name": "壁挂X光观片箱",
+      "theme": "hospital",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-xray-viewer-v05.glb",
+      "width": 0.56004618704319,
+      "height": 0.65,
+      "depth": 0.17911771386861805,
+      "taskId": "cc7d3d71-df45-4946-8268-71b02e7bf233",
+      "creditsConsumed": 30,
+      "triangles": 16311,
+      "bytes": 2779540,
+      "sha256": "f9d076349446b07c07795f32cf64a6cb1dca8675ce59c86f0e2d5aa9c1cc6cbf",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-xray-viewer-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-xray-viewer-v05.glb",
+        "sourceBytes": 8373064,
+        "runtimeBytes": 2779540,
+        "sourceSHA256": "27e58d06b8b3662ad490109b5c51abfe721470164690b64f645cbf176951738a",
+        "runtimeSHA256": "f9d076349446b07c07795f32cf64a6cb1dca8675ce59c86f0e2d5aa9c1cc6cbf",
+        "triangles": 16311,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.13778285682201385,
+            -0.5,
+            -0.4308047592639923
+          ],
+          "max": [
+            0.13778285682201385,
+            0.5,
+            0.4308047592639923
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.280023093521595,
+            0,
+            -0.08955885693430903
+          ],
+          "max": [
+            0.280023093521595,
+            0.65,
+            0.08955885693430903
+          ],
+          "size": [
+            0.56004618704319,
+            0.65,
+            0.17911771386861805
+          ]
+        },
+        "scale": 0.65,
+        "scaleXYZ": [
+          0.65,
+          0.65,
+          0.65
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "b6fdb604b16b80ad2b456cbf106f95373e9dab10c0a2a26bdebc36dcd1284118"
+      },
+      "optimization": {
+        "beforeBytes": 8373376,
+        "runtimeBytes": 2779540,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-ritual-tablet-v05",
+      "name": "原创祭祀牌板",
+      "theme": "ritual",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-ritual-tablet-v05.glb",
+      "width": 0.2822080254554749,
+      "height": 0.65,
+      "depth": 0.41807886362075813,
+      "taskId": "822875d1-26f7-43e2-bc88-a39c1c279280",
+      "creditsConsumed": 30,
+      "triangles": 17067,
+      "bytes": 3535512,
+      "sha256": "7e04148e3f3660d4accdfb12979e6e2ef1b13212eb372b4f67ef52b984615e28",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 180,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-ritual-tablet-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-ritual-tablet-v05.glb",
+        "sourceBytes": 10745284,
+        "runtimeBytes": 3535512,
+        "sourceSHA256": "1eb66faceccea9de467b5be6abbd4f9a01238095e2f5dfd56d489593d9fb1930",
+        "runtimeSHA256": "7e04148e3f3660d4accdfb12979e6e2ef1b13212eb372b4f67ef52b984615e28",
+        "triangles": 17067,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.21708309650421143,
+            -0.5,
+            -0.3215991258621216
+          ],
+          "max": [
+            0.21708309650421143,
+            0.5,
+            0.3215991258621216
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.14110401272773745,
+            0,
+            -0.20903943181037907
+          ],
+          "max": [
+            0.14110401272773745,
+            0.65,
+            0.20903943181037907
+          ],
+          "size": [
+            0.2822080254554749,
+            0.65,
+            0.41807886362075813
+          ]
+        },
+        "scale": 0.65,
+        "scaleXYZ": [
+          0.65,
+          0.65,
+          0.65
+        ],
+        "footprint": null,
+        "yawDegrees": 180,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "0bbdee2c739bbb553af16d1cdeba1211feff105773f674bf8fae1f01f4e98737"
+      },
+      "optimization": {
+        "beforeBytes": 10745596,
+        "runtimeBytes": 3535512,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "双向牌座，正面+Z校正到-Z；不是单片牌板。"
+      }
+    },
+    {
+      "id": "theme-meeting-board-v05",
+      "name": "会议展示板",
+      "theme": "office",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-meeting-board-v05.glb",
+      "width": 1.7808501462849586,
+      "height": 1.1,
+      "depth": 0.289175897349347,
+      "taskId": "24da3e1f-68ab-4cd7-b2e0-8161c232e870",
+      "creditsConsumed": 30,
+      "triangles": 15676,
+      "bytes": 2968336,
+      "sha256": "20b8a719451fc02907d7c579f64c3dd5785b51b57552c3503a15986039aebb0f",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-meeting-board-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-meeting-board-v05.glb",
+        "sourceBytes": 9129188,
+        "runtimeBytes": 2968336,
+        "sourceSHA256": "2eeb2444e4c2afeaeafff5aae4a1fa7042b69c967bb6876ef6782eb44dbb4b4d",
+        "runtimeSHA256": "20b8a719451fc02907d7c579f64c3dd5785b51b57552c3503a15986039aebb0f",
+        "triangles": 15676,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.08119040727615356,
+            -0.3088412582874298,
+            -0.5
+          ],
+          "max": [
+            0.08119040727615356,
+            0.3088412582874298,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.8904250731424793,
+            0,
+            -0.1445879486746735
+          ],
+          "max": [
+            0.8904250731424793,
+            1.1,
+            0.1445879486746735
+          ],
+          "size": [
+            1.7808501462849586,
+            1.1,
+            0.289175897349347
+          ]
+        },
+        "scale": 1.7808501462849586,
+        "scaleXYZ": [
+          1.7808501462849586,
+          1.7808501462849586,
+          1.7808501462849586
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "22882b84550ee4b9b1c3cbb2f43c6a36c64acceaf569b401ea6ee79bee6f44c5"
+      },
+      "optimization": {
+        "beforeBytes": 9129540,
+        "runtimeBytes": 2968336,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-craft-paper-v05",
+      "name": "褪色手工彩纸",
+      "theme": "park",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-craft-paper-v05.glb",
+      "width": 0.1831690682716183,
+      "height": 0.12,
+      "depth": 0.18547910857966643,
+      "taskId": "14309afa-cda6-4a28-91b9-51b5555349ef",
+      "creditsConsumed": 30,
+      "triangles": 14271,
+      "bytes": 3987212,
+      "sha256": "e0641d86850407a4afe8e93e6fe3ab8b2ee2c083ef4b714245881842de4e6684",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-craft-paper-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-craft-paper-v05.glb",
+        "sourceBytes": 12793300,
+        "runtimeBytes": 3987212,
+        "sourceSHA256": "da32519e65c22f783c113eec9a836e83447d7a86c8cc70642f122863d79c0d2e",
+        "runtimeSHA256": "e0641d86850407a4afe8e93e6fe3ab8b2ee2c083ef4b714245881842de4e6684",
+        "triangles": 14271,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4937727749347687,
+            -0.3234865665435791,
+            -0.5
+          ],
+          "max": [
+            0.4937727749347687,
+            0.3234865665435791,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.09158453413580915,
+            0,
+            -0.09273955428983321
+          ],
+          "max": [
+            0.09158453413580915,
+            0.12,
+            0.09273955428983321
+          ],
+          "size": [
+            0.1831690682716183,
+            0.12,
+            0.18547910857966643
+          ]
+        },
+        "scale": 0.18547910857966643,
+        "scaleXYZ": [
+          0.18547910857966643,
+          0.18547910857966643,
+          0.18547910857966643
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "d0e5f04d417199bdbd9d12d4826bebed2d0a60b57547b56dc142dbc8b6042a73"
+      },
+      "optimization": {
+        "beforeBytes": 12793612,
+        "runtimeBytes": 3987212,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "小幅彩纸堆总高校正到0.12米，需按清单实际占地摆放。"
+      }
+    },
+    {
+      "id": "theme-craft-pencil-cup-v05",
+      "name": "手工彩笔筒",
+      "theme": "park",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-craft-pencil-cup-v05.glb",
+      "width": 0.07924761950969696,
+      "height": 0.18,
+      "depth": 0.07674165308475495,
+      "taskId": "02cdf2e5-2ea2-45b1-8c48-d3e04cf866f6",
+      "creditsConsumed": 30,
+      "triangles": 16742,
+      "bytes": 3112320,
+      "sha256": "ac788598ac2e10079aa8334285a21b67c3cbfca6000d733ca78a4a6df554fc66",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-craft-pencil-cup-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-craft-pencil-cup-v05.glb",
+        "sourceBytes": 8367124,
+        "runtimeBytes": 3112320,
+        "sourceSHA256": "47938ce63efbf02e2ecbd0714fb515b490ab4b10b8af462600ee6bc86516d1e3",
+        "runtimeSHA256": "ac788598ac2e10079aa8334285a21b67c3cbfca6000d733ca78a4a6df554fc66",
+        "triangles": 16742,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.21317125856876373,
+            -0.5,
+            -0.2201322764158249
+          ],
+          "max": [
+            0.21317125856876373,
+            0.5,
+            0.2201322764158249
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.03962380975484848,
+            0,
+            -0.03837082654237747
+          ],
+          "max": [
+            0.03962380975484848,
+            0.18,
+            0.03837082654237747
+          ],
+          "size": [
+            0.07924761950969696,
+            0.18,
+            0.07674165308475495
+          ]
+        },
+        "scale": 0.18,
+        "scaleXYZ": [
+          0.18,
+          0.18,
+          0.18
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "69d20a788aeec98bf4faaf677763f8bd9c2918a0d45611ef02774b419e4c12b6"
+      },
+      "optimization": {
+        "beforeBytes": 8367432,
+        "runtimeBytes": 3112320,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    },
+    {
+      "id": "theme-craft-paint-box-v05",
+      "name": "旧水彩颜料盒",
+      "theme": "park",
+      "runtimeUrl": "/art/theme-parallel/v07/theme-craft-paint-box-v05.glb",
+      "width": 0.26985567402973765,
+      "height": 0.2,
+      "depth": 0.2530651796727964,
+      "taskId": "c4c5f68b-3266-4a2c-b4cc-aab09fafc2c9",
+      "creditsConsumed": 30,
+      "triangles": 16598,
+      "bytes": 3930324,
+      "sha256": "11e12888620966473e223b96dabef694ed9ed18988833321ef80b572396cf5ae",
+      "source": "Tripo H3 textured PBR model",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-parallel-tripo-v07/output/theme-craft-paint-box-v05/model.glb",
+        "destination": "public/art/theme-parallel/v07/theme-craft-paint-box-v05.glb",
+        "sourceBytes": 12747752,
+        "runtimeBytes": 3930324,
+        "sourceSHA256": "c490ca7e6f06e76a68c4c8b768ff233c3716e38ea9abc136011cafdc54673f48",
+        "runtimeSHA256": "11e12888620966473e223b96dabef694ed9ed18988833321ef80b572396cf5ae",
+        "triangles": 16598,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.46888986229896545,
+            -0.3705684542655945,
+            -0.5
+          ],
+          "max": [
+            0.46888986229896545,
+            0.3705684542655945,
+            0.5
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.13492783701486882,
+            0,
+            -0.1265325898363982
+          ],
+          "max": [
+            0.13492783701486882,
+            0.2,
+            0.1265325898363982
+          ],
+          "size": [
+            0.26985567402973765,
+            0.2,
+            0.2530651796727964
+          ]
+        },
+        "scale": 0.26985567402973765,
+        "scaleXYZ": [
+          0.26985567402973765,
+          0.26985567402973765,
+          0.26985567402973765
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "d742ce16f73fa6e712b8fd2b62a687d34c38b6facc2a4bf1925891f816c3e448"
+      },
+      "optimization": {
+        "beforeBytes": 12748104,
+        "runtimeBytes": 3930324,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "模型开盖，高度应包括竖起盒盖；整模高校正到0.20米。"
+      }
+    }
+  ]
+}

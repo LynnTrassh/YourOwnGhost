@@ -1,0 +1,312 @@
+{
+  "version": 7,
+  "model": "tripo-v3.1",
+  "profile": "horror-models-secondary",
+  "parameters": {
+    "face_limit": 18000,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed"
+  },
+  "authorization": "User explicitly asks fast parallel batches of usable theme-room models; these requests were moved before submission, not duplicated.",
+  "estimatedCredits": 540,
+  "assets": [
+    {
+      "id": "theme-office-chair-v05",
+      "name": "旧办公转椅",
+      "theme": "office",
+      "targetHeight": 1.02,
+      "roomIds": [
+        "office-02",
+        "office-03",
+        "office-05"
+      ],
+      "prompt": "An old swivel office chair with brown worn vinyl padded seat and back, metal armrests, five spoke wheeled base, adjustable central stem, practical early office design. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false,
+      "specificationId": "theme-office-chair-v01",
+      "requestedBoundsWHD": [
+        0.6,
+        1.02,
+        0.6
+      ],
+      "deliverableParts": "带可辨认升降/旋转底座的旧办公椅。",
+      "constructionNotes": "先静态；不要电竞椅、未来风或亮塑料；避免与在制木餐椅/软垫餐椅重复命名。",
+      "priority": "P1"
+    },
+    {
+      "id": "theme-photocopier-v05",
+      "name": "旧复印机",
+      "theme": "office",
+      "targetHeight": 1.1,
+      "roomIds": [
+        "office-06",
+        "office-04"
+      ],
+      "prompt": "A large old beige office photocopier, hinged glass scanner lid closed, angled control panel with small display and physical buttons, paper output tray, two lower drawers and caster wheels, yellowed plastic and dusty seams. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-water-dispenser-v05",
+      "name": "桶装饮水机",
+      "theme": "office",
+      "targetHeight": 1.4,
+      "roomIds": [
+        "office-01",
+        "office-07"
+      ],
+      "prompt": "A vintage freestanding office water dispenser with a translucent smoky blue water bottle inverted on top, two taps, shallow drip tray and cream rectangular base, worn plastic, believable complete appliance. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-china-cabinet-v05",
+      "name": "家庭餐具柜",
+      "theme": "home",
+      "targetHeight": 1.85,
+      "roomIds": [
+        "home-06"
+      ],
+      "prompt": "An old wooden kitchen china dresser, upper open shelves containing ceramic plates and cups, lower doors and drawers, faded cream paint with dark wood exposed at edges, practical domestic storage. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-sewing-basket-v05",
+      "name": "祖母针线篮",
+      "theme": "home",
+      "targetHeight": 0.28,
+      "roomIds": [
+        "home-05"
+      ],
+      "prompt": "An old oval wicker sewing basket with hinged padded lid partly open, folded fabric, thread spools and a pin cushion neatly inside, worn muted cloth, small domestic tabletop prop. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-hotel-service-bell-v05",
+      "name": "旅馆柜台服务铃",
+      "theme": "hotel",
+      "targetHeight": 0.1,
+      "roomIds": [
+        "hotel-01"
+      ],
+      "prompt": "One classic small hotel service desk bell, 0.14m wide and deep, 0.10m high. Tarnished brass dome on a dark round base with distinct central metal push button. Complete stable bottom, no counter, sign or hand. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+      "runtimeIntegrated": false,
+      "specificationId": "theme-desk-bell-v01",
+      "requestedBoundsWHD": [
+        0.14,
+        0.1,
+        0.14
+      ],
+      "deliverableParts": "按铃单件，按钮独立可选。",
+      "constructionNotes": "不是本批首要模型；声效/交互由程序接入；不制作现代电器。",
+      "priority": "P1"
+    },
+    {
+      "id": "theme-hotel-luggage-rack-v05",
+      "name": "客房行李架",
+      "theme": "hotel",
+      "targetHeight": 0.56,
+      "roomIds": [
+        "hotel-02",
+        "hotel-03",
+        "hotel-08"
+      ],
+      "prompt": "A folding hotel luggage rack with dark wooden X legs and four wide worn brown fabric support straps stretched across the top, empty stable freestanding rack, realistic joints. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-ritual-idol-v05",
+      "name": "原创祭祀坐像",
+      "theme": "ritual",
+      "targetHeight": 0.9,
+      "roomIds": [
+        "ritual-01",
+        "ritual-02",
+        "ritual-06"
+      ],
+      "prompt": "An original anonymous seated ritual effigy carved from dark weathered wood, simple human silhouette in layered ceremonial robes, unreadable worn face, hands resting together, small integrated plinth, no identifiable deity or famous character. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-ritual-lantern-v05",
+      "name": "旧祭祀灯笼",
+      "theme": "ritual",
+      "targetHeight": 0.6,
+      "roomIds": [
+        "ritual-03",
+        "ritual-07"
+      ],
+      "prompt": "An old freestanding ceremonial lantern, octagonal dark wood frame, faded red paper panels with no writing, small brass handle, short feet, weathered tactile materials, no visible flame. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-prayer-cushion-v05",
+      "name": "跪拜蒲团",
+      "theme": "ritual",
+      "targetHeight": 0.16,
+      "roomIds": [
+        "ritual-03",
+        "ritual-05"
+      ],
+      "prompt": "A single round woven straw prayer cushion with a faded burgundy cloth top insert, thick bound rim, compressed worn centre, visible woven fibres, realistic old floor cushion. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+      "runtimeIntegrated": false,
+      "generationSkipReason": "Provider rejected input, no task ID. Receipt retained; skip automatic resubmission."
+    },
+    {
+      "id": "theme-xray-viewer-v05",
+      "name": "壁挂X光观片箱",
+      "theme": "hospital",
+      "runtimeIntegrated": false,
+      "specificationId": "theme-xray-viewer-v01",
+      "requestedBoundsWHD": [
+        0.85,
+        0.65,
+        0.12
+      ],
+      "deliverableParts": "灯箱一件，胶片面独立材质。",
+      "constructionNotes": "只做原创无患者信息图案；不内置闪烁和音效；安装底高约1.35米。",
+      "priority": "P1",
+      "roomIds": [
+        "hospital-04",
+        "hospital-01"
+      ],
+      "targetHeight": 0.65,
+      "prompt": "One shallow vintage wall-mounted medical X-ray viewing lightbox, 0.85m wide, 0.65m high, 0.12m deep. Off-white worn enamel frame, separate milky rectangular diffuser panel with one monochrome chest-film silhouette held by top clips, simple switch at lower edge. No patient details, writing, surrounding wall or floor. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render."
+    },
+    {
+      "id": "theme-office-divider-v05",
+      "name": "工位低隔断模块",
+      "theme": "office",
+      "runtimeIntegrated": false,
+      "specificationId": "theme-office-divider-v01",
+      "requestedBoundsWHD": [
+        1.4,
+        1.3,
+        0.08
+      ],
+      "deliverableParts": "直隔断与落地脚；同一模型重复组合。",
+      "constructionNotes": "布面或磨砂玻璃旧框；不得默默穿过桌面/堵通道；现有医疗屏风不直接替代。",
+      "priority": "P1",
+      "roomIds": [
+        "office-02"
+      ],
+      "targetHeight": 1.3,
+      "prompt": "One old office workstation partition, 1.4m wide, 1.3m high, 0.08m thick panel with two small stabilising feet. Dusty muted olive woven fabric inset in slender worn grey steel frame. Finished back and front. No desk, office chair, drawers or room. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render."
+    },
+    {
+      "id": "theme-ritual-tablet-v05",
+      "name": "原创祭祀牌板",
+      "theme": "ritual",
+      "runtimeIntegrated": false,
+      "specificationId": "theme-ritual-tablet-v01",
+      "requestedBoundsWHD": [
+        0.3,
+        0.65,
+        0.12
+      ],
+      "deliverableParts": "有独立底座的牌板一件；正反面明显。",
+      "constructionNotes": "原创抽象符号，别照搬IP或真实文字；可与在制石膏人像择一使用，非所有房间必放。",
+      "priority": "P1",
+      "roomIds": [
+        "ritual-02",
+        "ritual-04",
+        "ritual-08"
+      ],
+      "targetHeight": 0.65,
+      "prompt": "One original small ritual memorial tablet on a stable wooden pedestal. Overall 0.30m wide, 0.65m high, 0.12m deep. Dark worn wood, narrow vertical board with simple carved abstract geometric relief on the front and a plain finished back. Clearly readable front-back difference. No actual text, deity, borrowed icon, candles or table. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render."
+    },
+    {
+      "id": "theme-meeting-board-v05",
+      "name": "会议展示板",
+      "theme": "office",
+      "runtimeIntegrated": false,
+      "specificationId": "theme-meeting-board-v01",
+      "requestedBoundsWHD": [
+        1.8,
+        1.1,
+        0.1
+      ],
+      "deliverableParts": "壁挂软木/白板一件；空白可替换板面。",
+      "constructionNotes": "标签与文稿由项目后加；不含真实公司信息；与在制日历板用途不同。",
+      "priority": "P1",
+      "roomIds": [
+        "office-03",
+        "office-07"
+      ],
+      "targetHeight": 1.1,
+      "prompt": "One old wall mounted conference whiteboard, 1.8m wide, 1.1m high, 0.10m deep. Blank lightly stained off-white board panel, worn aluminium border, narrow empty marker ledge below, finished flat back. No writing, graphs, calendar, company logo or wall. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render."
+    },
+    {
+      "id": "theme-craft-paper-v05",
+      "name": "褪色手工彩纸",
+      "theme": "park",
+      "targetHeight": 0.025,
+      "requestedBoundsWHD": [
+        0.28,
+        0.025,
+        0.22
+      ],
+      "roomIds": [
+        "park-03"
+      ],
+      "prompt": "A small loose stack of faded muted red, ochre, green and blue coloured craft paper sheets, staggered corners, very thin individual paper layers, slightly curled edges. No text, books or other supplies. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+      "specificationId": "theme-craft-tools-v01",
+      "priority": "P1",
+      "runtimeIntegrated": false,
+      "exportTargetHeight": 0.12
+    },
+    {
+      "id": "theme-craft-pencil-cup-v05",
+      "name": "手工彩笔筒",
+      "theme": "park",
+      "targetHeight": 0.18,
+      "requestedBoundsWHD": [
+        0.1,
+        0.18,
+        0.1
+      ],
+      "roomIds": [
+        "park-03"
+      ],
+      "prompt": "One small worn cylindrical tin pencil cup holding six coloured pencils and two short paintbrushes, distinguishable wood shafts and bristles, muted ochre tin. No other objects. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+      "specificationId": "theme-craft-tools-v01",
+      "priority": "P1",
+      "runtimeIntegrated": false
+    },
+    {
+      "id": "theme-craft-paint-box-v05",
+      "name": "旧水彩颜料盒",
+      "theme": "park",
+      "targetHeight": 0.035,
+      "requestedBoundsWHD": [
+        0.24,
+        0.035,
+        0.15
+      ],
+      "roomIds": [
+        "park-03"
+      ],
+      "prompt": "One open small old metal watercolour paint box, hinged lid opened flat beside a tray containing eight separate faded pigment pans, visible brush groove. Detailed pigment stains inside, dull dark metal outside. No labels or other supplies. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+      "specificationId": "theme-craft-tools-v01",
+      "priority": "P1",
+      "runtimeIntegrated": false,
+      "exportTargetHeight": 0.2
+    },
+    {
+      "id": "theme-performer-mask-smile-v05",
+      "name": "后台浅笑面具",
+      "theme": "park",
+      "targetHeight": 0.3,
+      "requestedBoundsWHD": [
+        0.22,
+        0.3,
+        0.13
+      ],
+      "roomIds": [
+        "park-05"
+      ],
+      "prompt": "ONE original wearable theatre mask, subtle unsettling small closed-mouth smile, hollow eye holes, thin faded terra-cotta painted papier-mache shell, fabric tying straps. Complete hollow concave back, not a solid head. No bust, stand, second mask or character costume. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+      "specificationId": "theme-stage-masks-v01",
+      "priority": "P1",
+      "runtimeIntegrated": false
+    }
+  ]
+}

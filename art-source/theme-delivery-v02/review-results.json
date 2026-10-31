@@ -1,0 +1,22 @@
+{
+  "method":"Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+  "excluded":{
+    "theme-exam-lamp-v05":"灯架旁有脱离主体的黑色碎片，需清理后复验。",
+    "theme-turnstile-v05":"三脚架结构，不是可用的三杆旋转闸机。",
+    "theme-ticket-window-v05":"生成完整封闭售票亭，非约定的窗口框/开口隔断，不能按原功能接入。",
+    "theme-place-setting-v05":"盘、刀叉竖直悬空，不是可放在桌面的餐具组合。",
+    "theme-water-dispenser-v05":"桶口与机身连接仍需近景确认，暂不纳入可用交付。",
+    "theme-hotel-luggage-rack-v05":"承重带垂直垂落，不能承托行李。",
+    "theme-office-divider-v05":"闭合四面盒体，缺少可进入的工位开口。",
+    "theme-performer-mask-smile-v05":"面具后方有不合理凸块，需清理或重做。"
+  },
+  "notes":{
+    "theme-prize-display-v05":"空挂钩展架，奖品需独立配饰，不计为已含奖品。",
+    "theme-hotel-reception-v05":"整模含背柜，总高校正到1.65米，以免柜台过低。",
+    "theme-ritual-tablet-v05":"双向牌座，正面+Z校正到-Z；不是单片牌板。",
+    "theme-craft-paper-v05":"小幅彩纸堆总高校正到0.12米，需按清单实际占地摆放。",
+    "theme-craft-paint-box-v05":"模型开盖，高度应包括竖起盒盖；整模高校正到0.20米。",
+    "theme-stage-lintel-v05":"实际宽约1.45米；若等比放大到台口宽，注意高度随之增加，不能单轴拉伸。",
+    "theme-stage-deck-v06":"完整闭合台面，真实占地约2.96×3.43米；不是需求草图的2.5×2米。"
+  }
+}

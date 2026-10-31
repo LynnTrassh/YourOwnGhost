@@ -1,0 +1,203 @@
+{
+  "version": 6,
+  "models": [
+    {
+      "id": "theme-stage-deck-v06",
+      "name": "完整台面主席台（图生重做）",
+      "runtimeUrl": "/art/theme-structure-repairs/v06/theme-stage-deck-v06.glb",
+      "width": 2.9619394553057954,
+      "height": 0.45,
+      "depth": 3.4320885751956043,
+      "taskId": "b2121cf7-616b-49a5-8170-92010cf596e2",
+      "creditsConsumed": 60,
+      "triangles": 14216,
+      "bytes": 3624508,
+      "sha256": "bf21928313a4faa8ab1745094a0c4b7cfe0b88c065304c2313ce2a6c515bb178",
+      "source": "Tripo P1 image-to-model, built-in imagegen reference, textured PBR",
+      "yaw": 0,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-structure-repairs-v06/output/theme-stage-deck-v06/model.glb",
+        "destination": "public/art/theme-structure-repairs/v06/theme-stage-deck-v06.glb",
+        "sourceBytes": 12465456,
+        "runtimeBytes": 3624508,
+        "sourceSHA256": "7fa675f57c4ec943df96e7037c5e3bb4e63a7829f7a83e2439c4b9cee8fc68bd",
+        "runtimeSHA256": "bf21928313a4faa8ab1745094a0c4b7cfe0b88c065304c2313ce2a6c515bb178",
+        "triangles": 14216,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4306640625,
+            -0.06542970985174179,
+            -0.4990234375
+          ],
+          "max": [
+            0.4306640625,
+            0.0654297024011612,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -1.4809697276528977,
+            0,
+            -1.7160442875978021
+          ],
+          "max": [
+            1.4809697276528977,
+            0.45,
+            1.7160442875978021
+          ],
+          "size": [
+            2.9619394553057954,
+            0.45,
+            3.4320885751956043
+          ]
+        },
+        "scale": 3.43880499119403,
+        "scaleXYZ": [
+          3.43880499119403,
+          3.43880499119403,
+          3.43880499119403
+        ],
+        "footprint": null,
+        "yawDegrees": 0,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "808cadc0f73a86ee94ed1122ff1f4faf7ef97c2dbe591b16483ac36324361857"
+      },
+      "optimization": {
+        "beforeBytes": 12465784,
+        "runtimeBytes": 3624508,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "完整闭合台面，真实占地约2.96×3.43米；不是需求草图的2.5×2米。"
+      }
+    },
+    {
+      "id": "theme-stage-stairs-v06",
+      "name": "独立三级侧阶（图生重做）",
+      "runtimeUrl": "/art/theme-structure-repairs/v06/theme-stage-stairs-v06.glb",
+      "width": 1.1792306769557326,
+      "height": 0.45000000000000007,
+      "depth": 0.9669230012611586,
+      "taskId": "ba9d5d23-a18b-407c-81ad-485fc1317be7",
+      "creditsConsumed": 60,
+      "triangles": 16040,
+      "bytes": 3402188,
+      "sha256": "b59aba81f3ccdd22a30f86f185b27ec007afb7d86c7d9004e4f5cf2189ef2cfb",
+      "source": "Tripo P1 image-to-model, built-in imagegen reference, textured PBR",
+      "yaw": 90,
+      "pivot": "bottom-centre",
+      "forward": "-Z",
+      "status": "model-review-pass",
+      "runtimeIntegrated": false,
+      "inspection": {
+        "source": "art-source/theme-structure-repairs-v06/output/theme-stage-stairs-v06/model.glb",
+        "destination": "public/art/theme-structure-repairs/v06/theme-stage-stairs-v06.glb",
+        "sourceBytes": 13756972,
+        "runtimeBytes": 3402188,
+        "sourceSHA256": "9fa108970b034ef6543c75846c1bb55ab7bbb6522a66456183d81235765c33ec",
+        "runtimeSHA256": "b59aba81f3ccdd22a30f86f185b27ec007afb7d86c7d9004e4f5cf2189ef2cfb",
+        "triangles": 16040,
+        "meshCount": 1,
+        "materialCount": 1,
+        "embeddedImageCount": 3,
+        "animations": 0,
+        "skins": 0,
+        "originalBounds": {
+          "min": [
+            -0.4091796875,
+            -0.1904297024011612,
+            -0.4990234375
+          ],
+          "max": [
+            0.4091796875,
+            0.1904297024011612,
+            0.4990234375
+          ]
+        },
+        "runtimeBounds": {
+          "min": [
+            -0.5896153384778663,
+            0,
+            -0.4834615006305793
+          ],
+          "max": [
+            0.5896153384778663,
+            0.45000000000000007,
+            0.4834615006305793
+          ],
+          "size": [
+            1.1792306769557326,
+            0.45000000000000007,
+            0.9669230012611586
+          ]
+        },
+        "scale": 1.1815383690828476,
+        "scaleXYZ": [
+          1.1815383690828476,
+          1.1815383690828476,
+          1.1815383690828476
+        ],
+        "footprint": null,
+        "yawDegrees": 90,
+        "materialMode": "preserve",
+        "orientationStatus": "requires-visual-confirmation",
+        "preOptimizationSHA256": "6fe7881952b751ff9dd3e5d65d56459ddb29ddd807faea3d486817fc51bd4421"
+      },
+      "optimization": {
+        "beforeBytes": 13757352,
+        "runtimeBytes": 3402188,
+        "textures": [
+          {
+            "image": 0,
+            "maxSize": 2048,
+            "encoding": "jpg"
+          },
+          {
+            "image": 1,
+            "maxSize": 1024,
+            "encoding": "png"
+          },
+          {
+            "image": 2,
+            "maxSize": 1024,
+            "encoding": "png"
+          }
+        ]
+      },
+      "visualReview": {
+        "result": "pass",
+        "method": "Actual exported GLBs viewed from multiple angles in browser on 2026-10-31; structural/textural asset review, not in-game clearance approval.",
+        "note": "结构及材质外观检查通过，房间接触/碰撞由接入时验证。"
+      }
+    }
+  ]
+}
