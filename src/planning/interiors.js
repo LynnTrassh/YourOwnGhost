@@ -3,6 +3,20 @@ import { createRoomPrefabPicker, ROOM_PRESET_IDS } from './room-presets.js';
 
 export const INTERIOR_NAMES = { island: '中央绕行', empty: '留白空间', staggered: '交错柜体', perimeter: '沿墙陈设' };
 
+// Dressing must not consume layout randomness or change the familiar bedroom.
+function furnishingRandom(plan, room) {
+  const seed = room.id === 'bedroom' ? 'bedroom:furnishings:v1'
+    : `${plan.seed}:${plan.attempt}:${room.id}:furnishings:v1`;
+  let n = 2166136261;
+  for (const char of seed) n = Math.imul(n ^ char.charCodeAt(0), 16777619);
+  return () => {
+    n += 0x6D2B79F5;
+    let t = Math.imul(n ^ n >>> 15, n | 1);
+    t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+
 // Layout randomness is independent of shell geometry and cosmetic decoration.
 export function populateInteriors(plan, rng, decor, presetOverrides = {}) {
   for (const room of plan.rooms) {
@@ -10,9 +24,10 @@ export function populateInteriors(plan, rng, decor, presetOverrides = {}) {
     const sampledType = types[Math.floor(rng() * types.length)], sampledTurn = Math.floor(rng() * 4);
     const type = room.id === 'bedroom' ? 'island' : sampledType;
     const turn = room.id === 'bedroom' ? 3 : sampledTurn;
+    const artRandom = furnishingRandom(plan, room);
     const presetId = room.id === 'bedroom' ? 'bedroom'
-      : presetOverrides[room.id] ?? presetOverrides.default ?? ROOM_PRESET_IDS[Math.floor(rng() * ROOM_PRESET_IDS.length)];
-    const choosePrefab = createRoomPrefabPicker(presetId, rng);
+      : presetOverrides[room.id] ?? presetOverrides.default ?? ROOM_PRESET_IDS[Math.floor(artRandom() * ROOM_PRESET_IDS.length)];
+    const choosePrefab = createRoomPrefabPicker(presetId, artRandom);
     const tiles = new Set(room.cells.map(([x,z]) => keyOf(x,z)));
     const protectedTiles = new Set([keyOf(...room.center)]);
     for (const door of plan.doors) for (const [x,z] of door.cells) if (tiles.has(keyOf(x,z))) protectedTiles.add(keyOf(x,z));
