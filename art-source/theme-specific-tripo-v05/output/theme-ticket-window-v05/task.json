@@ -1,0 +1,29 @@
+{
+  "task_id": "732ae5ae-4ad6-491f-ab2e-97ed1fb6b082",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One standalone old ticket window partition panel, 1.6m wide, 1.2m high, only 0.16m deep. Aged narrow timber frame, clear glass upper pane, genuine open semicircular speak-through aperture and small lower pass-through ticket opening. View through the openings. No wall, booth, counter, signage or person. Distinguishable glass and wood surfaces. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:32:21.996165Z",
+  "completed_at": "2026-10-31T07:33:51.129535Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "task_id": "79062517-3b35-424d-8d56-d3dbc19fa77d",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "An EMPTY vintage hotel luggage trolley, arched tarnished brass tubular frame and overhead hanging rail, burgundy carpeted low platform, four complete caster wheels. Overall 0.85m wide, 1.75m high, 1.1m deep. Open clear space above platform. NO suitcases, bags, luggage, clothes, people or any cargo. Real load bearing tubes and wheel attachments. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:16:30.374664Z",
+  "completed_at": "2026-10-31T07:17:57.516665Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

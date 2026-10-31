@@ -1,0 +1,29 @@
+{
+  "task_id": "daa02f75-28dd-40d7-9b88-48971b00ade7",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One freestanding set of THREE broad wooden stage access steps. Overall width 1.2m, depth 0.9m, height 0.45m. Exactly three flat treads each 0.30m deep and three equal 0.15m risers. Dark aged oak matching a theatre platform, thick solid timber closed risers, straight side cheeks. The top step is at the rear. No platform, handrails, people or surrounding floor. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:12:40.464039Z",
+  "completed_at": "2026-10-31T07:14:51.494383Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

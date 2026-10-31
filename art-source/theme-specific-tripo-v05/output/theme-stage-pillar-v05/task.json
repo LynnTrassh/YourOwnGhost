@@ -1,0 +1,29 @@
+{
+  "task_id": "b06f3253-5ff2-45dc-9307-819ccd175aa3",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One slender straight old theatre proscenium upright column, 2.7m tall, 0.45m wide, 0.35m deep. Worn dark red painted timber, modest gold carved edging, rectangular stable foot and flat top connection. A COMPLETE single pillar, no arch, lintel, curtain or second pillar. Symmetric design reusable on either side. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:32:39.198126Z",
+  "completed_at": "2026-10-31T07:34:05.651481Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

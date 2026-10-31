@@ -1,0 +1,29 @@
+{
+  "task_id": "ce150321-cb5a-4dd2-960e-ec2de6a6111d",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "A compact L shaped office reception counter with a raised visitor ledge and a lower staff work surface, dark walnut veneer and dull beige laminate, cable grommet and drawers, worn 1980s institutional furniture. Original realistic abandoned interior horror game asset. Physically plausible construction, detailed PBR worn materials, restrained colours. Complete isolated object, no background environment, no person, no cartoon, no clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:24:48.255376Z",
+  "completed_at": "2026-10-31T07:26:49.814784Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

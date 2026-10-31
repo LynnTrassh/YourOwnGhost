@@ -1,0 +1,29 @@
+{
+  "task_id": "1e249b78-7998-4bcc-ba0d-ce0c1e7ca519",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One adult human sleeping peacefully lying HORIZONTALLY on their back, full body from head to toes, eyes fully CLOSED, head resting on a small off-white pillow. Worn cream linen sheet covers the body from chest to feet, with natural folds over knees and shoulders; both hands resting on the sheet over abdomen. Realistic adult proportions. Entire long low lying body and pillow isolated together, NO BED FRAME, NO MATTRESS, no floor, no room, no standing figure, no seated pose. View from above and slightly from the side, head at one short end and feet at the other. Original realistic abandoned-house game prop, tactile linen and natural skin, detailed PBR, muted colours, no cartoon, no injuries, no blood.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T06:51:58.647223Z",
+  "completed_at": "2026-10-31T06:53:20.419055Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "task_id": "2086625f-8db1-444b-a488-94890d470181",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One long straight horizontal wooden proscenium lintel beam, 5m long, 0.35m high and deep. Worn dark red painted timber matching theatre pillars, restrained faded gold decorative front edging, flat ends and back for attachment. Single horizontal beam only, no pillars, curtains or arch opening. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:35:45.315982Z",
+  "completed_at": "2026-10-31T07:37:03.216451Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

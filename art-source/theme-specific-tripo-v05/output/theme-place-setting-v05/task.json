@@ -1,0 +1,29 @@
+{
+  "task_id": "9b16e192-e9b5-43ec-97ef-6408174f6e91",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One complete vintage porcelain dining place setting. Four separate NON-TOUCHING items arranged with small visible gaps: one plain ivory dinner plate, one small soup bowl, one handled drinking cup, one fork-and-spoon pair side by side. Restrained worn ivory glaze and tarnished metal. Overall arrangement 0.42m wide, 0.32m deep, tallest cup 0.14m. No tray, table, food or tea pot. Independent complete undersides. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:32:26.714739Z",
+  "completed_at": "2026-10-31T07:34:07.930981Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

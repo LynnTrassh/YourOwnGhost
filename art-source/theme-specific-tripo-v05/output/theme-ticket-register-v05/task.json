@@ -1,0 +1,29 @@
+{
+  "task_id": "aa193b06-f75f-4c05-acd0-071a878b937e",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "One small vintage mechanical paper ticket dispenser, 0.42m wide, 0.48m high, 0.32m deep. Metal housing with a clearly visible paper roll on a spindle, crank handle, toothed cutting edge and narrow ticket exit slot. Separate paper and tarnished metal surfaces. No cash register keyboard, counter, text or logos. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:18:32.427366Z",
+  "completed_at": "2026-10-31T07:20:19.833251Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}

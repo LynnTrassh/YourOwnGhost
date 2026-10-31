@@ -1,0 +1,29 @@
+{
+  "task_id": "972aae77-3655-4463-ba12-876f086c4fb1",
+  "type": "text_to_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "prompt": "ONE wearable original theatre mask, melancholy adult expression with closed mouth, hollow eye holes, thin painted ivory papier-mache shell, muted brown ageing, short fabric tying straps. Full concave interior visible from the side, genuine wearable mask not a solid head. Height 0.30m, width 0.22m. No bust, stand or second mask. Original realistic old institutional interior horror game prop. Detailed textured PBR materials, physically plausible construction, restrained desaturated colours, moderate believable wear. Complete isolated object, no person, room, floor plane, lighting effects, blood, text, logo, cartoon or clay render.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 18000,
+    "model_version": "P1-20260311",
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url",
+    "generated_image_url"
+  ],
+  "credits_consumed": 50,
+  "created_at": "2026-10-31T07:22:27.739377Z",
+  "completed_at": "2026-10-31T07:24:10.110826Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "generated_image.jpeg",
+    "preview.png"
+  ]
+}
