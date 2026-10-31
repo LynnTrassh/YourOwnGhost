@@ -54,12 +54,13 @@ test('B14 closes its own door briefly, leaves the forward exit open, and death r
   const tile=door.cells.find(([x,z])=>plan.cells.find(c=>c.x===x&&c.z===z)?.roomId===chase.stages.B14);
   const cx=tile[0]*plan.cellSize,cz=tile[1]*plan.cellSize;
   const dx=Math.sign(cx-door.x),dz=Math.sign(cz-door.z);
-  state.player={x:door.x+dx*1.3,z:door.z+dz*1.3,standing:true,flashlight:true};
+  state.player={x:door.x+dx*1.9,z:door.z+dz*1.9,standing:true,flashlight:true};
   state.threat.stage=2;state.threat.phase='pursuing';
   assert.equal(canCloseChaseDoor(plan,state),true);
   assert.equal(closeChaseDoor(plan,state),true);
-  world.update(0,state);
-  assert.equal(world.getColliders().length,boxes(plan).length+2);
+  world.update(.6,state);
+  const closedLeaf=world.getColliders().filter(b=>b.doorId===chase.retreatDoorId);
+  assert.ok(closedLeaf.some(b=>door.x>=b.minX&&door.x<=b.maxX&&door.z>=b.minZ&&door.z<=b.maxZ));
   assert.equal(canCloseChaseDoor(plan,state),false);
   const forward=plan.doors.find(d=>d.id===chase.routeDoorIds[2]);
   assert.ok(pathThroughTiles(plan,{x:forward.x,z:forward.z},plan.exit));
@@ -68,7 +69,9 @@ test('B14 closes its own door briefly, leaves the forward exit open, and death r
   assert.deepEqual({x:state.threat.x,z:state.threat.z},before);
   for(let i=0;i<50;i++) {stepChase(plan,state,.05,{boxes:world.getColliders()});world.update(.05,state);}
   assert.equal(state.threat.doorRemaining,0);
-  assert.equal(world.getColliders().length,boxes(plan).length+1);
+  for(let i=0;i<15;i++)world.update(.05,state);
+  assert.ok(!world.getColliders().filter(b=>b.doorId===chase.retreatDoorId)
+    .some(b=>door.x>=b.minX&&door.x<=b.maxX&&door.z>=b.minZ&&door.z<=b.maxZ));
   assert.equal(requestDeath(state),true);
   const action=stepTransition(state,.6);
   assert.equal(commitTransition(state,action.id,plan),true);
@@ -101,7 +104,7 @@ test('the player can run the generated four-room route into hiding without telep
     const plan=generatePlan(seed,{catEnabled:false,chaseEnabled:true,contentIds:[]});
     const state=createState(plan),world=createWorld(new THREE.Scene(),plan);
     state.player={...plan.chase.observation,standing:true,flashlight:true};
-    const route=pathThroughTiles(plan,state.player,plan.chase.hidingPoint);
+    const route=pathThroughTiles(world.getTopology(),state.player,plan.chase.hidingPoint);
     assert.ok(route&&route.length>6);
     let waypoint=1,lethal=false;
     const seen=new Set();
@@ -112,7 +115,7 @@ test('the player can run the generated four-room route into hiding without telep
       world.update(.05,state);
       movePlayer(state.player,dx/distance*Math.min(distance,.12),dz/distance*Math.min(distance,.12),world.getColliders());
       const room=roomIdAt(plan,state.player);if(room)seen.add(room);
-      lethal=stepChase(plan,state,.05,{boxes:world.getColliders()});
+      lethal=stepChase(world.getTopology(),state,.05,{boxes:world.getColliders()});
       if(lethal)break;
     }
     assert.equal(lethal,false,`${seed}: reached by the investigator before the hiding room`);

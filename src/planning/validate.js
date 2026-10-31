@@ -255,5 +255,24 @@ export function validatePlan(plan) {
         ||!instance.quietLabel||!instance.observation)errors.push(`EMPTY_QUIET_LABEL:${instance.roomId}`);
     }
   }
+  if(plan.activeEncounters) {
+    const {puzzle,scare}=plan.activeEncounters;
+    if(puzzle) {
+      const door=plan.doors.find(d=>d.id===puzzle.doorId);
+      const pair=puzzle.roomIds;
+      if(!door||pair.length!==2||!plan.edges.some(e=>pair.includes(e.a)&&pair.includes(e.b))
+        ||roomIdAt(plan,puzzle.control)!==pair[0]||roomIdAt(plan,puzzle.clue)!==pair[1])errors.push('ACTIVE_PAIR_NOT_CONNECTED');
+      const closed={...plan,obstacles:[...plan.obstacles,puzzle.gate]};
+      if(!pathThroughTiles(closed,plan.spawn,puzzle.control,[],buildNavigation(closed)))errors.push('ACTIVE_CONTROL_BEHIND_LOCK');
+      if(!sightClear({...puzzle.control,y:1.65},puzzle.clue,[...plan.walls,...plan.obstacles]))errors.push('ACTIVE_ANSWER_HIDDEN');
+    }
+    if(scare) {
+      if(scare.roomIds.length!==3||scare.roomIds.some((id,index)=>index&& !plan.edges.some(e=>
+        [e.a,e.b].includes(id)&&[e.a,e.b].includes(scare.roomIds[index-1]))))errors.push('ACTIVE_CHAIN_BROKEN');
+      if(roomIdAt(plan,scare.trigger)!==scare.roomIds[1]||roomIdAt(plan,scare.target)!==scare.roomIds[1]
+        ||!sightClear(scare.trigger,scare.target,[...plan.walls,...plan.obstacles]))errors.push('ACTIVE_SCARE_NOT_READABLE');
+      if(analyzeCoverage(plan).rooms.find(r=>r.roomId===scare.roomIds[1])?.role==='rest')errors.push('ACTIVE_SCARE_IN_QUIET_ROOM');
+    }
+  }
   return { valid: errors.length === 0, errors: [...new Set(errors)] };
 }

@@ -1,0 +1,23 @@
+import { createDreamJobs } from './dream-jobs.js';
+import { readVibeTokenKey,createVibeTokenInterpreter } from './providers/vibetoken.js';
+import { mkdirSync,readFileSync,existsSync } from 'node:fs';
+import { createTripoProvider,readTripoCredentials } from './providers/tripo.js';
+import { AssetStore } from './assets/store.js';
+import { ModelJobs } from './model-jobs.js';
+import { DreamLedger } from './ledger.js';
+import { createDreamServer } from './app.js';
+mkdirSync('.local/dream-api',{recursive:true,mode:0o700});
+const ledger=new DreamLedger('.local/dream-api/ledger.sqlite');
+const credentials=readTripoCredentials({env:{...process.env,...(process.argv.includes('--tripo-cli')?{DREAM_TRIPO_USE_CLI:'1'}:{})}});
+const provider=credentials?createTripoProvider(credentials):null;
+// This private operator file is never written from HTTP. Default: no spending permitted.
+let policy={};
+const policyPath=process.env.DREAM_TRIPO_POLICY??'.local/dream-api/tripo-policy.json';
+if(existsSync(policyPath))policy=JSON.parse(readFileSync(policyPath,'utf8'));
+const store=new AssetStore('.local/dream-api/assets',{downloadHosts:policy.downloadHosts??[]});
+const modelJobs=new ModelJobs({ledger,provider,store,approvals:policy.approvals??{},budgetId:policy.budgetId,maxCredits:policy.maxCredits??0,allowText:policy.allowText===true,textCreditCeiling:policy.textCreditCeiling??50});
+const vibeTokenKey=readVibeTokenKey();
+const interpret=vibeTokenKey?createVibeTokenInterpreter({apiKey:vibeTokenKey}):null;
+const server=createDreamServer({ledger,interpret,modelJobs,dreamJobs:createDreamJobs({ledger,modelJobs}),allowedOrigins:['http://127.0.0.1:4190','http://localhost:4190',...(process.env.DREAM_DEV_ORIGIN?[process.env.DREAM_DEV_ORIGIN]:[])]});
+server.listen(4192,'127.0.0.1',()=>{console.log('Dream API listening on 127.0.0.1:4192; Tripo configured: '+Boolean(provider)+'; interpretation configured: '+Boolean(interpret)+'; static model generation enabled: '+modelJobs.allowText);if(provider)modelJobs.recover();});
+for(const signal of ['SIGTERM','SIGINT'])process.on(signal,()=>server.close(async()=>{await modelJobs.close();ledger.close();process.exit(0);}));

@@ -1,3 +1,4 @@
+import { createDoorStates } from './doors.js';
 import { createThreatState } from './threat.js';
 import { createStoryState } from './story/runtime.js';
 import { selectFear } from './personalization/fear.js';
@@ -17,7 +18,7 @@ export function createState(plan,fearId='generic',likeId='none',inputVersion=0,p
     seed: plan?.seed ?? '42',
     planHash: plan?.planHash ?? null,
     completed: false,
-    doors: { bedroom: { open: false } },
+    doors: createDoorStates(plan),
     player: { x: plan?.spawn.x ?? 0, z: plan?.spawn.z ?? 0, standing: false, flashlight: true },
   };
 }

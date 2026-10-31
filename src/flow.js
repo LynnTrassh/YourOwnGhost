@@ -1,3 +1,4 @@
+import { createDoorStates } from './doors.js';
 import { createThreatState } from './threat.js';
 import { createStoryState, presentCue } from './story/runtime.js';
 import { roomIdAt, visible, sightClear } from './story/spatial.js';
@@ -73,13 +74,17 @@ export function commitTransition(state,id,nextPlan) {
     state.threat=createThreatState(nextPlan);
     state.layer=2;state.planHash=nextPlan.planHash;state.flow.falseAwakenings++;
     state.player={x:nextPlan.spawn.x,z:nextPlan.spawn.z,standing:false,flashlight:true};
-    state.doors={bedroom:{open:false}};
+    state.doors=createDoorStates(nextPlan);
     state.flow.wakeExposure=0;state.flow.exitExposure=0;state.flow.wakeReason='layer';state.flow.graceRemaining=0;
   } else if(t.kind==='death') {
     state.threat=createThreatState(nextPlan,state.threat);
     state.flow.deaths++;state.flow.wakeReason='death';state.flow.graceRemaining=RESPAWN_GRACE;
     state.player={x:nextPlan.spawn.x,z:nextPlan.spawn.z,standing:false,flashlight:true};
-    state.doors={bedroom:{open:false}};
+    state.doors={...createDoorStates(nextPlan),...state.doors,bedroom:{open:false}};
+    if(nextPlan.chase) {
+      const reset=createDoorStates(nextPlan);
+      for(const id of [nextPlan.chase.sideDoorId,nextPlan.chase.retreatDoorId])state.doors[id]=reset[id];
+    }
     state.flow.wakeExposure=0;state.flow.exitExposure=0;
     clearTransientStory(state);
   } else {

@@ -9,9 +9,11 @@ import { createDarkInteriors } from './art/dark-interiors.js';
 import { createThreatProxy } from './rendering/threat-proxy.js';
 import { appearanceFor } from './personalization/fear.js';
 import { createStoryProxies } from './rendering/story-proxies.js';
+import { createDoorSystem } from './rendering/doors.js';
+import { createActiveProxies } from './rendering/active-proxies.js';
 import { sealDoorTransaction } from './planning/door-transaction.js';
 
-export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceId='generic-proxy'}={}) {
+export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceId='generic-proxy',generatedModels=[]}={}) {
   appearanceFor(threatAppearanceId);
   const root = new THREE.Group();
   const solids = [], doorMeshes = [], resources = new Set();
@@ -78,29 +80,10 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
     minZ:b.minZ-.0175,maxZ:b.maxZ+.0175}));
   const baseTrim=boundaryMesh(trimBoxes,.12,id=>roomTrimMaterials.get(id)??trim,true);
   const bookMaterials = [material(0x78604b), material(0x405756), material(0x884f46), material(0xaba17b)];
-  let doorHeight = 1.2;
   const doorHeaders=new Map();
-  const bedroomDoor = plan.doors.find(d => d.id === 'bedroom');
-  let bedroomDoorAssembly = null;
-  for (const d of plan.doors) {
-    doorHeaders.set(d.id,box(d.axis === 'x' ? .2 : 1.6, .6,
-      d.axis === 'x' ? 1.6 : .2, d.x, 2.7, d.z, trim));
-    if (!d.closed) continue;
-    if (d.id === 'bedroom') {
-      bedroomDoorAssembly = new THREE.Group();
-      bedroomDoorAssembly.position.set(d.x, doorHeight, d.z);
-      root.add(bedroomDoorAssembly);
-      const geometry = new THREE.BoxGeometry(d.axis === 'x' ? .12 : 1.6, 2.4, d.axis === 'x' ? 1.6 : .12);
-      resources.add(geometry);
-      const door = new THREE.Mesh(geometry, wood);
-      door.userData.doorId = d.id;
-      door.castShadow = true; door.receiveShadow = true;
-      bedroomDoorAssembly.add(door); doorMeshes.push(door);
-    } else {
-      const door = box(d.axis === 'x' ? .12 : 1.6, 2.4, d.axis === 'x' ? 1.6 : .12, d.x, doorHeight, d.z, wood);
-      door.userData.doorId = d.id; doorMeshes.push(door);
-    }
-  }
+  for(const d of plan.doors)doorHeaders.set(d.id,box(d.axis==='x'?.2:1.6,.6,d.axis==='x'?1.6:.2,d.x,2.7,d.z,trim));
+  const doorSystem=createDoorSystem(plan,root,resources);
+  doorMeshes.push(...doorSystem.meshes);
   const sealedDoors=(plan.content?.instances??[]).filter(item=>item.definitionId==='B20')
     .map(instance=>{
       const door=plan.doors.find(item=>item.id===instance.entryDoorId),
@@ -136,10 +119,11 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
   }
   const bedroomDecor = createBedroomSet({
     THREE, plan, root, addBox: box, addMaterial: material, unitBox,
-    doorAssembly: bedroomDoorAssembly, resources, interiorArt,
+    doorAssembly: null, resources, interiorArt,
   });
   const tiltedArt = [];
   for (const b of plan.obstacles) {
+    if(b.kind==='generated-theme')continue;
     activeParent=tiltRoom&&b.roomId===tiltRoom.instance.roomId
       ?{group:tiltRoom.group,pivot:tiltRoom.instance.pivot}:null;
     if (bedroomDecor.handledObstacles.has(b.id)) continue;
@@ -193,7 +177,7 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
       box(dx ? .08 : .06, 1.15, dx ? .06 : .08, wx - dx * .06, 1.9, wz - dz * .06, trim);
     }
   }
-  interiorArt.dress(bedroomDoorAssembly);
+  interiorArt.dress(null);
   root.updateMatrixWorld(true);
   for (const anchor of tiltedArt) tiltRoom.group.attach(anchor);
   // Small non-interactive placeholders; do not change the validated walking space.
@@ -254,6 +238,7 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
         door.active=closed;
       }
     }
+    doorSystem.setSealed(sealedDoors.filter(d=>d.active).map(d=>d.instance.entryDoorId));
     for (const { body, head } of cats) {
       const dead = story.catPhase === 'dead';
       body.rotation.z = dead ? Math.PI / 2 : 0;
@@ -291,60 +276,60 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
   exitLight.castShadow=true;exitLight.shadow.mapSize.set(256,256);exitLight.shadow.bias=-.0003;
   resources.add(exitLight);root.add(exitLight,exitLight.target);
   label('出口', plan.exit.x, plan.exit.z, 2.15, 1.2);
+  if(plan.activeEncounters?.puzzle) {
+    const p=plan.activeEncounters.puzzle;
+    label('摇杆 · 对齐亮灯',p.control.x,p.control.z,2.1,1.8);
+  }
+  if(plan.chase) {
+    for(const id of plan.chase.routeDoorIds.slice(2)) {
+      const door=plan.doors.find(d=>d.id===id);label('通路',door.x,door.z,2.55,1);
+    }
+    const door=plan.doors.find(d=>d.id===plan.chase.hideDoorId);label('躲避',door.x,door.z,2.55,1);
+  }
 
-  const doorCollider = bedroomDoor && { minX: bedroomDoor.x - (bedroomDoor.axis === 'x' ? .08 : .8), maxX: bedroomDoor.x + (bedroomDoor.axis === 'x' ? .08 : .8), minZ: bedroomDoor.z - (bedroomDoor.axis === 'x' ? .8 : .08), maxZ: bedroomDoor.z + (bedroomDoor.axis === 'x' ? .8 : .08) };
-  const chaseDoor=plan.chase&&plan.doors.find(d=>d.id===plan.chase.retreatDoorId);
-  const chaseDoorMesh=chaseDoor?box(chaseDoor.axis==='x'?.14:1.6,2.4,
-    chaseDoor.axis==='x'?1.6:.14,chaseDoor.x,1.2,chaseDoor.z,wood):null;
-  if(chaseDoorMesh){chaseDoorMesh.visible=false;chaseDoorMesh.name='chase-retreat-door';}
-  const chaseDoorCollider=chaseDoor&&{minX:chaseDoor.x-(chaseDoor.axis==='x'?.08:.8),
-    maxX:chaseDoor.x+(chaseDoor.axis==='x'?.08:.8),minZ:chaseDoor.z-(chaseDoor.axis==='x'?.8:.08),
-    maxZ:chaseDoor.z+(chaseDoor.axis==='x'?.8:.08)};
-  let chaseDoorClosed=false;
   const impactDoor=plan.chase&&plan.doors.find(d=>d.id===plan.chase.sideDoorId);
-  const impactDoorMesh=impactDoor?box(impactDoor.axis==='x'?.14:1.6,2.4,
-    impactDoor.axis==='x'?1.6:.14,impactDoor.x,1.2,impactDoor.z,wood):null;
-  if(impactDoorMesh)impactDoorMesh.name='chase-side-door';
   const impactLight=impactDoor?new THREE.PointLight(0xffa278,0,5):null;
-  if(impactLight){impactLight.position.set(impactDoor.x,1.75,impactDoor.z);root.add(impactLight);}
-  const impactDoorCollider=impactDoor&&{minX:impactDoor.x-(impactDoor.axis==='x'?.08:.8),
-    maxX:impactDoor.x+(impactDoor.axis==='x'?.08:.8),minZ:impactDoor.z-(impactDoor.axis==='x'?.8:.08),
-    maxZ:impactDoor.z+(impactDoor.axis==='x'?.8:.08)};
-  let impactDoorClosed=Boolean(impactDoor);
+  if(impactLight){impactLight.position.set(impactDoor.x,1.75,impactDoor.z);root.add(impactLight);resources.add(impactLight);}
   let impactElapsed=0;
+  const activeProxies=createActiveProxies(plan,root,resources,threatAppearanceId);
+  let latestState=null;
+  const navigationPlans=new Map();
+  function topologyWithDoors() {
+    const base=sealedDoors.find(door=>door.active)?.transaction.plan??plan;
+    if(!navigationPlans.has(base))navigationPlans.set(base,{...base,obstacles:[...base.obstacles,...doorSystem.navigationObstacles()]});
+    return navigationPlans.get(base);
+  }
+  const generatedRoots=[];
+  for(const slot of plan.generatedThemes??[]){
+    const handle=generatedModels.find(h=>h.entityId===slot.entityId);
+    if(!handle)throw new Error('主题资源缺失，不能安装世界。');
+    const group=new THREE.Group();group.name=`generated-${slot.role}-${slot.entityId}`;
+    group.position.set(slot.x,0,slot.z);group.add(handle.root.clone(true));root.add(group);generatedRoots.push(group);
+  }
   scene.add(root);
   return {
-    plan, solids, doorMeshes, door: doorMeshes[0], exitMarker, artStats: interiorArt.stats, artReady: interiorArt.ready(),
-    getTopology() {return sealedDoors.find(door=>door.active)?.transaction.plan??plan;},
+    clearGenerated(){for(const group of generatedRoots)group.removeFromParent();},
+    plan, solids, doorMeshes, door: doorSystem.records.get('bedroom')?.mesh, exitMarker, artStats: interiorArt.stats, artReady: Promise.all([interiorArt.ready(),doorSystem.ready()]),
+    getDoorTargets:()=>doorSystem.targets(),
+    toggleDoor:(id,state)=>doorSystem.toggle(id,state),
+    doorPrompt:(id,state)=>doorSystem.prompt(id,state),
+    getTopology:topologyWithDoors,
     update(dt, state) {
+      latestState=state;activeProxies.update(state);
       interiorArt.update(dt,state.player);
       storyProxies.updateAmbient(dt);
-      chaseDoorClosed=Boolean(chaseDoorMesh&&state.threat?.doorRemaining>0);
-      if(chaseDoorMesh)chaseDoorMesh.visible=chaseDoorClosed;
-      impactDoorClosed=Boolean(impactDoorMesh&&['dormant','warning'].includes(state.threat?.phase));
-      if(impactDoorMesh) {
-        impactDoorMesh.visible=impactDoorClosed;
-        impactElapsed=state.threat?.phase==='warning'?impactElapsed+dt:0;
-        const shake=state.threat?.phase==='warning'?Math.sin(impactElapsed*27)*.025:0;
-        impactLight.intensity=state.threat?.phase==='warning'?1.1+.45*Math.abs(Math.sin(impactElapsed*13)):0;
-        impactDoorMesh.position.set(impactDoor.x+(impactDoor.axis==='x'?shake:0),1.2,
-          impactDoor.z+(impactDoor.axis==='z'?shake:0));
-      }
-      const target = state.doors.bedroom.open ? 4 : 1.2;
-      doorHeight += Math.sign(target - doorHeight) * Math.min(Math.abs(target - doorHeight), dt * 3.2);
-      if (bedroomDoorAssembly) { bedroomDoorAssembly.position.y = doorHeight; bedroomDoorAssembly.visible = doorHeight < 3.9; }
-      else if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = doorHeight < 3.9; }
+      doorSystem.update(dt,state);
+      if(impactLight){impactElapsed=state.threat?.phase==='warning'?impactElapsed+dt:0;
+        impactLight.intensity=state.threat?.phase==='warning'?1.1+.45*Math.abs(Math.sin(impactElapsed*13)):0;}
     },
-    reset() { updateStory({ catPhase: 'unobserved' }, plan.spawn); doorHeight = 1.2;chaseDoorClosed=false;impactDoorClosed=Boolean(impactDoor);impactElapsed=0;if(chaseDoorMesh)chaseDoorMesh.visible=false;if(impactDoorMesh)impactDoorMesh.visible=true;if(impactLight)impactLight.intensity=0; if (bedroomDoorAssembly) { bedroomDoorAssembly.position.y = doorHeight; bedroomDoorAssembly.visible = true; } else if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = true; } },
+    reset() {updateStory({catPhase:'unobserved'},plan.spawn);doorSystem.reset();latestState=null;impactElapsed=0;if(impactLight)impactLight.intensity=0;},
     updateStory, updateThreat,
     renderScreens(renderer) { storyProxies.renderScreens(renderer); },
     updateAmbient(dt) { storyProxies.updateAmbient(dt); },
     getColliders() {
       const walls=[...plan.walls,...sealedDoors.filter(door=>door.active).map(door=>door.instance.sealedWall)];
-      const result=[...walls,...plan.obstacles];
-      if(doorHeight<3&&doorCollider)result.push(doorCollider);
-      if(chaseDoorClosed&&chaseDoorCollider)result.push(chaseDoorCollider);
-      if(impactDoorClosed&&impactDoorCollider)result.push(impactDoorCollider);
+      const result=[...walls,...plan.obstacles,...(latestState?activeProxies.colliders(latestState):[])];
+      result.push(...doorSystem.colliders());
       return result;
     },
     roomAt(x, z) {

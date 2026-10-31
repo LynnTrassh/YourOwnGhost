@@ -22,6 +22,15 @@ export function analyzeCoverage(plan,{pathBudget=20000}={}) {
   if(plan.story?.cat) add(plan.story.cat.roomId,'major','CAT01','fixed-test');
   if(plan.threat) add(plan.threat.roomId,'danger',plan.threat.behaviorId==='hearing-investigator'?'TH02'
     :plan.threat.behaviorId==='light-avoider'?'TH03':'TH01','threat');
+  if(plan.chase) {
+    for(const roomId of Object.values(plan.chase.stages))add(roomId,'danger','B13-B16','continuous-chase');
+    add(plan.chase.sourceRoomId,'short','B13-B16','chase-source');
+    add(plan.chase.hideRoomId,'short','B13-B16','chase-hide');
+  }
+  for(const [kind,unit] of [['puzzle','AP01'],['scare','AS01']]) {
+    const group=plan.activeEncounters?.[kind];
+    if(group)for(const id of group.roomIds)add(id,kind==='scare'&&id!==group.roomIds[1]?roles.get(id).role:'short',unit,group.kind);
+  }
   const graph=new Map(plan.rooms.map(room=>[room.id,[]]));
   for(const edge of plan.edges) {
     graph.get(edge.a)?.push(edge.b);graph.get(edge.b)?.push(edge.a);
@@ -39,11 +48,13 @@ export function analyzeCoverage(plan,{pathBudget=20000}={}) {
         if(gap.length>longestGap.length)longestGap={length:gap.length,rooms:[...gap],path:[...current.path]};
       } else gap=[];
     }
-    let quietRun=0,strongRun=0,events=0;
+    let quietRun=0,strongRun=0,events=0,previousChase=false;
     for(const id of current.path.slice(1)) {
       const role=roles.get(id)?.role;
       quietRun=role==='rest'?quietRun+1:0;
-      strongRun=['major','danger'].includes(role)?strongRun+1:0;
+      const inChase=Boolean(plan.chase&&Object.values(plan.chase.stages).includes(id));
+      strongRun=['major','danger'].includes(role)?strongRun+(inChase&&previousChase?0:1):0;
+      previousChase=inChase;
       if(['major','danger','short'].includes(role))events++;
       longestQuiet=Math.max(longestQuiet,quietRun);
       longestStrong=Math.max(longestStrong,strongRun);

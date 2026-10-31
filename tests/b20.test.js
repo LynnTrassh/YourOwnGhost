@@ -23,6 +23,7 @@ test('B20 closes only after entrance and forward exit are seen, and keeps a vali
       door=plan.doors.find(item=>item.id===instance.entryDoorId),
       wall=scene.getObjectByName(`story-${instance.instanceId}-sealed-wall`);
     assert.ok(wall);assert.equal(wall.visible,false);
+    const initialTopology=world.getTopology();
     const entry=look(instance.observation,instance.focus),
       forward=look(instance.forwardObservation,instance.forwardFocus),
       confirmation=look(instance.confirmationObservation,instance.focus);
@@ -36,7 +37,7 @@ test('B20 closes only after entrance and forward exit are seen, and keeps a vali
     stepContent(plan,state,{...forward,yaw:forward.yaw+Math.PI},1,world.getColliders());
     assert.equal(phase.phase,'entrySeen');
     const outside=plan.rooms.filter(room=>room.id!==instance.roomId).map(room=>room.id),
-      route=pathThroughTiles(plan,instance.observation,instance.forwardObservation,outside);
+      route=pathThroughTiles(world.getTopology(),instance.observation,instance.forwardObservation,outside);
     assert.ok(route);
     const walker={x:instance.observation.x,z:instance.observation.z};
     for(const waypoint of [...route,instance.forwardObservation]) {
@@ -68,7 +69,7 @@ test('B20 closes only after entrance and forward exit are seen, and keeps a vali
     stepStory(plan,state,{x:plan.spawn.x,z:plan.spawn.z,y:1.65,yaw:0,pitch:0},.1,
       {cause:'death',suppressRoutes:true,boxes:world.getColliders()});
     assert.equal(phase.phase,'confirmed');
-    world.reset();assert.equal(world.getTopology(),plan);assert.equal(wall.visible,false);
+    world.reset();assert.equal(world.getTopology(),initialTopology);assert.equal(wall.visible,false);
     world.updateStory(state,instance.observation);assert.equal(wall.visible,true);
     world.dispose();assert.equal(scene.children.length,0);
   }

@@ -68,11 +68,16 @@ export function summarizeComposition(plans,selection) {
     }
     if(plan.story?.cat) selectedUnits.push({definitionId:'CAT01',narrativeUnitId:'CAT01',layer,
       roomId:plan.story.cat.roomId,role:'major',sourcePolicy:'fixed-test'});
-    if(plan.threat) selectedUnits.push({definitionId:plan.threat.behaviorId==='hearing-investigator'?'TH02'
+    if(plan.threat) selectedUnits.push({definitionId:plan.chase?'B13-B16':plan.threat.behaviorId==='hearing-investigator'?'TH02'
       :plan.threat.behaviorId==='light-avoider'?'TH03':'TH01',
-      narrativeUnitId:plan.threat.behaviorId==='hearing-investigator'?'TH02'
+      narrativeUnitId:plan.chase?'B13-B16':plan.threat.behaviorId==='hearing-investigator'?'TH02'
         :plan.threat.behaviorId==='light-avoider'?'TH03':'TH01',layer,
       roomId:plan.threat.roomId,role:'major',sourcePolicy:'builtin-threat'});
+    for(const [kind,id] of [['puzzle','AP01'],['scare','AS01']]) {
+      const group=plan.activeEncounters?.[kind];
+      if(group)selectedUnits.push({definitionId:id,narrativeUnitId:id,layer,roomId:group.roomIds[0],
+        roomIds:group.roomIds,role:'short',sourcePolicy:'authored-active-group'});
+    }
     for(const row of plan.content.report) if(!row.accepted&&row.reason!=='COMPOSITION_NOT_SELECTED')
       rejections.push({id:row.id,layer,reason:row.reason});
   });

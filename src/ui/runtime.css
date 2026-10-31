@@ -1,0 +1,4 @@
+body.modern-ui #legacy-ui{display:none!important}
+body.modern-ui #game{width:100vw;height:100dvh;touch-action:none}
+.runtime-playtest{position:fixed;z-index:65;left:12px;top:12px;display:flex;align-items:center;gap:10px;padding:6px 10px;background:#101c16e8;border:1px solid #b6b7a944;color:#d1d5c6;font:12px/1.5 sans-serif}
+.runtime-playtest button{width:auto;min-height:36px;padding:6px 12px;font:inherit}
