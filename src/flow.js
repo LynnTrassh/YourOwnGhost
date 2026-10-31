@@ -57,7 +57,18 @@ export function commitTransition(state,id,nextPlan) {
   if(t.kind!=='death') state.flow.history.push({layer:state.layer,planHash:state.planHash,story:structuredClone(state.story)});
   if(t.kind==='layer') {
     const {consumed,behaviorCount}=state.story;
-    state.story={...createStoryState(),consumed:[...consumed],behaviorCount};
+    const facts=new Set(state.story.facts);
+    const conditional={};
+    const eligible=(nextPlan.content?.conditionalSlots??[]).filter(slot=>['B27','B28'].includes(slot.id)&&
+      facts.has(`${slot.sourceInstanceId}.${slot.id==='B27'?'witheredSeen':'tearSeen'}`));
+    const chosen=eligible.find(slot=>slot.id==='B27')??eligible.find(slot=>slot.id==='B28');
+    if(chosen)conditional[chosen.id]={enabled:true,phase:'waiting',exposure:0,
+      sourceInstanceId:chosen.sourceInstanceId};
+    const trace=(nextPlan.content?.conditionalSlots??[]).find(slot=>slot.id==='IN04'
+      &&facts.has(`${slot.sourceInstanceId}.followSeen`));
+    if(trace)conditional.IN04={enabled:true,phase:'waiting',exposure:0,
+      sourceInstanceId:trace.sourceInstanceId,traceId:trace.traceId};
+    state.story={...createStoryState(),consumed:[...consumed],behaviorCount,conditional};
     state.threat=createThreatState(nextPlan);
     state.layer=2;state.planHash=nextPlan.planHash;state.flow.falseAwakenings++;
     state.player={x:nextPlan.spawn.x,z:nextPlan.spawn.z,standing:false,flashlight:true};

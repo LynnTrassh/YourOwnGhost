@@ -2,12 +2,31 @@ import { movePlayer } from './collision.js';
 import { buildNavigation, pathThroughTiles } from './planning/validate.js';
 import { roomIdAt, sightClear, visible } from './story/spatial.js';
 import { presentCue } from './story/runtime.js';
-import { GAZE_BEHAVIOR, THREAT_BODY } from './threat-profile.js';
+import { GAZE_BEHAVIOR, HEARING_BEHAVIOR, LIGHT_AVOIDER_BEHAVIOR, THREAT_BODY } from './threat-profile.js';
+import { createHearingMemory, stepHearingInvestigator } from './threat-hearing.js';
+import { CHASE_BEHAVIOR, createChaseState, stepChase } from './chase.js';
 
 export const STATUE_RULES={speed:1.75,demoSpeed:.8,demoTravel:1,demoExposure:.6,demoDuration:4,safeDistance:3,contact:.48};
 const navigation=new WeakMap();
 export function createThreatState(plan,previous=null) {
   if(!plan?.threat) return null;
+  if(plan.threat.behaviorId===CHASE_BEHAVIOR)return createChaseState(plan);
+  if(plan.threat.behaviorId===HEARING_BEHAVIOR) return {
+    id:plan.threat.id,behaviorId:HEARING_BEHAVIOR,...plan.threat.spawn,
+    phase:'dormant',lit:false,seesPlayer:false,sensesPlayer:false,
+    memory:createHearingMemory(),path:[],targetEventId:null,
+    demoMoved:0,demoStarted:previous?.demoStarted??false,
+    demoComplete:previous?.demoComplete??false,
+    barrierRemaining:previous?.barrierRemaining??STATUE_RULES.demoDuration,
+  };
+  if(plan.threat.behaviorId===LIGHT_AVOIDER_BEHAVIOR) return {
+    id:plan.threat.id,behaviorId:LIGHT_AVOIDER_BEHAVIOR,...plan.threat.spawn,
+    phase:'dormant',lit:false,seesPlayer:false,
+    demoMoved:0,demoStarted:previous?.demoStarted??false,
+    demoComplete:previous?.demoComplete??false,
+    barrierRemaining:previous?.barrierRemaining??STATUE_RULES.demoDuration,
+    path:[],pathTarget:null,
+  };
   return {id:plan.threat.id,behaviorId:GAZE_BEHAVIOR,...plan.threat.spawn,phase:'dormant',lit:false,seesPlayer:false,
     demoMoved:previous?.demoMoved??0,exposure:0,demoStarted:previous?.demoStarted??false,
     barrierRemaining:previous?.barrierRemaining??STATUE_RULES.demoDuration,demoComplete:previous?.demoComplete??false,
@@ -48,7 +67,14 @@ function approach(plan,t,player,boxes,distance) {
   }
   return moved;
 }
-export function stepThreat(plan,state,view,beam,dt,{active=true,boxes=[...plan.walls,...plan.obstacles]}={}) {
+export function stepThreat(plan,state,view,beam,dt,
+  {active=true,boxes=[...plan.walls,...plan.obstacles],noiseEvents=[]}={}) {
+  if(plan.threat?.behaviorId===CHASE_BEHAVIOR)
+    return stepChase(plan,state,dt,{active,boxes,noiseEvents});
+  if(plan.threat?.behaviorId===HEARING_BEHAVIOR)
+    return stepHearingThreat(plan,state,dt,{active,boxes,noiseEvents});
+  if(plan.threat?.behaviorId===LIGHT_AVOIDER_BEHAVIOR)
+    return stepLightAvoider(plan,state,view,beam,dt,{active,boxes});
   const t=state.threat,config=plan.threat;
   if(!active || !t || !config || state.completed || state.flow.transition || !state.player.standing) return false;
   dt=Math.min(.05,Math.max(0,dt));
@@ -92,4 +118,87 @@ export function stepThreat(plan,state,view,beam,dt,{active=true,boxes=[...plan.w
   // Contact cannot reach through a wall; light stops motion, not contact damage.
   return Math.hypot(t.x-state.player.x,t.z-state.player.z)<=STATUE_RULES.contact
     && sightClear({...state.player,y:1},{x:t.x,y:1,z:t.z},boxes);
+}
+
+export function stepLightAvoider(plan,state,view,beam,dt,
+  {active=true,boxes=[...plan.walls,...plan.obstacles]}={}) {
+  const t=state.threat,config=plan.threat;
+  if(!active||!t||t.behaviorId!==LIGHT_AVOIDER_BEHAVIOR||state.completed
+    ||state.flow.transition||!state.player.standing)return false;
+  dt=Math.max(0,Math.min(.05,dt));
+  if(t.phase==='escaped')return false;
+  const room=roomIdAt(plan,state.player),target={x:t.x,y:THREAT_BODY.lightTargetHeight,z:t.z};
+  if(room===config.escapeRoomId&&t.phase!=='dormant') {
+    t.phase='escaped';t.path=[];t.pathTarget=null;
+    if(!state.story.facts.includes('avoider.escaped'))state.story.facts.push('avoider.escaped');
+    return false;
+  }
+  t.lit=statueIlluminated(view,target,beam,boxes);
+  t.seesPlayer=room!=='bedroom'&&Boolean(room)&&state.flow.graceRemaining<=0
+    &&sightClear({x:t.x,y:THREAT_BODY.eyeHeight,z:t.z},{...state.player,y:1.65},boxes);
+  if(t.phase==='dormant') {
+    const near=Math.hypot(state.player.x-config.observation.x,state.player.z-config.observation.z)<=2;
+    if(room!==config.roomId||!near||!t.lit)return false;
+    t.phase=t.demoComplete?'pursuing':'demo';
+  }
+  if(t.phase==='demo') {
+    if(room!==config.roomId)return false;
+    if(t.lit&&config.retreatPoint) t.demoMoved+=approach(plan,t,config.retreatPoint,boxes,.8*dt);
+    if(!t.demoStarted&&t.demoMoved>=.3
+      &&presentCue(state.story,'statueDemo','avoider.demo',
+        '哎，照得人家都往后让了。',room,STATUE_RULES.demoDuration))
+      t.demoStarted=true;
+    if(t.demoStarted) {
+      t.barrierRemaining=Math.max(0,t.barrierRemaining-dt);
+      if(t.barrierRemaining===0) {
+        t.demoComplete=true;t.phase='pursuing';
+        if(!state.story.facts.includes('avoider.demonstrated'))state.story.facts.push('avoider.demonstrated');
+      }
+    }
+    return false;
+  }
+  if(t.lit&&config.retreatPoint)approach(plan,t,config.retreatPoint,boxes,1.2*dt);
+  else if(t.seesPlayer)approach(plan,t,state.player,boxes,STATUE_RULES.speed*dt);
+  return t.phase==='pursuing'&&state.flow.graceRemaining<=0
+    &&Math.hypot(t.x-state.player.x,t.z-state.player.z)<=STATUE_RULES.contact
+    &&sightClear({...state.player,y:1},{x:t.x,y:1,z:t.z},boxes);
+}
+
+export function stepHearingThreat(plan,state,dt,
+  {active=true,boxes=[...plan.walls,...plan.obstacles],noiseEvents=[]}={}) {
+  const t=state.threat,config=plan.threat;
+  if(!active||!t||t.behaviorId!==HEARING_BEHAVIOR||state.completed
+    ||state.flow.transition||!state.player.standing)return false;
+  dt=Math.max(0,Math.min(.05,dt));
+  if(t.phase==='escaped')return false;
+  const room=roomIdAt(plan,state.player);
+  if(room===config.escapeRoomId&&t.phase!=='dormant') {
+    t.phase='escaped';t.path=[];t.sensesPlayer=false;
+    if(!state.story.facts.includes('hearing.escaped'))state.story.facts.push('hearing.escaped');
+    return false;
+  }
+  const before={x:t.x,z:t.z},closedDoorIds=state.doors.bedroom.open?[]:['bedroom'];
+  stepHearingInvestigator(plan,t,noiseEvents,dt,{boxes,closedDoorIds,
+    speed:t.demoComplete?1.65:.8});
+  t.demoMoved+=Math.hypot(t.x-before.x,t.z-before.z);
+  t.sensesPlayer=t.memory.phase==='investigating';
+  if(t.phase==='dormant'&&t.memory.lastSound)
+    t.phase=t.demoComplete?'pursuing':'demo';
+  if(t.phase==='demo') {
+    if(!t.demoStarted&&t.demoMoved>=.3
+      &&presentCue(state.story,'statueDemo','hearing.demo',
+        '听见你了。走路还挺好认。',room,STATUE_RULES.demoDuration))
+      t.demoStarted=true;
+    if(t.demoStarted) {
+      t.barrierRemaining=Math.max(0,t.barrierRemaining-dt);
+      if(t.barrierRemaining===0) {
+        t.demoComplete=true;t.phase='pursuing';
+        if(!state.story.facts.includes('hearing.demonstrated'))state.story.facts.push('hearing.demonstrated');
+      }
+    }
+    return false;
+  }
+  return t.phase==='pursuing'&&t.memory.phase!=='idle'&&state.flow.graceRemaining<=0
+    &&Math.hypot(t.x-state.player.x,t.z-state.player.z)<=STATUE_RULES.contact
+    &&sightClear({...state.player,y:1},{x:t.x,y:1,z:t.z},boxes);
 }

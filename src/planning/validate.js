@@ -1,6 +1,8 @@
 import { inspectTopology } from './topology.js';
 import { CELL_SIZE, MODULE_SIZE, DIRECTIONS, keyOf } from './templates.js';
 import { PLAYER_RADIUS, overlaps } from '../collision.js';
+import { roomIdAt, sightClear } from '../story/spatial.js';
+import { LIGHT_AVOIDER_BEHAVIOR, THREAT_BODY } from '../threat-profile.js';
 
 export function buildWalls(plan) {
   const tiles = new Map(plan.cells.map(t => [keyOf(t.x, t.z), t]));
@@ -99,7 +101,44 @@ export function validatePlan(plan) {
   const graph = buildNavigation(plan);
   const path = (from,to,excluded=[]) => pathThroughTiles(plan,from,to,excluded,graph);
   const roomPoint = id => { const room = plan.rooms.find(r => r.id === id); return room && { x: room.center[0] * CELL_SIZE, z: room.center[1] * CELL_SIZE }; };
+  if(plan.chase) {
+    const chase=plan.chase,stages=Object.values(chase.stages),route=plan.opportunities.exitRoute;
+    const index=route.indexOf(stages[0]);
+    if(index<1||index+4>=route.length||stages.some((id,i)=>route[index+i]!==id)
+      ||new Set([...stages,chase.sourceRoomId,chase.hideRoomId]).size!==6)
+      errors.push('INVALID_CHASE_SEQUENCE');
+    const connected=(doorId,a,b)=>{
+      const door=plan.doors.find(d=>d.id===doorId);
+      const edge=plan.edges.find(e=>e.id===door?.edgeId);
+      return Boolean(edge&&[edge.a,edge.b].includes(a)&&[edge.a,edge.b].includes(b));
+    };
+    const chain=[route[index-1],...stages,route[index+4]];
+    if(chase.routeDoorIds.length!==5||chase.routeDoorIds.some((id,i)=>!connected(id,chain[i],chain[i+1]))
+      ||!connected(chase.sideDoorId,stages[0],chase.sourceRoomId)
+      ||!connected(chase.hideDoorId,stages[3],chase.hideRoomId))errors.push('INVALID_CHASE_DOORS');
+    const routes=chase.bypassRoutes;
+    if(routes.length!==2||routes.some(r=>r.length<3)
+      ||routes[0].slice(1,-1).some(p=>routes[1].slice(1,-1).some(q=>p[0]===q[0]&&p[1]===q[1])))
+      errors.push('INVALID_CHASE_BYPASS');
+    if(roomIdAt(plan,chase.hidingPoint)!==chase.hideRoomId
+      ||!path(chase.source,chase.observation)
+      ||!path(chase.hidingPoint,roomPoint(stages[3])))errors.push('INVALID_CHASE_ACCESS');
+    const approachDoor=plan.doors.find(d=>d.id===chase.routeDoorIds[3]);
+    const approachTile=approachDoor?.cells.find(([x,z])=>plan.cells.find(c=>c.x===x&&c.z===z)?.roomId===stages[3]);
+    if(!approachTile||sightClear({x:approachTile[0]*CELL_SIZE,y:1.65,z:approachTile[1]*CELL_SIZE},
+      {...chase.hidingPoint,y:1.65},boxes))errors.push('INVALID_CHASE_CONCEALMENT');
+  }
   if (boxes.some(b => overlaps(plan.spawn.x, plan.spawn.z, b))) errors.push('BLOCKED_SPAWN');
+  if(plan.threat?.behaviorId===LIGHT_AVOIDER_BEHAVIOR) {
+    const threat=plan.threat,point=threat.retreatPoint;
+    const startDistance=Math.hypot(threat.spawn.x-threat.observation.x,
+      threat.spawn.z-threat.observation.z);
+    if(!point||roomIdAt(plan,point)!==threat.roomId
+      ||Math.hypot(point.x-threat.observation.x,point.z-threat.observation.z)<startDistance+1.2-1e-6
+      ||!pathThroughTiles(plan,threat.spawn,point,['bedroom',threat.escapeRoomId],graph)
+      ||!sightClear({...threat.observation,y:1.65},
+        {...point,y:THREAT_BODY.lightTargetHeight},boxes))errors.push('INVALID_AVOIDER_RETREAT');
+  }
   if (!path(plan.spawn, plan.exit)) errors.push('EXIT_UNREACHABLE');
   for (const room of plan.rooms) if (!path(plan.spawn, roomPoint(room.id))) errors.push(`ROOM_UNREACHABLE:${room.id}`);
   for (const d of plan.doors) {
@@ -133,5 +172,43 @@ export function validatePlan(plan) {
   const expected=inspectTopology(plan.rooms,plan.edges);
   if (JSON.stringify(expected)!==JSON.stringify(plan.opportunities)) errors.push('STALE_OPPORTUNITIES');
   for (const slot of (plan.reserved.cat?.slots ?? [])) if (!keys.has(keyOf(Math.round(slot.x / CELL_SIZE), Math.round(slot.z / CELL_SIZE))) || boxes.some(b => overlaps(slot.x, slot.z, b))) errors.push('BLOCKED_CONTENT_SLOT');
+  for(const instance of plan.content?.instances??[]) {
+    if(instance.definitionId==='AB01') {
+      if(plan.story.cat)errors.push('CAT_GROUP_CONFLICT:AB01');
+      if(instance.slots?.length!==9||instance.slots.some(point=>
+        plan.cells.find(cell=>cell.x===Math.round(point.x/CELL_SIZE)&&cell.z===Math.round(point.z/CELL_SIZE))?.roomId!==instance.roomId
+        ||boxes.some(box=>overlaps(point.x,point.z,box))))errors.push('INVALID_CAT_GROUP:AB01');
+    }
+    if(['B01','B03'].includes(instance.definitionId)
+      &&!plan.content.preferences?.includes('like.flower'))
+      errors.push(`UNCONFIRMED_CONTENT_PREFERENCE:${instance.definitionId}`);
+    if(instance.definitionId==='RI02'
+      &&!plan.content.preferences?.some(token=>['like.cat','like.flower'].includes(token)))
+      errors.push('UNCONFIRMED_CONTENT_PREFERENCE:RI02');
+    if(instance.definitionId==='RI02'
+      &&instance.likedObject!==(plan.content.preferences?.includes('like.cat')?'cat':'flower'))
+      errors.push('WRONG_LIKED_OBJECT:RI02');
+    if(instance.definitionId==='IN02'
+      &&(!plan.content.preferences?.includes('fear.doll')||instance.fearId!=='doll'))
+      errors.push('UNCONFIRMED_CONTENT_PREFERENCE:IN02');
+    if(instance.definitionId==='IN04') {
+      const source=plan.content.instances.find(item=>item.instanceId===instance.sourceInstanceId);
+      const adjacent=plan.edges.some(edge=>[edge.a,edge.b].includes(instance.roomId)
+        &&[edge.a,edge.b].includes(instance.supportRoomId));
+      if(source?.definitionId!=='B03'||source.roomId!==instance.roomId
+        ||instance.traceId!==`petals:${source.instanceId}`||!adjacent
+        ||roomIdAt(plan,instance.focus)!==instance.roomId
+        ||roomIdAt(plan,instance.followFocus)!==instance.supportRoomId
+        ||boxes.some(box=>overlaps(instance.focus.x,instance.focus.z,box,.2)
+          ||overlaps(instance.followFocus.x,instance.followFocus.z,box,.35)))
+        errors.push('INVALID_TRACE_SOURCE:IN04');
+    }
+  }
+  for (const slot of plan.content?.conditionalSlots??[]) {
+    const owner=plan.cells.find(cell=>cell.x===Math.round(slot.focus.x/CELL_SIZE)
+      &&cell.z===Math.round(slot.focus.z/CELL_SIZE))?.roomId;
+    if(owner!==slot.roomId||boxes.some(box=>overlaps(slot.focus.x,slot.focus.z,box))
+      ||!path(plan.spawn,slot.focus))errors.push(`INVALID_CONDITIONAL_SLOT:${slot.id}`);
+  }
   return { valid: errors.length === 0, errors: [...new Set(errors)] };
 }

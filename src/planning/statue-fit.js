@@ -8,7 +8,7 @@ export function fitStatue(plan) {
   const route=plan.opportunities.exitRoute,graph=buildNavigation(plan),boxes=[...plan.walls,...plan.obstacles];
   for(let i=1;i<route.length-2;i++) {
     const room=plan.rooms.find(r=>r.id===route[i]);
-    if(room.id===plan.story.cat?.roomId) continue;
+    if(room.id===plan.story.cat?.roomId || plan.content?.instances.some(instance=>instance.roomId===room.id)) continue;
     const edge=plan.edges.find(e=>[e.a,e.b].includes(room.id) && [e.a,e.b].includes(route[i-1]));
     const door=plan.doors.find(d=>d.edgeId===edge.id);
     const cell=door.cells.find(([x,z])=>room.cells.some(c=>c[0]===x&&c[1]===z));

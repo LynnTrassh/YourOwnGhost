@@ -1,0 +1,8525 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "f538fbb",
+  "workingTreeDirty": true,
+  "prefix": "doll-audit",
+  "count": 20,
+  "inputMode": "none",
+  "fearMode": "doll",
+  "summary": {
+    "seeds": 20,
+    "generationFailures": 0,
+    "invalidLayers": 0,
+    "fallbackLayers": 0,
+    "belowCoverage": 8,
+    "longGaps": 6,
+    "noRest": 0,
+    "incompletePathSearch": 0,
+    "noSecondThreat": 0,
+    "photoGroupViolations": 0,
+    "catGroupViolations": 0,
+    "conditionalSourceMismatches": 0,
+    "majorShortfalls": 9,
+    "shortShortfalls": 0,
+    "repeatedUnits": 0,
+    "selectedCounts": {
+      "AB01": 12,
+      "AB02": 11,
+      "AB04": 3,
+      "B04": 18,
+      "B06": 4,
+      "B07": 15,
+      "B08": 2,
+      "B10": 9,
+      "B11": 1,
+      "B18": 1,
+      "B19": 4,
+      "B20": 1,
+      "B22": 14,
+      "B25": 40,
+      "BO01": 15,
+      "BO02": 2,
+      "BO03": 2,
+      "BO04": 3,
+      "IN01": 5,
+      "IN02": 11,
+      "IN03": 2,
+      "ME01": 4,
+      "ME02": 2,
+      "ME03": 2,
+      "ME04": 5,
+      "RI01": 18,
+      "TI02": 3
+    },
+    "rejectionReasons": {
+      "NO_COMPATIBLE_ROOM": 48,
+      "PREFERENCE_UNCONFIRMED": 6,
+      "ACTOR_BLOCKS_ROUTE": 3,
+      "NO_VISIBLE_WINDOW": 2,
+      "NO_SIDE_OBSERVATION": 1,
+      "NO_SEALED_MIDDLE_SLOT": 1,
+      "PLINTH_BLOCKS_ROUTE": 1
+    },
+    "compositionRejectionReasons": {
+      "NO_COMPATIBLE_ROOM": 989,
+      "PREFERENCE_UNCONFIRMED": 126,
+      "ONE_INSTANCE_PER_RUN": 46,
+      "ACTOR_BLOCKS_ROUTE": 26,
+      "ROLE_BUDGET_FULL": 21,
+      "NO_VISIBLE_WINDOW": 10,
+      "NO_SIDE_OBSERVATION": 9,
+      "COVERAGE_REGRESSION_ON_REFIT": 9,
+      "PHOTO_OCCLUDED": 9,
+      "NO_SEALED_MIDDLE_SLOT": 7,
+      "PLINTH_BLOCKS_ROUTE": 7,
+      "CRACK_OCCLUDED": 6,
+      "NO_PHOTO_WALL": 5,
+      "NO_VISIBLE_CRACK_WALL": 4,
+      "NO_VISIBLE_FURNITURE_SPREAD": 3,
+      "OCCLUDED_SEALED_SLOT": 2,
+      "NO_FORWARD_EXIT": 2,
+      "NO_FORWARD_WATER_PAIR": 2,
+      "NO_CLEAR_BANQUET_FOOTPRINT": 1,
+      "SEALED_ROUTE_DISCONNECTED": 1,
+      "NO_VISIBLE_BREATHING_WALL": 1
+    }
+  },
+  "rows": [
+    {
+      "seed": "doll-audit-000",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 5,
+            "total": 8,
+            "ratio": 0.625,
+            "longestGap": 3,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": true
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "IN02",
+            "ME02",
+            "B10"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 6,
+            "total": 8,
+            "ratio": 0.75,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "BO01",
+            "B07",
+            "RI01",
+            "ME03"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 3,
+          "min": 4,
+          "max": 6,
+          "shortfall": 1
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [
+        {
+          "id": "B28",
+          "layer": 2,
+          "sourceInstanceId": "B04-room-2",
+          "roomId": "bedroom",
+          "sourcePlanned": true
+        }
+      ],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_PHOTO_WALL"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_VISIBLE_CRACK_WALL"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_SEALED_MIDDLE_SLOT"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-001",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 7,
+          "coverage": {
+            "covered": 5,
+            "total": 7,
+            "ratio": 0.714,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "BO01",
+            "B07",
+            "B22",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 10,
+          "coverage": {
+            "covered": 6,
+            "total": 10,
+            "ratio": 0.6,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "IN02",
+            "AB01",
+            "BO03"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 3,
+          "min": 4,
+          "max": 6,
+          "shortfall": 1
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "NO_PHOTO_WALL"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_VISIBLE_CRACK_WALL"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "PLINTH_BLOCKS_ROUTE"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-002",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 7,
+          "coverage": {
+            "covered": 6,
+            "total": 7,
+            "ratio": 0.857,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "B04",
+            "IN02",
+            "AB01",
+            "BO01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 4,
+            "total": 8,
+            "ratio": 0.5,
+            "longestGap": 4,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": true,
+              "noRest": false,
+              "longGap": true
+            }
+          },
+          "selected": [
+            "B25",
+            "BO02"
+          ],
+          "rejected": [
+            {
+              "id": "TI02",
+              "reason": "ACTOR_BLOCKS_ROUTE"
+            }
+          ],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 3,
+          "min": 4,
+          "max": 6,
+          "shortfall": 1
+        },
+        "short": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [
+        {
+          "id": "B28",
+          "layer": 2,
+          "sourceInstanceId": "B04-room-4",
+          "roomId": "bedroom",
+          "sourcePlanned": true
+        }
+      ],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "CRACK_OCCLUDED"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_SIDE_OBSERVATION"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_SEALED_MIDDLE_SLOT"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "layer": 2,
+          "reason": "COVERAGE_REGRESSION_ON_REFIT"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-003",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 10,
+          "coverage": {
+            "covered": 6,
+            "total": 10,
+            "ratio": 0.6,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "B04",
+            "AB01",
+            "TI02",
+            "RI01"
+          ],
+          "rejected": [
+            {
+              "id": "B18",
+              "reason": "NO_VISIBLE_WINDOW"
+            }
+          ],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 5,
+            "total": 8,
+            "ratio": 0.625,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B10",
+            "ME04",
+            "B07"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 5,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [
+        {
+          "id": "B28",
+          "layer": 2,
+          "sourceInstanceId": "B04-room-4",
+          "roomId": "bedroom",
+          "sourcePlanned": true
+        }
+      ],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_VISIBLE_CRACK_WALL"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO01",
+          "layer": 1,
+          "reason": "NO_VISIBLE_WINDOW"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 1,
+          "reason": "NO_SEALED_MIDDLE_SLOT"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "NO_PHOTO_WALL"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "NO_VISIBLE_WINDOW"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B07",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_VISIBLE_WINDOW"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-004",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 5,
+            "total": 8,
+            "ratio": 0.625,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "B04",
+            "AB01",
+            "B10"
+          ],
+          "rejected": [
+            {
+              "id": "B18",
+              "reason": "NO_VISIBLE_WINDOW"
+            }
+          ],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 10,
+          "coverage": {
+            "covered": 7,
+            "total": 10,
+            "ratio": 0.7,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "IN02",
+            "B19",
+            "IN03",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 5,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [
+        {
+          "id": "B28",
+          "layer": 2,
+          "sourceInstanceId": "B04-room-7",
+          "roomId": "bedroom",
+          "sourcePlanned": true
+        }
+      ],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "CRACK_OCCLUDED"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO01",
+          "layer": 1,
+          "reason": "NO_VISIBLE_WINDOW"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "NO_VISIBLE_WINDOW"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "PLINTH_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "OCCLUDED_SEALED_SLOT"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_VISIBLE_WINDOW"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-005",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 5,
+            "total": 8,
+            "ratio": 0.625,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B19",
+            "BO01",
+            "RI01",
+            "B06"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 7,
+          "coverage": {
+            "covered": 5,
+            "total": 7,
+            "ratio": 0.714,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "IN02",
+            "AB01"
+          ],
+          "rejected": [
+            {
+              "id": "B07",
+              "reason": "NO_SIDE_OBSERVATION"
+            }
+          ],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 1,
+          "reason": "NO_SEALED_MIDDLE_SLOT"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "PHOTO_OCCLUDED"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "CRACK_OCCLUDED"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "NO_VISIBLE_WINDOW"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_SIDE_OBSERVATION"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-006",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 9,
+          "coverage": {
+            "covered": 6,
+            "total": 9,
+            "ratio": 0.667,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "IN03",
+            "B07",
+            "B22",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 11,
+          "coverage": {
+            "covered": 7,
+            "total": 11,
+            "ratio": 0.636,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "B04",
+            "IN01",
+            "AB01",
+            "ME01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-007",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 10,
+          "coverage": {
+            "covered": 9,
+            "total": 10,
+            "ratio": 0.9,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "IN02",
+            "ME01",
+            "BO01",
+            "B07",
+            "B22",
+            "RI01",
+            "ME03",
+            "B06"
+          ],
+          "rejected": [
+            {
+              "id": "B03",
+              "reason": "PREFERENCE_UNCONFIRMED"
+            },
+            {
+              "id": "AB02",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B04",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "IN01",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "RI02",
+              "reason": "PREFERENCE_UNCONFIRMED"
+            },
+            {
+              "id": "AB01",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B18",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B01",
+              "reason": "PREFERENCE_UNCONFIRMED"
+            },
+            {
+              "id": "B05",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "TI02",
+              "reason": "ACTOR_BLOCKS_ROUTE"
+            },
+            {
+              "id": "B08",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ID02",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B11",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B12",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B09",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "TI03",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ID03",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "BO03",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B10",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "BO04",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ME02",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "BO02",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "AB04",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "IN03",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B20",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B19",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ME04",
+              "reason": "NO_COMPATIBLE_ROOM"
+            }
+          ],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 11,
+          "coverage": {
+            "covered": 6,
+            "total": 11,
+            "ratio": 0.545,
+            "longestGap": 4,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": true,
+              "noRest": false,
+              "longGap": true
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "AB01",
+            "B18",
+            "B10"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 3,
+          "min": 4,
+          "max": 6,
+          "shortfall": 1
+        },
+        "short": {
+          "count": 10,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "NO_PHOTO_WALL"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_VISIBLE_CRACK_WALL"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "PLINTH_BLOCKS_ROUTE"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "ME03",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "B22",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "BO01",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "layer": 1,
+          "reason": "COVERAGE_REGRESSION_ON_REFIT"
+        },
+        {
+          "layer": 2,
+          "reason": "COVERAGE_REGRESSION_ON_REFIT"
+        },
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-008",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 11,
+          "coverage": {
+            "covered": 8,
+            "total": 11,
+            "ratio": 0.727,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B10",
+            "B07",
+            "B22",
+            "RI01",
+            "B06",
+            "B08",
+            "B11"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 4,
+            "total": 8,
+            "ratio": 0.5,
+            "longestGap": 3,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": true,
+              "noRest": false,
+              "longGap": true
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "B04"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_VISIBLE_FURNITURE_SPREAD"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_FORWARD_EXIT"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "NO_VISIBLE_WINDOW"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_SIDE_OBSERVATION"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "OCCLUDED_SEALED_SLOT"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "BO04",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "layer": 2,
+          "reason": "COVERAGE_REGRESSION_ON_REFIT"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-009",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 9,
+          "coverage": {
+            "covered": 6,
+            "total": 9,
+            "ratio": 0.667,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "B04",
+            "BO04",
+            "IN01",
+            "AB01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 10,
+          "coverage": {
+            "covered": 6,
+            "total": 10,
+            "ratio": 0.6,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB04",
+            "ME04",
+            "B22",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [
+        {
+          "id": "B28",
+          "layer": 2,
+          "sourceInstanceId": "B04-room-1",
+          "roomId": "bedroom",
+          "sourcePlanned": true
+        }
+      ],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_FORWARD_EXIT"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "NO_PHOTO_WALL"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_SIDE_OBSERVATION"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-010",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 5,
+            "total": 8,
+            "ratio": 0.625,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B07",
+            "B22",
+            "TI02",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 10,
+          "coverage": {
+            "covered": 6,
+            "total": 10,
+            "ratio": 0.6,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "AB01",
+            "BO01",
+            "BO03"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 3,
+          "min": 4,
+          "max": 6,
+          "shortfall": 1
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "PHOTO_OCCLUDED"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_VISIBLE_FURNITURE_SPREAD"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_SIDE_OBSERVATION"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-011",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 9,
+          "coverage": {
+            "covered": 5,
+            "total": 9,
+            "ratio": 0.556,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": true,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "BO02",
+            "B07"
+          ],
+          "rejected": [
+            {
+              "id": "B22",
+              "reason": "NO_SEALED_MIDDLE_SLOT"
+            }
+          ],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 10,
+          "coverage": {
+            "covered": 5,
+            "total": 10,
+            "ratio": 0.5,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": true,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "IN02",
+            "AB01",
+            "BO01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 2,
+          "min": 4,
+          "max": 6,
+          "shortfall": 2
+        },
+        "short": {
+          "count": 5,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [
+        {
+          "id": "B28",
+          "layer": 2,
+          "sourceInstanceId": "B04-room-5",
+          "roomId": "bedroom",
+          "sourcePlanned": true
+        }
+      ],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "PHOTO_OCCLUDED"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "PHOTO_OCCLUDED"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "CRACK_OCCLUDED"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "PLINTH_BLOCKS_ROUTE"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "layer": 1,
+          "reason": "COVERAGE_REGRESSION_ON_REFIT"
+        },
+        {
+          "layer": 2,
+          "reason": "COVERAGE_REGRESSION_ON_REFIT"
+        },
+        {
+          "id": "B22",
+          "layer": 1,
+          "reason": "NO_SEALED_MIDDLE_SLOT"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-012",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 6,
+            "total": 8,
+            "ratio": 0.75,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "BO01",
+            "B07",
+            "B22",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 11,
+          "coverage": {
+            "covered": 6,
+            "total": 11,
+            "ratio": 0.545,
+            "longestGap": 3,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": true,
+              "noRest": false,
+              "longGap": true
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "IN01",
+            "B10",
+            "ME04"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [
+        {
+          "id": "B28",
+          "layer": 2,
+          "sourceInstanceId": "B04-room-6",
+          "roomId": "bedroom",
+          "sourcePlanned": true
+        }
+      ],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "PHOTO_OCCLUDED"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_SIDE_OBSERVATION"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_SEALED_MIDDLE_SLOT"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "layer": 2,
+          "reason": "COVERAGE_REGRESSION_ON_REFIT"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-013",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 9,
+          "coverage": {
+            "covered": 6,
+            "total": 9,
+            "ratio": 0.667,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "B10",
+            "ME04",
+            "B07",
+            "B22"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 7,
+            "total": 8,
+            "ratio": 0.875,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "IN02",
+            "B19",
+            "BO01",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 5,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "PHOTO_OCCLUDED"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_FORWARD_WATER_PAIR"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_SIDE_OBSERVATION"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_SEALED_MIDDLE_SLOT"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO01",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-014",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 11,
+          "coverage": {
+            "covered": 7,
+            "total": 11,
+            "ratio": 0.636,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "BO04",
+            "IN01",
+            "B19",
+            "B22",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 11,
+          "coverage": {
+            "covered": 6,
+            "total": 11,
+            "ratio": 0.545,
+            "longestGap": 2,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": true,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "BO01",
+            "B07",
+            "B08"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 5,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [
+        {
+          "id": "B28",
+          "layer": 2,
+          "sourceInstanceId": "B04-room-3",
+          "roomId": "bedroom",
+          "sourcePlanned": true
+        }
+      ],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 1,
+          "reason": "NO_SIDE_OBSERVATION"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_CLEAR_BANQUET_FOOTPRINT"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "layer": 2,
+          "reason": "COVERAGE_REGRESSION_ON_REFIT"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-015",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 7,
+          "coverage": {
+            "covered": 5,
+            "total": 7,
+            "ratio": 0.714,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "BO01",
+            "B07",
+            "B22",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 9,
+          "coverage": {
+            "covered": 7,
+            "total": 9,
+            "ratio": 0.778,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "B04",
+            "IN02",
+            "AB01",
+            "ME01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_FORWARD_WATER_PAIR"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "CRACK_OCCLUDED"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-016",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 5,
+            "total": 8,
+            "ratio": 0.625,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "IN02",
+            "ME01",
+            "B07",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 7,
+          "coverage": {
+            "covered": 5,
+            "total": 7,
+            "ratio": 0.714,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "BO01",
+            "B10",
+            "B22"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 2,
+          "min": 4,
+          "max": 6,
+          "shortfall": 2
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_SIDE_OBSERVATION"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "BO01",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-017",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 7,
+          "coverage": {
+            "covered": 6,
+            "total": 7,
+            "ratio": 0.857,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "IN02",
+            "BO01",
+            "B10",
+            "B22",
+            "RI01"
+          ],
+          "rejected": [
+            {
+              "id": "B03",
+              "reason": "PREFERENCE_UNCONFIRMED"
+            },
+            {
+              "id": "AB02",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B04",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "IN01",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "RI02",
+              "reason": "PREFERENCE_UNCONFIRMED"
+            },
+            {
+              "id": "AB01",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B18",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B01",
+              "reason": "PREFERENCE_UNCONFIRMED"
+            },
+            {
+              "id": "B05",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B07",
+              "reason": "PLINTH_BLOCKS_ROUTE"
+            },
+            {
+              "id": "TI02",
+              "reason": "ACTOR_BLOCKS_ROUTE"
+            },
+            {
+              "id": "B06",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B08",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ID02",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B11",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B12",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B09",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "TI03",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ID03",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "BO03",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "BO04",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ME03",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ME01",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ME02",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "BO02",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "AB04",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "IN03",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B20",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "B19",
+              "reason": "NO_COMPATIBLE_ROOM"
+            },
+            {
+              "id": "ME04",
+              "reason": "NO_COMPATIBLE_ROOM"
+            }
+          ],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 11,
+          "coverage": {
+            "covered": 7,
+            "total": 11,
+            "ratio": 0.636,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "BO04",
+            "B20",
+            "AB01",
+            "B06"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 3,
+          "min": 4,
+          "max": 6,
+          "shortfall": 1
+        },
+        "short": {
+          "count": 8,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 1,
+          "reason": "PLINTH_BLOCKS_ROUTE"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "PHOTO_OCCLUDED"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "CRACK_OCCLUDED"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_VISIBLE_WINDOW"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "NO_VISIBLE_WINDOW"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "PHOTO_OCCLUDED"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "PLINTH_BLOCKS_ROUTE"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "B22",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "layer": 1,
+          "reason": "COVERAGE_REGRESSION_ON_REFIT"
+        },
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 1,
+          "reason": "PLINTH_BLOCKS_ROUTE"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-018",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 8,
+          "coverage": {
+            "covered": 5,
+            "total": 8,
+            "ratio": 0.625,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B07",
+            "B22",
+            "TI02",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 7,
+          "coverage": {
+            "covered": 5,
+            "total": 7,
+            "ratio": 0.714,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "AB04",
+            "BO01",
+            "ME04"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 2,
+          "min": 4,
+          "max": 6,
+          "shortfall": 2
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "SEALED_ROUTE_DISCONNECTED"
+        },
+        {
+          "id": "AB01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_VISIBLE_BREATHING_WALL"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO01",
+          "layer": 1,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        }
+      ]
+    },
+    {
+      "seed": "doll-audit-019",
+      "layers": [
+        {
+          "layer": 1,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 11,
+          "coverage": {
+            "covered": 7,
+            "total": 11,
+            "ratio": 0.636,
+            "longestGap": 1,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": false,
+              "noRest": false,
+              "longGap": false
+            }
+          },
+          "selected": [
+            "B25",
+            "B04",
+            "AB04",
+            "BO01",
+            "B07",
+            "B22",
+            "RI01"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": false
+        },
+        {
+          "layer": 2,
+          "valid": true,
+          "errors": [],
+          "fallback": false,
+          "rooms": 9,
+          "coverage": {
+            "covered": 5,
+            "total": 9,
+            "ratio": 0.556,
+            "longestGap": 3,
+            "incomplete": false,
+            "deficits": {
+              "coverageBelowTarget": true,
+              "noRest": false,
+              "longGap": true
+            }
+          },
+          "selected": [
+            "B25",
+            "AB02",
+            "IN01",
+            "ME02"
+          ],
+          "rejected": [],
+          "cat": false,
+          "threat": true
+        }
+      ],
+      "budget": {
+        "major": {
+          "count": 4,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "short": {
+          "count": 6,
+          "min": 4,
+          "max": 6,
+          "shortfall": 0
+        },
+        "restByLayer": [
+          true,
+          true
+        ]
+      },
+      "repeatedUnits": [],
+      "conditionalSlots": [
+        {
+          "id": "B28",
+          "layer": 2,
+          "sourceInstanceId": "B04-room-2",
+          "roomId": "bedroom",
+          "sourcePlanned": true
+        }
+      ],
+      "compositionRejections": [
+        {
+          "id": "B03",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "AB02",
+          "layer": 1,
+          "reason": "PHOTO_OCCLUDED"
+        },
+        {
+          "id": "IN01",
+          "layer": 1,
+          "reason": "NO_VISIBLE_FURNITURE_SPREAD"
+        },
+        {
+          "id": "RI02",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 1,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B05",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 1,
+          "reason": "ACTOR_BLOCKS_ROUTE"
+        },
+        {
+          "id": "B06",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 1,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B03",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "RI02",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "B18",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B01",
+          "layer": 2,
+          "reason": "PREFERENCE_UNCONFIRMED"
+        },
+        {
+          "id": "BO01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B05",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B07",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B22",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "RI01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B06",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B08",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B11",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B12",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B09",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "TI03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ID03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B10",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME01",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "BO02",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "AB04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "IN03",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B20",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B19",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "ME04",
+          "layer": 2,
+          "reason": "NO_COMPATIBLE_ROOM"
+        },
+        {
+          "id": "B04",
+          "layer": 2,
+          "reason": "ONE_INSTANCE_PER_RUN"
+        },
+        {
+          "id": "ME04",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "AB01",
+          "reason": "ROLE_BUDGET_FULL"
+        },
+        {
+          "id": "IN02",
+          "reason": "ROLE_BUDGET_FULL"
+        }
+      ]
+    }
+  ]
+}

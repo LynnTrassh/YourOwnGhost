@@ -178,7 +178,8 @@ test('furniture forces a traversable detour and is rendered with matching collis
     if (!route) continue;
     assert.ok(route.length > 3, 'direct route through furniture must be unavailable');
     const player={...from}; follow(player,route,world.getColliders());
-    assert.ok(Math.hypot(player.x-to.x,player.z-to.z)<.001);
+    const destination=route.at(-1);
+    assert.ok(Math.hypot(player.x-destination.x,player.z-destination.z)<.001);
     detours++;
   }
   assert.ok(detours>0);
@@ -297,4 +298,16 @@ test('topology analysis reports real cycles, forks, dead ends and routes without
   const tree=inspectTopology(rooms,edges.filter(e=>e.id!=='3'));
   assert.deepEqual(tree.cycles,[]);assert.deepEqual(tree.revisitCandidates,[]);
   assert.deepEqual(tree.exitRoute,['bedroom','a','b','c']);
+});
+
+test('a side branch exposes only rooms naturally crossed again after exploring its end', async () => {
+  const {inspectTopology}=await import('../src/planning/topology.js');
+  const rooms=['bedroom','a','b','c','e','f','g'].map(id=>({id,modules:[[0,0]]}));
+  const edges=[['bedroom','a'],['a','b'],['b','c'],['a','e'],['e','f'],['f','g']]
+    .map(([a,b],i)=>({id:String(i),a,b}));
+  const result=inspectTopology(rooms,edges);
+  assert.deepEqual(result.cycles,[]);
+  assert.deepEqual(result.branchReturnRoutes,[['a','b','c']]);
+  assert.deepEqual(result.branchReturnCandidates,['b']);
+  assert.deepEqual(result.exitRoute,['bedroom','a','e','f','g']);
 });

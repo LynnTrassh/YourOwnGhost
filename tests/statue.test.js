@@ -40,13 +40,22 @@ test('statue fitting reads existing geometry and requires visible safe spacing a
   for(let seed=0;seed<20;seed++) {
     const p=generatePlan(String(seed),{catEnabled:false,threatEnabled:true});
     const plain=generatePlan(String(seed),{catEnabled:false});
-    for(const key of ['rooms','cells','doors','walls','obstacles']) assert.deepEqual(p[key],plain[key]);
+    for(const key of ['cells','doors','walls']) assert.deepEqual(p[key],plain[key]);
+    const shape=rooms=>rooms.map(({interior,...room})=>room);
+    assert.deepEqual(shape(p.rooms),shape(plain.rooms));
     if(!p.threat) continue;
+    assert.ok(!p.content.instances.some(instance=>instance.roomId===p.threat.roomId));
     fitted++;assert.ok(p.threat.roomRoute.length>=3);
     assert.ok(Math.hypot(p.threat.spawn.x-p.threat.observation.x,p.threat.spawn.z-p.threat.observation.z)>=6);
     assert.ok(pathThroughTiles(p,p.threat.observation,p.exit,['bedroom']));
     assert.ok(!boxes(p).some(b=>overlaps(p.threat.spawn.x,p.threat.spawn.z,b)));
-    assert.deepEqual(fitStatue(p),p.threat);
+    const geometry=structuredClone({rooms:p.rooms,cells:p.cells,doors:p.doors,walls:p.walls,obstacles:p.obstacles});
+    const refit=fitStatue(p);
+    assert.ok(refit);
+    for(const key of ['id','roomId','spawn','observation','entryDoorId','escapeRoomId','roomRoute'])
+      assert.deepEqual(refit[key],p.threat[key]);
+    assert.ok(pathThroughTiles(p,p.threat.observation,p.exit,['bedroom']));
+    assert.deepEqual({rooms:p.rooms,cells:p.cells,doors:p.doors,walls:p.walls,obstacles:p.obstacles},geometry);
   }
   assert.ok(fitted>0);
   const {p}=setup();p.opportunities.exitRoute=['bedroom',p.exit.roomId];assert.equal(fitStatue(p),null);

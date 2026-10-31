@@ -92,5 +92,19 @@ export function inspectTopology(rooms,edges) {
   const exitRoute=routes.sort((a,b)=>b.length-a.length)[0];
   const cycleRooms=new Set(cycles.flat());
   const revisitCandidates=rooms.filter(r=>cycleRooms.has(r.id) && r.modules.some(([x,z])=>x===0 && z===0)).map(r=>r.id);
-  return {cycles,forks,deadEnds,revisitCandidates,exitRoute};
+  // A side branch also gives a natural second pass: enter from a fork, explore
+  // its end, then cross the same intermediate room on the way back out.
+  const branchReturnRoutes=[];
+  for(const fork of forks)for(const end of deadEnds) {
+    const route=roomRoute(rooms,edges,fork.roomId,end);
+    if(!route || route.length<3 || route.slice(1,-1).some(id=>neighbors.get(id).length!==2 || cycleRooms.has(id)))continue;
+    if(route.slice(1).includes(exitRoute.at(-1)))continue;
+    // The branch may only leave the fork through its own rooms; a cycle would
+    // offer another exit and no longer guarantee a return through this room.
+    if(route.slice(1).some(id=>cycleRooms.has(id)))continue;
+    branchReturnRoutes.push(route);
+  }
+  const branchReturnCandidates=[...new Set(branchReturnRoutes.flatMap(route=>route.slice(1,-1)))]
+    .filter(id=>rooms.find(room=>room.id===id).modules.some(([x,z])=>x===0&&z===0));
+  return {cycles,forks,deadEnds,revisitCandidates,branchReturnRoutes,branchReturnCandidates,exitRoute};
 }

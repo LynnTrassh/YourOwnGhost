@@ -3,7 +3,13 @@ import { growTopology, inspectTopology } from './topology.js';
 import { validatePlan, buildWalls } from './validate.js';
 import { populateInteriors } from './interiors.js';
 import { fitStatue } from './statue-fit.js';
+import { fitLightAvoider } from './avoider-fit.js';
 import { fitStories } from './story-fit.js';
+import { fitContent } from './content-fit.js';
+import { fitChase } from './chase-fit.js';
+import { analyzeCoverage } from './coverage.js';
+import { HEARING_BEHAVIOR, LIGHT_AVOIDER_BEHAVIOR } from '../threat-profile.js';
+import { CHASE_BEHAVIOR } from '../chase.js';
 
 export function hashSeed(value) {
   let hash = 2166136261;
@@ -14,7 +20,7 @@ function random(seed) {
   let n = hashSeed(seed);
   return () => { n += 0x6D2B79F5; let t = n; t = Math.imul(t ^ t >>> 15, t | 1); t ^= t + Math.imul(t ^ t >>> 7, t | 61); return ((t ^ t >>> 14) >>> 0) / 4294967296; };
 }
-function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled) {
+function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled, contentIds, conditionalSlots, preferences, threatBehaviorId, chaseEnabled) {
   const rng=random(`${seed}:layout:${attempt}`), decor=random(`${decorationSeed}:decoration`);
   const topology=growTopology(rng,decor);
   const opportunities=inspectTopology(topology.rooms,topology.edges);
@@ -31,18 +37,36 @@ function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, thre
   plan.walls=buildWalls(plan);
   populateInteriors(plan,random(`${interiorSeed}:interior:${attempt}`),decor);
   plan.story=fitStories(plan);
-  plan.threat=threatEnabled ? fitStatue(plan) : null;
+  plan.chase=chaseEnabled ? fitChase(plan) : null;
+  const threatReservation=threatEnabled
+    ?threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR?fitLightAvoider(plan):fitStatue(plan):null;
+  plan.content=fitContent(plan,random(`${seed}:content:${attempt}`),contentIds,
+    [threatReservation?.roomId,...Object.values(plan.chase?.stages??{}),
+      plan.chase?.sourceRoomId,plan.chase?.hideRoomId].filter(Boolean),preferences);
+  plan.content.preferences=[...preferences];
+  plan.content.conditionalSlots=conditionalSlots.map(slot=>({...slot,focus:{...slot.focus}}));
+  plan.threat=plan.chase ? {id:'chase-1',behaviorId:CHASE_BEHAVIOR,
+    spawn:{...plan.chase.source},observation:{...plan.chase.observation},
+    roomId:plan.chase.stages.B13,escapeRoomId:exitId} : threatReservation;
+  if(plan.threat&&threatBehaviorId===HEARING_BEHAVIOR) {
+    plan.threat={...plan.threat,id:'hearing-1',behaviorId:HEARING_BEHAVIOR};
+  }
+  if(plan.threat&&threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR)
+    plan.threat={...plan.threat,behaviorId:LIGHT_AVOIDER_BEHAVIOR};
+  plan.coverage=analyzeCoverage(plan);
   return plan;
 }
 
-export function generatePlan(seed = '42', { maxAttempts = 20, decorationSeed = seed, interiorSeed = seed, catEnabled = true, threatEnabled = false } = {}) {
+export function generatePlan(seed = '42', { maxAttempts = 20, decorationSeed = seed, interiorSeed = seed, catEnabled = true, threatEnabled = false, threatBehaviorId = null, chaseEnabled = false, contentIds = null, conditionalSlots = [], preferences = [] } = {}) {
+  if(chaseEnabled&&threatEnabled)throw new Error('连续追逐与普通威胁不能同时占用同一层');
   const reports = [];
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
-    const plan = candidate(String(seed), attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled);
+    const plan = candidate(String(seed), attempt, decorationSeed, interiorSeed, catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled);
     const report = validatePlan(plan); reports.push({ attempt, ...report });
-    if (report.valid) return finish(plan, String(seed), reports, false);
+    if (report.valid && (!chaseEnabled||plan.chase)) return finish(plan, String(seed), reports, false);
   }
-  const fallback = candidate('validated-layout-1', 0, decorationSeed, 'validated-interior-1', catEnabled, threatEnabled);
+  if(chaseEnabled) throw new Error(`追逐空间未能在 ${maxAttempts} 次生成内合法落位`);
+  const fallback = candidate('validated-layout-1', 0, decorationSeed, 'validated-interior-1', catEnabled, threatEnabled,contentIds&&new Set(contentIds),conditionalSlots,preferences,threatBehaviorId,chaseEnabled);
   const report = validatePlan(fallback);
   if (!report.valid) throw new Error(`保底地图校验失败：${report.errors.join('、')}`);
   return finish(fallback, String(seed), [...reports, { attempt: 'fallback', ...report }], true);

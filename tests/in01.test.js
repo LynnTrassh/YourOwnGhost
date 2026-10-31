@@ -1,0 +1,50 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import * as THREE from 'three';
+import { generateDream } from '../src/planning/dream.js';
+import { validatePlan, pathThroughTiles } from '../src/planning/validate.js';
+import { createStoryState, stepContent, stepStory } from '../src/story/runtime.js';
+import { createWorld } from '../src/world.js';
+
+const look=(from,to)=>{
+  const dx=to.x-from.x,dz=to.z-from.z,dy=(to.y??1.65)-(from.y??1.65);
+  return {...from,y:from.y??1.65,yaw:Math.atan2(-dx,-dz),pitch:Math.atan2(dy,Math.hypot(dx,dz))};
+};
+
+test('IN01 spreads from a visible wall crack onto real furniture only after observed normal departure',()=>{
+  const plan=generateDream('9')[1],instance=plan.content.instances.find(item=>item.definitionId==='IN01');
+  assert.ok(instance);assert.equal(validatePlan(plan).valid,true);
+  assert.ok(pathThroughTiles(plan,plan.spawn,instance.observation));
+  assert.ok(pathThroughTiles(plan,instance.observation,instance.spreadObservation));
+  const furniture=plan.obstacles.find(box=>box.id===instance.furnitureId);
+  assert.ok(furniture);assert.ok(['bookshelf','counter'].includes(furniture.kind));
+  const boxes=[...plan.walls,...plan.obstacles],door=plan.doors.find(item=>item.id===instance.entryDoorId);
+  const axis=door.axis,other=axis==='x'?'z':'x';
+  const inside=door.cells.find(([x,z])=>plan.cells.find(cell=>cell.x===x&&cell.z===z)?.roomId===instance.roomId);
+  const sign=Math.sign(inside[axis==='x'?0:1]*plan.cellSize-door[axis]);
+  const view=look(instance.observation,instance.focus);
+  const near={...view,[axis]:door[axis]+sign*.25,[other]:door[other]};
+  const far={...near,[axis]:door[axis]-sign*.25};
+  const unseen=createStoryState();
+  stepStory(plan,unseen,near,.01,{suppressRoutes:true,boxes});
+  stepStory(plan,unseen,far,.01,{suppressRoutes:true,boxes});
+  assert.equal(unseen.instances[instance.instanceId].phase,'waiting');
+  const state=createStoryState();stepContent(plan,state,view,.85,boxes);
+  assert.equal(state.instances[instance.instanceId].phase,'observed');
+  assert.equal(state.cue?.text,'一点点而已。');state.cue=null;
+  stepStory(plan,state,near,.01,{suppressRoutes:true,boxes});
+  stepStory(plan,state,far,.01,{suppressRoutes:true,boxes});
+  assert.equal(state.instances[instance.instanceId].phase,'spread');
+  const scene=new THREE.Scene(),world=createWorld(scene,plan),spread=scene.getObjectByName(`story-${instance.instanceId}-spread`);
+  assert.ok(spread);world.updateStory(state,view);assert.equal(spread.visible,true);
+  stepStory(plan,state,near,.01,{suppressRoutes:true,boxes});
+  const returnView=look(instance.spreadObservation,instance.furnitureFocus);
+  stepContent(plan,state,returnView,.85,boxes);
+  assert.equal(state.instances[instance.instanceId].phase,'spreadSeen');
+  assert.equal(state.cue?.text,'哎呀，真不见外。');
+  assert.ok(state.facts.includes(`${instance.instanceId}.spreadSeen`));
+  world.dispose();
+  const death=createStoryState();stepContent(plan,death,view,.85,boxes);
+  stepStory(plan,death,far,.1,{cause:'death',suppressRoutes:true,boxes});
+  assert.equal(death.instances[instance.instanceId].phase,'observed');
+});
