@@ -1,6 +1,12 @@
+import { ROOM_PROP_ASSETS } from './room-props-catalog.js';
 // Approved dark-scenes-v02 geometry with optimized v03 runtime textures.
 // Original V02 models are preserved. Stable gameplay IDs remain unchanged.
 export const INTERIOR_ASSETS = {
+  ...ROOM_PROP_ASSETS,
+  "bed-iron-rail-v01": {"url":"/art/furniture-diversity/v01/bed-iron-rail-v01.glb","width":0.9980430528375734,"height":1.0136986301369864,"depth":2,"prefabId":null,"theme":"bedroom","preserveAspect":true},
+  "bed-canopy-linen-v01": {"url":"/art/furniture-diversity/v01/bed-canopy-linen-v01.glb","width":1.6575341475852687,"height":2.2,"depth":2.0191780272972855,"prefabId":null,"theme":"bedroom","preserveAspect":true},
+  "bed-low-divan-v01": {"url":"/art/furniture-diversity/v01/bed-low-divan-v01.glb","width":0.9959882583170253,"height":0.5304305283757338,"depth":1.9499999999999997,"prefabId":null,"theme":"bedroom","preserveAspect":true},
+  "vanity-oval-mirror-v01": {"url":"/art/furniture-diversity/v01/vanity-oval-mirror-v01.glb","width":1.0623287671232877,"height":1.65,"depth":0.4552837573385519,"prefabId":"vanity","theme":"bedroom","preserveAspect":true},
   "furniture-bed-single": {
     "url": "/art/room-presets/v03/models/furniture-bed-single.glb",
     "height": 1.05,
@@ -291,3 +297,9 @@ export const INTERIOR_ASSETS = {
   }
 };
 export const PREFAB_ASSETS = Object.fromEntries(Object.entries(INTERIOR_ASSETS).filter(([,v])=>v.prefabId).map(([id,v])=>[v.prefabId,id]));
+
+// Variants are selected and validated by planning, never by load order.
+export function resolveInteriorAsset(obstacle) {
+  const selected=INTERIOR_ASSETS[obstacle.variantId];
+  return selected ? obstacle.variantId : PREFAB_ASSETS[obstacle.prefabId ?? obstacle.kind];
+}

@@ -1,0 +1,53 @@
+{
+  "source": "public/art/quality-repairs/v04/prop-pendulum-clock-v04.glb",
+  "destination": "public/art/game-models/v01/prop-pendulum-clock-v04.glb",
+  "sourceBytes": 3990148,
+  "runtimeBytes": 3990280,
+  "sourceSHA256": "9c848d7ed07c7403c6862a48711df48cbd6f4b526103e275abc9fbc59bab44de",
+  "runtimeSHA256": "0acce3bae1df9253c68433049fbe28d6308799809226e3213f21594b71aa5799",
+  "triangles": 15307,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.16379647749510765,
+      0,
+      -0.24129158512720159
+    ],
+    "max": [
+      0.16379647749510765,
+      1.8,
+      0.24129158512720159
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.24129158512720159,
+      0,
+      -0.16379647749510767
+    ],
+    "max": [
+      0.24129158512720159,
+      1.8,
+      0.16379647749510767
+    ],
+    "size": [
+      0.48258317025440317,
+      1.8,
+      0.32759295499021535
+    ]
+  },
+  "scale": 1,
+  "scaleXYZ": [
+    1,
+    1,
+    1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

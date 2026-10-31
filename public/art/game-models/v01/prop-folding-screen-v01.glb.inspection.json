@@ -1,0 +1,53 @@
+{
+  "source": "public/art/room-props/v02/prop-folding-screen-v01.glb",
+  "destination": "public/art/game-models/v01/prop-folding-screen-v01.glb",
+  "sourceBytes": 4083300,
+  "runtimeBytes": 4083432,
+  "sourceSHA256": "4cfa304cc11fc0518b78a2f1eb70bb2056812600c0e629fa9e2ce13f9fa49ce8",
+  "runtimeSHA256": "21f52df06b49bb2763a13dd26b3a51a8c40ee56be3c2ae453ed886be2d81e8ff",
+  "triangles": 15194,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.6654559575865464,
+      0,
+      -0.6820508945688845
+    ],
+    "max": [
+      0.6654559575865464,
+      1.6960000223480165,
+      0.6820508945688845
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.6820508945688845,
+      0,
+      -0.6654559575865464
+    ],
+    "max": [
+      0.6820508945688845,
+      1.6960000223480165,
+      0.6654559575865464
+    ],
+    "size": [
+      1.364101789137769,
+      1.6960000223480165,
+      1.3309119151730928
+    ]
+  },
+  "scale": 1,
+  "scaleXYZ": [
+    1,
+    1,
+    1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

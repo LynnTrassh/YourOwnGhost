@@ -1,0 +1,53 @@
+{
+  "source": "public/art/room-props/v02/prop-tv-console-v01.glb",
+  "destination": "public/art/game-models/v01/prop-tv-console-v01.glb",
+  "sourceBytes": 3555404,
+  "runtimeBytes": 3555540,
+  "sourceSHA256": "9a8e2e44a0d8f43b8b6df75cba65920a4f12c3055c2e9a2872380a770e80021f",
+  "runtimeSHA256": "04184e48fb796e420379fa738652181149d010fa5dd15265854a2c5926be2257",
+  "triangles": 15688,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.31057876860481887,
+      0,
+      -0.7313629067145735
+    ],
+    "max": [
+      0.31057876860481887,
+      1.3024270504713056,
+      0.7313629067145735
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.7313629067145735,
+      0,
+      -0.3105787686048189
+    ],
+    "max": [
+      0.7313629067145735,
+      1.3024270504713056,
+      0.3105787686048189
+    ],
+    "size": [
+      1.462725813429147,
+      1.3024270504713056,
+      0.6211575372096378
+    ]
+  },
+  "scale": 1,
+  "scaleXYZ": [
+    1,
+    1,
+    1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

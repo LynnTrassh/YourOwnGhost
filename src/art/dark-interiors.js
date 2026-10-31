@@ -1,13 +1,15 @@
 import * as THREE from 'three';
-import { INTERIOR_ASSETS, PREFAB_ASSETS } from './interior-catalog.js';
+import { INTERIOR_ASSETS, resolveInteriorAsset } from './interior-catalog.js';
 import { createInteriorModelLoader } from './interior-models.js';
 import { createInteriorSurfaces } from './interior-surfaces.js';
 import { createInteriorLighting } from './interior-lighting.js';
 import { createRoomDetailDressing, findTableSupport } from './room-detail-dressing.js';
 import { createRoomCompleteness } from './room-completeness.js';
+import { createModelSurfaceRepair } from './model-surface-repair.js';
 
 export function createDarkInteriors({ plan, root, resources }) {
   const models = createInteriorModelLoader(resources);
+  const repairModelSurface = createModelSurfaceRepair(resources);
   const surfaces = createInteriorSurfaces({ plan, root, resources });
   const lighting = createInteriorLighting({ root, resources, plan });
   const details = createRoomDetailDressing({ plan, root, resources });
@@ -25,7 +27,7 @@ export function createDarkInteriors({ plan, root, resources }) {
     if (fill) lighting.accent(emitter,color,.6,2.2,group);
   }
   function furnish(obstacle, fallback) {
-    const id = PREFAB_ASSETS[obstacle.prefabId ?? obstacle.kind];
+    const id = resolveInteriorAsset(obstacle);
     if (!id) return;
     const asset = INTERIOR_ASSETS[id];
     const w = obstacle.maxX-obstacle.minX, d = obstacle.maxZ-obstacle.minZ;
@@ -36,12 +38,17 @@ export function createDarkInteriors({ plan, root, resources }) {
     if (obstacle.compositionRole === 'primary' && asset.depth > asset.width) yaw += Math.PI/2;
     if (Number.isFinite(obstacle.furnitureYaw)) yaw = obstacle.furnitureYaw;
     const alongX = Math.abs(Math.cos(yaw)) > .5;
-    const width = (alongX ? w : d) * .985, depth = (alongX ? d : w) * .985;
-    const height = Math.min(asset.height,obstacle.height ?? asset.height);
+    let width = (alongX ? w : d) * .985, depth = (alongX ? d : w) * .985;
+    let height = Math.min(asset.height,obstacle.height ?? asset.height);
+    if (asset.preserveAspect) {
+      const fit = Math.min(width/asset.width,depth/asset.depth,height/asset.height);
+      width=asset.width*fit; depth=asset.depth*fit; height=asset.height*fit;
+    }
     const position = [(obstacle.minX+obstacle.maxX)/2,0,(obstacle.minZ+obstacle.maxZ)/2];
     const anchor = new THREE.Group(); anchor.position.set(...position); anchor.rotation.y = yaw; root.add(anchor);
     const item = {obstacle,anchor,id,width,depth,height,position};
     item.ready = place(id,{parent:anchor,width,height,depth,fallback,onReady:model=>{
+      repairModelSurface(id,model);
       details.furnish({...item,model});
       if(id==='lighting-floor-lamp')illuminate(model,{emitter:[0,height*.78,0],target:[.25,.1,-.6],
         color:surfaces.look(obstacle.roomId).light,intensity:6,distance:4.5,angle:1.15,roomId:obstacle.roomId});
@@ -79,10 +86,9 @@ export function createDarkInteriors({ plan, root, resources }) {
         }));
         primary.set(obstacle.roomId,true);
       }
-      if (!obstacle.compositionGroup && ['furniture-writing-desk','furniture-child-table','furniture-document-table'].includes(id)) {
-        // A tucked seat stays entirely within the already reserved furnishing footprint.
-        place('furniture-dining-chair',{parent:anchor,position:[0,0,-depth*.18],width:Math.min(.36,width*.32),height:id==='furniture-child-table'?.5:.72,depth:depth*.48,yaw:Math.PI});
-      }
+      // Seats need their own planned footprint. A chair wholly inside a desk's
+      // bounds can put its back through the authored tabletop and drawers.
+      // Explicit seating in composition groups is furnished independently.
     }
     for (const room of plan.rooms) {
       const theme = surfaces.theme(room.id), look = surfaces.look(room.id);

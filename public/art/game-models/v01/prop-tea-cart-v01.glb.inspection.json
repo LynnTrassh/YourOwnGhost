@@ -1,0 +1,53 @@
+{
+  "source": "public/art/room-props/v02/prop-tea-cart-v01.glb",
+  "destination": "public/art/game-models/v01/prop-tea-cart-v01.glb",
+  "sourceBytes": 4042612,
+  "runtimeBytes": 4042744,
+  "sourceSHA256": "aa483e852004d70376d0ab8939cae5b5601b902540f89de020909273a41cdaee",
+  "runtimeSHA256": "7f93047d590a2ca33cdfad6fc593ebba42358e1ccc5c014f82b3d59fb635c2af",
+  "triangles": 16860,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2436203497084707,
+      0,
+      -0.3724500939610857
+    ],
+    "max": [
+      0.2436203497084707,
+      0.8439999911934137,
+      0.3724500939610857
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.3724500939610857,
+      0,
+      -0.24362034970847074
+    ],
+    "max": [
+      0.3724500939610857,
+      0.8439999911934137,
+      0.24362034970847074
+    ],
+    "size": [
+      0.7449001879221714,
+      0.8439999911934137,
+      0.4872406994169415
+    ]
+  },
+  "scale": 1,
+  "scaleXYZ": [
+    1,
+    1,
+    1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "public/art/room-props/v02/prop-archive-stack-v01.glb",
+  "destination": "public/art/game-models/v01/prop-archive-stack-v01.glb",
+  "sourceBytes": 4089904,
+  "runtimeBytes": 4090036,
+  "sourceSHA256": "456447e592a0e1eaade3cfd5aa312134c23a6a55321ce65ce89aba9c132baac7",
+  "runtimeSHA256": "94f81dd7edd2b0602118f880ea5625fc97e21ce0fea642d6c754b9d6b10adfa5",
+  "triangles": 16605,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.2531521694399857,
+      0,
+      -0.3623550768813116
+    ],
+    "max": [
+      0.2531521694399857,
+      0.685000009536743,
+      0.3623550768813116
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.3623550768813116,
+      0,
+      -0.2531521694399857
+    ],
+    "max": [
+      0.3623550768813116,
+      0.685000009536743,
+      0.2531521694399857
+    ],
+    "size": [
+      0.7247101537626232,
+      0.685000009536743,
+      0.5063043388799714
+    ]
+  },
+  "scale": 1,
+  "scaleXYZ": [
+    1,
+    1,
+    1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

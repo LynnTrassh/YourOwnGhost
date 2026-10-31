@@ -1,0 +1,53 @@
+{
+  "source": "public/art/room-props/v02/prop-cradle-v01.glb",
+  "destination": "public/art/game-models/v01/prop-cradle-v01.glb",
+  "sourceBytes": 4257500,
+  "runtimeBytes": 4257632,
+  "sourceSHA256": "5b1191ccb87d4266270680be905879018312d14d09cd079084cce0e1a170f322",
+  "runtimeSHA256": "f8e1ebdf6593a54acab47b1107f0e510338827a18b2255aeb1dedd496bff271b",
+  "triangles": 16769,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.3069175158547913,
+      0,
+      -0.56213208101003
+    ],
+    "max": [
+      0.3069175158547913,
+      0.8866506349295378,
+      0.56213208101003
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.56213208101003,
+      0,
+      -0.3069175158547914
+    ],
+    "max": [
+      0.56213208101003,
+      0.8866506349295378,
+      0.3069175158547914
+    ],
+    "size": [
+      1.12426416202006,
+      0.8866506349295378,
+      0.6138350317095828
+    ]
+  },
+  "scale": 1,
+  "scaleXYZ": [
+    1,
+    1,
+    1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}

@@ -1,5 +1,5 @@
 import { CELL_SIZE, DIRECTIONS, keyOf, rotate } from './templates.js';
-import { createRoomPrefabPicker, ROOM_PRESET_IDS, ROOM_FUNCTIONAL_PAIRS, ROOM_DRESSING_GROUPS } from './room-presets.js';
+import { createRoomPrefabPicker, ROOM_PRESET_IDS, ROOM_FUNCTIONAL_PAIRS, ROOM_DRESSING_GROUPS, BED_STYLES } from './room-presets.js';
 import { validatePlan } from './validate.js';
 import { sightClear } from '../story/spatial.js';
 
@@ -208,28 +208,43 @@ export function completeFinalRoomInteriors(plan) {
   // Moving room shells/furniture need their own transform contract. Chase routes
   // retain the authored occluders and escape footprint until a dedicated recipe.
   reserveRooms(plan.chase);
+  // Threat navigation includes continuous off-grid movement and body clearance;
+  // clear observation rays alone cannot protect its approach/escape route.
+  reserveRooms(plan.threat);
   for(const i of plan.content?.instances??[])if(['B18','B19','B20'].includes(i.definitionId))specialRooms.add(i.roomId);
+  const bedrooms=plan.rooms.filter(r=>r.interior?.presetId==='bedroom'&&!specialRooms.has(r.id));
+  const bedOffset=Math.floor(furnishingRandom(plan,{id:'bed-style-cycle:v1'})()*BED_STYLES.length);
   for(const room of plan.rooms) {
-    if(room.interior?.finalDressing?.version===2){reports.push(room.interior.finalDressing);continue;}
+    if(room.interior?.finalDressing?.version>=2){reports.push(room.interior.finalDressing);continue;}
     const count=()=>plan.obstacles.filter(b=>b.roomId===room.id&&b.prefabId).length;
-    const before=count(),area=room.cells.length*CELL_SIZE**2,target=Math.min(12,Math.max(6,Math.ceil(area/22)));
-    const report={version:2,roomId:room.id,before,target,placed:before,groups:[],shortfall:0,rejected:0};
+    const before=count(),area=room.cells.length*CELL_SIZE**2,target=Math.min(24,Math.max(12,Math.ceil(area/10)));
+    const groupTarget=before>12?2:area<100?3:area<175?4:5;
+    const report={version:3,roomId:room.id,before,target,groupTarget,placed:before,groups:[],shortfall:0,rejected:0};
     reports.push(report);
     if(specialRooms.has(room.id)) {
       report.reason=room.id==='bedroom'?'固定出生房保持既有布局':'动态场面保留，需专用陈设适配';
       report.excluded=true;report.shortfall=Math.max(0,target-before);room.interior.finalDressing=report;continue;
     }
-    const recipes=ROOM_DRESSING_GROUPS[room.interior.presetId];
+    let recipes=ROOM_DRESSING_GROUPS[room.interior.presetId];
     if(!recipes) {report.reason='主题缺少功能组';report.shortfall=target-before;room.interior.finalDressing=report;continue;}
+    if(room.interior.presetId==='bedroom') {
+      const style=BED_STYLES[(bedOffset+bedrooms.indexOf(room))%BED_STYLES.length];
+      report.bedStyle=style.id;
+      recipes=recipes.map(recipe=>recipe.id!=='sleep'?recipe:{...recipe,items:[
+        ['bed',style.width,style.depth,style.height,0,-style.depth/2-.15,0,style.id],
+        ['nightstand',.68,.48,.78,style.width/2+.5,-.4,0],
+        ['dresser',1.3,.65,.88,-style.width/2-.85,-.45,0],
+      ]});
+    }
     const tiles=new Set(room.cells.map(p=>keyOf(...p)));
     const entryDoor=plan.doors.find(d=>d.cells.some(c=>tiles.has(keyOf(...c))));
     const entryCell=entryDoor?.cells.find(c=>tiles.has(keyOf(...c)));
     const entry=entryCell?{x:entryCell[0]*CELL_SIZE,y:1.65,z:entryCell[1]*CELL_SIZE}:null;
     const candidates=room.cells.flatMap(([x,z])=>DIRECTIONS.filter(([dx,dz])=>!tiles.has(keyOf(x+dx,z+dz)))
-      .map(([nx,nz])=>({x:(x+nx/2)*CELL_SIZE,z:(z+nz/2)*CELL_SIZE,nx,nz})));
+      .flatMap(([nx,nz])=>[0,1.8].map(inset=>({x:(x+nx/2)*CELL_SIZE-nx*inset,z:(z+nz/2)*CELL_SIZE-nz*inset,nx,nz,zone:inset?'inner':'wall'}))));
     const used=[];
-    for(let pass=0;pass<4&&(count()<target||report.groups.length===0);pass++) {
-      const recipe=recipes[pass%recipes.length];
+    for(let pass=0;pass<recipes.length&&(count()<target||report.groups.length<groupTarget);pass++) {
+      const recipe=recipes[pass];
       const occupied=plan.obstacles.filter(b=>b.roomId===room.id);
       const others=used.length?used:occupied.map(b=>({x:(b.minX+b.maxX)/2,z:(b.minZ+b.maxZ)/2}));
       const score=a=>{
@@ -240,20 +255,20 @@ export function completeFinalRoomInteriors(plan) {
           const dx=entry.x-entryDoor.x,dz=entry.z-entryDoor.z;
           const forward=((focus.x-entry.x)*dx+(focus.z-entry.z)*dz)/Math.max(.01,distance*Math.hypot(dx,dz));
           const visible=sightClear(entry,focus,[...plan.walls,...occupied]);
-          return (visible?25:-25)+forward*10-Math.abs(distance-4.5)*2+spread*.1+x*.003+z*.001;
+          return (visible?25:-25)+(recipe.freestanding&&a.zone==='inner'?4:0)+forward*10-Math.abs(distance-4.5)*2+spread*.1+x*.003+z*.001;
         }
-        return spread+x*.003+z*.001;
+        return spread+(recipe.freestanding&&a.zone==='inner'?3:0)+x*.003+z*.001;
       };
-      const ranked=candidates.map(a=>({a,score:score(a)})).sort((a,b)=>b.score-a.score);
+      const ranked=candidates.filter(a=>recipe.freestanding||a.zone==='wall').map(a=>({a,score:score(a)})).sort((a,b)=>b.score-a.score);
       for(const {a} of ranked) {
-        if(used.some(p=>Math.hypot(a.x-p.x,a.z-p.z)<3))continue;
+        if(used.some(p=>Math.hypot(a.x-p.x,a.z-p.z)<2.6))continue;
         const groupId=`${room.id}-dressing-${pass}-${recipe.id}`;
-        const members=recipe.items.map(([prefabId,w,d,height,lx,lz,turn],i)=>{
+        const members=recipe.items.map(([prefabId,w,d,height,lx,lz,turn,variantId],i)=>{
           const yaw=Math.atan2(a.nx,a.nz)+turn*Math.PI/2,c=Math.abs(Math.cos(yaw)),s=Math.abs(Math.sin(yaw));
           const x=a.x+a.nz*lx+a.nx*lz,z=a.z-a.nx*lx+a.nz*lz,wx=w*c+d*s,dz=w*s+d*c;
           return {id:`${groupId}-${i}`,roomId:room.id,kind:height>1.5?'bookshelf':'counter',prefabId,height,
             minX:x-wx/2,maxX:x+wx/2,minZ:z-dz/2,maxZ:z+dz/2,wallNormal:[a.nx,a.nz],
-            furnitureYaw:yaw,compositionGroup:groupId,compositionRole:i===0?'primary':'companion',decoration:.35};
+            ...(variantId?{variantId}:{}),furnitureYaw:yaw,compositionGroup:groupId,compositionRole:i===0?'primary':'companion',decoration:.35};
         });
         // Keep full objects in concave rooms and clear every portal approach.
         const fits=members.every((b,index)=>{
@@ -272,6 +287,7 @@ export function completeFinalRoomInteriors(plan) {
       }
     }
     report.placed=count();report.shortfall=Math.max(0,target-report.placed);
+    report.groupShortfall=Math.max(0,groupTarget-report.groups.length);
     report.missingFunctionalGroup=report.groups.length===0;
     if(report.shortfall)report.reason='安全空间不足，功能组未达目标';
     else if(report.missingFunctionalGroup)report.reason='已有家具达到件数，仍缺完整功能组';

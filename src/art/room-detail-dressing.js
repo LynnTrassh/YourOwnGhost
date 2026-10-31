@@ -45,7 +45,7 @@ export function findTableSupport({model,anchor,width,depth,height,scale,x:prefer
     // A hollow bowl can look flat to downward samples; its narrow rim still
     // intersects a book. Reject triangle bounds crossing the patch as well.
     for(const bounds of triangles)for(let i=0;i<bounds.length;i+=5) {
-      if(bounds[i]<x+halfW && bounds[i+1]>x-halfW && bounds[i+2]<z+halfD && bounds[i+3]>z-halfD && bounds[i+4]>y+.014)return true;
+      if(bounds[i]<x+halfW && bounds[i+1]>x-halfW && bounds[i+2]<z+halfD && bounds[i+3]>z-halfD && bounds[i+4]>y+.002)return true;
     }
     return false;
   }
@@ -138,6 +138,9 @@ export function createRoomDetailDressing({plan,root,resources}) {
   }
   function tabletop(item) {
     const {anchor,obstacle,width,depth,height}=item, prefab=obstacle.prefabId;
+    // This GLB already contains a manuscript, loose books and a file tray.
+    // Adding another paper cluster on the manuscript creates intersecting skins.
+    if(item.id==='furniture-writing-desk')return;
     if(!TABLES.has(prefab))return;
     const clearance=(obstacle.height??height)-height-.015;
     if(clearance<.04)return;

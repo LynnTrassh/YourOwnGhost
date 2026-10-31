@@ -1,0 +1,53 @@
+{
+  "source": "public/art/scene-assets/v03/scene-wheelchair-v03.glb",
+  "destination": "public/art/game-models/v01/scene-wheelchair-v03.glb",
+  "sourceBytes": 3777896,
+  "runtimeBytes": 3778048,
+  "sourceSHA256": "fdfd647e663f2be7675f23c4bd2c639d0728b272f2dba6a3b209a40ae8c20c9f",
+  "runtimeSHA256": "d1dac7d45d57db2105672382e258837071ddbf3d09eaf5af9dee5f2cf3126b4b",
+  "triangles": 16880,
+  "meshCount": 1,
+  "materialCount": 1,
+  "embeddedImageCount": 3,
+  "animations": 0,
+  "skins": 0,
+  "originalBounds": {
+    "min": [
+      -0.5377169429328038,
+      0,
+      -0.3430133850276813
+    ],
+    "max": [
+      0.5377169429328038,
+      0.9999999999999999,
+      0.3430133850276813
+    ]
+  },
+  "runtimeBounds": {
+    "min": [
+      -0.34301338502768136,
+      0,
+      -0.5377169429328038
+    ],
+    "max": [
+      0.34301338502768136,
+      0.9999999999999999,
+      0.5377169429328038
+    ],
+    "size": [
+      0.6860267700553627,
+      0.9999999999999999,
+      1.0754338858656076
+    ]
+  },
+  "scale": 1,
+  "scaleXYZ": [
+    1,
+    1,
+    1
+  ],
+  "footprint": null,
+  "yawDegrees": 90,
+  "materialMode": "preserve",
+  "orientationStatus": "requires-visual-confirmation"
+}
