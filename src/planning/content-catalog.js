@@ -12,12 +12,14 @@ const major = new Set(['CAT01','B03','B04','B13','B17','B19','RI01','RI02','RI04
 const rest = new Set(['B25']);
 const greybox = new Set(['B01','B03','B04','B05','B06','B07','B08','B09','B10','B11','B12','B18','B19','B20','B22','B25','ID02','ID03','ME01','ME02','ME03','ME04','IN01','IN02','IN03','TI02','TI03','RI01','RI02','BO01','BO02','BO03','BO04','AB01','AB02','AB04']);
 const conditionalGreybox = new Set(['B27','B28','IN04']);
+const previewOnly = new Set(['B13','B14','B15','B16']);
 export const CONTENT_CATALOG = Object.freeze(ids.map(id=>Object.freeze({
   definitionId:id,
   sourcePolicy:required.has(id)?'required':conditional.has(id)?'conditional':flow.has(id)?'fixed':optional.has(id)?'optional':'builtin',
   preferenceRequirements:required.has(id)?[required.get(id)]:[],
-  capabilities:greybox.has(id)||conditionalGreybox.has(id)?['geometry','subtitle','proxy']:[],
-  readiness:greybox.has(id)?'greybox':conditionalGreybox.has(id)?'conditional-greybox':id==='CAT01'?'fixed-test':id==='B26'?'existing-flow':'unimplemented',
+  capabilities:greybox.has(id)||conditionalGreybox.has(id)||previewOnly.has(id)?['geometry','subtitle','proxy']:[],
+  readiness:greybox.has(id)?'greybox':conditionalGreybox.has(id)?'conditional-greybox'
+    :previewOnly.has(id)?'preview-only':id==='CAT01'?'fixed-test':id==='B26'?'existing-flow':'unimplemented',
   variants:[],
   role:rest.has(id)?'rest':flow.has(id)?'flow':major.has(id)?'major':'short',
   narrativeUnitId:['B13','B14','B15','B16'].includes(id)?'B13-B16':id,
@@ -31,6 +33,7 @@ export function contentEligibility(id,{preferences=[],capabilities=['geometry','
   if(!definition) return {accepted:false,reason:'UNKNOWN_DEFINITION'};
   const reasons=[];
   if(definition.readiness==='unimplemented') reasons.push('UNIMPLEMENTED');
+  if(definition.readiness==='preview-only') reasons.push('PREVIEW_ONLY');
   if(definition.readiness==='fixed-test') reasons.push('FIXED_TEST_ONLY');
   if(definition.readiness==='existing-flow') reasons.push('FIXED_FLOW_ONLY');
   if(definition.readiness==='greybox'&&!allowGreybox) reasons.push('GREYBOX_DISABLED');

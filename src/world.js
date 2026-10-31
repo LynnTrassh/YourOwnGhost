@@ -274,7 +274,9 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
     if(!statue || !threat) return;
     statue.position.set(threat.x,0,threat.z);
     const facing=threat.behaviorId==='hearing-investigator'?threat.memory?.lastSound
-      :threat.seesPlayer?player:null;
+      :threat.behaviorId==='chase-investigator'
+        ?threat.route?.[0]??threat.lastSeen??threat.memory?.lastSound??(threat.seesPlayer?player:null)
+        :threat.seesPlayer?player:null;
     if(facing&&threat.phase!=='escaped')
       statue.rotation.y=Math.atan2(facing.x-threat.x,facing.z-threat.z);
   }
@@ -299,6 +301,17 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
     maxX:chaseDoor.x+(chaseDoor.axis==='x'?.08:.8),minZ:chaseDoor.z-(chaseDoor.axis==='x'?.8:.08),
     maxZ:chaseDoor.z+(chaseDoor.axis==='x'?.8:.08)};
   let chaseDoorClosed=false;
+  const impactDoor=plan.chase&&plan.doors.find(d=>d.id===plan.chase.sideDoorId);
+  const impactDoorMesh=impactDoor?box(impactDoor.axis==='x'?.14:1.6,2.4,
+    impactDoor.axis==='x'?1.6:.14,impactDoor.x,1.2,impactDoor.z,wood):null;
+  if(impactDoorMesh)impactDoorMesh.name='chase-side-door';
+  const impactLight=impactDoor?new THREE.PointLight(0xffa278,0,5):null;
+  if(impactLight){impactLight.position.set(impactDoor.x,1.75,impactDoor.z);root.add(impactLight);}
+  const impactDoorCollider=impactDoor&&{minX:impactDoor.x-(impactDoor.axis==='x'?.08:.8),
+    maxX:impactDoor.x+(impactDoor.axis==='x'?.08:.8),minZ:impactDoor.z-(impactDoor.axis==='x'?.8:.08),
+    maxZ:impactDoor.z+(impactDoor.axis==='x'?.8:.08)};
+  let impactDoorClosed=Boolean(impactDoor);
+  let impactElapsed=0;
   scene.add(root);
   return {
     plan, solids, doorMeshes, door: doorMeshes[0], exitMarker, artStats: interiorArt.stats, artReady: interiorArt.ready(),
@@ -308,12 +321,21 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
       storyProxies.updateAmbient(dt);
       chaseDoorClosed=Boolean(chaseDoorMesh&&state.threat?.doorRemaining>0);
       if(chaseDoorMesh)chaseDoorMesh.visible=chaseDoorClosed;
+      impactDoorClosed=Boolean(impactDoorMesh&&['dormant','warning'].includes(state.threat?.phase));
+      if(impactDoorMesh) {
+        impactDoorMesh.visible=impactDoorClosed;
+        impactElapsed=state.threat?.phase==='warning'?impactElapsed+dt:0;
+        const shake=state.threat?.phase==='warning'?Math.sin(impactElapsed*27)*.025:0;
+        impactLight.intensity=state.threat?.phase==='warning'?1.1+.45*Math.abs(Math.sin(impactElapsed*13)):0;
+        impactDoorMesh.position.set(impactDoor.x+(impactDoor.axis==='x'?shake:0),1.2,
+          impactDoor.z+(impactDoor.axis==='z'?shake:0));
+      }
       const target = state.doors.bedroom.open ? 4 : 1.2;
       doorHeight += Math.sign(target - doorHeight) * Math.min(Math.abs(target - doorHeight), dt * 3.2);
       if (bedroomDoorAssembly) { bedroomDoorAssembly.position.y = doorHeight; bedroomDoorAssembly.visible = doorHeight < 3.9; }
       else if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = doorHeight < 3.9; }
     },
-    reset() { updateStory({ catPhase: 'unobserved' }, plan.spawn); doorHeight = 1.2;chaseDoorClosed=false;if(chaseDoorMesh)chaseDoorMesh.visible=false; if (bedroomDoorAssembly) { bedroomDoorAssembly.position.y = doorHeight; bedroomDoorAssembly.visible = true; } else if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = true; } },
+    reset() { updateStory({ catPhase: 'unobserved' }, plan.spawn); doorHeight = 1.2;chaseDoorClosed=false;impactDoorClosed=Boolean(impactDoor);impactElapsed=0;if(chaseDoorMesh)chaseDoorMesh.visible=false;if(impactDoorMesh)impactDoorMesh.visible=true;if(impactLight)impactLight.intensity=0; if (bedroomDoorAssembly) { bedroomDoorAssembly.position.y = doorHeight; bedroomDoorAssembly.visible = true; } else if (doorMeshes[0]) { doorMeshes[0].position.y = doorHeight; doorMeshes[0].visible = true; } },
     updateStory, updateThreat,
     renderScreens(renderer) { storyProxies.renderScreens(renderer); },
     updateAmbient(dt) { storyProxies.updateAmbient(dt); },
@@ -322,6 +344,7 @@ export function createWorld(scene, plan = generatePlan('42'), {threatAppearanceI
       const result=[...walls,...plan.obstacles];
       if(doorHeight<3&&doorCollider)result.push(doorCollider);
       if(chaseDoorClosed&&chaseDoorCollider)result.push(chaseDoorCollider);
+      if(impactDoorClosed&&impactDoorCollider)result.push(impactDoorCollider);
       return result;
     },
     roomAt(x, z) {

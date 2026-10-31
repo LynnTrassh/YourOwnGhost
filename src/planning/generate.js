@@ -49,10 +49,10 @@ function candidate(seed, attempt, decorationSeed, interiorSeed, catEnabled, thre
   plan.threat=plan.chase ? {id:'chase-1',behaviorId:CHASE_BEHAVIOR,
     spawn:{...plan.chase.source},observation:{...plan.chase.observation},
     roomId:plan.chase.stages.B13,escapeRoomId:exitId} : threatReservation;
-  if(plan.threat&&threatBehaviorId===HEARING_BEHAVIOR) {
+  if(plan.threat&&!plan.chase&&threatBehaviorId===HEARING_BEHAVIOR) {
     plan.threat={...plan.threat,id:'hearing-1',behaviorId:HEARING_BEHAVIOR};
   }
-  if(plan.threat&&threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR)
+  if(plan.threat&&!plan.chase&&threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR)
     plan.threat={...plan.threat,behaviorId:LIGHT_AVOIDER_BEHAVIOR};
   plan.coverage=analyzeCoverage(plan);
   return plan;

@@ -12,6 +12,7 @@ export function canUseExit(state,plan,view,boxes) {
 }
 function clearTransientStory(state) {
   Object.assign(state.story,{cue:null,previous:null,entryDoorId:null,route:null,routeFinished:false,exposure:0});
+  state.story.metaBypass=null;
 }
 export function requestExit(state,plan,view,boxes) {
   if(!canUseExit(state,plan,view,boxes)) return false;

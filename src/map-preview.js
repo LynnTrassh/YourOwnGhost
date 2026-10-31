@@ -48,6 +48,17 @@ export function drawMap(canvas, plan, player) {
     ctx.fillStyle=instance.definitionId==='B25'?'#bce7ac':'#f3bf83';
     ctx.fillText(instance.definitionId,(room.center[0]-minX)*scale,(room.center[1]-minZ)*scale-8);
   }
+  if(plan.chase) {
+    ctx.fillStyle='#ffcf85';
+    for(const [stage,roomId] of Object.entries(plan.chase.stages)) {
+      const room=plan.rooms.find(r=>r.id===roomId);
+      if(room)ctx.fillText(stage,(room.center[0]-minX)*scale,(room.center[1]-minZ)*scale-8);
+    }
+    for(const [roomId,label] of [[plan.chase.sourceRoomId,'侧门'],[plan.chase.hideRoomId,'躲避']]) {
+      const room=plan.rooms.find(r=>r.id===roomId);
+      if(room)ctx.fillText(label,(room.center[0]-minX)*scale,(room.center[1]-minZ)*scale-8);
+    }
+  }
   ctx.font = '11px sans-serif'; ctx.textAlign = 'center'; ctx.fillStyle = '#f2f1df';
   for (const r of plan.rooms) ctx.fillText(r.id === plan.story?.cat?.roomId ? '猫群回访' : r.id === plan.reserved.cat?.roomId ? '回访候选' : r.name, (r.center[0] - minX) * scale, (r.center[1] - minZ) * scale + 4);
   ctx.beginPath(); ctx.arc((player.x / CELL_SIZE - minX) * scale, (player.z / CELL_SIZE - minZ) * scale, 5, 0, Math.PI * 2); ctx.fillStyle = '#fff'; ctx.fill();

@@ -1,7 +1,7 @@
 import { CELL_SIZE, keyOf } from './templates.js';
 import { buildNavigation, pathThroughTiles } from './validate.js';
 import { overlaps } from '../collision.js';
-import { sightClear } from '../story/spatial.js';
+import { roomIdAt, sightClear } from '../story/spatial.js';
 
 const point=cell=>({x:cell[0]*CELL_SIZE,z:cell[1]*CELL_SIZE});
 const owners=(plan,door)=>door.cells.map(([x,z])=>plan.cells.find(c=>c.x===x&&c.z===z)?.roomId);
@@ -39,6 +39,8 @@ export function fitChase(plan) {
     const stages=route.slice(i,i+4),before=route[i-1],after=route[i+4];
     if(stages.some(id=>occupied.has(id)))continue;
     const [start,retreat,clutter,hideApproach]=stages;
+    const clutterRoom=plan.rooms.find(r=>r.id===clutter);
+    if(clutterRoom?.type==='ring'||(clutterRoom?.interior.obstacleIds.length??0)<3)continue;
     const sourceRooms=plan.edges.flatMap(e=>e.a===start?[e.b]:e.b===start?[e.a]:[])
       .filter(id=>id!==before&&!stages.includes(id)&&id!==after&&!occupied.has(id));
     const hideRooms=plan.edges.flatMap(e=>e.a===hideApproach?[e.b]:e.b===hideApproach?[e.a]:[])
@@ -54,14 +56,20 @@ export function fitChase(plan) {
       if(sourceRoomId===hideRoomId)continue;
       const sideDoor=doorBetween(plan,start,sourceRoomId),hideDoor=doorBetween(plan,hideApproach,hideRoomId);
       if(!sideDoor||!hideDoor)continue;
-      const source=roomSide(sideDoor,sourceRoomId,plan),observation=roomSide(stageDoors[0],start,plan);
+      const source=roomSide(sideDoor,sourceRoomId,plan);
+      if(!source)continue;
+      const entry=roomSide(stageDoors[0],start,plan),forward=roomSide(stageDoors[1],start,plan);
+      const observationPath=pathThroughTiles(plan,entry,forward,[],graph)??[];
+      const observation=observationPath.find(candidate=>roomIdAt(plan,candidate)===start
+        &&Math.hypot(source.x-candidate.x,source.z-candidate.z)>=5
+        &&sightClear({...candidate,y:1.65},{x:sideDoor.x,y:1.5,z:sideDoor.z},[...plan.walls,...plan.obstacles])
+        &&sightClear({...candidate,y:1.65},{...source,y:1.65},[...plan.walls,...plan.obstacles]));
       const concealment=plan.rooms.find(r=>r.id===hideRoomId)?.center;
       if(!source||!observation||!concealment)continue;
       const hidingPoint=point(concealment);
       if(plan.obstacles.some(b=>overlaps(hidingPoint.x,hidingPoint.z,b)))continue;
       const passage=roomSide(stageDoors[3],hideApproach,plan);
       if(sightClear({...passage,y:1.65},{...hidingPoint,y:1.65},[...plan.walls,...plan.obstacles]))continue;
-      if(Math.hypot(source.x-observation.x,source.z-observation.z)<5)continue;
       if(!pathThroughTiles(plan,source,observation,[],graph)
         ||!pathThroughTiles(plan,roomSide(hideDoor,hideRoomId,plan),hidingPoint,[],graph)
         ||!pathThroughTiles(plan,roomSide(stageDoors[4],hideApproach,plan),plan.exit,[],graph))continue;

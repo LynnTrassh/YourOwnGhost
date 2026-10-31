@@ -18,6 +18,7 @@ import { interpretLike, selectLike } from './personalization/like.js';
 import { contentTokensForInputs } from './personalization/content-tokens.js';
 import { createPlayerNoiseTracker } from './player-noise.js';
 import { HEARING_BEHAVIOR, LIGHT_AVOIDER_BEHAVIOR } from './threat-profile.js';
+import { canCloseChaseDoor, closeChaseDoor } from './chase.js';
 
 const $ = id => document.getElementById(id);
 const canvas = $('game');
@@ -26,7 +27,9 @@ const seed = new URLSearchParams(location.search).get('seed')?.slice(0, 80) || '
 const previewId = new URLSearchParams(location.search).get('preview')?.slice(0, 12);
 const hearingPreview=previewId==='TH02';
 const avoiderPreview=previewId==='TH03';
-const threatPreview=hearingPreview||avoiderPreview;
+const chasePreview=previewId==='CHASE';
+const bypassPreview=previewId==='M03';
+const threatPreview=hearingPreview||avoiderPreview||chasePreview||bypassPreview;
 const previewLike = new URLSearchParams(location.search).get('like');
 const previewFear = new URLSearchParams(location.search).get('fear');
 const threatMode=new URLSearchParams(location.search).get('threat');
@@ -38,15 +41,22 @@ let plan;
 let dream;
 let planError;
 try {
-  dream = generateDream(seed,previewSelection?{catEnabled:previewSelection.id==='cat',
-    preferences:contentTokensForInputs(previewSelection.id,previewFearId),threatBehaviorId}
-    :{threatBehaviorId});
-  plan = threatPreview?dream[1]:dream[0];
+  if(chasePreview||bypassPreview) {
+    plan=chasePreview?generatePlan(seed,{chaseEnabled:true,catEnabled:false,contentIds:[]})
+      :generatePlan(seed,{threatEnabled:true,contentIds:[]});
+    if(bypassPreview&&!plan.threat?.bypass)throw new Error('该种子没有可用的无追逐旁路，请使用种子 71');
+    dream=[plan,plan];
+  } else {
+    dream = generateDream(seed,previewSelection?{catEnabled:previewSelection.id==='cat',
+      preferences:contentTokensForInputs(previewSelection.id,previewFearId),threatBehaviorId}
+      :{threatBehaviorId});
+    plan = threatPreview?dream[1]:dream[0];
+  }
 } catch (error) { planError = error; }
 let state = createState(plan);
 if(threatPreview&&plan?.threat) {
   state.layer=2;state.flow.falseAwakenings=1;
-  state.player={...plan.threat.observation,standing:true,flashlight:true};
+  state.player={...(bypassPreview?plan.threat.bypass.observation:plan.threat.observation),standing:true,flashlight:true};
 }
 let active = false;
 let started = false;
@@ -95,8 +105,13 @@ function init() {
   playerNoise.reset(state.player);
   if(threatPreview&&plan.threat) {
     yaw=Math.atan2(plan.threat.spawn.x-state.player.x,plan.threat.spawn.z-state.player.z)+Math.PI;
-    $('title').textContent=hearingPreview?'TH02 听声者灰盒预览':'TH03 避光者灰盒预览';
-    $('description').textContent=hearingPreview
+    $('title').textContent=chasePreview?'B13–B16 连续追逐灰盒预览'
+      :bypassPreview?'M03 绕开威胁灰盒预览'
+      :hearingPreview?'TH02 听声者灰盒预览':'TH03 避光者灰盒预览';
+    $('description').textContent=chasePreview
+      ?'从侧门前开始，沿出口路线经过四段房间；在第二段靠近来门时按 E 关门，第四段进入侧室躲避。'
+      :bypassPreview?'先看清门后的威胁，再从本房间的另一扇门走旁路到出口；不要进入威胁房。'
+      :hearingPreview
       ?'从合法观察位开始；走几步，看它调查最后的脚步位置。'
       :'从合法观察位开始；先照见它后退，再关灯观察靠近。';
   }
@@ -120,7 +135,7 @@ function init() {
       previewWalk=previewWalkDirection ? .65 : 0;
     });
     document.body.append(walkButton);
-    } else {
+    } else if(avoiderPreview) {
       const lightButton=document.createElement('button');
       lightButton.textContent='预览：关闭手电';
       lightButton.style.cssText='position:fixed;right:22px;bottom:65px;width:auto;max-width:240px;z-index:9;padding:9px 13px;background:#253e35;color:#e1e7d8;border:1px solid #789283';
@@ -145,8 +160,12 @@ function init() {
     const bedroom = plan.rooms.find(r => r.id === 'bedroom');
     const sizeX = (Math.max(...bedroom.cells.map(c => c[0])) - Math.min(...bedroom.cells.map(c => c[0])) + 1) * plan.cellSize;
     const sizeZ = (Math.max(...bedroom.cells.map(c => c[1])) - Math.min(...bedroom.cells.map(c => c[1])) + 1) * plan.cellSize;
-    const content=(plan.content?.report??[]).map(r=>`${r.id}${r.accepted?'→'+r.roomId:'拒绝:'+r.reason}`).join(' / ');
-    const threatLabel=threatBehaviorId===HEARING_BEHAVIOR?'听声者灰盒'
+    const content=chasePreview?'B13–B16 联合预览（尚未进入正常随机内容池）'
+      :bypassPreview?'M03 安全绕行预览'
+      :(plan.content?.report??[]).map(r=>`${r.id}${r.accepted?'→'+r.roomId:'拒绝:'+r.reason}`).join(' / ');
+    const threatLabel=chasePreview?'连续追逐灰盒'
+      :bypassPreview?'凝视型威胁与安全旁路'
+      :threatBehaviorId===HEARING_BEHAVIOR?'听声者灰盒'
       :threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR?'避光者灰盒':'凝视型威胁';
     $('plan-status').textContent = `种子 ${seed}${state.input.confirmed?'':' · 待输入确认（以下为预览）'} · 第 ${state.layer} 层 · ${plan.rooms.length} 个房间 · ${plan.opportunities.cycles.length} 个环路 / ${plan.opportunities.forks.length} 个分叉 · ${plan.planHash}${plan.validation.fallback ? ' · 保底布局' : ' · 校验通过'} · 猫场景 ${!state.input.confirmed?'待输入确认':state.layer===2?'本层未启用':plan.story.cat?'可用':state.like.id==='cat'?'空间不适配':'未选择猫'} / 左右建议 ${plan.story.routes.length} 处 · ${threatLabel} ${plan.threat?'已适配':state.layer===1?'本层未安排':'空间不适配'} · 自带灰盒 ${content} · 起始${TEMPLATE_NAMES[bedroom.type]} ${sizeX}×${sizeZ}米`;
     const composition=dream.composition;
@@ -154,9 +173,9 @@ function init() {
     const coverage=plan.coverage;
     const names={start:'起点',connector:'连接',rest:'喘息',short:'短场面',major:'主要',danger:'危险'};
     $('coverage-report').textContent=`本层内容覆盖 ${coverage.covered}/${coverage.total}（${Math.round(coverage.ratio*100)}%）· 最长连续空白 ${coverage.longestGap.length} 间${coverage.longestGap.rooms.length?'：'+coverage.longestGap.rooms.join(' → '):''} · 房间角色：${coverage.rooms.map(row=>`${row.roomId} ${names[row.role]}${row.units.length?'['+row.units.join('+')+']':''}`).join(' / ')}${coverage.incomplete?' · 路径检查达到预算，结果未完成':''}`;
-    $('preview-links').replaceChildren(...['B01','B03','B04','B05','B06','B07','B08','B09','B10','B11','B12','B18','B19','B20','B22','B25','ID02','ID03','ME01','ME02','ME03','ME04','IN01','IN02','IN03','IN04','TI02','TI03','RI01','RI02','BO01','BO02','BO03','BO04','AB01','AB02','AB04','B27','B28','TH02','TH03'].map(id=>{
+    $('preview-links').replaceChildren(...['B01','B03','B04','B05','B06','B07','B08','B09','B10','B11','B12','B18','B19','B20','B22','B25','ID02','ID03','ME01','ME02','ME03','ME04','IN01','IN02','IN03','IN04','TI02','TI03','RI01','RI02','BO01','BO02','BO03','BO04','AB01','AB02','AB04','B27','B28','TH02','TH03','CHASE','M03'].map(id=>{
       const link=document.createElement('a');link.textContent=`${id} 独立预览`;
-      link.href=`/?seed=${encodeURIComponent(plan.seed)}&preview=${id}&like=${encodeURIComponent(state.like.id)}&fear=${encodeURIComponent(state.fear.id)}`;
+      link.href=`/?seed=${encodeURIComponent(id==='M03'?'71':plan.seed)}&preview=${id}&like=${encodeURIComponent(state.like.id)}&fear=${encodeURIComponent(state.fear.id)}`;
       link.target='_blank';link.rel='noopener';
       link.style.cssText='display:inline-block;margin:10px 16px 0 0;color:#b4d8b3;font-size:12px';
       return link;
@@ -261,13 +280,17 @@ function init() {
   function restartRun(fearId=state.fear.id,likeId=state.like.id) {
     const changed=state.input.confirmed&&(state.input.fearId!==fearId||state.input.likeId!==likeId);
     const version=state.input.confirmed?state.input.version+Number(changed):1;
-    const nextDream=generateDream(seed,{catEnabled:likeId==='cat',
+    const nextDream=chasePreview||bypassPreview ? (()=>{
+      const fitted=chasePreview?generatePlan(seed,{chaseEnabled:true,catEnabled:false,contentIds:[]})
+        :generatePlan(seed,{threatEnabled:true,contentIds:[]});
+      return [fitted,fitted];
+    })() : generateDream(seed,{catEnabled:likeId==='cat',
       preferences:contentTokensForInputs(likeId,fearId),threatBehaviorId});
     const nextPlan=threatPreview?nextDream[1]:nextDream[0];
     const nextState=createState(nextPlan,fearId,likeId,version,state.input);
     if(threatPreview&&nextPlan.threat) {
       nextState.layer=2;nextState.flow.falseAwakenings=1;
-      nextState.player={...nextPlan.threat.observation,standing:true,flashlight:true};
+      nextState.player={...(bypassPreview?nextPlan.threat.bypass.observation:nextPlan.threat.observation),standing:true,flashlight:true};
     }
     const nextWorld=createWorld(scene,nextPlan,{threatAppearanceId:nextState.fear.appearanceId});
     world.dispose();world=nextWorld;dream=nextDream;plan=nextPlan;
@@ -293,7 +316,8 @@ function init() {
     const url = new URL(location.href); url.searchParams.set('seed', String(crypto.getRandomValues(new Uint32Array(1))[0])); location.assign(url);
   });
   $('show-map').addEventListener('click', () => {
-    const threatLabel=threatBehaviorId===HEARING_BEHAVIOR?'听声者灰盒'
+    const threatLabel=chasePreview?'连续追逐灰盒'
+      :threatBehaviorId===HEARING_BEHAVIOR?'听声者灰盒'
       :threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR?'避光者灰盒':'凝视型威胁';
     const demoHint=threatBehaviorId===HEARING_BEHAVIOR?'移动发出脚步，观察它追查声源'
       :threatBehaviorId===LIGHT_AVOIDER_BEHAVIOR?'用手电照见它后退，再关灯观察靠近'
@@ -352,6 +376,7 @@ function init() {
     if (event.code === 'KeyE') {
       if (!state.player.standing) { state.player.standing = true; state.flow.phase='exploring'; }
       else if (targetDoor) state.doors.bedroom.open = true;
+      else if(chasePreview&&closeChaseDoor(plan,state))world.update(0,state);
       else if (requestExit(state,plan,currentView(),world.getColliders())) {keys.clear();dragging=false;lastPointer=null;targetDoor=false;}
     }
   });
@@ -447,7 +472,9 @@ function init() {
       ray.setFromCamera(new THREE.Vector2(), camera);
       const hit = ray.intersectObjects([...world.solids, ...world.doorMeshes.filter(d => d.visible)], false)[0];
       targetDoor = state.player.standing && !state.doors.bedroom.open && hit?.object === world.door;
-      $('prompt').textContent = !state.player.standing ? 'E  起身' : targetDoor ? 'E  开门' : canUseExit(state,plan,currentView(),world.getColliders()) ? 'E  离开这里' : '';
+      $('prompt').textContent = !state.player.standing ? 'E  起身' : targetDoor ? 'E  开门'
+        :chasePreview&&canCloseChaseDoor(plan,state)?'E  关门阻挡'
+        :canUseExit(state,plan,currentView(),world.getColliders()) ? 'E  离开这里' : '';
       $('prompt').hidden = !($('prompt').textContent);
     }
     if(exploring) {
@@ -457,20 +484,24 @@ function init() {
       const beam={enabled:state.player.flashlight,origin,direction,angle:flashlight.angle,distance:flashlight.distance};
       const lethal=stepThreat(world.getTopology(),state,view,beam,dt,{boxes,noiseEvents});
       if(lethal && requestDeath(state)) {keys.clear();dragging=false;lastPointer=null;targetDoor=false;}
-      const encounter=state.threat && ['demo','pursuing'].includes(state.threat.phase)
-        && (state.threat.seesPlayer||state.threat.sensesPlayer)
-        && roomIdAt(plan,state.player)!=='bedroom';
+      const encounter=state.threat && roomIdAt(plan,state.player)!=='bedroom'
+        && (chasePreview ? state.threat.stage>0&&state.threat.phase!=='escaped'
+          :['demo','pursuing'].includes(state.threat.phase)
+            &&(state.threat.seesPlayer||state.threat.sensesPlayer));
       if(canExplore(state)) {
         if(encounter) {
-          if(state.story.cue?.kind!=='statueDemo') state.story.cue=null;
+          if(!['statueDemo','chase'].includes(state.story.cue?.kind)) state.story.cue=null;
           state.story.route=null;state.story.routeFinished=false;
         } else stepFlowNarration(state,plan,view,dt,boxes);
-        stepStory(plan,state.story,view,dt,{boxes,suppressRoutes:Boolean(encounter)});
+        stepStory(plan,state.story,view,dt,{boxes,threat:state.threat,suppressRoutes:Boolean(encounter)});
         world.updateStory(state.story,state.player);
       }
       world.updateThreat(state.threat,state.player);
     }
-    if(previewStatus)previewStatus.textContent=hearingPreview
+    if(previewStatus)previewStatus.textContent=chasePreview
+      ?`B13–B16 连续追逐 · 阶段 ${state.threat?.stage??0}/4 · ${state.threat?.phase??'无'} · 门阻挡 ${state.threat?.doorRemaining?.toFixed(1)??'0'} 秒 · 侧室 ${roomIdAt(plan,state.player)===plan.chase.hideRoomId?'已进入':'未进入'}`
+      :bypassPreview?`M03 安全绕行 · 观察 ${state.story.metaBypass?.phase??'等待'} · 威胁 ${state.threat?.phase??'无'} · 路线 ${plan.threat.bypass.returnRoute.join(' → ')}`
+      :hearingPreview
       ?`TH02 隔离预览 · ${state.threat?.phase??'无'} · 调查 ${state.threat?.memory?.phase??'无'} · 声源 ${state.threat?.memory?.lastSound?.eventId??'无'} · 安全示范 ${state.threat?.demoComplete?'已结束':state.threat?.demoStarted?'进行中':'未触发'}`
       :`TH03 隔离预览 · ${state.threat?.phase??'无'} · 手电 ${state.player.flashlight?'开':'关'} · 照见 ${state.threat?.lit?'是':'否'} · 后退 ${state.threat?.demoMoved?.toFixed(2)??'0'} 米 · 安全示范 ${state.threat?.demoComplete?'已结束':state.threat?.demoStarted?'进行中':'未触发'}`;
     $('fade').style.opacity=String(transitionOpacity(state));

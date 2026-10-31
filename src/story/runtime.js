@@ -1,4 +1,5 @@
 import { roomIdAt, crossedDoor, visible } from './spatial.js';
+import { stepMetaBypass } from './meta-bypass.js';
 
 const LINES={catSeen:'看，它们也在看你。',catDead:'啊呀呀……怎么都倒下了。',suggest:'左边也给你开着呢。',right:'哦，右边。你自己挑的。'};
 export function presentCue(state,kind,key,text,roomId,duration=4) {
@@ -636,12 +637,12 @@ export function stepContent(plan,state,view,dt,boxes,{door=null,previousRoomId=n
       phase.pendingLine=false;
   }
 }
-export function stepStory(plan,state,view,dt,{active=true,cause='normal',suppressRoutes=false,boxes=[...plan.walls,...plan.obstacles]}={}) {
+export function stepStory(plan,state,view,dt,{active=true,cause='normal',suppressRoutes=false,boxes=[...plan.walls,...plan.obstacles],threat=null}={}) {
   if(!active) return;
   const roomId=roomIdAt(plan,view),previous=state.previous;
   if(cause!=='normal') {
     state.previous={x:view.x,z:view.z,roomId};state.entryDoorId=null;
-    state.exposure=0;state.cue=null;state.route=null;state.routeFinished=false;
+    state.exposure=0;state.cue=null;state.route=null;state.routeFinished=false;state.metaBypass=null;
     return;
   }
   const door=previous && previous.roomId!==roomId && cause==='normal' ? crossedDoor(plan,previous,view,previous.roomId,roomId):null;
@@ -668,6 +669,7 @@ export function stepStory(plan,state,view,dt,{active=true,cause='normal',suppres
       }
     }
   }
+  stepMetaBypass(plan,state,view,dt,{door,previousRoomId:previous?.roomId,threat,boxes,presentCue});
   if(state.facts.includes('input.corrected') && !state.consumed.includes('M05')) {
     if(roomId!=='bedroom') state.consumed.push('M05');
     else if(state.consumed.includes('flow.wake') && !state.cue && state.behaviorCount<2) {

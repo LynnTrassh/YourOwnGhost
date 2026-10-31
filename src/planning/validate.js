@@ -120,6 +120,12 @@ export function validatePlan(plan) {
     if(routes.length!==2||routes.some(r=>r.length<3)
       ||routes[0].slice(1,-1).some(p=>routes[1].slice(1,-1).some(q=>p[0]===q[0]&&p[1]===q[1])))
       errors.push('INVALID_CHASE_BYPASS');
+    for(const pathPoints of routes)for(let step=0;step<pathPoints.length;step++) {
+      const current=pathPoints[step],tile=keyOf(Math.round(current[0]/CELL_SIZE),Math.round(current[1]/CELL_SIZE));
+      const next=pathPoints[step+1],nextKey=next&&keyOf(Math.round(next[0]/CELL_SIZE),Math.round(next[1]/CELL_SIZE));
+      if(roomIdAt(plan,{x:current[0],z:current[1]})!==stages[2]
+        ||!graph.has(tile)||(nextKey&&!graph.get(tile)?.includes(nextKey)))errors.push('INVALID_CHASE_BYPASS_TILE');
+    }
     if(roomIdAt(plan,chase.hidingPoint)!==chase.hideRoomId
       ||!path(chase.source,chase.observation)
       ||!path(chase.hidingPoint,roomPoint(stages[3])))errors.push('INVALID_CHASE_ACCESS');
@@ -127,6 +133,11 @@ export function validatePlan(plan) {
     const approachTile=approachDoor?.cells.find(([x,z])=>plan.cells.find(c=>c.x===x&&c.z===z)?.roomId===stages[3]);
     if(!approachTile||sightClear({x:approachTile[0]*CELL_SIZE,y:1.65,z:approachTile[1]*CELL_SIZE},
       {...chase.hidingPoint,y:1.65},boxes))errors.push('INVALID_CHASE_CONCEALMENT');
+    const sideDoor=plan.doors.find(d=>d.id===chase.sideDoorId);
+    if(!sideDoor||!sightClear({...chase.observation,y:1.65},
+      {x:sideDoor.x,y:1.5,z:sideDoor.z},boxes)
+      ||!sightClear({...chase.observation,y:1.65},{...chase.source,y:1.65},boxes))
+      errors.push('INVALID_CHASE_REVEAL');
   }
   if (boxes.some(b => overlaps(plan.spawn.x, plan.spawn.z, b))) errors.push('BLOCKED_SPAWN');
   if(plan.threat?.behaviorId===LIGHT_AVOIDER_BEHAVIOR) {
@@ -138,6 +149,22 @@ export function validatePlan(plan) {
       ||!pathThroughTiles(plan,threat.spawn,point,['bedroom',threat.escapeRoomId],graph)
       ||!sightClear({...threat.observation,y:1.65},
         {...point,y:THREAT_BODY.lightTargetHeight},boxes))errors.push('INVALID_AVOIDER_RETREAT');
+  }
+  if(plan.threat?.bypass) {
+    const threat=plan.threat,fit=threat.bypass;
+    const route=[fit.observationRoomId,...fit.returnRoute];
+    const door=plan.doors.find(d=>d.id===fit.doorId);
+    const owners=door?.cells.map(([x,z])=>plan.cells.find(c=>c.x===x&&c.z===z)?.roomId)??[];
+    const validSteps=route.slice(1).every((id,index)=>plan.edges.some(edge=>
+      (edge.a===route[index]&&edge.b===id)||(edge.b===route[index]&&edge.a===id)));
+    if(!door||!owners.includes(fit.observationRoomId)||!owners.includes(fit.neighborRoomId)
+      ||fit.returnRoute[0]!==fit.neighborRoomId||fit.returnRoute.at(-1)!==plan.exit.roomId
+      ||route.includes(threat.roomId)||route.includes('bedroom')||!validSteps
+      ||roomIdAt(plan,fit.observation)!==fit.observationRoomId
+      ||!sightClear({...fit.observation,y:1.65},
+        {...threat.spawn,y:THREAT_BODY.lightTargetHeight},boxes)
+      ||!path(fit.observation,plan.exit,[threat.roomId,'bedroom']))
+      errors.push('INVALID_THREAT_BYPASS');
   }
   if (!path(plan.spawn, plan.exit)) errors.push('EXIT_UNREACHABLE');
   for (const room of plan.rooms) if (!path(plan.spawn, roomPoint(room.id))) errors.push(`ROOM_UNREACHABLE:${room.id}`);
